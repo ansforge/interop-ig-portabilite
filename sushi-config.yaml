@@ -40,43 +40,40 @@ pages:
     index.md:
         title: Accueil
     spec-fonctionnelle-intro.md:
-        title: Vue d'ensemble
-        spec-fonctionnelle-alimentation.md:
-            title: Alimentation
+        title: Contexte fonctionnel et périmètre
     spec-technique-intro.md:
-        title: Introduction
+        title: Introduction technique
         spec-technique-vue-ensemble.md:
-            title: Vue d'ensemble
+            title: Structure de l'archive
         spec-technique-flux-alimentation.md:
-            title: Flux d'alimentation
+            title: Flux d'export
         spec-technique-flux-consommation.md:
-            title: Flux de consommation
+            title: Flux d'import
     change-log.md:
         title: Historique des versions
     autres_ressources.md:
-        title: Autres Ressources
+        title: Annexes
         annexe-securite.md:
             title: Sécurité
         annexe-downloads.md:
-            title: Téléchargements et usages
+            title: Téléchargements
     translationinfo.md:
         title: Informations sur la traduction
 
 menu:
     Accueil: index.html
-    Vol. 1 - Etude fonctionnelle: 
-        Introduction: spec-fonctionnelle-intro.html
-        Alimentation: spec-fonctionnelle-alimentation.html
-    Vol. 2 - Détail des transactions: 
-        Introduction: spec-technique-intro.html
-        Vue d'ensemble: spec-technique-vue-ensemble.html
-        Flux d'alimentation: spec-technique-flux-alimentation.html
-        Flux de consommation: spec-technique-flux-consommation.html
-    Vol. 3 - Annexes:
-        Sécurité: securite.html
-        Téléchargements et usage: downloads.html
-        "Spécifications FHIR ": new-tab {{site.data.fhir.path}}index.html
-        "Site de l'ANS ": new-tab https://esante.gouv.fr/
-    Ressources de conformité: artifacts.html
-    Documentation: new-tab https://interop.esante.gouv.fr/ig/documentation/
-    Historique: change-log.html
+    "Vol. 1 - Étude fonctionnelle":
+        "Contexte et périmètre": spec-fonctionnelle-intro.html
+    "Vol. 2 - Spécifications techniques":
+        "Introduction": spec-technique-intro.html
+        "Structure de l'archive": spec-technique-vue-ensemble.html
+        "Flux d'export": spec-technique-flux-alimentation.html
+        "Flux d'import": spec-technique-flux-consommation.html
+    "Vol. 3 - Annexes":
+        "Sécurité": annexe-securite.html
+        "Téléchargements": annexe-downloads.html
+        "Spécifications FHIR": new-tab {{site.data.fhir.path}}index.html
+        "Site de l'ANS": new-tab https://esante.gouv.fr/
+    "Ressources de conformité": artifacts.html
+    "Documentation": new-tab https://interop.esante.gouv.fr/ig/documentation/
+    "Historique": change-log.html
