@@ -1,0 +1,26 @@
+# ans.fhir.fr.pdlgc#1.0.0: Portabilité des Données LGC(fr)
+
+## Pages
+
+* [Accueil](index.md)
+* [Introduction technique](spec-technique-intro.md)
+* [Informations sur la traduction](translationinfo.md)
+* [Flux d'import](spec-technique-flux-consommation.md)
+* [Structure de l'archive](spec-technique-vue-ensemble.md)
+* [Annexes](autres_ressources.md)
+* [Résumé des artefacts](artifacts.md)
+* [Contexte fonctionnel et périmètre](spec-fonctionnelle-intro.md)
+* [Téléchargements](annexe-downloads.md)
+* [Historique des versions](change-log.md)
+* [Sécurité](annexe-securite.md)
+* [Flux d'export](spec-technique-flux-alimentation.md)
+
+## Resources
+
+### Logicals
+
+* [DocumentEntry Portabilité (LM)](StructureDefinition-document-entry-portabilite.md)
+
+### ImplementationGuides
+
+* [Portabilité des Données LGC](ImplementationGuide-ans.fhir.fr.pdlgc.md)

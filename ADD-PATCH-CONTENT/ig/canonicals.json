@@ -1,0 +1,14 @@
+[{
+  "id" : "ans.fhir.fr.pdlgc",
+  "type" : "ImplementationGuide",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ImplementationGuide/ans.fhir.fr.pdlgc",
+  "version" : "1.0.0",
+  "name" : "PDLGC"
+},
+{
+  "id" : "document-entry-portabilite",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/document-entry-portabilite",
+  "version" : "1.0.0",
+  "name" : "DocumentEntryPortabilite"
+}]
