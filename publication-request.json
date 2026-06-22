@@ -7,7 +7,7 @@
     "sequence" : "STU1",
     "title" : "Portabilité des données des Logiciels de Gestion de Cabinet (LGC)",
     "first" : true,
-    "desc" : "Ce guide présente les spécifications fonctionnelles et techniques du volet ""Portabilité des données des Logiciels de Gestion de Cabinet"" (LGC). Ces dernières spécifient la structure d'une archive de Portabilité échangée entre deux logiciels",
+    "desc" : "Ce guide présente les spécifications fonctionnelles et techniques du volet Portabilité des données des Logiciels de Gestion de Cabinet (LGC). Ces dernières spécifient la structure d'une archive de Portabilité échangée entre deux logiciels",
     "ci-build" : "https://ansforge.github.io/IG-fhir-portabilite-lgc/main/ig",
     "category" : "Care Management",
     "introduction" : "Ce document présente les spécifications fonctionnelles et techniques du volet « Portabilité des données LGC » (PDLGC). Ces dernières spécifient l'architecture d'une archive de Portabilité permettant l'export de données d'un LGC à un autre.",
