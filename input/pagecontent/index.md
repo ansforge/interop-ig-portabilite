@@ -56,7 +56,7 @@ Le présent guide d'implémentation traduit en spécifications fonctionnelles et
 <div style="background-color: #f0edf5 ; border-left: 4px solid #7b52a8; padding: 15px; margin: 20px 0;">
     <strong>Ressources de conformité</strong>
     <ul style="margin: 10px 0 0 0;">
-    La section <a href="#artefacts">Ressources de conformité</a> liste les différents artefacts supportant les spécifications fonctionnelles et techniques</br>
+    La section <a href="#artifacts">Ressources de conformité</a> liste les différents artefacts supportant les spécifications fonctionnelles et techniques</br>
     </ul>
 </div>
 
