@@ -47,8 +47,8 @@ Le présent guide d'implémentation traduit en spécifications fonctionnelles et
 <div style="background-color: #e8f4f8; border-left: 4px solid #0077be; padding: 15px; margin: 20px 0;">
     <strong>Spécifications</strong>
     <ul style="margin: 10px 0 0 0;">
-    La section <a href="#specifications">Spécifications</a> présente les spécifications fonctionnelles et techniques associcées à chaque processus collaboratif </br>
-    Les <strong>spécifications fonctionnelles</strong> présentent notamment une définition du processus collaboratif et les concepts métiers utilisés.</br>
+    La section <a href="#specifications">Spécifications</a> présente les spécifications fonctionnelles et techniques associcées à chaque processus collaboratif <br>
+    Les <strong>spécifications fonctionnelles</strong> présentent notamment une définition du processus collaboratif et les concepts métiers utilisés.<br>
     Les <strong>spécifications techniques</strong> décrivent quant à elles la structure de l'archive de portabilité, les formats des documents et les métadonnées nécessaires aux échanges entre systèmes d'information.
     </ul>
 </div>
@@ -56,7 +56,7 @@ Le présent guide d'implémentation traduit en spécifications fonctionnelles et
 <div style="background-color: #f0edf5 ; border-left: 4px solid #7b52a8; padding: 15px; margin: 20px 0;">
     <strong>Ressources de conformité</strong>
     <ul style="margin: 10px 0 0 0;">
-    La section <a href="#artifacts">Ressources de conformité</a> liste les différents artefacts supportant les spécifications fonctionnelles et techniques</br>
+    La section <a href="#artifacts">Ressources de conformité</a> liste les différents artefacts supportant les spécifications fonctionnelles et techniques
     </ul>
 </div>
 
@@ -73,15 +73,15 @@ Le présent guide d'implémentation traduit en spécifications fonctionnelles et
 
 <br>
 
-### Définitions
-
-{% include contexte-metier-definitions.md %}
-
-<br>
-
 ### Cadre juridique
 
 {% include contexte-metier-cadre-juridique.md %}
+
+<br>
+
+### Définitions
+
+{% include contexte-metier-definitions.md %}
 
 <br>
 
