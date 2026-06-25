@@ -13,7 +13,7 @@
   <name value="PDLGC"/>
   <title value="Portabilité des Données LGC"/>
   <status value="draft"/>
-  <date value="2026-06-22T13:08:21+00:00"/>
+  <date value="2026-06-25T08:44:50+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -713,6 +713,61 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/PDLGC-Fournisseur-Destinataire"/>
+      </reference>
+      <name value="PDLGC Fournisseur Destinataire"/>
+      <description value="Editeur recevant les données en vue de leur intégration. Il est tenu d'une obligation de moyens pour l'import dès lors que le format est conforme au référentiel."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/PDLGC-Fournisseur-Sortant"/>
+      </reference>
+      <name value="PDLGC Fournisseur Sortant"/>
+      <description value="Éditeur du LGC dont le contrat prend fin ou depuis lequel l'utilisateur souhaite exporter ses données. C'est lui qui est redevable de l'obligation de portabilité gratuite du Périmètre Pivot sous 30 jours calendaires."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/PDLGC-Patient"/>
+      </reference>
+      <name value="PDLGC Patient"/>
+      <description value="Bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP). Peut demander directement l'export de ses données."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/PDLGC-PS-Destinataire"/>
+      </reference>
+      <name value="PDLGC Professionnel de Santé Destinataire"/>
+      <description value="Médecin ou professionnel de santé libéral recevant l'export via son LGC."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/PDLGC-PS-Initiateur"/>
+      </reference>
+      <name value="PDLGC Professionnel de Santé Initiateur"/>
+      <description value="Médecin ou professionnel de santé libéral, demandeur de l'export et responsable du contenu médical transféré."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -750,49 +805,33 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="spec-fonctionnelle-intro.html"/>
+          <valueUrl value="specifications.html"/>
         </extension>
-        <nameUrl value="spec-fonctionnelle-intro.html"/>
-        <title value="Vue d'ensemble"/>
+        <nameUrl value="specifications.html"/>
+        <title value="Spécifications"/>
         <generation value="markdown"/>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="spec-fonctionnelle-alimentation.html"/>
-          </extension>
-          <nameUrl value="spec-fonctionnelle-alimentation.html"/>
-          <title value="Alimentation"/>
-          <generation value="markdown"/>
-        </page>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="spec-technique-intro.html"/>
+          <valueUrl value="annexes.html"/>
         </extension>
-        <nameUrl value="spec-technique-intro.html"/>
-        <title value="Introduction"/>
+        <nameUrl value="annexes.html"/>
+        <title value="Annexes"/>
         <generation value="markdown"/>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="spec-technique-vue-ensemble.html"/>
+            <valueUrl value="annexe-securite.html"/>
           </extension>
-          <nameUrl value="spec-technique-vue-ensemble.html"/>
-          <title value="Vue d'ensemble"/>
+          <nameUrl value="annexe-securite.html"/>
+          <title value="Sécurité"/>
           <generation value="markdown"/>
         </page>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="spec-technique-flux-alimentation.html"/>
+            <valueUrl value="annexe-downloads.html"/>
           </extension>
-          <nameUrl value="spec-technique-flux-alimentation.html"/>
-          <title value="Flux d'alimentation"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="spec-technique-flux-consommation.html"/>
-          </extension>
-          <nameUrl value="spec-technique-flux-consommation.html"/>
-          <title value="Flux de consommation"/>
+          <nameUrl value="annexe-downloads.html"/>
+          <title value="Téléchargements et usages"/>
           <generation value="markdown"/>
         </page>
       </page>
@@ -811,22 +850,6 @@
         <nameUrl value="autres_ressources.html"/>
         <title value="Autres Ressources"/>
         <generation value="markdown"/>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="annexe-securite.html"/>
-          </extension>
-          <nameUrl value="annexe-securite.html"/>
-          <title value="Sécurité"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="annexe-downloads.html"/>
-          </extension>
-          <nameUrl value="annexe-downloads.html"/>
-          <title value="Téléchargements et usages"/>
-          <generation value="markdown"/>
-        </page>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

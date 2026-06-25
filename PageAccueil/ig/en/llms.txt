@@ -3,18 +3,49 @@
 ## Pages
 
 * [Accueil](index.md)
-* [Introduction](spec-technique-intro.md)
+* [PDLGC Professionnel de Santé Destinataire - TTL Representation](ActorDefinition-PDLGC-PS-Destinataire.ttl.md)
+* [PDLGC Fournisseur Sortant](ActorDefinition-PDLGC-Fournisseur-Sortant.ai.md)
+* [PDLGC Fournisseur Destinataire - XML Representation](ActorDefinition-PDLGC-Fournisseur-Destinataire.xml.md)
+* [PDLGC Professionnel de Santé Initiateur](ActorDefinition-PDLGC-PS-Initiateur.md)
+* [](ActorDefinition-PDLGC-PS-Initiateur.change.history.md)
+* [PDLGC Professionnel de Santé Initiateur - JSON Representation](ActorDefinition-PDLGC-PS-Initiateur.json.md)
+* [](ActorDefinition-PDLGC-Fournisseur-Destinataire.change.history.md)
+* [PDLGC Professionnel de Santé Destinataire - JSON Representation](ActorDefinition-PDLGC-PS-Destinataire.json.md)
+* [PDLGC Patient](ActorDefinition-PDLGC-Patient.ai.md)
+* [PDLGC Patient](ActorDefinition-PDLGC-Patient.md)
+* [PDLGC Fournisseur Sortant](ActorDefinition-PDLGC-Fournisseur-Sortant.md)
+* [PDLGC Fournisseur Destinataire - TTL Representation](ActorDefinition-PDLGC-Fournisseur-Destinataire.ttl.md)
+* [PDLGC Professionnel de Santé Destinataire](ActorDefinition-PDLGC-PS-Destinataire-testing.md)
 * [Informations sur la traduction](translationinfo.md)
-* [Flux de consommation](spec-technique-flux-consommation.md)
-* [Vue d'ensemble](spec-technique-vue-ensemble.md)
+* [PDLGC Professionnel de Santé Destinataire](ActorDefinition-PDLGC-PS-Destinataire.md)
 * [Autres Ressources](autres_ressources.md)
+* [](ActorDefinition-PDLGC-PS-Destinataire.change.history.md)
+* [PDLGC Professionnel de Santé Initiateur - XML Representation](ActorDefinition-PDLGC-PS-Initiateur.xml.md)
+* [PDLGC Fournisseur Destinataire - JSON Representation](ActorDefinition-PDLGC-Fournisseur-Destinataire.json.md)
 * [Artifacts Summary](artifacts.md)
-* [Vue d'ensemble](spec-fonctionnelle-intro.md)
 * [Téléchargements et usages](annexe-downloads.md)
+* [PDLGC Fournisseur Destinataire](ActorDefinition-PDLGC-Fournisseur-Destinataire-testing.md)
+* [Spécifications](specifications.md)
+* [PDLGC Professionnel de Santé Destinataire](ActorDefinition-PDLGC-PS-Destinataire.ai.md)
+* [PDLGC Professionnel de Santé Destinataire - XML Representation](ActorDefinition-PDLGC-PS-Destinataire.xml.md)
+* [PDLGC Fournisseur Sortant - TTL Representation](ActorDefinition-PDLGC-Fournisseur-Sortant.ttl.md)
+* [](ActorDefinition-PDLGC-Fournisseur-Sortant.change.history.md)
+* [PDLGC Fournisseur Sortant - JSON Representation](ActorDefinition-PDLGC-Fournisseur-Sortant.json.md)
+* [PDLGC Professionnel de Santé Initiateur](ActorDefinition-PDLGC-PS-Initiateur-testing.md)
+* [PDLGC Patient - XML Representation](ActorDefinition-PDLGC-Patient.xml.md)
+* [PDLGC Patient](ActorDefinition-PDLGC-Patient-testing.md)
 * [Historique des versions](change-log.md)
-* [Alimentation](spec-fonctionnelle-alimentation.md)
+* [PDLGC Professionnel de Santé Initiateur](ActorDefinition-PDLGC-PS-Initiateur.ai.md)
+* [PDLGC Fournisseur Destinataire](ActorDefinition-PDLGC-Fournisseur-Destinataire.ai.md)
+* [PDLGC Fournisseur Sortant](ActorDefinition-PDLGC-Fournisseur-Sortant-testing.md)
+* [PDLGC Fournisseur Destinataire](ActorDefinition-PDLGC-Fournisseur-Destinataire.md)
+* [PDLGC Professionnel de Santé Initiateur - TTL Representation](ActorDefinition-PDLGC-PS-Initiateur.ttl.md)
+* [PDLGC Fournisseur Sortant - XML Representation](ActorDefinition-PDLGC-Fournisseur-Sortant.xml.md)
 * [Sécurité](annexe-securite.md)
-* [Flux d'alimentation](spec-technique-flux-alimentation.md)
+* [](ActorDefinition-PDLGC-Patient.change.history.md)
+* [Annexes](annexes.md)
+* [PDLGC Patient - TTL Representation](ActorDefinition-PDLGC-Patient.ttl.md)
+* [PDLGC Patient - JSON Representation](ActorDefinition-PDLGC-Patient.json.md)
 
 ## Resources
 
@@ -37,6 +68,14 @@
 ### Extensions
 
 * [EyeColor](StructureDefinition-EyeColor.md)
+
+### Basics
+
+* [PDLGC-Fournisseur-Destinataire](Basic-PDLGC-Fournisseur-Destinataire.md)
+* [PDLGC-Fournisseur-Sortant](Basic-PDLGC-Fournisseur-Sortant.md)
+* [PDLGC-PS-Destinataire](Basic-PDLGC-PS-Destinataire.md)
+* [PDLGC-PS-Initiateur](Basic-PDLGC-PS-Initiateur.md)
+* [PDLGC-Patient](Basic-PDLGC-Patient.md)
 
 ### ImplementationGuides
 

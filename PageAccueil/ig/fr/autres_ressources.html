@@ -41,11 +41,13 @@
   </head>
   <body onload="document.body.style.opacity='1'">
 
-	  <script src="assets/js/prism.js"></script>
+	  <script src="assets/js/prism.js" type="text/javascript"></script>
+	  <script src="assets/js/prism-fhirpath.js" type="text/javascript"></script>
+	  <script src="assets/js/prism-cql.js" type="text/javascript"></script>
     <script src="assets/js/mermaid.js" type="text/javascript"></script>
     <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
     <style type="text/css">h2{--heading-prefix:"5"}
-    h3,h4,h5,h6{--heading-prefix:"5.0"}</style>
+    h3,h4,h5,h6{--heading-prefix:"5"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
 
@@ -102,48 +104,19 @@
   <li>
     <a href="index.html">Accueil</a>
   </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Vol. 1 - Etude fonctionnelle
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="spec-fonctionnelle-intro.html">Introduction</a>
-      </li>
-      <li>
-        <a href="spec-fonctionnelle-alimentation.html">Alimentation</a>
-      </li>
-    </ul>
+  <li>
+    <a href="specifications.html">Spécifications</a>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Vol. 2 - Détail des transactions
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Annexes
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="spec-technique-intro.html">Introduction</a>
+        <a href="annexe-securite.html">Sécurité</a>
       </li>
       <li>
-        <a href="spec-technique-vue-ensemble.html">Vue d'ensemble</a>
-      </li>
-      <li>
-        <a href="spec-technique-flux-alimentation.html">Flux d'alimentation</a>
-      </li>
-      <li>
-        <a href="spec-technique-flux-consommation.html">Flux de consommation</a>
-      </li>
-    </ul>
-  </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Vol. 3 - Annexes
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li><a name="l238">​</a>
-        <a href="securite.html">Sécurité</a>
-      </li>
-      <li><a name="l244">​</a>
-        <a href="downloads.html">Téléchargements et usage</a>
+        <a href="annexe-downloads.html">Téléchargements et usage</a>
       </li>
       <li>
         <a href="http://hl7.org/fhir/R4/index.html" target="_blank">Spécifications FHIR </a>
@@ -200,7 +173,7 @@
 
             <a href="#bottom">bas de page</a>
 
-          | <a href="annexe-securite.html">suivant &gt;</a>
+          | <a href="translationinfo.html">suivant &gt;</a>
 
           </span>
 
@@ -213,6 +186,7 @@
       <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
+
 <style type="text/css">
 h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
 h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
@@ -242,7 +216,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
 </div>
 <ul>
-  <li><a name="l404">​</a><a href="./downloads.html">Téléchargements et usage</a></li>
+  <li><a name="l356">​</a><a href="./downloads.html">Téléchargements et usage</a></li>
   <li><a href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR</a></li>
   <li><a href="https://esante.gouv.fr/">Site de l'ANS</a></li>
 </ul>
@@ -280,7 +254,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:var(--ig-right);">&nbsp;
 
-                <a href="annexe-securite.html">suivant &gt;</a>
+                <a href="translationinfo.html">suivant &gt;</a>
 
               </td>
             </tr>
@@ -296,8 +270,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.pdlgc#1.0.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-06-22 13:08:00 +0000">
-    2026-06-22
+  <span title="2026-06-25 08:44:00 +0000">
+    2026-06-25
   </span>
 
           <br/>

@@ -1,4 +1,39 @@
 [{
+  "id" : "PDLGC-Fournisseur-Destinataire",
+  "type" : "ActorDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ActorDefinition/PDLGC-Fournisseur-Destinataire",
+  "version" : "1.0.0",
+  "name" : "PDLGC_FournisseurDestinataire"
+},
+{
+  "id" : "PDLGC-Fournisseur-Sortant",
+  "type" : "ActorDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ActorDefinition/PDLGC-Fournisseur-Sortant",
+  "version" : "1.0.0",
+  "name" : "PDLGC_FournisseurSortant"
+},
+{
+  "id" : "PDLGC-PS-Destinataire",
+  "type" : "ActorDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ActorDefinition/PDLGC-PS-Destinataire",
+  "version" : "1.0.0",
+  "name" : "PDLGC_PS_Destinataire"
+},
+{
+  "id" : "PDLGC-PS-Initiateur",
+  "type" : "ActorDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ActorDefinition/PDLGC-PS-Initiateur",
+  "version" : "1.0.0",
+  "name" : "PDLGC_PS_Initiateur"
+},
+{
+  "id" : "PDLGC-Patient",
+  "type" : "ActorDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ActorDefinition/PDLGC-Patient",
+  "version" : "1.0.0",
+  "name" : "PDLGC_Patient"
+},
+{
   "id" : "competence-code-system",
   "type" : "CodeSystem",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/competence-code-system",
