@@ -266,8 +266,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
   <li><a href="#structure-du-guide-dimplémentation" id="markdown-toc-structure-du-guide-dimplémentation">Structure du guide d'implémentation</a></li>
   <li><a href="#scénarios-et-cas-dusage" id="markdown-toc-scénarios-et-cas-dusage">Scénarios et cas d'usage</a></li>
-  <li><a href="#définitions" id="markdown-toc-définitions">Définitions</a></li>
   <li><a href="#cadre-juridique" id="markdown-toc-cadre-juridique">Cadre juridique</a></li>
+  <li><a href="#définitions" id="markdown-toc-définitions">Définitions</a></li>
   <li><a href="#organisation-des-processus-collaboratifs" id="markdown-toc-organisation-des-processus-collaboratifs">Organisation des processus collaboratifs</a></li>
   <li><a href="#acteurs" id="markdown-toc-acteurs">Acteurs</a></li>
   <li><a href="#dépendances" id="markdown-toc-dépendances">Dépendances</a></li>
@@ -302,22 +302,22 @@ This guide defines the functional and technical specifications for the portabili
 <div style="background-color: #e8f4f8; border-left: 4px solid #0077be; padding: 15px; margin: 20px 0;">
     <strong>Spécifications</strong>
     <ul style="margin: 10px 0 0 0;"><a name="l494">​</a>
-    La section <a href="#specifications">Spécifications</a> présente les spécifications fonctionnelles et techniques associcées à chaque processus collaboratif &lt;/br&gt;
-    Les <strong>spécifications fonctionnelles</strong> présentent notamment une définition du processus collaboratif et les concepts métiers utilisés.&lt;/br&gt;
+    La section <a href="#specifications">Spécifications</a> présente les spécifications fonctionnelles et techniques associcées à chaque processus collaboratif <br/>
+    Les <strong>spécifications fonctionnelles</strong> présentent notamment une définition du processus collaboratif et les concepts métiers utilisés.<br/>
     Les <strong>spécifications techniques</strong> décrivent quant à elles la structure de l'archive de portabilité, les formats des documents et les métadonnées nécessaires aux échanges entre systèmes d'information.
     </ul>
 </div>
 
 <div style="background-color: #f0edf5 ; border-left: 4px solid #7b52a8; padding: 15px; margin: 20px 0;">
     <strong>Ressources de conformité</strong>
-    <ul style="margin: 10px 0 0 0;"><a name="l512">​</a>
-    La section <a href="#artifacts">Ressources de conformité</a> liste les différents artefacts supportant les spécifications fonctionnelles et techniques&lt;/br&gt;
+    <ul style="margin: 10px 0 0 0;"><a name="l516">​</a>
+    La section <a href="#artifacts">Ressources de conformité</a> liste les différents artefacts supportant les spécifications fonctionnelles et techniques
     </ul>
 </div>
 
 <div style="background-color: #fdf0e6; border-left: 4px solid #e07b39; padding: 15px; margin: 20px 0;">
     <strong>Annexes</strong>
-    <ul style="margin: 10px 0 0 0;"><a name="l524">​</a>
+    <ul style="margin: 10px 0 0 0;"><a name="l528">​</a>
     Cette <a href="#annexes">section</a> renvoie aux annexes relatives à la sécurité, aux téléchargements, et à toute autre documentation utile au présent volet
     </ul>
 </div>
@@ -351,7 +351,7 @@ This guide defines the functional and technical specifications for the portabili
     <tr>
       <td>Export unitaire</td>
       <td>Dossier d'un patient</td>
-      <td>Droit du patient, transfert à un confrère</td>
+      <td>Droit du patient, transfert à un confrère,…</td>
       <td>Immédiat ou sans délai indu</td>
     </tr>
   </tbody>
@@ -395,6 +395,28 @@ This guide defines the functional and technical specifications for the portabili
 
 <p><br/></p>
 
+<h3 id="cadre-juridique">Cadre juridique</h3>
+
+<h4 id="cadre-réglementaire">Cadre réglementaire</h4>
+
+<p>La portabilité des données LGC est encadrée par les textes suivants :</p>
+
+<ul>
+  <li>Article L.1470-5-1 du Code de la santé publique (article 55 de la loi n° 2026-403 du 26 mai 2026 de simplification de la vie économique), instaurant l'obligation de transfert des données par le fournisseur sortant ;</li>
+  <li>Article L.1470-5 du Code de la santé publique, fondant l'opposabilité du présent référentiel par arrêté du ministre chargé de la santé ;</li>
+  <li>Article L.1470-6 du Code de la santé publique et décret n° 2026-153 du 3 mars 2026, définissant les modalités de contrôle et de sanction ;</li>
+  <li>Règlement Général sur la Protection des Données (RGPD) ;</li>
+  <li>Référentiels HDS, RGS et CI-SIS.</li>
+</ul>
+
+<p>Le présent référentiel complète ces obligations sans se substituer aux obligations pénales ou civiles existantes.</p>
+
+<h4 id="échange-et-traitement-de-données-à-caractère-personnel">Échange et traitement de données à caractère personnel</h4>
+
+<p>L'export et le transfert de données de santé dans le cadre de la portabilité constituent un traitement de données à caractère personnel, qui entre dans le champ d'application du RGPD. Le professionnel de santé demeure responsable de traitement pour les données dont il a la charge. Le processus de portabilité ne peut entraîner aucune rupture de la confidentialité des données de santé.</p>
+
+<p><br/></p>
+
 <h3 id="définitions">Définitions</h3>
 
 <p><strong>Portabilité des données LGC</strong> : La portabilité des données des logiciels de gestion de cabinet désigne l'obligation faite aux éditeurs de permettre l'export et le transfert des données de santé traitées dans leur logiciel, sans entrave technique, contractuelle ou tarifaire sur le périmètre pivot.</p>
@@ -423,28 +445,6 @@ Les données transverses peuvent être incluses ou exclues du périmètre d'expo
 
 <p><br/></p>
 
-<h3 id="cadre-juridique">Cadre juridique</h3>
-
-<h4 id="cadre-réglementaire">Cadre réglementaire</h4>
-
-<p>La portabilité des données LGC est encadrée par les textes suivants :</p>
-
-<ul>
-  <li>Article L.1470-5-1 du Code de la santé publique (article 55 de la loi n° 2026-403 du 26 mai 2026 de simplification de la vie économique), instaurant l'obligation de transfert des données par le fournisseur sortant ;</li>
-  <li>Article L.1470-5 du Code de la santé publique, fondant l'opposabilité du présent référentiel par arrêté du ministre chargé de la santé ;</li>
-  <li>Article L.1470-6 du Code de la santé publique et décret n° 2026-153 du 3 mars 2026, définissant les modalités de contrôle et de sanction ;</li>
-  <li>Règlement Général sur la Protection des Données (RGPD) ;</li>
-  <li>Référentiels HDS, RGS et CI-SIS.</li>
-</ul>
-
-<p>Le présent référentiel complète ces obligations sans se substituer aux obligations pénales ou civiles existantes.</p>
-
-<h4 id="échange-et-traitement-de-données-à-caractère-personnel">Échange et traitement de données à caractère personnel</h4>
-
-<p>L'export et le transfert de données de santé dans le cadre de la portabilité constituent un traitement de données à caractère personnel, qui entre dans le champ d'application du RGPD. Le professionnel de santé demeure responsable de traitement pour les données dont il a la charge. Le processus de portabilité ne peut entraîner aucune rupture de la confidentialité des données de santé.</p>
-
-<p><br/></p>
-
 <h3 id="organisation-des-processus-collaboratifs">Organisation des processus collaboratifs</h3>
 
 <p>Le domaine " Portabilité de données LGC" comprend les différentes étapes liées à une demande de portabilité de données médicales et administratives d'un patient.</p>
@@ -454,37 +454,6 @@ Les données transverses peuvent être incluses ou exclues du périmètre d'expo
 <h3 id="acteurs">Acteurs</h3>
 
 <p>Le tableau ci-dessous récapitule les acteurs pouvant être impliqués dans les différents processus collaboratif</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Acteur</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Fournisseur Sortant</strong></td>
-      <td>Éditeur du LGC dont le contrat prend fin ou depuis lequel l'utilisateur souhaite exporter ses données. C'est lui qui est redevable de l'obligation de portabilité gratuite du Périmètre Pivot sous 30 jours calendaires.</td>
-    </tr>
-    <tr>
-      <td><strong>Fournisseur Destinataire</strong></td>
-      <td>Editeur recevant les données en vue de leur intégration. Il est tenu d'une obligation de moyens pour l'import dès lors que le format est conforme au référentiel.</td>
-    </tr>
-    <tr>
-      <td><strong>Professionnel de Santé initiateur</strong></td>
-      <td>Médecin ou professionnel de santé libéral, demandeur de l'export et responsable du contenu médical transféré.</td>
-    </tr>
-    <tr>
-      <td><strong>Professionnel de Santé Destinataire</strong></td>
-      <td>Médecin ou professionnel de santé libéral recevant l'export via son LGC.</td>
-    </tr>
-    <tr>
-      <td><strong>Patient</strong></td>
-      <td>Bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP). Peut demander directement l'export de ses données.</td>
-    </tr>
-  </tbody>
-</table>
 
 <table class="lines"><tr><td style="background-color: #eeeeee">Acteur</td><td style="background-color: #eeeeee">Type d'acteur</td><td style="background-color: #eeeeee">Description</td></tr><tr><td><a href="ActorDefinition-PDLGC-Fournisseur-Destinataire.html">PDLGC Fournisseur Destinataire</a></td><td><div><p>System</p>
 </div></td><td><div><p>Editeur recevant les données en vue de leur intégration. Il est tenu d'une obligation de moyens pour l'import dès lors que le format est conforme au référentiel.</p>
@@ -589,7 +558,7 @@ Les données transverses peuvent être incluses ou exclues du périmètre d'expo
           IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.pdlgc#1.0.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-06-25 08:44:00 +0000">
+  <span title="2026-06-25 09:51:00 +0000">
     2026-06-25
   </span>
 

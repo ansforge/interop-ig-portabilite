@@ -32,7 +32,7 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
   "name" : "MeltingPotVS",
   "title" : "Melting Pot Value Set",
   "status" : "draft",
-  "date" : "2026-06-25T08:44:50+00:00",
+  "date" : "2026-06-25T09:51:35+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
