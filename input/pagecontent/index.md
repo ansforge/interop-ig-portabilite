@@ -40,7 +40,7 @@ Le présent guide d'implémentation traduit en spécifications fonctionnelles et
 <div style="background-color: #edf5ec ; border-left: 4px solid #4a9e5c; padding: 15px; margin: 20px 0;">
     <strong>Contexte métier</strong>
     <ul style="margin: 10px 0 0 0;">
-    Le contexte métier, défini sur la présente page, présente les <a href="#contexte-metier-cas-usage">cas d'usage</a>, les <a href="#contexte-metier-def-cadre-juridique">définitions et le cadre juridique</a> ainsi que l'<a href="#contexte-metier-orga-processus-acteurs">organisation des processus collaboratifs et les acteurs impliqués</a>.
+    Le contexte métier, défini sur la présente page, présente les <a href="#contexte-metier-cas-usage">cas d'usage</a>, les <a href="#contexte-metier-definitions">définitions</a>, le <a href="#contexte-metier-cadre-juridique">cadre juridique</a> ainsi que l'<a href="#contexte-metier-orga-processus">organisation des processus collaboratifs</a> et les <a href="#contexte-metier-acteurs">acteurs impliqués</a>.
     </ul>
 </div>
 
@@ -67,15 +67,33 @@ Le présent guide d'implémentation traduit en spécifications fonctionnelles et
     </ul>
 </div>
 
-### Cas d'usage
+### Scénarios et cas d'usage
 
 {% include contexte-metier-cas-usage.md %}
 
 <br>
 
-### Définitions et cadre juridique
+### Définitions
 
-{% include contexte-metier-def-cadre-juridique.md %}
+{% include contexte-metier-definitions.md %}
+
+<br>
+
+### Cadre juridique
+
+{% include contexte-metier-cadre-juridique.md %}
+
+<br>
+
+### Organisation des processus collaboratifs
+
+{% include contexte-metier-orga-processus.md %}
+
+<br>
+
+### Acteurs
+
+{% include contexte-metier-acteurs.md %}
 
 <br>
 
@@ -89,5 +107,3 @@ Le présent guide d'implémentation traduit en spécifications fonctionnelles et
 ### Propriété intellectuelle
 
 {% lang-fragment ip-statements.xhtml %}
-
-{% include svg-interactive-script.html %}

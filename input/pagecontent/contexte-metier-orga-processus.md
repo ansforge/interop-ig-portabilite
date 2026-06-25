@@ -1,0 +1,1 @@
+Le domaine " Portabilité de données LGC" comprend les différentes étapes liées à une demande de portabilité de données médicales et administratives d'un patient.

@@ -1,4 +1,4 @@
-Cette section décrit 3 contexte et plusieurs cas d'usage (non exclusifs) d'utilisation de la Portabilité extraits du **Référentiel de sécurité, d'interopérabilité et d'éthique relatif à la portabilité des données des LGC**.
+Cette section décrit 3 Scenarios et plusieurs cas d'usage (non exclusifs) d'utilisation de la Portabilité extraits du **Référentiel de sécurité, d'interopérabilité et d'éthique relatif à la portabilité des données des LGC**.
 
 | Contexte | Périmètre | Exemple | Délai attendu |
 |---|---|---|---|
@@ -6,9 +6,9 @@ Cette section décrit 3 contexte et plusieurs cas d'usage (non exclusifs) d'util
 | Export ciblé | Sous-ensemble de la patientèle | Départ d'un praticien, réquisition judiciaire ciblée,... | ≤ 30 jours |
 | Export unitaire | Dossier d'un patient | Droit du patient, transfert à un confrère | Immédiat ou sans délai indu |
 
-#### Contexte 1 : Export massif
+#### Scenario 1 : Export massif
 
-Dans ce contexte, l'intégralité de la patientèle est transférée d'un LGC A vers un LGC B.
+Dans ce contexte, l'intégralité de la patientèle est transférée d'un fournisseur sortant vers un fournisseur destinataire.
 
 **Cas d'usage 1.1 - changement de LGC** : Un médecin généraliste exerçant en cabinet libéral décide de changer de logiciel de gestion de cabinet. Son contrat avec l'éditeur sortant prend fin et il souhaite migrer l'intégralité de sa patientèle vers le nouveau logiciel.
 
@@ -18,11 +18,11 @@ Dans ce contexte, l'intégralité de la patientèle est transférée d'un LGC A 
 
 **Cas d'usage 1.4 - Export d'archivage** : un professionnel ou une structure cesse l'utilisation d'un LGC sans migration immédiate vers un autre logiciel. Les données sont exportées afin d'assurer leur conservation et leur disponibilité pour répondre aux obligations réglementaires ou aux besoins ultérieurs de continuité des soins.
 
-#### Contexte 2 : Export ciblé
+#### Scenario 2 : Export ciblé
 
-Dans ce contexte, une sélection de la patientièle est transférée d'un LGC A vers un LGC B. La sélection peut correspondre à un filtre par professionnel de santé ou par période.
+Dans ce contexte, une sélection de la patientièle est transférée d'un fournisseur sortant vers un fournisseur destinataire. La sélection peut correspondre à un filtre par professionnel de santé ou par période.
 
-**Cas d'usage 2.1 - Scission d'une structure collective** : Un praticien quitte une maison de santé pluriprofessionnelle (MSP) pour s'installer en cabinet individuel. Il souhaite récupérer les dossiers de ses patients
+**Cas d'usage 2.1 - Scission d'une structure collective** : Un praticien quitte une maison de santé pluriprofessionnelle (MSP) pour s'installer en cabinet individuel. Il souhaite récupérer les dossiers de ses patients.
 
 **Cas d'usage 2.2 - Cessation d'activité d'une structure** : un centre de santé ou un cabinet de groupe cesse son activité. Les dossiers des patients doivent être transférés vers plusieurs professionnels ou structures assurant la continuité des soins.
 
@@ -31,9 +31,9 @@ Dans ce contexte, une sélection de la patientièle est transférée d'un LGC A 
 **Cas d'usage 2.4 - Réquisition judiciaire ciblée** : dans le cadre d'une procédure judiciaire ou d'une expertise, une autorité compétente demande la communication d'un ensemble déterminé de dossiers répondant à des critères précis (patients, période, activité, etc.). Le professionnel de santé doit pouvoir réaliser un export sélectif des données concernées, dans le respect des exigences de sécurité, de traçabilité et de confidentialité.
 
 
-#### Contexte 3 : Export unitaire
+#### Scenario 3 : Export unitaire
 
-Dans ce contexte, seul un dossier patient est transféré d'un LGC A vers un LGC B.
+Dans ce contexte, seul un dossier patient est transféré d'un fournisseur sortant vers un fournisseur destinataire.
 
 **Cas d'usage 3.1 - Exercice du droit du patient** : un patient demande la communication ou la portabilité de son dossier médical. Le professionnel de santé doit être en mesure de produire un export individuel des données le concernant dans un format exploitable et lisible.
 
