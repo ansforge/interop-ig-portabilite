@@ -1,6 +1,6 @@
 Cette section décrit 3 Scenarios et plusieurs cas d'usage (non exclusifs) d'utilisation de la Portabilité extraits du **Référentiel de sécurité, d'interopérabilité et d'éthique relatif à la portabilité des données des LGC**.
 
-| Contexte | Périmètre | Exemple | Délai attendu |
+| Scenario | Périmètre | Exemple | Délai attendu |
 |---|---|---|---|
 | Export massif | Intégralité de la patientèle | Changement de LGC, départ à la retraite,... | ≤ 30 jours |
 | Export ciblé | Sous-ensemble de la patientèle | Départ d'un praticien, réquisition judiciaire ciblée,... | ≤ 30 jours |

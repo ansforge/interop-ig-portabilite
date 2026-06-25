@@ -1,0 +1,16 @@
+@startuml DiagrammePaquetage
+
+hide stereotype
+
+skinparam component {
+  BorderColor black
+  BackgroundColor #SkyBlue
+  FontStyle bold
+}
+
+package "Export de données de santé" #Seashell   {
+        package "Portabilité de données LGC" as PDLGC [[specifications.html]] #Azure
+        package "Echanges de documents de Santé via MSS" as EDS_MSS [[https://esante.gouv.fr/volet-echange-de-documents-de-sante]] #Azure
+}
+
+@enduml 

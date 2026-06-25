@@ -101,9 +101,6 @@ Le présent guide d'implémentation traduit en spécifications fonctionnelles et
 
 {% lang-fragment dependency-table.xhtml %}
 
-
-{% include dependency-table-fr.xhtml %}
-
 ### Propriété intellectuelle
 
 {% lang-fragment ip-statements.xhtml %}
