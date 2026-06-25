@@ -99,7 +99,7 @@
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/competence-code-system",
-    "version" : "1.0.0",
+    "version" : "0.1.0",
     "status" : "draft",
     "name" : "CompetenceCS",
     "title" : "Compétences CodeSystem",
@@ -110,14 +110,14 @@
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/type-carte-code-system",
-    "version" : "1.0.0",
+    "version" : "0.1.0",
     "status" : "draft",
     "name" : "TypeCarteCS",
     "title" : "Type de carte",
     "description" : "Type de carte professionnelle et personnelle.",
     "uses" : {
     },
-    "ValueSet-MeltingPotVS.html" : "Melting Pot Value Set",
-    "ValueSet-TypeCarteVS.html" : "Type Carte Value Set"
+    "ValueSet-TypeCarteVS.html" : "Type Carte Value Set",
+    "ValueSet-MeltingPotVS.html" : "Melting Pot Value Set"
   }]
 }

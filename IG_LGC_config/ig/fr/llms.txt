@@ -1,4 +1,4 @@
-# ans.fhir.fr.pdlgc#1.0.0: Portabilité des Données LGC(fr)
+# ans.fhir.fr.pdlgc#0.1.0: Portabilité des Données LGC(fr)
 
 ## Pages
 

@@ -7,11 +7,11 @@
     "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ans.fhir.fr.pdlgc</b></p><a name=\"en-ans.fhir.fr.pdlgc\"> </a><a name=\"en-hcans.fhir.fr.pdlgc\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: fr</p></div><h2>PDLGC</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/fhir/pdlgc/ImplementationGuide/ans.fhir.fr.pdlgc</pre><div><p>Architecture d'archive de portabilité des données LGC</p>\n</div></div>"
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ImplementationGuide/ans.fhir.fr.pdlgc",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "PDLGC",
   "title" : "Portabilité des Données LGC",
   "status" : "draft",
-  "date" : "2026-06-22T09:57:24+00:00",
+  "date" : "2026-06-25T10:01:53+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -900,7 +900,7 @@
       },
       "name" : "frpatient-exemple",
       "description" : "Exemple d'un patient français",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/fr-patient|1.0.0"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/fr-patient|0.1.0"
     },
     {
       "extension" : [{

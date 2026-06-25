@@ -1,4 +1,4 @@
-# Informations sur la traduction - Portabilité des Données LGC v1.0.0
+# Informations sur la traduction - Portabilité des Données LGC v0.1.0
 
 ## Informations sur la traduction
 

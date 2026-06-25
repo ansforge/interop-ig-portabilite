@@ -10,11 +10,11 @@
   "id" : "ans.fhir.fr.pdlgc",
   "language" : "fr",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ImplementationGuide/ans.fhir.fr.pdlgc",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "PDLGC",
   "title" : "Portabilité des Données LGC",
   "status" : "draft",
-  "date" : "2026-06-22T09:57:24+00:00",
+  "date" : "2026-06-25T10:01:53+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -903,7 +903,7 @@
       },
       "name" : "frpatient-exemple",
       "description" : "Exemple d'un patient français",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/fr-patient|1.0.0"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/fr-patient|0.1.0"
     },
     {
       "extension" : [{

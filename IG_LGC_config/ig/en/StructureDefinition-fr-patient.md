@@ -1,4 +1,4 @@
-# Patient français - Portabilité des Données LGC v1.0.0
+# Patient français - Portabilité des Données LGC v0.1.0
 
 ## Resource Profile: Patient français 
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-fr-patient.csv), 
   "resourceType" : "StructureDefinition",
   "id" : "fr-patient",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/fr-patient",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "FrPatient",
   "title" : "Patient français",
   "status" : "draft",
-  "date" : "2026-06-22T09:57:24+00:00",
+  "date" : "2026-06-25T10:01:53+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -106,7 +106,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-patient.csv), 
       "max" : "1",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/EyeColor|1.0.0"]
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/EyeColor|0.1.0"]
       }],
       "mustSupport" : true
     },
@@ -144,7 +144,7 @@ Other representations of profile: [CSV](../StructureDefinition-fr-patient.csv), 
       "short" : "male | female | other",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/ModifiedAdministrativeGender|1.0.0"
+        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/ModifiedAdministrativeGender|0.1.0"
       }
     }]
   }

@@ -1,4 +1,4 @@
-# EyeColor Value Set - Portabilité des Données LGC v1.0.0
+# EyeColor Value Set - Portabilité des Données LGC v0.1.0
 
 ## ValueSet: EyeColor Value Set 
 
@@ -28,11 +28,11 @@ Different eye colors.
   "resourceType" : "ValueSet",
   "id" : "EyeColorVS",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/EyeColorVS",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "EyeColorVS",
   "title" : "EyeColor Value Set",
   "status" : "draft",
-  "date" : "2026-06-22T09:57:24+00:00",
+  "date" : "2026-06-25T10:01:53+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
