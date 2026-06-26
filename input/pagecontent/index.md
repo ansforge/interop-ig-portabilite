@@ -1,6 +1,3 @@
-{% include figure-caption.html %}
-{% include svg-interactive-styles.html %}
-
 <p style="padding: 5px; border-radius: 5px; border: 2px solid maroon; background: #ffffe6; width: 65%">
 <b>PDLGC Implementation Guide - Data portability for Practice Management Software</b><br>
 This guide defines the functional and technical specifications for the portability of health data between practice management software vendors, in accordance with Article L.1470-5-1 of the French Public Health Code.
@@ -111,5 +108,3 @@ Le domaine "Export de données de santé" comprend les différents volets permet
 ### Propriété intellectuelle
 
 {% lang-fragment ip-statements.xhtml %}
-
-{% include svg-interactive-script.html %}
