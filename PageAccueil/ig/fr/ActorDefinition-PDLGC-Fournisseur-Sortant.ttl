@@ -24,7 +24,7 @@
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.version"^^xsd:anyURI ] ;
      fhir:value [
        a fhir:string ;
-       fhir:v "1.0.0"
+       fhir:v "0.1.0"
      ]
   ] [
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.name"^^xsd:anyURI ] ;
@@ -54,7 +54,7 @@
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.date"^^xsd:anyURI ] ;
      fhir:value [
        a fhir:dateTime ;
-       fhir:v "2026-06-25T09:51:35+00:00"^^xsd:dateTime
+       fhir:v "2026-06-26T10:11:25+00:00"^^xsd:dateTime
      ]
   ] [
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.publisher"^^xsd:anyURI ] ;

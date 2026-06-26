@@ -1,4 +1,4 @@
-# PDLGC Professionnel de Santé Initiateur - Portabilité des Données LGC v1.0.0
+# PDLGC Professionnel de Santé Initiateur - Portabilité des Données LGC v0.1.0
 
 ## ActorDefinition: PDLGC Professionnel de Santé Initiateur 
 

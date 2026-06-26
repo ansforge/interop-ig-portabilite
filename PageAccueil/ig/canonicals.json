@@ -2,97 +2,97 @@
   "id" : "PDLGC-Fournisseur-Destinataire",
   "type" : "ActorDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ActorDefinition/PDLGC-Fournisseur-Destinataire",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "PDLGC_FournisseurDestinataire"
 },
 {
   "id" : "PDLGC-Fournisseur-Sortant",
   "type" : "ActorDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ActorDefinition/PDLGC-Fournisseur-Sortant",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "PDLGC_FournisseurSortant"
 },
 {
   "id" : "PDLGC-PS-Destinataire",
   "type" : "ActorDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ActorDefinition/PDLGC-PS-Destinataire",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "PDLGC_PS_Destinataire"
 },
 {
   "id" : "PDLGC-PS-Initiateur",
   "type" : "ActorDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ActorDefinition/PDLGC-PS-Initiateur",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "PDLGC_PS_Initiateur"
 },
 {
   "id" : "PDLGC-Patient",
   "type" : "ActorDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ActorDefinition/PDLGC-Patient",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "PDLGC_Patient"
 },
 {
   "id" : "competence-code-system",
   "type" : "CodeSystem",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/competence-code-system",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "CompetenceCS"
 },
 {
   "id" : "type-carte-code-system",
   "type" : "CodeSystem",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/type-carte-code-system",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "TypeCarteCS"
 },
 {
   "id" : "ans.fhir.fr.pdlgc",
   "type" : "ImplementationGuide",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ImplementationGuide/ans.fhir.fr.pdlgc",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "PDLGC"
 },
 {
   "id" : "EyeColor",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/EyeColor",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "EyeColor"
 },
 {
   "id" : "fr-patient",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/fr-patient",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "FrPatient"
 },
 {
   "id" : "EyeColorVS",
   "type" : "ValueSet",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/EyeColorVS",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "EyeColorVS"
 },
 {
   "id" : "MeltingPotVS",
   "type" : "ValueSet",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/MeltingPotVS",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "MeltingPotVS"
 },
 {
   "id" : "ModifiedAdministrativeGender",
   "type" : "ValueSet",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/ModifiedAdministrativeGender",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "ModifiedAdministrativeGender"
 },
 {
   "id" : "TypeCarteVS",
   "type" : "ValueSet",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/TypeCarteVS",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "TypeCarteVS"
 }]

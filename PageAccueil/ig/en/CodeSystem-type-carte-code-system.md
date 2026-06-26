@@ -1,4 +1,4 @@
-# Type de carte - Portabilité des Données LGC v1.0.0
+# Type de carte - Portabilité des Données LGC v0.1.0
 
 ## CodeSystem: Type de carte 
 
@@ -23,11 +23,11 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "type-carte-code-system",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/type-carte-code-system",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "TypeCarteCS",
   "title" : "Type de carte",
   "status" : "draft",
-  "date" : "2026-06-25T09:51:35+00:00",
+  "date" : "2026-06-26T10:11:25+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

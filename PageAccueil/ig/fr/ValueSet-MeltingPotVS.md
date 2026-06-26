@@ -1,4 +1,4 @@
-# Melting Pot Value Set - Portabilité des Données LGC v1.0.0
+# Melting Pot Value Set - Portabilité des Données LGC v0.1.0
 
 ## ValueSet: Melting Pot Value Set 
 
@@ -28,11 +28,11 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
   "resourceType" : "ValueSet",
   "id" : "MeltingPotVS",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/MeltingPotVS",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "MeltingPotVS",
   "title" : "Melting Pot Value Set",
   "status" : "draft",
-  "date" : "2026-06-25T09:51:35+00:00",
+  "date" : "2026-06-26T10:11:25+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -62,14 +62,14 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
     },
     {
       "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/competence-code-system",
-      "version" : "1.0.0",
+      "version" : "0.1.0",
       "concept" : [{
         "code" : "C01"
       }]
     },
     {
       "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/type-carte-code-system",
-      "version" : "1.0.0"
+      "version" : "0.1.0"
     }]
   }
 }

@@ -4,14 +4,14 @@
   "language" : "fr",
   "text" : {
     "status" : "generated",
-    "div" : "<div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs TypeCarteVS</b></p><a name=\"TypeCarteVS\"> </a><a name=\"hcTypeCarteVS\"> </a><ul><li>Include tous les codes définis dans <a href=\"CodeSystem-type-carte-code-system.html\"><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/type-carte-code-system</code></a><span title=\"La version est explicitement indiquée comme étant 1.0.0\"> version &#x1F4CD;1.0.0</span></li></ul></div>"
+    "div" : "<div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs TypeCarteVS</b></p><a name=\"TypeCarteVS\"> </a><a name=\"hcTypeCarteVS\"> </a><ul><li>Include tous les codes définis dans <a href=\"CodeSystem-type-carte-code-system.html\"><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/type-carte-code-system</code></a><span title=\"La version est explicitement indiquée comme étant 0.1.0\"> version &#x1F4CD;0.1.0</span></li></ul></div>"
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/TypeCarteVS",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "TypeCarteVS",
   "title" : "Type Carte Value Set",
   "status" : "draft",
-  "date" : "2026-06-25T09:51:35+00:00",
+  "date" : "2026-06-26T10:11:25+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -31,7 +31,7 @@
   "compose" : {
     "include" : [{
       "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/type-carte-code-system",
-      "version" : "1.0.0"
+      "version" : "0.1.0"
     }]
   }
 }

@@ -1,4 +1,4 @@
-# EyeColor - Portabilité des Données LGC v1.0.0
+# EyeColor - Portabilité des Données LGC v0.1.0
 
 ## Extension: 
 
@@ -31,10 +31,10 @@ Other representations of profile: [CSV](../StructureDefinition-EyeColor.csv), [E
   "resourceType" : "StructureDefinition",
   "id" : "EyeColor",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/EyeColor",
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "name" : "EyeColor",
   "status" : "draft",
-  "date" : "2026-06-25T09:51:35+00:00",
+  "date" : "2026-06-26T10:11:25+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -90,7 +90,7 @@ Other representations of profile: [CSV](../StructureDefinition-EyeColor.csv), [E
       }],
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/EyeColorVS|1.0.0"
+        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/EyeColorVS|0.1.0"
       }
     }]
   }

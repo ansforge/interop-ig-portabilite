@@ -1,7 +1,7 @@
 {
-  "version" : "1.0.0",
+  "version" : "0.1.0",
   "fhirVersion" : ["4.0.1"],
-  "date" : "20260625095135",
+  "date" : "20260626101125",
   "name" : "ans.fhir.fr.pdlgc",
   "jurisdiction" : "urn:iso:std:iso:3166#FR"
 }

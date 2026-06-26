@@ -1,4 +1,4 @@
-# Accueil - Portabilité des Données LGC v1.0.0
+# Accueil - Portabilité des Données LGC v0.1.0
 
 ## Accueil
 
@@ -109,9 +109,17 @@ L'export et le transfert de données de santé dans le cadre de la portabilité 
 
 **Données transverses** : données produites ou gérées par le LGC qui ne sont pas rattachées à un dossier patient déterminé, mais qui sont associées à l'activité du professionnel de santé, du cabinet ou de la structure de soins. Elles contribuent au fonctionnement et à l'organisation de l'activité sans constituer des données médicales propres à un patient. Les données transverses comprennent notamment les données d'agenda et de planification (rendez-vous, plages d'ouverture, indisponibilités), les traces et journaux techniques (logs d'accès, de modification ou d'administration) ainsi que certaines données organisationnelles ou de paramétrage liées à l'exercice du professionnel ou de la structure. Les données transverses peuvent être incluses ou exclues du périmètre d'export selon le contexte d'usage, conformément aux règles définies par le présent guide.
 
+ '''
+
 ### Organisation des processus collaboratifs
 
-Le domaine " Portabilité de données LGC" comprend les différentes étapes liées à une demande de portabilité de données médicales et administratives d'un patient.
+Le domaine "Export de données de santé" comprend les différents volets permettant un échange de données de santé s'appuyant sur le profil IHE_XDM
+
+### Organisation des processus collaboratifs - Test
+
+Le domaine "Export de données de santé" comprend les différents volets permettant un échange de données de santé s'appuyant sur le profil IHE_XDM
+
+<?xml version="1.0" encoding="us-ascii" standalone="no"?>
 
 ### Acteurs
 
@@ -132,9 +140,15 @@ Le tableau ci-dessous récapitule les acteurs pouvant être impliqués dans les 
 
 
 
+
 ### Propriété intellectuelle
 
 This publication includes IP covered under the following statements.
+
+* ISO Maintains the copyright on the country codes, and controls it's use carefully. For futher details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
+
+* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html): [CompetenceCS](CodeSystem-competence-code-system.md), [EyeColor](StructureDefinition-EyeColor.md)... Show 12 more, [EyeColorVS](ValueSet-EyeColorVS.md), [FrPatient](StructureDefinition-fr-patient.md), [MeltingPotVS](ValueSet-MeltingPotVS.md), [ModifiedAdministrativeGender](ValueSet-ModifiedAdministrativeGender.md), [PDLGC](index.md), [PDLGC_FournisseurDestinataire](ActorDefinition-PDLGC-Fournisseur-Destinataire.md), [PDLGC_FournisseurSortant](ActorDefinition-PDLGC-Fournisseur-Sortant.md), [PDLGC_PS_Destinataire](ActorDefinition-PDLGC-PS-Destinataire.md), [PDLGC_PS_Initiateur](ActorDefinition-PDLGC-PS-Initiateur.md), [PDLGC_Patient](ActorDefinition-PDLGC-Patient.md), [TypeCarteCS](CodeSystem-type-carte-code-system.md) and [TypeCarteVS](ValueSet-TypeCarteVS.md)
+
 
 * This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
 

@@ -1,4 +1,4 @@
-#  - Portabilité des Données LGC v1.0.0
+#  - Portabilité des Données LGC v0.1.0
 
 ## : PDLGC Professionnel de Santé Initiateur - Change History
 
