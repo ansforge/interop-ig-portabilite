@@ -6,8 +6,8 @@
   "status" : "draft",
   "package-id" : "ans.fhir.fr.pdlgc",
   "ig-ver" : "0.1.0",
-  "date" : "Thu, 25 Jun, 2026 10:05:17 +0000",
-  "dateISO8601" : "2026-06-25T10:05:17+00:00",
+  "date" : "Fri, 26 Jun, 2026 10:08:27 +0000",
+  "dateISO8601" : "2026-06-26T10:08:27+00:00",
   "errs" : 0,
   "warnings" : 14,
   "hints" : 91,
@@ -15,5 +15,5 @@
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 1862143448
+  "maxMemory" : 2125234688
 }
