@@ -1,4 +1,5 @@
 @startuml DiagrammePaquetage
+!pragma layout smetana
 
 hide stereotype
 
