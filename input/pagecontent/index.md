@@ -94,7 +94,7 @@ Le domaine "Export de données de santé" comprend les différents volets permet
 
 ### Organisation des processus collaboratifs
 
-{% include contexte-metier-orga-processus.svg %}
+{% include contexte-metier-orga-processus.md %}
 
 
 <br>
