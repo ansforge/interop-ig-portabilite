@@ -1,0 +1,78 @@
+# ans.fhir.fr.pdlgc#0.1.0: Portabilité des Données LGC(en)
+
+## Pages
+
+* [Accueil](index.md)
+* [PDLGC Destinataire - XML Representation](ActorDefinition-PDLGC-Destinataire.xml.md)
+* [PDLGC Destinataire](ActorDefinition-PDLGC-Destinataire-testing.md)
+* [PDLGC Fournisseur Sortant](ActorDefinition-PDLGC-Fournisseur-Sortant.ai.md)
+* [PDLGC Fournisseur Destinataire - XML Representation](ActorDefinition-PDLGC-Fournisseur-Destinataire.xml.md)
+* [PDLGC Destinataire - TTL Representation](ActorDefinition-PDLGC-Destinataire.ttl.md)
+* [](ActorDefinition-PDLGC-Fournisseur-Destinataire.change.history.md)
+* [PDLGC Fournisseur Sortant](ActorDefinition-PDLGC-Fournisseur-Sortant.md)
+* [PDLGC Fournisseur Destinataire - TTL Representation](ActorDefinition-PDLGC-Fournisseur-Destinataire.ttl.md)
+* [Informations sur la traduction](translationinfo.md)
+* [PDLGC Initiateur](ActorDefinition-PDLGC-Initiateur.ai.md)
+* [Autres Ressources](autres_ressources.md)
+* [PDLGC Initiateur - JSON Representation](ActorDefinition-PDLGC-Initiateur.json.md)
+* [PDLGC Fournisseur Destinataire - JSON Representation](ActorDefinition-PDLGC-Fournisseur-Destinataire.json.md)
+* [Artifacts Summary](artifacts.md)
+* [PDLGC Destinataire](ActorDefinition-PDLGC-Destinataire.ai.md)
+* [Téléchargements et usages](annexe-downloads.md)
+* [](ActorDefinition-PDLGC-Initiateur.change.history.md)
+* [PDLGC Fournisseur Destinataire](ActorDefinition-PDLGC-Fournisseur-Destinataire-testing.md)
+* [Spécifications](specifications.md)
+* [](ActorDefinition-PDLGC-Destinataire.change.history.md)
+* [PDLGC Fournisseur Sortant - TTL Representation](ActorDefinition-PDLGC-Fournisseur-Sortant.ttl.md)
+* [PDLGC Destinataire - JSON Representation](ActorDefinition-PDLGC-Destinataire.json.md)
+* [](ActorDefinition-PDLGC-Fournisseur-Sortant.change.history.md)
+* [PDLGC Fournisseur Sortant - JSON Representation](ActorDefinition-PDLGC-Fournisseur-Sortant.json.md)
+* [Historique des versions](change-log.md)
+* [PDLGC Initiateur](ActorDefinition-PDLGC-Initiateur.md)
+* [PDLGC Fournisseur Destinataire](ActorDefinition-PDLGC-Fournisseur-Destinataire.ai.md)
+* [PDLGC Fournisseur Sortant](ActorDefinition-PDLGC-Fournisseur-Sortant-testing.md)
+* [PDLGC Fournisseur Destinataire](ActorDefinition-PDLGC-Fournisseur-Destinataire.md)
+* [PDLGC Initiateur - XML Representation](ActorDefinition-PDLGC-Initiateur.xml.md)
+* [PDLGC Fournisseur Sortant - XML Representation](ActorDefinition-PDLGC-Fournisseur-Sortant.xml.md)
+* [PDLGC Destinataire](ActorDefinition-PDLGC-Destinataire.md)
+* [PDLGC Initiateur](ActorDefinition-PDLGC-Initiateur-testing.md)
+* [Sécurité](annexe-securite.md)
+* [PDLGC Initiateur - TTL Representation](ActorDefinition-PDLGC-Initiateur.ttl.md)
+* [Annexes](annexes.md)
+
+## Resources
+
+### CodeSystems
+
+* [Compétences CodeSystem](CodeSystem-competence-code-system.md)
+* [Type de carte](CodeSystem-type-carte-code-system.md)
+
+### ValueSets
+
+* [EyeColor Value Set](ValueSet-EyeColorVS.md)
+* [Melting Pot Value Set](ValueSet-MeltingPotVS.md)
+* [ModifiedAdministrativeGender](ValueSet-ModifiedAdministrativeGender.md)
+* [Type Carte Value Set](ValueSet-TypeCarteVS.md)
+
+### Resource Profiles
+
+* [Patient français](StructureDefinition-fr-patient.md)
+
+### Extensions
+
+* [EyeColor](StructureDefinition-EyeColor.md)
+
+### Basics
+
+* [PDLGC-Destinataire](Basic-PDLGC-Destinataire.md)
+* [PDLGC-Fournisseur-Destinataire](Basic-PDLGC-Fournisseur-Destinataire.md)
+* [PDLGC-Fournisseur-Sortant](Basic-PDLGC-Fournisseur-Sortant.md)
+* [PDLGC-Initiateur](Basic-PDLGC-Initiateur.md)
+
+### ImplementationGuides
+
+* [Portabilité des Données LGC](ImplementationGuide-ans.fhir.fr.pdlgc.md)
+
+### Examples
+
+* [frpatient-exemple (Patient)](Patient-frpatient-exemple.md)
