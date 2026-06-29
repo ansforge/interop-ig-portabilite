@@ -126,9 +126,9 @@ Le tableau ci-dessous récapitule les acteurs pouvant être impliqués dans les 
 | :--- | :--- | :--- |
 | Acteur | Type d'acteur | Description |
 | [PDLGC Destinataire](ActorDefinition-PDLGC-Destinataire.md) | Person | Destinataire de l'export de données de LGC.Il peut s'agir d'un médecin ou professionnel de santé libéral recevant l'export via son LGC.Il peut également s'agir patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP). Dans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le destinataire. |
+| [PDLGC Initiateur](ActorDefinition-PDLGC-Initiateur.md) | Person | Demandeur de l'export.Il peut s'agir d'un médecin ou professionnel de santé libéral, responsable du contenu médical transféré.Il peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP) |
 | [PDLGC Fournisseur Destinataire](ActorDefinition-PDLGC-Fournisseur-Destinataire.md) | System | Editeur recevant les données en vue de leur intégration. Il est tenu d'une obligation de moyens pour l'import dès lors que le format est conforme au référentiel. |
 | [PDLGC Fournisseur Sortant](ActorDefinition-PDLGC-Fournisseur-Sortant.md) | System | Éditeur du LGC dont le contrat prend fin ou depuis lequel l'utilisateur souhaite exporter ses données. C'est lui qui est redevable de l'obligation de portabilité gratuite du Périmètre Pivot sous 30 jours calendaires. |
-| [PDLGC Initiateur](ActorDefinition-PDLGC-Initiateur.md) | Person | Demandeur de l'export.Il peut s'agir d'un médecin ou professionnel de santé libéral, responsable du contenu médical transféré.Il peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP) |
 
 ### Dépendances
 
