@@ -1,25 +1,24 @@
 PDLGC : Validation Results
 =========================================
 
-err = 0, warn = 14, info = 96
-IG Publisher Version: 2.2.9 Out of date - current version is 2.2.10
-Generated Fri Jun 26 10:12:49 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.pdlgc#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/pdlgc)
+err = 0, warn = 20, info = 102
+IG Publisher Version: 2.2.10
+Generated Mon Jun 29 08:15:28 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.pdlgc#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/pdlgc)
  Build Errors : 41 / 3 / 0
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ActorDefinition-PDLGC-Fournisseur-Destinataire : 0 / 0 / 2
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ActorDefinition-PDLGC-Fournisseur-Sortant : 0 / 0 / 2
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ActorDefinition-PDLGC-PS-Destinataire : 0 / 0 / 2
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ActorDefinition-PDLGC-PS-Initiateur : 0 / 0 / 2
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ActorDefinition-PDLGC-Patient : 0 / 0 / 2
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/CodeSystem-competence-code-system : 0 / 2 / 2
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/CodeSystem-type-carte-code-system : 0 / 2 / 2
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.pdlgc : 0 / 0 / 2
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ActorDefinition-PDLGC-Destinataire : 0 / 0 / 3
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ActorDefinition-PDLGC-Fournisseur-Destinataire : 0 / 0 / 3
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ActorDefinition-PDLGC-Fournisseur-Sortant : 0 / 0 / 3
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ActorDefinition-PDLGC-Initiateur : 0 / 0 / 3
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/CodeSystem-competence-code-system : 0 / 3 / 2
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/CodeSystem-type-carte-code-system : 0 / 3 / 2
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.pdlgc : 0 / 0 / 3
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/Patient-frpatient-exemple : 0 / 1 / 1
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-EyeColor : 0 / 2 / 9
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-fr-patient : 0 / 0 / 73
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ValueSet-EyeColorVS : 0 / 1 / 2
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ValueSet-MeltingPotVS : 0 / 1 / 5
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ValueSet-ModifiedAdministrativeGender : 0 / 1 / 3
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ValueSet-TypeCarteVS : 0 / 1 / 2
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-EyeColor : 0 / 2 / 10
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-fr-patient : 0 / 0 / 74
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ValueSet-EyeColorVS : 0 / 2 / 2
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ValueSet-MeltingPotVS : 0 / 2 / 5
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ValueSet-ModifiedAdministrativeGender : 0 / 2 / 3
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ValueSet-TypeCarteVS : 0 / 2 / 2
 </table>
 == n/a ==
 ERROR: DiagrammePaquetage.svg#/svg/g/g/a at Line 1, column 2390: The link 'specification.html' for "Export d'archive de portabilité" cannot be resolved
@@ -34,15 +33,15 @@ ERROR: en/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 2
 ERROR: en/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 256, column 8: The link 'examples.json.zip' for "Exemples JSON (zip)" cannot be resolved
 ERROR: en/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 257, column 8: The link 'examples.ttl.zip' for "Exemples Turtle (zip)" cannot be resolved
 ERROR: en/autres_ressources.html#/html/body/div/div/div/div/div/ul/li/a at Line 228, column 8: The link './downloads.html' for "Téléchargements et usage" cannot be resolved
-ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 308, column 68: The link '#contexte-metier-cas-usage' for "cas d'usage" cannot be resolved (valid targets: 71 targets)
-ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 308, column 126: The link '#contexte-metier-definitions' for "définitions" cannot be resolved (valid targets: 71 targets)
-ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 308, column 185: The link '#contexte-metier-cadre-juridique' for "cadre juridique" cannot be resolved (valid targets: 71 targets)
-ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 308, column 260: The link '#contexte-metier-orga-processus' for "organisation des processus collaboratifs" cannot be resolved (valid targets: 71 targets)
-ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 308, column 354: The link '#contexte-metier-acteurs' for "acteurs impliqués" cannot be resolved (valid targets: 71 targets)
-ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 315, column 17: The link '#specifications' for "Spécifications" cannot be resolved (valid targets: 71 targets)
-ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 324, column 17: The link '#artifacts' for "Ressources de conformité" cannot be resolved (valid targets: 71 targets)
-ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 331, column 12: The link '#annexes' for "section" cannot be resolved (valid targets: 71 targets)
-ERROR: en/index.html#/html/body/div/div/div/div/div/p/svg/g/g/a at Line 466, column 2441: The link 'specification.html' for "Export d'archive de portabilité" cannot be resolved
+ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 307, column 68: The link '#contexte-metier-cas-usage' for "cas d'usage" cannot be resolved (valid targets: 68 targets)
+ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 307, column 126: The link '#contexte-metier-definitions' for "définitions" cannot be resolved (valid targets: 68 targets)
+ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 307, column 185: The link '#contexte-metier-cadre-juridique' for "cadre juridique" cannot be resolved (valid targets: 68 targets)
+ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 307, column 260: The link '#contexte-metier-orga-processus' for "organisation des processus collaboratifs" cannot be resolved (valid targets: 68 targets)
+ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 307, column 354: The link '#contexte-metier-acteurs' for "acteurs impliqués" cannot be resolved (valid targets: 68 targets)
+ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 314, column 17: The link '#specifications' for "Spécifications" cannot be resolved (valid targets: 68 targets)
+ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 323, column 17: The link '#artifacts' for "Ressources de conformité" cannot be resolved (valid targets: 68 targets)
+ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 330, column 12: The link '#annexes' for "section" cannot be resolved (valid targets: 68 targets)
+ERROR: en/index.html#/html/body/div/div/div/div/div/p/svg/g/g/a at Line 468, column 2447: The link 'specification.html' for "Export d'archive de portabilité" cannot be resolved
 ERROR: fr/DiagrammePaquetage.svg#/svg/g/g/a at Line 1, column 2390: The link 'specification.html' for "Export d'archive de portabilité" cannot be resolved
 ERROR: fr/annexe-downloads.html#/html/body/div/div/div/div/div/p/a at Line 226, column 48: The link 'package.tgz' for "téléchargeable ici" cannot be resolved
 ERROR: fr/annexe-downloads.html#/html/body/div/div/div/div/div/p/a at Line 228, column 44: The link 'package.tgz' for "package.tgz" cannot be resolved
@@ -54,38 +53,43 @@ ERROR: fr/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 2
 ERROR: fr/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 249, column 8: The link 'examples.json.zip' for "Exemples JSON (zip)" cannot be resolved
 ERROR: fr/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 250, column 8: The link 'examples.ttl.zip' for "Exemples Turtle (zip)" cannot be resolved
 ERROR: fr/autres_ressources.html#/html/body/div/div/div/div/div/ul/li/a at Line 221, column 8: The link './downloads.html' for "Téléchargements et usage" cannot be resolved
-ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 301, column 68: The link '#contexte-metier-cas-usage' for "cas d'usage" cannot be resolved (valid targets: 71 targets)
-ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 301, column 126: The link '#contexte-metier-definitions' for "définitions" cannot be resolved (valid targets: 71 targets)
-ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 301, column 185: The link '#contexte-metier-cadre-juridique' for "cadre juridique" cannot be resolved (valid targets: 71 targets)
-ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 301, column 260: The link '#contexte-metier-orga-processus' for "organisation des processus collaboratifs" cannot be resolved (valid targets: 71 targets)
-ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 301, column 354: The link '#contexte-metier-acteurs' for "acteurs impliqués" cannot be resolved (valid targets: 71 targets)
-ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 308, column 17: The link '#specifications' for "Spécifications" cannot be resolved (valid targets: 71 targets)
-ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 317, column 17: The link '#artifacts' for "Ressources de conformité" cannot be resolved (valid targets: 71 targets)
-ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 324, column 12: The link '#annexes' for "section" cannot be resolved (valid targets: 71 targets)
-ERROR: fr/index.html#/html/body/div/div/div/div/div/p/svg/g/g/a at Line 459, column 2441: The link 'specification.html' for "Export d'archive de portabilité" cannot be resolved
+ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 300, column 68: The link '#contexte-metier-cas-usage' for "cas d'usage" cannot be resolved (valid targets: 68 targets)
+ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 300, column 126: The link '#contexte-metier-definitions' for "définitions" cannot be resolved (valid targets: 68 targets)
+ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 300, column 185: The link '#contexte-metier-cadre-juridique' for "cadre juridique" cannot be resolved (valid targets: 68 targets)
+ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 300, column 260: The link '#contexte-metier-orga-processus' for "organisation des processus collaboratifs" cannot be resolved (valid targets: 68 targets)
+ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 300, column 354: The link '#contexte-metier-acteurs' for "acteurs impliqués" cannot be resolved (valid targets: 68 targets)
+ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 307, column 17: The link '#specifications' for "Spécifications" cannot be resolved (valid targets: 68 targets)
+ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 316, column 17: The link '#artifacts' for "Ressources de conformité" cannot be resolved (valid targets: 68 targets)
+ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 323, column 12: The link '#annexes' for "section" cannot be resolved (valid targets: 68 targets)
+ERROR: fr/index.html#/html/body/div/div/div/div/div/p/svg/g/g/a at Line 461, column 2447: The link 'specification.html' for "Export d'archive de portabilité" cannot be resolved
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml, cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: An HTML fragment from the set [globals-table.xhtml, globals-table.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 5: An HTML fragment from the set [expansion-params.xhtml, expansion-params.xhtml] is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ActorDefinition-PDLGC-Destinataire.json ==
+INFORMATION: ActorDefinition/PDLGC-Destinataire: ActorDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
+INFORMATION: Resource: The resource ActorDefinition/PDLGC-Destinataire could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ActorDefinition-PDLGC-Fournisseur-Destinataire.json ==
 INFORMATION: ActorDefinition/PDLGC-Fournisseur-Destinataire: ActorDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
+INFORMATION: Resource: The resource ActorDefinition/PDLGC-Fournisseur-Destinataire could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ActorDefinition-PDLGC-Fournisseur-Sortant.json ==
 INFORMATION: ActorDefinition/PDLGC-Fournisseur-Sortant: ActorDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
-== fsh-generated/resources/ActorDefinition-PDLGC-PS-Destinataire.json ==
-INFORMATION: ActorDefinition/PDLGC-PS-Destinataire: ActorDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
-== fsh-generated/resources/ActorDefinition-PDLGC-PS-Initiateur.json ==
-INFORMATION: ActorDefinition/PDLGC-PS-Initiateur: ActorDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
-== fsh-generated/resources/ActorDefinition-PDLGC-Patient.json ==
-INFORMATION: ActorDefinition/PDLGC-Patient: ActorDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
+INFORMATION: Resource: The resource ActorDefinition/PDLGC-Fournisseur-Sortant could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/ActorDefinition-PDLGC-Initiateur.json ==
+INFORMATION: ActorDefinition/PDLGC-Initiateur: ActorDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
+INFORMATION: Resource: The resource ActorDefinition/PDLGC-Initiateur could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/CodeSystem-competence-code-system.json ==
 INFORMATION: CodeSystem/competence-code-system: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/competence-code-system: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 WARNING: CodeSystem/competence-code-system: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: Resource: The resource CodeSystem/competence-code-system should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/CodeSystem-type-carte-code-system.json ==
 INFORMATION: CodeSystem/type-carte-code-system: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/type-carte-code-system: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 WARNING: CodeSystem/type-carte-code-system: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+WARNING: Resource: The resource CodeSystem/type-carte-code-system should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.pdlgc.json ==
 INFORMATION: ImplementationGuide.definition.resource[3].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/fr-patient to 0.1.0
+INFORMATION: Resource: The resource ImplementationGuide/ans.fhir.fr.pdlgc could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/Patient-frpatient-exemple.json ==
 WARNING: Patient/frpatient-exemple: Patient.identifier[0].system: No definition could be found for URL value 'urn:oid:1.2.250.1.213.1.4.8'
 == fsh-generated/resources/StructureDefinition-EyeColor.json ==
@@ -98,6 +102,7 @@ INFORMATION: StructureDefinition.snapshot.element[4].constraint[0].source: Pinne
 INFORMATION: StructureDefinition.snapshot.element[4].binding.valueSet: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/EyeColorVS to 0.1.0
 INFORMATION: StructureDefinition.differential.element[3].binding.valueSet: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/EyeColorVS to 0.1.0
 WARNING: StructureDefinition/EyeColor: StructureDefinition.context[0]: Review the extension type for EyeColor: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+INFORMATION: Resource: The resource StructureDefinition/EyeColor could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/EyeColor'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-fr-patient.json ==
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Patient to 4.0.1
@@ -172,19 +177,24 @@ INFORMATION: StructureDefinition.differential.element[6].binding.valueSet: Pinne
 INFORMATION: StructureDefinition/fr-patient: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0 is deprecated with the note: 'Use additionalBinding extension or element instead'
 INFORMATION: StructureDefinition/fr-patient: StructureDefinition.differential.element[3].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/fr-patient: StructureDefinition.snapshot.element[10].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: Resource: The resource StructureDefinition/fr-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-EyeColorVS.json ==
 INFORMATION: ValueSet/EyeColorVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the terminology server https://smt.esante.gouv.fr/fhir does not support batch validation (tests version < 1.7.8)
 WARNING: ValueSet/EyeColorVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: Resource: The resource ValueSet/EyeColorVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-MeltingPotVS.json ==
 INFORMATION: ValueSet.compose.include[1]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/competence-code-system to 0.1.0
 INFORMATION: ValueSet.compose.include[2]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/type-carte-code-system to 0.1.0
 INFORMATION: ValueSet/MeltingPotVS: ValueSet.compose.include[0]: The concepts in the value set include have not been validated because the terminology server https://smt.esante.gouv.fr/fhir does not support batch validation (tests version < 1.7.8)
 INFORMATION: ValueSet/MeltingPotVS: ValueSet.compose.include[1].concept[0]: Reference to draft CodeSystem https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/competence-code-system|0.1.0
 WARNING: ValueSet/MeltingPotVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: Resource: The resource ValueSet/MeltingPotVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-ModifiedAdministrativeGender.json ==
 INFORMATION: ValueSet.compose.include[0]: Pinned the version of http://hl7.org/fhir/administrative-gender to 4.0.1
 INFORMATION: ValueSet.compose.exclude[1]: Pinned the version of http://hl7.org/fhir/administrative-gender to 4.0.1
 WARNING: ValueSet/ModifiedAdministrativeGender: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: Resource: The resource ValueSet/ModifiedAdministrativeGender should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-TypeCarteVS.json ==
 INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/type-carte-code-system to 0.1.0
 WARNING: ValueSet/TypeCarteVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: Resource: The resource ValueSet/TypeCarteVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)

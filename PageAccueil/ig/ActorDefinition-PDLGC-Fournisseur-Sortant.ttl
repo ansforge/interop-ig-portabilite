@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,104 +7,90 @@
 
 <https://interop.esante.gouv.fr/ig/fhir/pdlgc/Basic/PDLGC-Fournisseur-Sortant> a fhir:Basic ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "PDLGC-Fournisseur-Sortant"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : ActorDefinition PDLGC-Fournisseur-Sortant</b></p><a name=\"PDLGC-Fournisseur-Sortant\"> </a><a name=\"hcPDLGC-Fournisseur-Sortant\"> </a><table class=\"grid\"><tr><td><b>Acteur : PDLGC_FournisseurSortant </b></td><td>PDLGC Fournisseur Sortant</td><td>Type : system </td></tr><tr><td colspan=\"3\"><div/></td></tr></table></div><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ActorDefinition PDLGC-Fournisseur-Sortant</b></p><a name=\"en-PDLGC-Fournisseur-Sortant\"> </a><a name=\"en-hcPDLGC-Fournisseur-Sortant\"> </a><table class=\"grid\"><tr><td><b>Actor: PDLGC_FournisseurSortant </b></td><td>PDLGC Fournisseur Sortant</td><td>Type: system </td></tr><tr><td colspan=\"3\"><div/></td></tr></table></div></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:extension ( [
-     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.url"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:uri ;
-       fhir:v "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ActorDefinition/PDLGC-Fournisseur-Sortant"^^xsd:anyURI
+  fhir:Resource.id [ fhir:value "PDLGC-Fournisseur-Sortant"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : ActorDefinition PDLGC-Fournisseur-Sortant</b></p><a name=\"PDLGC-Fournisseur-Sortant\"> </a><a name=\"hcPDLGC-Fournisseur-Sortant\"> </a><table class=\"grid\"><tr><td><b>Acteur : PDLGC_FournisseurSortant </b></td><td>PDLGC Fournisseur Sortant</td><td>Type : system </td></tr><tr><td colspan=\"3\"><div/></td></tr></table></div><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ActorDefinition PDLGC-Fournisseur-Sortant</b></p><a name=\"en-PDLGC-Fournisseur-Sortant\"> </a><a name=\"en-hcPDLGC-Fournisseur-Sortant\"> </a><table class=\"grid\"><tr><td><b>Actor: PDLGC_FournisseurSortant </b></td><td>PDLGC Fournisseur Sortant</td><td>Type: system </td></tr><tr><td colspan=\"3\"><div/></td></tr></table></div></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.url" ] ;
+     fhir:Extension.valueUri [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ActorDefinition/PDLGC-Fournisseur-Sortant" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.version" ] ;
+     fhir:Extension.valueString [ fhir:value "0.1.0" ]
+  ], [
+     fhir:index 2 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.name" ] ;
+     fhir:Extension.valueString [ fhir:value "PDLGC_FournisseurSortant" ]
+  ], [
+     fhir:index 3 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.title" ] ;
+     fhir:Extension.valueString [ fhir:value "PDLGC Fournisseur Sortant" ]
+  ], [
+     fhir:index 4 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.status" ] ;
+     fhir:Extension.valueCode [ fhir:value "active" ]
+  ], [
+     fhir:index 5 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.experimental" ] ;
+     fhir:Extension.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+  ], [
+     fhir:index 6 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.date" ] ;
+     fhir:Extension.valueDateTime [ fhir:value "2026-06-29T08:14:08+00:00"^^xsd:dateTime ]
+  ], [
+     fhir:index 7 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.publisher" ] ;
+     fhir:Extension.valueString [ fhir:value "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ]
+  ], [
+     fhir:index 8 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.contact" ] ;
+     fhir:Extension.valueContactDetail [
+       fhir:ContactDetail.name [ fhir:value "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
+       fhir:ContactDetail.telecom [
+         fhir:index 0 ;
+         fhir:ContactPoint.system [ fhir:value "url" ] ;
+         fhir:ContactPoint.value [ fhir:value "https://esante.gouv.fr" ]
+       ]
      ]
-  ] [
-     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.version"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:string ;
-       fhir:v "0.1.0"
+  ], [
+     fhir:index 9 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.description" ] ;
+     fhir:Extension.valueMarkdown [ fhir:value "Éditeur du LGC dont le contrat prend fin ou depuis lequel l'utilisateur souhaite exporter ses données. C'est lui qui est redevable de l'obligation de portabilité gratuite du Périmètre Pivot sous 30 jours calendaires." ]
+  ], [
+     fhir:index 10 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.jurisdiction" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+         fhir:Coding.code [ fhir:value "FR" ] ;
+         fhir:Coding.display [ fhir:value "France (la)" ]
+       ]
      ]
-  ] [
-     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.name"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:string ;
-       fhir:v "PDLGC_FournisseurSortant"
+  ], [
+     fhir:index 11 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.purpose" ] ;
+     fhir:Extension.valueMarkdown [ fhir:value "System" ]
+  ], [
+     fhir:index 12 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.type" ] ;
+     fhir:Extension.valueCode [ fhir:value "system" ]
+  ] ;
+  fhir:Basic.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/fhir-types" ] ;
+       fhir:Coding.code [ fhir:value "ActorDefinition" ]
      ]
-  ] [
-     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.title"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:string ;
-       fhir:v "PDLGC Fournisseur Sortant"
-     ]
-  ] [
-     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.status"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:code ;
-       fhir:v "active"
-     ]
-  ] [
-     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.experimental"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:boolean ;
-       fhir:v false
-     ]
-  ] [
-     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.date"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:dateTime ;
-       fhir:v "2026-06-26T10:11:25+00:00"^^xsd:dateTime
-     ]
-  ] [
-     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.publisher"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:string ;
-       fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"
-     ]
-  ] [
-     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.contact"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:ContactDetail ;
-       fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
-       fhir:telecom ( [
-         fhir:system [ fhir:v "url" ] ;
-         fhir:value [ fhir:v "https://esante.gouv.fr" ]
-       ] )
-     ]
-  ] [
-     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.description"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:markdown ;
-       fhir:v "Éditeur du LGC dont le contrat prend fin ou depuis lequel l'utilisateur souhaite exporter ses données. C'est lui qui est redevable de l'obligation de portabilité gratuite du Périmètre Pivot sous 30 jours calendaires."
-     ]
-  ] [
-     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.jurisdiction"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:CodeableConcept ;
-       fhir:coding ( [
-         fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "FR" ] ;
-         fhir:display [ fhir:v "France (la)" ]
-       ] )
-     ]
-  ] [
-     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.purpose"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:markdown ;
-       fhir:v "System"
-     ]
-  ] [
-     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.type"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:code ;
-       fhir:v "system"
-     ]
-  ] ) ; # 
-  fhir:code [
-     fhir:coding ( [
-       fhir:system [ fhir:v "http://hl7.org/fhir/fhir-types"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "ActorDefinition" ]
-     ] )
-  ] . # 
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/pdlgc/Basic/PDLGC-Fournisseur-Sortant.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

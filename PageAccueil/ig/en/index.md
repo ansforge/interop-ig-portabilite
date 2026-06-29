@@ -112,13 +112,7 @@ L'export et le transfert de données de santé dans le cadre de la portabilité 
 
 **Données transverses** : données produites ou gérées par le LGC qui ne sont pas rattachées à un dossier patient déterminé, mais qui sont associées à l'activité du professionnel de santé, du cabinet ou de la structure de soins. Elles contribuent au fonctionnement et à l'organisation de l'activité sans constituer des données médicales propres à un patient. Les données transverses comprennent notamment les données d'agenda et de planification (rendez-vous, plages d'ouverture, indisponibilités), les traces et journaux techniques (logs d'accès, de modification ou d'administration) ainsi que certaines données organisationnelles ou de paramétrage liées à l'exercice du professionnel ou de la structure. Les données transverses peuvent être incluses ou exclues du périmètre d'export selon le contexte d'usage, conformément aux règles définies par le présent guide.
 
- '''
-
 ### Organisation des processus collaboratifs
-
-Le domaine "Export de données de santé" comprend les différents volets permettant un échange de données de santé s'appuyant sur le profil IHE_XDM
-
-### Organisation des processus collaboratifs - Test
 
 Le domaine "Export de données de santé" comprend les différents volets permettant un échange de données de santé s'appuyant sur le profil IHE_XDM
 
@@ -133,9 +127,8 @@ Le tableau ci-dessous récapitule les acteurs pouvant être impliqués dans les 
 | Acteur | Type d'acteur | Description |
 | [PDLGC Fournisseur Destinataire](ActorDefinition-PDLGC-Fournisseur-Destinataire.md) | System | Editeur recevant les données en vue de leur intégration. Il est tenu d'une obligation de moyens pour l'import dès lors que le format est conforme au référentiel. |
 | [PDLGC Fournisseur Sortant](ActorDefinition-PDLGC-Fournisseur-Sortant.md) | System | Éditeur du LGC dont le contrat prend fin ou depuis lequel l'utilisateur souhaite exporter ses données. C'est lui qui est redevable de l'obligation de portabilité gratuite du Périmètre Pivot sous 30 jours calendaires. |
-| [PDLGC Patient](ActorDefinition-PDLGC-Patient.md) | Person | Bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP). Peut demander directement l'export de ses données. |
-| [PDLGC Professionnel de Santé Destinataire](ActorDefinition-PDLGC-PS-Destinataire.md) | Person | Médecin ou professionnel de santé libéral recevant l'export via son LGC. |
-| [PDLGC Professionnel de Santé Initiateur](ActorDefinition-PDLGC-PS-Initiateur.md) | Person | Médecin ou professionnel de santé libéral, demandeur de l'export et responsable du contenu médical transféré. |
+| [PDLGC Initiateur](ActorDefinition-PDLGC-Initiateur.md) | Person | Demandeur de l'export. Il peut s'agir d'un médecin ou professionnel de santé libéral, responsable du contenu médical transféré. Il peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP) |
+| [PDLGC Professionnel de Santé Destinataire](ActorDefinition-PDLGC-Destinataire.md) | Person | Destinataire de l'export de données de LGC. Il peut s'agir d'un médecin ou professionnel de santé libéral recevant l'export via son LGC. Il peut également s'agir patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP). Dans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le destinataire. |
 
 ### Dépendances
 
@@ -150,7 +143,7 @@ This publication includes IP covered under the following statements.
 
 * ISO Maintains the copyright on the country codes, and controls it's use carefully. For futher details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
 
-* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html): [CompetenceCS](CodeSystem-competence-code-system.md), [EyeColor](StructureDefinition-EyeColor.md)... Show 12 more, [EyeColorVS](ValueSet-EyeColorVS.md), [FrPatient](StructureDefinition-fr-patient.md), [MeltingPotVS](ValueSet-MeltingPotVS.md), [ModifiedAdministrativeGender](ValueSet-ModifiedAdministrativeGender.md), [PDLGC](index.md), [PDLGC_FournisseurDestinataire](ActorDefinition-PDLGC-Fournisseur-Destinataire.md), [PDLGC_FournisseurSortant](ActorDefinition-PDLGC-Fournisseur-Sortant.md), [PDLGC_PS_Destinataire](ActorDefinition-PDLGC-PS-Destinataire.md), [PDLGC_PS_Initiateur](ActorDefinition-PDLGC-PS-Initiateur.md), [PDLGC_Patient](ActorDefinition-PDLGC-Patient.md), [TypeCarteCS](CodeSystem-type-carte-code-system.md) and [TypeCarteVS](ValueSet-TypeCarteVS.md)
+* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html): [CompetenceCS](CodeSystem-competence-code-system.md), [EyeColor](StructureDefinition-EyeColor.md)... Show 11 more, [EyeColorVS](ValueSet-EyeColorVS.md), [FrPatient](StructureDefinition-fr-patient.md), [MeltingPotVS](ValueSet-MeltingPotVS.md), [ModifiedAdministrativeGender](ValueSet-ModifiedAdministrativeGender.md), [PDLGC](index.md), [PDLGC_FournisseurDestinataire](ActorDefinition-PDLGC-Fournisseur-Destinataire.md), [PDLGC_FournisseurSortant](ActorDefinition-PDLGC-Fournisseur-Sortant.md), [PDLGC_Initiateur](ActorDefinition-PDLGC-Initiateur.md), [PDLGC_PS_Destinataire](ActorDefinition-PDLGC-Destinataire.md), [TypeCarteCS](CodeSystem-type-carte-code-system.md) and [TypeCarteVS](ValueSet-TypeCarteVS.md)
 
 
 * This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).

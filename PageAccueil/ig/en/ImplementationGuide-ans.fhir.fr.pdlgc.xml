@@ -12,7 +12,7 @@
   <name value="PDLGC"/>
   <title value="Portabilité des Données LGC"/>
   <status value="draft"/>
-  <date value="2026-06-26T10:11:25+00:00"/>
+  <date value="2026-06-29T08:14:08+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -720,6 +720,17 @@
         <valueString value="ActorDefinition"/>
       </extension>
       <reference>
+        <reference value="ActorDefinition/PDLGC-Destinataire"/>
+      </reference>
+      <name value="PDLGC Destinataire"/>
+      <description value="Destinataire de l'export de données de LGC.&#xA;Il peut s'agir d'un médecin ou professionnel de santé libéral recevant l'export via son LGC.&#xA;Il peut également s'agir patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP).&#xA;Dans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le destinataire."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
         <reference value="ActorDefinition/PDLGC-Fournisseur-Destinataire"/>
       </reference>
       <name value="PDLGC Fournisseur Destinataire"/>
@@ -742,32 +753,10 @@
         <valueString value="ActorDefinition"/>
       </extension>
       <reference>
-        <reference value="ActorDefinition/PDLGC-Patient"/>
+        <reference value="ActorDefinition/PDLGC-Initiateur"/>
       </reference>
-      <name value="PDLGC Patient"/>
-      <description value="Bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP). Peut demander directement l'export de ses données."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ActorDefinition"/>
-      </extension>
-      <reference>
-        <reference value="ActorDefinition/PDLGC-PS-Destinataire"/>
-      </reference>
-      <name value="PDLGC Professionnel de Santé Destinataire"/>
-      <description value="Médecin ou professionnel de santé libéral recevant l'export via son LGC."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ActorDefinition"/>
-      </extension>
-      <reference>
-        <reference value="ActorDefinition/PDLGC-PS-Initiateur"/>
-      </reference>
-      <name value="PDLGC Professionnel de Santé Initiateur"/>
-      <description value="Médecin ou professionnel de santé libéral, demandeur de l'export et responsable du contenu médical transféré."/>
+      <name value="PDLGC Initiateur"/>
+      <description value="Demandeur de l'export.&#xA;Il peut s'agir d'un médecin ou professionnel de santé libéral, responsable du contenu médical transféré.&#xA;Il peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
