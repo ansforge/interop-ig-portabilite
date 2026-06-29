@@ -14,7 +14,7 @@
   "name" : "PDLGC",
   "title" : "Portabilité des Données LGC",
   "status" : "draft",
-  "date" : "2026-06-29T08:14:08+00:00",
+  "date" : "2026-06-29T08:25:33+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -956,7 +956,7 @@
         "reference" : "ActorDefinition/PDLGC-Destinataire"
       },
       "name" : "PDLGC Destinataire",
-      "description" : "Destinataire de l'export de données de LGC.\nIl peut s'agir d'un médecin ou professionnel de santé libéral recevant l'export via son LGC.\nIl peut également s'agir patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP).\nDans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le destinataire.",
+      "description" : "Destinataire de l'export de données de LGC.\n\nIl peut s'agir d'un médecin ou professionnel de santé libéral recevant l'export via son LGC.\n\nIl peut également s'agir patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP).\nDans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le destinataire.",
       "exampleBoolean" : false
     },
     {
@@ -992,7 +992,7 @@
         "reference" : "ActorDefinition/PDLGC-Initiateur"
       },
       "name" : "PDLGC Initiateur",
-      "description" : "Demandeur de l'export.\nIl peut s'agir d'un médecin ou professionnel de santé libéral, responsable du contenu médical transféré.\nIl peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP)",
+      "description" : "Demandeur de l'export.\n\nIl peut s'agir d'un médecin ou professionnel de santé libéral, responsable du contenu médical transféré.\n\nIl peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP)",
       "exampleBoolean" : false
     },
     {

@@ -3,7 +3,7 @@
   "type" : "ActorDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ActorDefinition/PDLGC-Destinataire",
   "version" : "0.1.0",
-  "name" : "PDLGC_PS_Destinataire"
+  "name" : "PDLGC_Destinataire"
 },
 {
   "id" : "PDLGC-Fournisseur-Destinataire",

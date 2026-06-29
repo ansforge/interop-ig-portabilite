@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.name [ fhir:value "PDLGC"] ;
   fhir:ImplementationGuide.title [ fhir:value "Portabilité des Données LGC"] ;
   fhir:ImplementationGuide.status [ fhir:value "draft"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-06-29T08:14:08+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-06-29T08:25:33+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ;
   fhir:ImplementationGuide.contact [
      fhir:index 0 ;
@@ -1073,7 +1073,7 @@
          fhir:Reference.reference [ fhir:value "ActorDefinition/PDLGC-Destinataire" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDLGC Destinataire" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Destinataire de l'export de données de LGC.\nIl peut s'agir d'un médecin ou professionnel de santé libéral recevant l'export via son LGC.\nIl peut également s'agir patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP).\nDans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le destinataire." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Destinataire de l'export de données de LGC.\n\nIl peut s'agir d'un médecin ou professionnel de santé libéral recevant l'export via son LGC.\n\nIl peut également s'agir patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP).\nDans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le destinataire." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 8 ;
@@ -1115,7 +1115,7 @@
          fhir:Reference.reference [ fhir:value "ActorDefinition/PDLGC-Initiateur" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDLGC Initiateur" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Demandeur de l'export.\nIl peut s'agir d'un médecin ou professionnel de santé libéral, responsable du contenu médical transféré.\nIl peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Demandeur de l'export.\n\nIl peut s'agir d'un médecin ou professionnel de santé libéral, responsable du contenu médical transféré.\n\nIl peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 11 ;
