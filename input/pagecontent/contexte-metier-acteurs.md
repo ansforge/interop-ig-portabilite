@@ -9,7 +9,7 @@ Le tableau ci-dessous récapitule les acteurs pouvant être impliqués dans les 
       Web
     FROM Resources
     WHERE Type = 'ActorDefinition'
-    ORDER BY Title
+    ORDER BY Purpose
   ",
   "class" : "lines",
   "columns" : [
