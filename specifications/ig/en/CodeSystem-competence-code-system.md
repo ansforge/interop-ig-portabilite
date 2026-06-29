@@ -26,7 +26,7 @@ This Code system is referenced in the definition of the following value sets:
   "name" : "CompetenceCS",
   "title" : "Compétences CodeSystem",
   "status" : "draft",
-  "date" : "2026-06-29T08:37:54+00:00",
+  "date" : "2026-06-29T15:13:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
