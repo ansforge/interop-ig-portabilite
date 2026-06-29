@@ -1,15 +1,17 @@
 // ===========================================================================
-// Acteur Professionnel de Santé Initiateur
+// Acteur Initiateur
 // ===========================================================================
 
-Instance: PDLGC-PS-Initiateur
+Instance: PDLGC-Initiateur
 InstanceOf: ActorDefinition
-Title: "PDLGC Professionnel de Santé Initiateur"
+Title: "PDLGC Initiateur"
 Usage: #definition
-Description: "Médecin ou professionnel de santé libéral, demandeur de l'export et responsable du contenu médical transféré."
+Description: "Demandeur de l'export.
+Il peut s'agir d'un médecin ou professionnel de santé libéral, responsable du contenu médical transféré.
+Il peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP)"
 * purpose = "Person"
-* name = "PDLGC_PS_Initiateur"
-* title = "PDLGC Professionnel de Santé Initiateur"
+* name = "PDLGC_Initiateur"
+* title = "PDLGC Initiateur"
 * status = #active
 * experimental = false
 * type = #person
