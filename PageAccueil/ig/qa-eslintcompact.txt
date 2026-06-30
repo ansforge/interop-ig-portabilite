@@ -1,8 +1,6 @@
 PDLGC
 =========================================
 
-Generic: line 0, col 0, Error - The link 'specification.html' for "Export d'archive de portabilité" cannot be resolved (NOTFOUND)
-Generic: line 0, col 0, Error - The link 'specification.html' for "Export d'archive de portabilité" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'package.tgz' for "téléchargeable ici" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'package.tgz' for "package.tgz" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'package.tgz' for "Package (tgz)" cannot be resolved (NOTFOUND)
@@ -21,7 +19,6 @@ Generic: line 0, col 0, Error - The link '#contexte-metier-acteurs' for "acteurs
 Generic: line 0, col 0, Error - The link '#specifications' for "Spécifications" cannot be resolved (valid targets: 68 targets) (NOTFOUND)
 Generic: line 0, col 0, Error - The link '#artifacts' for "Ressources de conformité" cannot be resolved (valid targets: 68 targets) (NOTFOUND)
 Generic: line 0, col 0, Error - The link '#annexes' for "section" cannot be resolved (valid targets: 68 targets) (NOTFOUND)
-Generic: line 0, col 0, Error - The link 'specification.html' for "Export d'archive de portabilité" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'specification.html' for "Export d'archive de portabilité" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'package.tgz' for "téléchargeable ici" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'package.tgz' for "package.tgz" cannot be resolved (NOTFOUND)
