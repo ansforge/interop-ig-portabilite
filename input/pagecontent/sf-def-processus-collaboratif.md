@@ -1,0 +1,1 @@
+L'initiateur envoie au fournisseur sortant une demande 
