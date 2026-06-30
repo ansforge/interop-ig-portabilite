@@ -41,7 +41,7 @@ ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 307, column
 ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 314, column 17: The link '#specifications' for "Spécifications" cannot be resolved (valid targets: 68 targets)
 ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 323, column 17: The link '#artifacts' for "Ressources de conformité" cannot be resolved (valid targets: 68 targets)
 ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 330, column 12: The link '#annexes' for "section" cannot be resolved (valid targets: 68 targets)
-ERROR: en/index.html#/html/body/div/div/div/div/div/p/svg/g/g/a at Line 468, column 2447: The link 'specification.html' for "Export d'archive de portabilité" cannot be resolved
+ERROR: en/index.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 469, column 2405: The link 'specification.html' for "Export d'archive de portabilité" cannot be resolved
 ERROR: fr/DiagrammePaquetage.svg#/svg/g/g/a at Line 1, column 2390: The link 'specification.html' for "Export d'archive de portabilité" cannot be resolved
 ERROR: fr/annexe-downloads.html#/html/body/div/div/div/div/div/p/a at Line 226, column 48: The link 'package.tgz' for "téléchargeable ici" cannot be resolved
 ERROR: fr/annexe-downloads.html#/html/body/div/div/div/div/div/p/a at Line 228, column 44: The link 'package.tgz' for "package.tgz" cannot be resolved
@@ -61,7 +61,7 @@ ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 300, column
 ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 307, column 17: The link '#specifications' for "Spécifications" cannot be resolved (valid targets: 68 targets)
 ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 316, column 17: The link '#artifacts' for "Ressources de conformité" cannot be resolved (valid targets: 68 targets)
 ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 323, column 12: The link '#annexes' for "section" cannot be resolved (valid targets: 68 targets)
-ERROR: fr/index.html#/html/body/div/div/div/div/div/p/svg/g/g/a at Line 461, column 2447: The link 'specification.html' for "Export d'archive de portabilité" cannot be resolved
+ERROR: fr/index.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 462, column 2405: The link 'specification.html' for "Export d'archive de portabilité" cannot be resolved
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml, cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: An HTML fragment from the set [globals-table.xhtml, globals-table.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 5: An HTML fragment from the set [expansion-params.xhtml, expansion-params.xhtml] is not included anywhere in the produced implementation guide

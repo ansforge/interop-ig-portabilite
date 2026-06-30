@@ -113,7 +113,8 @@ L'export et le transfert de données de santé dans le cadre de la portabilité 
 
 Le domaine "Export de données de santé" comprend les différents volets permettant un échange de données de santé s'appuyant sur le profil IHE_XDM
 
-<?xml version="1.0" encoding="us-ascii" standalone="no"?>
+Diagramme Paquetage
+
 
 ### Acteurs
 
