@@ -107,7 +107,10 @@ Les documents du dossier patient doivent être exportés dans un format de consu
           <li><i>Format cible européen (non requis à date) : FHIR</i></li>
         </ul>
       </td>
-      <td>Spécifications opposables :<span class="flag flag-opposable"><a href="https://esante.gouv.fr/volet-synthese-medicale">Volet de Synthèse Médicale</a> (CI-SIS)</span></td>
+      <td>
+        <ul>
+            <li>Spécifications opposables :<span class="flag flag-opposable"><a href="https://esante.gouv.fr/volet-synthese-medicale">Volet de Synthèse Médicale</a> (CI-SIS)</span></td></li>
+        </ul>
       <td>Identité, INS qualifiée, coordonnées, professionnels de santé associés</td>
     </tr>
     <tr>
@@ -120,7 +123,10 @@ Les documents du dossier patient doivent être exportés dans un format de consu
           <li><i>Format cible européen (non requis à date) : FHIR</i></li>
         </ul>
       </td>
-      <td>Spécifications opposables : <span class="flag flag-opposable"><a href="https://esante.gouv.fr/volet-synthese-medicale">Volet de Synthèse Médicale</a> (CI-SIS)</span></td>
+      <td>
+        <ul>
+            <li>Spécifications opposables : <span class="flag flag-opposable"><a href="https://esante.gouv.fr/volet-synthese-medicale">Volet de Synthèse Médicale</a> (CI-SIS)</span></td></li>
+        </ul>
       <td>Antécédents, allergies, pathologies, traitements, facteurs de risque</td>
     </tr>
     <tr>
@@ -138,6 +144,7 @@ Les documents du dossier patient doivent être exportés dans un format de consu
         <ul>
             <li>Spécifications prioritaires : <span class="flag flag-prioritaire"><a href="https://esante.gouv.fr/offres-services/ci-sis/espace-publication">Volets du CI-SIS</a></span></li>
             <li>Terminologie prioritaire (obligatoire pour les données de biologie) :  <span class="flag flag-prioritaire">LOINC</span> </li>
+        </ul>
       </td>
       <td></td>
     </tr>
@@ -145,8 +152,10 @@ Les documents du dossier patient doivent être exportés dans un format de consu
       <td>Clinique – Notes de consultation</td>
       <td>Patient</td>
       <td>
-        Format opposable : <span class="flag flag-opposable">Tout format structuré (JSON, XML…) documenté</span>
-          <span class="flag flag-opposable">PDF A-1</span>   
+        <ul>
+            <li>Format opposable : <span class="flag flag-opposable">Tout format structuré (JSON, XML…) documenté</span>
+            <span class="flag flag-opposable">PDF A-1</span></li>
+        </ul>
       </td>
       <td></td>
       <td>
@@ -167,15 +176,20 @@ Les documents du dossier patient doivent être exportés dans un format de consu
           <li> <i>Format cible CI-SIS (non requis à date) : FHIR</i></li>
         </ul>      
       </td>
-      <td><i>Volet cible :  <a href="https://interop.esante.gouv.fr/ig/fhir/mesures/">Mesures de santé</a></i></td>
+      <td>
+        <ul>
+            <li><i>Spécifications cibles :  <a href="https://interop.esante.gouv.fr/ig/fhir/mesures/">Mesures de santé</a></i></td></li>
+        </ul>
       <td></td>
     </tr>
     <tr>
       <td>Clinique – Notes personnelles</td>
       <td>Patient</td>
       <td>
-        Format opposable : <span class="flag flag-opposable">Tout format structuré (JSON, XML…) documenté</span>
-        <span class="flag flag-opposable">PDF A-1</span>
+        <ul>
+            <li>Format opposable : <span class="flag flag-opposable">Tout format structuré (JSON, XML…) documenté</span>
+            <span class="flag flag-opposable">PDF A-1</span></li>
+        </ul>
       </td>
       <td></td>
       <td></td>
@@ -202,7 +216,10 @@ Les documents du dossier patient doivent être exportés dans un format de consu
             <li>Alternative : <span class="flag flag-alternatif">Tout format structuré (JSON, XML…) documenté</span></li>
         </ul>
       </td>
-      <td>Spécifications prioritaires :  <span class="flag flag-prioritaire"> RFC 5545</span></td>
+      <td>
+        <ul>
+            <li>Spécifications prioritaires :  <span class="flag flag-prioritaire"> RFC 5545</span></td></li>
+        </ul>
       <td>Rendez-vous passés, rendez-vous à venir</td>
     </tr>
     <tr>
@@ -214,7 +231,10 @@ Les documents du dossier patient doivent être exportés dans un format de consu
             <li>Alternative : <span class="flag flag-alternatif">Tout format structuré (JSON, XML…) documenté</span></li>
         </ul>
       </td>
-      <td><a href = "https://esante.gouv.fr/sites/default/files/media_entity/documents/pgssi_referentiel_imputabilite_v1.0_0.pdf">Référentiel d'imputabilité</a> </td>
+      <td>
+        <ul>
+            <li><a href = "https://esante.gouv.fr/sites/default/files/media_entity/documents/pgssi_referentiel_imputabilite_v1.0_0.pdf">Référentiel d'imputabilité</a> </td></li>
+        </ul>
       <td>
         Structuration minimale obligatoire :
         <ul>
