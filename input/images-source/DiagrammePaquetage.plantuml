@@ -11,7 +11,7 @@ skinparam component {
 
 package "Export de données de santé" #Seashell   {
         package "Portabilité de données LGC" #Azure {
-          component "Export d'archive de portabilité" [[specification.html{Voir les spécifications}]]
+          component "Export d'archive de portabilité" [[specifications.html{Voir les spécifications}]]
         }
         package "Echanges de documents de Santé via MSS" #Azure {
           component "Export d'archive XDM" [[https://esante.gouv.fr/volet-echange-de-documents-de-sante{Voir les spécifications}]]
