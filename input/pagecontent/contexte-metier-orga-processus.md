@@ -5,4 +5,5 @@ Le domaine "Export de données de santé" comprend les différents volets permet
 <figcaption>Organisation des processus collaboratifs d'export de données de santé</figcaption>
 </figure>
 
+<br>
 Le périmètre du présent guide d'implémentation couvre le processus collaboratif d'export d'archive de Portabilité
