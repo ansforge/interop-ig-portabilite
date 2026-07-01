@@ -42,8 +42,8 @@ parameters: #Parameters list - https://build.fhir.org/ig/FHIR/fhir-tools-ig/Code
 pages:
     index.md:
         title: Accueil
-    specifications.md:
-        title: Spécifications
+    sf-etude-fonctionnelle.md:
+        title: Vol1 - Etude Fonctionnelle
     annexes.md : 
         title : Annexes
         annexe-securite.md:
@@ -59,7 +59,7 @@ pages:
 
 menu:
     Accueil: index.html
-    Spécifications: specifications.html
+    Vol1 - Etude Fonctionnelle: sf-etude-fonctionnelle.html
     Annexes:
         Sécurité: annexe-securite.html
         Téléchargements et usage: annexe-downloads.html

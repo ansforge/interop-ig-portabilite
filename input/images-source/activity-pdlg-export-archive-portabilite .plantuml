@@ -1,0 +1,36 @@
+@startuml activity-pdlg-export-archive-portabilite 
+
+skinparam backgroundColor #fcf6eb
+skinparam activityBackgroundColor #efd9fc
+skinparam activityBorderColor #000000
+skinparam shadowing false
+skinparam defaultFontSize 12
+
+
+|**Demandeur**\n(Personne)|
+start
+:Demande l'export des données\nen précisant le périmètre\n(unitaire, ciblé, massif);
+
+|**Fournisseur sortant**\n(Système)|
+:Génère l'archive Portabilité;
+:Met l'archive à disposition\ndu fournisseur destinataire;
+
+-[dashed]-> Flux 1 - **ExportArchivePortabilite**;
+
+|**Destinataire**\n(Système ou Personne)|
+:Contrôle l'intégrité de l'archive\nà l'aide du rapport d'intégrité;
+
+|**Destinataire**\n(Système ou Personne)|
+if(Type de Destinataire) then (Sytème)
+:Intègre les données reçues;
+:Met les données à disposition de l'utilisateur de LGC;
+
+else (Personne)
+:Télécharge/ouvre l'archive;
+:Consulte les données ;
+
+endif
+
+stop
+
+@enduml
