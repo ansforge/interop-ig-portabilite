@@ -1,0 +1,31 @@
+@startuml sf-concepts-portabilite
+!theme carbon-gray
+skinparam classAttributeIconSize 0
+skinparam classAttributeFontSize 10
+skinparam padding 2
+skinparam noteFontSize 11
+left to right direction
+skinparam ranksep 50
+skinparam nodesep 50
+skinparam linetype ortho
+
+''Concepts
+rectangle "**Archive de portabilité**" as export #PeachPuff
+rectangle "**Archive XDM patient**\n**(données médicales)**" as archivepat #PeachPuff
+rectangle "**Archive de données transverses**\n" as transv #PeachPuff
+rectangle "**Documentation d'export**" as doc #PeachPuff
+rectangle "**Périmètre pivot Patient**" as pivotpatient #PeachPuff
+rectangle "**Périmètre pivot Transverse**" as pivottransv #PeachPuff
+rectangle "**Périmètre hors pivot Patient**" as horspivotpatient #PeachPuff
+rectangle "**Périmètre hors pivot Transverse**" as horspivottransv #PeachPuff
+
+''Relations''
+export *-- "1..*" doc
+export *-- "1..*" archivepat
+export *-- "0..*" transv 
+archivepat *-- "1..*" pivotpatient
+transv *-- "0..*" pivottransv
+archivepat *-- "0..*" horspivotpatient
+transv *-- "0..*" horspivottransv
+
+@enduml

@@ -17,6 +17,9 @@ releaseLabel: draft
 
 jurisdiction: urn:iso:std:iso:3166#FR "France (la)"
 
+dependencies:
+  ans.fr.terminologies: latest
+
 parameters: #Parameters list - https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html
     shownav: 'true'
     path-expansion-params: '../../expansion-params.json' # for using French SNOMED CT Extension
@@ -39,42 +42,27 @@ parameters: #Parameters list - https://build.fhir.org/ig/FHIR/fhir-tools-ig/Code
 pages:
     index.md:
         title: Accueil
-    spec-fonctionnelle-intro.md:
-        title: Vue d'ensemble
-        spec-fonctionnelle-alimentation.md:
-            title: Alimentation
-    spec-technique-intro.md:
-        title: Introduction
-        spec-technique-vue-ensemble.md:
-            title: Vue d'ensemble
-        spec-technique-flux-alimentation.md:
-            title: Flux d'alimentation
-        spec-technique-flux-consommation.md:
-            title: Flux de consommation
-    change-log.md:
-        title: Historique des versions
-    autres_ressources.md:
-        title: Autres Ressources
+    sf-etude-fonctionnelle.md:
+        title: Vol1 - Etude Fonctionnelle
+    annexes.md : 
+        title : Annexes
         annexe-securite.md:
             title: Sécurité
         annexe-downloads.md:
             title: Téléchargements et usages
+    change-log.md:
+        title: Historique des versions
+    autres_ressources.md:
+        title: Autres Ressources
     translationinfo.md:
         title: Informations sur la traduction
 
 menu:
     Accueil: index.html
-    Vol. 1 - Etude fonctionnelle: 
-        Introduction: spec-fonctionnelle-intro.html
-        Alimentation: spec-fonctionnelle-alimentation.html
-    Vol. 2 - Détail des transactions: 
-        Introduction: spec-technique-intro.html
-        Vue d'ensemble: spec-technique-vue-ensemble.html
-        Flux d'alimentation: spec-technique-flux-alimentation.html
-        Flux de consommation: spec-technique-flux-consommation.html
-    Vol. 3 - Annexes:
-        Sécurité: securite.html
-        Téléchargements et usage: downloads.html
+    Vol1 - Etude Fonctionnelle: sf-etude-fonctionnelle.html
+    Annexes:
+        Sécurité: annexe-securite.html
+        Téléchargements et usage: annexe-downloads.html
         "Spécifications FHIR ": new-tab {{site.data.fhir.path}}index.html
         "Site de l'ANS ": new-tab https://esante.gouv.fr/
     Ressources de conformité: artifacts.html
