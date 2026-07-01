@@ -5,10 +5,10 @@ err = 0, warn = 20, info = 102
 $--
 Generated $--. FHIR version $-- for ans.fhir.fr.pdlgc#$-- (canonical = https://interop.esante.gouv.fr/ig/fhir/pdlgc)
  Build Errors : 36 / 3 / 0
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ActorDefinition-PDLGC-Demandeur : 0 / 0 / 3
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ActorDefinition-PDLGC-Destinataire : 0 / 0 / 3
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ActorDefinition-PDLGC-Fournisseur-Destinataire : 0 / 0 / 3
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ActorDefinition-PDLGC-Fournisseur-Sortant : 0 / 0 / 3
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ActorDefinition-PDLGC-Initiateur : 0 / 0 / 3
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/CodeSystem-competence-code-system : 0 / 3 / 2
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/CodeSystem-type-carte-code-system : 0 / 3 / 2
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.pdlgc : 0 / 0 / 3
@@ -60,6 +60,9 @@ ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 323, column
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml, cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: An HTML fragment from the set [globals-table.xhtml, globals-table.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 5: An HTML fragment from the set [expansion-params.xhtml, expansion-params.xhtml] is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ActorDefinition-PDLGC-Demandeur.json ==
+INFORMATION: ActorDefinition/PDLGC-Demandeur: ActorDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
+INFORMATION: Resource: The resource ActorDefinition/PDLGC-Demandeur could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ActorDefinition-PDLGC-Destinataire.json ==
 INFORMATION: ActorDefinition/PDLGC-Destinataire: ActorDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
 INFORMATION: Resource: The resource ActorDefinition/PDLGC-Destinataire could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
@@ -69,9 +72,6 @@ INFORMATION: Resource: The resource ActorDefinition/PDLGC-Fournisseur-Destinatai
 == fsh-generated/resources/ActorDefinition-PDLGC-Fournisseur-Sortant.json ==
 INFORMATION: ActorDefinition/PDLGC-Fournisseur-Sortant: ActorDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
 INFORMATION: Resource: The resource ActorDefinition/PDLGC-Fournisseur-Sortant could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/ActorDefinition-PDLGC-Initiateur.json ==
-INFORMATION: ActorDefinition/PDLGC-Initiateur: ActorDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
-INFORMATION: Resource: The resource ActorDefinition/PDLGC-Initiateur could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/CodeSystem-competence-code-system.json ==
 INFORMATION: CodeSystem/competence-code-system: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/competence-code-system: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
