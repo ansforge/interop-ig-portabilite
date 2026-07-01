@@ -40,7 +40,7 @@
   ], [
      fhir:index -1 ;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.date" ] ;
-     fhir:Extension.valueDateTime [ fhir:value "2026-07-01T07:07:10+00:00"^^xsd:dateTime ]
+     fhir:Extension.valueDateTime [ fhir:value "2026-07-01T07:31:53+00:00"^^xsd:dateTime ]
   ], [
      fhir:index -1 ;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.publisher" ] ;
@@ -59,7 +59,7 @@
   ], [
      fhir:index -1 ;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.description" ] ;
-     fhir:Extension.valueMarkdown [ fhir:value "Destinataire de l'export de données de LGC.\n\nIl peut s'agir d'un médecin ou professionnel de santé libéral recevant l'export via son LGC.\n\nIl peut également s'agir patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP).\nDans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le destinataire." ]
+     fhir:Extension.valueMarkdown [ fhir:value "Destinataire de l'export de données de LGC.\n\nIl peut s'agir d'un médecin ou professionnel de santé libéral recevant l'export via son LGC.\n\nIl peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP).\nDans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le destinataire." ]
   ], [
      fhir:index -1 ;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.jurisdiction" ] ;

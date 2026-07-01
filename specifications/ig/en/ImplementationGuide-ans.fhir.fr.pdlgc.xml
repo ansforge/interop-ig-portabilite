@@ -12,7 +12,7 @@
   <name value="PDLGC"/>
   <title value="Portabilité des Données LGC"/>
   <status value="draft"/>
-  <date value="2026-07-01T07:07:10+00:00"/>
+  <date value="2026-07-01T07:31:53+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -720,10 +720,21 @@
         <valueString value="ActorDefinition"/>
       </extension>
       <reference>
+        <reference value="ActorDefinition/PDLGC-Demandeur"/>
+      </reference>
+      <name value="PDLGC Demandeur"/>
+      <description value="Demandeur de l'export.&#xA;&#xA;Il peut s'agir d'un médecin ou professionnel de santé libéral, responsable du contenu médical transféré.&#xA;&#xA;Il peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
         <reference value="ActorDefinition/PDLGC-Destinataire"/>
       </reference>
       <name value="PDLGC Destinataire"/>
-      <description value="Destinataire de l'export de données de LGC.&#xA;&#xA;Il peut s'agir d'un médecin ou professionnel de santé libéral recevant l'export via son LGC.&#xA;&#xA;Il peut également s'agir patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP).&#xA;Dans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le destinataire."/>
+      <description value="Destinataire de l'export de données de LGC.&#xA;&#xA;Il peut s'agir d'un médecin ou professionnel de santé libéral recevant l'export via son LGC.&#xA;&#xA;Il peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP).&#xA;Dans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le destinataire."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -746,17 +757,6 @@
       </reference>
       <name value="PDLGC Fournisseur Sortant"/>
       <description value="Éditeur du LGC dont le contrat prend fin ou depuis lequel l'utilisateur souhaite exporter ses données. C'est lui qui est redevable de l'obligation de portabilité gratuite du Périmètre Pivot sous 30 jours calendaires."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ActorDefinition"/>
-      </extension>
-      <reference>
-        <reference value="ActorDefinition/PDLGC-Initiateur"/>
-      </reference>
-      <name value="PDLGC Initiateur"/>
-      <description value="Demandeur de l'export.&#xA;&#xA;Il peut s'agir d'un médecin ou professionnel de santé libéral, responsable du contenu médical transféré.&#xA;&#xA;Il peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
