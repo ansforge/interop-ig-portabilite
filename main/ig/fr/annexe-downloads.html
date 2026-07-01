@@ -46,8 +46,8 @@
 	  <script src="assets/js/prism-cql.js" type="text/javascript"></script>
     <script src="assets/js/mermaid.js" type="text/javascript"></script>
     <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
-    <style type="text/css">h2{--heading-prefix:"5.2"}
-    h3,h4,h5,h6{--heading-prefix:"5.2"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.2"}
+    h3,h4,h5,h6{--heading-prefix:"3.2"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
 
@@ -104,48 +104,19 @@
   <li>
     <a href="index.html">Accueil</a>
   </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Vol. 1 - Etude fonctionnelle
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="spec-fonctionnelle-intro.html">Introduction</a>
-      </li>
-      <li>
-        <a href="spec-fonctionnelle-alimentation.html">Alimentation</a>
-      </li>
-    </ul>
+  <li>
+    <a href="sf-etude-fonctionnelle.html">Vol1 - Etude Fonctionnelle</a>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Vol. 2 - Détail des transactions
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Annexes
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="spec-technique-intro.html">Introduction</a>
+        <a href="annexe-securite.html">Sécurité</a>
       </li>
       <li>
-        <a href="spec-technique-vue-ensemble.html">Vue d'ensemble</a>
-      </li>
-      <li>
-        <a href="spec-technique-flux-alimentation.html">Flux d'alimentation</a>
-      </li>
-      <li>
-        <a href="spec-technique-flux-consommation.html">Flux de consommation</a>
-      </li>
-    </ul>
-  </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Vol. 3 - Annexes
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li><a name="l242">​</a>
-        <a href="securite.html">Sécurité</a>
-      </li>
-      <li><a name="l248">​</a>
-        <a href="downloads.html">Téléchargements et usage</a>
+        <a href="annexe-downloads.html">Téléchargements et usage</a>
       </li>
       <li>
         <a href="http://hl7.org/fhir/R4/index.html" target="_blank">Spécifications FHIR </a>
@@ -194,7 +165,7 @@
     <div id="segment-breadcrumb" class="segment" data-fhir="generated">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="autres_ressources.html"><b>Autres Ressources</b></a></li><li><b>Téléchargements et usages</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="annexes.html"><b>Annexes</b></a></li><li><b>Téléchargements et usages</b></li>
 
           <span style="float: var(--ig-right);">
 
@@ -202,7 +173,7 @@
 
             <a href="#bottom">bas de page</a>
 
-          | <a href="translationinfo.html">suivant &gt;</a>
+          | <a href="change-log.html">suivant &gt;</a>
 
           </span>
 
@@ -250,31 +221,31 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <h3 id="téléchargement">Téléchargement</h3>
 
-<p><a name="l422">​</a>L'implementation guide contient un package <a href="package.tgz">téléchargeable ici</a> permettant de valider les instances par rapport aux profils qu'il contient.</p>
+<p><a name="l370">​</a>L'implementation guide contient un package <a href="package.tgz">téléchargeable ici</a> permettant de valider les instances par rapport aux profils qu'il contient.</p>
 
-<p><a name="l428">​</a>Pour cela, il suffit de télécharger le <a href="package.tgz">package.tgz</a> et l'importer dans un serveur, par exemple sur hapi en suivant ce <a href="https://github.com/nmdp-bioinformatics/igloader">script python</a> open source.</p>
+<p><a name="l376">​</a>Pour cela, il suffit de télécharger le <a href="package.tgz">package.tgz</a> et l'importer dans un serveur, par exemple sur hapi en suivant ce <a href="https://github.com/nmdp-bioinformatics/igloader">script python</a> open source.</p>
 
 <p>Ensemble des ressources téléchargeables :</p>
 
 <ul>
   <li><a href="full-ig.zip">L'ensemble de la specification (zip)</a></li>
-  <li><a name="l446">​</a><a href="package.tgz">Package (tgz)</a></li>
+  <li><a name="l394">​</a><a href="package.tgz">Package (tgz)</a></li>
 </ul>
 
 <h4 id="définitions">Définitions</h4>
 
 <ul>
-  <li><a name="l456">​</a><a href="definitions.json.zip">Définitions JSON (zip)</a></li>
-  <li><a name="l460">​</a><a href="definitions.xml.zip">Définitions XML (zip)</a></li>
-  <li><a name="l464">​</a><a href="definitions.ttl.zip">Définitions Turtle (zip)</a></li>
+  <li><a name="l404">​</a><a href="definitions.json.zip">Définitions JSON (zip)</a></li>
+  <li><a name="l408">​</a><a href="definitions.xml.zip">Définitions XML (zip)</a></li>
+  <li><a name="l412">​</a><a href="definitions.ttl.zip">Définitions Turtle (zip)</a></li>
 </ul>
 
 <h4 id="exemples">Exemples</h4>
 
 <ul>
-  <li><a name="l474">​</a><a href="examples.xml.zip">Exemples XML (zip)</a></li>
-  <li><a name="l478">​</a><a href="examples.json.zip">Exemples JSON (zip)</a></li>
-  <li><a name="l482">​</a><a href="examples.ttl.zip">Exemples Turtle (zip)</a></li>
+  <li><a name="l422">​</a><a href="examples.xml.zip">Exemples XML (zip)</a></li>
+  <li><a name="l426">​</a><a href="examples.json.zip">Exemples JSON (zip)</a></li>
+  <li><a name="l430">​</a><a href="examples.ttl.zip">Exemples Turtle (zip)</a></li>
 </ul>
 
 <h3 id="usage">Usage</h3>
@@ -318,7 +289,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:var(--ig-right);">&nbsp;
 
-                <a href="translationinfo.html">suivant &gt;</a>
+                <a href="change-log.html">suivant &gt;</a>
 
               </td>
             </tr>
@@ -334,8 +305,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.pdlgc#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-06-26 10:08:00 +0000">
-    2026-06-26
+  <span title="2026-07-01 10:04:00 +0000">
+    2026-07-01
   </span>
 
           <br/>

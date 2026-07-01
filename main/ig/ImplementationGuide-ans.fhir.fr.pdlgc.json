@@ -11,7 +11,7 @@
   "name" : "PDLGC",
   "title" : "Portabilité des Données LGC",
   "status" : "draft",
-  "date" : "2026-06-26T10:08:27+00:00",
+  "date" : "2026-07-01T10:04:31+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -50,6 +50,12 @@
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
     "version" : "5.3.0"
+  },
+  {
+    "id" : "ans_fr_terminologies",
+    "uri" : "https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies",
+    "packageId" : "ans.fr.terminologies",
+    "version" : "1.10.0"
   }],
   "definition" : {
     "extension" : [{
@@ -941,6 +947,54 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActorDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActorDefinition/PDLGC-Demandeur"
+      },
+      "name" : "PDLGC Demandeur",
+      "description" : "Demandeur de l'export.\n\nIl peut s'agir d'un médecin ou professionnel de santé libéral, responsable du contenu médical transféré.\n\nIl peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActorDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActorDefinition/PDLGC-Destinataire"
+      },
+      "name" : "PDLGC Destinataire",
+      "description" : "Destinataire de l'export de données de LGC.\n\nIl peut s'agir d'un médecin ou professionnel de santé libéral recevant l'export via son LGC.\n\nIl peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP).\nDans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le destinataire.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActorDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActorDefinition/PDLGC-Fournisseur-Destinataire"
+      },
+      "name" : "PDLGC Fournisseur Destinataire",
+      "description" : "Editeur recevant les données en vue de leur intégration. Il est tenu d'une obligation de moyens pour l'import dès lors que le format est conforme au référentiel.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActorDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActorDefinition/PDLGC-Fournisseur-Sortant"
+      },
+      "name" : "PDLGC Fournisseur Sortant",
+      "description" : "Éditeur du LGC dont le contrat prend fin ou depuis lequel l'utilisateur souhaite exporter ses données. C'est lui qui est redevable de l'obligation de portabilité gratuite du Périmètre Pivot sous 30 jours calendaires.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -982,73 +1036,19 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "spec-fonctionnelle-intro.html"
+          "valueUrl" : "sf-etude-fonctionnelle.html"
         }],
-        "nameUrl" : "spec-fonctionnelle-intro.html",
-        "title" : "Vue d'ensemble",
-        "generation" : "markdown",
-        "page" : [{
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "spec-fonctionnelle-alimentation.html"
-          }],
-          "nameUrl" : "spec-fonctionnelle-alimentation.html",
-          "title" : "Alimentation",
-          "generation" : "markdown"
-        }]
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "spec-technique-intro.html"
-        }],
-        "nameUrl" : "spec-technique-intro.html",
-        "title" : "Introduction",
-        "generation" : "markdown",
-        "page" : [{
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "spec-technique-vue-ensemble.html"
-          }],
-          "nameUrl" : "spec-technique-vue-ensemble.html",
-          "title" : "Vue d'ensemble",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "spec-technique-flux-alimentation.html"
-          }],
-          "nameUrl" : "spec-technique-flux-alimentation.html",
-          "title" : "Flux d'alimentation",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "spec-technique-flux-consommation.html"
-          }],
-          "nameUrl" : "spec-technique-flux-consommation.html",
-          "title" : "Flux de consommation",
-          "generation" : "markdown"
-        }]
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "change-log.html"
-        }],
-        "nameUrl" : "change-log.html",
-        "title" : "Historique des versions",
+        "nameUrl" : "sf-etude-fonctionnelle.html",
+        "title" : "Vol1 - Etude Fonctionnelle",
         "generation" : "markdown"
       },
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "autres_ressources.html"
+          "valueUrl" : "annexes.html"
         }],
-        "nameUrl" : "autres_ressources.html",
-        "title" : "Autres Ressources",
+        "nameUrl" : "annexes.html",
+        "title" : "Annexes",
         "generation" : "markdown",
         "page" : [{
           "extension" : [{
@@ -1068,6 +1068,24 @@
           "title" : "Téléchargements et usages",
           "generation" : "markdown"
         }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "change-log.html"
+        }],
+        "nameUrl" : "change-log.html",
+        "title" : "Historique des versions",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "autres_ressources.html"
+        }],
+        "nameUrl" : "autres_ressources.html",
+        "title" : "Autres Ressources",
+        "generation" : "markdown"
       },
       {
         "extension" : [{

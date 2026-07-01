@@ -1,4 +1,32 @@
 [{
+  "id" : "PDLGC-Demandeur",
+  "type" : "ActorDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ActorDefinition/PDLGC-Demandeur",
+  "version" : "0.1.0",
+  "name" : "PDLGC_Demandeur"
+},
+{
+  "id" : "PDLGC-Destinataire",
+  "type" : "ActorDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ActorDefinition/PDLGC-Destinataire",
+  "version" : "0.1.0",
+  "name" : "PDLGC_Destinataire"
+},
+{
+  "id" : "PDLGC-Fournisseur-Destinataire",
+  "type" : "ActorDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ActorDefinition/PDLGC-Fournisseur-Destinataire",
+  "version" : "0.1.0",
+  "name" : "PDLGC_FournisseurDestinataire"
+},
+{
+  "id" : "PDLGC-Fournisseur-Sortant",
+  "type" : "ActorDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ActorDefinition/PDLGC-Fournisseur-Sortant",
+  "version" : "0.1.0",
+  "name" : "PDLGC_FournisseurSortant"
+},
+{
   "id" : "competence-code-system",
   "type" : "CodeSystem",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/competence-code-system",

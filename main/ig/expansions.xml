@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="e2cb19c6-ae9d-40a3-b3f3-2e0cbf42308c"/>
+  <id value="06d6cc6e-5220-4fed-861d-32e6c3ed704e"/>
   <meta>
-    <lastUpdated value="2026-06-26T10:08:27.729+00:00"/>
+    <lastUpdated value="2026-07-01T10:04:31.123+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -14,9 +14,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion de smt.esante.gouv.fr basée sur SNOMED CT édition 11000315107 21-Jun 2025
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion de smt.esante.gouv.fr basée sur SNOMED CT édition 11000315107 21-Jun 2026
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20250621" title="Cliquer pour copier l'URL" class="btn-copy"> </button>
+                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20260621" title="Cliquer pour copier l'URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>Ce jeu de valeur (ValueSet) contient 3 concepts</p>
@@ -112,7 +112,7 @@
         <name value="EyeColorVS"/>
         <title value="EyeColor Value Set"/>
         <status value="draft"/>
-        <date value="2026-06-26T10:08:27+00:00"/>
+        <date value="2026-07-01T10:04:31+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -121,8 +121,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0c007bcd-54aa-45b8-9e90-771e210ddbc0"/>
-          <timestamp value="2026-06-26T10:09:20+00:00"/>
+          <identifier value="urn:uuid:5a19afb3-119a-4c1a-bf58-0767e16df7e4"/>
+          <timestamp value="2026-07-01T10:05:16+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -151,11 +151,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20250621"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20260621"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20250621"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20260621"/>
           </parameter>
           <parameter>
             <name value="displayLanguage"/>
@@ -189,9 +189,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion de smt.esante.gouv.fr basée sur SNOMED CT édition 11000315107 21-Jun 2025
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion de smt.esante.gouv.fr basée sur SNOMED CT édition 11000315107 21-Jun 2026
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20250621" title="Cliquer pour copier l'URL" class="btn-copy"> </button>
+                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20260621" title="Cliquer pour copier l'URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>Ce jeu de valeur (ValueSet) contient 3 concepts</p>
@@ -287,7 +287,7 @@
         <name value="EyeColorVS"/>
         <title value="EyeColor Value Set"/>
         <status value="draft"/>
-        <date value="2026-06-26T10:08:27+00:00"/>
+        <date value="2026-07-01T10:04:31+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -296,8 +296,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0c007bcd-54aa-45b8-9e90-771e210ddbc0"/>
-          <timestamp value="2026-06-26T10:09:20+00:00"/>
+          <identifier value="urn:uuid:5a19afb3-119a-4c1a-bf58-0767e16df7e4"/>
+          <timestamp value="2026-07-01T10:05:16+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -326,11 +326,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20250621"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20260621"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20250621"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20260621"/>
           </parameter>
           <parameter>
             <name value="displayLanguage"/>
@@ -364,9 +364,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from smt.esante.gouv.fr based on SNOMED CT 11000315107 edition 21-Jun 2025
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from smt.esante.gouv.fr based on SNOMED CT 11000315107 edition 21-Jun 2026
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20250621" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20260621" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 3 concepts</p>
@@ -462,7 +462,7 @@
         <name value="EyeColorVS"/>
         <title value="EyeColor Value Set"/>
         <status value="draft"/>
-        <date value="2026-06-26T10:08:27+00:00"/>
+        <date value="2026-07-01T10:04:31+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -471,8 +471,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4caf72b8-fce1-4b2d-a383-4d7563a6d8b3"/>
-          <timestamp value="2026-06-26T10:09:25+00:00"/>
+          <identifier value="urn:uuid:4481cf55-4ccb-4916-afb1-a546676c370f"/>
+          <timestamp value="2026-07-01T10:05:20+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -501,11 +501,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20250621"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20260621"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20250621"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20260621"/>
           </parameter>
           <parameter>
             <name value="displayLanguage"/>
@@ -542,9 +542,9 @@
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion de smt.esante.gouv.fr basée sur :</p>
               <ul>
-                <li>SNOMED CT édition 11000315107 21-Jun 2025
+                <li>SNOMED CT édition 11000315107 21-Jun 2026
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20250621" title="Cliquer pour copier l'URL" class="btn-copy"> </button>
+                    <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20260621" title="Cliquer pour copier l'URL" class="btn-copy"> </button>
                   </span>
                 </li>
                 <li>
@@ -738,7 +738,7 @@
         <name value="MeltingPotVS"/>
         <title value="Melting Pot Value Set"/>
         <status value="draft"/>
-        <date value="2026-06-26T10:08:27+00:00"/>
+        <date value="2026-07-01T10:04:31+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -747,8 +747,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fba0595e-5059-49a8-978c-289a3b23a523"/>
-          <timestamp value="2026-06-26T10:09:25+00:00"/>
+          <identifier value="urn:uuid:bc16bd8e-1d00-451e-980a-488765f16ddc"/>
+          <timestamp value="2026-07-01T10:05:20+00:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -777,11 +777,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20250621"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20260621"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20250621"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20260621"/>
           </parameter>
           <parameter>
             <name value="displayLanguage"/>
@@ -840,9 +840,9 @@
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion de smt.esante.gouv.fr basée sur :</p>
               <ul>
-                <li>SNOMED CT édition 11000315107 21-Jun 2025
+                <li>SNOMED CT édition 11000315107 21-Jun 2026
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20250621" title="Cliquer pour copier l'URL" class="btn-copy"> </button>
+                    <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20260621" title="Cliquer pour copier l'URL" class="btn-copy"> </button>
                   </span>
                 </li>
                 <li>
@@ -1036,7 +1036,7 @@
         <name value="MeltingPotVS"/>
         <title value="Melting Pot Value Set"/>
         <status value="draft"/>
-        <date value="2026-06-26T10:08:27+00:00"/>
+        <date value="2026-07-01T10:04:31+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1045,8 +1045,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fba0595e-5059-49a8-978c-289a3b23a523"/>
-          <timestamp value="2026-06-26T10:09:25+00:00"/>
+          <identifier value="urn:uuid:bc16bd8e-1d00-451e-980a-488765f16ddc"/>
+          <timestamp value="2026-07-01T10:05:20+00:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -1075,11 +1075,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20250621"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20260621"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20250621"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20260621"/>
           </parameter>
           <parameter>
             <name value="displayLanguage"/>
@@ -1138,9 +1138,9 @@
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion from smt.esante.gouv.fr based on:</p>
               <ul>
-                <li>SNOMED CT 11000315107 edition 21-Jun 2025
+                <li>SNOMED CT 11000315107 edition 21-Jun 2026
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20250621" title="Click to Copy URL" class="btn-copy"> </button>
+                    <button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20260621" title="Click to Copy URL" class="btn-copy"> </button>
                   </span>
                 </li>
                 <li>
@@ -1334,7 +1334,7 @@
         <name value="MeltingPotVS"/>
         <title value="Melting Pot Value Set"/>
         <status value="draft"/>
-        <date value="2026-06-26T10:08:27+00:00"/>
+        <date value="2026-07-01T10:04:31+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1343,8 +1343,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:22a026c8-5d61-4fcc-bc76-bb66527d1594"/>
-          <timestamp value="2026-06-26T10:09:25+00:00"/>
+          <identifier value="urn:uuid:ccf33ce1-9bfc-4933-903b-67fbe7de2276"/>
+          <timestamp value="2026-07-01T10:05:21+00:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -1373,11 +1373,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20250621"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20260621"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20250621"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/11000315107/version/20260621"/>
           </parameter>
           <parameter>
             <name value="displayLanguage"/>
@@ -1537,7 +1537,7 @@
         <name value="ModifiedAdministrativeGender"/>
         <title value="ModifiedAdministrativeGender"/>
         <status value="draft"/>
-        <date value="2026-06-26T10:08:27+00:00"/>
+        <date value="2026-07-01T10:04:31+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1546,8 +1546,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4c24cafc-9c99-4b62-9903-ae02d5fe3bda"/>
-          <timestamp value="2026-06-26T10:09:17+00:00"/>
+          <identifier value="urn:uuid:dc41042d-1819-46b8-863d-4078e5045c6f"/>
+          <timestamp value="2026-07-01T10:05:13+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -1693,7 +1693,7 @@
         <name value="ModifiedAdministrativeGender"/>
         <title value="ModifiedAdministrativeGender"/>
         <status value="draft"/>
-        <date value="2026-06-26T10:08:27+00:00"/>
+        <date value="2026-07-01T10:04:31+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1702,8 +1702,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4c24cafc-9c99-4b62-9903-ae02d5fe3bda"/>
-          <timestamp value="2026-06-26T10:09:17+00:00"/>
+          <identifier value="urn:uuid:dc41042d-1819-46b8-863d-4078e5045c6f"/>
+          <timestamp value="2026-07-01T10:05:13+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -1849,7 +1849,7 @@
         <name value="ModifiedAdministrativeGender"/>
         <title value="ModifiedAdministrativeGender"/>
         <status value="draft"/>
-        <date value="2026-06-26T10:08:27+00:00"/>
+        <date value="2026-07-01T10:04:31+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1858,8 +1858,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4d50a517-1342-44ef-a587-1adcfe36078b"/>
-          <timestamp value="2026-06-26T10:09:17+00:00"/>
+          <identifier value="urn:uuid:98f1d6c7-cb60-4ae2-8090-69a0e3514556"/>
+          <timestamp value="2026-07-01T10:05:14+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -2029,7 +2029,7 @@
         <name value="TypeCarteVS"/>
         <title value="Type Carte Value Set"/>
         <status value="draft"/>
-        <date value="2026-06-26T10:08:27+00:00"/>
+        <date value="2026-07-01T10:04:31+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -2038,8 +2038,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:48b52ea5-78eb-4c15-9fba-44a5cbd0b6d4"/>
-          <timestamp value="2026-06-26T10:09:25+00:00"/>
+          <identifier value="urn:uuid:e42144b4-cb01-4cd9-853d-965824c7af56"/>
+          <timestamp value="2026-07-01T10:05:21+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -2210,7 +2210,7 @@
         <name value="TypeCarteVS"/>
         <title value="Type Carte Value Set"/>
         <status value="draft"/>
-        <date value="2026-06-26T10:08:27+00:00"/>
+        <date value="2026-07-01T10:04:31+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -2219,8 +2219,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:48b52ea5-78eb-4c15-9fba-44a5cbd0b6d4"/>
-          <timestamp value="2026-06-26T10:09:25+00:00"/>
+          <identifier value="urn:uuid:e42144b4-cb01-4cd9-853d-965824c7af56"/>
+          <timestamp value="2026-07-01T10:05:21+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -2391,7 +2391,7 @@
         <name value="TypeCarteVS"/>
         <title value="Type Carte Value Set"/>
         <status value="draft"/>
-        <date value="2026-06-26T10:08:27+00:00"/>
+        <date value="2026-07-01T10:04:31+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -2400,8 +2400,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9e889078-6d0d-4f81-b037-65369e6d0a47"/>
-          <timestamp value="2026-06-26T10:09:25+00:00"/>
+          <identifier value="urn:uuid:c7304fc0-67bf-43ab-a2bc-664833e899a7"/>
+          <timestamp value="2026-07-01T10:05:21+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>

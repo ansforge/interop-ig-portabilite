@@ -3,18 +3,42 @@
 ## Pages
 
 * [Accueil](index.md)
-* [Introduction](spec-technique-intro.md)
+* [PDLGC Demandeur - JSON Representation](ActorDefinition-PDLGC-Demandeur.json.md)
+* [PDLGC Destinataire - XML Representation](ActorDefinition-PDLGC-Destinataire.xml.md)
+* [Vol1 - Etude Fonctionnelle](sf-etude-fonctionnelle.md)
+* [PDLGC Demandeur - TTL Representation](ActorDefinition-PDLGC-Demandeur.ttl.md)
+* [PDLGC Destinataire](ActorDefinition-PDLGC-Destinataire-testing.md)
+* [PDLGC Fournisseur Sortant](ActorDefinition-PDLGC-Fournisseur-Sortant.ai.md)
+* [PDLGC Fournisseur Destinataire - XML Representation](ActorDefinition-PDLGC-Fournisseur-Destinataire.xml.md)
+* [PDLGC Destinataire - TTL Representation](ActorDefinition-PDLGC-Destinataire.ttl.md)
+* [PDLGC Demandeur](ActorDefinition-PDLGC-Demandeur.ai.md)
+* [](ActorDefinition-PDLGC-Fournisseur-Destinataire.change.history.md)
+* [PDLGC Demandeur](ActorDefinition-PDLGC-Demandeur-testing.md)
+* [PDLGC Fournisseur Sortant](ActorDefinition-PDLGC-Fournisseur-Sortant.md)
+* [PDLGC Fournisseur Destinataire - TTL Representation](ActorDefinition-PDLGC-Fournisseur-Destinataire.ttl.md)
 * [Informations sur la traduction](translationinfo.md)
-* [Flux de consommation](spec-technique-flux-consommation.md)
-* [Vue d'ensemble](spec-technique-vue-ensemble.md)
 * [Autres Ressources](autres_ressources.md)
+* [PDLGC Fournisseur Destinataire - JSON Representation](ActorDefinition-PDLGC-Fournisseur-Destinataire.json.md)
 * [Artifacts Summary](artifacts.md)
-* [Vue d'ensemble](spec-fonctionnelle-intro.md)
+* [PDLGC Destinataire](ActorDefinition-PDLGC-Destinataire.ai.md)
 * [Téléchargements et usages](annexe-downloads.md)
+* [PDLGC Fournisseur Destinataire](ActorDefinition-PDLGC-Fournisseur-Destinataire-testing.md)
+* [](ActorDefinition-PDLGC-Destinataire.change.history.md)
+* [PDLGC Fournisseur Sortant - TTL Representation](ActorDefinition-PDLGC-Fournisseur-Sortant.ttl.md)
+* [PDLGC Destinataire - JSON Representation](ActorDefinition-PDLGC-Destinataire.json.md)
+* [](ActorDefinition-PDLGC-Fournisseur-Sortant.change.history.md)
+* [PDLGC Fournisseur Sortant - JSON Representation](ActorDefinition-PDLGC-Fournisseur-Sortant.json.md)
 * [Historique des versions](change-log.md)
-* [Alimentation](spec-fonctionnelle-alimentation.md)
+* [PDLGC Fournisseur Destinataire](ActorDefinition-PDLGC-Fournisseur-Destinataire.ai.md)
+* [](ActorDefinition-PDLGC-Demandeur.change.history.md)
+* [PDLGC Fournisseur Sortant](ActorDefinition-PDLGC-Fournisseur-Sortant-testing.md)
+* [PDLGC Fournisseur Destinataire](ActorDefinition-PDLGC-Fournisseur-Destinataire.md)
+* [PDLGC Fournisseur Sortant - XML Representation](ActorDefinition-PDLGC-Fournisseur-Sortant.xml.md)
+* [PDLGC Destinataire](ActorDefinition-PDLGC-Destinataire.md)
 * [Sécurité](annexe-securite.md)
-* [Flux d'alimentation](spec-technique-flux-alimentation.md)
+* [PDLGC Demandeur](ActorDefinition-PDLGC-Demandeur.md)
+* [Annexes](annexes.md)
+* [PDLGC Demandeur - XML Representation](ActorDefinition-PDLGC-Demandeur.xml.md)
 
 ## Resources
 
@@ -37,6 +61,13 @@
 ### Extensions
 
 * [EyeColor](StructureDefinition-EyeColor.md)
+
+### Basics
+
+* [PDLGC-Demandeur](Basic-PDLGC-Demandeur.md)
+* [PDLGC-Destinataire](Basic-PDLGC-Destinataire.md)
+* [PDLGC-Fournisseur-Destinataire](Basic-PDLGC-Fournisseur-Destinataire.md)
+* [PDLGC-Fournisseur-Sortant](Basic-PDLGC-Fournisseur-Sortant.md)
 
 ### ImplementationGuides
 
