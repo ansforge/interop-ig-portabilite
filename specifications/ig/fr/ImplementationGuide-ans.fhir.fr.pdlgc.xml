@@ -12,7 +12,7 @@
   <name value="PDLGC"/>
   <title value="Portabilité des Données LGC"/>
   <status value="draft"/>
-  <date value="2026-06-29T15:13:18+00:00"/>
+  <date value="2026-07-01T07:07:10+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -798,10 +798,10 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="specifications.html"/>
+          <valueUrl value="sf-etude-fonctionnelle.html"/>
         </extension>
-        <nameUrl value="specifications.html"/>
-        <title value="Spécifications"/>
+        <nameUrl value="sf-etude-fonctionnelle.html"/>
+        <title value="Vol1 - Etude Fonctionnelle"/>
         <generation value="markdown"/>
       </page>
       <page>

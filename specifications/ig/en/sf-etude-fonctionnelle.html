@@ -1,0 +1,831 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Vol1 - Etude Fonctionnelle - Portabilité des Données LGC v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+    <link rel="stylesheet" href="assets/css/project.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+        <link rel="stylesheet" href="assets/css/style-ans.css"/>
+    <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script src="assets/js/direction-management.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js" type="text/javascript"></script>
+	  <script src="assets/js/prism-fhirpath.js" type="text/javascript"></script>
+	  <script src="assets/js/prism-cql.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+<div id="family-nav">
+    <a id="hl7-search-lnk" href="http://hl7.org/fhir" data-no-external="true"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+  </div>
+  <div style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; " id="ans-nav">
+    <a id="hl7-logo" href="https://esante.gouv.fr/" data-no-external="true"><img src="assets/images/logo-ANS.svg" alt="ANS Logo" height="50"/></a>
+    <a id="hl7-search-lnk" href="searchform.html" data-no-external="true"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+  </div>
+
+  <div id="ig-search">
+ </div>
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">Portabilité des Données LGC</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - draft
+
+
+
+
+
+  <img src="../assets/images/fra.svg" alt="France (la) flag" title="France (la)" height="16"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Accueil</a>
+  </li>
+  <li>
+    <a href="sf-etude-fonctionnelle.html">Vol1 - Etude Fonctionnelle</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Annexes
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="annexe-securite.html">Sécurité</a>
+      </li>
+      <li>
+        <a href="annexe-downloads.html">Téléchargements et usage</a>
+      </li>
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">Spécifications FHIR </a>
+      </li>
+      <li>
+        <a href="https://esante.gouv.fr/" target="_blank">Site de l'ANS </a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Ressources de conformité</a>
+  </li>
+  <li>
+    <a href="https://interop.esante.gouv.fr/ig/documentation/" target="_blank">Documentation</a>
+  </li>
+  <li>
+    <a href="change-log.html">Historique</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+
+              
+
+
+<div style="float: var(--ig-right);padding: 8px 0px;" id="language">
+  <div style="background-image: url(assets/images/icon_arrow_down.png);background-position: 133px 3px;" id="select_flg" class="flaglist">
+    <div><img src="assets/images/lang-en.png" alt="flag en" class="flag"/>English</div>
+  </div>
+  <div style="float: var(--ig-right); margin: 2px 0px; padding: 1px 0;color: var(--btn-text-color);font-size:12px">Language:</div>
+ 	<div style="display: none;position: absolute;right: 0;z-index: 100;background-image: url(assets/images/icon_arrow_up.png);background-position: 133px 3px;" id="flaglist" class="flaglist">
+    <div><img src="assets/images/lang-en.png" alt="flag en" class="flag"/>English</div>
+
+    <div><a href="../fr/sf-etude-fonctionnelle.html"><img src="assets/images/lang-fr.png" alt="flag fr" class="flag"/>Français</a></div>
+
+  </div>
+</div>
+
+
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Vol1 - Etude Fonctionnelle</b></li>
+
+          <span style="float: var(--ig-right);">
+
+            <a href="index.html">&lt; prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="annexes.html">next &gt;</a>
+
+          </span>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">Portabilité des Données LGC - Local Development build (v0.1.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://interop.esante.gouv.fr/ig/fhir/pdlgc/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Vol1 - Etude Fonctionnelle</h2>
+  
+
+
+
+
+<p style="border:var(--translation-box-border);background-color:var(--translation-background-color);padding: 5px 5px 5px 5px;">
+
+<p>There is no translation page available for the current page, so it has been rendered in the default language</p>
+
+
+</p>
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#définition-du-processus-collaboratif" id="markdown-toc-définition-du-processus-collaboratif">Définition du processus collaboratif</a></li>
+  <li><a href="#concepts-métiers-utilisés-dans-le-flux-dexport-darchive-de-portabilité" id="markdown-toc-concepts-métiers-utilisés-dans-le-flux-dexport-darchive-de-portabilité">Concepts métiers utilisés dans le flux d'export d'archive de Portabilité</a></li>
+  <li><a href="#périmètre-pivot" id="markdown-toc-périmètre-pivot">Périmètre pivot</a></li>
+</ul>
+
+</div>
+<h3 id="définition-du-processus-collaboratif">Définition du processus collaboratif</h3>
+
+<p>Le processus collaboratif « Export d'archive de portabilité » couvre l'ensemble des situations dans lesquelles un professionnel de santé ou un patient exerce son droit à la portabilité des données auprès d'un éditeur de logiciel LGC.</p>
+
+<p>Quel que soit le cas d'usage, le processus repose sur un unique flux de production et de mise à disposition d'une archive de portabilité, dont la structure s'appuie sur le profil IHE XDM. Le type d'export (unitaire, ciblé ou massif) ne modifie pas la nature de cette transaction ; il détermine uniquement le périmètre des données incluses dans l'archive produite et certaines contraintes additionnelles (délai de mise à disposition, format des données, intégration dans un logiciel ou consultation directe…).</p>
+
+<h4 id="pré-conditions">Pré-conditions</h4>
+<p>Le professionnel de santé, en tant que demandeur de l'export, doit au préalable :</p>
+<ul>
+  <li>Être habilité à initier la demande, dans le respect des règles de gestion des droits propres au logiciel ;</li>
+  <li>Être en mesure de préciser le périmètre de l'export souhaité (dossier patient identifié, ensemble de patients selon un critère de sélection, ou intégralité de la patientèle) ;</li>
+  <li>Disposer, le cas échéant, des coordonnées de l'éditeur ou du système destinataire.</li>
+</ul>
+
+<p>L'éditeur sortant, en tant que producteur de l'archive, doit au préalable :</p>
+<ul>
+  <li>Disposer d'un mécanisme permettant de recevoir et d'horodater la demande ;</li>
+  <li>Disposer des moyens techniques de génération de l'archive conformément à la structure de l'archive de Portabilité définie dans le présent guide ;</li>
+  <li>Disposer d'un Contact Portabilité identifié et joignable.</li>
+</ul>
+
+<h4 id="description-des-actions">Description des actions</h4>
+
+<figure>
+  <!-- ?xml version="1.0" encoding="us-ascii" standalone="no"? --><svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" viewBox="0 0 1023 579" zoomAndPan="magnify" preserveAspectRatio="none" width="1023px" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:1023px;height:579px;background:#FCF6EB;" version="1.1" height="579px"><defs></defs><g><rect width="1023" x="0" y="0" style="stroke:none;stroke-width:1.0;" fill="#FCF6EB" height="579"></rect><rect width="990" x="15" y="11.3301" style="stroke:none;stroke-width:1.0;" fill="none" height="27.9375"></rect><ellipse cx="129" cy="54.2676" rx="10" ry="10" style="stroke:#222222;stroke-width:1.0;" fill="#222222"></ellipse><rect rx="12.5" ry="12.5" width="216" x="21" y="84.2676" style="stroke:#000000;stroke-width:0.5;" fill="#EFD9FC" height="61.9063"></rect><text lengthAdjust="spacing" x="31" font-size="12" textLength="196" y="105.4063" font-family="sans-serif" fill="#000000">Demande l'export des données</text><text lengthAdjust="spacing" x="31" font-size="12" textLength="159" y="119.375" font-family="sans-serif" fill="#000000">en précisant le périmètre</text><text lengthAdjust="spacing" x="31" font-size="12" textLength="143" y="133.3438" font-family="sans-serif" fill="#000000">(unitaire, ciblé, massif)</text><line y1="11.3301" x1="15" y2="567.8516" style="stroke:#000000;stroke-width:1.5;" x2="15"></line><rect rx="12.5" ry="12.5" width="189" x="248" y="166.1738" style="stroke:#000000;stroke-width:0.5;" fill="#EFD9FC" height="33.9688"></rect><text lengthAdjust="spacing" x="258" font-size="12" textLength="169" y="187.3125" font-family="sans-serif" fill="#000000">Génère l'archive Portabilité</text><rect rx="12.5" ry="12.5" width="191" x="247" y="220.1426" style="stroke:#000000;stroke-width:0.5;" fill="#EFD9FC" height="47.9375"></rect><text lengthAdjust="spacing" x="257" font-size="12" textLength="162" y="241.2813" font-family="sans-serif" fill="#000000">Met l'archive à disposition</text><text lengthAdjust="spacing" x="257" font-size="12" textLength="171" y="255.25" font-family="sans-serif" fill="#000000">du fournisseur destinataire</text><line y1="11.3301" x1="241" y2="567.8516" style="stroke:#000000;stroke-width:1.5;" x2="241"></line><rect rx="12.5" ry="12.5" width="211" x="659.5" y="305.9766" style="stroke:#000000;stroke-width:0.5;" fill="#EFD9FC" height="47.9375"></rect><text lengthAdjust="spacing" x="669.5" font-size="12" textLength="191" y="327.1152" font-family="sans-serif" fill="#000000">Contrôle l'intégrité de l'archive</text><text lengthAdjust="spacing" x="669.5" font-size="12" textLength="184" y="341.084" font-family="sans-serif" fill="#000000">à l'aide du rapport d'intégrité</text><polygon style="stroke:#000000;stroke-width:0.5;" fill="#EFD9FC" points="700,373.9141,830,373.9141,842,385.9141,830,397.9141,700,397.9141,688,385.9141,700,373.9141"></polygon><text lengthAdjust="spacing" x="700" font-size="12" textLength="130" y="390.0684" font-family="sans-serif" fill="#000000">Type de Destinataire</text><text lengthAdjust="spacing" x="642" font-size="12" textLength="46" y="383.084" font-family="sans-serif" fill="#000000">Sytème</text><text lengthAdjust="spacing" x="842" font-size="12" textLength="60" y="383.084" font-family="sans-serif" fill="#000000">Personne</text><rect rx="12.5" ry="12.5" width="193" x="525.5" y="407.9141" style="stroke:#000000;stroke-width:0.5;" fill="#EFD9FC" height="33.9688"></rect><text lengthAdjust="spacing" x="535.5" font-size="12" textLength="173" y="429.0527" font-family="sans-serif" fill="#000000">Intègre les données reçues</text><rect rx="12.5" ry="12.5" width="348" x="448" y="461.8828" style="stroke:#000000;stroke-width:0.5;" fill="#EFD9FC" height="33.9688"></rect><text lengthAdjust="spacing" x="458" font-size="12" textLength="328" y="483.0215" font-family="sans-serif" fill="#000000">Met les données à disposition de l'utilisateur de LGC</text><rect rx="12.5" ry="12.5" width="184" x="816" y="407.9141" style="stroke:#000000;stroke-width:0.5;" fill="#EFD9FC" height="33.9688"></rect><text lengthAdjust="spacing" x="826" font-size="12" textLength="164" y="429.0527" font-family="sans-serif" fill="#000000">Télécharge/ouvre l'archive</text><rect rx="12.5" ry="12.5" width="160" x="828" y="461.8828" style="stroke:#000000;stroke-width:0.5;" fill="#EFD9FC" height="33.9688"></rect><text lengthAdjust="spacing" x="838" font-size="12" textLength="136" y="483.0215" font-family="sans-serif" fill="#000000">Consulte les données</text><polygon style="stroke:#000000;stroke-width:0.5;" fill="#EFD9FC" points="765,501.8516,777,513.8516,765,525.8516,753,513.8516,765,501.8516"></polygon><ellipse cx="765" cy="556.8516" rx="11" ry="11" style="stroke:#222222;stroke-width:1.0;" fill="none"></ellipse><ellipse cx="765" cy="556.8516" rx="6" ry="6" style="stroke:#111111;stroke-width:1.0;" fill="#222222"></ellipse><line y1="11.3301" x1="442" y2="567.8516" style="stroke:#000000;stroke-width:1.5;" x2="442"></line><line y1="11.3301" x1="1004" y2="567.8516" style="stroke:#000000;stroke-width:1.5;" x2="1004"></line><line y1="64.2676" x1="129" y2="84.2676" style="stroke:#181818;stroke-width:1.0;" x2="129"></line><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="125,74.2676,129,84.2676,133,74.2676,129,78.2676"></polygon><line y1="200.1426" x1="342.5" y2="220.1426" style="stroke:#181818;stroke-width:1.0;" x2="342.5"></line><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="338.5,210.1426,342.5,220.1426,346.5,210.1426,342.5,214.1426"></polygon><line y1="441.8828" x1="622" y2="461.8828" style="stroke:#181818;stroke-width:1.0;" x2="622"></line><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="618,451.8828,622,461.8828,626,451.8828,622,455.8828"></polygon><line y1="441.8828" x1="908" y2="461.8828" style="stroke:#181818;stroke-width:1.0;" x2="908"></line><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="904,451.8828,908,461.8828,912,451.8828,908,455.8828"></polygon><line y1="385.9141" x1="688" y2="385.9141" style="stroke:#181818;stroke-width:1.0;" x2="622"></line><line y1="385.9141" x1="622" y2="407.9141" style="stroke:#181818;stroke-width:1.0;" x2="622"></line><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="618,397.9141,622,407.9141,626,397.9141,622,401.9141"></polygon><line y1="385.9141" x1="842" y2="385.9141" style="stroke:#181818;stroke-width:1.0;" x2="908"></line><line y1="385.9141" x1="908" y2="407.9141" style="stroke:#181818;stroke-width:1.0;" x2="908"></line><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="904,397.9141,908,407.9141,912,397.9141,908,401.9141"></polygon><line y1="495.8516" x1="622" y2="513.8516" style="stroke:#181818;stroke-width:1.0;" x2="622"></line><line y1="513.8516" x1="622" y2="513.8516" style="stroke:#181818;stroke-width:1.0;" x2="753"></line><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="743,509.8516,753,513.8516,743,517.8516,747,513.8516"></polygon><line y1="495.8516" x1="908" y2="513.8516" style="stroke:#181818;stroke-width:1.0;" x2="908"></line><line y1="513.8516" x1="908" y2="513.8516" style="stroke:#181818;stroke-width:1.0;" x2="777"></line><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="787,509.8516,777,513.8516,787,517.8516,783,513.8516"></polygon><line y1="353.9141" x1="765" y2="373.9141" style="stroke:#181818;stroke-width:1.0;" x2="765"></line><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="761,363.9141,765,373.9141,769,363.9141,765,367.9141"></polygon><line y1="525.8516" x1="765" y2="545.8516" style="stroke:#181818;stroke-width:1.0;" x2="765"></line><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="761,535.8516,765,545.8516,769,535.8516,765,539.8516"></polygon><line y1="146.1738" x1="129" y2="151.1738" style="stroke:#181818;stroke-width:1.0;" x2="129"></line><line y1="151.1738" x1="129" y2="151.1738" style="stroke:#181818;stroke-width:1.0;" x2="342.5"></line><line y1="151.1738" x1="342.5" y2="166.1738" style="stroke:#181818;stroke-width:1.0;" x2="342.5"></line><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="338.5,156.1738,342.5,166.1738,346.5,156.1738,342.5,160.1738"></polygon><line y1="268.0801" x1="342.5" y2="290.9766" style="stroke:#181818;stroke-width:1.5;stroke-dasharray:7.0,7.0;" x2="342.5"></line><line y1="290.9766" x1="342.5" y2="290.9766" style="stroke:#181818;stroke-width:1.5;stroke-dasharray:7.0,7.0;" x2="765"></line><line y1="290.9766" x1="765" y2="305.9766" style="stroke:#181818;stroke-width:1.5;stroke-dasharray:7.0,7.0;" x2="765"></line><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="761,295.9766,765,305.9766,769,295.9766,765,299.9766"></polygon><text lengthAdjust="spacing" x="346.5" font-size="12" textLength="44" y="284.4766" font-family="sans-serif" fill="#000000">Flux 1 -</text><text font-weight="bold" lengthAdjust="spacing" x="394.5" font-size="12" textLength="171" y="284.4766" font-family="sans-serif" fill="#000000">ExportArchivePortabilite</text><text font-weight="bold" lengthAdjust="spacing" x="87" font-size="12" textLength="82" y="22.4688" font-family="sans-serif" fill="#000000">Demandeur</text><text lengthAdjust="spacing" x="87" font-size="12" textLength="70" y="36.4375" font-family="sans-serif" fill="#000000">(Personne)</text><text font-weight="bold" lengthAdjust="spacing" x="270.5" font-size="12" textLength="142" y="22.4688" font-family="sans-serif" fill="#000000">Fournisseur sortant</text><text lengthAdjust="spacing" x="270.5" font-size="12" textLength="63" y="36.4375" font-family="sans-serif" fill="#000000">(Système)</text><text font-weight="bold" lengthAdjust="spacing" x="649.5" font-size="12" textLength="89" y="22.4688" font-family="sans-serif" fill="#000000">Destinataire</text><text lengthAdjust="spacing" x="649.5" font-size="12" textLength="147" y="36.4375" font-family="sans-serif" fill="#000000">(Système ou Personne)</text></g></svg>
+    <figcaption> 
+        Diagramme d'activité du processus collaboratif "Export d'archive Portabilité"
+    </figcaption>
+</figure>
+
+<p><br/></p>
+
+<p>Le présent diagramme illustre le contexte fonctionnel de la transaction ExportArchivePortabilite. Seule la transaction de production et de mise à disposition de l'archive de portabilité est spécifiée par le présent guide d'implémentation.</p>
+
+<p>Les modalités d'exploitation de l'archive (import dans un système ou consultation directe) sont présentées à titre de contexte et ne relèvent pas du périmètre de la spécification.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Action</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Initier la demande d'export</td>
+      <td>Le professionnel de santé adresse à l'éditeur sortant une demande d'export précisant le périmètre souhaité (unitaire, ciblé ou massif). Cette demande intervient soit de sa propre initiative soit à l'initiative du patient</td>
+    </tr>
+    <tr>
+      <td>Produire l'archive</td>
+      <td>L'éditeur sortant génère l'archive de portabilité conforme au profil IHE XDM, incluant les données du périmètre déterminé, la documentation d'export et le rapport d'intégrité associés.</td>
+    </tr>
+    <tr>
+      <td>Mettre à disposition l'archive</td>
+      <td>L'éditeur sortant met l'archive à disposition du demandeur ou de l'éditeur destinataire selon un mode sécurisé (lien chiffré, plateforme de transfert HDS ou support physique à défaut).</td>
+    </tr>
+    <tr>
+      <td>Vérifier la complétude et l'intégrité</td>
+      <td>Le destinataire de l'archive contrôle, à l'aide du fichier INDEX et du rapport d'intégrité, que l'ensemble des données attendues a été correctement transmis.</td>
+    </tr>
+    <tr>
+      <td>Intégrer les données / ouvrir l'archive</td>
+      <td>Si le destinataire est un système, alors il exploite les données reçuesen les intégrant. Si le destinataire est une personne alors elle télécharge/ouvre l'archive.</td>
+    </tr>
+    <tr>
+      <td>Mettre à disposition / consulter les données</td>
+      <td>Si le destinataire est un système, il met à disposition les données à l'utilisateur de logiciel. Si le destinataire est une personne, elle consulte directement les données.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="contraintes">Contraintes</h4>
+
+<p>Les contraintes suivantes s'appliquent spécifiquement selon le type d'export, sans modifier la transaction décrite ci-dessus.</p>
+
+<p><strong>Export unitaire</strong></p>
+<ul>
+  <li>Porte sur le dossier d'un patient individuel, dans le cadre d'un transfert à un confrère, d'une demande du patient ou d'une réquisition judiciaire ;</li>
+  <li>Tout document structuré doit être accompagné de son pendant PDF pour permettre une consultation humaine sans logiciel métier compatible ;</li>
+  <li>La mise à disposition est immédiate, sans délai de 30 jours applicable ;</li>
+  <li>L'export est gratuit et peut être renouvelé autant que nécessaire ;</li>
+  <li>Les notes personnelles, l'agenda et les logs d'accès sont exclus du périmètre, sauf cas de réquisition judiciaire ;</li>
+  <li>Une implémentation usuelle consiste à permettre la désélection de certains documents par le professionnel avant transmission.</li>
+</ul>
+
+<p><strong>Export ciblé</strong></p>
+<ul>
+  <li>Porte sur un sous-ensemble de la patientèle défini par un critère de sélection (professionnel de santé référent, période, type de données) ;</li>
+  <li>Le format attendu est structuré, conformément au périmètre pivot et doit être accompagné d'un format PDF pour permettre une consultation humaine sans logiciel métier compatible;</li>
+  <li>Un délai de mise à disposition de 30 jours ainsi qu'un mécanisme d'accusé de réception sous 48 heures s'appliquent, conformément au référentiel ;</li>
+  <li>L'export est gratuit la première fois pour le périmètre concerné.</li>
+</ul>
+
+<p><strong>Export massif</strong></p>
+<ul>
+  <li>Porte sur l'intégralité de la patientèle, dans le cadre d'un changement d'éditeur ou d'un départ à la retraite ;</li>
+  <li>Le format attendu combine documents PDF « simples » et données structurées ;</li>
+  <li>Le délai de mise à disposition de 30 jours et le mécanisme d'accusé de réception sous 48 heures s'appliquent ;</li>
+  <li>Pour les structures de grande taille, un plan de migration phasé peut être proposé sous 7 jours dès lors que la première livraison (données actives de moins de deux ans) respecte le délai initial de 30 jours ;</li>
+  <li>L'éditeur sortant maintient l'accès à la fonctionnalité d'export pendant 90 jours à compter de la fin du contrat, période durant laquelle l'export du périmètre pivot demeure gratuit ;</li>
+  <li>L'export inclut les notes personnelles, l'agenda et les logs d'accès, sauf disposition contraire convenue avec le professionnel.</li>
+</ul>
+
+<p><br/></p>
+
+<h3 id="concepts-métiers-utilisés-dans-le-flux-dexport-darchive-de-portabilité">Concepts métiers utilisés dans le flux d'export d'archive de Portabilité</h3>
+
+<p>Les concepts métiers portés par ce flux sont les suivants :</p>
+
+<figure style="text-align:center;">
+      <!-- ?xml version="1.0" encoding="us-ascii" standalone="no"? --><svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" viewBox="0 0 793 331" zoomAndPan="magnify" preserveAspectRatio="none" width="793px" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:793px;height:331px;" version="1.1" height="331px"><defs></defs><g>  <!-- entity export --><g id="elem_export"><rect width="176" x="7" y="193" style="stroke:#C6C6C6;stroke-width:1.0;" fill="#FFDAB9" height="37.9688"></rect><text font-weight="bold" lengthAdjust="spacing" x="19" font-size="12" textLength="152" y="216.1387" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">Archive de portabilité</text></g>  <!-- entity archivepat --><g id="elem_archivepat"><rect width="171" x="273.5" y="84" style="stroke:#C6C6C6;stroke-width:1.0;" fill="#FFDAB9" height="51.9375"></rect><text font-weight="bold" lengthAdjust="spacing" x="285.5" font-size="12" textLength="142" y="107.1387" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">Archive XDM patient</text><text font-weight="bold" lengthAdjust="spacing" x="285.5" font-size="12" textLength="147" y="121.1074" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">(données médicales)</text></g>  <!-- entity transv --><g id="elem_transv"><rect width="252" x="233" y="186" style="stroke:#C6C6C6;stroke-width:1.0;" fill="#FFDAB9" height="51.9375"></rect><text font-weight="bold" lengthAdjust="spacing" x="245" font-size="12" textLength="228" y="209.1387" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">Archive de données transverses</text><text lengthAdjust="spacing" x="245" font-size="12" textLength="4" y="223.1074" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">&nbsp;</text></g>  <!-- entity doc --><g id="elem_doc"><rect width="195" x="261.5" y="288" style="stroke:#C6C6C6;stroke-width:1.0;" fill="#FFDAB9" height="37.9688"></rect><text font-weight="bold" lengthAdjust="spacing" x="273.5" font-size="12" textLength="171" y="311.1387" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">Documentation d'export</text></g>  <!-- entity pivotpatient --><g id="elem_pivotpatient"><rect width="189" x="566.5" y="7" style="stroke:#C6C6C6;stroke-width:1.0;" fill="#FFDAB9" height="37.9688"></rect><text font-weight="bold" lengthAdjust="spacing" x="578.5" font-size="12" textLength="165" y="30.1387" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">Périmètre pivot Patient</text></g>  <!-- entity pivottransv --><g id="elem_pivottransv"><rect width="216" x="553" y="186" style="stroke:#C6C6C6;stroke-width:1.0;" fill="#FFDAB9" height="37.9688"></rect><text font-weight="bold" lengthAdjust="spacing" x="565" font-size="12" textLength="192" y="209.1387" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">Périmètre pivot Transverse</text></g>  <!-- entity horspivotpatient --><g id="elem_horspivotpatient"><rect width="225" x="548.5" y="95" style="stroke:#C6C6C6;stroke-width:1.0;" fill="#FFDAB9" height="37.9688"></rect><text font-weight="bold" lengthAdjust="spacing" x="560.5" font-size="12" textLength="201" y="118.1387" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">Périmètre hors pivot Patient</text></g>  <!-- entity horspivottransv --><g id="elem_horspivottransv"><rect width="252" x="535" y="274" style="stroke:#C6C6C6;stroke-width:1.0;" fill="#FFDAB9" height="37.9688"></rect><text font-weight="bold" lengthAdjust="spacing" x="547" font-size="12" textLength="228" y="297.1387" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">Périmètre hors pivot Transverse</text></g>  <!-- reverse link export to doc --><g id="link_export_doc"><path d="M95,244.22 C95,244.22 95,307 95,307 C95,307 186.24,307 261.45,307 " style="stroke:#C6C6C6;stroke-width:1.0;" id="export-backto-doc" fill="none"></path><polygon style="stroke:#C6C6C6;stroke-width:1.0;" fill="#C6C6C6" points="95,231.22,91,237.22,95,243.22,99,237.22,95,231.22"></polygon><text lengthAdjust="spacing" x="229.3315" font-size="12" textLength="22" y="320.7996" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">1..*</text></g>  <!-- reverse link export to archivepat --><g id="link_export_archivepat"><path d="M95,179.81 C95,179.81 95,110 95,110 C95,110 196.2,110 273.29,110 " style="stroke:#C6C6C6;stroke-width:1.0;" id="export-backto-archivepat" fill="none"></path><polygon style="stroke:#C6C6C6;stroke-width:1.0;" fill="#C6C6C6" points="95,192.81,99,186.81,95,180.81,91,186.81,95,192.81"></polygon><text lengthAdjust="spacing" x="241.424" font-size="12" textLength="22" y="123.8571" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">1..*</text></g>  <!-- reverse link export to transv --><g id="link_export_transv"><path d="M196.28,212 C196.28,212 232.73,212 232.73,212 " style="stroke:#C6C6C6;stroke-width:1.0;" id="export-backto-transv" fill="none"></path><polygon style="stroke:#C6C6C6;stroke-width:1.0;" fill="#C6C6C6" points="183.28,212,189.28,216,195.28,212,189.28,208,183.28,212"></polygon><text lengthAdjust="spacing" x="201.1137" font-size="12" textLength="22" y="225.6317" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">0..*</text></g>  <!-- reverse link archivepat to pivotpatient --><g id="link_archivepat_pivotpatient"><path d="M457.73,89.5 C457.73,89.5 661,89.5 661,89.5 C661,89.5 661,63.76 661,45.05 " style="stroke:#C6C6C6;stroke-width:1.0;" id="archivepat-backto-pivotpatient" fill="none"></path><polygon style="stroke:#C6C6C6;stroke-width:1.0;" fill="#C6C6C6" points="444.73,89.5,450.73,93.5,456.73,89.5,450.73,85.5,444.73,89.5"></polygon><text lengthAdjust="spacing" x="633.3438" font-size="12" textLength="22" y="66.0777" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">1..*</text></g>  <!-- reverse link transv to pivottransv --><g id="link_transv_pivottransv"><path d="M498.33,205 C498.33,205 552.91,205 552.91,205 " style="stroke:#C6C6C6;stroke-width:1.0;" id="transv-backto-pivottransv" fill="none"></path><polygon style="stroke:#C6C6C6;stroke-width:1.0;" fill="#C6C6C6" points="485.33,205,491.33,209,497.33,205,491.33,201,485.33,205"></polygon><text lengthAdjust="spacing" x="521.1527" font-size="12" textLength="22" y="218.7152" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">0..*</text></g>  <!-- reverse link archivepat to horspivotpatient --><g id="link_archivepat_horspivotpatient"><path d="M457.73,114 C457.73,114 548.23,114 548.23,114 " style="stroke:#C6C6C6;stroke-width:1.0;" id="archivepat-backto-horspivotpatient" fill="none"></path><polygon style="stroke:#C6C6C6;stroke-width:1.0;" fill="#C6C6C6" points="444.73,114,450.73,118,456.73,114,450.73,110,444.73,114"></polygon><text lengthAdjust="spacing" x="516.5659" font-size="12" textLength="22" y="127.6871" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">0..*</text></g>  <!-- reverse link transv to horspivottransv --><g id="link_transv_horspivottransv"><path d="M498.1,231 C498.1,231 542,231 542,231 C542,231 542,255.52 542,273.72 " style="stroke:#C6C6C6;stroke-width:1.0;" id="transv-backto-horspivottransv" fill="none"></path><polygon style="stroke:#C6C6C6;stroke-width:1.0;" fill="#C6C6C6" points="485.1,231,491.1,235,497.1,231,491.1,227,485.1,231"></polygon><text lengthAdjust="spacing" x="502.7375" font-size="12" textLength="22" y="266.7044" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">0..*</text></g></g></svg>
+    <figcaption>Diagramme des concepts contenus dans le flux 1 </figcaption>
+</figure>
+
+<p><br/></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nom</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Archive de portabilité</strong> [1..1]</td>
+      <td>Conteneur structuré,regroupant l'ensemble des documents et données exportés ainsi que les éléments de métadonnées, d'index et de documentation nécessaires à leur exploitation par le destinataire.</td>
+    </tr>
+    <tr>
+      <td><strong>Archive XDM Patient (données médicales)</strong> [1..1]</td>
+      <td>Répertoire contenant l'ensemble des données de santé d'un patient dans un format structuré ou propriétaire</td>
+    </tr>
+    <tr>
+      <td><strong>Archive de données transverses</strong> [1..1]</td>
+      <td>Répertoire contenant l'ensemble des données transverses associées au praticien ou au cabinet (agenda, logs, comptabilité,…)</td>
+    </tr>
+    <tr>
+      <td><strong>Documentation d'export</strong> [1..1]</td>
+      <td>Ensemble des éléments accompagnant l'archive et permettant son interprétation par le système destinataire : dictionnaire de données, schéma technique de validation, jeu d'échantillons, rapport d'intégrité et de volumétrie.</td>
+    </tr>
+    <tr>
+      <td><strong>Périmètre pivot</strong> [1..1]</td>
+      <td><a name="l858">​</a>Ensemble minimal, obligatoire et standardisé de données de santé (administratives et médicales) dont le transfert doit être garanti sans frais et dans un délai défini (confère <a href="sf-perimetre-pivot.html">Périmètre pivot</a>).</td>
+    </tr>
+    <tr>
+      <td><strong>Hors périmètre pivot</strong> [0..*]</td>
+      <td>L’export des données hors périmètre pivot est facultatif. Néanmoins, lorsqu’elles sont exportées, ces données doivent être fournies dans un format standardisé lorsqu’il est nativement disponible. À défaut, elles sont exportées dans leur format d’origine.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br/></p>
+
+<h3 id="périmètre-pivot">Périmètre pivot</h3>
+
+<p>Les données du périmètre pivot, telles que définies en annexe 1 du <strong>Référentiel de sécurité, d'interopérabilité et d'éthique relatif à la portabilité des données des LGC</strong>, doivent être exportées conformément aux formats indiqués dans le tableau ci-après.</p>
+
+<p>Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilisés ou disponibles au sein du logiciel. Cette exigence n'implique pas la conversion ou la restructuration de données vers un format standardisé aux seules fins de l'export. <strong>Lorsqu'aucune donnée standardisée correspondante n'est disponible, les données doivent être exportées dans leur format d'origine.</strong></p>
+
+<p><strong>Les documents du dossier patient doivent être exportés dans un format de consultation de type PDF, en complément des formats structurés</strong>. Cette représentation vise à garantir l’accès et la consultation des informations exportées, y compris en l’absence d’un logiciel capable d’exploiter les formats structurés associés.
+<br/></p>
+
+<style>
+.lgc-export-formats {
+    width: 100%;
+    overflow-x: auto;
+}
+
+ /* Format table */
+  .lgc-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 0.9em;
+    font-family: sans-serif;
+  }
+  .lgc-table th {
+    background-color: #2c5f7a;
+    color: black;
+    padding: 8px 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+  }
+  .lgc-table td {
+    padding: 7px 10px;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+  .lgc-table tr:nth-child(even) td {
+    background-color: #f9f9f9;
+  }
+
+  /* Format flag */
+  .flag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.82em;
+    font-weight: 600;
+    margin: 2px 0;
+    line-height: 1.5;
+  }
+  .flag-prioritaire {
+    background-color: #edf5ec;
+    border: 1.5px solid #4a9e5c;
+    color: #2e6b3e;
+  }
+  .flag-alternatif {
+    background-color: #fdf0e6;
+    border: 1.5px solid #e07b39;
+    color: #a04e1a;
+  }
+  .flag-opposable {
+    background-color: #e8f4f8;
+    border: 1.5px solid #0077be;
+    color: #005a8e;
+  }
+
+  /* Légende */
+  .lgc-legend {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+    font-size: 0.85em;
+    font-family: sans-serif;
+  }
+  .lgc-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  /* Listes dans les cellules */
+  .lgc-table ul {
+    margin: 4px 0;
+    padding-left: 16px;
+  }
+  .lgc-table li {
+    margin: 2px 0;
+  }
+</style>
+
+<div class="lgc-export-formats">
+
+  <table class="lgc-table">
+    <thead>
+      <tr>
+        <th>Données</th>
+        <th>Type de données</th>
+        <th>Format</th>
+        <th>Référence / Standard</th>
+        <th>Contenu</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Identification et données administratives patient</td>
+        <td>Patient</td>
+        <td>
+        <ul>
+            <li> Format opposable : <span class="flag flag-opposable"> CDA R2 Niveau 3</span>
+          <span class="flag flag-opposable">PDF A-1</span></li>
+            <li><i>Format cible européen (non requis à date) : FHIR</i></li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+              <li>Spécifications opposables :<span class="flag flag-opposable"><a href="https://esante.gouv.fr/volet-synthese-medicale">Volet de Synthèse Médicale</a> (CI-SIS)</span></li>
+          </ul>
+        </td>
+        <td>Identité, INS qualifiée, coordonnées, professionnels de santé associés</td>
+      </tr>
+      <tr>
+        <td>Données médicales</td>
+        <td>Patient</td>
+        <td>
+          <ul>
+            <li> Format opposable : <span class="flag flag-opposable">CDA R2 Niveau 3</span>
+          <span class="flag flag-opposable">PDF A-1</span></li>
+            <li><i>Format cible européen (non requis à date) : FHIR</i></li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+              <li>Spécifications opposables : <span class="flag flag-opposable"><a href="https://esante.gouv.fr/volet-synthese-medicale">Volet de Synthèse Médicale</a> (CI-SIS)</span></li>
+          </ul>
+        </td>
+        <td>Antécédents, allergies, pathologies, traitements, facteurs de risque</td>
+      </tr>
+      <tr>
+        <td>Documents médicaux et données de biologie (produits dans le logiciel ou importés)</td>
+        <td>Patient</td>
+        <td>
+          <ul>
+            <li> Format prioritaire : <span class="flag flag-prioritaire">CDA R2</span>
+              <span class="flag flag-prioritaire">PDF A-1</span></li>
+            <li>Alternative : <span class="flag flag-alternatif">PDF A-1 seul</span></li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+              <li>Spécifications prioritaires : <span class="flag flag-prioritaire"><a href="https://esante.gouv.fr/offres-services/ci-sis/espace-publication">Volets du CI-SIS</a></span></li>
+              <li>Terminologie prioritaire (obligatoire pour les données de biologie) :  <span class="flag flag-prioritaire">LOINC</span> </li>
+          </ul>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Clinique – Notes de consultation</td>
+        <td>Patient</td>
+        <td>
+          <ul>
+              <li>Format opposable : <span class="flag flag-opposable">Tout format structuré (JSON, XML…) documenté</span>
+              <span class="flag flag-opposable">PDF A-1</span></li>
+          </ul>
+        </td>
+        <td></td>
+        <td>
+          Structuration minimale obligatoire :
+          <ul>
+            <li>Horodatage</li>
+            <li>Identification du professionnel</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>Clinique – Paramètres vitaux</td>
+        <td>Patient</td>
+        <td>
+          <ul>
+            <li>  Format opposable : <span class="flag flag-opposable">Tout format structuré (JSON, XML…) documenté</span>
+              <span class="flag flag-opposable">PDF A-1</span></li>
+            <li> <i>Format cible CI-SIS (non requis à date) : FHIR</i></li>
+          </ul>      
+        </td>
+        <td>
+          <ul>
+              <li><i>Spécifications cibles :  <a href="https://interop.esante.gouv.fr/ig/fhir/mesures/">Mesures de santé</a></i></li>
+          </ul>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Clinique – Notes personnelles</td>
+        <td>Patient</td>
+        <td>
+          <ul>
+              <li>Format opposable : <span class="flag flag-opposable">Tout format structuré (JSON, XML…) documenté</span>
+              <span class="flag flag-opposable">PDF A-1</span></li>
+          </ul>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Prescriptions</td>
+        <td>Patient</td>
+        <td>
+          <ul>
+              <li>Format opposable : <span class="flag flag-opposable">Tout format structuré (JSON, XML…) documenté</span>
+              <span class="flag flag-opposable">PDF A-1</span></li>
+              <li><i>Format cible européen (non requis à date) : FHIR</i></li>
+          </ul>
+        </td>
+        <td></td>
+        <td>Historique des ordonnances et dispensations</td>
+      </tr>
+      <tr>
+        <td>Agenda</td>
+        <td>Transverse</td>
+        <td>
+          <ul>
+              <li>Format prioritaire : <span class="flag flag-prioritaire">iCalendar</span></li>
+              <li>Alternative : <span class="flag flag-alternatif">Tout format structuré (JSON, XML…) documenté</span></li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+              <li>Spécifications prioritaires :  <span class="flag flag-prioritaire"> RFC 5545</span></li>
+          </ul>
+        </td>
+        <td>Rendez-vous passés, rendez-vous à venir</td>
+      </tr>
+      <tr>
+        <td>Traces</td>
+        <td>Transverse</td>
+        <td>
+          <ul>
+              <li>Format prioritaire : <span class="flag flag-prioritaire">Syslog</span></li>
+              <li>Alternative : <span class="flag flag-alternatif">Tout format structuré (JSON, XML…) documenté</span></li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+              <li><a href="https://esante.gouv.fr/sites/default/files/media_entity/documents/pgssi_referentiel_imputabilite_v1.0_0.pdf">Référentiel d'imputabilité</a></li>
+          </ul>
+        </td>
+        <td>
+          Structuration minimale obligatoire :
+          <ul>
+            <li>Accès</li>
+            <li>Modifications</li>
+            <li>Horodatage</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <div class="lgc-legend">
+    <div class="lgc-legend-item"><span class="flag flag-opposable">Opposable</span> Format imposé s'appuyant sur des spécifications CI-SIS quand elles existent</div>
+    <div class="lgc-legend-item"><span class="flag flag-prioritaire">Prioritaire</span> Format recommandé, à utiliser en priorité</div>
+    <div class="lgc-legend-item"><span class="flag flag-alternatif">Alternatif</span> Format accepté à défaut</div>
+  </div>
+
+
+</div>
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+  <script src="assets/js/flags.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container" data-fhir="generated">    <!-- container -->
+
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:var(--ig-left);">&nbsp;
+
+                <a href="index.html">&lt; prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:var(--ig-right);">&nbsp;
+
+                <a href="annexes.html">next &gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  
+          Package ans.fhir.fr.pdlgc#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-07-01 07:07:00 +0000">
+    2026-07-01
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="https://interop.esante.gouv.fr/ig/fhir/pdlgc/history.html" target="_blank">Historique des versions</a>
+<a style="color: var(--footer-hyperlink-text-color)" href="https://interop.esante.gouv.fr/ig/documentation" target="_blank">Documentation</a>
+ | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/ansforge/interop-ig-portabilite/issues/new" target="_blank">New Issue</a>
+
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+
+    <!-- Ajout ANS -->
+  <script src="assets/js/app.js" type="text/javascript"> </script>
+  <script src="assets/js/vendor.js" type="text/javascript"> </script>
+    <!-- Fin ajout ANS -->
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+    <!-- AJOUT ANS -->
+
+<footer role="contentinfo" class="footer footer-principal">
+  <div class="footer__region1">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <div class="logos">        
+            <div class="logo logo--0">
+              <a rel="nofollow" href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank">
+                
+                <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" loading="lazy" height="77"/>
+                
+              </a>
+            </div>
+        
+            <div class="logo logo--1">
+              <a rel="nofollow" href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank">
+                
+                <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" loading="lazy" height="74"/>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <p class="footer__title">Agence du Numérique en Santé</p>
+          <p>2-10 Rue d'Oradour-sur-Glane 75015 Paris</p>
+
+            <!-- <div class="m-social">
+            <ul class="m-social__list">        
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
+                  </div>
+                  <span class="sr-only">linkedin</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
+                  </div>
+                  <span class="sr-only">twitter</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
+                  </div>
+                  <span class="sr-only">youtube</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
+                  </div>
+                  <span class="sr-only">rss</span>
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        
+        <div class="col-6 col-lg-4">
+          <ul class="footer-list">
+            <li class="footer-list__item footer-list__item--hasIcon">
+              <a href="mailto:ci-sis@esante.gouv.fr" class="mailto-link">
+                <svg aria-hidden="true" focusable="false" class="svg-icon svg-angle-right"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+              </li>
+                <!-- <li class="footer-list__item">
+                <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
+              </li> -->
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+      <!-- <div class="footer__region2">
+      <div class="container">
+        <div class="footer-contentinfo">
+          <ul class="footer-list footer-list--inline">
+
+          </ul>
+        </div>
+      </div>
+    </div> -->
+  </footer>
+  </body>
+</html>

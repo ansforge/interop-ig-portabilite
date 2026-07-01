@@ -4,6 +4,7 @@
 
 * [Accueil](fr/index.md)
 * [PDLGC Destinataire - XML Representation](fr/ActorDefinition-PDLGC-Destinataire.xml.md)
+* [Vol1 - Etude Fonctionnelle](fr/sf-etude-fonctionnelle.md)
 * [PDLGC Destinataire](fr/ActorDefinition-PDLGC-Destinataire-testing.md)
 * [PDLGC Fournisseur Sortant](fr/ActorDefinition-PDLGC-Fournisseur-Sortant.ai.md)
 * [PDLGC Fournisseur Destinataire - XML Representation](fr/ActorDefinition-PDLGC-Fournisseur-Destinataire.xml.md)
@@ -21,7 +22,6 @@
 * [Téléchargements et usages](fr/annexe-downloads.md)
 * [](fr/ActorDefinition-PDLGC-Initiateur.change.history.md)
 * [PDLGC Fournisseur Destinataire](fr/ActorDefinition-PDLGC-Fournisseur-Destinataire-testing.md)
-* [Spécifications](fr/specifications.md)
 * [](fr/ActorDefinition-PDLGC-Destinataire.change.history.md)
 * [PDLGC Fournisseur Sortant - TTL Representation](fr/ActorDefinition-PDLGC-Fournisseur-Sortant.ttl.md)
 * [PDLGC Destinataire - JSON Representation](fr/ActorDefinition-PDLGC-Destinataire.json.md)
