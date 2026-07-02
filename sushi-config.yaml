@@ -19,6 +19,7 @@ jurisdiction: urn:iso:std:iso:3166#FR "France (la)"
 
 dependencies:
   ans.fr.terminologies: latest
+  ans.fr.mos: 0.1.0-ballot
 
 parameters: #Parameters list - https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html
     shownav: 'true'
@@ -44,6 +45,10 @@ pages:
         title: Accueil
     sf-etude-fonctionnelle.md:
         title: Vol1 - Etude Fonctionnelle
+    st-spec-techniques.md :
+        title : Vol2 - Spécifications Techniques
+        st-structure-archive.md : 
+            title : Structure de l'archive de portabilité
     annexes.md : 
         title : Annexes
         annexe-securite.md:
@@ -59,7 +64,9 @@ pages:
 
 menu:
     Accueil: index.html
-    Vol1 - Etude Fonctionnelle: sf-etude-fonctionnelle.html
+    Vol.1 - Etude Fonctionnelle: sf-etude-fonctionnelle.html
+    Vol.2 - Spécifications Techniques:
+        Structure de l'architecture de portabilité : st-structure-archive.html
     Annexes:
         Sécurité: annexe-securite.html
         Téléchargements et usage: annexe-downloads.html

@@ -2,7 +2,7 @@ Le processus collaboratif « Export d'archive de portabilité » couvre l'ensemb
 
 Quel que soit le cas d'usage, le processus repose sur un unique flux de production et de mise à disposition d'une archive de portabilité, dont la structure s'appuie sur le profil IHE XDM. Le type d'export (unitaire, ciblé ou massif) ne modifie pas la nature de cette transaction ; il détermine uniquement le périmètre des données incluses dans l'archive produite et certaines contraintes additionnelles (délai de mise à disposition, format des données, intégration dans un logiciel ou consultation directe...).
 
-#### Pré-conditions
+##### Pré-conditions
 Le professionnel de santé, en tant que demandeur de l'export, doit au préalable :
 - Être habilité à initier la demande, dans le respect des règles de gestion des droits propres au logiciel ;
 - Être en mesure de préciser le périmètre de l'export souhaité (dossier patient identifié, ensemble de patients selon un critère de sélection, ou intégralité de la patientèle) ;
@@ -13,7 +13,7 @@ L'éditeur sortant, en tant que producteur de l'archive, doit au préalable :
 - Disposer des moyens techniques de génération de l'archive conformément à la structure de l'archive de Portabilité définie dans le présent guide ;
 - Disposer d'un Contact Portabilité identifié et joignable.
 
-#### Description des actions
+##### Description des actions
 
 <figure>
 {% include activity-pdlg-export-archive-portabilite.svg %}
@@ -37,7 +37,7 @@ Les modalités d'exploitation de l'archive (import dans un système ou consultat
 | Intégrer les données / ouvrir l'archive | Si le destinataire est un système, alors il exploite les données reçuesen les intégrant. Si le destinataire est une personne alors elle télécharge/ouvre l'archive.|
 | Mettre à disposition / consulter les données | Si le destinataire est un système, il met à disposition les données à l'utilisateur de logiciel. Si le destinataire est une personne, elle consulte directement les données.
 
-#### Contraintes
+##### Contraintes
 
 Les contraintes suivantes s'appliquent spécifiquement selon le type d'export, sans modifier la transaction décrite ci-dessus.
 
