@@ -1,25 +1,13 @@
 {
   "codeSystems" : [{
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/competence-code-system",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type",
     "version" : "0.1.0",
     "status" : "draft",
-    "name" : "CompetenceCS",
-    "title" : "Compétences CodeSystem",
-    "description" : "Compétences des professionnels de santé.",
+    "name" : "CS_AssociationType",
+    "title" : "Type d'association XDS",
+    "description" : "Types d'association entre objets XDS dans le contexte portabilité.",
     "uses" : {
     },
-    "ValueSet-MeltingPotVS.html" : "Melting Pot Value Set"
-  },
-  {
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/type-carte-code-system",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "TypeCarteCS",
-    "title" : "Type de carte",
-    "description" : "Type de carte professionnelle et personnelle.",
-    "uses" : {
-    },
-    "ValueSet-TypeCarteVS.html" : "Type Carte Value Set",
-    "ValueSet-MeltingPotVS.html" : "Melting Pot Value Set"
+    "ValueSet-vs-association-type.html" : "Type d'association XDS (VS)"
   }]
 }

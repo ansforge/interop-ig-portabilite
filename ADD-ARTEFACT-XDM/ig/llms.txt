@@ -44,23 +44,40 @@
 
 ### CodeSystems
 
-* [Compétences CodeSystem](fr/CodeSystem-competence-code-system.md)
-* [Type de carte](fr/CodeSystem-type-carte-code-system.md)
+* [Type d'association XDS](fr/CodeSystem-cs-association-type.md)
 
 ### ValueSets
 
-* [EyeColor Value Set](fr/ValueSet-EyeColorVS.md)
-* [Melting Pot Value Set](fr/ValueSet-MeltingPotVS.md)
-* [ModifiedAdministrativeGender](fr/ValueSet-ModifiedAdministrativeGender.md)
-* [Type Carte Value Set](fr/ValueSet-TypeCarteVS.md)
+* [Type d'association XDS (VS)](fr/ValueSet-vs-association-type.md)
 
-### Resource Profiles
+### Logicals
 
-* [Patient français](fr/StructureDefinition-fr-patient.md)
+* [ActorPS (LM)](fr/StructureDefinition-ActorPS.md)
+* [ActorPatient (LM)](fr/StructureDefinition-ActorPatient.md)
+* [ActorSNR (LM)](fr/StructureDefinition-ActorSNR.md)
+* [ActorSystem (LM)](fr/StructureDefinition-ActorSystem.md)
+* [ActorXDS (LM)](fr/StructureDefinition-ActorXDS.md)
+* [Author (LM)](fr/StructureDefinition-Author.md)
+* [AuthorDocumentEntry (LM)](fr/StructureDefinition-AuthorDocumentEntry.md)
+* [AuthorInstitution (LM)](fr/StructureDefinition-AuthorInstitution.md)
+* [AuthorSubmissionSet (LM)](fr/StructureDefinition-AuthorSubmissionSet.md)
+* [Document Entry (LM)](fr/StructureDefinition-DocumentEntry.md)
+* [EventCode (LM)](fr/StructureDefinition-EventCode.md)
+* [Identifiant](fr/StructureDefinition-Identifiant.md)
+* [MatriculeINS](fr/StructureDefinition-MatriculeINS.md)
+* [PSIdNat](fr/StructureDefinition-PSIdNat.md)
+* [PatientId (LM)](fr/StructureDefinition-PatientId.md)
+* [SNR](fr/StructureDefinition-SNR.md)
+* [SourcePatientId (LM)](fr/StructureDefinition-SourcePatientId.md)
+* [SourcePatientInfo (LM)](fr/StructureDefinition-SourcePatientInfo.md)
+* [StructIdNat](fr/StructureDefinition-StructIdNat.md)
+* [SubmissionSet (LM)](fr/StructureDefinition-SubmissionSet.md)
+* [Archive XDM (LM)](fr/StructureDefinition-archive-xdm.md)
+* [Association XDM (LM)](fr/StructureDefinition-association-xdm.md)
 
-### Extensions
+### Primitive-type Profiles
 
-* [EyeColor](fr/StructureDefinition-EyeColor.md)
+* [IdentifiantSysteme](fr/StructureDefinition-IdentifiantSysteme.md)
 
 ### Basics
 
@@ -72,7 +89,3 @@
 ### ImplementationGuides
 
 * [Portabilité des Données LGC](fr/ImplementationGuide-ans.fhir.fr.pdlgc.md)
-
-### Examples
-
-* [frpatient-exemple (Patient)](fr/Patient-frpatient-exemple.md)

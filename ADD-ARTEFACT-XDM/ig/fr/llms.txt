@@ -44,23 +44,40 @@
 
 ### CodeSystems
 
-* [Compétences CodeSystem](CodeSystem-competence-code-system.md)
-* [Type de carte](CodeSystem-type-carte-code-system.md)
+* [Type d'association XDS](CodeSystem-cs-association-type.md)
 
 ### ValueSets
 
-* [EyeColor Value Set](ValueSet-EyeColorVS.md)
-* [Melting Pot Value Set](ValueSet-MeltingPotVS.md)
-* [ModifiedAdministrativeGender](ValueSet-ModifiedAdministrativeGender.md)
-* [Type Carte Value Set](ValueSet-TypeCarteVS.md)
+* [Type d'association XDS (VS)](ValueSet-vs-association-type.md)
 
-### Resource Profiles
+### Logicals
 
-* [Patient français](StructureDefinition-fr-patient.md)
+* [ActorPS (LM)](StructureDefinition-ActorPS.md)
+* [ActorPatient (LM)](StructureDefinition-ActorPatient.md)
+* [ActorSNR (LM)](StructureDefinition-ActorSNR.md)
+* [ActorSystem (LM)](StructureDefinition-ActorSystem.md)
+* [ActorXDS (LM)](StructureDefinition-ActorXDS.md)
+* [Author (LM)](StructureDefinition-Author.md)
+* [AuthorDocumentEntry (LM)](StructureDefinition-AuthorDocumentEntry.md)
+* [AuthorInstitution (LM)](StructureDefinition-AuthorInstitution.md)
+* [AuthorSubmissionSet (LM)](StructureDefinition-AuthorSubmissionSet.md)
+* [Document Entry (LM)](StructureDefinition-DocumentEntry.md)
+* [EventCode (LM)](StructureDefinition-EventCode.md)
+* [Identifiant](StructureDefinition-Identifiant.md)
+* [MatriculeINS](StructureDefinition-MatriculeINS.md)
+* [PSIdNat](StructureDefinition-PSIdNat.md)
+* [PatientId (LM)](StructureDefinition-PatientId.md)
+* [SNR](StructureDefinition-SNR.md)
+* [SourcePatientId (LM)](StructureDefinition-SourcePatientId.md)
+* [SourcePatientInfo (LM)](StructureDefinition-SourcePatientInfo.md)
+* [StructIdNat](StructureDefinition-StructIdNat.md)
+* [SubmissionSet (LM)](StructureDefinition-SubmissionSet.md)
+* [Archive XDM (LM)](StructureDefinition-archive-xdm.md)
+* [Association XDM (LM)](StructureDefinition-association-xdm.md)
 
-### Extensions
+### Primitive-type Profiles
 
-* [EyeColor](StructureDefinition-EyeColor.md)
+* [IdentifiantSysteme](StructureDefinition-IdentifiantSysteme.md)
 
 ### Basics
 
@@ -72,7 +89,3 @@
 ### ImplementationGuides
 
 * [Portabilité des Données LGC](ImplementationGuide-ans.fhir.fr.pdlgc.md)
-
-### Examples
-
-* [frpatient-exemple (Patient)](Patient-frpatient-exemple.md)
