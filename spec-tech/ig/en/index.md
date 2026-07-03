@@ -141,17 +141,13 @@ Le tableau ci-dessous récapitule les acteurs pouvant être impliqués dans les 
 
 
 
+
 ### Propriété intellectuelle
 
 This publication includes IP covered under the following statements.
 
-* ISO Maintains the copyright on the country codes, and controls it's use carefully. For futher details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
+* ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
 
-* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html): [CompetenceCS](CodeSystem-competence-code-system.md), [EyeColor](StructureDefinition-EyeColor.md)... Show 11 more, [EyeColorVS](ValueSet-EyeColorVS.md), [FrPatient](StructureDefinition-fr-patient.md), [MeltingPotVS](ValueSet-MeltingPotVS.md), [ModifiedAdministrativeGender](ValueSet-ModifiedAdministrativeGender.md), [PDLGC](index.md), [PDLGC_Demandeur](ActorDefinition-PDLGC-Demandeur.md), [PDLGC_Destinataire](ActorDefinition-PDLGC-Destinataire.md), [PDLGC_FournisseurDestinataire](ActorDefinition-PDLGC-Fournisseur-Destinataire.md), [PDLGC_FournisseurSortant](ActorDefinition-PDLGC-Fournisseur-Sortant.md), [TypeCarteCS](CodeSystem-type-carte-code-system.md) and [TypeCarteVS](ValueSet-TypeCarteVS.md)
-
-
-* This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
-
-* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [EyeColor](StructureDefinition-EyeColor.md), [EyeColorVS](ValueSet-EyeColorVS.md) and [MeltingPotVS](ValueSet-MeltingPotVS.md)
+* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.4.0/CodeSystem-ISO3166Part1.html): [PDLGC](index.md), [PDLGCArchivePortabilite](StructureDefinition-pdlgc-archive-portabilite.md)... Show 17 more, [PDLGCContactPortabilite](StructureDefinition-pdlgc-contact-portabilite.md), [PDLGCEditeurSortant](StructureDefinition-pdlgc-editeur-sortant.md), [PDLGCExportStatusCS](CodeSystem-pdlgc-export-status-cs.md), [PDLGCExportStatusVS](ValueSet-pdlgc-export-status-vs.md), [PDLGCExportTypeCS](CodeSystem-pdlgc-type-export-cs.md), [PDLGCExportTypeVS](ValueSet-pdlgc-export-type-vs.md), [PDLGCIndex](StructureDefinition-pdlgc-index.md), [PDLGCManifest](StructureDefinition-pdlgc-manifest.md), [PDLGCManifestArchives](StructureDefinition-pdlgc-manifest-archives.md), [PDLGCRepertoirePatient](StructureDefinition-pdlgc-repo-patient.md), [PDLGCRepertoireTransverse](StructureDefinition-pdlgc-repo-transverse.md), [PDLGCRepoTypeCS](CodeSystem-pdlgc-repo-type-cs.md), [PDLGCRepoTypeVS](ValueSet-pdlgc-repo-type-vs.md), [PDLGC_Demandeur](ActorDefinition-PDLGC-Demandeur.md), [PDLGC_Destinataire](ActorDefinition-PDLGC-Destinataire.md), [PDLGC_FournisseurDestinataire](ActorDefinition-PDLGC-Fournisseur-Destinataire.md) and [PDLGC_FournisseurSortant](ActorDefinition-PDLGC-Fournisseur-Sortant.md)
 
 

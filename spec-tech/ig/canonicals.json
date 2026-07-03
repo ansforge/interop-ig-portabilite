@@ -27,18 +27,25 @@
   "name" : "PDLGC_FournisseurSortant"
 },
 {
-  "id" : "competence-code-system",
+  "id" : "pdlgc-export-status-cs",
   "type" : "CodeSystem",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/competence-code-system",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs",
   "version" : "0.1.0",
-  "name" : "CompetenceCS"
+  "name" : "PDLGCExportStatusCS"
 },
 {
-  "id" : "type-carte-code-system",
+  "id" : "pdlgc-repo-type-cs",
   "type" : "CodeSystem",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/type-carte-code-system",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs",
   "version" : "0.1.0",
-  "name" : "TypeCarteCS"
+  "name" : "PDLGCRepoTypeCS"
+},
+{
+  "id" : "pdlgc-type-export-cs",
+  "type" : "CodeSystem",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs",
+  "version" : "0.1.0",
+  "name" : "PDLGCExportTypeCS"
 },
 {
   "id" : "ans.fhir.fr.pdlgc",
@@ -48,44 +55,79 @@
   "name" : "PDLGC"
 },
 {
-  "id" : "EyeColor",
+  "id" : "pdlgc-archive-portabilite",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/EyeColor",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-archive-portabilite",
   "version" : "0.1.0",
-  "name" : "EyeColor"
+  "name" : "PDLGCArchivePortabilite"
 },
 {
-  "id" : "fr-patient",
+  "id" : "pdlgc-contact-portabilite",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/fr-patient",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-contact-portabilite",
   "version" : "0.1.0",
-  "name" : "FrPatient"
+  "name" : "PDLGCContactPortabilite"
 },
 {
-  "id" : "EyeColorVS",
-  "type" : "ValueSet",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/EyeColorVS",
+  "id" : "pdlgc-editeur-sortant",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-editeur-sortant",
   "version" : "0.1.0",
-  "name" : "EyeColorVS"
+  "name" : "PDLGCEditeurSortant"
 },
 {
-  "id" : "MeltingPotVS",
-  "type" : "ValueSet",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/MeltingPotVS",
+  "id" : "pdlgc-index",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-index",
   "version" : "0.1.0",
-  "name" : "MeltingPotVS"
+  "name" : "PDLGCIndex"
 },
 {
-  "id" : "ModifiedAdministrativeGender",
-  "type" : "ValueSet",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/ModifiedAdministrativeGender",
+  "id" : "pdlgc-manifest",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-manifest",
   "version" : "0.1.0",
-  "name" : "ModifiedAdministrativeGender"
+  "name" : "PDLGCManifest"
 },
 {
-  "id" : "TypeCarteVS",
-  "type" : "ValueSet",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/TypeCarteVS",
+  "id" : "pdlgc-manifest-archives",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-manifest-archives",
   "version" : "0.1.0",
-  "name" : "TypeCarteVS"
+  "name" : "PDLGCManifestArchives"
+},
+{
+  "id" : "pdlgc-repo-patient",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-repo-patient",
+  "version" : "0.1.0",
+  "name" : "PDLGCRepertoirePatient"
+},
+{
+  "id" : "pdlgc-repo-transverse",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-repo-transverse",
+  "version" : "0.1.0",
+  "name" : "PDLGCRepertoireTransverse"
+},
+{
+  "id" : "pdlgc-export-status-vs",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-export-status-vs",
+  "version" : "0.1.0",
+  "name" : "PDLGCExportStatusVS"
+},
+{
+  "id" : "pdlgc-export-type-vs",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-export-type-vs",
+  "version" : "0.1.0",
+  "name" : "PDLGCExportTypeVS"
+},
+{
+  "id" : "pdlgc-repo-type-vs",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-repo-type-vs",
+  "version" : "0.1.0",
+  "name" : "PDLGCRepoTypeVS"
 }]

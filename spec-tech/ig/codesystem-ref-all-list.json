@@ -1,135 +1,131 @@
 {
   "codeSystems" : [{
-    "url" : "http://hl7.org/fhir/administrative-gender",
-    "version" : "4.0.1",
-    "status" : "active",
-    "name" : "AdministrativeGender",
-    "title" : "AdministrativeGender",
-    "description" : "The gender of a person used for administrative purposes.",
-    "oids" : ["2.16.840.1.113883.4.642.4.2"],
-    "uses" : {
-    },
-    "ValueSet-ModifiedAdministrativeGender.html" : "ModifiedAdministrativeGender",
-    "http://hl7.org/fhir/R4/valueset-administrative-gender.html" : "AdministrativeGender"
-  },
-  {
-    "url" : "http://hl7.org/fhir/identifier-use",
-    "version" : "4.0.1",
-    "status" : "active",
-    "name" : "IdentifierUse",
-    "title" : "IdentifierUse",
-    "description" : "Identifies the purpose for this identifier, if known .",
-    "oids" : ["2.16.840.1.113883.4.642.4.58"],
-    "uses" : {
-    },
-    "http://hl7.org/fhir/R4/valueset-identifier-use.html" : "IdentifierUse"
-  },
-  {
-    "url" : "http://hl7.org/fhir/link-type",
-    "version" : "4.0.1",
-    "status" : "active",
-    "name" : "LinkType",
-    "title" : "LinkType",
-    "description" : "The type of link between this patient resource and another patient resource.",
-    "oids" : ["2.16.840.1.113883.4.642.4.424"],
-    "uses" : {
-    },
-    "http://hl7.org/fhir/R4/valueset-link-type.html" : "LinkType"
-  },
-  {
-    "url" : "http://snomed.info/sct",
-    "version" : null,
-    "status" : "active",
-    "name" : "SNOMED_CT",
-    "title" : "SNOMED CT (all versions)",
-    "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
-    "oids" : ["2.16.840.1.113883.6.96"],
-    "uses" : {
-    },
-    "ValueSet-EyeColorVS.html" : "EyeColor Value Set",
-    "ValueSet-MeltingPotVS.html" : "Melting Pot Value Set"
-  },
-  {
-    "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
-    "version" : "3.0.0",
-    "status" : "active",
-    "name" : "ContactRole2",
-    "title" : "contactRole2",
-    "description" : "Code system of concepts which specify a relationship role that the next of kin/associated parties plays with regard to the patient. Also used in referrals, for example, it may be necessary to identify the contact representative at the clinic that sent a referral. Used in HL7 Version 2 messaging in the NK1 and CTD segments after 2.5, when it replace 2.16.840.1.113883.18.57.",
-    "oids" : ["2.16.840.1.113883.18.58"],
-    "uses" : {
-    },
-    "http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html" : "Patient Contact Relationship "
-  },
-  {
-    "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
-    "version" : "5.0.0",
-    "status" : "active",
-    "name" : "IdentifierType",
-    "title" : "identifierType",
-    "description" : "HL7-defined code system of concepts specifying type of identifier. Used in HL7 Version 2.x messaging data types CX, PLN, PPN, XCN and XON.",
-    "oids" : ["2.16.840.1.113883.18.108"],
-    "uses" : {
-    },
-    "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType"
-  },
-  {
-    "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
-    "version" : "4.0.0",
-    "status" : "active",
-    "name" : "MaritalStatus",
-    "title" : "MaritalStatus",
-    "description" : "\\* \\* \\* No description supplied \\* \\* \\*\r\n\r\n*Open Issue:* The specific meanings of these codes can vary somewhat by jurisdiction and implementation so caution should be used when determining equivalency.\r\n\r\n*Open Issue:* fixing and completion of the hierarchy and proper good definitions of all the concepts is badly needed.",
-    "oids" : ["2.16.840.1.113883.5.2"],
-    "uses" : {
-    },
-    "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
-  },
-  {
-    "url" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-    "version" : "4.0.0",
-    "status" : "active",
-    "name" : "NullFlavor",
-    "title" : "NullFlavor",
-    "description" : "A collection of codes specifying why a valid value is not present.",
-    "oids" : ["2.16.840.1.113883.5.1008"],
-    "uses" : {
-    },
-    "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
-  },
-  {
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/competence-code-system",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs",
     "version" : "0.1.0",
     "status" : "draft",
-    "name" : "CompetenceCS",
-    "title" : "Compétences CodeSystem",
-    "description" : "Compétences des professionnels de santé.",
+    "name" : "PDLGCExportStatusCS",
+    "title" : "Statut de l'export",
+    "description" : "Statut de l'export",
     "uses" : {
     },
-    "ValueSet-MeltingPotVS.html" : "Melting Pot Value Set"
+    "ValueSet-pdlgc-export-status-vs.html" : "PDLGC Statut de l'export"
   },
   {
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/type-carte-code-system",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs",
     "version" : "0.1.0",
     "status" : "draft",
-    "name" : "TypeCarteCS",
-    "title" : "Type de carte",
-    "description" : "Type de carte professionnelle et personnelle.",
+    "name" : "PDLGCRepoTypeCS",
+    "title" : "Type de répertoire",
+    "description" : "Type de répertoire",
     "uses" : {
     },
-    "ValueSet-MeltingPotVS.html" : "Melting Pot Value Set",
-    "ValueSet-TypeCarteVS.html" : "Type Carte Value Set"
+    "ValueSet-pdlgc-repo-type-vs.html" : "PDLGC Type de répertoire"
   },
   {
-    "url" : "urn:ietf:bcp:47",
-    "version" : "2.0.1",
-    "status" : "active",
-    "name" : "Ietf3066",
-    "title" : "Tags for the Identification of Languages",
-    "description" : "Older value from OID registry.  Superceded; see recommendations in BCP-47.",
-    "oids" : ["2.16.840.1.113883.6.121"],
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "PDLGCExportTypeCS",
+    "title" : "Type d'export de données LGC",
+    "description" : "Type d'export de données LGC",
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages"
+    "ValueSet-pdlgc-export-type-vs.html" : "PDLGC Type d'Export"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_G19-SecteurActiviteADELI/FHIR/TRE-G19-SecteurActiviteADELI",
+    "version" : "20250523120000",
+    "status" : "active",
+    "name" : "TRE_G19_SecteurActiviteADELI",
+    "title" : null,
+    "description" : "Secteur d'activité ADELI",
+    "oids" : ["1.2.250.1.71.1.2.23"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/ValueSet-secteurActivite-vs.html" : "SecteuractiviteVs"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite",
+    "version" : "20250523120000",
+    "status" : "active",
+    "name" : "TRE_R02_SecteurActivite",
+    "title" : null,
+    "description" : "Le secteur d'activité de santé est une donnée RPPS et correspond au type de service fourni par une structure. Il sert principalement à déterminer les propriétés de facturation des professionnels de ces structures vis-à-vis de l'assurance maladie",
+    "oids" : ["1.2.250.1.71.4.2.4"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/ValueSet-secteurActivite-vs.html" : "SecteuractiviteVs"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode",
+    "version" : "20241213120000",
+    "status" : "active",
+    "name" : "TRE_R216_HL7RoleCode",
+    "title" : null,
+    "description" : "HL7 roleCode",
+    "oids" : ["2.16.840.1.113883.5.111"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/ValueSet-relation-vs.html" : "RelationVs"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R217_ProtectionJuridique",
+    "title" : null,
+    "description" : "Protection juridique",
+    "oids" : ["1.2.250.1.213.1.1.4.327"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/ValueSet-relation-vs.html" : "RelationVs"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R316-AutreCategorieEtablissement/FHIR/TRE-R316-AutreCategorieEtablissement",
+    "version" : "20240329120000",
+    "status" : "active",
+    "name" : "TRE_R316_AutreCategorieEtablissement",
+    "title" : null,
+    "description" : "Cette table de référence permet d'identifier des catégories d'établissements qui ne sont pas présentes dans la TRE R66 qui est une table de référence ne listant que les catégories d'établissements présentes dans le FINESS",
+    "oids" : ["1.2.250.1.213.1.6.1.239"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/ValueSet-categorieEtablissement-vs.html" : "CategorieetablissementVs"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement",
+    "version" : "20260505120000",
+    "status" : "active",
+    "name" : "TRE_R66_CategorieEtablissement",
+    "title" : null,
+    "description" : "Catégorie d'établissements",
+    "oids" : ["1.2.250.1.213.1.6.1.8"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/ValueSet-categorieEtablissement-vs.html" : "CategorieetablissementVs"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R73-ESPIC/FHIR/TRE-R73-ESPIC",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R73_ESPIC",
+    "title" : null,
+    "description" : "Etablissement de santé privé d'intérêt collectif",
+    "oids" : ["1.2.250.1.213.1.6.1.45"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/terminologies/1.11.0/ValueSet-vs-tre-r73-espic-all.html" : "Vs Tre R73 Espic All"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R74-ModeFixationTarifaire/FHIR/TRE-R74-ModeFixationTarifaire",
+    "version" : "20251222120000",
+    "status" : "active",
+    "name" : "TRE_R74_ModeFixationTarifaire",
+    "title" : null,
+    "description" : "Mode de fixation tarifaire",
+    "oids" : ["1.2.250.1.213.1.6.1.46"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/terminologies/1.11.0/ValueSet-vs-tre-r74-mode-fixation-tarifaire-all.html" : "Vs Tre R74 Mode Fixation Tarifaire All"
   }]
 }

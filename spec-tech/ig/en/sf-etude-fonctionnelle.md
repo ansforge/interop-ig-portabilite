@@ -5,13 +5,15 @@
  
 There is no translation page available for the current page, so it has been rendered in the default language 
 
-### Définition du processus collaboratif
+### Etude fonctionnelle
+
+#### Définition du processus collaboratif
 
 Le processus collaboratif « Export d'archive de portabilité » couvre l'ensemble des situations dans lesquelles un professionnel de santé ou un patient exerce son droit à la portabilité des données auprès d'un éditeur de logiciel LGC.
 
 Quel que soit le cas d'usage, le processus repose sur un unique flux de production et de mise à disposition d'une archive de portabilité, dont la structure s'appuie sur le profil IHE XDM. Le type d'export (unitaire, ciblé ou massif) ne modifie pas la nature de cette transaction ; il détermine uniquement le périmètre des données incluses dans l'archive produite et certaines contraintes additionnelles (délai de mise à disposition, format des données, intégration dans un logiciel ou consultation directe…).
 
-#### Pré-conditions
+##### Pré-conditions
 
 Le professionnel de santé, en tant que demandeur de l'export, doit au préalable :
 
@@ -25,7 +27,7 @@ L'éditeur sortant, en tant que producteur de l'archive, doit au préalable :
 * Disposer des moyens techniques de génération de l'archive conformément à la structure de l'archive de Portabilité définie dans le présent guide ;
 * Disposer d'un Contact Portabilité identifié et joignable.
 
-#### Description des actions
+##### Description des actions
 
 Diagramme d'activité du processus collaboratif "Export d'archive Portabilité"
 
@@ -43,7 +45,7 @@ Les modalités d'exploitation de l'archive (import dans un système ou consultat
 | Intégrer les données / ouvrir l'archive | Si le destinataire est un système, alors il exploite les données reçuesen les intégrant. Si le destinataire est une personne alors elle télécharge/ouvre l'archive. |
 | Mettre à disposition / consulter les données | Si le destinataire est un système, il met à disposition les données à l'utilisateur de logiciel. Si le destinataire est une personne, elle consulte directement les données. |
 
-#### Contraintes
+##### Contraintes
 
 Les contraintes suivantes s'appliquent spécifiquement selon le type d'export, sans modifier la transaction décrite ci-dessus.
 
@@ -72,7 +74,7 @@ Les contraintes suivantes s'appliquent spécifiquement selon le type d'export, s
 * L'éditeur sortant maintient l'accès à la fonctionnalité d'export pendant 90 jours à compter de la fin du contrat, période durant laquelle l'export du périmètre pivot demeure gratuit ;
 * L'export inclut les notes personnelles, l'agenda et les logs d'accès, sauf disposition contraire convenue avec le professionnel.
 
-### Concepts métiers utilisés dans le flux d'export d'archive de Portabilité
+#### Concepts métiers utilisés dans le flux d'export d'archive de Portabilité
 
 Les concepts métiers portés par ce flux sont les suivants :
 
@@ -88,7 +90,7 @@ Diagramme des concepts contenus dans le flux 1
 | **Périmètre pivot**[1..1] | Ensemble minimal, obligatoire et standardisé de données de santé (administratives et médicales) dont le transfert doit être garanti sans frais et dans un délai défini (confère[Périmètre pivot](sf-perimetre-pivot.md)). |
 | **Hors périmètre pivot**[0..*] | L’export des données hors périmètre pivot est facultatif. Néanmoins, lorsqu’elles sont exportées, ces données doivent être fournies dans un format standardisé lorsqu’il est nativement disponible. À défaut, elles sont exportées dans leur format d’origine. |
 
-### Périmètre pivot
+#### Périmètre pivot
 
 Les données du périmètre pivot, telles que définies en annexe 1 du **Référentiel de sécurité, d'interopérabilité et d'éthique relatif à la portabilité des données des LGC**, doivent être exportées conformément aux formats indiqués dans le tableau ci-après.
 

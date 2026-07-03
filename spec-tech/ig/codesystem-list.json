@@ -1,25 +1,35 @@
 {
   "codeSystems" : [{
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/competence-code-system",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs",
     "version" : "0.1.0",
     "status" : "draft",
-    "name" : "CompetenceCS",
-    "title" : "Compétences CodeSystem",
-    "description" : "Compétences des professionnels de santé.",
+    "name" : "PDLGCExportStatusCS",
+    "title" : "Statut de l'export",
+    "description" : "Statut de l'export",
     "uses" : {
     },
-    "ValueSet-MeltingPotVS.html" : "Melting Pot Value Set"
+    "ValueSet-pdlgc-export-status-vs.html" : "PDLGC Statut de l'export"
   },
   {
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/type-carte-code-system",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs",
     "version" : "0.1.0",
     "status" : "draft",
-    "name" : "TypeCarteCS",
-    "title" : "Type de carte",
-    "description" : "Type de carte professionnelle et personnelle.",
+    "name" : "PDLGCRepoTypeCS",
+    "title" : "Type de répertoire",
+    "description" : "Type de répertoire",
     "uses" : {
     },
-    "ValueSet-MeltingPotVS.html" : "Melting Pot Value Set",
-    "ValueSet-TypeCarteVS.html" : "Type Carte Value Set"
+    "ValueSet-pdlgc-repo-type-vs.html" : "PDLGC Type de répertoire"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "PDLGCExportTypeCS",
+    "title" : "Type d'export de données LGC",
+    "description" : "Type d'export de données LGC",
+    "uses" : {
+    },
+    "ValueSet-pdlgc-export-type-vs.html" : "PDLGC Type d'Export"
   }]
 }

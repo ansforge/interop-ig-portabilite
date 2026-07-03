@@ -48,8 +48,8 @@
 	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7"}
-    h3,h4,h5,h6{--heading-prefix:"7.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"8"}
+    h3,h4,h5,h6{--heading-prefix:"8.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -107,7 +107,17 @@
     <a href="index.html">Accueil</a>
   </li>
   <li>
-    <a href="sf-etude-fonctionnelle.html">Vol1 - Etude Fonctionnelle</a>
+    <a href="sf-etude-fonctionnelle.html">Vol.1 - Etude Fonctionnelle</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Vol.2 - Spécifications Techniques
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="st-structure-archive.html">Structure de l&apos;architecture de portabilité</a>
+      </li>
+    </ul>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Annexes
@@ -221,19 +231,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#1">Requirements: Actor Definitions</a>
       </li>
       <li>
-         <a href="#2">Structures: Resource Profiles</a>
+         <a href="#2">Structures: Logical Models</a>
       </li>
       <li>
-         <a href="#3">Structures: Extension Definitions</a>
+         <a href="#3">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#4">Terminology: Value Sets</a>
-      </li>
-      <li>
-         <a href="#5">Terminology: Code Systems</a>
-      </li>
-      <li>
-         <a href="#6">Example: Example Instances</a>
+         <a href="#4">Terminology: Code Systems</a>
       </li>
    </ul>
 </div>
@@ -308,46 +312,110 @@ Dans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le d
       </tbody>
    </table>
    <a name="2"> </a>
-   <h3>Structures: Resource Profiles </h3>
-    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+   <h3>Structures: Logical Models </h3>
+    <p>These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-patient.html"
-                  title="StructureDefinition/fr-patient">
-                  <span title="StructureDefinition/fr-patient">Patient français
+               <a href="StructureDefinition-pdlgc-archive-portabilite.html"
+                  title="StructureDefinition/pdlgc-archive-portabilite">
+                  <span title="StructureDefinition/pdlgc-archive-portabilite">PDLGC Archive Portabilite
 </span>
                </a>
             </td>
             <td>
-<p>Description du patient français</p>
+<p>L'archive de Portabilité est un conteneur structuré, regroupant l'ensemble des documents et données LGC exportées ainsi que les éléments de métadonnées, d'index et de documentation nécessaires à leur exploitation par le destinataire.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-pdlgc-contact-portabilite.html"
+                  title="StructureDefinition/pdlgc-contact-portabilite">
+                  <span title="StructureDefinition/pdlgc-contact-portabilite">PDLGC Contact Portabilite
+</span>
+               </a>
+            </td>
+            <td>
+<p>PDLGC Contact Portabilite</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-pdlgc-editeur-sortant.html"
+                  title="StructureDefinition/pdlgc-editeur-sortant">
+                  <span title="StructureDefinition/pdlgc-editeur-sortant">PDLGC Editeur Sortant
+</span>
+               </a>
+            </td>
+            <td>
+<p>PDLGC Editeur Sortant</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-pdlgc-index.html"
+                  title="StructureDefinition/pdlgc-index">
+                  <span title="StructureDefinition/pdlgc-index">PDLGC Index
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'INDEX.HTM est destiné à la lecture humaine</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-pdlgc-manifest.html"
+                  title="StructureDefinition/pdlgc-manifest">
+                  <span title="StructureDefinition/pdlgc-manifest">PDLGC Manifest
+</span>
+               </a>
+            </td>
+            <td>
+<p>Le fichier MANIFEST.XML porte les métadonnées globales de l'export (nombre de dossiers patients, volumétrie, éléments d'intégrité), distinctes des métadonnées XDM portées par chaque <code class="language-plaintext highlighter-rouge">METADATA.XML</code> patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-pdlgc-manifest-archives.html"
+                  title="StructureDefinition/pdlgc-manifest-archives">
+                  <span title="StructureDefinition/pdlgc-manifest-archives">PDLGC Manifest Archives
+</span>
+               </a>
+            </td>
+            <td>
+<p>Informations relatives aux répertoires Patient et transverse exportées dans l'archive de portabilité</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-pdlgc-repo-patient.html"
+                  title="StructureDefinition/pdlgc-repo-patient">
+                  <span title="StructureDefinition/pdlgc-repo-patient">PDLGC Répertoire Patient
+</span>
+               </a>
+            </td>
+            <td>
+<p>Répertoire stockant les données médicales d'un patient, conformément aux spécifications d'Archives XDM</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-pdlgc-repo-transverse.html"
+                  title="StructureDefinition/pdlgc-repo-transverse">
+                  <span title="StructureDefinition/pdlgc-repo-transverse">PDLGC Répertoire Transverse
+</span>
+               </a>
+            </td>
+            <td>
+<p>Répertoire stockant les données trasnverses associés au praticient et/ou au cabinet</p>
 </td>
          </tr>
       </tbody>
    </table>
    <a name="3"> </a>
-   <h3>Structures: Extension Definitions </h3>
-    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
-<table class="grid">
-      <col style="width:20%"/>
-      <tbody>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-EyeColor.html"
-                  title="StructureDefinition/EyeColor">
-                  <span title="StructureDefinition/EyeColor">EyeColor
-</span>
-               </a>
-            </td>
-            <td>
-<p>Eye color extension</p>
-</td>
-         </tr>
-      </tbody>
-   </table>
-   <a name="4"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -355,52 +423,43 @@ Dans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le d
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-EyeColorVS.html" title="ValueSet/EyeColorVS">
-                  <span title="ValueSet/EyeColorVS">EyeColor Value Set
+               <a href="ValueSet-pdlgc-export-status-vs.html"
+                  title="ValueSet/pdlgc-export-status-vs">
+                  <span title="ValueSet/pdlgc-export-status-vs">PDLGC Statut de l'export
 </span>
                </a>
             </td>
             <td>
-<p>Different eye colors.</p>
+<p>PDLGC Statut de l'export</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-MeltingPotVS.html" title="ValueSet/MeltingPotVS">
-                  <span title="ValueSet/MeltingPotVS">Melting Pot Value Set
+               <a href="ValueSet-pdlgc-export-type-vs.html"
+                  title="ValueSet/pdlgc-export-type-vs">
+                  <span title="ValueSet/pdlgc-export-type-vs">PDLGC Type d'Export
 </span>
                </a>
             </td>
             <td>
-<p>Melting Pot Value Set.</p>
+<p>PDLGC Type d'Export</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-ModifiedAdministrativeGender.html"
-                  title="ValueSet/ModifiedAdministrativeGender">
-                  <span title="ValueSet/ModifiedAdministrativeGender">ModifiedAdministrativeGender
+               <a href="ValueSet-pdlgc-repo-type-vs.html"
+                  title="ValueSet/pdlgc-repo-type-vs">
+                  <span title="ValueSet/pdlgc-repo-type-vs">PDLGC Type de répertoire
 </span>
                </a>
             </td>
             <td>
-<p>AdministrativeGender without unknown code</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-TypeCarteVS.html" title="ValueSet/TypeCarteVS">
-                  <span title="ValueSet/TypeCarteVS">Type Carte Value Set
-</span>
-               </a>
-            </td>
-            <td>
-<p>Type Carte Value Set.</p>
+<p>PDLGC Type de répertoire</p>
 </td>
          </tr>
       </tbody>
    </table>
-   <a name="5"> </a>
+   <a name="4"> </a>
    <h3>Terminology: Code Systems </h3>
     <p>These define new code systems used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -408,45 +467,38 @@ Dans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le d
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-competence-code-system.html"
-                  title="CodeSystem/competence-code-system">
-                  <span title="CodeSystem/competence-code-system">Compétences CodeSystem
+               <a href="CodeSystem-pdlgc-export-status-cs.html"
+                  title="CodeSystem/pdlgc-export-status-cs">
+                  <span title="CodeSystem/pdlgc-export-status-cs">Statut de l'export
 </span>
                </a>
             </td>
             <td>
-<p>Compétences des professionnels de santé.</p>
+<p>Statut de l'export</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-type-carte-code-system.html"
-                  title="CodeSystem/type-carte-code-system">
-                  <span title="CodeSystem/type-carte-code-system">Type de carte
+               <a href="CodeSystem-pdlgc-type-export-cs.html"
+                  title="CodeSystem/pdlgc-type-export-cs">
+                  <span title="CodeSystem/pdlgc-type-export-cs">Type d'export de données LGC
 </span>
                </a>
             </td>
             <td>
-<p>Type de carte professionnelle et personnelle.</p>
+<p>Type d'export de données LGC</p>
 </td>
          </tr>
-      </tbody>
-   </table>
-   <a name="6"> </a>
-   <h3>Example: Example Instances </h3>
-    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
-<table class="grid">
-      <col style="width:20%"/>
-      <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="Patient-frpatient-exemple.html" title="Patient/frpatient-exemple">
-                  <span title="Patient/frpatient-exemple">frpatient-exemple
+               <a href="CodeSystem-pdlgc-repo-type-cs.html"
+                  title="CodeSystem/pdlgc-repo-type-cs">
+                  <span title="CodeSystem/pdlgc-repo-type-cs">Type de répertoire
 </span>
                </a>
             </td>
             <td>
-<p>Exemple d'un patient français</p>
+<p>Type de répertoire</p>
 </td>
          </tr>
       </tbody>
@@ -499,8 +551,8 @@ Dans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le d
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Package ans.fhir.fr.pdlgc#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-07-01 12:28:00 +0000">
-    2026-07-01
+  <span title="2026-07-03 08:42:00 +0000">
+    2026-07-03
   </span>
 
           <br/>

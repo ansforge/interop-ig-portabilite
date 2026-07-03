@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.name [ fhir:value "PDLGC"] ;
   fhir:ImplementationGuide.title [ fhir:value "Portabilité des Données LGC"] ;
   fhir:ImplementationGuide.status [ fhir:value "draft"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-07-01T12:28:35+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-07-03T08:42:19+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ;
   fhir:ImplementationGuide.contact [
      fhir:index -1 ;
@@ -81,7 +81,16 @@
        fhir:link <https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies>
      ] ;
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "ans.fr.terminologies" ] ;
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.10.0" ]
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.11.0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.id [ fhir:value "ans_fr_mos" ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "https://interop.esante.gouv.fr/ig/mos/ImplementationGuide/ans.fr.mos" ;
+       fhir:link <https://interop.esante.gouv.fr/ig/mos/ImplementationGuide/ans.fr.mos>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "ans.fr.mos" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "0.1.0-ballot" ]
   ] ;
   fhir:ImplementationGuide.definition [
      fhir:Element.extension [
@@ -965,101 +974,28 @@
        fhir:Element.extension [
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/competence-code-system> ;
-         fhir:Reference.reference [ fhir:value "CodeSystem/competence-code-system" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-archive-portabilite> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/pdlgc-archive-portabilite" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Compétences CodeSystem" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Compétences des professionnels de santé." ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDLGC Archive Portabilite" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "L'archive de Portabilité est un conteneur structuré, regroupant l'ensemble des documents et données LGC exportées ainsi que les éléments de métadonnées, d'index et de documentation nécessaires à leur exploitation par le destinataire." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index -1 ;
        fhir:Element.extension [
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/EyeColor> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/EyeColor" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-contact-portabilite> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/pdlgc-contact-portabilite" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EyeColor" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Eye color extension" ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/EyeColorVS> ;
-         fhir:Reference.reference [ fhir:value "ValueSet/EyeColorVS" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EyeColor Value Set" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Different eye colors." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "Patient" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/Patient/frpatient-exemple> ;
-         fhir:Reference.reference [ fhir:value "Patient/frpatient-exemple" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "frpatient-exemple" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Exemple d'un patient français" ] ;
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/fr-patient|0.1.0" ;
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/fr-patient|0.1.0>
-       ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/MeltingPotVS> ;
-         fhir:Reference.reference [ fhir:value "ValueSet/MeltingPotVS" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Melting Pot Value Set" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Melting Pot Value Set." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/ModifiedAdministrativeGender> ;
-         fhir:Reference.reference [ fhir:value "ValueSet/ModifiedAdministrativeGender" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ModifiedAdministrativeGender" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "AdministrativeGender without unknown code" ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index -1 ;
-       fhir:Element.extension [
-         fhir:index -1 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/fr-patient> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/fr-patient" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient français" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Description du patient français" ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDLGC Contact Portabilite" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "PDLGC Contact Portabilite" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index -1 ;
@@ -1094,6 +1030,20 @@
        fhir:Element.extension [
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-editeur-sortant> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/pdlgc-editeur-sortant" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDLGC Editeur Sortant" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "PDLGC Editeur Sortant" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
          fhir:Extension.valueString [ fhir:value "ActorDefinition" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
@@ -1122,14 +1072,112 @@
        fhir:Element.extension [
          fhir:index -1 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-index> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/pdlgc-index" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDLGC Index" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "L'INDEX.HTM est destiné à la lecture humaine" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-manifest> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/pdlgc-manifest" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDLGC Manifest" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Le fichier MANIFEST.XML porte les métadonnées globales de l'export (nombre de dossiers patients, volumétrie, éléments d'intégrité), distinctes des métadonnées XDM portées par chaque `METADATA.XML` patient" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-manifest-archives> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/pdlgc-manifest-archives" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDLGC Manifest Archives" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Informations relatives aux répertoires Patient et transverse exportées dans l'archive de portabilité" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-repo-patient> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/pdlgc-repo-patient" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDLGC Répertoire Patient" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Répertoire stockant les données médicales d'un patient, conformément aux spécifications d'Archives XDM" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-repo-transverse> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/pdlgc-repo-transverse" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDLGC Répertoire Transverse" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Répertoire stockant les données trasnverses associés au praticient et/ou au cabinet" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/TypeCarteVS> ;
-         fhir:Reference.reference [ fhir:value "ValueSet/TypeCarteVS" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-export-status-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/pdlgc-export-status-vs" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Type Carte Value Set" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Type Carte Value Set." ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDLGC Statut de l'export" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "PDLGC Statut de l'export" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-export-type-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/pdlgc-export-type-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDLGC Type d'Export" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "PDLGC Type d'Export" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-repo-type-vs> ;
+         fhir:Reference.reference [ fhir:value "ValueSet/pdlgc-repo-type-vs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDLGC Type de répertoire" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "PDLGC Type de répertoire" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index -1 ;
@@ -1139,11 +1187,39 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/type-carte-code-system> ;
-         fhir:Reference.reference [ fhir:value "CodeSystem/type-carte-code-system" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/pdlgc-export-status-cs" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Type de carte" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Type de carte professionnelle et personnelle." ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Statut de l'export" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Statut de l'export" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/pdlgc-type-export-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Type d'export de données LGC" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Type d'export de données LGC" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs> ;
+         fhir:Reference.reference [ fhir:value "CodeSystem/pdlgc-repo-type-cs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Type de répertoire" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Type de répertoire" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ] ;
      fhir:ImplementationGuide.definition.page [
@@ -1175,6 +1251,27 @@
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "sf-etude-fonctionnelle.html" ] ;
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Vol1 - Etude Fonctionnelle" ] ;
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "st-spec-techniques.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "st-spec-techniques.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Vol2 - Spécifications Techniques" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ] ;
+         fhir:ImplementationGuide.definition.page.page [
+           fhir:index -1 ;
+           fhir:Element.extension [
+             fhir:index -1 ;
+             fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+             fhir:Extension.valueUrl [ fhir:value "st-structure-archive.html" ]
+           ] ;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "st-structure-archive.html" ] ;
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Structure de l'archive de portabilité" ] ;
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+         ]
        ], [
          fhir:index -1 ;
          fhir:Element.extension [

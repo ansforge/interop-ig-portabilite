@@ -11,6 +11,7 @@
 * [PDLGC Fournisseur Sortant](fr/ActorDefinition-PDLGC-Fournisseur-Sortant.ai.md)
 * [PDLGC Fournisseur Destinataire - XML Representation](fr/ActorDefinition-PDLGC-Fournisseur-Destinataire.xml.md)
 * [PDLGC Destinataire - TTL Representation](fr/ActorDefinition-PDLGC-Destinataire.ttl.md)
+* [Structure de l'archive de portabilité](fr/st-structure-archive.md)
 * [PDLGC Demandeur](fr/ActorDefinition-PDLGC-Demandeur.ai.md)
 * [](fr/ActorDefinition-PDLGC-Fournisseur-Destinataire.change.history.md)
 * [PDLGC Demandeur](fr/ActorDefinition-PDLGC-Demandeur-testing.md)
@@ -33,6 +34,7 @@
 * [](fr/ActorDefinition-PDLGC-Demandeur.change.history.md)
 * [PDLGC Fournisseur Sortant](fr/ActorDefinition-PDLGC-Fournisseur-Sortant-testing.md)
 * [PDLGC Fournisseur Destinataire](fr/ActorDefinition-PDLGC-Fournisseur-Destinataire.md)
+* [Vol2 - Spécifications Techniques](fr/st-spec-techniques.md)
 * [PDLGC Fournisseur Sortant - XML Representation](fr/ActorDefinition-PDLGC-Fournisseur-Sortant.xml.md)
 * [PDLGC Destinataire](fr/ActorDefinition-PDLGC-Destinataire.md)
 * [Sécurité](fr/annexe-securite.md)
@@ -44,23 +46,26 @@
 
 ### CodeSystems
 
-* [Compétences CodeSystem](fr/CodeSystem-competence-code-system.md)
-* [Type de carte](fr/CodeSystem-type-carte-code-system.md)
+* [Statut de l'export](fr/CodeSystem-pdlgc-export-status-cs.md)
+* [Type de répertoire](fr/CodeSystem-pdlgc-repo-type-cs.md)
+* [Type d'export de données LGC](fr/CodeSystem-pdlgc-type-export-cs.md)
 
 ### ValueSets
 
-* [EyeColor Value Set](fr/ValueSet-EyeColorVS.md)
-* [Melting Pot Value Set](fr/ValueSet-MeltingPotVS.md)
-* [ModifiedAdministrativeGender](fr/ValueSet-ModifiedAdministrativeGender.md)
-* [Type Carte Value Set](fr/ValueSet-TypeCarteVS.md)
+* [PDLGC Statut de l'export](fr/ValueSet-pdlgc-export-status-vs.md)
+* [PDLGC Type d'Export](fr/ValueSet-pdlgc-export-type-vs.md)
+* [PDLGC Type de répertoire](fr/ValueSet-pdlgc-repo-type-vs.md)
 
-### Resource Profiles
+### Logicals
 
-* [Patient français](fr/StructureDefinition-fr-patient.md)
-
-### Extensions
-
-* [EyeColor](fr/StructureDefinition-EyeColor.md)
+* [PDLGC Archive Portabilite](fr/StructureDefinition-pdlgc-archive-portabilite.md)
+* [PDLGC Contact Portabilite](fr/StructureDefinition-pdlgc-contact-portabilite.md)
+* [PDLGC Editeur Sortant](fr/StructureDefinition-pdlgc-editeur-sortant.md)
+* [PDLGC Index](fr/StructureDefinition-pdlgc-index.md)
+* [PDLGC Manifest Archives](fr/StructureDefinition-pdlgc-manifest-archives.md)
+* [PDLGC Manifest](fr/StructureDefinition-pdlgc-manifest.md)
+* [PDLGC Répertoire Patient](fr/StructureDefinition-pdlgc-repo-patient.md)
+* [PDLGC Répertoire Transverse](fr/StructureDefinition-pdlgc-repo-transverse.md)
 
 ### Basics
 
@@ -72,7 +77,3 @@
 ### ImplementationGuides
 
 * [Portabilité des Données LGC](fr/ImplementationGuide-ans.fhir.fr.pdlgc.md)
-
-### Examples
-
-* [frpatient-exemple (Patient)](fr/Patient-frpatient-exemple.md)

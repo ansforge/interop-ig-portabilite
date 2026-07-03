@@ -13,7 +13,7 @@
   <name value="PDLGC"/>
   <title value="Portabilité des Données LGC"/>
   <status value="draft"/>
-  <date value="2026-07-01T12:28:35+00:00"/>
+  <date value="2026-07-03T08:42:19+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -52,7 +52,12 @@
   <dependsOn id="ans_fr_terminologies">
     <uri value="https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies"/>
     <packageId value="ans.fr.terminologies"/>
-    <version value="1.10.0"/>
+    <version value="1.11.0"/>
+  </dependsOn>
+  <dependsOn id="ans_fr_mos">
+    <uri value="https://interop.esante.gouv.fr/ig/mos/ImplementationGuide/ans.fr.mos"/>
+    <packageId value="ans.fr.mos"/>
+    <version value="0.1.0-ballot"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -641,79 +646,24 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
+        <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/competence-code-system"/>
+        <reference value="StructureDefinition/pdlgc-archive-portabilite"/>
       </reference>
-      <name value="Compétences CodeSystem"/>
-      <description value="Compétences des professionnels de santé."/>
+      <name value="PDLGC Archive Portabilite"/>
+      <description value="L'archive de Portabilité est un conteneur structuré, regroupant l'ensemble des documents et données LGC exportées ainsi que les éléments de métadonnées, d'index et de documentation nécessaires à leur exploitation par le destinataire."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
+        <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/EyeColor"/>
+        <reference value="StructureDefinition/pdlgc-contact-portabilite"/>
       </reference>
-      <name value="EyeColor"/>
-      <description value="Eye color extension"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/EyeColorVS"/>
-      </reference>
-      <name value="EyeColor Value Set"/>
-      <description value="Different eye colors."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/frpatient-exemple"/>
-      </reference>
-      <name value="frpatient-exemple"/>
-      <description value="Exemple d'un patient français"/>
-      <exampleCanonical value="https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/fr-patient|0.1.0"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/MeltingPotVS"/>
-      </reference>
-      <name value="Melting Pot Value Set"/>
-      <description value="Melting Pot Value Set."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ModifiedAdministrativeGender"/>
-      </reference>
-      <name value="ModifiedAdministrativeGender"/>
-      <description value="AdministrativeGender without unknown code"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/fr-patient"/>
-      </reference>
-      <name value="Patient français"/>
-      <description value="Description du patient français"/>
+      <name value="PDLGC Contact Portabilite"/>
+      <description value="PDLGC Contact Portabilite"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -740,6 +690,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/pdlgc-editeur-sortant"/>
+      </reference>
+      <name value="PDLGC Editeur Sortant"/>
+      <description value="PDLGC Editeur Sortant"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ActorDefinition"/>
       </extension>
       <reference>
@@ -762,13 +723,90 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/pdlgc-index"/>
+      </reference>
+      <name value="PDLGC Index"/>
+      <description value="L'INDEX.HTM est destiné à la lecture humaine"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/pdlgc-manifest"/>
+      </reference>
+      <name value="PDLGC Manifest"/>
+      <description value="Le fichier MANIFEST.XML porte les métadonnées globales de l'export (nombre de dossiers patients, volumétrie, éléments d'intégrité), distinctes des métadonnées XDM portées par chaque `METADATA.XML` patient"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/pdlgc-manifest-archives"/>
+      </reference>
+      <name value="PDLGC Manifest Archives"/>
+      <description value="Informations relatives aux répertoires Patient et transverse exportées dans l'archive de portabilité"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/pdlgc-repo-patient"/>
+      </reference>
+      <name value="PDLGC Répertoire Patient"/>
+      <description value="Répertoire stockant les données médicales d'un patient, conformément aux spécifications d'Archives XDM"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/pdlgc-repo-transverse"/>
+      </reference>
+      <name value="PDLGC Répertoire Transverse"/>
+      <description value="Répertoire stockant les données trasnverses associés au praticient et/ou au cabinet"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/TypeCarteVS"/>
+        <reference value="ValueSet/pdlgc-export-status-vs"/>
       </reference>
-      <name value="Type Carte Value Set"/>
-      <description value="Type Carte Value Set."/>
+      <name value="PDLGC Statut de l'export"/>
+      <description value="PDLGC Statut de l'export"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/pdlgc-export-type-vs"/>
+      </reference>
+      <name value="PDLGC Type d'Export"/>
+      <description value="PDLGC Type d'Export"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/pdlgc-repo-type-vs"/>
+      </reference>
+      <name value="PDLGC Type de répertoire"/>
+      <description value="PDLGC Type de répertoire"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -776,10 +814,32 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/type-carte-code-system"/>
+        <reference value="CodeSystem/pdlgc-export-status-cs"/>
       </reference>
-      <name value="Type de carte"/>
-      <description value="Type de carte professionnelle et personnelle."/>
+      <name value="Statut de l'export"/>
+      <description value="Statut de l'export"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/pdlgc-type-export-cs"/>
+      </reference>
+      <name value="Type d'export de données LGC"/>
+      <description value="Type d'export de données LGC"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/pdlgc-repo-type-cs"/>
+      </reference>
+      <name value="Type de répertoire"/>
+      <description value="Type de répertoire"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>
@@ -804,6 +864,22 @@
         <nameUrl value="sf-etude-fonctionnelle.html"/>
         <title value="Vol1 - Etude Fonctionnelle"/>
         <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="st-spec-techniques.html"/>
+        </extension>
+        <nameUrl value="st-spec-techniques.html"/>
+        <title value="Vol2 - Spécifications Techniques"/>
+        <generation value="markdown"/>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="st-structure-archive.html"/>
+          </extension>
+          <nameUrl value="st-structure-archive.html"/>
+          <title value="Structure de l'archive de portabilité"/>
+          <generation value="markdown"/>
+        </page>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

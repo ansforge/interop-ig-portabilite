@@ -105,7 +105,17 @@
     <a href="index.html">Accueil</a>
   </li>
   <li>
-    <a href="sf-etude-fonctionnelle.html">Vol1 - Etude Fonctionnelle</a>
+    <a href="sf-etude-fonctionnelle.html">Vol.1 - Etude Fonctionnelle</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Vol.2 - Spécifications Techniques
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="st-structure-archive.html">Structure de l'architecture de portabilité</a>
+      </li>
+    </ul>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Annexes
@@ -173,7 +183,7 @@
 
             <a href="#bottom">bottom</a>
 
-          | <a href="annexes.html">next &gt;</a>
+          | <a href="st-spec-techniques.html">next &gt;</a>
 
           </span>
 
@@ -219,21 +229,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p>  <!-- white space is critical inside of capture --></p>
-<div class="markdown-toc">
-<ul id="markdown-toc">
-  <li><a href="#définition-du-processus-collaboratif" id="markdown-toc-définition-du-processus-collaboratif">Définition du processus collaboratif</a></li>
-  <li><a href="#concepts-métiers-utilisés-dans-le-flux-dexport-darchive-de-portabilité" id="markdown-toc-concepts-métiers-utilisés-dans-le-flux-dexport-darchive-de-portabilité">Concepts métiers utilisés dans le flux d'export d'archive de Portabilité</a></li>
-  <li><a href="#périmètre-pivot" id="markdown-toc-périmètre-pivot">Périmètre pivot</a></li>
-</ul>
-
+<div>
+  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
 </div>
-<h3 id="définition-du-processus-collaboratif">Définition du processus collaboratif</h3>
+<h3 id="etude-fonctionnelle">Etude fonctionnelle</h3>
+
+<h4 id="définition-du-processus-collaboratif">Définition du processus collaboratif</h4>
 
 <p>Le processus collaboratif « Export d'archive de portabilité » couvre l'ensemble des situations dans lesquelles un professionnel de santé ou un patient exerce son droit à la portabilité des données auprès d'un éditeur de logiciel LGC.</p>
 
 <p>Quel que soit le cas d'usage, le processus repose sur un unique flux de production et de mise à disposition d'une archive de portabilité, dont la structure s'appuie sur le profil IHE XDM. Le type d'export (unitaire, ciblé ou massif) ne modifie pas la nature de cette transaction ; il détermine uniquement le périmètre des données incluses dans l'archive produite et certaines contraintes additionnelles (délai de mise à disposition, format des données, intégration dans un logiciel ou consultation directe…).</p>
 
-<h4 id="pré-conditions">Pré-conditions</h4>
+<h5 id="pré-conditions">Pré-conditions</h5>
 <p>Le professionnel de santé, en tant que demandeur de l'export, doit au préalable :</p>
 <ul>
   <li>Être habilité à initier la demande, dans le respect des règles de gestion des droits propres au logiciel ;</li>
@@ -248,7 +255,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Disposer d'un Contact Portabilité identifié et joignable.</li>
 </ul>
 
-<h4 id="description-des-actions">Description des actions</h4>
+<h5 id="description-des-actions">Description des actions</h5>
 
 <figure>
   <!-- ?xml version="1.0" encoding="us-ascii" standalone="no"? --><svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" viewBox="0 0 1023 579" zoomAndPan="magnify" preserveAspectRatio="none" width="1023px" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:1023px;height:579px;background:#FCF6EB;" version="1.1" height="579px"><defs></defs><g><rect width="1023" x="0" y="0" style="stroke:none;stroke-width:1.0;" fill="#FCF6EB" height="579"></rect><rect width="990" x="15" y="11.3301" style="stroke:none;stroke-width:1.0;" fill="none" height="27.9375"></rect><ellipse cx="129" cy="54.2676" rx="10" ry="10" style="stroke:#222222;stroke-width:1.0;" fill="#222222"></ellipse><rect rx="12.5" ry="12.5" width="216" x="21" y="84.2676" style="stroke:#000000;stroke-width:0.5;" fill="#EFD9FC" height="61.9063"></rect><text lengthAdjust="spacing" x="31" font-size="12" textLength="196" y="105.4063" font-family="sans-serif" fill="#000000">Demande l'export des données</text><text lengthAdjust="spacing" x="31" font-size="12" textLength="159" y="119.375" font-family="sans-serif" fill="#000000">en précisant le périmètre</text><text lengthAdjust="spacing" x="31" font-size="12" textLength="143" y="133.3438" font-family="sans-serif" fill="#000000">(unitaire, ciblé, massif)</text><line y1="11.3301" x1="15" y2="567.8516" style="stroke:#000000;stroke-width:1.5;" x2="15"></line><rect rx="12.5" ry="12.5" width="189" x="248" y="166.1738" style="stroke:#000000;stroke-width:0.5;" fill="#EFD9FC" height="33.9688"></rect><text lengthAdjust="spacing" x="258" font-size="12" textLength="169" y="187.3125" font-family="sans-serif" fill="#000000">Génère l'archive Portabilité</text><rect rx="12.5" ry="12.5" width="191" x="247" y="220.1426" style="stroke:#000000;stroke-width:0.5;" fill="#EFD9FC" height="47.9375"></rect><text lengthAdjust="spacing" x="257" font-size="12" textLength="162" y="241.2813" font-family="sans-serif" fill="#000000">Met l'archive à disposition</text><text lengthAdjust="spacing" x="257" font-size="12" textLength="171" y="255.25" font-family="sans-serif" fill="#000000">du fournisseur destinataire</text><line y1="11.3301" x1="241" y2="567.8516" style="stroke:#000000;stroke-width:1.5;" x2="241"></line><rect rx="12.5" ry="12.5" width="211" x="659.5" y="305.9766" style="stroke:#000000;stroke-width:0.5;" fill="#EFD9FC" height="47.9375"></rect><text lengthAdjust="spacing" x="669.5" font-size="12" textLength="191" y="327.1152" font-family="sans-serif" fill="#000000">Contrôle l'intégrité de l'archive</text><text lengthAdjust="spacing" x="669.5" font-size="12" textLength="184" y="341.084" font-family="sans-serif" fill="#000000">à l'aide du rapport d'intégrité</text><polygon style="stroke:#000000;stroke-width:0.5;" fill="#EFD9FC" points="700,373.9141,830,373.9141,842,385.9141,830,397.9141,700,397.9141,688,385.9141,700,373.9141"></polygon><text lengthAdjust="spacing" x="700" font-size="12" textLength="130" y="390.0684" font-family="sans-serif" fill="#000000">Type de Destinataire</text><text lengthAdjust="spacing" x="642" font-size="12" textLength="46" y="383.084" font-family="sans-serif" fill="#000000">Sytème</text><text lengthAdjust="spacing" x="842" font-size="12" textLength="60" y="383.084" font-family="sans-serif" fill="#000000">Personne</text><rect rx="12.5" ry="12.5" width="193" x="525.5" y="407.9141" style="stroke:#000000;stroke-width:0.5;" fill="#EFD9FC" height="33.9688"></rect><text lengthAdjust="spacing" x="535.5" font-size="12" textLength="173" y="429.0527" font-family="sans-serif" fill="#000000">Intègre les données reçues</text><rect rx="12.5" ry="12.5" width="348" x="448" y="461.8828" style="stroke:#000000;stroke-width:0.5;" fill="#EFD9FC" height="33.9688"></rect><text lengthAdjust="spacing" x="458" font-size="12" textLength="328" y="483.0215" font-family="sans-serif" fill="#000000">Met les données à disposition de l'utilisateur de LGC</text><rect rx="12.5" ry="12.5" width="184" x="816" y="407.9141" style="stroke:#000000;stroke-width:0.5;" fill="#EFD9FC" height="33.9688"></rect><text lengthAdjust="spacing" x="826" font-size="12" textLength="164" y="429.0527" font-family="sans-serif" fill="#000000">Télécharge/ouvre l'archive</text><rect rx="12.5" ry="12.5" width="160" x="828" y="461.8828" style="stroke:#000000;stroke-width:0.5;" fill="#EFD9FC" height="33.9688"></rect><text lengthAdjust="spacing" x="838" font-size="12" textLength="136" y="483.0215" font-family="sans-serif" fill="#000000">Consulte les données</text><polygon style="stroke:#000000;stroke-width:0.5;" fill="#EFD9FC" points="765,501.8516,777,513.8516,765,525.8516,753,513.8516,765,501.8516"></polygon><ellipse cx="765" cy="556.8516" rx="11" ry="11" style="stroke:#222222;stroke-width:1.0;" fill="none"></ellipse><ellipse cx="765" cy="556.8516" rx="6" ry="6" style="stroke:#111111;stroke-width:1.0;" fill="#222222"></ellipse><line y1="11.3301" x1="442" y2="567.8516" style="stroke:#000000;stroke-width:1.5;" x2="442"></line><line y1="11.3301" x1="1004" y2="567.8516" style="stroke:#000000;stroke-width:1.5;" x2="1004"></line><line y1="64.2676" x1="129" y2="84.2676" style="stroke:#181818;stroke-width:1.0;" x2="129"></line><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="125,74.2676,129,84.2676,133,74.2676,129,78.2676"></polygon><line y1="200.1426" x1="342.5" y2="220.1426" style="stroke:#181818;stroke-width:1.0;" x2="342.5"></line><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="338.5,210.1426,342.5,220.1426,346.5,210.1426,342.5,214.1426"></polygon><line y1="441.8828" x1="622" y2="461.8828" style="stroke:#181818;stroke-width:1.0;" x2="622"></line><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="618,451.8828,622,461.8828,626,451.8828,622,455.8828"></polygon><line y1="441.8828" x1="908" y2="461.8828" style="stroke:#181818;stroke-width:1.0;" x2="908"></line><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="904,451.8828,908,461.8828,912,451.8828,908,455.8828"></polygon><line y1="385.9141" x1="688" y2="385.9141" style="stroke:#181818;stroke-width:1.0;" x2="622"></line><line y1="385.9141" x1="622" y2="407.9141" style="stroke:#181818;stroke-width:1.0;" x2="622"></line><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="618,397.9141,622,407.9141,626,397.9141,622,401.9141"></polygon><line y1="385.9141" x1="842" y2="385.9141" style="stroke:#181818;stroke-width:1.0;" x2="908"></line><line y1="385.9141" x1="908" y2="407.9141" style="stroke:#181818;stroke-width:1.0;" x2="908"></line><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="904,397.9141,908,407.9141,912,397.9141,908,401.9141"></polygon><line y1="495.8516" x1="622" y2="513.8516" style="stroke:#181818;stroke-width:1.0;" x2="622"></line><line y1="513.8516" x1="622" y2="513.8516" style="stroke:#181818;stroke-width:1.0;" x2="753"></line><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="743,509.8516,753,513.8516,743,517.8516,747,513.8516"></polygon><line y1="495.8516" x1="908" y2="513.8516" style="stroke:#181818;stroke-width:1.0;" x2="908"></line><line y1="513.8516" x1="908" y2="513.8516" style="stroke:#181818;stroke-width:1.0;" x2="777"></line><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="787,509.8516,777,513.8516,787,517.8516,783,513.8516"></polygon><line y1="353.9141" x1="765" y2="373.9141" style="stroke:#181818;stroke-width:1.0;" x2="765"></line><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="761,363.9141,765,373.9141,769,363.9141,765,367.9141"></polygon><line y1="525.8516" x1="765" y2="545.8516" style="stroke:#181818;stroke-width:1.0;" x2="765"></line><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="761,535.8516,765,545.8516,769,535.8516,765,539.8516"></polygon><line y1="146.1738" x1="129" y2="151.1738" style="stroke:#181818;stroke-width:1.0;" x2="129"></line><line y1="151.1738" x1="129" y2="151.1738" style="stroke:#181818;stroke-width:1.0;" x2="342.5"></line><line y1="151.1738" x1="342.5" y2="166.1738" style="stroke:#181818;stroke-width:1.0;" x2="342.5"></line><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="338.5,156.1738,342.5,166.1738,346.5,156.1738,342.5,160.1738"></polygon><line y1="268.0801" x1="342.5" y2="290.9766" style="stroke:#181818;stroke-width:1.5;stroke-dasharray:7.0,7.0;" x2="342.5"></line><line y1="290.9766" x1="342.5" y2="290.9766" style="stroke:#181818;stroke-width:1.5;stroke-dasharray:7.0,7.0;" x2="765"></line><line y1="290.9766" x1="765" y2="305.9766" style="stroke:#181818;stroke-width:1.5;stroke-dasharray:7.0,7.0;" x2="765"></line><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="761,295.9766,765,305.9766,769,295.9766,765,299.9766"></polygon><text lengthAdjust="spacing" x="346.5" font-size="12" textLength="44" y="284.4766" font-family="sans-serif" fill="#000000">Flux 1 -</text><text font-weight="bold" lengthAdjust="spacing" x="394.5" font-size="12" textLength="171" y="284.4766" font-family="sans-serif" fill="#000000">ExportArchivePortabilite</text><text font-weight="bold" lengthAdjust="spacing" x="87" font-size="12" textLength="82" y="22.4688" font-family="sans-serif" fill="#000000">Demandeur</text><text lengthAdjust="spacing" x="87" font-size="12" textLength="70" y="36.4375" font-family="sans-serif" fill="#000000">(Personne)</text><text font-weight="bold" lengthAdjust="spacing" x="270.5" font-size="12" textLength="142" y="22.4688" font-family="sans-serif" fill="#000000">Fournisseur sortant</text><text lengthAdjust="spacing" x="270.5" font-size="12" textLength="63" y="36.4375" font-family="sans-serif" fill="#000000">(Système)</text><text font-weight="bold" lengthAdjust="spacing" x="649.5" font-size="12" textLength="89" y="22.4688" font-family="sans-serif" fill="#000000">Destinataire</text><text lengthAdjust="spacing" x="649.5" font-size="12" textLength="147" y="36.4375" font-family="sans-serif" fill="#000000">(Système ou Personne)</text></g></svg>
@@ -298,7 +305,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h4 id="contraintes">Contraintes</h4>
+<h5 id="contraintes">Contraintes</h5>
 
 <p>Les contraintes suivantes s'appliquent spécifiquement selon le type d'export, sans modifier la transaction décrite ci-dessus.</p>
 
@@ -332,7 +339,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p><br/></p>
 
-<h3 id="concepts-métiers-utilisés-dans-le-flux-dexport-darchive-de-portabilité">Concepts métiers utilisés dans le flux d'export d'archive de Portabilité</h3>
+<h4 id="concepts-métiers-utilisés-dans-le-flux-dexport-darchive-de-portabilité">Concepts métiers utilisés dans le flux d'export d'archive de Portabilité</h4>
 
 <p>Les concepts métiers portés par ce flux sont les suivants :</p>
 
@@ -369,7 +376,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
     <tr>
       <td><strong>Périmètre pivot</strong> [1..1]</td>
-      <td><a name="l858">​</a>Ensemble minimal, obligatoire et standardisé de données de santé (administratives et médicales) dont le transfert doit être garanti sans frais et dans un délai défini (confère <a href="sf-perimetre-pivot.html">Périmètre pivot</a>).</td>
+      <td><a name="l865">​</a>Ensemble minimal, obligatoire et standardisé de données de santé (administratives et médicales) dont le transfert doit être garanti sans frais et dans un délai défini (confère <a href="sf-perimetre-pivot.html">Périmètre pivot</a>).</td>
     </tr>
     <tr>
       <td><strong>Hors périmètre pivot</strong> [0..*]</td>
@@ -380,7 +387,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p><br/></p>
 
-<h3 id="périmètre-pivot">Périmètre pivot</h3>
+<h4 id="périmètre-pivot">Périmètre pivot</h4>
 
 <p>Les données du périmètre pivot, telles que définies en annexe 1 du <strong>Référentiel de sécurité, d'interopérabilité et d'éthique relatif à la portabilité des données des LGC</strong>, doivent être exportées conformément aux formats indiqués dans le tableau ci-après.</p>
 
@@ -677,7 +684,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:var(--ig-right);">&nbsp;
 
-                <a href="annexes.html">next &gt;</a>
+                <a href="st-spec-techniques.html">next &gt;</a>
 
               </td>
             </tr>
@@ -693,8 +700,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  
           Package ans.fhir.fr.pdlgc#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-07-01 12:28:00 +0000">
-    2026-07-01
+  <span title="2026-07-03 08:42:00 +0000">
+    2026-07-03
   </span>
 
           <br/>

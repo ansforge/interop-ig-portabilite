@@ -1,0 +1,37 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "pdlgc-export-type-vs",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet pdlgc-export-type-vs</b></p><a name=\"en-pdlgc-export-type-vs\"> </a><a name=\"en-hcpdlgc-export-type-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-pdlgc-type-export-cs.html\"><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs</code></a><span title=\"Version is explicitly stated to be 0.1.0\"> version &#x1F4CD;0.1.0</span></li></ul></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-export-type-vs",
+  "version" : "0.1.0",
+  "name" : "PDLGCExportTypeVS",
+  "title" : "PDLGC Type d'Export",
+  "status" : "draft",
+  "date" : "2026-07-03T08:42:19+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "PDLGC Type d'Export",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs",
+      "version" : "0.1.0"
+    }]
+  }
+}

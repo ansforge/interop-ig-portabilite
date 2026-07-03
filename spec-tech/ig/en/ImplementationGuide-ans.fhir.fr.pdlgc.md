@@ -14,7 +14,7 @@
   "name" : "PDLGC",
   "title" : "Portabilité des Données LGC",
   "status" : "draft",
-  "date" : "2026-07-01T12:28:35+00:00",
+  "date" : "2026-07-03T08:42:19+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -58,7 +58,13 @@
     "id" : "ans_fr_terminologies",
     "uri" : "https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies",
     "packageId" : "ans.fr.terminologies",
-    "version" : "1.10.0"
+    "version" : "1.11.0"
+  },
+  {
+    "id" : "ans_fr_mos",
+    "uri" : "https://interop.esante.gouv.fr/ig/mos/ImplementationGuide/ans.fr.mos",
+    "packageId" : "ans.fr.mos",
+    "version" : "0.1.0-ballot"
   }],
   "definition" : {
     "extension" : [{
@@ -866,85 +872,25 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
+        "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "CodeSystem/competence-code-system"
+        "reference" : "StructureDefinition/pdlgc-archive-portabilite"
       },
-      "name" : "Compétences CodeSystem",
-      "description" : "Compétences des professionnels de santé.",
+      "name" : "PDLGC Archive Portabilite",
+      "description" : "L'archive de Portabilité est un conteneur structuré, regroupant l'ensemble des documents et données LGC exportées ainsi que les éléments de métadonnées, d'index et de documentation nécessaires à leur exploitation par le destinataire.",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
+        "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/EyeColor"
+        "reference" : "StructureDefinition/pdlgc-contact-portabilite"
       },
-      "name" : "EyeColor",
-      "description" : "Eye color extension",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/EyeColorVS"
-      },
-      "name" : "EyeColor Value Set",
-      "description" : "Different eye colors.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      }],
-      "reference" : {
-        "reference" : "Patient/frpatient-exemple"
-      },
-      "name" : "frpatient-exemple",
-      "description" : "Exemple d'un patient français",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/fr-patient|0.1.0"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/MeltingPotVS"
-      },
-      "name" : "Melting Pot Value Set",
-      "description" : "Melting Pot Value Set.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ModifiedAdministrativeGender"
-      },
-      "name" : "ModifiedAdministrativeGender",
-      "description" : "AdministrativeGender without unknown code",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/fr-patient"
-      },
-      "name" : "Patient français",
-      "description" : "Description du patient français",
+      "name" : "PDLGC Contact Portabilite",
+      "description" : "PDLGC Contact Portabilite",
       "exampleBoolean" : false
     },
     {
@@ -974,6 +920,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/pdlgc-editeur-sortant"
+      },
+      "name" : "PDLGC Editeur Sortant",
+      "description" : "PDLGC Editeur Sortant",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ActorDefinition"
       }],
       "reference" : {
@@ -998,13 +956,97 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/pdlgc-index"
+      },
+      "name" : "PDLGC Index",
+      "description" : "L'INDEX.HTM est destiné à la lecture humaine",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/pdlgc-manifest"
+      },
+      "name" : "PDLGC Manifest",
+      "description" : "Le fichier MANIFEST.XML porte les métadonnées globales de l'export (nombre de dossiers patients, volumétrie, éléments d'intégrité), distinctes des métadonnées XDM portées par chaque `METADATA.XML` patient",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/pdlgc-manifest-archives"
+      },
+      "name" : "PDLGC Manifest Archives",
+      "description" : "Informations relatives aux répertoires Patient et transverse exportées dans l'archive de portabilité",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/pdlgc-repo-patient"
+      },
+      "name" : "PDLGC Répertoire Patient",
+      "description" : "Répertoire stockant les données médicales d'un patient, conformément aux spécifications d'Archives XDM",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/pdlgc-repo-transverse"
+      },
+      "name" : "PDLGC Répertoire Transverse",
+      "description" : "Répertoire stockant les données trasnverses associés au praticient et/ou au cabinet",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/TypeCarteVS"
+        "reference" : "ValueSet/pdlgc-export-status-vs"
       },
-      "name" : "Type Carte Value Set",
-      "description" : "Type Carte Value Set.",
+      "name" : "PDLGC Statut de l'export",
+      "description" : "PDLGC Statut de l'export",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/pdlgc-export-type-vs"
+      },
+      "name" : "PDLGC Type d'Export",
+      "description" : "PDLGC Type d'Export",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/pdlgc-repo-type-vs"
+      },
+      "name" : "PDLGC Type de répertoire",
+      "description" : "PDLGC Type de répertoire",
       "exampleBoolean" : false
     },
     {
@@ -1013,10 +1055,34 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/type-carte-code-system"
+        "reference" : "CodeSystem/pdlgc-export-status-cs"
       },
-      "name" : "Type de carte",
-      "description" : "Type de carte professionnelle et personnelle.",
+      "name" : "Statut de l'export",
+      "description" : "Statut de l'export",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/pdlgc-type-export-cs"
+      },
+      "name" : "Type d'export de données LGC",
+      "description" : "Type d'export de données LGC",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/pdlgc-repo-type-cs"
+      },
+      "name" : "Type de répertoire",
+      "description" : "Type de répertoire",
       "exampleBoolean" : false
     }],
     "page" : {
@@ -1044,6 +1110,24 @@
         "nameUrl" : "sf-etude-fonctionnelle.html",
         "title" : "Vol1 - Etude Fonctionnelle",
         "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "st-spec-techniques.html"
+        }],
+        "nameUrl" : "st-spec-techniques.html",
+        "title" : "Vol2 - Spécifications Techniques",
+        "generation" : "markdown",
+        "page" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "st-structure-archive.html"
+          }],
+          "nameUrl" : "st-structure-archive.html",
+          "title" : "Structure de l'archive de portabilité",
+          "generation" : "markdown"
+        }]
       },
       {
         "extension" : [{
