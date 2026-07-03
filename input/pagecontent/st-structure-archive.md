@@ -1,3 +1,3 @@
 #### MANIFEST.XML
 
-{% include st-manifest.md %}
+{% include st-archive-manifest.md %}
