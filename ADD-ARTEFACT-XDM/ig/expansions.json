@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "de96966d-833a-4745-ad0b-451aea01c774",
+  "id" : "37e4e021-0227-4902-a832-3989f8c6f8f6",
   "meta" : {
-    "lastUpdated" : "2026-07-03T13:57:35.568+00:00"
+    "lastUpdated" : "2026-07-07T20:41:51.667+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -18,7 +18,7 @@
       "name" : "VS_AssociationType",
       "title" : "Type d'association XDS (VS)",
       "status" : "draft",
-      "date" : "2026-07-03T13:57:35+00:00",
+      "date" : "2026-07-07T20:41:51+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -27,8 +27,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b733eaa4-60af-45cd-b66b-bd8c9e0b8c75",
-        "timestamp" : "2026-07-03T13:58:20+00:00",
+        "identifier" : "urn:uuid:a85ac175-3c14-4621-a23b-2e8da0a36a29",
+        "timestamp" : "2026-07-07T20:42:35+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -75,7 +75,7 @@
       "name" : "VS_AssociationType",
       "title" : "Type d'association XDS (VS)",
       "status" : "draft",
-      "date" : "2026-07-03T13:57:35+00:00",
+      "date" : "2026-07-07T20:41:51+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -84,8 +84,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b733eaa4-60af-45cd-b66b-bd8c9e0b8c75",
-        "timestamp" : "2026-07-03T13:58:20+00:00",
+        "identifier" : "urn:uuid:a85ac175-3c14-4621-a23b-2e8da0a36a29",
+        "timestamp" : "2026-07-07T20:42:35+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -132,7 +132,7 @@
       "name" : "VS_AssociationType",
       "title" : "Type d'association XDS (VS)",
       "status" : "draft",
-      "date" : "2026-07-03T13:57:35+00:00",
+      "date" : "2026-07-07T20:41:51+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -141,8 +141,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:38ce07fd-3c1e-4940-a165-e9d6595aa5f0",
-        "timestamp" : "2026-07-03T13:58:20+00:00",
+        "identifier" : "urn:uuid:8641c374-3dc2-44b0-967e-f53fa5c3c12b",
+        "timestamp" : "2026-07-07T20:42:35+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{

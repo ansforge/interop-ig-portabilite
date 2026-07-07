@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.name [ fhir:value "PDLGC"] ;
   fhir:ImplementationGuide.title [ fhir:value "Portabilité des Données LGC"] ;
   fhir:ImplementationGuide.status [ fhir:value "draft"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-07-03T13:57:35+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-07-07T20:41:51+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ;
   fhir:ImplementationGuide.contact [
      fhir:index -1 ;
@@ -963,8 +963,8 @@
      fhir:ImplementationGuide.definition.grouping [
        fhir:index -1 ;
        fhir:Element.id [ fhir:value "LogicalModel" ] ;
-       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Modèle logique du Lot de soumission (SubmissionSet) et du DocumentEntry (XDS)" ] ;
-       fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Modèle logique du Lot de soumission (SubmissionSet) et du DocumentEntry (XDS)" ]
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Modèle logique XDM (Lot de soumission (SubmissionSet), DocumentEntry (XDS) et association)" ] ;
+       fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Modèle logique avec les différents artefacts" ]
      ] ;
      fhir:ImplementationGuide.definition.resource [
        fhir:index -1 ;

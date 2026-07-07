@@ -14,7 +14,7 @@
   "name" : "PDLGC",
   "title" : "Portabilité des Données LGC",
   "status" : "draft",
-  "date" : "2026-07-03T13:57:35+00:00",
+  "date" : "2026-07-07T20:41:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -865,8 +865,8 @@
     }],
     "grouping" : [{
       "id" : "LogicalModel",
-      "name" : "Modèle logique du Lot de soumission (SubmissionSet) et du DocumentEntry (XDS)",
-      "description" : "Modèle logique du Lot de soumission (SubmissionSet) et du DocumentEntry (XDS)"
+      "name" : "Modèle logique XDM (Lot de soumission (SubmissionSet), DocumentEntry (XDS) et association)",
+      "description" : "Modèle logique avec les différents artefacts"
     }],
     "resource" : [{
       "extension" : [{
