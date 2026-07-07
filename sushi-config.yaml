@@ -72,7 +72,7 @@ menu:
 
 groups:
   LogicalModel:
-    name:  Modèle logique XDM :  Lot de soumission (SubmissionSet), DocumentEntry (XDS) et association
+    name:  Modèle logique XDM (Lot de soumission (SubmissionSet), DocumentEntry (XDS) et association)
     description: Modèle logique avec les différents artefacts
     resources:
       - StructureDefinition/SubmissionSet
