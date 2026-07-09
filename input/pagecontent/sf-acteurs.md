@@ -1,4 +1,4 @@
-Le tableau ci-dessous récapitule les acteurs pouvant être impliqués dans les différents processus collaboratif
+Le tableau ci-dessous récapitule les acteurs impliqués dans l'export d'une archive de portabilité :
 
 {% sql {
   "query" : "

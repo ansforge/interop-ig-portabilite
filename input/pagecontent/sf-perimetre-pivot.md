@@ -2,7 +2,7 @@ Les données du périmètre pivot, telles que définies en annexe 1 du **Référ
 
 Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilisés ou disponibles au sein du logiciel. Cette exigence n'implique pas la conversion ou la restructuration de données vers un format standardisé aux seules fins de l'export. **Lorsqu'aucune donnée standardisée correspondante n'est disponible, les données doivent être exportées dans leur format d'origine.**
 
-**Les documents du dossier patient doivent être exportés dans un format de consultation de type PDF, en complément des formats structurés**. Cette représentation vise à garantir l’accès et la consultation des informations exportées, y compris en l’absence d’un logiciel capable d’exploiter les formats structurés associés.
+**En complément des formats structurés détaillés ci-dessous, et destinés à être intégrés par le fournisseur destinataire, tous les documents du dossier patient doivent être exportés dans un format de consultation de type PDF**. Cette représentation vise à garantir l’accès et la consultation des informations exportées, y compris en l’absence d’un logiciel capable d’exploiter les formats structurés associés.
 <br>
 
 
@@ -104,8 +104,7 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
         <td>Patient</td>
         <td>
         <ul>
-            <li> Format opposable : <span class="flag flag-opposable"> CDA R2 Niveau 3</span>
-          <span class="flag flag-opposable">PDF A-1</span></li>
+            <li> Format opposable : <span class="flag flag-opposable"> CDA R2 Niveau 3</span></li>
             <li><i>Format cible européen (non requis à date) : FHIR</i></li>
           </ul>
         </td>
@@ -121,8 +120,7 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
         <td>Patient</td>
         <td>
           <ul>
-            <li> Format opposable : <span class="flag flag-opposable">CDA R2 Niveau 3</span>
-          <span class="flag flag-opposable">PDF A-1</span></li>
+            <li> Format opposable : <span class="flag flag-opposable">CDA R2 Niveau 3</span></li>
             <li><i>Format cible européen (non requis à date) : FHIR</i></li>
           </ul>
         </td>
@@ -138,9 +136,8 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
         <td>Patient</td>
         <td>
           <ul>
-            <li> Format prioritaire : <span class="flag flag-prioritaire">CDA R2</span>
-              <span class="flag flag-prioritaire">PDF A-1</span></li>
-            <li>Alternative : <span class="flag flag-alternatif">PDF A-1 seul</span></li>
+            <li> Format prioritaire : <span class="flag flag-prioritaire">CDA R2</span></li>
+            <li>Alternative : <span class="flag flag-alternatif">PDF A-1 encapsulé en CDA R2 Niveau 1</span></li>
           </ul>
         </td>
         <td>
@@ -156,8 +153,7 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
         <td>Patient</td>
         <td>
           <ul>
-              <li>Format opposable : <span class="flag flag-opposable">Tout format structuré (JSON, XML…) documenté</span>
-              <span class="flag flag-opposable">PDF A-1</span></li>
+              <li>Format opposable : <span class="flag flag-opposable">Tout format structuré (JSON, XML…) documenté</span></li>
           </ul>
         </td>
         <td></td>
@@ -174,8 +170,7 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
         <td>Patient</td>
         <td>
           <ul>
-            <li>  Format opposable : <span class="flag flag-opposable">Tout format structuré (JSON, XML…) documenté</span>
-              <span class="flag flag-opposable">PDF A-1</span></li>
+            <li>  Format opposable : <span class="flag flag-opposable">Tout format structuré (JSON, XML…) documenté</span></li>
             <li> <i>Format cible CI-SIS (non requis à date) : FHIR</i></li>
           </ul>      
         </td>
@@ -191,8 +186,7 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
         <td>Patient</td>
         <td>
           <ul>
-              <li>Format opposable : <span class="flag flag-opposable">Tout format structuré (JSON, XML…) documenté</span>
-              <span class="flag flag-opposable">PDF A-1</span></li>
+              <li>Format opposable : <span class="flag flag-opposable">Tout format structuré (JSON, XML…) documenté</span></li>
           </ul>
         </td>
         <td></td>
@@ -203,8 +197,7 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
         <td>Patient</td>
         <td>
           <ul>
-              <li>Format opposable : <span class="flag flag-opposable">Tout format structuré (JSON, XML…) documenté</span>
-              <span class="flag flag-opposable">PDF A-1</span></li>
+              <li>Format opposable : <span class="flag flag-opposable">Tout format structuré (JSON, XML…) documenté</span></li>
               <li><i>Format cible européen (non requis à date) : FHIR</i></li>
           </ul>
         </td>

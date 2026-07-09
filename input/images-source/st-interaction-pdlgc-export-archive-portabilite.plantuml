@@ -1,0 +1,10 @@
+@startuml st-interaction-pdlgc-export-archive-portabilite
+
+hide footbox 
+
+participant "Fournisseur Sortant" as Sortant
+participant "Destinataire\n(Système ou Personne)" as Destinataire
+
+Sortant -> Destinataire : Flux 1 - ExportArchivePortabilite
+
+@enduml

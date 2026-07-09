@@ -43,14 +43,16 @@ parameters: #Parameters list - https://build.fhir.org/ig/FHIR/fhir-tools-ig/Code
 pages:
     index.md:
         title: Accueil
-    sf-etude-fonctionnelle.md:
-        title: Vol1 - Etude Fonctionnelle
-    st-spec-techniques.md :
-        title : Vol2 - Spécifications Techniques
-        st-structure-archive.md : 
+    specifications.md:
+        title: Spécifications
+        specs-main-flux-export-archive-portabilite.md :
+            title : Flux Export d'Archive de Portabilité
+        struct-main-structure-archive.md : 
             title : Structure de l'archive de portabilité
     annexes.md : 
         title : Annexes
+        annexe-references.md : 
+            title : Références
         annexe-securite.md:
             title: Sécurité
         annexe-downloads.md:
@@ -64,13 +66,13 @@ pages:
 
 menu:
     Accueil: index.html
-    Vol.1 - Etude Fonctionnelle: sf-etude-fonctionnelle.html
-    Vol.2 - Spécifications Techniques:
-        Structure de l'architecture de portabilité : st-structure-archive.html
+    Spécifications:
+        Flux Export d'Archive de Portabilité: specs-main-flux-export-archive-portabilite.html
+        Structure de l'architecture de portabilité : struct-main-structure-archive.html
     Annexes:
+        Références : annexe-references.html
         Sécurité: annexe-securite.html
         Téléchargements et usage: annexe-downloads.html
-        "Spécifications FHIR ": new-tab {{site.data.fhir.path}}index.html
         "Site de l'ANS ": new-tab https://esante.gouv.fr/
     Ressources de conformité: artifacts.html
     Documentation: new-tab https://interop.esante.gouv.fr/ig/documentation/

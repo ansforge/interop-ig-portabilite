@@ -6,3 +6,6 @@ Description: "PDLGC Contact Portabilite"
 
 * nom 1..1
 * telecommunication 1..*
+
+* nom ^mustSupport = true
+* telecommunication ^mustSupport = true

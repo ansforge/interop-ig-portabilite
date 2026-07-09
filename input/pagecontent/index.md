@@ -92,12 +92,6 @@ Le présent guide d'implémentation traduit en spécifications fonctionnelles et
 
 <br>
 
-### Acteurs
-
-{% include contexte-metier-acteurs.md %}
-
-<br>
-
 ### Dépendances
 
 {% lang-fragment dependency-table.xhtml %}

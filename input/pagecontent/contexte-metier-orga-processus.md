@@ -1,6 +1,6 @@
 Le domaine "Export de données de santé" comprend les différents volets permettant un échange de données de santé s'appuyant sur le profil IHE_XDM.
 
-<figure>
+<figure style="text-align:center;">
   {% include DiagrammePaquetage.svg %}
 <figcaption>Organisation des processus collaboratifs d'export de données de santé</figcaption>
 </figure>

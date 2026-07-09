@@ -1,0 +1,17 @@
+// ===========================================================================
+// Modèle logique Archive Transverse
+// ===========================================================================
+
+
+Logical: PDLGCArchiveTransverse
+Id: pdlgc-archive-transverse
+Title: "PDLGC Archive Transverse"
+Description: "Archive stockant les données transverses associés au praticien et/ou au cabinet"
+
+* ^status = #draft
+* . ^short = "Archive stockant les données transverses associés au praticien et/ou au cabinet"
+* . ^definition =  "Archive stockant les données transverses associés au praticien et/ou au cabinet"
+* . ^comment = "Transaction ExportArchivePortabilite"
+* README 1..1 pdlgc-readme "Informations éditoriales et instructions d'exploitation de l'archive"
+* TRANSVERSE 1..1 BackboneElement "répertoire contenant les données du praticien et/ ou du cabinet"
+  * documents 1..* Document "Documents trasnverses associés au praticien et/ou au cabinet"
