@@ -77,3 +77,34 @@ menu:
     Ressources de conformité: artifacts.html
     Documentation: new-tab https://interop.esante.gouv.fr/ig/documentation/
     Historique: change-log.html
+
+
+groups:
+  LogicalModel:
+    name:  Modèle logique XDM (Lot de soumission (SubmissionSet), DocumentEntry (XDS) et association)
+    description: Modèle logique avec les différents artefacts
+    resources:
+      - StructureDefinition/SubmissionSet
+      - StructureDefinition/DocumentEntry      
+      - StructureDefinition/EventCode           
+      - StructureDefinition/PatientId
+      - StructureDefinition/SourcePatientId
+      - StructureDefinition/SourcePatientInfo      
+      - StructureDefinition/Author
+      - StructureDefinition/AuthorDocumentEntry
+      - StructureDefinition/AuthorSubmissionSet          
+      - StructureDefinition/AuthorInstitution
+      - StructureDefinition/ActorXDS            
+      - StructureDefinition/ActorPS
+      - StructureDefinition/ActorPatient
+      - StructureDefinition/ActorSNR
+      - StructureDefinition/ActorSystem   
+      - StructureDefinition/IdentifiantSysteme
+      - StructureDefinition/MatriculeINS
+      - StructureDefinition/PSIdNat
+      - StructureDefinition/SNR            
+      - StructureDefinition/StructIdNat
+      - StructureDefinition/archive-xdm
+      - StructureDefinition/association-xdm      
+      - StructureDefinition/Identifiant       
+      
