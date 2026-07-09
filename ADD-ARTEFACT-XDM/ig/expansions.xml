@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="37e4e021-0227-4902-a832-3989f8c6f8f6"/>
+  <id value="b9255bf1-0500-4dd2-93b6-6868d89d24b7"/>
   <meta>
-    <lastUpdated value="2026-07-07T20:41:51.667+00:00"/>
+    <lastUpdated value="2026-07-09T18:09:47.590+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -72,7 +72,7 @@
                   <a href="CodeSystem-cs-association-type.html#cs-association-type-XFRM">XFRM</a>
                 </td>
                 <td/>
-                <td>Le document source est une transformation du document cible (ex : CDA généré depuis des données propriétaires).</td>
+                <td>Le document source est une transformation du document cible (ex : PDF correspondant au document CDA).</td>
                 <td>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;XFRM&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
@@ -92,7 +92,7 @@
         <name value="VS_AssociationType"/>
         <title value="Type d'association XDS (VS)"/>
         <status value="draft"/>
-        <date value="2026-07-07T20:41:51+00:00"/>
+        <date value="2026-07-09T18:09:47+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -101,8 +101,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a85ac175-3c14-4621-a23b-2e8da0a36a29"/>
-          <timestamp value="2026-07-07T20:42:35+00:00"/>
+          <identifier value="urn:uuid:53668cd7-84ab-4b57-9a57-6660e4eae7b6"/>
+          <timestamp value="2026-07-09T18:10:34+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -203,7 +203,7 @@
                   <a href="CodeSystem-cs-association-type.html#cs-association-type-XFRM">XFRM</a>
                 </td>
                 <td/>
-                <td>Le document source est une transformation du document cible (ex : CDA généré depuis des données propriétaires).</td>
+                <td>Le document source est une transformation du document cible (ex : PDF correspondant au document CDA).</td>
                 <td>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;XFRM&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
@@ -223,7 +223,7 @@
         <name value="VS_AssociationType"/>
         <title value="Type d'association XDS (VS)"/>
         <status value="draft"/>
-        <date value="2026-07-07T20:41:51+00:00"/>
+        <date value="2026-07-09T18:09:47+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -232,8 +232,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a85ac175-3c14-4621-a23b-2e8da0a36a29"/>
-          <timestamp value="2026-07-07T20:42:35+00:00"/>
+          <identifier value="urn:uuid:53668cd7-84ab-4b57-9a57-6660e4eae7b6"/>
+          <timestamp value="2026-07-09T18:10:34+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -334,7 +334,7 @@
                   <a href="CodeSystem-cs-association-type.html#cs-association-type-XFRM">XFRM</a>
                 </td>
                 <td>Transformation</td>
-                <td>Le document source est une transformation du document cible (ex : CDA généré depuis des données propriétaires).</td>
+                <td>Le document source est une transformation du document cible (ex : PDF correspondant au document CDA).</td>
                 <td>
                   <span class="copy-text-inline">
                     <button data-clipboard-text="{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;XFRM&quot;, &quot;display&quot;: &quot;Transformation&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
@@ -354,7 +354,7 @@
         <name value="VS_AssociationType"/>
         <title value="Type d'association XDS (VS)"/>
         <status value="draft"/>
-        <date value="2026-07-07T20:41:51+00:00"/>
+        <date value="2026-07-09T18:09:47+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -363,8 +363,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8641c374-3dc2-44b0-967e-f53fa5c3c12b"/>
-          <timestamp value="2026-07-07T20:42:35+00:00"/>
+          <identifier value="urn:uuid:60574580-b64a-409b-abd4-37cb3d74036f"/>
+          <timestamp value="2026-07-09T18:10:34+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>

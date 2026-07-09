@@ -77,7 +77,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-DocumentEntry.c
   "name" : "DocumentEntry",
   "title" : "Document Entry (LM)",
   "status" : "draft",
-  "date" : "2026-07-07T20:41:51+00:00",
+  "date" : "2026-07-09T18:09:47+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -136,7 +136,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-DocumentEntry.c
       "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "Identifier"
+        "code" : "uuid"
       }]
     },
     {
@@ -253,8 +253,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-DocumentEntry.c
       }]
     },
     {
-      "id" : "DocumentEntry.serviceEndTime",
-      "path" : "DocumentEntry.serviceEndTime",
+      "id" : "DocumentEntry.serviceStopTime",
+      "path" : "DocumentEntry.serviceStopTime",
       "short" : "Cette métadonnée correspond à la date de fin de l'acte de référence, si connue.",
       "definition" : "Cette métadonnée correspond à la date de fin de l'acte de référence, si connue.",
       "min" : 0,
@@ -293,7 +293,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-DocumentEntry.c
       "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "string"
+        "code" : "uri"
       }]
     },
     {
@@ -321,8 +321,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-DocumentEntry.c
     {
       "id" : "DocumentEntry.patientID",
       "path" : "DocumentEntry.patientID",
-      "short" : "Cette métadonnée représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient.",
-      "definition" : "Cette métadonnée représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient.",
+      "short" : "Cette métadonnée représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient lorsque celui-ci est qualifié.",
+      "definition" : "Cette métadonnée représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient lorsque celui-ci est qualifié.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -527,17 +527,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-DocumentEntry.c
         "strength" : "preferred",
         "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J197-XdsTypesIdentifiantsReferenceId-CISIS/FHIR/JDV-J197-XdsTypesIdentifiantsReferenceId-CISIS|20220624120000"
       }
-    },
-    {
-      "id" : "DocumentEntry.version",
-      "path" : "DocumentEntry.version",
-      "short" : "Cette métadonnée représente le numéro de version de la fiche d’un document.",
-      "definition" : "Cette métadonnée représente le numéro de version de la fiche d’un document.",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "integer"
-      }]
     }]
   }
 }

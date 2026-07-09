@@ -3,7 +3,7 @@
 ","Document Entry (LM)","Modèle logique  d’une fiche","","","","","","","","","",,,,,"",,,,"Base",0,*,"","","DocumentEntry"
 "DocumentEntry.entryUUID","DocumentEntry.entryUUID","","","",1,1,"","","","uuid {[]} {[]}
 ","Identifiant unique affecté à la version de la fiche référençant le document.","Les valeurs possibles pour cette métadonnée doivent être un code provenant du jeu de valeurs mis à disposition par le projet. En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J52_AvailabilityStatus_CISIS peut être utilisé.","","","","","","","","","",,,,,"",,,,"DocumentEntry.entryUUID",1,1,"",""
-"DocumentEntry.logicalId","DocumentEntry.logicalId","","","",1,1,"","","","Identifier {[]} {[]}
+"DocumentEntry.logicalId","DocumentEntry.logicalId","","","",1,1,"","","","uuid {[]} {[]}
 ","Cette métadonnée représente un identifiant invariable pour toutes les versions de la fiche d'un document, à la différence de la métadonnée entryUUID qui a une valeur différente pour chaque version de la fiche","Cette métadonnée représente un identifiant invariable pour toutes les versions de la fiche d'un document, à la différence de la métadonnée entryUUID qui a une valeur différente pour chaque version de la fiche","","","","","","","","","",,,,,"",,,,"DocumentEntry.logicalId",1,1,"",""
 "DocumentEntry.mimeType","DocumentEntry.mimeType","","","",1,1,"","","","string {[]} {[]}
 ","Cette métadonnée représente le type de contenu du document, défini par le standard MIME.","Cette métadonnée représente le type de contenu du document, défini par le standard MIME.","","","","","","","","","",,,,,"",,,,"DocumentEntry.mimeType",1,1,"",""
@@ -23,20 +23,20 @@ https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/ActorPatient {[
 ","Cette métadonnée représente l'identifiant unique global de l'entrepôt de documents dans lequel est stocké le document","Cette métadonnée représente l'identifiant unique global de l'entrepôt de documents dans lequel est stocké le document","","","","","","","","","",,,,,"",,,,"DocumentEntry.repositoryUniqueId",1,1,"",""
 "DocumentEntry.serviceStartTime","DocumentEntry.serviceStartTime","","","",1,1,"","","","dateTime {[]} {[]}
 ","Cette métadonnée représente la date de début de l'acte de référence.","Cette métadonnée représente la date de début de l'acte de référence.","","","","","","","","","",,,,,"",,,,"DocumentEntry.serviceStartTime",1,1,"",""
-"DocumentEntry.serviceEndTime","DocumentEntry.serviceEndTime","","","",0,1,"","","","dateTime {[]} {[]}
-","Cette métadonnée correspond à la date de fin de l'acte de référence, si connue.","Cette métadonnée correspond à la date de fin de l'acte de référence, si connue.","","","","","","","","","",,,,,"",,,,"DocumentEntry.serviceEndTime",0,1,"",""
+"DocumentEntry.serviceStopTime","DocumentEntry.serviceStopTime","","","",0,1,"","","","dateTime {[]} {[]}
+","Cette métadonnée correspond à la date de fin de l'acte de référence, si connue.","Cette métadonnée correspond à la date de fin de l'acte de référence, si connue.","","","","","","","","","",,,,,"",,,,"DocumentEntry.serviceStopTime",0,1,"",""
 "DocumentEntry.sourcePatientID","DocumentEntry.sourcePatientID","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/SourcePatientId {[]} {[]}
 ","Cette métadonnée contient l'identifiant secondaire du patient dans le système d'information du producteur (IPP) ou l'INS, s'il n'y a pas d'identifiant secondaire.","Cette métadonnée contient l'identifiant secondaire du patient dans le système d'information du producteur (IPP) ou l'INS, s'il n'y a pas d'identifiant secondaire.","","","","","","","","","",,,,,"",,,,"DocumentEntry.sourcePatientID",1,1,"",""
 "DocumentEntry.sourcePatientInfo","DocumentEntry.sourcePatientInfo","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/SourcePatientInfo {[]} {[]}
 ","Cette métadonnée contient les traits d'identité du patient concerné par le document, connus par le producteur du document.","Cette métadonnée contient les traits d'identité du patient concerné par le document, connus par le producteur du document.","","","","","","","","","",,,,,"",,,,"DocumentEntry.sourcePatientInfo",1,1,"",""
-"DocumentEntry.URI","DocumentEntry.URI","","","",1,1,"","","","string {[]} {[]}
+"DocumentEntry.URI","DocumentEntry.URI","","","",1,1,"","","","uri {[]} {[]}
 ","Cette métadonnée n'est exploitée que par la transaction XDM 'Distribute document set on media ITI-32'","Cette métadonnée n'est exploitée que par la transaction XDM 'Distribute document set on media ITI-32'","","","","","","","","","",,,,,"",,,,"DocumentEntry.URI",1,1,"",""
 "DocumentEntry.title","DocumentEntry.title","","","",1,1,"","","","string {[]} {[]}
 ","Cette métadonnée représente le titre du document.","Cette métadonnée représente le titre du document.","","","","","","","","","",,,,,"",,,,"DocumentEntry.title",1,1,"",""
 "DocumentEntry.comments","DocumentEntry.comments","","","",0,1,"","","","string {[]} {[]}
 ","Cette métadonnée contient le commentaire associé au document.","Cette métadonnée contient le commentaire associé au document.","","","","","","","","","",,,,,"",,,,"DocumentEntry.comments",0,1,"",""
 "DocumentEntry.patientID","DocumentEntry.patientID","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/PatientId {[]} {[]}
-","Cette métadonnée représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient.","Cette métadonnée représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient.","","","","","","","","","",,,,,"",,,,"DocumentEntry.patientID",1,1,"",""
+","Cette métadonnée représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient lorsque celui-ci est qualifié.","Cette métadonnée représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient lorsque celui-ci est qualifié.","","","","","","","","","",,,,,"",,,,"DocumentEntry.patientID",1,1,"",""
 "DocumentEntry.uniqueId","DocumentEntry.uniqueId","","","",1,1,"","","","Identifier {[]} {[]}
 ","Identifiant unique affecté au document par son créateur. ","Identifiant unique affecté au document par son créateur.","","","","","","","","","",,,,,"",,,,"DocumentEntry.uniqueId",1,1,"",""
 "DocumentEntry.class","DocumentEntry.class","","","",1,1,"","","","CodeableConcept {[]} {[]}
@@ -85,5 +85,3 @@ https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/ActorPatient {[
 ","Identifiant de l’organisme ayant attribué l’identifiant de l'objet référencé","Identifiant de l’organisme ayant attribué l’identifiant de l'objet référencé","","","","","","","","","",,,,,"",,,,"DocumentEntry.referenceIdList.CX4",1,1,"",""
 "DocumentEntry.referenceIdList.CX5","DocumentEntry.referenceIdList.CX5","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Type d’identifiant","Type d’identifiant","","","","","","","","","",,"preferred","","https://mos.esante.gouv.fr/NOS/JDV_J197-XdsTypesIdentifiantsReferenceId-CISIS/FHIR/JDV-J197-XdsTypesIdentifiantsReferenceId-CISIS|20220624120000","",,,,"DocumentEntry.referenceIdList.CX5",1,1,"",""
-"DocumentEntry.version","DocumentEntry.version","","","",0,1,"","","","integer {[]} {[]}
-","Cette métadonnée représente le numéro de version de la fiche d’un document.","Cette métadonnée représente le numéro de version de la fiche d’un document.","","","","","","","","","",,,,,"",,,,"DocumentEntry.version",0,1,"",""

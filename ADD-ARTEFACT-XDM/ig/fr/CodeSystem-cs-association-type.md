@@ -26,7 +26,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "name" : "CS_AssociationType",
   "title" : "Type d'association XDS",
   "status" : "draft",
-  "date" : "2026-07-07T20:41:51+00:00",
+  "date" : "2026-07-09T18:09:47+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -53,7 +53,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   {
     "code" : "XFRM",
     "display" : "Transformation",
-    "definition" : "Le document source est une transformation du document cible (ex : CDA généré depuis des données propriétaires)."
+    "definition" : "Le document source est une transformation du document cible (ex : PDF correspondant au document CDA)."
   }]
 }
 

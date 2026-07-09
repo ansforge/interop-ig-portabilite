@@ -3,14 +3,14 @@
   "id" : "cs-association-type",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : CodeSystem cs-association-type</b></p><a name=\"cs-association-type\"> </a><a name=\"hccs-association-type\"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td><td><b>Définition</b></td></tr><tr><td style=\"white-space:nowrap\">RPLC<a name=\"cs-association-type-RPLC\"> </a></td><td>Remplacement</td><td>Le document source remplace le document cible.</td></tr><tr><td style=\"white-space:nowrap\">XFRM<a name=\"cs-association-type-XFRM\"> </a></td><td>Transformation</td><td>Le document source est une transformation du document cible (ex : CDA généré depuis des données propriétaires).</td></tr></table></div><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cs-association-type</b></p><a name=\"en-cs-association-type\"> </a><a name=\"en-hccs-association-type\"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">RPLC<a name=\"en-cs-association-type-RPLC\"> </a></td><td>Remplacement</td><td>Le document source remplace le document cible.</td></tr><tr><td style=\"white-space:nowrap\">XFRM<a name=\"en-cs-association-type-XFRM\"> </a></td><td>Transformation</td><td>Le document source est une transformation du document cible (ex : CDA généré depuis des données propriétaires).</td></tr></table></div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"fr\" lang=\"fr\"><hr/><p><b>French</b></p><hr/><p class=\"res-header-id\"><b>Narratif généré : CodeSystem cs-association-type</b></p><a name=\"cs-association-type\"> </a><a name=\"hccs-association-type\"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td><td><b>Définition</b></td></tr><tr><td style=\"white-space:nowrap\">RPLC<a name=\"cs-association-type-RPLC\"> </a></td><td>Remplacement</td><td>Le document source remplace le document cible.</td></tr><tr><td style=\"white-space:nowrap\">XFRM<a name=\"cs-association-type-XFRM\"> </a></td><td>Transformation</td><td>Le document source est une transformation du document cible (ex : PDF correspondant au document CDA).</td></tr></table></div><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cs-association-type</b></p><a name=\"en-cs-association-type\"> </a><a name=\"en-hccs-association-type\"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">RPLC<a name=\"en-cs-association-type-RPLC\"> </a></td><td>Remplacement</td><td>Le document source remplace le document cible.</td></tr><tr><td style=\"white-space:nowrap\">XFRM<a name=\"en-cs-association-type-XFRM\"> </a></td><td>Transformation</td><td>Le document source est une transformation du document cible (ex : PDF correspondant au document CDA).</td></tr></table></div></div>"
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type",
   "version" : "0.1.0",
   "name" : "CS_AssociationType",
   "title" : "Type d'association XDS",
   "status" : "draft",
-  "date" : "2026-07-07T20:41:51+00:00",
+  "date" : "2026-07-09T18:09:47+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -37,6 +37,6 @@
   {
     "code" : "XFRM",
     "display" : "Transformation",
-    "definition" : "Le document source est une transformation du document cible (ex : CDA généré depuis des données propriétaires)."
+    "definition" : "Le document source est une transformation du document cible (ex : PDF correspondant au document CDA)."
   }]
 }

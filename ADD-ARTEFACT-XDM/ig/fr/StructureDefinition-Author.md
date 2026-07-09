@@ -73,7 +73,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-Author.csv), [E
   "name" : "Author",
   "title" : "Author (LM)",
   "status" : "draft",
-  "date" : "2026-07-07T20:41:51+00:00",
+  "date" : "2026-07-09T18:09:47+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
