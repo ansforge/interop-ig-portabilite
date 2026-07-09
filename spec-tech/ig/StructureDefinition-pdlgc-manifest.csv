@@ -3,8 +3,6 @@
 ","PDLGC Manifest","Le fichier MANIFEST.XML porte les métadonnées globales de l'export (nombre de dossiers patients, volumétrie, éléments d'intégrité), distinctes des métadonnées XDM portées par chaque `METADATA.XML` patient","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "pdlgc-manifest.exportId","pdlgc-manifest.exportId","","","",1,1,"","","","Identifier {[]} {[]}
 ","Identifiant unique affecté à l'archive de portabilité","Identifiant unique affecté à l'archive de portabilité","","","","","","","","","",,,,,"",,,,"pdlgc-manifest.exportId",1,1,"",""
-"pdlgc-manifest.extractTime","pdlgc-manifest.extractTime","","","",1,1,"","","","dateTime {[]} {[]}
-","Date et heure de l'extraction","Date et heure de l'extraction","","","","","","","","","",,,,,"",,,,"pdlgc-manifest.extractTime",1,1,"",""
 "pdlgc-manifest.exportType","pdlgc-manifest.exportType","","","",1,1,"","","","code {[]} {[]}
 ","Type de l'export : UNITAIRE|CIBLE|MASSIF","Type de l'export : UNITAIRE|CIBLE|MASSIF","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-export-type-vs|0.1.0","",,,,"pdlgc-manifest.exportType",1,1,"",""
 "pdlgc-manifest.exportStartTime","pdlgc-manifest.exportStartTime","","","",0,1,"","","","dateTime {[]} {[]}
@@ -15,7 +13,7 @@
 ","COMPLETE|PARTIAL|SAMPLE","COMPLETE|PARTIAL|SAMPLE","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-repo-type-vs|0.1.0","",,,,"pdlgc-manifest.exportStatus",1,1,"",""
 "pdlgc-manifest.comments","pdlgc-manifest.comments","","","",0,1,"","","","string {[]} {[]}
 ","commentaire associé à l'export","commentaire associé à l'export","","","","","","","","","",,,,,"",,,,"pdlgc-manifest.comments",0,1,"",""
-"pdlgc-manifest.editeurSortant","pdlgc-manifest.editeurSortant","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-editeur-sortant {[]} {[]}
+"pdlgc-manifest.editeurSortant","pdlgc-manifest.editeurSortant","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-fournisseur-sortant {[]} {[]}
 ","Editeur responsable de l'export des données LGC","Editeur responsable de l'export des données LGC","","","","","","","","","",,,,,"",,,,"pdlgc-manifest.editeurSortant",1,1,"",""
 "pdlgc-manifest.PatientArchiveCount","pdlgc-manifest.PatientArchiveCount","","","",1,1,"","","","positiveInt {[]} {[]}
 ","Nombre d'archives patients transportées","Nombre d'archives patients transportées","","","","","","","","","",,,,,"",,,,"pdlgc-manifest.PatientArchiveCount",1,1,"",""

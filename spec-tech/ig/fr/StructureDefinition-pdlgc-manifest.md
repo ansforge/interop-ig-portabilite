@@ -32,7 +32,7 @@ Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base)
 
 ** Résumé **
 
-Obligatoire : 0 élément(12 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 0 élément(11 éléments obligatoire(s) imbriqué(s))
 
 **Structures**
 
@@ -56,7 +56,7 @@ Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base)
 
 ** Résumé **
 
-Obligatoire : 0 élément(12 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 0 élément(11 éléments obligatoire(s) imbriqué(s))
 
 **Structures**
 
@@ -81,7 +81,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-manifest.
   "name" : "PDLGCManifest",
   "title" : "PDLGC Manifest",
   "status" : "draft",
-  "date" : "2026-07-03T08:42:19+00:00",
+  "date" : "2026-07-09T18:12:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -120,17 +120,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-manifest.
       "max" : "1",
       "type" : [{
         "code" : "Identifier"
-      }]
-    },
-    {
-      "id" : "pdlgc-manifest.extractTime",
-      "path" : "pdlgc-manifest.extractTime",
-      "short" : "Date et heure de l'extraction",
-      "definition" : "Date et heure de l'extraction",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "dateTime"
       }]
     },
     {
@@ -204,7 +193,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-manifest.
       "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-editeur-sortant"
+        "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-fournisseur-sortant"
       }]
     },
     {

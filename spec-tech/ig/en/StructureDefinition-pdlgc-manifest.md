@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgc-manifest.cs
   "name" : "PDLGCManifest",
   "title" : "PDLGC Manifest",
   "status" : "draft",
-  "date" : "2026-07-03T08:42:19+00:00",
+  "date" : "2026-07-09T18:12:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -71,17 +71,6 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgc-manifest.cs
       "max" : "1",
       "type" : [{
         "code" : "Identifier"
-      }]
-    },
-    {
-      "id" : "pdlgc-manifest.extractTime",
-      "path" : "pdlgc-manifest.extractTime",
-      "short" : "Date et heure de l'extraction",
-      "definition" : "Date et heure de l'extraction",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "dateTime"
       }]
     },
     {
@@ -155,7 +144,7 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgc-manifest.cs
       "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-editeur-sortant"
+        "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-fournisseur-sortant"
       }]
     },
     {

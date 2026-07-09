@@ -34,19 +34,6 @@
     "StructureDefinition-pdlgc-manifest.html" : "PDLGC Manifest"
   },
   {
-    "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/categorieEtablissement-vs",
-    "version" : "0.1.0-ballot",
-    "status" : "draft",
-    "name" : "CategorieetablissementVs",
-    "title" : null,
-    "description" : "",
-    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R316-AutreCategorieEtablissement/FHIR/TRE-R316-AutreCategorieEtablissement",
-    "https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement"],
-    "uses" : {
-    },
-    "StructureDefinition-pdlgc-editeur-sortant.html" : "PDLGC Editeur Sortant"
-  },
-  {
     "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/relation-vs",
     "version" : "0.1.0-ballot",
     "status" : "draft",
@@ -58,44 +45,5 @@
     "uses" : {
     },
     "StructureDefinition-pdlgc-contact-portabilite.html" : "PDLGC Contact Portabilite"
-  },
-  {
-    "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/secteurActivite-vs",
-    "version" : "0.1.0-ballot",
-    "status" : "draft",
-    "name" : "SecteuractiviteVs",
-    "title" : null,
-    "description" : "",
-    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite",
-    "https://mos.esante.gouv.fr/NOS/TRE_G19-SecteurActiviteADELI/FHIR/TRE-G19-SecteurActiviteADELI"],
-    "uses" : {
-    },
-    "StructureDefinition-pdlgc-editeur-sortant.html" : "PDLGC Editeur Sortant"
-  },
-  {
-    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R73-ESPIC/FHIR/TRE-R73-ESPIC?vs",
-    "version" : "20260223120000",
-    "status" : "active",
-    "name" : "VsTreR73EspicAll",
-    "title" : "Vs Tre R73 Espic All",
-    "description" : "Jeu de valeurs ALL contenant tous les établissements de santé privés d'intérêt collectif",
-    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R73-ESPIC/FHIR/TRE-R73-ESPIC"],
-    "oids" : ["1.2.250.1.213.1.6.1.280"],
-    "sources" : ["1.2.250.1.213.1.6.1.280"],
-    "uses" : {
-    },
-    "StructureDefinition-pdlgc-editeur-sortant.html" : "PDLGC Editeur Sortant"
-  },
-  {
-    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R74-ModeFixationTarifaire/FHIR/TRE-R74-ModeFixationTarifaire?vs",
-    "version" : "20260330120000",
-    "status" : "active",
-    "name" : "VsTreR74ModeFixationTarifaireAll",
-    "title" : "Vs Tre R74 Mode Fixation Tarifaire All",
-    "description" : "Jeu de valeurs ALL contenant les modes de fixation tarifaire",
-    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R74-ModeFixationTarifaire/FHIR/TRE-R74-ModeFixationTarifaire"],
-    "uses" : {
-    },
-    "StructureDefinition-pdlgc-editeur-sortant.html" : "PDLGC Editeur Sortant"
   }]
 }

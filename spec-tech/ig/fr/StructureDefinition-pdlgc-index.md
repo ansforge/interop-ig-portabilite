@@ -7,7 +7,7 @@ L'INDEX.HTM est destiné à la lecture humaine
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [PDLGC Archive Portabilite](StructureDefinition-pdlgc-archive-portabilite.md)
+* Utilise ce/t/te Modèle logique: [PDLGC Archive Patient](StructureDefinition-pdlgc-archive-patient.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.pdlgc|current/StructureDefinition/pdlgc-index)
 
@@ -57,7 +57,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-index.csv
   "name" : "PDLGCIndex",
   "title" : "PDLGC Index",
   "status" : "draft",
-  "date" : "2026-07-03T08:42:19+00:00",
+  "date" : "2026-07-09T18:12:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

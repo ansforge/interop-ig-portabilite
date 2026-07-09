@@ -7,7 +7,7 @@ PDLGC Contact Portabilite
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [PDLGC Editeur Sortant](StructureDefinition-pdlgc-editeur-sortant.md)
+* Utilise ce/t/te Modèle logique: [PDLGC Fournisseur Sortant](StructureDefinition-pdlgc-fournisseur-sortant.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.pdlgc|current/StructureDefinition/pdlgc-contact-portabilite)
 
@@ -29,6 +29,7 @@ Cette structure est dérivée de [Contact](https://interop.esante.gouv.fr/ig/mos
 ** Résumé **
 
 Obligatoire : 2 éléments
+ Must-Support : 2 éléments
 
  **Vue différentielle** 
 
@@ -43,6 +44,7 @@ Cette structure est dérivée de [Contact](https://interop.esante.gouv.fr/ig/mos
 ** Résumé **
 
 Obligatoire : 2 éléments
+ Must-Support : 2 éléments
 
  
 
@@ -61,7 +63,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-contact-p
   "name" : "PDLGCContactPortabilite",
   "title" : "PDLGC Contact Portabilite",
   "status" : "draft",
-  "date" : "2026-07-03T08:42:19+00:00",
+  "date" : "2026-07-09T18:12:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -94,12 +96,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-contact-p
     {
       "id" : "pdlgc-contact-portabilite.nom",
       "path" : "pdlgc-contact-portabilite.nom",
-      "min" : 1
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "pdlgc-contact-portabilite.telecommunication",
       "path" : "pdlgc-contact-portabilite.telecommunication",
-      "min" : 1
+      "min" : 1,
+      "mustSupport" : true
     }]
   }
 }

@@ -7,7 +7,7 @@ PDLGC Contact Portabilite
 
 **Usages:**
 
-* Use this Logical Model: [PDLGC Editeur Sortant](StructureDefinition-pdlgc-editeur-sortant.md)
+* Use this Logical Model: [PDLGC Fournisseur Sortant](StructureDefinition-pdlgc-fournisseur-sortant.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ans.fhir.fr.pdlgc|current/StructureDefinition/StructureDefinition-pdlgc-contact-portabilite.json)
 
@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgc-contact-por
   "name" : "PDLGCContactPortabilite",
   "title" : "PDLGC Contact Portabilite",
   "status" : "draft",
-  "date" : "2026-07-03T08:42:19+00:00",
+  "date" : "2026-07-09T18:12:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -65,12 +65,14 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgc-contact-por
     {
       "id" : "pdlgc-contact-portabilite.nom",
       "path" : "pdlgc-contact-portabilite.nom",
-      "min" : 1
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "pdlgc-contact-portabilite.telecommunication",
       "path" : "pdlgc-contact-portabilite.telecommunication",
-      "min" : 1
+      "min" : 1,
+      "mustSupport" : true
     }]
   }
 }

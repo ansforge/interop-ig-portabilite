@@ -13,7 +13,7 @@
   <name value="PDLGC"/>
   <title value="Portabilité des Données LGC"/>
   <status value="draft"/>
-  <date value="2026-07-03T08:42:19+00:00"/>
+  <date value="2026-07-09T18:12:06+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -649,10 +649,32 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/pdlgc-archive-patient"/>
+      </reference>
+      <name value="PDLGC Archive Patient"/>
+      <description value="Archive stockant les données médicales liées à un patient, ou NNNNN est incrémenté à partir de 00001. Chaque patient est représenté par une archive distincte conforme au profil IHE_XDM"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/pdlgc-archive-portabilite"/>
       </reference>
       <name value="PDLGC Archive Portabilite"/>
-      <description value="L'archive de Portabilité est un conteneur structuré, regroupant l'ensemble des documents et données LGC exportées ainsi que les éléments de métadonnées, d'index et de documentation nécessaires à leur exploitation par le destinataire."/>
+      <description value="L'archive de Portabilité est un conteneur structuré, regroupant l'ensemble des documents et données LGC exportées ainsi que les éléments de métadonnées, d'index et de documentation nécessaires à leur exploitation par le destinataire. Convention de nommage : PAAAAAMMJJThhmmss.ZIP, avec PA = préfixe, AAAAMMJJThhmmss = horodatage"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/pdlgc-archive-transverse"/>
+      </reference>
+      <name value="PDLGC Archive Transverse"/>
+      <description value="Archive stockant les données transverses associés au praticien et/ou au cabinet"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -685,7 +707,7 @@
         <reference value="ActorDefinition/PDLGC-Destinataire"/>
       </reference>
       <name value="PDLGC Destinataire"/>
-      <description value="Destinataire de l'export de données de LGC.&#xA;&#xA;Il peut s'agir d'un médecin ou professionnel de santé libéral recevant l'export via son LGC.&#xA;&#xA;Il peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP).&#xA;Dans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le destinataire."/>
+      <description value="Destinataire de l'export de données de LGC.&#xA;&#xA;Il peut s'agir d'un médecin ou professionnel de santé libéral recevant l'export via son LGC.&#xA;&#xA;Il peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP).&#xA;&#xA;Dans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le destinataire."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -693,10 +715,10 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/pdlgc-editeur-sortant"/>
+        <reference value="StructureDefinition/pdlgc-documentation"/>
       </reference>
-      <name value="PDLGC Editeur Sortant"/>
-      <description value="PDLGC Editeur Sortant"/>
+      <name value="PDLGC Documentation"/>
+      <description value="Documentation d'export permettant au fournisseur destinataire d'intégrer les données LGC du fournisseur sortant"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -707,7 +729,18 @@
         <reference value="ActorDefinition/PDLGC-Fournisseur-Destinataire"/>
       </reference>
       <name value="PDLGC Fournisseur Destinataire"/>
-      <description value="Editeur recevant les données en vue de leur intégration. Il est tenu d'une obligation de moyens pour l'import dès lors que le format est conforme au référentiel."/>
+      <description value="Fournisseur de LGC recevant les données en vue de leur intégration. Il est tenu d'une obligation de moyens pour l'import dès lors que le format réceptionné est conforme au référentiel."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/pdlgc-fournisseur-sortant"/>
+      </reference>
+      <name value="PDLGC Fournisseur Sortant"/>
+      <description value="PDLGC Fournisseur Sortant"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -718,7 +751,7 @@
         <reference value="ActorDefinition/PDLGC-Fournisseur-Sortant"/>
       </reference>
       <name value="PDLGC Fournisseur Sortant"/>
-      <description value="Éditeur du LGC dont le contrat prend fin ou depuis lequel l'utilisateur souhaite exporter ses données. C'est lui qui est redevable de l'obligation de portabilité gratuite du Périmètre Pivot sous 30 jours calendaires."/>
+      <description value="Fournisseur du LGC dont le contrat prend fin ou depuis lequel l'utilisateur souhaite exporter ses données. C'est lui qui est redevable de l'obligation de portabilité gratuite du Périmètre Pivot sous 30 jours calendaires."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -759,10 +792,10 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/pdlgc-repo-patient"/>
+        <reference value="StructureDefinition/pdlgc-metadata"/>
       </reference>
-      <name value="PDLGC Répertoire Patient"/>
-      <description value="Répertoire stockant les données médicales d'un patient, conformément aux spécifications d'Archives XDM"/>
+      <name value="PDLGC Metadata"/>
+      <description value="Le fichier METADATA.XML porte les métadonnées des documents cliniques d'un patient"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -770,10 +803,21 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/pdlgc-repo-transverse"/>
+        <reference value="StructureDefinition/pdlgc-readme"/>
       </reference>
-      <name value="PDLGC Répertoire Transverse"/>
-      <description value="Répertoire stockant les données trasnverses associés au praticient et/ou au cabinet"/>
+      <name value="PDLGC Readme"/>
+      <description value="Informations éditoriales et instructions"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/pdlgc-signature"/>
+      </reference>
+      <name value="PDLGC Signature"/>
+      <description value="signature XAdES de l'archive attestant de l'imputabilité et l'intégrité des données"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -785,6 +829,17 @@
       </reference>
       <name value="PDLGC Statut de l'export"/>
       <description value="PDLGC Statut de l'export"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/pdlgc-system"/>
+      </reference>
+      <name value="PDLGC System"/>
+      <description value="Informations relatives au Logiciel de Gestion de Cabinet"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -859,24 +914,24 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="sf-etude-fonctionnelle.html"/>
+          <valueUrl value="specifications.html"/>
         </extension>
-        <nameUrl value="sf-etude-fonctionnelle.html"/>
-        <title value="Vol1 - Etude Fonctionnelle"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="st-spec-techniques.html"/>
-        </extension>
-        <nameUrl value="st-spec-techniques.html"/>
-        <title value="Vol2 - Spécifications Techniques"/>
+        <nameUrl value="specifications.html"/>
+        <title value="Spécifications"/>
         <generation value="markdown"/>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="st-structure-archive.html"/>
+            <valueUrl value="specs-main-flux-export-archive-portabilite.html"/>
           </extension>
-          <nameUrl value="st-structure-archive.html"/>
+          <nameUrl value="specs-main-flux-export-archive-portabilite.html"/>
+          <title value="Flux Export d'Archive de Portabilité"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="struct-main-structure-archive.html"/>
+          </extension>
+          <nameUrl value="struct-main-structure-archive.html"/>
           <title value="Structure de l'archive de portabilité"/>
           <generation value="markdown"/>
         </page>
@@ -888,6 +943,14 @@
         <nameUrl value="annexes.html"/>
         <title value="Annexes"/>
         <generation value="markdown"/>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="annexe-references.html"/>
+          </extension>
+          <nameUrl value="annexe-references.html"/>
+          <title value="Références"/>
+          <generation value="markdown"/>
+        </page>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
             <valueUrl value="annexe-securite.html"/>

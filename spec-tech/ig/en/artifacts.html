@@ -48,8 +48,8 @@
 	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"8"}
-    h3,h4,h5,h6{--heading-prefix:"8.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"7"}
+    h3,h4,h5,h6{--heading-prefix:"7.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -106,16 +106,16 @@
   <li>
     <a href="index.html">Accueil</a>
   </li>
-  <li>
-    <a href="sf-etude-fonctionnelle.html">Vol.1 - Etude Fonctionnelle</a>
-  </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Vol.2 - Spécifications Techniques
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Spécifications
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="st-structure-archive.html">Structure de l&apos;architecture de portabilité</a>
+        <a href="specs-main-flux-export-archive-portabilite.html">Flux Export d&apos;Archive de Portabilité</a>
+      </li>
+      <li>
+        <a href="struct-main-structure-archive.html">Structure de l&apos;architecture de portabilité</a>
       </li>
     </ul>
   </li>
@@ -125,13 +125,13 @@
     </a>
     <ul class="dropdown-menu">
       <li>
+        <a href="annexe-references.html">Références</a>
+      </li>
+      <li>
         <a href="annexe-securite.html">Sécurité</a>
       </li>
       <li>
         <a href="annexe-downloads.html">Téléchargements et usage</a>
-      </li>
-      <li>
-        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR </a>
       </li>
       <li>
         <a target="_blank" href="https://esante.gouv.fr/">Site de l&apos;ANS </a>
@@ -281,8 +281,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Il peut s'agir d'un médecin ou professionnel de santé libéral recevant l'export via son LGC.</p>
 
-<p>Il peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP).
-Dans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le destinataire.</p>
+<p>Il peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP).</p>
+
+<p>Dans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le destinataire.</p>
 </td>
          </tr>
          <tr>
@@ -294,7 +295,7 @@ Dans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le d
                </a>
             </td>
             <td>
-<p>Editeur recevant les données en vue de leur intégration. Il est tenu d'une obligation de moyens pour l'import dès lors que le format est conforme au référentiel.</p>
+<p>Fournisseur de LGC recevant les données en vue de leur intégration. Il est tenu d'une obligation de moyens pour l'import dès lors que le format réceptionné est conforme au référentiel.</p>
 </td>
          </tr>
          <tr>
@@ -306,7 +307,7 @@ Dans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le d
                </a>
             </td>
             <td>
-<p>Éditeur du LGC dont le contrat prend fin ou depuis lequel l'utilisateur souhaite exporter ses données. C'est lui qui est redevable de l'obligation de portabilité gratuite du Périmètre Pivot sous 30 jours calendaires.</p>
+<p>Fournisseur du LGC dont le contrat prend fin ou depuis lequel l'utilisateur souhaite exporter ses données. C'est lui qui est redevable de l'obligation de portabilité gratuite du Périmètre Pivot sous 30 jours calendaires.</p>
 </td>
          </tr>
       </tbody>
@@ -319,6 +320,18 @@ Dans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le d
       <tbody>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-pdlgc-archive-patient.html"
+                  title="StructureDefinition/pdlgc-archive-patient">
+                  <span title="StructureDefinition/pdlgc-archive-patient">PDLGC Archive Patient
+</span>
+               </a>
+            </td>
+            <td>
+<p>Archive stockant les données médicales liées à un patient, ou NNNNN est incrémenté à partir de 00001. Chaque patient est représenté par une archive distincte conforme au profil IHE_XDM</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-pdlgc-archive-portabilite.html"
                   title="StructureDefinition/pdlgc-archive-portabilite">
                   <span title="StructureDefinition/pdlgc-archive-portabilite">PDLGC Archive Portabilite
@@ -326,7 +339,19 @@ Dans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le d
                </a>
             </td>
             <td>
-<p>L'archive de Portabilité est un conteneur structuré, regroupant l'ensemble des documents et données LGC exportées ainsi que les éléments de métadonnées, d'index et de documentation nécessaires à leur exploitation par le destinataire.</p>
+<p>L'archive de Portabilité est un conteneur structuré, regroupant l'ensemble des documents et données LGC exportées ainsi que les éléments de métadonnées, d'index et de documentation nécessaires à leur exploitation par le destinataire. Convention de nommage : PAAAAAMMJJThhmmss.ZIP, avec PA = préfixe, AAAAMMJJThhmmss = horodatage</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-pdlgc-archive-transverse.html"
+                  title="StructureDefinition/pdlgc-archive-transverse">
+                  <span title="StructureDefinition/pdlgc-archive-transverse">PDLGC Archive Transverse
+</span>
+               </a>
+            </td>
+            <td>
+<p>Archive stockant les données transverses associés au praticien et/ou au cabinet</p>
 </td>
          </tr>
          <tr>
@@ -343,14 +368,26 @@ Dans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le d
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-pdlgc-editeur-sortant.html"
-                  title="StructureDefinition/pdlgc-editeur-sortant">
-                  <span title="StructureDefinition/pdlgc-editeur-sortant">PDLGC Editeur Sortant
+               <a href="StructureDefinition-pdlgc-documentation.html"
+                  title="StructureDefinition/pdlgc-documentation">
+                  <span title="StructureDefinition/pdlgc-documentation">PDLGC Documentation
 </span>
                </a>
             </td>
             <td>
-<p>PDLGC Editeur Sortant</p>
+<p>Documentation d'export permettant au fournisseur destinataire d'intégrer les données LGC du fournisseur sortant</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-pdlgc-fournisseur-sortant.html"
+                  title="StructureDefinition/pdlgc-fournisseur-sortant">
+                  <span title="StructureDefinition/pdlgc-fournisseur-sortant">PDLGC Fournisseur Sortant
+</span>
+               </a>
+            </td>
+            <td>
+<p>PDLGC Fournisseur Sortant</p>
 </td>
          </tr>
          <tr>
@@ -391,26 +428,50 @@ Dans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le d
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-pdlgc-repo-patient.html"
-                  title="StructureDefinition/pdlgc-repo-patient">
-                  <span title="StructureDefinition/pdlgc-repo-patient">PDLGC Répertoire Patient
+               <a href="StructureDefinition-pdlgc-metadata.html"
+                  title="StructureDefinition/pdlgc-metadata">
+                  <span title="StructureDefinition/pdlgc-metadata">PDLGC Metadata
 </span>
                </a>
             </td>
             <td>
-<p>Répertoire stockant les données médicales d'un patient, conformément aux spécifications d'Archives XDM</p>
+<p>Le fichier METADATA.XML porte les métadonnées des documents cliniques d'un patient</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-pdlgc-repo-transverse.html"
-                  title="StructureDefinition/pdlgc-repo-transverse">
-                  <span title="StructureDefinition/pdlgc-repo-transverse">PDLGC Répertoire Transverse
+               <a href="StructureDefinition-pdlgc-readme.html"
+                  title="StructureDefinition/pdlgc-readme">
+                  <span title="StructureDefinition/pdlgc-readme">PDLGC Readme
 </span>
                </a>
             </td>
             <td>
-<p>Répertoire stockant les données trasnverses associés au praticient et/ou au cabinet</p>
+<p>Informations éditoriales et instructions</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-pdlgc-signature.html"
+                  title="StructureDefinition/pdlgc-signature">
+                  <span title="StructureDefinition/pdlgc-signature">PDLGC Signature
+</span>
+               </a>
+            </td>
+            <td>
+<p>signature XAdES de l'archive attestant de l'imputabilité et l'intégrité des données</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-pdlgc-system.html"
+                  title="StructureDefinition/pdlgc-system">
+                  <span title="StructureDefinition/pdlgc-system">PDLGC System
+</span>
+               </a>
+            </td>
+            <td>
+<p>Informations relatives au Logiciel de Gestion de Cabinet</p>
 </td>
          </tr>
       </tbody>
@@ -551,8 +612,8 @@ Dans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le d
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Package ans.fhir.fr.pdlgc#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-07-03 08:42:00 +0000">
-    2026-07-03
+  <span title="2026-07-09 18:12:00 +0000">
+    2026-07-09
   </span>
 
           <br/>

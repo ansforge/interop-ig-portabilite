@@ -122,18 +122,6 @@ Organisation des processus collaboratifs d'export de données de santé
 
 Le périmètre du présent guide d'implémentation couvre le processus collaboratif d'**export d'archive de Portabilité**.
 
-### Acteurs
-
-Le tableau ci-dessous récapitule les acteurs pouvant être impliqués dans les différents processus collaboratif
-
-| | | |
-| :--- | :--- | :--- |
-| Acteur | Type d'acteur | Description |
-| [PDLGC Demandeur](ActorDefinition-PDLGC-Demandeur.md) | Person | Demandeur de l'export.Il peut s'agir d'un médecin ou professionnel de santé libéral, responsable du contenu médical transféré.Il peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP) |
-| [PDLGC Destinataire](ActorDefinition-PDLGC-Destinataire.md) | Person | Destinataire de l'export de données de LGC.Il peut s'agir d'un médecin ou professionnel de santé libéral recevant l'export via son LGC.Il peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP). Dans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le destinataire. |
-| [PDLGC Fournisseur Destinataire](ActorDefinition-PDLGC-Fournisseur-Destinataire.md) | System | Editeur recevant les données en vue de leur intégration. Il est tenu d'une obligation de moyens pour l'import dès lors que le format est conforme au référentiel. |
-| [PDLGC Fournisseur Sortant](ActorDefinition-PDLGC-Fournisseur-Sortant.md) | System | Éditeur du LGC dont le contrat prend fin ou depuis lequel l'utilisateur souhaite exporter ses données. C'est lui qui est redevable de l'obligation de portabilité gratuite du Périmètre Pivot sous 30 jours calendaires. |
-
 ### Dépendances
 
 
@@ -148,6 +136,6 @@ This publication includes IP covered under the following statements.
 
 * ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
 
-* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.4.0/CodeSystem-ISO3166Part1.html): [PDLGC](index.md), [PDLGCArchivePortabilite](StructureDefinition-pdlgc-archive-portabilite.md)... Show 17 more, [PDLGCContactPortabilite](StructureDefinition-pdlgc-contact-portabilite.md), [PDLGCEditeurSortant](StructureDefinition-pdlgc-editeur-sortant.md), [PDLGCExportStatusCS](CodeSystem-pdlgc-export-status-cs.md), [PDLGCExportStatusVS](ValueSet-pdlgc-export-status-vs.md), [PDLGCExportTypeCS](CodeSystem-pdlgc-type-export-cs.md), [PDLGCExportTypeVS](ValueSet-pdlgc-export-type-vs.md), [PDLGCIndex](StructureDefinition-pdlgc-index.md), [PDLGCManifest](StructureDefinition-pdlgc-manifest.md), [PDLGCManifestArchives](StructureDefinition-pdlgc-manifest-archives.md), [PDLGCRepertoirePatient](StructureDefinition-pdlgc-repo-patient.md), [PDLGCRepertoireTransverse](StructureDefinition-pdlgc-repo-transverse.md), [PDLGCRepoTypeCS](CodeSystem-pdlgc-repo-type-cs.md), [PDLGCRepoTypeVS](ValueSet-pdlgc-repo-type-vs.md), [PDLGC_Demandeur](ActorDefinition-PDLGC-Demandeur.md), [PDLGC_Destinataire](ActorDefinition-PDLGC-Destinataire.md), [PDLGC_FournisseurDestinataire](ActorDefinition-PDLGC-Fournisseur-Destinataire.md) and [PDLGC_FournisseurSortant](ActorDefinition-PDLGC-Fournisseur-Sortant.md)
+* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.4.0/CodeSystem-ISO3166Part1.html): [PDLGC](index.md), [PDLGCArchivePatient](StructureDefinition-pdlgc-archive-patient.md)... Show 22 more, [PDLGCArchivePortabilite](StructureDefinition-pdlgc-archive-portabilite.md), [PDLGCArchiveTransverse](StructureDefinition-pdlgc-archive-transverse.md), [PDLGCContactPortabilite](StructureDefinition-pdlgc-contact-portabilite.md), [PDLGCDocumentation](StructureDefinition-pdlgc-documentation.md), [PDLGCExportStatusCS](CodeSystem-pdlgc-export-status-cs.md), [PDLGCExportStatusVS](ValueSet-pdlgc-export-status-vs.md), [PDLGCExportTypeCS](CodeSystem-pdlgc-type-export-cs.md), [PDLGCExportTypeVS](ValueSet-pdlgc-export-type-vs.md), [PDLGCFournisseurSortant](StructureDefinition-pdlgc-fournisseur-sortant.md), [PDLGCIndex](StructureDefinition-pdlgc-index.md), [PDLGCManifest](StructureDefinition-pdlgc-manifest.md), [PDLGCManifestArchives](StructureDefinition-pdlgc-manifest-archives.md), [PDLGCMetadata](StructureDefinition-pdlgc-metadata.md), [PDLGCReadme](StructureDefinition-pdlgc-readme.md), [PDLGCRepoTypeCS](CodeSystem-pdlgc-repo-type-cs.md), [PDLGCRepoTypeVS](ValueSet-pdlgc-repo-type-vs.md), [PDLGCSignature](StructureDefinition-pdlgc-signature.md), [PDLGCSystem](StructureDefinition-pdlgc-system.md), [PDLGC_Demandeur](ActorDefinition-PDLGC-Demandeur.md), [PDLGC_Destinataire](ActorDefinition-PDLGC-Destinataire.md), [PDLGC_FournisseurDestinataire](ActorDefinition-PDLGC-Fournisseur-Destinataire.md) and [PDLGC_FournisseurSortant](ActorDefinition-PDLGC-Fournisseur-Sortant.md)
 
 

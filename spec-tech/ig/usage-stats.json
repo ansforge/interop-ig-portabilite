@@ -48,6 +48,9 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.3.0": [
       "pdlgc-manifest.Archive"
     ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],

@@ -26,7 +26,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "name" : "PDLGCRepoTypeCS",
   "title" : "Type de répertoire",
   "status" : "draft",
-  "date" : "2026-07-03T08:42:19+00:00",
+  "date" : "2026-07-09T18:12:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -51,7 +51,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   },
   {
     "code" : "TRANSVERSE",
-    "display" : "Répertoire stockant les données transverses associées à un praticient ou une structure"
+    "display" : "Répertoire stockant les données transverses associées à un praticien ou une structure"
   }]
 }
 

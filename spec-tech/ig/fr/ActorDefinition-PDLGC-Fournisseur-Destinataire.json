@@ -32,7 +32,7 @@
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.date",
-    "valueDateTime" : "2026-07-03T08:42:19+00:00"
+    "valueDateTime" : "2026-07-09T18:12:06+00:00"
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.publisher",
@@ -50,7 +50,7 @@
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.description",
-    "valueMarkdown" : "Editeur recevant les données en vue de leur intégration. Il est tenu d'une obligation de moyens pour l'import dès lors que le format est conforme au référentiel."
+    "valueMarkdown" : "Fournisseur de LGC recevant les données en vue de leur intégration. Il est tenu d'une obligation de moyens pour l'import dès lors que le format réceptionné est conforme au référentiel."
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.jurisdiction",
@@ -64,7 +64,7 @@
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.purpose",
-    "valueMarkdown" : "System"
+    "valueMarkdown" : "Système"
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.type",

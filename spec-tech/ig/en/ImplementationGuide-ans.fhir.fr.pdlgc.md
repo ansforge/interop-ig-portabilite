@@ -14,7 +14,7 @@
   "name" : "PDLGC",
   "title" : "Portabilité des Données LGC",
   "status" : "draft",
-  "date" : "2026-07-03T08:42:19+00:00",
+  "date" : "2026-07-09T18:12:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -875,10 +875,34 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/pdlgc-archive-patient"
+      },
+      "name" : "PDLGC Archive Patient",
+      "description" : "Archive stockant les données médicales liées à un patient, ou NNNNN est incrémenté à partir de 00001. Chaque patient est représenté par une archive distincte conforme au profil IHE_XDM",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/pdlgc-archive-portabilite"
       },
       "name" : "PDLGC Archive Portabilite",
-      "description" : "L'archive de Portabilité est un conteneur structuré, regroupant l'ensemble des documents et données LGC exportées ainsi que les éléments de métadonnées, d'index et de documentation nécessaires à leur exploitation par le destinataire.",
+      "description" : "L'archive de Portabilité est un conteneur structuré, regroupant l'ensemble des documents et données LGC exportées ainsi que les éléments de métadonnées, d'index et de documentation nécessaires à leur exploitation par le destinataire. Convention de nommage : PAAAAAMMJJThhmmss.ZIP, avec PA = préfixe, AAAAMMJJThhmmss = horodatage",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/pdlgc-archive-transverse"
+      },
+      "name" : "PDLGC Archive Transverse",
+      "description" : "Archive stockant les données transverses associés au praticien et/ou au cabinet",
       "exampleBoolean" : false
     },
     {
@@ -914,7 +938,7 @@
         "reference" : "ActorDefinition/PDLGC-Destinataire"
       },
       "name" : "PDLGC Destinataire",
-      "description" : "Destinataire de l'export de données de LGC.\n\nIl peut s'agir d'un médecin ou professionnel de santé libéral recevant l'export via son LGC.\n\nIl peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP).\nDans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le destinataire.",
+      "description" : "Destinataire de l'export de données de LGC.\n\nIl peut s'agir d'un médecin ou professionnel de santé libéral recevant l'export via son LGC.\n\nIl peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP).\n\nDans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le destinataire.",
       "exampleBoolean" : false
     },
     {
@@ -923,10 +947,10 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/pdlgc-editeur-sortant"
+        "reference" : "StructureDefinition/pdlgc-documentation"
       },
-      "name" : "PDLGC Editeur Sortant",
-      "description" : "PDLGC Editeur Sortant",
+      "name" : "PDLGC Documentation",
+      "description" : "Documentation d'export permettant au fournisseur destinataire d'intégrer les données LGC du fournisseur sortant",
       "exampleBoolean" : false
     },
     {
@@ -938,7 +962,19 @@
         "reference" : "ActorDefinition/PDLGC-Fournisseur-Destinataire"
       },
       "name" : "PDLGC Fournisseur Destinataire",
-      "description" : "Editeur recevant les données en vue de leur intégration. Il est tenu d'une obligation de moyens pour l'import dès lors que le format est conforme au référentiel.",
+      "description" : "Fournisseur de LGC recevant les données en vue de leur intégration. Il est tenu d'une obligation de moyens pour l'import dès lors que le format réceptionné est conforme au référentiel.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/pdlgc-fournisseur-sortant"
+      },
+      "name" : "PDLGC Fournisseur Sortant",
+      "description" : "PDLGC Fournisseur Sortant",
       "exampleBoolean" : false
     },
     {
@@ -950,7 +986,7 @@
         "reference" : "ActorDefinition/PDLGC-Fournisseur-Sortant"
       },
       "name" : "PDLGC Fournisseur Sortant",
-      "description" : "Éditeur du LGC dont le contrat prend fin ou depuis lequel l'utilisateur souhaite exporter ses données. C'est lui qui est redevable de l'obligation de portabilité gratuite du Périmètre Pivot sous 30 jours calendaires.",
+      "description" : "Fournisseur du LGC dont le contrat prend fin ou depuis lequel l'utilisateur souhaite exporter ses données. C'est lui qui est redevable de l'obligation de portabilité gratuite du Périmètre Pivot sous 30 jours calendaires.",
       "exampleBoolean" : false
     },
     {
@@ -995,10 +1031,10 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/pdlgc-repo-patient"
+        "reference" : "StructureDefinition/pdlgc-metadata"
       },
-      "name" : "PDLGC Répertoire Patient",
-      "description" : "Répertoire stockant les données médicales d'un patient, conformément aux spécifications d'Archives XDM",
+      "name" : "PDLGC Metadata",
+      "description" : "Le fichier METADATA.XML porte les métadonnées des documents cliniques d'un patient",
       "exampleBoolean" : false
     },
     {
@@ -1007,10 +1043,22 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/pdlgc-repo-transverse"
+        "reference" : "StructureDefinition/pdlgc-readme"
       },
-      "name" : "PDLGC Répertoire Transverse",
-      "description" : "Répertoire stockant les données trasnverses associés au praticient et/ou au cabinet",
+      "name" : "PDLGC Readme",
+      "description" : "Informations éditoriales et instructions",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/pdlgc-signature"
+      },
+      "name" : "PDLGC Signature",
+      "description" : "signature XAdES de l'archive attestant de l'imputabilité et l'intégrité des données",
       "exampleBoolean" : false
     },
     {
@@ -1023,6 +1071,18 @@
       },
       "name" : "PDLGC Statut de l'export",
       "description" : "PDLGC Statut de l'export",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/pdlgc-system"
+      },
+      "name" : "PDLGC System",
+      "description" : "Informations relatives au Logiciel de Gestion de Cabinet",
       "exampleBoolean" : false
     },
     {
@@ -1105,26 +1165,26 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "sf-etude-fonctionnelle.html"
+          "valueUrl" : "specifications.html"
         }],
-        "nameUrl" : "sf-etude-fonctionnelle.html",
-        "title" : "Vol1 - Etude Fonctionnelle",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "st-spec-techniques.html"
-        }],
-        "nameUrl" : "st-spec-techniques.html",
-        "title" : "Vol2 - Spécifications Techniques",
+        "nameUrl" : "specifications.html",
+        "title" : "Spécifications",
         "generation" : "markdown",
         "page" : [{
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "st-structure-archive.html"
+            "valueUrl" : "specs-main-flux-export-archive-portabilite.html"
           }],
-          "nameUrl" : "st-structure-archive.html",
+          "nameUrl" : "specs-main-flux-export-archive-portabilite.html",
+          "title" : "Flux Export d'Archive de Portabilité",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "struct-main-structure-archive.html"
+          }],
+          "nameUrl" : "struct-main-structure-archive.html",
           "title" : "Structure de l'archive de portabilité",
           "generation" : "markdown"
         }]
@@ -1138,6 +1198,15 @@
         "title" : "Annexes",
         "generation" : "markdown",
         "page" : [{
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "annexe-references.html"
+          }],
+          "nameUrl" : "annexe-references.html",
+          "title" : "Références",
+          "generation" : "markdown"
+        },
+        {
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
             "valueUrl" : "annexe-securite.html"

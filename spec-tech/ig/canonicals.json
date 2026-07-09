@@ -55,11 +55,25 @@
   "name" : "PDLGC"
 },
 {
+  "id" : "pdlgc-archive-patient",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-archive-patient",
+  "version" : "0.1.0",
+  "name" : "PDLGCArchivePatient"
+},
+{
   "id" : "pdlgc-archive-portabilite",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-archive-portabilite",
   "version" : "0.1.0",
   "name" : "PDLGCArchivePortabilite"
+},
+{
+  "id" : "pdlgc-archive-transverse",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-archive-transverse",
+  "version" : "0.1.0",
+  "name" : "PDLGCArchiveTransverse"
 },
 {
   "id" : "pdlgc-contact-portabilite",
@@ -69,11 +83,18 @@
   "name" : "PDLGCContactPortabilite"
 },
 {
-  "id" : "pdlgc-editeur-sortant",
+  "id" : "pdlgc-documentation",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-editeur-sortant",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-documentation",
   "version" : "0.1.0",
-  "name" : "PDLGCEditeurSortant"
+  "name" : "PDLGCDocumentation"
+},
+{
+  "id" : "pdlgc-fournisseur-sortant",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-fournisseur-sortant",
+  "version" : "0.1.0",
+  "name" : "PDLGCFournisseurSortant"
 },
 {
   "id" : "pdlgc-index",
@@ -97,18 +118,32 @@
   "name" : "PDLGCManifestArchives"
 },
 {
-  "id" : "pdlgc-repo-patient",
+  "id" : "pdlgc-metadata",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-repo-patient",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-metadata",
   "version" : "0.1.0",
-  "name" : "PDLGCRepertoirePatient"
+  "name" : "PDLGCMetadata"
 },
 {
-  "id" : "pdlgc-repo-transverse",
+  "id" : "pdlgc-readme",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-repo-transverse",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-readme",
   "version" : "0.1.0",
-  "name" : "PDLGCRepertoireTransverse"
+  "name" : "PDLGCReadme"
+},
+{
+  "id" : "pdlgc-signature",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-signature",
+  "version" : "0.1.0",
+  "name" : "PDLGCSignature"
+},
+{
+  "id" : "pdlgc-system",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-system",
+  "version" : "0.1.0",
+  "name" : "PDLGCSystem"
 },
 {
   "id" : "pdlgc-export-status-vs",

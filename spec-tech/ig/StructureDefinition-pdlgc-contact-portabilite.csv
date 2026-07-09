@@ -3,7 +3,7 @@
 ","PDLGC Contact Portabilite","PDLGC Contact Portabilite","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "pdlgc-contact-portabilite.IdContact","pdlgc-contact-portabilite.IdContact","","","",0,1,"","","","Identifier {[]} {[]}
 ","Identifiant du contact.","Identifiant du contact.","","","","","","","","","",,,,,"",,,,"Contact.IdContact",0,1,"",""
-"pdlgc-contact-portabilite.nom","pdlgc-contact-portabilite.nom","","","",1,1,"","","","string {[]} {[]}
+"pdlgc-contact-portabilite.nom","pdlgc-contact-portabilite.nom","","","",1,1,"Y","","","string {[]} {[]}
 ","Un nom de la personne ou du service à contacter.","Un nom de la personne ou du service à contacter.","","","","","","","","","",,,,,"",,,,"Contact.nom",0,1,"",""
 "pdlgc-contact-portabilite.fonction","pdlgc-contact-portabilite.fonction","","","",0,1,"","","","string {[]} {[]}
 ","Un titre, une position ou une fonction de la personne assurant le contact au sein de son organisation (directeur, secrétaire, etc.).","Un titre, une position ou une fonction de la personne assurant le contact au sein de son organisation (directeur, secrétaire, etc.).","","","","","","","","","",,,,,"",,,,"Contact.fonction",0,1,"",""
@@ -31,7 +31,7 @@
 ","Adresse géopostale du point de contact.","Adresse géopostale du point de contact.","","","","","","","","","",,,,,"",,,,"Contact.adresse",0,1,"",""
 "pdlgc-contact-portabilite.lieu","pdlgc-contact-portabilite.lieu","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Lieu {[]} {[]}
 ","Lieu(x) rattaché(s) au contact.","Lieu(x) rattaché(s) au contact.","","","","","","","","","",,,,,"",,,,"Contact.lieu",0,*,"",""
-"pdlgc-contact-portabilite.telecommunication","pdlgc-contact-portabilite.telecommunication","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Telecommunication {[]} {[]}
+"pdlgc-contact-portabilite.telecommunication","pdlgc-contact-portabilite.telecommunication","","","",1,*,"Y","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Telecommunication {[]} {[]}
 ","Adresse(s) de télécommunication du contact (numéro de téléphone, adresse email, URL, etc.).","Adresse(s) de télécommunication du contact (numéro de téléphone, adresse email, URL, etc.).","","","","","","","","","",,,,,"",,,,"Contact.telecommunication",0,*,"",""
 "pdlgc-contact-portabilite.NoteLiaison","pdlgc-contact-portabilite.NoteLiaison","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/NoteLiaison {[]} {[]}
 ","Lien vers la classe NoteLiaison","Lien vers la classe NoteLiaison","","","","","","","","","",,,,,"",,,,"Contact.NoteLiaison",0,*,"",""

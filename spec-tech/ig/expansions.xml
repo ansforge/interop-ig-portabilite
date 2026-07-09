@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="38535e29-3056-45a6-b507-a1b2d077079f"/>
+  <id value="8a1f10c1-e597-4ffb-8584-184cf01c024e"/>
   <meta>
-    <lastUpdated value="2026-07-03T08:42:19.712+00:00"/>
+    <lastUpdated value="2026-07-09T18:12:06.278+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -107,7 +107,7 @@
         <name value="PDLGCExportStatusVS"/>
         <title value="PDLGC Statut de l'export"/>
         <status value="draft"/>
-        <date value="2026-07-03T08:42:19+00:00"/>
+        <date value="2026-07-09T18:12:06+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -116,8 +116,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:74239557-0c33-49e5-91b4-b2167c125ee7"/>
-          <timestamp value="2026-07-03T08:43:23+00:00"/>
+          <identifier value="urn:uuid:954a3443-ca38-420a-8809-627fa09f265c"/>
+          <timestamp value="2026-07-09T18:12:58+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -257,7 +257,7 @@
         <name value="PDLGCExportStatusVS"/>
         <title value="PDLGC Statut de l'export"/>
         <status value="draft"/>
-        <date value="2026-07-03T08:42:19+00:00"/>
+        <date value="2026-07-09T18:12:06+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -266,8 +266,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:74239557-0c33-49e5-91b4-b2167c125ee7"/>
-          <timestamp value="2026-07-03T08:43:23+00:00"/>
+          <identifier value="urn:uuid:954a3443-ca38-420a-8809-627fa09f265c"/>
+          <timestamp value="2026-07-09T18:12:58+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -407,7 +407,7 @@
         <name value="PDLGCExportStatusVS"/>
         <title value="PDLGC Statut de l'export"/>
         <status value="draft"/>
-        <date value="2026-07-03T08:42:19+00:00"/>
+        <date value="2026-07-09T18:12:06+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -416,8 +416,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1b852e7d-f1e3-4564-be55-ba31705d535e"/>
-          <timestamp value="2026-07-03T08:43:23+00:00"/>
+          <identifier value="urn:uuid:e0f8c892-4973-49d5-94ab-a3b643c7aaa4"/>
+          <timestamp value="2026-07-09T18:12:58+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -560,7 +560,7 @@
         <name value="PDLGCExportTypeVS"/>
         <title value="PDLGC Type d'Export"/>
         <status value="draft"/>
-        <date value="2026-07-03T08:42:19+00:00"/>
+        <date value="2026-07-09T18:12:06+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -569,8 +569,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ab21ed04-d3f3-4fd3-baff-4086b9773a1a"/>
-          <timestamp value="2026-07-03T08:43:23+00:00"/>
+          <identifier value="urn:uuid:9d4f58c1-c17e-4bca-8c05-4cb7f3b7b09f"/>
+          <timestamp value="2026-07-09T18:12:58+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -710,7 +710,7 @@
         <name value="PDLGCExportTypeVS"/>
         <title value="PDLGC Type d'Export"/>
         <status value="draft"/>
-        <date value="2026-07-03T08:42:19+00:00"/>
+        <date value="2026-07-09T18:12:06+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -719,8 +719,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ab21ed04-d3f3-4fd3-baff-4086b9773a1a"/>
-          <timestamp value="2026-07-03T08:43:23+00:00"/>
+          <identifier value="urn:uuid:9d4f58c1-c17e-4bca-8c05-4cb7f3b7b09f"/>
+          <timestamp value="2026-07-09T18:12:58+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -860,7 +860,7 @@
         <name value="PDLGCExportTypeVS"/>
         <title value="PDLGC Type d'Export"/>
         <status value="draft"/>
-        <date value="2026-07-03T08:42:19+00:00"/>
+        <date value="2026-07-09T18:12:06+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -869,8 +869,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9f6c75ab-0734-4448-90b6-62319d4b05e8"/>
-          <timestamp value="2026-07-03T08:43:23+00:00"/>
+          <identifier value="urn:uuid:7b48c809-fe45-4f44-a9a1-fab854b954e2"/>
+          <timestamp value="2026-07-09T18:12:58+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -993,7 +993,7 @@
         <name value="PDLGCRepoTypeVS"/>
         <title value="PDLGC Type de répertoire"/>
         <status value="draft"/>
-        <date value="2026-07-03T08:42:19+00:00"/>
+        <date value="2026-07-09T18:12:06+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1002,8 +1002,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4e6a122b-429c-4c8c-9ba3-eb0a525a4ca4"/>
-          <timestamp value="2026-07-03T08:43:23+00:00"/>
+          <identifier value="urn:uuid:6e92a0c6-0f19-4f5c-b954-e5b4712a5369"/>
+          <timestamp value="2026-07-09T18:12:58+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1119,7 +1119,7 @@
         <name value="PDLGCRepoTypeVS"/>
         <title value="PDLGC Type de répertoire"/>
         <status value="draft"/>
-        <date value="2026-07-03T08:42:19+00:00"/>
+        <date value="2026-07-09T18:12:06+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1128,8 +1128,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4e6a122b-429c-4c8c-9ba3-eb0a525a4ca4"/>
-          <timestamp value="2026-07-03T08:43:23+00:00"/>
+          <identifier value="urn:uuid:6e92a0c6-0f19-4f5c-b954-e5b4712a5369"/>
+          <timestamp value="2026-07-09T18:12:58+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1225,15 +1225,15 @@
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-pdlgc-repo-type-cs.html#pdlgc-repo-type-cs-TRANSVERSE">TRANSVERSE</a>
                 </td>
-                <td>Répertoire stockant les données transverses associées à un praticient ou une structure</td>
+                <td>Répertoire stockant les données transverses associées à un praticien ou une structure</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;TRANSVERSE&quot;, &quot;display&quot;: &quot;Répertoire stockant les données transverses associées à un praticient ou une structure&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;TRANSVERSE&quot;, &quot;display&quot;: &quot;Répertoire stockant les données transverses associées à un praticien ou une structure&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;TRANSVERSE&quot;&gt;&lt;display value=&quot;Répertoire stockant les données transverses associées à un praticient ou une structure&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;TRANSVERSE&quot;&gt;&lt;display value=&quot;Répertoire stockant les données transverses associées à un praticien ou une structure&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1245,7 +1245,7 @@
         <name value="PDLGCRepoTypeVS"/>
         <title value="PDLGC Type de répertoire"/>
         <status value="draft"/>
-        <date value="2026-07-03T08:42:19+00:00"/>
+        <date value="2026-07-09T18:12:06+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1254,8 +1254,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:cb60a190-7f59-4aba-b029-8c962adb58e2"/>
-          <timestamp value="2026-07-03T08:43:23+00:00"/>
+          <identifier value="urn:uuid:f44b9a4b-3349-4d3d-83cc-062107aa25fa"/>
+          <timestamp value="2026-07-09T18:12:58+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1286,7 +1286,7 @@
           <contains>
             <system value="https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs"/>
             <code value="TRANSVERSE"/>
-            <display value="Répertoire stockant les données transverses associées à un praticient ou une structure"/>
+            <display value="Répertoire stockant les données transverses associées à un praticien ou une structure"/>
           </contains>
         </expansion>
       </ValueSet>
