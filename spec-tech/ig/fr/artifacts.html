@@ -185,7 +185,7 @@
 
             <a href="#bottom">bas de page</a>
 
-          | <a href="ActorDefinition-PDLGC-Demandeur.html">suivant &gt;</a>
+          | <a href="StructureDefinition-ActorPatient.html">suivant &gt;</a>
 
           </span>
 
@@ -221,16 +221,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contenu:</p>
    <ul>
       <li>
-         <a href="#1">Exigences: Définitions des acteurs</a>
+         <a href="#1">Modèle logique XDM (Lot de soumission (SubmissionSet), DocumentEntry (XDS) et association)</a>
       </li>
       <li>
-         <a href="#2">Structures: Modèles logiques</a>
+         <a href="#2">Exigences: Définitions des acteurs</a>
       </li>
       <li>
-         <a href="#3">Terminologie: Jeux de valeurs (ValueSets)</a>
+         <a href="#3">Structures: Modèles logiques</a>
       </li>
       <li>
-         <a href="#4">Terminologie: Systèmes de codes (CodeSystems)</a>
+         <a href="#4">Terminologie: Jeux de valeurs (ValueSets)</a>
+      </li>
+      <li>
+         <a href="#5">Terminologie: Systèmes de codes (CodeSystems)</a>
       </li>
    </ul>
 </div>
@@ -240,6 +243,353 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      data-fhir="generated">
    <p>Cette page fournit une liste des artefacts FHIR définis dans le cadre de ce guide de mise en œuvre.</p>
    <a name="1"> </a>
+   <h3>Modèle logique XDM (Lot de soumission (SubmissionSet), DocumentEntry (XDS) et association) </h3>
+    <p>Modèle logique avec les différents artefacts</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ActorPatient.html"
+                  title="StructureDefinition/ActorPatient">
+                  <span title="StructureDefinition/ActorPatient">ActorPatient (LM)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Cet attribut représente l'acteur Patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ActorPS.html"
+                  title="StructureDefinition/ActorPS">
+                  <span title="StructureDefinition/ActorPS">ActorPS (LM)
+</span>
+               </a>
+            </td>
+            <td>
+
+<p>Cet attribut représente un acteur PS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ActorSNR.html"
+                  title="StructureDefinition/ActorSNR">
+                  <span title="StructureDefinition/ActorSNR">ActorSNR (LM)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Cet attribut représente l'acteur SNR.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ActorSystem.html"
+                  title="StructureDefinition/ActorSystem">
+                  <span title="StructureDefinition/ActorSystem">ActorSystem (LM)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Cet attribut représente l'acteur System.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ActorXDS.html"
+                  title="StructureDefinition/ActorXDS">
+                  <span title="StructureDefinition/ActorXDS">ActorXDS (LM)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Cet attribut représente un acteur (humain ou système) ayant contribué au document. Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient.</p>
+
+<p>XCN de HL7 v2.5</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-archive-xdm.html"
+                  title="StructureDefinition/archive-xdm">
+                  <span title="StructureDefinition/archive-xdm">Archive XDM (LM)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Modèle logique décrivant la structure d'un SUBSET IHE XDM.
+Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-association-xdm.html"
+                  title="StructureDefinition/association-xdm">
+                  <span title="StructureDefinition/association-xdm">Association XDM (LM)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Modèle logique d'une association IHE XDS entre deux objets de l'archive de portabilité.
+Permet de relier un SubmissionSet ou un DocumentEntry à un autre (remplacement ou transformation).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Author.html"
+                  title="StructureDefinition/Author">
+                  <span title="StructureDefinition/Author">Author (LM)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Modèle logique d'un auteur.</p>
+
+<p>Représente les personnes physiques et/ou les systèmes (dispositifs, automates, services numériques référencés…) auteurs d’un document ou d'un lot de soummission.</p>
+
+<p>L’auteur peut être :</p>
+<ul>
+  <li>Un professionnel (personne physique) via son logiciel de professionnel,</li>
+  <li>Le patient/usager (personne physique) via Mon espace Santé,</li>
+  <li>Un système de structure (dispositif, automate, appareil connecté…),</li>
+  <li>Un SNR (Service Numérique Référencé),</li>
+</ul>
+
+<p><strong>author</strong> est un ensemble constitué des sous-attributs <strong>authorInstitution</strong> , <strong>authorPerson</strong>, <strong>authorRole</strong> et <strong>authorSpecialty</strong> et ne porte pas de valeur par lui-même.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-AuthorDocumentEntry.html"
+                  title="StructureDefinition/AuthorDocumentEntry">
+                  <span title="StructureDefinition/AuthorDocumentEntry">AuthorDocumentEntry (LM)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Modèle logique d'un auteur d'un document
+Cette métadonnée représente les personnes physiques et/ou les systèmes (dispositifs, automates, services numériques référencés…) auteurs d’un document. 
+L’auteur peut être :</p>
+<ul>
+  <li>Un professionnel (personne physique) via son logiciel de professionnel,</li>
+  <li>Le patient/usager (personne physique) via Mon espace Santé,</li>
+  <li>Un système de structure (dispositif, automate, appareil connecté…),</li>
+  <li>Un SNR (Service Numérique Référencé),</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-AuthorInstitution.html"
+                  title="StructureDefinition/AuthorInstitution">
+                  <span title="StructureDefinition/AuthorInstitution">AuthorInstitution (LM)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Cet attribut représente la structure de l’auteur. 
+Pour les documents d’expression personnelle du patient, cette métadonnée est absente, cela signifie que l’élément XML &lt;rim:Slot name='authorInstitution'&gt; n’est pas transmis.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-AuthorSubmissionSet.html"
+                  title="StructureDefinition/AuthorSubmissionSet">
+                  <span title="StructureDefinition/AuthorSubmissionSet">AuthorSubmissionSet (LM)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Modèle logique d'un auteur d'un lot de soumission
+Cette métadonnée représente les personnes physiques et/ou les systèmes auteurs d’un lot de soumission. 
+Constituée des sous-attributs <strong>authorInstitution</strong>, <strong>authorPerson</strong>, <strong>authorRole</strong> et <strong>authorSpecialty</strong>, elle ne porte pas de valeur par elle-même.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DocumentEntry.html"
+                  title="StructureDefinition/DocumentEntry">
+                  <span title="StructureDefinition/DocumentEntry">Document Entry (LM)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Modèle logique  d’une fiche</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-EventCode.html"
+                  title="StructureDefinition/EventCode">
+                  <span title="StructureDefinition/EventCode">EventCode (LM)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Modèle logique d'un eventCode.
+Un EventCode peut contenir le code représentant :</p>
+<ul>
+  <li>un évènement documenté (acte, traitement, diagnostic, etc…),</li>
+  <li>une modalité d’acquisition,</li>
+  <li>une région anatomique.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Identifiant.html"
+                  title="StructureDefinition/Identifiant">
+                  <span title="StructureDefinition/Identifiant">Identifiant
+</span>
+               </a>
+            </td>
+            <td>
+<p>Identifiant de professionnel de santé, de patient, de SNR ou de système</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-IdentifiantSysteme.html"
+                  title="StructureDefinition/IdentifiantSysteme">
+                  <span title="StructureDefinition/IdentifiantSysteme">IdentifiantSysteme
+</span>
+               </a>
+            </td>
+            <td>
+<p>Identification d'un systeme</p>
+
+<p>L’identification du ssyteme  est construite selon le tableau dessous :</p>
+<ul>
+  <li>1 + Identifiant cabinet ADELI/Identifiant interne du système dans la structure</li>
+  <li>3 + FINESS/Identifiant interne du système dans la structure</li>
+  <li>4 + SIREN/Identifiant interne du système dans la structure</li>
+  <li>5 + SIRET/Identifiant interne du système dans la structure</li>
+  <li>6 + Identifiant cabinet RPPS/Identifiant interne du système dans la structure</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-MatriculeINS.html"
+                  title="StructureDefinition/MatriculeINS">
+                  <span title="StructureDefinition/MatriculeINS">MatriculeINS
+</span>
+               </a>
+            </td>
+            <td>
+<p>Matricule de l'Identité Nationale de Santé (INS). Il correspond au NIR (Numéro d’Identification au Répertoire des personnes physiques) ou au NIA (Numéro Identifiant Attente) de l’individu).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PatientId.html"
+                  title="StructureDefinition/PatientId">
+                  <span title="StructureDefinition/PatientId">PatientId (LM)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Modèle logique de patientID.
+PatientID représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PSIdNat.html"
+                  title="StructureDefinition/PSIdNat">
+                  <span title="StructureDefinition/PSIdNat">PSIdNat
+</span>
+               </a>
+            </td>
+            <td>
+<p>Identification nationale principale du professionnel propre aux SI de l’ANS et au CI-SIS. (Correspondance dans le MOS : idNat_PS)</p>
+
+<p>L’identification nationale du PS est construite selon le tableau dessous :</p>
+<ul>
+  <li>0 + N° ADELI</li>
+  <li>1 + Identifiant cabinet ADELI/identifiant interne</li>
+  <li>3 + FINESS/identifiant interne</li>
+  <li>4 + SIREN/identifiant interne</li>
+  <li>5 + SIRET/identifiant interne</li>
+  <li>6 + Identifiant cabinet RPPS/identifiant interne</li>
+  <li>8 + N° RPPS</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SNR.html" title="StructureDefinition/SNR">
+                  <span title="StructureDefinition/SNR">SNR
+</span>
+               </a>
+            </td>
+            <td>
+<p>Identifiant interne de l’instance de la solution ayant produit le document au format OID</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SourcePatientId.html"
+                  title="StructureDefinition/SourcePatientId">
+                  <span title="StructureDefinition/SourcePatientId">SourcePatientId (LM)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Cette métadonnée contient l’identifiant secondaire du patient dans le système d’information du producteur (IPP) ou l’INS, s’il n’y a pas d’identifiant secondaire. Pour les documents d’expression personnelle du patient, cette métadonnée contient l’INS du patient, à savoir le même identifiant que patientId.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SourcePatientInfo.html"
+                  title="StructureDefinition/SourcePatientInfo">
+                  <span title="StructureDefinition/SourcePatientInfo">SourcePatientInfo (LM)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Cette métadonnée contient les traits d’identité du patient concerné par le document, connus par le producteur du document. Les informations présentes dans la métadonnée sourcePatientInfo ne doivent en aucun cas être réutilisées pour calculer un identifiant, ni être mises à jour après la soumission du document.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-StructIdNat.html"
+                  title="StructureDefinition/StructIdNat">
+                  <span title="StructureDefinition/StructIdNat">StructIdNat
+</span>
+               </a>
+            </td>
+            <td>
+<p>Identification nationale principale d’une structure propre aux SI de l'ANS et au CI-SIS 4.</p>
+
+<p>L’identification nationale d’une structure est construite selon le tableau dessous :</p>
+<ul>
+  <li>0 + Identifiant cabinet ADELI</li>
+  <li>1 + N° FINESS 2 + N° SIREN</li>
+  <li>3 + N° SIRET</li>
+  <li>4 + N° RPPS-rang</li>
+  <li>Néant + N° technique</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SubmissionSet.html"
+                  title="StructureDefinition/SubmissionSet">
+                  <span title="StructureDefinition/SubmissionSet">SubmissionSet (LM)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Modèle logique d'un lot de soummission (SubmissionSet).</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
    <h3>Exigences: Définitions des acteurs </h3>
     <p>Les artefacts suivants définissent les types de personnes et/ou de systèmes qui interagiront dans le cadre des cas d'utilisation couverts par le présent guide d'implémentation.</p>
 <table class="grid">
@@ -305,7 +655,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="2"> </a>
+   <a name="3"> </a>
    <h3>Structures: Modèles logiques </h3>
     <p>Ils définissent des modèles de données qui représentent le domaine couvert par ce guide d'implémentation en termes plus conviviaux que les ressources FHIR sous-jacentes.</p>
 <table class="grid">
@@ -469,7 +819,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="3"> </a>
+   <a name="4"> </a>
    <h3>Terminologie: Jeux de valeurs (ValueSets) </h3>
     <p>Ils définissent des ensembles de codes utilisés par les systèmes conformes au présent guide d'implémentation.</p>
 <table class="grid">
@@ -511,9 +861,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>PDLGC Type de répertoire</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-association-type.html"
+                  title="ValueSet/vs-association-type">
+                  <span title="ValueSet/vs-association-type">Type d'association XDS (VS)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Valeurs autorisées pour le type d'association entre objets XDS.</p>
+</td>
+         </tr>
       </tbody>
    </table>
-   <a name="4"> </a>
+   <a name="5"> </a>
    <h3>Terminologie: Systèmes de codes (CodeSystems) </h3>
     <p>Ils définissent les nouveaux systèmes de codes utilisés par les systèmes conformes au présent guide d'implémentation.</p>
 <table class="grid">
@@ -529,6 +891,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Statut de l'export</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-cs-association-type.html"
+                  title="CodeSystem/cs-association-type">
+                  <span title="CodeSystem/cs-association-type">Type d'association XDS
+</span>
+               </a>
+            </td>
+            <td>
+<p>Types d'association entre objets XDS dans le contexte portabilité.</p>
 </td>
          </tr>
          <tr>
@@ -589,7 +963,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:var(--ig-right);">&#xA0;
 
-                <a href="ActorDefinition-PDLGC-Demandeur.html">suivant ></a>
+                <a href="StructureDefinition-ActorPatient.html">suivant ></a>
 
               </td>
             </tr>
@@ -605,7 +979,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.pdlgc#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-07-09 18:12:00 +0000">
+  <span title="2026-07-09 18:19:00 +0000">
     2026-07-09
   </span>
 

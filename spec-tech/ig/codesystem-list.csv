@@ -1,4 +1,5 @@
 URL,Version,Status,OIDs,Name,Title,Description,Used
+https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type,0.1.0,draft,,CS_AssociationType,Type d'association XDS,"Types d'association entre objets XDS dans le contexte portabilité.","ValueSet/vs-association-type"
 https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs,0.1.0,draft,,PDLGCExportStatusCS,Statut de l'export,"Statut de l'export","ValueSet/pdlgc-export-status-vs"
 https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs,0.1.0,draft,,PDLGCRepoTypeCS,Type de répertoire,"Type de répertoire","ValueSet/pdlgc-repo-type-vs"
 https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs,0.1.0,draft,,PDLGCExportTypeCS,Type d'export de données LGC,"Type d'export de données LGC","ValueSet/pdlgc-export-type-vs"

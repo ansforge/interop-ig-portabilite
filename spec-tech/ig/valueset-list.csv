@@ -2,3 +2,4 @@ URL,Version,Status,OIDs,Name,Title,Description,Uses,Used,Sources
 https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-export-status-vs,0.1.0,draft,,PDLGCExportStatusVS,PDLGC Statut de l'export,"PDLGC Statut de l'export",,"Internal"
 https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-export-type-vs,0.1.0,draft,,PDLGCExportTypeVS,PDLGC Type d'Export,"PDLGC Type d'Export","StructureDefinition/pdlgc-manifest","Internal"
 https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-repo-type-vs,0.1.0,draft,,PDLGCRepoTypeVS,PDLGC Type de répertoire,"PDLGC Type de répertoire","StructureDefinition/pdlgc-manifest-archives,StructureDefinition/pdlgc-manifest","Internal"
+https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-association-type,0.1.0,draft,,VS_AssociationType,Type d'association XDS (VS),"Valeurs autorisées pour le type d'association entre objets XDS.","StructureDefinition/association-xdm","Internal"

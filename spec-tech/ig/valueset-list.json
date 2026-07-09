@@ -32,5 +32,17 @@
     },
     "StructureDefinition-pdlgc-manifest-archives.html" : "PDLGC Manifest Archives",
     "StructureDefinition-pdlgc-manifest.html" : "PDLGC Manifest"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-association-type",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "VS_AssociationType",
+    "title" : "Type d'association XDS (VS)",
+    "description" : "Valeurs autorisées pour le type d'association entre objets XDS.",
+    "systems" : ["https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type"],
+    "uses" : {
+    },
+    "StructureDefinition-association-xdm.html" : "Association XDM (LM)"
   }]
 }

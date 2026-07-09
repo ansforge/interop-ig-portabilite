@@ -61,7 +61,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-archive-t
   "name" : "PDLGCArchiveTransverse",
   "title" : "PDLGC Archive Transverse",
   "status" : "draft",
-  "date" : "2026-07-09T18:12:06+00:00",
+  "date" : "2026-07-09T18:19:16+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

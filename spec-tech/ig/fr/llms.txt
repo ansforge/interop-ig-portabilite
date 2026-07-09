@@ -47,6 +47,7 @@
 
 ### CodeSystems
 
+* [Type d'association XDS](CodeSystem-cs-association-type.md)
 * [Statut de l'export](CodeSystem-pdlgc-export-status-cs.md)
 * [Type de répertoire](CodeSystem-pdlgc-repo-type-cs.md)
 * [Type d'export de données LGC](CodeSystem-pdlgc-type-export-cs.md)
@@ -56,9 +57,32 @@
 * [PDLGC Statut de l'export](ValueSet-pdlgc-export-status-vs.md)
 * [PDLGC Type d'Export](ValueSet-pdlgc-export-type-vs.md)
 * [PDLGC Type de répertoire](ValueSet-pdlgc-repo-type-vs.md)
+* [Type d'association XDS (VS)](ValueSet-vs-association-type.md)
 
 ### Logicals
 
+* [ActorPS (LM)](StructureDefinition-ActorPS.md)
+* [ActorPatient (LM)](StructureDefinition-ActorPatient.md)
+* [ActorSNR (LM)](StructureDefinition-ActorSNR.md)
+* [ActorSystem (LM)](StructureDefinition-ActorSystem.md)
+* [ActorXDS (LM)](StructureDefinition-ActorXDS.md)
+* [Author (LM)](StructureDefinition-Author.md)
+* [AuthorDocumentEntry (LM)](StructureDefinition-AuthorDocumentEntry.md)
+* [AuthorInstitution (LM)](StructureDefinition-AuthorInstitution.md)
+* [AuthorSubmissionSet (LM)](StructureDefinition-AuthorSubmissionSet.md)
+* [Document Entry (LM)](StructureDefinition-DocumentEntry.md)
+* [EventCode (LM)](StructureDefinition-EventCode.md)
+* [Identifiant](StructureDefinition-Identifiant.md)
+* [MatriculeINS](StructureDefinition-MatriculeINS.md)
+* [PSIdNat](StructureDefinition-PSIdNat.md)
+* [PatientId (LM)](StructureDefinition-PatientId.md)
+* [SNR](StructureDefinition-SNR.md)
+* [SourcePatientId (LM)](StructureDefinition-SourcePatientId.md)
+* [SourcePatientInfo (LM)](StructureDefinition-SourcePatientInfo.md)
+* [StructIdNat](StructureDefinition-StructIdNat.md)
+* [SubmissionSet (LM)](StructureDefinition-SubmissionSet.md)
+* [Archive XDM (LM)](StructureDefinition-archive-xdm.md)
+* [Association XDM (LM)](StructureDefinition-association-xdm.md)
 * [PDLGC Archive Patient](StructureDefinition-pdlgc-archive-patient.md)
 * [PDLGC Archive Portabilite](StructureDefinition-pdlgc-archive-portabilite.md)
 * [PDLGC Archive Transverse](StructureDefinition-pdlgc-archive-transverse.md)
@@ -72,6 +96,10 @@
 * [PDLGC Readme](StructureDefinition-pdlgc-readme.md)
 * [PDLGC Signature](StructureDefinition-pdlgc-signature.md)
 * [PDLGC System](StructureDefinition-pdlgc-system.md)
+
+### Primitive-type Profiles
+
+* [IdentifiantSysteme](StructureDefinition-IdentifiantSysteme.md)
 
 ### Basics
 

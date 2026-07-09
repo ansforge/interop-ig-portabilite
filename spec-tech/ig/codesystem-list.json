@@ -1,5 +1,16 @@
 {
   "codeSystems" : [{
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "CS_AssociationType",
+    "title" : "Type d'association XDS",
+    "description" : "Types d'association entre objets XDS dans le contexte portabilité.",
+    "uses" : {
+    },
+    "ValueSet-vs-association-type.html" : "Type d'association XDS (VS)"
+  },
+  {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs",
     "version" : "0.1.0",
     "status" : "draft",
