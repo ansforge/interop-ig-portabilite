@@ -7,7 +7,7 @@ Modèle logique  d’une fiche
 """
 
 * entryUUID 1..1 uuid "Identifiant unique affecté à la version de la fiche référençant le document." """Les valeurs possibles pour cette métadonnée doivent être un code provenant du jeu de valeurs mis à disposition par le projet. En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J52_AvailabilityStatus_CISIS peut être utilisé."""
-* logicalId 1..1 Identifier "Cette métadonnée représente un identifiant invariable pour toutes les versions de la fiche d'un document, à la différence de la métadonnée entryUUID qui a une valeur différente pour chaque version de la fiche"
+* logicalId 1..1 uuid "Cette métadonnée représente un identifiant invariable pour toutes les versions de la fiche d'un document, à la différence de la métadonnée entryUUID qui a une valeur différente pour chaque version de la fiche"
 * mimeType 1..1 string "Cette métadonnée représente le type de contenu du document, défini par le standard MIME."
 * availabilityStatus 1..1 CodeableConcept "Cette métadonnée représente la pertinence de la version de la fiche d'un document. " "**Availability Status**"
 * availabilityStatus from https://mos.esante.gouv.fr/NOS/JDV_J52-AvailabilityStatus-CISIS/FHIR/JDV-J52-AvailabilityStatus-CISIS (preferred)
@@ -18,13 +18,13 @@ Modèle logique  d’une fiche
 * legalAuthenticator[x] 1..1 ActorPS or ActorPatient  or ActorSystem "Cette métadonnée représente l'acteur prenant la responsabilité du contenu médical du document" "XCN"
 * repositoryUniqueId 1..1 oid "Cette métadonnée représente l'identifiant unique global de l'entrepôt de documents dans lequel est stocké le document"
 * serviceStartTime 1..1 dateTime "Cette métadonnée représente la date de début de l'acte de référence."
-* serviceEndTime 0..1 dateTime "Cette métadonnée correspond à la date de fin de l'acte de référence, si connue."
+* serviceStopTime 0..1 dateTime "Cette métadonnée correspond à la date de fin de l'acte de référence, si connue."
 * sourcePatientID 1..1 SourcePatientId "Cette métadonnée contient l'identifiant secondaire du patient dans le système d'information du producteur (IPP) ou l'INS, s'il n'y a pas d'identifiant secondaire."
 * sourcePatientInfo 1..1 SourcePatientInfo "Cette métadonnée contient les traits d'identité du patient concerné par le document, connus par le producteur du document."
-* URI 1..1 string "Cette métadonnée n'est exploitée que par la transaction XDM 'Distribute document set on media ITI-32'"
+* URI 1..1 uri  "Cette métadonnée n'est exploitée que par la transaction XDM 'Distribute document set on media ITI-32'"
 * title 1..1 string "Cette métadonnée représente le titre du document."
 * comments 0..1 string "Cette métadonnée contient le commentaire associé au document."
-* patientID 1..1 PatientId "Cette métadonnée représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient."
+* patientID 1..1 PatientId "Cette métadonnée représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient lorsque celui-ci est qualifié."
 * uniqueId 1..1 Identifier "Identifiant unique affecté au document par son créateur. "
 * class 1..1 CodeableConcept "class représente la classe du document (compte rendu, imagerie médicale, traitement, certificat, etc.)." """
 class est constitué des attributs : 
@@ -68,8 +68,6 @@ class est constitué des attributs :
 * referenceIdList.CX4 1..1 identifier "Identifiant de l’organisme ayant attribué l’identifiant de l'objet référencé"
 * referenceIdList.CX5 1..1 CodeableConcept "Type d’identifiant"
 * referenceIdList.CX5 from https://mos.esante.gouv.fr/NOS/JDV_J197-XdsTypesIdentifiantsReferenceId-CISIS/FHIR/JDV-J197-XdsTypesIdentifiantsReferenceId-CISIS (preferred)
-* version 0..1 integer "Cette métadonnée représente le numéro de version de la fiche d’un document."
-
 
 
 

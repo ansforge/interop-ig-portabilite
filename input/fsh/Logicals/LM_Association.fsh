@@ -19,7 +19,7 @@ Title: "Type d'association XDS"
 Description: "Types d'association entre objets XDS dans le contexte portabilité."
 
 * #RPLC "Remplacement" "Le document source remplace le document cible."
-* #XFRM "Transformation" "Le document source est une transformation du document cible (ex : CDA généré depuis des données propriétaires)."
+* #XFRM "Transformation" "Le document source est une transformation du document cible (ex : PDF correspondant au document CDA)."
 
 // ---------------------------------------------------------------------------
 
