@@ -96,7 +96,7 @@ Lorsqu'un document existe dans un format standardisé, **il PEUT être exporté 
         <th>Données</th>
         <th>Type de données</th>
         <th>Format</th>
-        <th>Référence / Standard</th>
+        <th>Spécifications / Référence</th>
         <th>Contenu</th>
       </tr>
     </thead>
@@ -156,7 +156,7 @@ Lorsqu'un document existe dans un format standardisé, **il PEUT être exporté 
         <td>Patient</td>
         <td>
           <ul>
-              <li>Format opposable : <span class="flag flag-opposable">Tout format structuré documenté (JSON, XML,...)</span>
+              <li>Format opposable : <span class="flag flag-opposable">Tout format structuré documenté (JSON, XML,...)</span></li>
               <li><i>Format cible (non requis à date) : FHIR</i></li>
           </ul>
         </td>
@@ -257,7 +257,8 @@ Lorsqu'un document existe dans un format standardisé, **il PEUT être exporté 
   </table>
   
   <div class="lgc-legend">
-    <div class="lgc-legend-item"><span class="flag flag-opposable">Opposable</span> Format imposé s'appuyant sur des spécifications CI-SIS lorsque celles-ci sont communément utilisées par les éditeurs</div>
+    <div class="lgc-legend-item"><span class="flag flag-opposable">Opposable</span> Format imposé s'appuyant sur des spécifications CI-SIS <br>
+    lorsque celles-ci sont communément utilisées par les éditeurs</div>
     <div class="lgc-legend-item"><span class="flag flag-prioritaire">Prioritaire</span> Format recommandé, à utiliser en priorité</div>
     <div class="lgc-legend-item"><span class="flag flag-alternatif">Alternatif</span> Format accepté à défaut</div>
   </div>

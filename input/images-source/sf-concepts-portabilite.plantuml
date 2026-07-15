@@ -23,7 +23,7 @@ rectangle "**Readme**\n[[StructureDefinition-pdlgc-readme README.TXT]]" as readm
 rectangle "**Signature**\n[[StructureDefinition-pdlgc-signature SIGN.XML]]" as signature #Lavender
 rectangle "**Metadata**\n[[StructureDefinition-pdlgc-metadata METADATA.XML]]" as metadata #Lavender
 rectangle "**Index**\n[[StructureDefinition-pdlgc-index INDEX.HTM]]" as index #Lavender
-rectangle "**Document périmètre pivot**" as pivot #Lavender
+rectangle "**Document périmètre pivot\n[[Périmètre pivot](sf-perimetre-pivot.html)]**" as pivot #Lavender
 rectangle "**Document hors périmètre pivot**" as horspivot #Lavender
 
 
@@ -37,10 +37,11 @@ export -- "1..1" doc
 archivepat -- "1..1" metadata
 archivepat -- "1..*" pivot
 archivepat -- "0..*" horspivot
-archivepat -- "1..*" readme
-archivepat -- "1..*" index
+archivepat -- "1..1" readme
+archivepat -- "1..1" index
 transverse -- "1..*" pivot
 transverse -- "0..*" horspivot
+transverse -- "1..1" readme
 
 
 ''Légende''
