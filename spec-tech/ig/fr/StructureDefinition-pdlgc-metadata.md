@@ -3,7 +3,7 @@
 ## Modèle logique: PDLGC Metadata 
 
  
-Le fichier METADATA.XML porte les métadonnées des documents cliniques d'un patient 
+Modèle logique décrivant la structure d'un fichier METADATA associé à un SUBSET IHE XDM. Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets. 
 
 **Utilisations:**
 
@@ -26,6 +26,8 @@ Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base)
 
 ** Résumé **
 
+Obligatoire : 0 élément(3 éléments obligatoire(s) imbriqué(s))
+
  **Vue différentielle** 
 
 Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base) 
@@ -35,6 +37,8 @@ Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base)
 Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base) 
 
 ** Résumé **
+
+Obligatoire : 0 élément(3 éléments obligatoire(s) imbriqué(s))
 
  
 
@@ -53,7 +57,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-metadata.
   "name" : "PDLGCMetadata",
   "title" : "PDLGC Metadata",
   "status" : "draft",
-  "date" : "2026-07-15T13:41:49+00:00",
+  "date" : "2026-07-15T16:11:54+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -62,7 +66,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-metadata.
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Le fichier METADATA.XML porte les métadonnées des documents cliniques d'un patient",
+  "description" : "Modèle logique décrivant la structure d'un fichier METADATA associé à un SUBSET IHE XDM.\nRegroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -81,7 +85,40 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-metadata.
       "id" : "pdlgc-metadata",
       "path" : "pdlgc-metadata",
       "short" : "PDLGC Metadata",
-      "definition" : "Le fichier METADATA.XML porte les métadonnées des documents cliniques d'un patient"
+      "definition" : "Modèle logique décrivant la structure d'un fichier METADATA associé à un SUBSET IHE XDM.\nRegroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets."
+    },
+    {
+      "id" : "pdlgc-metadata.submissionSet",
+      "path" : "pdlgc-metadata.submissionSet",
+      "short" : "Lot de soumission du SUBSET",
+      "definition" : "Lot de soumission du SUBSET",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/SubmissionSet"
+      }]
+    },
+    {
+      "id" : "pdlgc-metadata.documentEntry",
+      "path" : "pdlgc-metadata.documentEntry",
+      "short" : "Fiches documentaires des documents inclus dans le SUBSET",
+      "definition" : "Fiches documentaires des documents inclus dans le SUBSET",
+      "min" : 1,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/DocumentEntry"
+      }]
+    },
+    {
+      "id" : "pdlgc-metadata.association",
+      "path" : "pdlgc-metadata.association",
+      "short" : "Associations entre objets du SUBSET (remplacement, transformation)",
+      "definition" : "Associations entre objets du SUBSET (remplacement, transformation)",
+      "min" : 1,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/association-xdm"
+      }]
     }]
   }
 }

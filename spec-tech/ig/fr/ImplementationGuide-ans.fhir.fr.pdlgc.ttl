@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.name [ fhir:value "PDLGC"] ;
   fhir:ImplementationGuide.title [ fhir:value "Portabilité des Données LGC"] ;
   fhir:ImplementationGuide.status [ fhir:value "draft"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-07-15T13:41:49+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-07-15T16:11:54+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ;
   fhir:ImplementationGuide.contact [
      fhir:index -1 ;
@@ -1424,7 +1424,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/pdlgc-metadata" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDLGC Metadata" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Le fichier METADATA.XML porte les métadonnées des documents cliniques d'un patient" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Modèle logique décrivant la structure d'un fichier METADATA associé à un SUBSET IHE XDM.\nRegroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index -1 ;

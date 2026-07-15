@@ -16,6 +16,7 @@ L'archive de Portabilité est constituée de :
 * 1 répertoire de documentation (`DOCUMENTATION/`) permettant d'interpréter le contenu de l'archive (dictionnaires de données, dictionnaires des terminologies, jeux d'échantillon, mapping,…)
 * 1 archive de données transverses (`TRANSVERSE/`) associées au professionnel et/ou à la structure
 * 1 ou plusieurs archive(s) de patient (`PATNNNNN`), conformes au profil IHE XDM
+* 1 répertoire de stockage de PDF pour consultation, inclus à la racine de l'archive XDM patient (extension du profil XDM)
 
 ```
 PAAAAAMMJJThhmmss.ZIP               (Archive ZIP chapeau de portabilité, hors profil XDM)
@@ -43,6 +44,7 @@ PAAAAAMMJJThhmmss.ZIP               (Archive ZIP chapeau de portabilité, hors p
 ├── PAT00001.ZIP                    (Archive XDM Patient INS_1, conforme IHE_XDM)
 │   ├── INDEX.HTM
 │   ├── README.TXT
+│   └── PDF/
 │   └── IHE_XDM/
 │       └── SUBSET01/
 │           ├── METADATA.XML
@@ -53,6 +55,7 @@ PAAAAAMMJJThhmmss.ZIP               (Archive ZIP chapeau de portabilité, hors p
 └── PAT00002.ZIP                    (Archive XDM Patient INS_2, conforme IHE_XDM)
     ├── INDEX.HTM
     ├── README.TXT
+│   └── PDF/
     └── IHE_XDM/
         └── SUBSET01/
             ├── METADATA.XML

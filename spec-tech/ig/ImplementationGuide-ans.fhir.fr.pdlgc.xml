@@ -13,7 +13,7 @@
   <name value="PDLGC"/>
   <title value="Portabilité des Données LGC"/>
   <status value="draft"/>
-  <date value="2026-07-15T13:41:49+00:00"/>
+  <date value="2026-07-15T16:11:54+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -1003,7 +1003,7 @@
         <reference value="StructureDefinition/pdlgc-metadata"/>
       </reference>
       <name value="PDLGC Metadata"/>
-      <description value="Le fichier METADATA.XML porte les métadonnées des documents cliniques d'un patient"/>
+      <description value="Modèle logique décrivant la structure d'un fichier METADATA associé à un SUBSET IHE XDM.&#xA;Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

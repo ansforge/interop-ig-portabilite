@@ -30,8 +30,8 @@
     "systems" : ["https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs"],
     "uses" : {
     },
-    "StructureDefinition-pdlgc-manifest-archives.html" : "PDLGC Manifest Archives",
-    "StructureDefinition-pdlgc-manifest.html" : "PDLGC Manifest"
+    "StructureDefinition-pdlgc-manifest.html" : "PDLGC Manifest",
+    "StructureDefinition-pdlgc-manifest-archives.html" : "PDLGC Manifest Archives"
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-association-type",
@@ -75,8 +75,8 @@
     "uses" : {
     },
     "StructureDefinition-Author.html" : "Author (LM)",
-    "StructureDefinition-AuthorDocumentEntry.html" : "AuthorDocumentEntry (LM)",
-    "StructureDefinition-AuthorSubmissionSet.html" : "AuthorSubmissionSet (LM)"
+    "StructureDefinition-AuthorSubmissionSet.html" : "AuthorSubmissionSet (LM)",
+    "StructureDefinition-AuthorDocumentEntry.html" : "AuthorDocumentEntry (LM)"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS",
@@ -202,8 +202,8 @@
     "uses" : {
     },
     "StructureDefinition-Author.html" : "Author (LM)",
-    "StructureDefinition-AuthorDocumentEntry.html" : "AuthorDocumentEntry (LM)",
-    "StructureDefinition-AuthorSubmissionSet.html" : "AuthorSubmissionSet (LM)"
+    "StructureDefinition-AuthorSubmissionSet.html" : "AuthorSubmissionSet (LM)",
+    "StructureDefinition-AuthorDocumentEntry.html" : "AuthorDocumentEntry (LM)"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/JDV_J52-AvailabilityStatus-CISIS/FHIR/JDV-J52-AvailabilityStatus-CISIS",
@@ -218,8 +218,8 @@
     "sources" : ["1.2.250.1.213.1.1.5.131"],
     "uses" : {
     },
-    "StructureDefinition-DocumentEntry.html" : "Document Entry (LM)",
-    "StructureDefinition-SubmissionSet.html" : "SubmissionSet (LM)"
+    "StructureDefinition-SubmissionSet.html" : "SubmissionSet (LM)",
+    "StructureDefinition-DocumentEntry.html" : "Document Entry (LM)"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/JDV_J58-ConfidentialityCode-DMP/FHIR/JDV-J58-ConfidentialityCode-DMP",

@@ -32,7 +32,7 @@ Ce jeu de valeurs n'est pas utilisé ici ; il peut être utilisé autre part (pa
   "name" : "PDLGCExportStatusVS",
   "title" : "PDLGC Statut de l'export",
   "status" : "draft",
-  "date" : "2026-07-15T13:41:49+00:00",
+  "date" : "2026-07-15T16:11:54+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

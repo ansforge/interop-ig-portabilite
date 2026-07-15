@@ -7,7 +7,7 @@ Modèle logique d'un lot de soummission (SubmissionSet).
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Archive XDM (LM)](StructureDefinition-archive-xdm.md)
+* Utilise ce/t/te Modèle logique: [Archive XDM (LM)](StructureDefinition-archive-xdm.md) and [PDLGC Metadata](StructureDefinition-pdlgc-metadata.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.pdlgc|current/StructureDefinition/SubmissionSet)
 
@@ -65,7 +65,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-SubmissionSet.c
   "name" : "SubmissionSet",
   "title" : "SubmissionSet (LM)",
   "status" : "draft",
-  "date" : "2026-07-15T13:41:49+00:00",
+  "date" : "2026-07-15T16:11:54+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

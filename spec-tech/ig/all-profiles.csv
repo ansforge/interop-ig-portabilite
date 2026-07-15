@@ -651,7 +651,15 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Taille de l'archive zip","Taille de l'archive zip","","","","","","","","","",,,,,"",,,,"pdlgc-manifest.Archive.size",1,1,"",""
 "pdlgc-manifest","pdlgc-manifest.Archive.hash","pdlgc-manifest.Archive.hash","","","",1,1,"","","","string {[]} {[]}
 ","Hash SHA-256 du répertoire","Hash SHA-256 du répertoire","","","","","","","","","",,,,,"",,,,"pdlgc-manifest.Archive.hash",1,1,"",""
-"pdlgc-metadata","pdlgc-metadata","pdlgc-metadata","","","",0,*,"","","","","PDLGC Metadata","Le fichier METADATA.XML porte les métadonnées des documents cliniques d'un patient","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"pdlgc-metadata","pdlgc-metadata","pdlgc-metadata","","","",0,*,"","","","null {[]} {[]}
+","PDLGC Metadata","Modèle logique décrivant la structure d'un fichier METADATA associé à un SUBSET IHE XDM.
+Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"pdlgc-metadata","pdlgc-metadata.submissionSet","pdlgc-metadata.submissionSet","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/SubmissionSet {[]} {[]}
+","Lot de soumission du SUBSET","Lot de soumission du SUBSET","","","","","","","","","",,,,,"",,,,"pdlgc-metadata.submissionSet",1,1,"",""
+"pdlgc-metadata","pdlgc-metadata.documentEntry","pdlgc-metadata.documentEntry","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/DocumentEntry {[]} {[]}
+","Fiches documentaires des documents inclus dans le SUBSET","Fiches documentaires des documents inclus dans le SUBSET","","","","","","","","","",,,,,"",,,,"pdlgc-metadata.documentEntry",1,*,"",""
+"pdlgc-metadata","pdlgc-metadata.association","pdlgc-metadata.association","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/association-xdm {[]} {[]}
+","Associations entre objets du SUBSET (remplacement, transformation)","Associations entre objets du SUBSET (remplacement, transformation)","","","","","","","","","",,,,,"",,,,"pdlgc-metadata.association",1,*,"",""
 "pdlgc-readme","pdlgc-readme","pdlgc-readme","","","",0,*,"","","","null {[]} {[]}
 ","PDLGC Readme","Informations éditoriales et instructions","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "pdlgc-readme","pdlgc-readme.editeurSortant","pdlgc-readme.editeurSortant","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-fournisseur-sortant {[]} {[]}

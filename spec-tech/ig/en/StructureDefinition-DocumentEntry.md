@@ -7,7 +7,7 @@ Modèle logique d’une fiche
 
 **Usages:**
 
-* Use this Logical Model: [Archive XDM (LM)](StructureDefinition-archive-xdm.md)
+* Use this Logical Model: [Archive XDM (LM)](StructureDefinition-archive-xdm.md) and [PDLGC Metadata](StructureDefinition-pdlgc-metadata.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ans.fhir.fr.pdlgc|current/StructureDefinition/StructureDefinition-DocumentEntry.json)
 
@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-DocumentEntry.csv
   "name" : "DocumentEntry",
   "title" : "Document Entry (LM)",
   "status" : "draft",
-  "date" : "2026-07-15T13:41:49+00:00",
+  "date" : "2026-07-15T16:11:54+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

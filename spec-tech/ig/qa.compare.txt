@@ -1,10 +1,10 @@
 PDLGC : Validation Results
 =========================================
 
-err = 1, warn = 564, info = 229
+err = 1, warn = 570, info = 229
 $--
 Generated $--. FHIR version $-- for ans.fhir.fr.pdlgc#$-- (canonical = https://interop.esante.gouv.fr/ig/fhir/pdlgc)
- Build Errors : 57 / 5 / 0
+ Build Errors : 61 / 5 / 0
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ActorDefinition-PDLGC-Demandeur : 0 / 0 / 3
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ActorDefinition-PDLGC-Destinataire : 0 / 0 / 3
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ActorDefinition-PDLGC-Fournisseur-Destinataire : 0 / 0 / 3
@@ -46,7 +46,7 @@ Generated $--. FHIR version $-- for ans.fhir.fr.pdlgc#$-- (canonical = https://i
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgc-index : 0 / 4 / 3
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgc-manifest : 0 / 35 / 15
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgc-manifest-archives : 0 / 12 / 5
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgc-metadata : 0 / 2 / 3
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgc-metadata : 0 / 8 / 3
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgc-readme : 0 / 8 / 3
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgc-signature : 0 / 138 / 74
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgc-system : 0 / 8 / 3
@@ -76,16 +76,18 @@ ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 316, column
 ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 323, column 17: The link '#specifications' for "Spécifications" cannot be resolved (valid targets: 69 targets)
 ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 332, column 17: The link '#artifacts' for "Ressources de conformité" cannot be resolved (valid targets: 69 targets)
 ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 339, column 12: The link '#annexes' for "section" cannot be resolved (valid targets: 69 targets)
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 379, column 677: The link 'StructureDefinition-pdlgc-archive-portabilite' for "Archive de portabilité" cannot be resolved
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 379, column 1726: The link 'StructureDefinition-pdlgc-archive-patient' for "Archive XDM patient" cannot be resolved
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 379, column 2587: The link 'StructureDefinition-pdlgc-archive-transverse' for "Archive de données transverses" cannot be resolved
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 379, column 3814: The link 'StructureDefinition-pdlgc-manifest' for "MANIFEST.XML" cannot be resolved
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 379, column 4600: The link 'StructureDefinition-pdlgc-readme' for "README.TXT" cannot be resolved
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 379, column 5384: The link 'StructureDefinition-pdlgc-signature' for "SIGN.XML" cannot be resolved
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 379, column 6177: The link 'StructureDefinition-pdlgc-metadata' for "METADATA.XML" cannot be resolved
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 379, column 6960: The link 'StructureDefinition-pdlgc-index' for "INDEX.HTM" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 379, column 680: The link 'StructureDefinition-pdlgc-archive-portabilite' for "Archive de portabilité" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 379, column 1531: The link 'StructureDefinition-pdlgc-signature' for "SIGN.XML" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 379, column 2348: The link 'StructureDefinition-pdlgc-manifest' for "MANIFEST.XML" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 379, column 3486: The link 'StructureDefinition-pdlgc-readme' for "README.TXT" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 379, column 4303: The link 'StructureDefinition-pdlgc-archive-transverse' for "Archive de données transverses" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 379, column 5194: The link 'sf-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 379, column 6536: The link 'StructureDefinition-pdlgc-archive-patient' for "Archive XDM patient" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 379, column 7699: The link 'StructureDefinition-pdlgc-index' for "INDEX.HTM" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 379, column 8817: The link 'StructureDefinition-pdlgc-metadata' for "METADATA.XML" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 379, column 9642: The link 'sf-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved
 ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 413, column 188: The link 'sf-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/p/a at Line 711, column 72: The link 'specs-main-structure-archive' for "Structure de l'archive de Portabilité" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/p/a at Line 715, column 72: The link 'specs-main-structure-archive' for "Structure de l'archive de Portabilité" cannot be resolved
 WARNING: /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/output/fr/StructureDefinition-AuthorInstitution.html: Illegal HTML: illegal html element: Slot ( n’est pas transmis.)
 ERROR: fr/annexe-downloads.html#/html/body/div/div/div/div/div/p/a at Line 236, column 48: The link 'package.tgz' for "téléchargeable ici" cannot be resolved
 ERROR: fr/annexe-downloads.html#/html/body/div/div/div/div/div/p/a at Line 238, column 44: The link 'package.tgz' for "package.tgz" cannot be resolved
@@ -105,16 +107,18 @@ ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 309, column
 ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 316, column 17: The link '#specifications' for "Spécifications" cannot be resolved (valid targets: 69 targets)
 ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 325, column 17: The link '#artifacts' for "Ressources de conformité" cannot be resolved (valid targets: 69 targets)
 ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 332, column 12: The link '#annexes' for "section" cannot be resolved (valid targets: 69 targets)
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 372, column 677: The link 'StructureDefinition-pdlgc-archive-portabilite' for "Archive de portabilité" cannot be resolved
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 372, column 1726: The link 'StructureDefinition-pdlgc-archive-patient' for "Archive XDM patient" cannot be resolved
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 372, column 2587: The link 'StructureDefinition-pdlgc-archive-transverse' for "Archive de données transverses" cannot be resolved
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 372, column 3814: The link 'StructureDefinition-pdlgc-manifest' for "MANIFEST.XML" cannot be resolved
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 372, column 4600: The link 'StructureDefinition-pdlgc-readme' for "README.TXT" cannot be resolved
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 372, column 5384: The link 'StructureDefinition-pdlgc-signature' for "SIGN.XML" cannot be resolved
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 372, column 6177: The link 'StructureDefinition-pdlgc-metadata' for "METADATA.XML" cannot be resolved
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 372, column 6960: The link 'StructureDefinition-pdlgc-index' for "INDEX.HTM" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 372, column 680: The link 'StructureDefinition-pdlgc-archive-portabilite' for "Archive de portabilité" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 372, column 1531: The link 'StructureDefinition-pdlgc-signature' for "SIGN.XML" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 372, column 2348: The link 'StructureDefinition-pdlgc-manifest' for "MANIFEST.XML" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 372, column 3486: The link 'StructureDefinition-pdlgc-readme' for "README.TXT" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 372, column 4303: The link 'StructureDefinition-pdlgc-archive-transverse' for "Archive de données transverses" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 372, column 5194: The link 'sf-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 372, column 6536: The link 'StructureDefinition-pdlgc-archive-patient' for "Archive XDM patient" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 372, column 7699: The link 'StructureDefinition-pdlgc-index' for "INDEX.HTM" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 372, column 8817: The link 'StructureDefinition-pdlgc-metadata' for "METADATA.XML" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 372, column 9642: The link 'sf-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved
 ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 406, column 188: The link 'sf-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/p/a at Line 704, column 72: The link 'specs-main-structure-archive' for "Structure de l'archive de Portabilité" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/p/a at Line 708, column 72: The link 'specs-main-structure-archive' for "Structure de l'archive de Portabilité" cannot be resolved
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml, cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: An HTML fragment from the set [globals-table.xhtml, globals-table.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 5: An HTML fragment from the set [expansion-params.xhtml, expansion-params.xhtml] is not included anywhere in the produced implementation guide
@@ -703,7 +707,13 @@ INFORMATION: Resource: The resource StructureDefinition/pdlgc-manifest-archives 
 == fsh-generated/resources/StructureDefinition-pdlgc-metadata.json ==
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
 WARNING: StructureDefinition/pdlgc-metadata: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/pdlgc-metadata: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/pdlgc-metadata: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/pdlgc-metadata: StructureDefinition.snapshot.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/pdlgc-metadata: StructureDefinition.differential.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/pdlgc-metadata: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/pdlgc-metadata: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/pdlgc-metadata: StructureDefinition.differential.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 INFORMATION: Resource: The resource StructureDefinition/pdlgc-metadata could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-pdlgc-readme.json ==
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1

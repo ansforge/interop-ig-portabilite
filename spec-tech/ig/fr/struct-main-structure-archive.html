@@ -246,6 +246,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>1 répertoire de documentation (<code class="language-plaintext highlighter-rouge">DOCUMENTATION/</code>) permettant d'interpréter le contenu de l'archive (dictionnaires de données, dictionnaires des terminologies, jeux d'échantillon, mapping,…)</li>
   <li>1 archive de données transverses (<code class="language-plaintext highlighter-rouge">TRANSVERSE/</code>) associées au professionnel et/ou à la structure</li>
   <li>1 ou plusieurs archive(s) de patient (<code class="language-plaintext highlighter-rouge">PATNNNNN</code>), conformes au profil IHE XDM</li>
+  <li>1 répertoire de stockage de PDF pour consultation, inclus à la racine de l'archive XDM patient (extension du profil XDM)</li>
 </ul>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PAAAAAMMJJThhmmss.ZIP               (Archive ZIP chapeau de portabilité, hors profil XDM)
@@ -273,6 +274,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 ├── PAT00001.ZIP                    (Archive XDM Patient INS_1, conforme IHE_XDM)
 │   ├── INDEX.HTM
 │   ├── README.TXT
+│   └── PDF/
 │   └── IHE_XDM/
 │       └── SUBSET01/
 │           ├── METADATA.XML
@@ -283,6 +285,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 └── PAT00002.ZIP                    (Archive XDM Patient INS_2, conforme IHE_XDM)
     ├── INDEX.HTM
     ├── README.TXT
+│   └── PDF/
     └── IHE_XDM/
         └── SUBSET01/
             ├── METADATA.XML
@@ -544,7 +547,7 @@ Arborescence :
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.pdlgc#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-07-15 13:41:00 +0000">
+  <span title="2026-07-15 16:11:00 +0000">
     2026-07-15
   </span>
 
