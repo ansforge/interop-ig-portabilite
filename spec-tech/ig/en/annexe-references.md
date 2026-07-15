@@ -7,10 +7,10 @@ There is no translation page available for the current page, so it has been rend
 
 **ebRIM et ebRS** : standards définissant le modèle de données d'une infrastructure de type registre-entrepôt de documents, ainsi que les services et protocoles associés. XDS.b et XDM s'appuient sur ces standards.
 
-* **ebRIM** (ebXML Registry Information Model): http://www.oasis-open.org/committees/regrep/documents/3.0/specs/regrep-rim-3.0-os.pdf
-* **ebRS** (ebXML Registry Services and Protocols): http://www.oasis-open.org/committees/regrep/documents/3.0/specs/regrep-rs-3.0-os.pdf
+* **ebRIM** (ebXML Registry Information Model): [http://www.oasis-open.org/committees/regrep/documents/3.0/specs/regrep-rim-3.0-os.pdf](http://www.oasis-open.org/committees/regrep/documents/3.0/specs/regrep-rim-3.0-os.pdf)
+* **ebRS** (ebXML Registry Services and Protocols): [http://www.oasis-open.org/committees/regrep/documents/3.0/specs/regrep-rs-3.0-os.pdf](http://www.oasis-open.org/committees/regrep/documents/3.0/specs/regrep-rs-3.0-os.pdf)
 
-**Cadre technique IHE ITI** : http://www.ihe.net/Technical_Framework/index.cfm#IT
+**Cadre technique IHE ITI** : [http://www.ihe.net/Technical_Framework/index.cfm#IT](http://www.ihe.net/Technical_Framework/index.cfm#IT)
 
 * XDS.b (Cross Enterprise Document sharing): basés sur ebRIM et ebRS, standards permettant le partage de documents de santé dans une infrastructure de type Registre-Entrepôt de documents:
 * Chapitre 10 du volume 1
@@ -22,4 +22,6 @@ There is no translation page available for the current page, so it has been rend
 * Chapitre 3.32 du volume 2b
 
 **ISO 9660, niveau 1** (Traitement de l'information – Structure de volume et de fichier des disques optiques compacts à mémoire fixe (CD-ROM) destinés à l'échange d'information): Norme encadrant le nommage des documents échangés par XDM, quel que soit le media utilisé
+
+**Volet du CI-SIS [Echanges de Documents de Santé](https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_service_volet-echange-documents-sante_v1.8.pdf)**: volet définissant les contraintes nationales appliquées au profil IHE XDM afin de permettre des échanges de documents de santé via Messagerie Sécurisée de Santé (MSS).
 

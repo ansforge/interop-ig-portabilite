@@ -21,10 +21,6 @@ Generic: line 0, col 0, Error - The link '#contexte-metier-acteurs' for "acteurs
 Generic: line 0, col 0, Error - The link '#specifications' for "Spécifications" cannot be resolved (valid targets: 69 targets) (NOTFOUND)
 Generic: line 0, col 0, Error - The link '#artifacts' for "Ressources de conformité" cannot be resolved (valid targets: 69 targets) (NOTFOUND)
 Generic: line 0, col 0, Error - The link '#annexes' for "section" cannot be resolved (valid targets: 69 targets) (NOTFOUND)
-Generic: line 0, col 0, Warning - Illegal HTML: illegal html element: figure (
-  Fournisseur SortantDestinataire(Système ou Personne)Flux 1 - ExportArchivePortabilite
-Diagramme d'intéraction
-) (INVALID)
 Generic: line 0, col 0, Error - The link 'StructureDefinition-pdlgc-archive-portabilite' for "Archive de portabilité" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'StructureDefinition-pdlgc-archive-patient' for "Archive XDM patient" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'StructureDefinition-pdlgc-archive-transverse' for "Archive de données transverses" cannot be resolved (NOTFOUND)
@@ -34,6 +30,7 @@ Generic: line 0, col 0, Error - The link 'StructureDefinition-pdlgc-signature' f
 Generic: line 0, col 0, Error - The link 'StructureDefinition-pdlgc-metadata' for "METADATA.XML" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'StructureDefinition-pdlgc-index' for "INDEX.HTM" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'sf-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'specs-main-structure-archive' for "Structure de l'archive de Portabilité" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Warning - Illegal HTML: illegal html element: Slot ( n’est pas transmis.) (INVALID)
 Generic: line 0, col 0, Error - The link 'package.tgz' for "téléchargeable ici" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'package.tgz' for "package.tgz" cannot be resolved (NOTFOUND)
@@ -53,10 +50,6 @@ Generic: line 0, col 0, Error - The link '#contexte-metier-acteurs' for "acteurs
 Generic: line 0, col 0, Error - The link '#specifications' for "Spécifications" cannot be resolved (valid targets: 69 targets) (NOTFOUND)
 Generic: line 0, col 0, Error - The link '#artifacts' for "Ressources de conformité" cannot be resolved (valid targets: 69 targets) (NOTFOUND)
 Generic: line 0, col 0, Error - The link '#annexes' for "section" cannot be resolved (valid targets: 69 targets) (NOTFOUND)
-Generic: line 0, col 0, Warning - Illegal HTML: illegal html element: figure (
-  Fournisseur SortantDestinataire(Système ou Personne)Flux 1 - ExportArchivePortabilite
-Diagramme d'intéraction
-) (INVALID)
 Generic: line 0, col 0, Error - The link 'StructureDefinition-pdlgc-archive-portabilite' for "Archive de portabilité" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'StructureDefinition-pdlgc-archive-patient' for "Archive XDM patient" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'StructureDefinition-pdlgc-archive-transverse' for "Archive de données transverses" cannot be resolved (NOTFOUND)
@@ -66,6 +59,7 @@ Generic: line 0, col 0, Error - The link 'StructureDefinition-pdlgc-signature' f
 Generic: line 0, col 0, Error - The link 'StructureDefinition-pdlgc-metadata' for "METADATA.XML" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'StructureDefinition-pdlgc-index' for "INDEX.HTM" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'sf-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'specs-main-structure-archive' for "Structure de l'archive de Portabilité" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Warning - An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml, cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - An HTML fragment from the set [globals-table.xhtml, globals-table.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - An HTML fragment from the set [expansion-params.xhtml, expansion-params.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
@@ -858,5 +852,5 @@ Generic: line 0, col 0, Warning - An HTML fragment from the set [expansion-param
 /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ValueSet-vs-association-type.json: line 1, col 1975, Warning - Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present (REQUIRED)
 /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ValueSet-vs-association-type.json: line 0, col 0, Warning - The resource ValueSet/vs-association-type should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root) (BUSINESSRULE)
 
-err = 1, warn = 566, info = 229
+err = 1, warn = 564, info = 229
 IG Publisher Version: 2.2.10
