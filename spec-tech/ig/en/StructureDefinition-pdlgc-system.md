@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgc-system.csv)
   "name" : "PDLGCSystem",
   "title" : "PDLGC System",
   "status" : "draft",
-  "date" : "2026-07-09T18:19:16+00:00",
+  "date" : "2026-07-15T06:27:44+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -1,10 +1,10 @@
 PDLGC : Validation Results
 =========================================
 
-err = 1, warn = 564, info = 229
+err = 1, warn = 566, info = 229
 IG Publisher Version: 2.2.10
-Generated Thu Jul 09 18:21:02 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.pdlgc#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/pdlgc)
- Build Errors : 57 / 5 / 0
+Generated Wed Jul 15 06:29:21 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.pdlgc#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/pdlgc)
+ Build Errors : 55 / 7 / 0
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ActorDefinition-PDLGC-Demandeur : 0 / 0 / 3
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ActorDefinition-PDLGC-Destinataire : 0 / 0 / 3
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ActorDefinition-PDLGC-Fournisseur-Destinataire : 0 / 0 / 3
@@ -76,16 +76,19 @@ ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 316, column
 ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 323, column 17: The link '#specifications' for "Spécifications" cannot be resolved (valid targets: 69 targets)
 ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 332, column 17: The link '#artifacts' for "Ressources de conformité" cannot be resolved (valid targets: 69 targets)
 ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 339, column 12: The link '#annexes' for "section" cannot be resolved (valid targets: 69 targets)
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 377, column 677: The link 'StructureDefinition-pdlgc-archive-portabilite' for "Archive de portabilité" cannot be resolved
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 377, column 1726: The link 'StructureDefinition-pdlgc-archive-patient' for "Archive XDM patient" cannot be resolved
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 377, column 2587: The link 'StructureDefinition-pdlgc-archive-transverse' for "Archive de données transverses" cannot be resolved
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 377, column 3814: The link 'StructureDefinition-pdlgc-manifest' for "MANIFEST.XML" cannot be resolved
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 377, column 4600: The link 'StructureDefinition-pdlgc-readme' for "README.TXT" cannot be resolved
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 377, column 5384: The link 'StructureDefinition-pdlgc-signature' for "SIGN.XML" cannot be resolved
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 377, column 6177: The link 'StructureDefinition-pdlgc-metadata' for "METADATA.XML" cannot be resolved
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 377, column 6960: The link 'StructureDefinition-pdlgc-index' for "INDEX.HTM" cannot be resolved
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/p/a at Line 389, column 228: The link 'sf-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/p/a at Line 667, column 72: The link 'specs-main-structure-archive' for "Structure de l'archive de Portabilité" cannot be resolved
+WARNING: /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/output/en/specs-main-flux-export-archive-portabilite.html: Illegal HTML: illegal html element: figure (
+  Fournisseur SortantDestinataire(Système ou Personne)Flux 1 - ExportArchivePortabilite
+Diagramme d'intéraction
+)
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 376, column 677: The link 'StructureDefinition-pdlgc-archive-portabilite' for "Archive de portabilité" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 376, column 1726: The link 'StructureDefinition-pdlgc-archive-patient' for "Archive XDM patient" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 376, column 2587: The link 'StructureDefinition-pdlgc-archive-transverse' for "Archive de données transverses" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 376, column 3814: The link 'StructureDefinition-pdlgc-manifest' for "MANIFEST.XML" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 376, column 4600: The link 'StructureDefinition-pdlgc-readme' for "README.TXT" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 376, column 5384: The link 'StructureDefinition-pdlgc-signature' for "SIGN.XML" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 376, column 6177: The link 'StructureDefinition-pdlgc-metadata' for "METADATA.XML" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 376, column 6960: The link 'StructureDefinition-pdlgc-index' for "INDEX.HTM" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/p/a at Line 388, column 228: The link 'sf-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved
 WARNING: /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/output/fr/StructureDefinition-AuthorInstitution.html: Illegal HTML: illegal html element: Slot ( n’est pas transmis.)
 ERROR: fr/annexe-downloads.html#/html/body/div/div/div/div/div/p/a at Line 236, column 48: The link 'package.tgz' for "téléchargeable ici" cannot be resolved
 ERROR: fr/annexe-downloads.html#/html/body/div/div/div/div/div/p/a at Line 238, column 44: The link 'package.tgz' for "package.tgz" cannot be resolved
@@ -105,16 +108,19 @@ ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 309, column
 ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 316, column 17: The link '#specifications' for "Spécifications" cannot be resolved (valid targets: 69 targets)
 ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 325, column 17: The link '#artifacts' for "Ressources de conformité" cannot be resolved (valid targets: 69 targets)
 ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 332, column 12: The link '#annexes' for "section" cannot be resolved (valid targets: 69 targets)
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 370, column 677: The link 'StructureDefinition-pdlgc-archive-portabilite' for "Archive de portabilité" cannot be resolved
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 370, column 1726: The link 'StructureDefinition-pdlgc-archive-patient' for "Archive XDM patient" cannot be resolved
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 370, column 2587: The link 'StructureDefinition-pdlgc-archive-transverse' for "Archive de données transverses" cannot be resolved
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 370, column 3814: The link 'StructureDefinition-pdlgc-manifest' for "MANIFEST.XML" cannot be resolved
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 370, column 4600: The link 'StructureDefinition-pdlgc-readme' for "README.TXT" cannot be resolved
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 370, column 5384: The link 'StructureDefinition-pdlgc-signature' for "SIGN.XML" cannot be resolved
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 370, column 6177: The link 'StructureDefinition-pdlgc-metadata' for "METADATA.XML" cannot be resolved
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 370, column 6960: The link 'StructureDefinition-pdlgc-index' for "INDEX.HTM" cannot be resolved
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/p/a at Line 382, column 228: The link 'sf-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/p/a at Line 660, column 72: The link 'specs-main-structure-archive' for "Structure de l'archive de Portabilité" cannot be resolved
+WARNING: /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/output/fr/specs-main-flux-export-archive-portabilite.html: Illegal HTML: illegal html element: figure (
+  Fournisseur SortantDestinataire(Système ou Personne)Flux 1 - ExportArchivePortabilite
+Diagramme d'intéraction
+)
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 369, column 677: The link 'StructureDefinition-pdlgc-archive-portabilite' for "Archive de portabilité" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 369, column 1726: The link 'StructureDefinition-pdlgc-archive-patient' for "Archive XDM patient" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 369, column 2587: The link 'StructureDefinition-pdlgc-archive-transverse' for "Archive de données transverses" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 369, column 3814: The link 'StructureDefinition-pdlgc-manifest' for "MANIFEST.XML" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 369, column 4600: The link 'StructureDefinition-pdlgc-readme' for "README.TXT" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 369, column 5384: The link 'StructureDefinition-pdlgc-signature' for "SIGN.XML" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 369, column 6177: The link 'StructureDefinition-pdlgc-metadata' for "METADATA.XML" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 369, column 6960: The link 'StructureDefinition-pdlgc-index' for "INDEX.HTM" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/p/a at Line 381, column 228: The link 'sf-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml, cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: An HTML fragment from the set [globals-table.xhtml, globals-table.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 5: An HTML fragment from the set [expansion-params.xhtml, expansion-params.xhtml] is not included anywhere in the produced implementation guide

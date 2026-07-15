@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="7de06df5-b147-491b-8206-81b3403fabba"/>
+  <id value="6d525125-b34b-46dc-a6c2-9f4f10f6d67e"/>
   <meta>
-    <lastUpdated value="2026-07-09T18:19:16.930+00:00"/>
+    <lastUpdated value="2026-07-15T06:27:44.186+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -107,7 +107,7 @@
         <name value="PDLGCExportStatusVS"/>
         <title value="PDLGC Statut de l'export"/>
         <status value="draft"/>
-        <date value="2026-07-09T18:19:16+00:00"/>
+        <date value="2026-07-15T06:27:44+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -116,8 +116,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a46c8710-8800-44aa-9207-b7062f4f6c8b"/>
-          <timestamp value="2026-07-09T18:20:17+00:00"/>
+          <identifier value="urn:uuid:c0c7160e-8b06-4dda-9171-e82a9a463162"/>
+          <timestamp value="2026-07-15T06:28:39+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -257,7 +257,7 @@
         <name value="PDLGCExportStatusVS"/>
         <title value="PDLGC Statut de l'export"/>
         <status value="draft"/>
-        <date value="2026-07-09T18:19:16+00:00"/>
+        <date value="2026-07-15T06:27:44+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -266,8 +266,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a46c8710-8800-44aa-9207-b7062f4f6c8b"/>
-          <timestamp value="2026-07-09T18:20:17+00:00"/>
+          <identifier value="urn:uuid:c0c7160e-8b06-4dda-9171-e82a9a463162"/>
+          <timestamp value="2026-07-15T06:28:39+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -407,7 +407,7 @@
         <name value="PDLGCExportStatusVS"/>
         <title value="PDLGC Statut de l'export"/>
         <status value="draft"/>
-        <date value="2026-07-09T18:19:16+00:00"/>
+        <date value="2026-07-15T06:27:44+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -416,8 +416,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d103e679-453e-4101-9f5b-b87549fd8d4e"/>
-          <timestamp value="2026-07-09T18:20:17+00:00"/>
+          <identifier value="urn:uuid:6d61e397-4bc6-4fa0-a963-fb3ae6a6f1c4"/>
+          <timestamp value="2026-07-15T06:28:39+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -560,7 +560,7 @@
         <name value="PDLGCExportTypeVS"/>
         <title value="PDLGC Type d'Export"/>
         <status value="draft"/>
-        <date value="2026-07-09T18:19:16+00:00"/>
+        <date value="2026-07-15T06:27:44+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -569,8 +569,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c8cc15bf-49c1-443b-9fa5-711889a93a63"/>
-          <timestamp value="2026-07-09T18:20:17+00:00"/>
+          <identifier value="urn:uuid:527b1c54-1f6a-4f03-99a9-96365b7c9a76"/>
+          <timestamp value="2026-07-15T06:28:40+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -710,7 +710,7 @@
         <name value="PDLGCExportTypeVS"/>
         <title value="PDLGC Type d'Export"/>
         <status value="draft"/>
-        <date value="2026-07-09T18:19:16+00:00"/>
+        <date value="2026-07-15T06:27:44+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -719,8 +719,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c8cc15bf-49c1-443b-9fa5-711889a93a63"/>
-          <timestamp value="2026-07-09T18:20:17+00:00"/>
+          <identifier value="urn:uuid:527b1c54-1f6a-4f03-99a9-96365b7c9a76"/>
+          <timestamp value="2026-07-15T06:28:40+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -860,7 +860,7 @@
         <name value="PDLGCExportTypeVS"/>
         <title value="PDLGC Type d'Export"/>
         <status value="draft"/>
-        <date value="2026-07-09T18:19:16+00:00"/>
+        <date value="2026-07-15T06:27:44+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -869,8 +869,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e799ad08-5f10-4d56-9013-d5720dedd0fa"/>
-          <timestamp value="2026-07-09T18:20:17+00:00"/>
+          <identifier value="urn:uuid:fdad007e-84ba-4c79-ab49-2a1e1f10d663"/>
+          <timestamp value="2026-07-15T06:28:40+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -993,7 +993,7 @@
         <name value="PDLGCRepoTypeVS"/>
         <title value="PDLGC Type de répertoire"/>
         <status value="draft"/>
-        <date value="2026-07-09T18:19:16+00:00"/>
+        <date value="2026-07-15T06:27:44+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1002,8 +1002,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7781c7f4-e83a-4ee9-be08-c4101e01e7d5"/>
-          <timestamp value="2026-07-09T18:20:17+00:00"/>
+          <identifier value="urn:uuid:45c0b404-2daa-4a3e-a61e-5a4399b11637"/>
+          <timestamp value="2026-07-15T06:28:40+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1119,7 +1119,7 @@
         <name value="PDLGCRepoTypeVS"/>
         <title value="PDLGC Type de répertoire"/>
         <status value="draft"/>
-        <date value="2026-07-09T18:19:16+00:00"/>
+        <date value="2026-07-15T06:27:44+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1128,8 +1128,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7781c7f4-e83a-4ee9-be08-c4101e01e7d5"/>
-          <timestamp value="2026-07-09T18:20:17+00:00"/>
+          <identifier value="urn:uuid:45c0b404-2daa-4a3e-a61e-5a4399b11637"/>
+          <timestamp value="2026-07-15T06:28:40+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1245,7 +1245,7 @@
         <name value="PDLGCRepoTypeVS"/>
         <title value="PDLGC Type de répertoire"/>
         <status value="draft"/>
-        <date value="2026-07-09T18:19:16+00:00"/>
+        <date value="2026-07-15T06:27:44+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1254,8 +1254,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:be0058d1-a231-4e12-b23d-7150bd3a8e91"/>
-          <timestamp value="2026-07-09T18:20:17+00:00"/>
+          <identifier value="urn:uuid:86f60e82-4ba2-468c-8dc4-d947b789eac7"/>
+          <timestamp value="2026-07-15T06:28:40+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1378,7 +1378,7 @@
         <name value="VS_AssociationType"/>
         <title value="Type d'association XDS (VS)"/>
         <status value="draft"/>
-        <date value="2026-07-09T18:19:16+00:00"/>
+        <date value="2026-07-15T06:27:44+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1387,8 +1387,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:bc44b475-cf9f-40a3-b125-907af5ba69fd"/>
-          <timestamp value="2026-07-09T18:20:17+00:00"/>
+          <identifier value="urn:uuid:a32b86df-d540-41d0-80f4-542ae5d2d93d"/>
+          <timestamp value="2026-07-15T06:28:40+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1509,7 +1509,7 @@
         <name value="VS_AssociationType"/>
         <title value="Type d'association XDS (VS)"/>
         <status value="draft"/>
-        <date value="2026-07-09T18:19:16+00:00"/>
+        <date value="2026-07-15T06:27:44+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1518,8 +1518,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:bc44b475-cf9f-40a3-b125-907af5ba69fd"/>
-          <timestamp value="2026-07-09T18:20:17+00:00"/>
+          <identifier value="urn:uuid:a32b86df-d540-41d0-80f4-542ae5d2d93d"/>
+          <timestamp value="2026-07-15T06:28:40+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -1640,7 +1640,7 @@
         <name value="VS_AssociationType"/>
         <title value="Type d'association XDS (VS)"/>
         <status value="draft"/>
-        <date value="2026-07-09T18:19:16+00:00"/>
+        <date value="2026-07-15T06:27:44+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1649,8 +1649,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e24e5512-b8f7-4279-8180-6b66f5f9ee22"/>
-          <timestamp value="2026-07-09T18:20:17+00:00"/>
+          <identifier value="urn:uuid:a46d7279-53c7-408e-a242-d4219d4ef99d"/>
+          <timestamp value="2026-07-15T06:28:40+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
