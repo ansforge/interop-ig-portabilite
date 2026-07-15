@@ -1,8 +1,10 @@
 Les données du périmètre pivot, telles que définies en annexe 1 du **Référentiel de sécurité, d'interopérabilité et d'éthique relatif à la portabilité des données des LGC**, doivent être exportées conformément aux formats indiqués dans le tableau ci-après. 
 
-Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilisés ou disponibles au sein du logiciel. Cette exigence n'implique pas la conversion ou la restructuration de données vers un format standardisé aux seules fins de l'export. **Lorsqu'aucune donnée standardisée correspondante n'est disponible, les données doivent être exportées dans leur format d'origine.**
+Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilisés ou disponibles au sein du logiciel. Cette exigence n'implique pas la conversion ou la restructuration de données vers un format standardisé aux seules fins de l'export. **Lorsqu'aucune donnée standardisée correspondante n'est disponible, les données PEUVENT être exportées dans leur format d'origine.**
 
-**En complément des formats structurés détaillés ci-dessous, et destinés à être intégrés par le fournisseur destinataire, tous les documents du dossier patient doivent être exportés dans un format de consultation de type PDF**. Cette représentation vise à garantir l’accès et la consultation des informations exportées, y compris en l’absence d’un logiciel capable d’exploiter les formats structurés associés.
+Lorsqu'un document existe dans un format standardisé, **il PEUT être exporté dans la version dans laquelle il a été produit ou reçu, sans obligation de mise à jour vers une version plus récente des spécifications**. Un document CDA R2 Niveau 3 conforme à une version antérieure d'un volet CI-SIS demeure ainsi exportable tel quel, sans retraitement. La documentation d'export doit préciser la version des spécifications ayant présidé à la production de chaque type de document.
+
+**En complément des formats structurés détaillés ci-dessous, et destinés à être intégrés par le fournisseur destinataire, tous les documents du dossier patient DOIVENT être exportés dans un format de consultation de type PDF**. Cette représentation vise à garantir l’accès et la consultation des informations exportées, y compris en l’absence d’un logiciel capable d’exploiter les formats structurés associés.
 <br>
 
 
@@ -104,7 +106,7 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
         <td>Patient</td>
         <td>
         <ul>
-            <li> Format opposable : <span class="flag flag-opposable"> CDA R2 Niveau 3</span></li>
+            <li> Format interop opposable : <span class="flag flag-opposable"> CDA R2 Niveau 3</span></li>
             <li><i>Format cible européen (non requis à date) : FHIR</i></li>
           </ul>
         </td>
@@ -113,14 +115,14 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
               <li>Spécifications opposables :<span class="flag flag-opposable"><a href="https://esante.gouv.fr/volet-synthese-medicale">Volet de Synthèse Médicale</a> (CI-SIS)</span></li>
           </ul>
         </td>
-        <td>Identité, INS qualifiée, coordonnées, professionnels de santé associés</td>
+        <td>Identité, INS qualifiée, coordonnées, professionnels de santé associés,...</td>
       </tr>
       <tr>
         <td>Données médicales</td>
         <td>Patient</td>
         <td>
           <ul>
-            <li> Format opposable : <span class="flag flag-opposable">CDA R2 Niveau 3</span></li>
+            <li> Format interop opposable : <span class="flag flag-opposable">CDA R2 Niveau 3</span></li>
             <li><i>Format cible européen (non requis à date) : FHIR</i></li>
           </ul>
         </td>
@@ -129,15 +131,16 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
               <li>Spécifications opposables : <span class="flag flag-opposable"><a href="https://esante.gouv.fr/volet-synthese-medicale">Volet de Synthèse Médicale</a> (CI-SIS)</span></li>
           </ul>
         </td>
-        <td>Antécédents, allergies, pathologies, traitements, facteurs de risque</td>
+        <td>Antécédents, allergies, pathologies, traitements, facteurs de risque,...</td>
       </tr>
       <tr>
         <td>Documents médicaux et données de biologie (produits dans le logiciel ou importés)</td>
         <td>Patient</td>
         <td>
           <ul>
-            <li> Format prioritaire : <span class="flag flag-prioritaire">CDA R2</span></li>
-            <li>Alternative : <span class="flag flag-alternatif">PDF A-1 encapsulé en CDA R2 Niveau 1</span></li>
+            <li>Format opposable : <span class="flag flag-opposable">Tout format structuré documenté</span></li>            
+            <li>Format interop prioritaire : <span class="flag flag-prioritaire">CDA R2 Niveau 1 ou Niveau 3</span></li>
+            <li>Alternative : <span class="flag flag-alternatif">Autre format structuré (JSON, XML,...)</span></li>
           </ul>
         </td>
         <td>
@@ -153,10 +156,15 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
         <td>Patient</td>
         <td>
           <ul>
-              <li>Format opposable : <span class="flag flag-opposable">Tout format structuré (JSON, XML…) documenté</span></li>
+              <li>Format opposable : <span class="flag flag-opposable">Tout format structuré documenté (JSON, XML,...)</span>
+              <li><i>Format cible (non requis à date) : FHIR</i></li>
           </ul>
         </td>
-        <td></td>
+        <td>
+          <ul>
+              <li><i>Spécifications cibles :  <a href="https://interop.esante.gouv.fr/ig/fhir/cdl/">Cahier de liaison</a></i></li>
+          </ul>
+        </td>
         <td>
           Structuration minimale obligatoire :
           <ul>
@@ -170,7 +178,7 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
         <td>Patient</td>
         <td>
           <ul>
-            <li>  Format opposable : <span class="flag flag-opposable">Tout format structuré (JSON, XML…) documenté</span></li>
+            <li>  Format opposable : <span class="flag flag-opposable">Tout format structuré documenté (JSON, XML,...)</span></li>
             <li> <i>Format cible CI-SIS (non requis à date) : FHIR</i></li>
           </ul>      
         </td>
@@ -186,7 +194,7 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
         <td>Patient</td>
         <td>
           <ul>
-              <li>Format opposable : <span class="flag flag-opposable">Tout format structuré (JSON, XML…) documenté</span></li>
+              <li>Format opposable : <span class="flag flag-opposable">Tout format structuré documenté (JSON, XML,...)</span></li>
           </ul>
         </td>
         <td></td>
@@ -197,7 +205,7 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
         <td>Patient</td>
         <td>
           <ul>
-              <li>Format opposable : <span class="flag flag-opposable">Tout format structuré (JSON, XML…) documenté</span></li>
+              <li>Format opposable : <span class="flag flag-opposable">Tout format structuré documenté (JSON, XML,...)</span></li>
               <li><i>Format cible européen (non requis à date) : FHIR</i></li>
           </ul>
         </td>
@@ -209,8 +217,9 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
         <td>Transverse</td>
         <td>
           <ul>
+              <li>Format opposable : <span class="flag flag-opposable">Tout format structuré documenté</span></li>  
               <li>Format prioritaire : <span class="flag flag-prioritaire">iCalendar</span></li>
-              <li>Alternative : <span class="flag flag-alternatif">Tout format structuré (JSON, XML…) documenté</span></li>
+              <li>Alternative : <span class="flag flag-alternatif">Autre format structuré (JSON, XML,...)</span></li>
           </ul>
         </td>
         <td>
@@ -225,8 +234,9 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
         <td>Transverse</td>
         <td>
           <ul>
+              <li>Format opposable : <span class="flag flag-opposable">Tout format structuré documenté</span></li>  
               <li>Format prioritaire : <span class="flag flag-prioritaire">Syslog</span></li>
-              <li>Alternative : <span class="flag flag-alternatif">Tout format structuré (JSON, XML…) documenté</span></li>
+              <li>Alternative : <span class="flag flag-alternatif">Autre format structuré (JSON, XML,...)</span></li>
           </ul>
         </td>
         <td>
@@ -247,7 +257,7 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
   </table>
   
   <div class="lgc-legend">
-    <div class="lgc-legend-item"><span class="flag flag-opposable">Opposable</span> Format imposé s'appuyant sur des spécifications CI-SIS quand elles existent</div>
+    <div class="lgc-legend-item"><span class="flag flag-opposable">Opposable</span> Format imposé s'appuyant sur des spécifications CI-SIS lorsque celles-ci sont communément utilisées par les éditeurs</div>
     <div class="lgc-legend-item"><span class="flag flag-prioritaire">Prioritaire</span> Format recommandé, à utiliser en priorité</div>
     <div class="lgc-legend-item"><span class="flag flag-alternatif">Alternatif</span> Format accepté à défaut</div>
   </div>
