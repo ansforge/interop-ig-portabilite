@@ -10,21 +10,31 @@ skinparam nodesep 50
 skinparam linetype ortho
 
 ''Archives ZIP''
-rectangle "**Archive de portabilité**\n[[StructureDefinition-pdlgc-archive-portabilite Archive de portabilité]]" as export #Pink
-rectangle "**Archive XDM patient**\n(données médicales)\n[[StructureDefinition-pdlgc-archive-patient Archive XDM patient]]" as archivepat #Pink
-rectangle "**Archive de données transverses**\n[[StructureDefinition-pdlgc-archive-transverse Archive de données transverses]]" as transverse #Pink
 
 ''Répertoire
-rectangle "**Documentation d'export**" as doc #PeachPuff
+
+
+
 
 ''Fichiers''
-rectangle "**Manifest de Portabilité**\n[[StructureDefinition-pdlgc-manifest MANIFEST.XML]]" as manifest #Lavender
-rectangle "**Readme**\n[[StructureDefinition-pdlgc-readme README.TXT]]" as readme #Lavender
+rectangle "**Archive de portabilité**\n[[StructureDefinition-pdlgc-archive-portabilite Archive de portabilité]]" as export #Pink
 rectangle "**Signature**\n[[StructureDefinition-pdlgc-signature SIGN.XML]]" as signature #Lavender
-rectangle "**Metadata**\n[[StructureDefinition-pdlgc-metadata METADATA.XML]]" as metadata #Lavender
+rectangle "**Manifest de Portabilité**\n[[StructureDefinition-pdlgc-manifest MANIFEST.XML]]" as manifest #Lavender
+rectangle "**Documentation d'export**" as doc #PeachPuff
+rectangle "**Readme**\n[[StructureDefinition-pdlgc-readme README.TXT]]" as readme #Lavender
+
+rectangle "**Archive de données transverses**\n[[StructureDefinition-pdlgc-archive-transverse Archive de données transverses]]" as transverse #Pink
+rectangle "**Document Transverse périmètre pivot**\n[[sf-perimetre-pivot.html Périmètre pivot]]" as Tpivot #Lavender
+rectangle "**Document Transverse hors périmètre pivot**" as Thorspivot #Lavender
+
+rectangle "**Archive XDM patient**\n(données médicales)\n[[StructureDefinition-pdlgc-archive-patient Archive XDM patient]]" as archivepat #Pink
+rectangle "**PDF pour consultation**" as PDF #PeachPuff
 rectangle "**Index**\n[[StructureDefinition-pdlgc-index INDEX.HTM]]" as index #Lavender
-rectangle "**Document périmètre pivot\n[[Périmètre pivot](sf-perimetre-pivot.html)]**" as pivot #Lavender
-rectangle "**Document hors périmètre pivot**" as horspivot #Lavender
+rectangle "**Lot de soumission**" as lot #PeachPuff
+rectangle "**Metadata**\n[[StructureDefinition-pdlgc-metadata METADATA.XML]]" as metadata #Lavender
+rectangle "**Document Patient périmètre pivot**\n[[sf-perimetre-pivot.html Périmètre pivot]]" as Ppivot #Lavender
+rectangle "**Document Patient hors périmètre pivot**" as Phorspivot #Lavender
+
 
 
 ''Liens''
@@ -34,18 +44,20 @@ export -- "1..1" signature
 export -- "1..*" archivepat
 export -- "0..1" transverse
 export -- "1..1" doc
-archivepat -- "1..1" metadata
-archivepat -- "1..*" pivot
-archivepat -- "0..*" horspivot
 archivepat -- "1..1" readme
 archivepat -- "1..1" index
-transverse -- "1..*" pivot
-transverse -- "0..*" horspivot
+archivepat -- "1..1" lot
+archivepat -- "1..*" PDF
+lot -- "1..1" metadata
+lot -- "1..*" Ppivot
+lot -- "0..*" Phorspivot
+transverse -- "1..*" Tpivot
+transverse -- "0..*" Thorspivot
 transverse -- "1..1" readme
 
 
 ''Légende''
-legend right
+legend left
 |= Légende|= Type|
 |<#Pink>| Archive Zip |
 |<#PeachPuff>| Répertoire |
