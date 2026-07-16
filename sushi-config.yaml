@@ -74,8 +74,8 @@ menu:
         Sécurité: annexe-securite.html
         Téléchargements et usage: annexe-downloads.html
         "Site de l'ANS ": new-tab https://esante.gouv.fr/
+        Documentation des guides d'implémentation: new-tab https://interop.esante.gouv.fr/ig/documentation/
     Ressources de conformité: artifacts.html
-    Documentation: new-tab https://interop.esante.gouv.fr/ig/documentation/
     Historique: change-log.html
 
 

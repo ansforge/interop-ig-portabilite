@@ -1,4 +1,4 @@
-### Etude fonctionnelle {etude-fonctionnelle}
+### Etude fonctionnelle {#etude-fonctionnelle}
 
 #### Acteurs
 
@@ -18,17 +18,18 @@
 
 <br>
 
-#### Périmètre pivot
 
-{% include sf-perimetre-pivot.md %}
-
-<br>
-
-### Spécifications techniques {specs-techniques}
+### Spécifications techniques {#specs-techniques}
 
 #### Transaction Export d'Archive de Portabilité
 
 {% include st-transaction-pdlgc.md %}
+
+<br>
+
+#### Périmètre pivot
+
+{% include sf-perimetre-pivot.md %}
 
 <br>
 

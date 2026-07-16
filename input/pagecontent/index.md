@@ -57,20 +57,20 @@ Le présent guide d'implémentation traduit en spécifications fonctionnelles et
 <div style="background-color: #fdf0e6; border-left: 4px solid #e07b39; padding: 15px; margin: 20px 0;">
     <strong>Annexes</strong>
     <p style="margin: 10px 0 0 0;padding-left: 30px;">
-    Cette <a href="annexes.html">section</a> renvoie aux annexes relatives à la sécurité, aux téléchargements, et à toute autre documentation utile au présent volet
+    Cette section renvoie aux annexes relatives à la sécurité, aux téléchargements, et à toute autre documentation utile au présent volet
     </p>
 </div>
 
 <div style="background-color: #f0edf5 ; border-left: 4px solid #7b52a8; padding: 15px; margin: 20px 0;">
     <strong>Ressources de conformité</strong>
     <p style="margin: 10px 0 0 0;padding-left: 30px;">
-    La section <a href="#artifacts">Ressources de conformité</a> liste les différents artefacts supportant les spécifications fonctionnelles et techniques
+    La section <a href="artifacts.html">Ressources de conformité</a> liste les différents artefacts supportant les spécifications fonctionnelles et techniques
     </p>
 </div>
 
 <br>
 
-### Scénarios et cas d'usage {contexte-metier-cas-usage}
+### Scénarios et cas d'usage {#contexte-metier-cas-usage}
 
 {% include contexte-metier-cas-usage.md %}
 
