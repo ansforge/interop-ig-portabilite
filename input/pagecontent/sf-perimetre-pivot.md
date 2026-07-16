@@ -89,6 +89,7 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
 <div class="lgc-export-formats">
 
   <table class="lgc-table">
+    <!-- Titres -->
     <thead>
       <tr>
         <th>Données</th>
@@ -99,6 +100,7 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
       </tr>
     </thead>
     <tbody>
+      <!-- Données d'identification et administratives du patient (VSM) -->
       <tr>
         <td>Identification et données administratives patient</td>
         <td>Patient</td>
@@ -115,6 +117,7 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
         </td>
         <td>Identité, INS qualifiée, coordonnées, professionnels de santé associés,...</td>
       </tr>
+      <!-- Données médicales (VSM) -->
       <tr>
         <td>Données médicales</td>
         <td>Patient</td>
@@ -131,8 +134,9 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
         </td>
         <td>Antécédents, allergies, pathologies, traitements, facteurs de risque,...</td>
       </tr>
+      <!-- Documents médicaux-->
       <tr>
-        <td>Documents médicaux et données de biologie (produits dans le logiciel ou importés)</td>
+        <td>Documents médicaux (produits dans le logiciel ou importés)</td>
         <td>Patient</td>
         <td>
           <ul>
@@ -144,11 +148,30 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
         <td>
           <ul>
               <li>Spécifications prioritaires : <span class="flag flag-prioritaire"><a href="https://esante.gouv.fr/offres-services/ci-sis/espace-publication">Volets du CI-SIS</a></span></li>
-              <li>Terminologie prioritaire (obligatoire pour les données de biologie) :  <span class="flag flag-prioritaire">LOINC</span> </li>
           </ul>
         </td>
         <td></td>
       </tr>
+      <!-- Données de biologie -->
+      <tr>
+        <td>Données de biologie</td>
+        <td>Patient</td>
+        <td>
+          <ul>
+            <li>Format opposable : <span class="flag flag-opposable">Tout format structuré documenté</span></li>            
+            <li>Format interop prioritaire : <span class="flag flag-prioritaire">CDA R2 Niveau 1 ou Niveau 3</span></li>
+            <li>Alternative : <span class="flag flag-alternatif">Autre format structuré (JSON, XML,...)</span></li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+              <li>Terminologie obligatoire :  <span class="flag flag-opposable">LOINC</span></li>
+              <li>Spécifications prioritaires pour un format CDA R2 Niveau 3 : <span class="flag flag-prioritaire"><a href="https://esante.gouv.fr/volet-cr-bio-compte-rendu-dexamens-de-biologie-medicale">Volet CR-BIO</a></span></li>
+          </ul>
+        </td>
+        <td></td>
+      </tr>
+      <!-- Notes de consultation -->
       <tr>
         <td>Clinique – Notes de consultation</td>
         <td>Patient</td>
@@ -171,6 +194,7 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
           </ul>
         </td>
       </tr>
+      <!-- Paramètres vitaux -->
       <tr>
         <td>Clinique – Paramètres vitaux</td>
         <td>Patient</td>
@@ -187,6 +211,7 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
         </td>
         <td></td>
       </tr>
+      <!-- Notes personnelles -->
       <tr>
         <td>Clinique – Notes personnelles</td>
         <td>Patient</td>
@@ -198,6 +223,7 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
         <td></td>
         <td></td>
       </tr>
+      <!-- Prescriptions -->
       <tr>
         <td>Prescriptions</td>
         <td>Patient</td>
@@ -210,6 +236,7 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
         <td></td>
         <td>Historique des ordonnances et dispensations</td>
       </tr>
+      <!-- Agenda -->
       <tr>
         <td>Agenda</td>
         <td>Transverse</td>
@@ -227,6 +254,7 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
         </td>
         <td>Rendez-vous passés, rendez-vous à venir</td>
       </tr>
+      <!-- Traces -->
       <tr>
         <td>Traces</td>
         <td>Transverse</td>
@@ -239,7 +267,8 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
         </td>
         <td>
           <ul>
-              <li><a href = "https://esante.gouv.fr/sites/default/files/media_entity/documents/pgssi_referentiel_imputabilite_v1.0_0.pdf">Référentiel d'imputabilité</a></li>
+              <li>Spécifications prioritaires : <span class="flag flag-prioritaire"><a href = "https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html">Profil IHE ATNA</a></span></li>
+              <li>Autre référence : <a href = "https://esante.gouv.fr/sites/default/files/media_entity/documents/pgssi_referentiel_imputabilite_v1.0_0.pdf">Référentiel d'imputabilité</a></li>
           </ul>
         </td>
         <td>
