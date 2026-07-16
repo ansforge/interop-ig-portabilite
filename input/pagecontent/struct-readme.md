@@ -8,7 +8,7 @@ documents de santé enregistrés avec leur feuille de style dans un même réper
 Le contenu du README.TXT est codé en ASCII 7 bits avec le retour chariot codé en CRLF.
 
 Deux niveaux de `README.TXT` coexistent dans l'archive de Portabilité : 
-- un fichier à la racine de l'archive chapeau de portabilité. Ce document complète le MANIFEST.XML et fournit au destinataires les instructions générales sur le contenu de l'archive de portabilité, les modalités d'accès aux documents et, le cas échéant, les informations utiles à leur consultation;
+- un fichier à la racine de l'archive chapeau de portabilité. Ce document complète le MANIFEST.XML et fournit au destinataires les informations générales sur le contenu de l'archive de portabilité, les modalités d'accès aux documents et, le cas échéant, les informations utiles à leur consultation;
 - un README.TXT au niveau de chaque archive XDM Patient, imposé par le profil IHE_XDM. Il précise la structure propre à chaque archive XDM (différente de celle de l'archive de portabilité)
 
 **Exemple de README.TXT de l'archive de portabilité**

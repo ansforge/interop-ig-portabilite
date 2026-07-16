@@ -47,9 +47,9 @@ Le présent guide d'implémentation traduit en spécifications fonctionnelles et
 <div style="background-color: #e8f4f8; border-left: 4px solid #0077be; padding: 15px; margin: 20px 0;">
     <strong>Spécifications</strong>
     <p style="margin: 10px 0 0 0;padding-left: 30px;">
-    La section <strong>Spécifications</strong> présente les spécifications fonctionnelles et techniques associcées à chaque processus collaboratif <br>
+    Cette section présente les spécifications fonctionnelles et techniques associcées à chaque processus collaboratif.<br>
     L'<a href="specs-main-flux-export-archive-portabilite.html#etude-fonctionnelle">étude fonctionnelle</a> présente notamment les acteurs, une définition du processus collaboratif et les concepts métiers utilisés.<br>
-    Les <a href="sspecs-main-flux-export-archive-portabilite.html#specs-techniques">spécifications techniques</a> décrivent le flux d'export d'archive de Portabilité et son positionnement par rapport à d'autres profils, ainsi que les formats des documents échangés.<br>
+    Les <a href="specs-main-flux-export-archive-portabilite.html#specs-techniques">spécifications techniques</a> décrivent le flux d'export d'archive de Portabilité et son positionnement par rapport à d'autres profils, ainsi que les formats des documents échangés.<br>
     La <a href="struct-main-structure-archive.html">structure de l'archive de Portabilité</a> décrit quant à elle l'arborescence, les conventions d'écriture, et le contenu des différents fichiers de gestion de l'archive
     </p>
 </div>

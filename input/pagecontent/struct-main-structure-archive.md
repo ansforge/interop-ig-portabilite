@@ -24,7 +24,15 @@ L'archive de portabilité retient une structure de collection d'archives afin de
 
 <br>
 
+### SIGN.XML
+
+{% include struct-signature.md %}
+
+<br>
+
 ### METADATA.XML
+
+{% include struct-metadata.md %}
 
 <br>
 

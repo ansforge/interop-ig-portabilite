@@ -80,9 +80,9 @@ menu:
 
 
 groups:
-  LogicalModel:
-    name:  Modèle logique XDM (Lot de soumission (SubmissionSet), DocumentEntry (XDS) et association)
-    description: Modèle logique avec les différents artefacts
+  LogicalModelXDS:
+    name:  Modèle logique Metadata XDS (Lot de soumission (SubmissionSet), DocumentEntry (XDS) et association)
+    description: Modèles logiques associés aux différents artifacts des METADATA XDS
     resources:
       - StructureDefinition/SubmissionSet
       - StructureDefinition/DocumentEntry      
@@ -106,5 +106,21 @@ groups:
       - StructureDefinition/StructIdNat
       - StructureDefinition/archive-xdm
       - StructureDefinition/association-xdm      
-      - StructureDefinition/Identifiant       
-      
+      - StructureDefinition/Identifiant   
+  LogicalModelArchivePortabilite:
+    name:  Modèle logique structure Archive de portabilité
+    description: Modèles logiques associés aux différents composant d'une archive de portabilité
+    resources:
+      - StructureDefinition/pdlgc-archive-portabilite 
+      - StructureDefinition/pdlgc-manifest
+      - StructureDefinition/pdlgc-fournisseur-sortant
+      - StructureDefinition/pdlgc-contact-portabilite
+      - StructureDefinition/pdlgc-manifest-archives
+      - StructureDefinition/pdlgc-system
+      - StructureDefinition/pdlgc-readme
+      - StructureDefinition/pdlgc-signature
+      - StructureDefinition/pdlgc-documentation
+      - StructureDefinition/pdlgc-archive-transverse
+      - StructureDefinition/pdlgc-archive-patient
+      - StructureDefinition/pdlgc-metadata
+      - StructureDefinition/pdlgc-index
