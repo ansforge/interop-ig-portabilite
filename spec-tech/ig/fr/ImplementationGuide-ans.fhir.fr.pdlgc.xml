@@ -12,7 +12,7 @@
   <name value="PDLGC"/>
   <title value="Portabilité des Données LGC"/>
   <status value="draft"/>
-  <date value="2026-07-16T11:12:17+00:00"/>
+  <date value="2026-07-16T21:31:30+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -643,9 +643,13 @@
         <valueString value="true"/>
       </extension>
     </extension>
-    <grouping id="LogicalModel">
-      <name value="Modèle logique XDM (Lot de soumission (SubmissionSet), DocumentEntry (XDS) et association)"/>
-      <description value="Modèle logique avec les différents artefacts"/>
+    <grouping id="LogicalModelXDS">
+      <name value="Modèle logique Metadata XDS (Lot de soumission (SubmissionSet), DocumentEntry (XDS) et association)"/>
+      <description value="Modèles logiques associés aux différents artifacts des METADATA XDS"/>
+    </grouping>
+    <grouping id="LogicalModelArchivePortabilite">
+      <name value="Modèle logique structure Archive de portabilité"/>
+      <description value="Modèles logiques associés aux différents composant d'une archive de portabilité"/>
     </grouping>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -657,7 +661,7 @@
       <name value="ActorPatient (LM)"/>
       <description value="Cet attribut représente l'acteur Patient."/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModel"/>
+      <groupingId value="LogicalModelXDS"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -669,7 +673,7 @@
       <name value="ActorPS (LM)"/>
       <description value="&#xA;Cet attribut représente un acteur PS."/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModel"/>
+      <groupingId value="LogicalModelXDS"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -681,7 +685,7 @@
       <name value="ActorSNR (LM)"/>
       <description value="Cet attribut représente l'acteur SNR."/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModel"/>
+      <groupingId value="LogicalModelXDS"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -693,7 +697,7 @@
       <name value="ActorSystem (LM)"/>
       <description value="Cet attribut représente l'acteur System."/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModel"/>
+      <groupingId value="LogicalModelXDS"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -705,7 +709,7 @@
       <name value="ActorXDS (LM)"/>
       <description value="Cet attribut représente un acteur (humain ou système) ayant contribué au document. Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient. &#xA;&#xA;XCN de HL7 v2.5"/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModel"/>
+      <groupingId value="LogicalModelXDS"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -717,7 +721,7 @@
       <name value="Archive XDM (LM)"/>
       <description value="Modèle logique décrivant la structure d'un SUBSET IHE XDM.&#xA;Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets."/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModel"/>
+      <groupingId value="LogicalModelXDS"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -729,7 +733,7 @@
       <name value="Association XDM (LM)"/>
       <description value="Modèle logique d'une association IHE XDS entre deux objets de l'archive de portabilité.&#xA;Permet de relier un SubmissionSet ou un DocumentEntry à un autre (remplacement ou transformation)."/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModel"/>
+      <groupingId value="LogicalModelXDS"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -741,7 +745,7 @@
       <name value="Author (LM)"/>
       <description value="Modèle logique d'un auteur.&#xA;&#xA;Représente les personnes physiques et/ou les systèmes (dispositifs, automates, services numériques référencés…) auteurs d’un document ou d'un lot de soummission. &#xA;&#xA;L’auteur peut être : &#xA;- Un professionnel (personne physique) via son logiciel de professionnel, &#xA;- Le patient/usager (personne physique) via Mon espace Santé, &#xA;- Un système de structure (dispositif, automate, appareil connecté…), &#xA;- Un SNR (Service Numérique Référencé), &#xA;&#xA;&#xA;**author** est un ensemble constitué des sous-attributs **authorInstitution** , **authorPerson**, **authorRole** et **authorSpecialty** et ne porte pas de valeur par lui-même."/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModel"/>
+      <groupingId value="LogicalModelXDS"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -753,7 +757,7 @@
       <name value="AuthorDocumentEntry (LM)"/>
       <description value="Modèle logique d'un auteur d'un document&#xA;Cette métadonnée représente les personnes physiques et/ou les systèmes (dispositifs, automates, services numériques référencés…) auteurs d’un document. &#xA;L’auteur peut être : &#xA;-  Un professionnel (personne physique) via son logiciel de professionnel, &#xA;- Le patient/usager (personne physique) via Mon espace Santé, &#xA;-  Un système de structure (dispositif, automate, appareil connecté…), &#xA;-  Un SNR (Service Numérique Référencé),"/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModel"/>
+      <groupingId value="LogicalModelXDS"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -765,7 +769,7 @@
       <name value="AuthorInstitution (LM)"/>
       <description value="Cet attribut représente la structure de l’auteur. &#xA;Pour les documents d’expression personnelle du patient, cette métadonnée est absente, cela signifie que l’élément XML &lt;rim:Slot name='authorInstitution'&gt; n’est pas transmis."/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModel"/>
+      <groupingId value="LogicalModelXDS"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -777,7 +781,7 @@
       <name value="AuthorSubmissionSet (LM)"/>
       <description value="Modèle logique d'un auteur d'un lot de soumission&#xA;Cette métadonnée représente les personnes physiques et/ou les systèmes auteurs d’un lot de soumission. &#xA;Constituée des sous-attributs **authorInstitution**, **authorPerson**, **authorRole** et **authorSpecialty**, elle ne porte pas de valeur par elle-même."/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModel"/>
+      <groupingId value="LogicalModelXDS"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -789,7 +793,7 @@
       <name value="Document Entry (LM)"/>
       <description value="Modèle logique  d’une fiche"/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModel"/>
+      <groupingId value="LogicalModelXDS"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -801,7 +805,7 @@
       <name value="EventCode (LM)"/>
       <description value="Modèle logique d'un eventCode.&#xA;Un EventCode peut contenir le code représentant : &#xA;-  un évènement documenté (acte, traitement, diagnostic, etc…),  &#xA;-  une modalité d’acquisition, &#xA;-  une région anatomique."/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModel"/>
+      <groupingId value="LogicalModelXDS"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -813,7 +817,7 @@
       <name value="Identifiant"/>
       <description value="Identifiant de professionnel de santé, de patient, de SNR ou de système"/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModel"/>
+      <groupingId value="LogicalModelXDS"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -825,7 +829,7 @@
       <name value="IdentifiantSysteme"/>
       <description value="Identification d'un systeme&#xA;&#xA;L’identification du ssyteme  est construite selon le tableau dessous :&#xA;- 1 + Identifiant cabinet ADELI/Identifiant interne du système dans la structure &#xA;- 3 + FINESS/Identifiant interne du système dans la structure  &#xA;- 4 + SIREN/Identifiant interne du système dans la structure &#xA;- 5 + SIRET/Identifiant interne du système dans la structure &#xA;- 6 + Identifiant cabinet RPPS/Identifiant interne du système dans la structure"/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModel"/>
+      <groupingId value="LogicalModelXDS"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -837,7 +841,7 @@
       <name value="MatriculeINS"/>
       <description value="Matricule de l'Identité Nationale de Santé (INS). Il correspond au NIR (Numéro d’Identification au Répertoire des personnes physiques) ou au NIA (Numéro Identifiant Attente) de l’individu)."/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModel"/>
+      <groupingId value="LogicalModelXDS"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -849,7 +853,7 @@
       <name value="PatientId (LM)"/>
       <description value="Modèle logique de patientID.&#xA;PatientID représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient."/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModel"/>
+      <groupingId value="LogicalModelXDS"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -861,6 +865,7 @@
       <name value="PDLGC Archive Patient"/>
       <description value="Archive stockant les données médicales liées à un patient, ou NNNNN est incrémenté à partir de 00001. Chaque patient est représenté par une archive distincte conforme au profil IHE_XDM"/>
       <exampleBoolean value="false"/>
+      <groupingId value="LogicalModelArchivePortabilite"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -872,6 +877,7 @@
       <name value="PDLGC Archive Portabilite"/>
       <description value="L'archive de Portabilité est un conteneur structuré, regroupant l'ensemble des documents et données LGC exportées ainsi que les éléments de métadonnées, d'index et de documentation nécessaires à leur exploitation par le destinataire. Convention de nommage : PAAAAAMMJJThhmmss.ZIP, avec PA = préfixe, AAAAMMJJThhmmss = horodatage"/>
       <exampleBoolean value="false"/>
+      <groupingId value="LogicalModelArchivePortabilite"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -883,6 +889,7 @@
       <name value="PDLGC Archive Transverse"/>
       <description value="Archive stockant les données transverses associés au praticien et/ou au cabinet"/>
       <exampleBoolean value="false"/>
+      <groupingId value="LogicalModelArchivePortabilite"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -894,6 +901,7 @@
       <name value="PDLGC Contact Portabilite"/>
       <description value="PDLGC Contact Portabilite"/>
       <exampleBoolean value="false"/>
+      <groupingId value="LogicalModelArchivePortabilite"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -927,6 +935,7 @@
       <name value="PDLGC Documentation"/>
       <description value="Documentation d'export permettant au fournisseur destinataire d'intégrer les données LGC du fournisseur sortant"/>
       <exampleBoolean value="false"/>
+      <groupingId value="LogicalModelArchivePortabilite"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -949,6 +958,7 @@
       <name value="PDLGC Fournisseur Sortant"/>
       <description value="PDLGC Fournisseur Sortant"/>
       <exampleBoolean value="false"/>
+      <groupingId value="LogicalModelArchivePortabilite"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -971,6 +981,7 @@
       <name value="PDLGC Index"/>
       <description value="L'INDEX.HTM est destiné à la lecture humaine"/>
       <exampleBoolean value="false"/>
+      <groupingId value="LogicalModelArchivePortabilite"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -982,6 +993,7 @@
       <name value="PDLGC Manifest"/>
       <description value="Le fichier MANIFEST.XML porte les métadonnées globales de l'export (nombre de dossiers patients, volumétrie, éléments d'intégrité), distinctes des métadonnées XDM portées par chaque `METADATA.XML` patient"/>
       <exampleBoolean value="false"/>
+      <groupingId value="LogicalModelArchivePortabilite"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -993,6 +1005,7 @@
       <name value="PDLGC Manifest Archives"/>
       <description value="Informations relatives aux répertoires Patient et transverse exportées dans l'archive de portabilité"/>
       <exampleBoolean value="false"/>
+      <groupingId value="LogicalModelArchivePortabilite"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1004,6 +1017,7 @@
       <name value="PDLGC Metadata"/>
       <description value="Modèle logique décrivant la structure d'un fichier METADATA associé à un SUBSET IHE XDM.&#xA;Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets."/>
       <exampleBoolean value="false"/>
+      <groupingId value="LogicalModelArchivePortabilite"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1015,6 +1029,7 @@
       <name value="PDLGC Readme"/>
       <description value="Informations éditoriales et instructions"/>
       <exampleBoolean value="false"/>
+      <groupingId value="LogicalModelArchivePortabilite"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1026,6 +1041,7 @@
       <name value="PDLGC Signature"/>
       <description value="signature XAdES de l'archive attestant de l'imputabilité et l'intégrité des données"/>
       <exampleBoolean value="false"/>
+      <groupingId value="LogicalModelArchivePortabilite"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1048,6 +1064,7 @@
       <name value="PDLGC System"/>
       <description value="Informations relatives au Logiciel de Gestion de Cabinet"/>
       <exampleBoolean value="false"/>
+      <groupingId value="LogicalModelArchivePortabilite"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1081,7 +1098,7 @@
       <name value="PSIdNat"/>
       <description value="Identification nationale principale du professionnel propre aux SI de l’ANS et au CI-SIS. (Correspondance dans le MOS : idNat_PS) &#xA;&#xA;L’identification nationale du PS est construite selon le tableau dessous :&#xA;-  0 + N° ADELI &#xA;- 1 + Identifiant cabinet ADELI/identifiant interne &#xA;- 3 + FINESS/identifiant interne &#xA;- 4 + SIREN/identifiant interne &#xA;- 5 + SIRET/identifiant interne &#xA;- 6 + Identifiant cabinet RPPS/identifiant interne &#xA;- 8 + N° RPPS"/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModel"/>
+      <groupingId value="LogicalModelXDS"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1093,7 +1110,7 @@
       <name value="SNR"/>
       <description value="Identifiant interne de l’instance de la solution ayant produit le document au format OID"/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModel"/>
+      <groupingId value="LogicalModelXDS"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1105,7 +1122,7 @@
       <name value="SourcePatientId (LM)"/>
       <description value="Cette métadonnée contient l’identifiant secondaire du patient dans le système d’information du producteur (IPP) ou l’INS, s’il n’y a pas d’identifiant secondaire. Pour les documents d’expression personnelle du patient, cette métadonnée contient l’INS du patient, à savoir le même identifiant que patientId."/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModel"/>
+      <groupingId value="LogicalModelXDS"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1117,7 +1134,7 @@
       <name value="SourcePatientInfo (LM)"/>
       <description value="Cette métadonnée contient les traits d’identité du patient concerné par le document, connus par le producteur du document. Les informations présentes dans la métadonnée sourcePatientInfo ne doivent en aucun cas être réutilisées pour calculer un identifiant, ni être mises à jour après la soumission du document."/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModel"/>
+      <groupingId value="LogicalModelXDS"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1140,7 +1157,7 @@
       <name value="StructIdNat"/>
       <description value="Identification nationale principale d’une structure propre aux SI de l'ANS et au CI-SIS 4. &#xA;&#xA;L’identification nationale d’une structure est construite selon le tableau dessous :&#xA;-  0 + Identifiant cabinet ADELI &#xA;- 1 + N° FINESS 2 + N° SIREN &#xA;- 3 + N° SIRET &#xA;- 4 + N° RPPS-rang &#xA;- Néant + N° technique"/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModel"/>
+      <groupingId value="LogicalModelXDS"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1152,7 +1169,7 @@
       <name value="SubmissionSet (LM)"/>
       <description value="Modèle logique d'un lot de soummission (SubmissionSet)."/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModel"/>
+      <groupingId value="LogicalModelXDS"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

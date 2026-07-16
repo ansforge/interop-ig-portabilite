@@ -237,6 +237,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#conventions-décritures-des-répertoires-et-des-fichiers" id="markdown-toc-conventions-décritures-des-répertoires-et-des-fichiers">Conventions d'écritures des répertoires et des fichiers</a></li>
   <li><a href="#manifestxml" id="markdown-toc-manifestxml">MANIFEST.XML</a></li>
   <li><a href="#readmetxt" id="markdown-toc-readmetxt">README.TXT</a></li>
+  <li><a href="#signxml" id="markdown-toc-signxml">SIGN.XML</a></li>
   <li><a href="#metadataxml" id="markdown-toc-metadataxml">METADATA.XML</a></li>
   <li><a href="#indexhtm" id="markdown-toc-indexhtm">INDEX.HTM</a></li>
 </ul>
@@ -250,10 +251,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul>
   <li>2 fichiers (<code class="language-plaintext highlighter-rouge">README.TXT</code> et <code class="language-plaintext highlighter-rouge">MANIFEST.XML</code>) permettant de lire le contenu et présentant un rapport d'intégrité ;</li>
   <li>1 fichier de signature (<code class="language-plaintext highlighter-rouge">SIGN.XML</code>) attestant de l'authenticité et de l'imputabilité des données ;</li>
-  <li>1 répertoire de documentation (<code class="language-plaintext highlighter-rouge">DOCUMENTATION/</code>) permettant d'interpréter le contenu de l'archive (dictionnaires de données, dictionnaires des terminologies, jeux d'échantillon, mapping,…)</li>
-  <li>1 archive de données transverses (<code class="language-plaintext highlighter-rouge">TRANSVERSE/</code>) associées au professionnel et/ou à la structure</li>
-  <li>1 ou plusieurs archive(s) de patient (<code class="language-plaintext highlighter-rouge">PATNNNNN</code>), conformes au profil IHE XDM</li>
-  <li>1 répertoire de stockage de PDF pour consultation, inclus à la racine de l'archive XDM patient (extension du profil XDM)</li>
+  <li>1 répertoire de documentation (<code class="language-plaintext highlighter-rouge">DOCUMENTATION/</code>) permettant d'interpréter le contenu de l'archive (dictionnaires de données, dictionnaires des terminologies, jeux d'échantillon, mapping,…) ;</li>
+  <li>1 archive de données transverses (<code class="language-plaintext highlighter-rouge">TRANSVERSE/</code>) associées au professionnel et/ou au cabinet ;</li>
+  <li>1 ou plusieurs archive(s) de patient (<code class="language-plaintext highlighter-rouge">PATNNNNN</code>), conformes au profil IHE XDM.</li>
 </ul>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PAAAAAMMJJThhmmss.ZIP               (Archive ZIP chapeau de portabilité, hors profil XDM)
@@ -292,7 +292,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 └── PAT00002.ZIP                    (Archive XDM Patient INS_2, conforme IHE_XDM)
     ├── INDEX.HTM
     ├── README.TXT
-│   └── PDF/                        (Répertoire de stockage des PDF pour consultation, extension au profil XDM)
+    └── PDF/                        (Répertoire de stockage des PDF pour consultation, extension au profil XDM)
     └── IHE_XDM/
         └── SUBSET01/
             ├── METADATA.XML
@@ -304,7 +304,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="conventions-décritures-des-répertoires-et-des-fichiers">Conventions d'écritures des répertoires et des fichiers</h3>
 
-<p><strong>Format d'écriture</strong></p>
+<p><strong>Format de nommage pour les fichiers et répertoire des archives XDM</strong></p>
 
 <p>Les noms des répertoires et des fichiers inclus dans l'archive Patient XDM doivent être conformes à la norme ISO 9660 niveau 1, comme défini dans le profil IHE_XDM :</p>
 <ul>
@@ -315,7 +315,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Il se peut que les noms des fichiers et des répertoires inclus dans l'archive soient différents de leurs noms 
 d'origine. Par exemple, <code class="language-plaintext highlighter-rouge">CR_SER01.XML</code> aurait pour nom d'origine <code class="language-plaintext highlighter-rouge">Compte-rendu de sérologie du 10 mai 2013.xml</code>. Le fournisseur sortant doit alors assurer le transcodage et la traçabilité entre le nom d'origine des répertoires et des fichiers et le nom conforme à la norme ISO 9660 niveau 1 de ces mêmes répertoires et fichiers, lorsque ceux-ci sont copiés dans IHE_XDM. Cette traçabilité peut être obtenue en établissant une table de correspondance entre le nom d'origine du fichier ou du répertoire et son nom une fois copié dans IHE_XDM.</p>
 
-<p><strong>En dehors des archives patients XDM, les noms des répertoires et fichiers ne sont pas soumis au format 8.3.</strong></p>
+<p><br /></p>
+
+<p><strong>Format de nommage pour les fichiers et répertoires de l'archive de portabilité, hors archives XDM</strong></p>
+
+<p>En dehors des archives patients XDM, les noms des répertoires et fichiers ne sont pas soumis au format 8.3.</p>
 
 <p><br /></p>
 
@@ -408,7 +412,7 @@ documents de santé enregistrés avec leur feuille de style dans un même réper
 
 <p>Deux niveaux de <code class="language-plaintext highlighter-rouge">README.TXT</code> coexistent dans l'archive de Portabilité :</p>
 <ul>
-  <li>un fichier à la racine de l'archive chapeau de portabilité. Ce document complète le MANIFEST.XML et fournit au destinataires les instructions générales sur le contenu de l'archive de portabilité, les modalités d'accès aux documents et, le cas échéant, les informations utiles à leur consultation;</li>
+  <li>un fichier à la racine de l'archive chapeau de portabilité. Ce document complète le MANIFEST.XML et fournit au destinataires les informations générales sur le contenu de l'archive de portabilité, les modalités d'accès aux documents et, le cas échéant, les informations utiles à leur consultation;</li>
   <li>un README.TXT au niveau de chaque archive XDM Patient, imposé par le profil IHE_XDM. Il précise la structure propre à chaque archive XDM (différente de celle de l'archive de portabilité)</li>
 </ul>
 
@@ -482,7 +486,102 @@ Arborescence :
 
 <p><br /></p>
 
+<h3 id="signxml">SIGN.XML</h3>
+
+<p>Le fichier SIGN.XML, positionné à la racine de l'archive de portabilité, contient la signature électronique de l'archive conformément au format XAdES. Il garantit l'intégrité de l'ensemble des fichiers de données LGC constituant l'archive et permet de vérifier l'identité du signataire ainsi que l'imputabilité de la production de l'archive. Les fichiers à vocation documentaire (README, documentation technique, schémas, exemples, etc.) ne sont pas couverts par la signature électronique.</p>
+
+<p>Le fichier est destiné à être traité automatiquement par le système destinataire lors de l'import de l'archive.</p>
+
+<p>Le SIGN.XML contient notamment :</p>
+<ul>
+  <li>les références vers les fichiers signés ;</li>
+  <li>les empreintes cryptographiques des fichiers référencés ;</li>
+  <li>la valeur de la signature ;</li>
+  <li>le certificat électronique utilisé pour la signature ;</li>
+  <li>les propriétés XAdES nécessaires à la validation de la signature.</li>
+</ul>
+
+<p>Toute modification du contenu de l'archive après sa signature conduit à l'échec de la vérification de la signature électronique.</p>
+
+<p><strong>Exemple de SIGN.XML de l'archive de portabilité</strong></p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="nt">&lt;Signature</span> <span class="na">Id=</span><span class="s">"S0"</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/2000/09/xmldsig#"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;SignedInfo&gt;</span>
+        <span class="nt">&lt;CanonicalizationMethod</span> <span class="na">Algorithm=</span><span class="s">"http://www.w3.org/TR/2001/REC-xml-c14n-20010315"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;SignatureMethod</span> <span class="na">Algorithm=</span><span class="s">"http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"</span><span class="nt">/&gt;</span>
+        <span class="c">&lt;!-- Signature du Manifest --&gt;</span>
+        <span class="nt">&lt;Reference</span> <span class="na">Type=</span><span class="s">"http://www.w3.org/2000/09/xmldsig#Manifest"</span> <span class="na">URI=</span><span class="s">"#manifest"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;DigestMethod</span> <span class="na">Algorithm=</span><span class="s">"http://www.w3.org/2001/04/xmlenc#sha256"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;DigestValue&gt;</span>Wj93V8lSgF2Ygk4N4jA6...<span class="nt">&lt;/DigestValue&gt;</span>
+        <span class="nt">&lt;/Reference&gt;</span>
+        <span class="c">&lt;!-- Signature obligatoire des propriétés XAdES --&gt;</span>
+        <span class="nt">&lt;Reference</span> <span class="na">Type=</span><span class="s">"http://uri.etsi.org/01903#SignedProperties"</span> <span class="na">URI=</span><span class="s">"#signedProperties"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;DigestMethod</span> <span class="na">Algorithm=</span><span class="s">"http://www.w3.org/2001/04/xmlenc#sha256"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;DigestValue&gt;</span>u7+4mN6v8PkL...<span class="nt">&lt;/DigestValue&gt;</span>
+        <span class="nt">&lt;/Reference&gt;</span>
+    <span class="nt">&lt;/SignedInfo&gt;</span>
+    <span class="nt">&lt;SignatureValue&gt;</span>
+        KJq9Y+gN5zD4...
+    <span class="nt">&lt;/SignatureValue&gt;</span>
+    <span class="nt">&lt;KeyInfo&gt;</span>
+        <span class="nt">&lt;X509Data&gt;</span>
+            <span class="nt">&lt;X509Certificate&gt;</span>
+                MIIGKDCCB...
+            <span class="nt">&lt;/X509Certificate&gt;</span>
+        <span class="nt">&lt;/X509Data&gt;</span>
+    <span class="nt">&lt;/KeyInfo&gt;</span>
+    <span class="c">&lt;!-- Périmètre de la signature --&gt;</span>
+    <span class="nt">&lt;Object&gt;</span>
+        <span class="nt">&lt;Manifest</span> <span class="na">Id=</span><span class="s">"manifest"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;Reference</span> <span class="na">URI=</span><span class="s">"MANIFEST.XML"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;DigestMethod</span> <span class="na">Algorithm=</span><span class="s">"http://www.w3.org/2001/04/xmlenc#sha256"</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;DigestValue&gt;</span>p5+P0Mk8MhLw...<span class="nt">&lt;/DigestValue&gt;</span>
+            <span class="nt">&lt;/Reference&gt;</span>
+            <span class="nt">&lt;Reference</span> <span class="na">URI=</span><span class="s">"PAT00001_XDM.zip"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;DigestMethod</span> <span class="na">Algorithm=</span><span class="s">"http://www.w3.org/2001/04/xmlenc#sha256"</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;DigestValue&gt;</span>rF19q9AtJr...<span class="nt">&lt;/DigestValue&gt;</span>
+            <span class="nt">&lt;/Reference&gt;</span>
+            <span class="nt">&lt;Reference</span> <span class="na">URI=</span><span class="s">"PAT00002_XDM.zip"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;DigestMethod</span> <span class="na">Algorithm=</span><span class="s">"http://www.w3.org/2001/04/xmlenc#sha256"</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;DigestValue&gt;</span>c1lTzM1QQ7...<span class="nt">&lt;/DigestValue&gt;</span>
+            <span class="nt">&lt;/Reference&gt;</span>
+            <span class="nt">&lt;Reference</span> <span class="na">URI=</span><span class="s">"TRANSVERSE.zip"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;DigestMethod</span> <span class="na">Algorithm=</span><span class="s">"http://www.w3.org/2001/04/xmlenc#sha256"</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;DigestValue&gt;</span>F9acxHkL8r...<span class="nt">&lt;/DigestValue&gt;</span>
+            <span class="nt">&lt;/Reference&gt;</span>
+        <span class="nt">&lt;/Manifest&gt;</span>
+    <span class="nt">&lt;/Object&gt;</span>
+    <span class="c">&lt;!-- Propriétés qualifiantes XAdES --&gt;</span>
+    <span class="nt">&lt;Object&gt;</span>
+        <span class="nt">&lt;QualifyingProperties</span> <span class="na">Target=</span><span class="s">"#S0"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;SignedProperties</span> <span class="na">Id=</span><span class="s">"signedProperties"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;SignedSignatureProperties&gt;</span>
+                    <span class="nt">&lt;SigningTime&gt;</span>2026-07-16T14:32:18Z<span class="nt">&lt;/xades:SigningTime&gt;</span>
+                    <span class="nt">&lt;SigningCertificate&gt;</span>
+                        <span class="nt">&lt;Cert&gt;</span>
+                            <span class="nt">&lt;CertDigest&gt;</span>
+                                <span class="nt">&lt;DigestMethod</span> <span class="na">Algorithm=</span><span class="s">"http://www.w3.org/2001/04/xmlenc#sha256"</span><span class="nt">/&gt;</span>
+                                <span class="nt">&lt;DigestValue&gt;</span>n4Z7P2mH6Lx...<span class="nt">&lt;/DigestValue&gt;</span>
+                            <span class="nt">&lt;/xades:CertDigest&gt;</span>
+                        <span class="nt">&lt;/Cert&gt;</span>
+                    <span class="nt">&lt;/SigningCertificate&gt;</span>
+                <span class="nt">&lt;/SignedSignatureProperties&gt;</span>
+            <span class="nt">&lt;/SignedProperties&gt;</span>
+        <span class="nt">&lt;/QualifyingProperties&gt;</span>
+    <span class="nt">&lt;/Object&gt;</span>
+<span class="nt">&lt;/Signature&gt;</span>
+</code></pre></div></div>
+
+<p><br /></p>
+
 <h3 id="metadataxml">METADATA.XML</h3>
+
+<p>Conformément au profil IHE XDM, chaque archive XDM Patient contient, dans son sous-répertoire <code class="language-plaintext highlighter-rouge">SUBSET01</code>, un fichier <code class="language-plaintext highlighter-rouge">METADATA.XML</code> structuré selon le modèle de métadonnées XDS-like (lot de soumission, fiches et associations). Certaines contraintes sont appliquées à ce fichier pour s'adapter au contexte de portabilité LGC.</p>
+
+<p><strong>Exemple de METADATA.XML d'une archive XDM</strong></p>
+
+<p>De nombreux exemples de fichiers METADATA sont accessibles sur le repository GitHub ANS <a href="https://github.com/ansforge/interop-exemples-xdm">interop-exemples-xdm</a>.</p>
 
 <p><br /></p>
 
@@ -554,7 +653,7 @@ Arborescence :
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Package ans.fhir.fr.pdlgc#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-07-16 11:12:00 +0000">
+  <span title="2026-07-16 21:31:00 +0000">
     2026-07-16
   </span>
 

@@ -221,13 +221,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contenu:</p>
    <ul>
       <li>
-         <a href="#1">Modèle logique XDM (Lot de soumission (SubmissionSet), DocumentEntry (XDS) et association)</a>
+         <a href="#1">Modèle logique Metadata XDS (Lot de soumission (SubmissionSet), DocumentEntry (XDS) et association)</a>
       </li>
       <li>
-         <a href="#2">Exigences: Définitions des acteurs</a>
+         <a href="#2">Modèle logique structure Archive de portabilité</a>
       </li>
       <li>
-         <a href="#3">Structures: Modèles logiques</a>
+         <a href="#3">Exigences: Définitions des acteurs</a>
       </li>
       <li>
          <a href="#4">Terminologie: Jeux de valeurs (ValueSets)</a>
@@ -243,8 +243,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      data-fhir="generated">
    <p>Cette page fournit une liste des artefacts FHIR définis dans le cadre de ce guide de mise en œuvre.</p>
    <a name="1"> </a>
-   <h3>Modèle logique XDM (Lot de soumission (SubmissionSet), DocumentEntry (XDS) et association) </h3>
-    <p>Modèle logique avec les différents artefacts</p>
+   <h3>Modèle logique Metadata XDS (Lot de soumission (SubmissionSet), DocumentEntry (XDS) et association) </h3>
+    <p>Modèles logiques associés aux différents artifacts des METADATA XDS</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
@@ -590,74 +590,8 @@ PatientID représente l’identifiant du patient, en l’occurrence, le matricul
       </tbody>
    </table>
    <a name="2"> </a>
-   <h3>Exigences: Définitions des acteurs </h3>
-    <p>Les artefacts suivants définissent les types de personnes et/ou de systèmes qui interagiront dans le cadre des cas d'utilisation couverts par le présent guide d'implémentation.</p>
-<table class="grid">
-      <col style="width:20%"/>
-      <tbody>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ActorDefinition-PDLGC-Demandeur.html"
-                  title="ActorDefinition/PDLGC-Demandeur">
-                  <span title="ActorDefinition/PDLGC-Demandeur">PDLGC Demandeur
-</span>
-               </a>
-            </td>
-            <td>
-<p>Demandeur de l'export.</p>
-
-<p>Il peut s'agir d'un médecin ou professionnel de santé libéral, responsable du contenu médical transféré.</p>
-
-<p>Il peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP)</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ActorDefinition-PDLGC-Destinataire.html"
-                  title="ActorDefinition/PDLGC-Destinataire">
-                  <span title="ActorDefinition/PDLGC-Destinataire">PDLGC Destinataire
-</span>
-               </a>
-            </td>
-            <td>
-<p>Destinataire de l'export de données de LGC.</p>
-
-<p>Il peut s'agir d'un médecin ou professionnel de santé libéral recevant l'export via son LGC.</p>
-
-<p>Il peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP).</p>
-
-<p>Dans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le destinataire.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ActorDefinition-PDLGC-Fournisseur-Destinataire.html"
-                  title="ActorDefinition/PDLGC-Fournisseur-Destinataire">
-                  <span title="ActorDefinition/PDLGC-Fournisseur-Destinataire">PDLGC Fournisseur Destinataire
-</span>
-               </a>
-            </td>
-            <td>
-<p>Fournisseur de LGC recevant les données en vue de leur intégration. Il est tenu d'une obligation de moyens pour l'import dès lors que le format réceptionné est conforme au référentiel.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ActorDefinition-PDLGC-Fournisseur-Sortant.html"
-                  title="ActorDefinition/PDLGC-Fournisseur-Sortant">
-                  <span title="ActorDefinition/PDLGC-Fournisseur-Sortant">PDLGC Fournisseur Sortant
-</span>
-               </a>
-            </td>
-            <td>
-<p>Fournisseur du LGC dont le contrat prend fin ou depuis lequel l'utilisateur souhaite exporter ses données. C'est lui qui est redevable de l'obligation de portabilité gratuite du Périmètre Pivot sous 30 jours calendaires.</p>
-</td>
-         </tr>
-      </tbody>
-   </table>
-   <a name="3"> </a>
-   <h3>Structures: Modèles logiques </h3>
-    <p>Ils définissent des modèles de données qui représentent le domaine couvert par ce guide d'implémentation en termes plus conviviaux que les ressources FHIR sous-jacentes.</p>
+   <h3>Modèle logique structure Archive de portabilité </h3>
+    <p>Modèles logiques associés aux différents composant d'une archive de portabilité</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
@@ -816,6 +750,72 @@ Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.
             </td>
             <td>
 <p>Informations relatives au Logiciel de Gestion de Cabinet</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Exigences: Définitions des acteurs </h3>
+    <p>Les artefacts suivants définissent les types de personnes et/ou de systèmes qui interagiront dans le cadre des cas d'utilisation couverts par le présent guide d'implémentation.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ActorDefinition-PDLGC-Demandeur.html"
+                  title="ActorDefinition/PDLGC-Demandeur">
+                  <span title="ActorDefinition/PDLGC-Demandeur">PDLGC Demandeur
+</span>
+               </a>
+            </td>
+            <td>
+<p>Demandeur de l'export.</p>
+
+<p>Il peut s'agir d'un médecin ou professionnel de santé libéral, responsable du contenu médical transféré.</p>
+
+<p>Il peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ActorDefinition-PDLGC-Destinataire.html"
+                  title="ActorDefinition/PDLGC-Destinataire">
+                  <span title="ActorDefinition/PDLGC-Destinataire">PDLGC Destinataire
+</span>
+               </a>
+            </td>
+            <td>
+<p>Destinataire de l'export de données de LGC.</p>
+
+<p>Il peut s'agir d'un médecin ou professionnel de santé libéral recevant l'export via son LGC.</p>
+
+<p>Il peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP).</p>
+
+<p>Dans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le destinataire.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ActorDefinition-PDLGC-Fournisseur-Destinataire.html"
+                  title="ActorDefinition/PDLGC-Fournisseur-Destinataire">
+                  <span title="ActorDefinition/PDLGC-Fournisseur-Destinataire">PDLGC Fournisseur Destinataire
+</span>
+               </a>
+            </td>
+            <td>
+<p>Fournisseur de LGC recevant les données en vue de leur intégration. Il est tenu d'une obligation de moyens pour l'import dès lors que le format réceptionné est conforme au référentiel.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ActorDefinition-PDLGC-Fournisseur-Sortant.html"
+                  title="ActorDefinition/PDLGC-Fournisseur-Sortant">
+                  <span title="ActorDefinition/PDLGC-Fournisseur-Sortant">PDLGC Fournisseur Sortant
+</span>
+               </a>
+            </td>
+            <td>
+<p>Fournisseur du LGC dont le contrat prend fin ou depuis lequel l'utilisateur souhaite exporter ses données. C'est lui qui est redevable de l'obligation de portabilité gratuite du Périmètre Pivot sous 30 jours calendaires.</p>
 </td>
          </tr>
       </tbody>
@@ -980,7 +980,7 @@ Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.pdlgc#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-07-16 11:12:00 +0000">
+  <span title="2026-07-16 21:31:00 +0000">
     2026-07-16
   </span>
 

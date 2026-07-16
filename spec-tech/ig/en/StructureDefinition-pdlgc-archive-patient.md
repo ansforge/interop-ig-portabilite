@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgc-archive-pat
   "name" : "PDLGCArchivePatient",
   "title" : "PDLGC Archive Patient",
   "status" : "draft",
-  "date" : "2026-07-16T11:12:17+00:00",
+  "date" : "2026-07-16T21:31:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -83,6 +83,28 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgc-archive-pat
       "max" : "1",
       "type" : [{
         "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-index"
+      }]
+    },
+    {
+      "id" : "pdlgc-archive-patient.PDF",
+      "path" : "pdlgc-archive-patient.PDF",
+      "short" : "Répertoire contenant une copie PDF de tous les documents transportés dans le répertoire IHE_XDM.",
+      "definition" : "Répertoire contenant une copie PDF de tous les documents transportés dans le répertoire IHE_XDM.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement"
+      }]
+    },
+    {
+      "id" : "pdlgc-archive-patient.PDF.documentsPDF",
+      "path" : "pdlgc-archive-patient.PDF.documentsPDF",
+      "short" : "Documents PDF destinés à la consultation. Ces documents ne sont pas intégrés par le destinataire si le destinataire est une système",
+      "definition" : "Documents PDF destinés à la consultation. Ces documents ne sont pas intégrés par le destinataire si le destinataire est une système",
+      "min" : 1,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Document"
       }]
     },
     {

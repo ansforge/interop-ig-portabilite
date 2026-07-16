@@ -10,10 +10,9 @@ L'archive de Portabilité est constituée de :
 
 * 2 fichiers (`README.TXT` et `MANIFEST.XML`) permettant de lire le contenu et présentant un rapport d'intégrité ;
 * 1 fichier de signature (`SIGN.XML`) attestant de l'authenticité et de l'imputabilité des données ;
-* 1 répertoire de documentation (`DOCUMENTATION/`) permettant d'interpréter le contenu de l'archive (dictionnaires de données, dictionnaires des terminologies, jeux d'échantillon, mapping,…)
-* 1 archive de données transverses (`TRANSVERSE/`) associées au professionnel et/ou à la structure
-* 1 ou plusieurs archive(s) de patient (`PATNNNNN`), conformes au profil IHE XDM
-* 1 répertoire de stockage de PDF pour consultation, inclus à la racine de l'archive XDM patient (extension du profil XDM)
+* 1 répertoire de documentation (`DOCUMENTATION/`) permettant d'interpréter le contenu de l'archive (dictionnaires de données, dictionnaires des terminologies, jeux d'échantillon, mapping,…) ;
+* 1 archive de données transverses (`TRANSVERSE/`) associées au professionnel et/ou au cabinet ;
+* 1 ou plusieurs archive(s) de patient (`PATNNNNN`), conformes au profil IHE XDM.
 
 ```
 PAAAAAMMJJThhmmss.ZIP               (Archive ZIP chapeau de portabilité, hors profil XDM)
@@ -52,7 +51,7 @@ PAAAAAMMJJThhmmss.ZIP               (Archive ZIP chapeau de portabilité, hors p
 └── PAT00002.ZIP                    (Archive XDM Patient INS_2, conforme IHE_XDM)
     ├── INDEX.HTM
     ├── README.TXT
-│   └── PDF/                        (Répertoire de stockage des PDF pour consultation, extension au profil XDM)
+    └── PDF/                        (Répertoire de stockage des PDF pour consultation, extension au profil XDM)
     └── IHE_XDM/
         └── SUBSET01/
             ├── METADATA.XML
@@ -63,7 +62,7 @@ PAAAAAMMJJThhmmss.ZIP               (Archive ZIP chapeau de portabilité, hors p
 
 ### Conventions d'écritures des répertoires et des fichiers
 
-**Format d'écriture**
+**Format de nommage pour les fichiers et répertoire des archives XDM**
 
 Les noms des répertoires et des fichiers inclus dans l'archive Patient XDM doivent être conformes à la norme ISO 9660 niveau 1, comme défini dans le profil IHE_XDM :
 
@@ -72,7 +71,9 @@ Les noms des répertoires et des fichiers inclus dans l'archive Patient XDM doiv
 
 Il se peut que les noms des fichiers et des répertoires inclus dans l'archive soient différents de leurs noms d'origine. Par exemple, `CR_SER01.XML` aurait pour nom d'origine `Compte-rendu de sérologie du 10 mai 2013.xml`. Le fournisseur sortant doit alors assurer le transcodage et la traçabilité entre le nom d'origine des répertoires et des fichiers et le nom conforme à la norme ISO 9660 niveau 1 de ces mêmes répertoires et fichiers, lorsque ceux-ci sont copiés dans IHE_XDM. Cette traçabilité peut être obtenue en établissant une table de correspondance entre le nom d'origine du fichier ou du répertoire et son nom une fois copié dans IHE_XDM.
 
-**En dehors des archives patients XDM, les noms des répertoires et fichiers ne sont pas soumis au format 8.3.**
+**Format de nommage pour les fichiers et répertoires de l'archive de portabilité, hors archives XDM**
+
+En dehors des archives patients XDM, les noms des répertoires et fichiers ne sont pas soumis au format 8.3.
 
 **Conventions de nommage**
 
@@ -156,7 +157,7 @@ Le contenu du README.TXT est codé en ASCII 7 bits avec le retour chariot codé 
 
 Deux niveaux de `README.TXT` coexistent dans l'archive de Portabilité :
 
-* un fichier à la racine de l'archive chapeau de portabilité. Ce document complète le MANIFEST.XML et fournit au destinataires les instructions générales sur le contenu de l'archive de portabilité, les modalités d'accès aux documents et, le cas échéant, les informations utiles à leur consultation;
+* un fichier à la racine de l'archive chapeau de portabilité. Ce document complète le MANIFEST.XML et fournit au destinataires les informations générales sur le contenu de l'archive de portabilité, les modalités d'accès aux documents et, le cas échéant, les informations utiles à leur consultation;
 * un README.TXT au niveau de chaque archive XDM Patient, imposé par le profil IHE_XDM. Il précise la structure propre à chaque archive XDM (différente de celle de l'archive de portabilité)
 
 **Exemple de README.TXT de l'archive de portabilité**
@@ -231,7 +232,101 @@ Arborescence :
 
 ```
 
+### SIGN.XML
+
+Le fichier SIGN.XML, positionné à la racine de l'archive de portabilité, contient la signature électronique de l'archive conformément au format XAdES. Il garantit l'intégrité de l'ensemble des fichiers de données LGC constituant l'archive et permet de vérifier l'identité du signataire ainsi que l'imputabilité de la production de l'archive. Les fichiers à vocation documentaire (README, documentation technique, schémas, exemples, etc.) ne sont pas couverts par la signature électronique.
+
+Le fichier est destiné à être traité automatiquement par le système destinataire lors de l'import de l'archive.
+
+Le SIGN.XML contient notamment :
+
+* les références vers les fichiers signés ;
+* les empreintes cryptographiques des fichiers référencés ;
+* la valeur de la signature ;
+* le certificat électronique utilisé pour la signature ;
+* les propriétés XAdES nécessaires à la validation de la signature.
+
+Toute modification du contenu de l'archive après sa signature conduit à l'échec de la vérification de la signature électronique.
+
+**Exemple de SIGN.XML de l'archive de portabilité**
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<Signature Id="S0" xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+        <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+        <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+        <!-- Signature du Manifest -->
+        <Reference Type="http://www.w3.org/2000/09/xmldsig#Manifest" URI="#manifest">
+            <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+            <DigestValue>Wj93V8lSgF2Ygk4N4jA6...</DigestValue>
+        </Reference>
+        <!-- Signature obligatoire des propriétés XAdES -->
+        <Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#signedProperties">
+            <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+            <DigestValue>u7+4mN6v8PkL...</DigestValue>
+        </Reference>
+    </SignedInfo>
+    <SignatureValue>
+        KJq9Y+gN5zD4...
+    </SignatureValue>
+    <KeyInfo>
+        <X509Data>
+            <X509Certificate>
+                MIIGKDCCB...
+            </X509Certificate>
+        </X509Data>
+    </KeyInfo>
+    <!-- Périmètre de la signature -->
+    <Object>
+        <Manifest Id="manifest">
+            <Reference URI="MANIFEST.XML">
+                <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+                <DigestValue>p5+P0Mk8MhLw...</DigestValue>
+            </Reference>
+            <Reference URI="PAT00001_XDM.zip">
+                <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+                <DigestValue>rF19q9AtJr...</DigestValue>
+            </Reference>
+            <Reference URI="PAT00002_XDM.zip">
+                <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+                <DigestValue>c1lTzM1QQ7...</DigestValue>
+            </Reference>
+            <Reference URI="TRANSVERSE.zip">
+                <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+                <DigestValue>F9acxHkL8r...</DigestValue>
+            </Reference>
+        </Manifest>
+    </Object>
+    <!-- Propriétés qualifiantes XAdES -->
+    <Object>
+        <QualifyingProperties Target="#S0">
+            <SignedProperties Id="signedProperties">
+                <SignedSignatureProperties>
+                    <SigningTime>2026-07-16T14:32:18Z</xades:SigningTime>
+                    <SigningCertificate>
+                        <Cert>
+                            <CertDigest>
+                                <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+                                <DigestValue>n4Z7P2mH6Lx...</DigestValue>
+                            </xades:CertDigest>
+                        </Cert>
+                    </SigningCertificate>
+                </SignedSignatureProperties>
+            </SignedProperties>
+        </QualifyingProperties>
+    </Object>
+</Signature>
+
+```
+
 ### METADATA.XML
+
+Conformément au profil IHE XDM, chaque archive XDM Patient contient, dans son sous-répertoire `SUBSET01`, un fichier `METADATA.XML` structuré selon le modèle de métadonnées XDS-like (lot de soumission, fiches et associations). Certaines contraintes sont appliquées à ce fichier pour s'adapter au contexte de portabilité LGC.
+
+**Exemple de METADATA.XML d'une archive XDM**
+
+De nombreux exemples de fichiers METADATA sont accessibles sur le repository GitHub ANS [interop-exemples-xdm](https://github.com/ansforge/interop-exemples-xdm).
 
 ### INDEX.HTM
 
