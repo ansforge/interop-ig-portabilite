@@ -1,7 +1,7 @@
 Les concepts métiers portés par ce flux sont les suivants : 
 
 
-<figure style="text-align:center;">
+<figure style="text-align:center;width:auto;">
     {% include sf-concepts-portabilite.svg %}
     <figcaption>Diagramme des concepts contenus dans le flux "Export d'archive Portabilité" </figcaption>
 </figure>
