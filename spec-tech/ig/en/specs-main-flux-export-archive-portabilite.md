@@ -5,7 +5,7 @@
  
 There is no translation page available for the current page, so it has been rendered in the default language 
 
-### Etude fonctionnelle {etude-fonctionnelle}
+### Etude fonctionnelle
 
 #### Acteurs
 
@@ -106,6 +106,17 @@ Le tableau ci-dessous définit les différents objets :
 | PDF | Format de consultation pour les données Patient. Ces documents n'ont pas vocation à être intégrés par le destinataire si le destinataire est un système. |
 | Fichiers de gestion du media (MANIFEST.XML, README.TXT, METADATA.XML, INDEX.HTM, SIGN.XML) | Fichiers attestant de l'intégrité et l'imputabilité de des données de l'archive de Portabilité. Ces fichiers permettent également au fournisseur destinataire de comprendre et d'intégrer les données de l'archive. |
 
+### Spécifications techniques
+
+#### Transaction Export d'Archive de Portabilité
+
+Cette transaction définit les exigences relatives à la structure d'une archive Zip de Portabilité. Elle est déclenchée par le demandeur (Patient ou Professionnel de Santé) qui souhaite la portabilité de données d'un LGC. Le fournisseur sortant assemble alors le contenu de l'archive ZIP pour la transmettre au destinataire (fournissuer destinataire ou personne physique) qui intègrera / lira les données.
+
+Diagramme d'intéraction
+
+
+La structure complète de l'archive ZIP est décrite dans la section [Structure de l'archive de Portabilité](specs-main-structure-archive)
+
 #### Périmètre pivot
 
 Les données du périmètre pivot, telles que définies en annexe 1 du **Référentiel de sécurité, d'interopérabilité et d'éthique relatif à la portabilité des données des LGC**, doivent être exportées conformément aux formats indiqués dans le tableau ci-après.
@@ -172,17 +183,6 @@ lorsque celles-ci sont communément utilisées par les éditeurs
 PrioritaireFormat recommandé, à utiliser en priorité
 
 AlternatifFormat accepté à défaut
-
-### Spécifications techniques {specs-techniques}
-
-#### Transaction Export d'Archive de Portabilité
-
-Cette transaction définit les exigences relatives à la structure d'une archive Zip de Portabilité. Elle est déclenchée par le demandeur (Patient ou Professionnel de Santé) qui souhaite la portabilité de données d'un LGC. Le fournisseur sortant assemble alors le contenu de l'archive ZIP pour la transmettre au destinataire (fournissuer destinataire ou personne physique) qui intègrera / lira les données.
-
-Diagramme d'intéraction
-
-
-La structure complète de l'archive ZIP est décrite dans la section [Structure de l'archive de Portabilité](specs-main-structure-archive)
 
 #### Spécificités du présent volet Portabilité des données LGC
 

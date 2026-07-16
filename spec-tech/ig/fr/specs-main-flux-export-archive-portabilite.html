@@ -134,13 +134,13 @@
       <li>
         <a href="https://esante.gouv.fr/" target="_blank">Site de l'ANS </a>
       </li>
+      <li>
+        <a href="https://interop.esante.gouv.fr/ig/documentation/" target="_blank">Documentation des guides d'implémentation</a>
+      </li>
     </ul>
   </li>
   <li>
     <a href="artifacts.html">Ressources de conformité</a>
-  </li>
-  <li>
-    <a href="https://interop.esante.gouv.fr/ig/documentation/" target="_blank">Documentation</a>
   </li>
   <li>
     <a href="change-log.html">Historique</a>
@@ -224,12 +224,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p>  <!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#etude-fonctionnelle-etude-fonctionnelle" id="markdown-toc-etude-fonctionnelle-etude-fonctionnelle">Etude fonctionnelle {etude-fonctionnelle}</a></li>
-  <li><a href="#spécifications-techniques-specs-techniques" id="markdown-toc-spécifications-techniques-specs-techniques">Spécifications techniques {specs-techniques}</a></li>
+  <li><a href="#etude-fonctionnelle" id="markdown-toc-etude-fonctionnelle">Etude fonctionnelle</a></li>
+  <li><a href="#specs-techniques" id="markdown-toc-specs-techniques">Spécifications techniques</a></li>
 </ul>
 
 </div>
-<h3 id="etude-fonctionnelle-etude-fonctionnelle">Etude fonctionnelle {etude-fonctionnelle}</h3>
+<h3 id="etude-fonctionnelle">Etude fonctionnelle</h3>
 
 <h4 id="acteurs">Acteurs</h4>
 
@@ -417,6 +417,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
   </tbody>
 </table>
+
+<p><br/></p>
+
+<h3 id="specs-techniques">Spécifications techniques</h3>
+
+<h4 id="transaction-export-darchive-de-portabilité">Transaction Export d'Archive de Portabilité</h4>
+
+<p>Cette transaction définit les exigences relatives à la structure d'une archive Zip de Portabilité.
+Elle est déclenchée par le demandeur (Patient ou Professionnel de Santé) qui souhaite la portabilité de données d'un LGC. Le fournisseur sortant assemble alors le contenu de l'archive ZIP pour la transmettre au destinataire (fournissuer destinataire ou personne physique) qui intègrera / lira les données.</p>
+
+<figure style="text-align:center;">
+    <!-- ?xml version="1.0" encoding="us-ascii" standalone="no"? --><svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" viewBox="0 0 400 108" zoomAndPan="magnify" preserveAspectRatio="none" width="400px" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:400px;height:108px;background:#FFFFFF;" version="1.1" height="108px"><defs></defs><g><line y1="52.5938" x1="80" y2="101.7266" style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x2="80"></line><line y1="52.5938" x1="305.5" y2="101.7266" style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x2="305.5"></line><rect rx="2.5" ry="2.5" width="150" x="5" y="21.2969" style="stroke:#181818;stroke-width:0.5;" fill="#E2E2F0" height="30.2969"></rect><text lengthAdjust="spacing" x="12" font-size="14" textLength="136" y="41.292" font-family="sans-serif" fill="#000000">Fournisseur Sortant</text><rect rx="2.5" ry="2.5" width="177" x="217.5" y="5" style="stroke:#181818;stroke-width:0.5;" fill="#E2E2F0" height="46.5938"></rect><text lengthAdjust="spacing" x="264.5" font-size="14" textLength="83" y="24.9951" font-family="sans-serif" fill="#000000">Destinataire</text><text lengthAdjust="spacing" x="224.5" font-size="14" textLength="163" y="41.292" font-family="sans-serif" fill="#000000">(Système ou Personne)</text><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="294,79.7266,304,83.7266,294,87.7266,298,83.7266"></polygon><line y1="83.7266" x1="80" y2="83.7266" style="stroke:#181818;stroke-width:1.0;" x2="300"></line><text lengthAdjust="spacing" x="87" font-size="13" textLength="202" y="78.6606" font-family="sans-serif" fill="#000000">Flux 1 - ExportArchivePortabilite</text></g></svg>
+<figcaption>Diagramme d'intéraction</figcaption>
+</figure>
+
+<p><br/></p>
+
+<p><a name="l1166">​</a>La structure complète de l'archive ZIP est décrite dans la section <a href="specs-main-structure-archive">Structure de l'archive de Portabilité</a></p>
 
 <p><br/></p>
 
@@ -718,24 +736,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p><br/></p>
 
-<h3 id="spécifications-techniques-specs-techniques">Spécifications techniques {specs-techniques}</h3>
-
-<h4 id="transaction-export-darchive-de-portabilité">Transaction Export d'Archive de Portabilité</h4>
-
-<p>Cette transaction définit les exigences relatives à la structure d'une archive Zip de Portabilité.
-Elle est déclenchée par le demandeur (Patient ou Professionnel de Santé) qui souhaite la portabilité de données d'un LGC. Le fournisseur sortant assemble alors le contenu de l'archive ZIP pour la transmettre au destinataire (fournissuer destinataire ou personne physique) qui intègrera / lira les données.</p>
-
-<figure style="text-align:center;">
-    <!-- ?xml version="1.0" encoding="us-ascii" standalone="no"? --><svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" viewBox="0 0 400 108" zoomAndPan="magnify" preserveAspectRatio="none" width="400px" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:400px;height:108px;background:#FFFFFF;" version="1.1" height="108px"><defs></defs><g><line y1="52.5938" x1="80" y2="101.7266" style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x2="80"></line><line y1="52.5938" x1="305.5" y2="101.7266" style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x2="305.5"></line><rect rx="2.5" ry="2.5" width="150" x="5" y="21.2969" style="stroke:#181818;stroke-width:0.5;" fill="#E2E2F0" height="30.2969"></rect><text lengthAdjust="spacing" x="12" font-size="14" textLength="136" y="41.292" font-family="sans-serif" fill="#000000">Fournisseur Sortant</text><rect rx="2.5" ry="2.5" width="177" x="217.5" y="5" style="stroke:#181818;stroke-width:0.5;" fill="#E2E2F0" height="46.5938"></rect><text lengthAdjust="spacing" x="264.5" font-size="14" textLength="83" y="24.9951" font-family="sans-serif" fill="#000000">Destinataire</text><text lengthAdjust="spacing" x="224.5" font-size="14" textLength="163" y="41.292" font-family="sans-serif" fill="#000000">(Système ou Personne)</text><polygon style="stroke:#181818;stroke-width:1.0;" fill="#181818" points="294,79.7266,304,83.7266,294,87.7266,298,83.7266"></polygon><line y1="83.7266" x1="80" y2="83.7266" style="stroke:#181818;stroke-width:1.0;" x2="300"></line><text lengthAdjust="spacing" x="87" font-size="13" textLength="202" y="78.6606" font-family="sans-serif" fill="#000000">Flux 1 - ExportArchivePortabilite</text></g></svg>
-<figcaption>Diagramme d'intéraction</figcaption>
-</figure>
-
-<p><br/></p>
-
-<p><a name="l1684">​</a>La structure complète de l'archive ZIP est décrite dans la section <a href="specs-main-structure-archive">Structure de l'archive de Portabilité</a></p>
-
-<p><br/></p>
-
 <h4 id="spécificités-du-présent-volet-portabilité-des-données-lgc">Spécificités du présent volet Portabilité des données LGC</h4>
 
 <p>Le présent volet s'inscrit dans la continuité des travaux du volet Echanges de Documents de Santé (EDS), s'appuyant sur la transaction ITI-32 et la structure d'archive XDM définie par IHE. Il étend toutefois les usages sur deux points essentiels pour répondre aux contraintes de la portabilité des données LGC.</p>
@@ -887,7 +887,7 @@ Elle est déclenchée par le demandeur (Patient ou Professionnel de Santé) qui 
           IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.pdlgc#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-07-16 10:52:00 +0000">
+  <span title="2026-07-16 11:12:00 +0000">
     2026-07-16
   </span>
 

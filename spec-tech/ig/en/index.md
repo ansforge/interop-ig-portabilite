@@ -26,12 +26,12 @@ Le présent guide d'implémentation traduit en spécifications fonctionnelles et
  La [structure de l'archive de Portabilité](struct-main-structure-archive.md) décrit quant à elle l'arborescence, les conventions d'écriture, et le contenu des différents fichiers de gestion de l'archive 
 
 **Annexes**
- Cette [section](annexes.md) renvoie aux annexes relatives à la sécurité, aux téléchargements, et à toute autre documentation utile au présent volet 
+ Cette section renvoie aux annexes relatives à la sécurité, aux téléchargements, et à toute autre documentation utile au présent volet 
 
 **Ressources de conformité**
- La section [Ressources de conformité](#artifacts) liste les différents artefacts supportant les spécifications fonctionnelles et techniques 
+ La section [Ressources de conformité](artifacts.md) liste les différents artefacts supportant les spécifications fonctionnelles et techniques 
 
-### Scénarios et cas d'usage {contexte-metier-cas-usage}
+### Scénarios et cas d'usage
 
 Cette section décrit 3 Scenarios et plusieurs cas d'usage (non exclusifs) d'utilisation de la Portabilité extraits du **Référentiel de sécurité, d'interopérabilité et d'éthique relatif à la portabilité des données des LGC**.
 
