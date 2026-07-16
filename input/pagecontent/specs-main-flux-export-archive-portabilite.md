@@ -1,4 +1,4 @@
-### Etude fonctionnelle
+### Etude fonctionnelle {etude-fonctionnelle}
 
 #### Acteurs
 
@@ -24,7 +24,7 @@
 
 <br>
 
-### Spécifications techniques
+### Spécifications techniques {specs-techniques}
 
 #### Transaction Export d'Archive de Portabilité
 

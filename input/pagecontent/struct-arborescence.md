@@ -32,7 +32,7 @@ PAAAAAMMJJThhmmss.ZIP               (Archive ZIP chapeau de portabilité, hors p
 ├── PAT00001.ZIP                    (Archive XDM Patient INS_1, conforme IHE_XDM)
 │   ├── INDEX.HTM
 │   ├── README.TXT
-│   └── PDF/
+│   └── PDF/                        (Répertoire de stockage des PDF pour consultation, extension au profil XDM)
 │   └── IHE_XDM/
 │       └── SUBSET01/
 │           ├── METADATA.XML
@@ -43,7 +43,7 @@ PAAAAAMMJJThhmmss.ZIP               (Archive ZIP chapeau de portabilité, hors p
 └── PAT00002.ZIP                    (Archive XDM Patient INS_2, conforme IHE_XDM)
     ├── INDEX.HTM
     ├── README.TXT
-│   └── PDF/
+│   └── PDF/                        (Répertoire de stockage des PDF pour consultation, extension au profil XDM)
     └── IHE_XDM/
         └── SUBSET01/
             ├── METADATA.XML

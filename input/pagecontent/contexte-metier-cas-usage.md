@@ -1,12 +1,12 @@
 Cette section décrit 3 Scenarios et plusieurs cas d'usage (non exclusifs) d'utilisation de la Portabilité extraits du **Référentiel de sécurité, d'interopérabilité et d'éthique relatif à la portabilité des données des LGC**.
 
-| Scenario | Périmètre | Exemple | Délai attendu |
-|---|---|---|---|
-| Export massif | Intégralité de la patientèle | Changement de LGC, départ à la retraite,... | ≤ 30 jours |
-| Export ciblé | Sous-ensemble de la patientèle | Départ d'un praticien, réquisition judiciaire ciblée,... | ≤ 30 jours |
-| Export unitaire | Dossier d'un patient | Droit du patient, transfert à un confrère,... | Immédiat ou sans délai indu |
+| Scenario | Périmètre | Exemple
+|---|---|---|
+| Export massif | Intégralité de la patientèle | Changement de LGC, départ à la retraite,...
+| Export ciblé | Sous-ensemble de la patientèle | Départ d'un praticien, réquisition judiciaire ciblée,...
+| Export unitaire | Dossier d'un patient | Droit du patient, transfert à un confrère,...
 
-#### Scenario 1 : Export massif
+#### Scénario 1 : Export massif
 
 Dans ce contexte, l'intégralité de la patientèle est transférée d'un fournisseur sortant vers un fournisseur destinataire.
 
@@ -18,7 +18,7 @@ Dans ce contexte, l'intégralité de la patientèle est transférée d'un fourni
 
 **Cas d'usage 1.4 - Export d'archivage** : un professionnel ou une structure cesse l'utilisation d'un LGC sans migration immédiate vers un autre logiciel. Les données sont exportées afin d'assurer leur conservation et leur disponibilité pour répondre aux obligations réglementaires ou aux besoins ultérieurs de continuité des soins.
 
-#### Scenario 2 : Export ciblé
+#### Scénario 2 : Export ciblé
 
 Dans ce contexte, une sélection de la patientièle est transférée d'un fournisseur sortant vers un fournisseur destinataire. La sélection peut correspondre à un filtre par professionnel de santé ou par période.
 
@@ -31,7 +31,7 @@ Dans ce contexte, une sélection de la patientièle est transférée d'un fourni
 **Cas d'usage 2.4 - Réquisition judiciaire ciblée** : dans le cadre d'une procédure judiciaire ou d'une expertise, une autorité compétente demande la communication d'un ensemble déterminé de dossiers répondant à des critères précis (patients, période, activité, etc.). Le professionnel de santé doit pouvoir réaliser un export sélectif des données concernées, dans le respect des exigences de sécurité, de traçabilité et de confidentialité.
 
 
-#### Scenario 3 : Export unitaire
+#### Scénario 3 : Export unitaire
 
 Dans ce contexte, seul un dossier patient est transféré d'un fournisseur sortant vers un fournisseur destinataire.
 
