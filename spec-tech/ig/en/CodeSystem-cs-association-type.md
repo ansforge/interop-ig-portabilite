@@ -26,7 +26,7 @@ This Code system is referenced in the definition of the following value sets:
   "name" : "CS_AssociationType",
   "title" : "Type d'association XDS",
   "status" : "draft",
-  "date" : "2026-07-15T16:11:54+00:00",
+  "date" : "2026-07-16T08:21:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

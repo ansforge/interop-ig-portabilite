@@ -97,12 +97,12 @@ Le tableau ci-dessous définit les différents objets :
 
 | | |
 | :--- | :--- |
-| Archive de portabilité | Conteneur structuré,regroupant l'ensemble des documents et données exportés ainsi que les éléments de métadonnées, d'index et de documentation nécessaires à leur exploitation par le destinataire. |
-| Archive XDM Patient (données médicales) | Répertoire contenant l'ensemble des données de santé d'un patient dans un format structuré ou propriétaire. |
+| Archive de portabilité | Conteneur structuré regroupant l'ensemble des documents et données exportés, ainsi que les éléments de métadonnées, d'index et de documentation nécessaires à leur exploitation par le destinataire. |
+| Archive XDM Patient (données médicales et administratives du patient) | Répertoire contenant l'ensemble des données de santé d'un patient dans un format structuré standardisé ou propriétaire. |
 | Archive de données transverses | Répertoire contenant l'ensemble des données transverses associées au praticien ou au cabinet (agenda, logs, comptabilité,…). |
 | Documentation d'export | Ensemble des éléments accompagnant l'archive et permettant son interprétation par le système destinataire : dictionnaire de données, dictionnaire de terminologies propriétaires, schéma technique de validation, jeu d'échantillons,… |
-| Document périmètre pivot | Ensemble minimal, obligatoire et standardisé de données de santé (administratives et médicales) dont le transfert doit être garanti sans frais et dans un délai défini (confère[Périmètre pivot](sf-perimetre-pivot.md)). |
-| Document hors périmètre pivot | L’export des données hors périmètre pivot est facultatif. Néanmoins, lorsqu’elles sont exportées, ces données doivent être fournies dans un format standardisé lorsqu’il est nativement disponible. À défaut, elles sont exportées dans leur format d’origine. |
+| Document périmètre pivot | Ensemble minimal, obligatoire et structuré de données administratives et médicales (confère[Périmètre pivot](sf-perimetre-pivot.md)). |
+| Document hors périmètre pivot | Données dont l'export est facultatif. Leur export doit toutefois être structuré et documenté, au même titre que pour les documents du périmètre pivot. |
 | PDF | Format de consultation pour les données Patient. Ces documents n'ont pas vocation à être intégrés par le destinataire si le destinataire est un système. |
 | Fichiers de gestion du media (MANIFEST.XML, README.TXT, METADATA.XML, INDEX.HTM, SIGN.XML) | Fichiers attestant de l'intégrité et l'imputabilité de des données de l'archive de Portabilité. Ces fichiers permettent également au fournisseur destinataire de comprendre et d'intégrer les données de l'archive. |
 
@@ -124,11 +124,16 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
 * *Format cible européen (non requis à date) : FHIR*
  | * Spécifications opposables : [Volet de Synthèse Médicale](https://esante.gouv.fr/volet-synthese-medicale) (CI-SIS)
  | Antécédents, allergies, pathologies, traitements, facteurs de risque,... |
-| Documents médicaux et données de biologie (produits dans le logiciel ou importés) | Patient | * Format opposable : Tout format structuré documenté
+| Documents médicaux (produits dans le logiciel ou importés) | Patient | * Format opposable : Tout format structuré documenté
 * Format interop prioritaire : CDA R2 Niveau 1 ou Niveau 3
 * Alternative : Autre format structuré (JSON, XML,...)
  | * Spécifications prioritaires : [Volets du CI-SIS](https://esante.gouv.fr/offres-services/ci-sis/espace-publication)
-* Terminologie prioritaire (obligatoire pour les données de biologie) : LOINC 
+ |  |
+| Données de biologie | Patient | * Format opposable : Tout format structuré documenté
+* Format interop prioritaire : CDA R2 Niveau 1 ou Niveau 3
+* Alternative : Autre format structuré (JSON, XML,...)
+ | * Terminologie obligatoire : LOINC
+* Spécifications prioritaires pour un format CDA R2 Niveau 3 : [Volet CR-BIO](https://esante.gouv.fr/volet-cr-bio-compte-rendu-dexamens-de-biologie-medicale)
  |  |
 | Clinique – Notes de consultation | Patient | * Format opposable : Tout format structuré documenté (JSON, XML,...)
 * *Format cible (non requis à date) : FHIR*
@@ -153,7 +158,8 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
 | Traces | Transverse | * Format opposable : Tout format structuré documenté
 * Format prioritaire : Syslog
 * Alternative : Autre format structuré (JSON, XML,...)
- | * [Référentiel d'imputabilité](https://esante.gouv.fr/sites/default/files/media_entity/documents/pgssi_referentiel_imputabilite_v1.0_0.pdf)
+ | * Spécifications prioritaires : [Profil IHE ATNA](https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html)
+* Autre référence : [Référentiel d'imputabilité](https://esante.gouv.fr/sites/default/files/media_entity/documents/pgssi_referentiel_imputabilite_v1.0_0.pdf)
  | Structuration minimale obligatoire :* Accès
 * Modifications
 * Horodatage

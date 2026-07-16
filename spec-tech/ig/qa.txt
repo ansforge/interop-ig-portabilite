@@ -2,8 +2,8 @@ PDLGC : Validation Results
 =========================================
 
 err = 1, warn = 570, info = 229
-IG Publisher Version: 2.2.10
-Generated Wed Jul 15 16:13:41 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.pdlgc#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/pdlgc)
+IG Publisher Version: 2.2.10 Out of date - current version is 2.2.11
+Generated Thu Jul 16 08:23:43 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.pdlgc#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/pdlgc)
  Build Errors : 61 / 5 / 0
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ActorDefinition-PDLGC-Demandeur : 0 / 0 / 3
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ActorDefinition-PDLGC-Destinataire : 0 / 0 / 3
@@ -86,8 +86,8 @@ ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div
 ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 379, column 7699: The link 'StructureDefinition-pdlgc-index' for "INDEX.HTM" cannot be resolved
 ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 379, column 8817: The link 'StructureDefinition-pdlgc-metadata' for "METADATA.XML" cannot be resolved
 ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 379, column 9642: The link 'sf-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 413, column 188: The link 'sf-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/p/a at Line 715, column 72: The link 'specs-main-structure-archive' for "Structure de l'archive de Portabilité" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 413, column 104: The link 'sf-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/p/a at Line 744, column 72: The link 'specs-main-structure-archive' for "Structure de l'archive de Portabilité" cannot be resolved
 WARNING: /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/output/fr/StructureDefinition-AuthorInstitution.html: Illegal HTML: illegal html element: Slot ( n’est pas transmis.)
 ERROR: fr/annexe-downloads.html#/html/body/div/div/div/div/div/p/a at Line 236, column 48: The link 'package.tgz' for "téléchargeable ici" cannot be resolved
 ERROR: fr/annexe-downloads.html#/html/body/div/div/div/div/div/p/a at Line 238, column 44: The link 'package.tgz' for "package.tgz" cannot be resolved
@@ -117,8 +117,8 @@ ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div
 ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 372, column 7699: The link 'StructureDefinition-pdlgc-index' for "INDEX.HTM" cannot be resolved
 ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 372, column 8817: The link 'StructureDefinition-pdlgc-metadata' for "METADATA.XML" cannot be resolved
 ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 372, column 9642: The link 'sf-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 406, column 188: The link 'sf-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/p/a at Line 708, column 72: The link 'specs-main-structure-archive' for "Structure de l'archive de Portabilité" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 406, column 104: The link 'sf-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/p/a at Line 737, column 72: The link 'specs-main-structure-archive' for "Structure de l'archive de Portabilité" cannot be resolved
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml, cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: An HTML fragment from the set [globals-table.xhtml, globals-table.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 5: An HTML fragment from the set [expansion-params.xhtml, expansion-params.xhtml] is not included anywhere in the produced implementation guide

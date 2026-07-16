@@ -392,11 +392,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <tbody>
     <tr>
       <td>Archive de portabilité</td>
-      <td>Conteneur structuré,regroupant l'ensemble des documents et données exportés ainsi que les éléments de métadonnées, d'index et de documentation nécessaires à leur exploitation par le destinataire.</td>
+      <td>Conteneur structuré regroupant l'ensemble des documents et données exportés, ainsi que les éléments de métadonnées, d'index et de documentation nécessaires à leur exploitation par le destinataire.</td>
     </tr>
     <tr>
-      <td>Archive XDM Patient (données médicales)</td>
-      <td>Répertoire contenant l'ensemble des données de santé d'un patient dans un format structuré ou propriétaire.</td>
+      <td>Archive XDM Patient (données médicales et administratives du patient)</td>
+      <td>Répertoire contenant l'ensemble des données de santé d'un patient dans un format structuré standardisé ou propriétaire.</td>
     </tr>
     <tr>
       <td>Archive de données transverses</td>
@@ -408,11 +408,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
     <tr>
       <td>Document périmètre pivot</td>
-      <td><a name="l1096">​</a>Ensemble minimal, obligatoire et standardisé de données de santé (administratives et médicales) dont le transfert doit être garanti sans frais et dans un délai défini (confère <a href="sf-perimetre-pivot.html">Périmètre pivot</a>).</td>
+      <td><a name="l1096">​</a>Ensemble minimal, obligatoire et structuré de données administratives et médicales (confère <a href="sf-perimetre-pivot.html">Périmètre pivot</a>).</td>
     </tr>
     <tr>
       <td>Document hors périmètre pivot</td>
-      <td>L’export des données hors périmètre pivot est facultatif. Néanmoins, lorsqu’elles sont exportées, ces données doivent être fournies dans un format standardisé lorsqu’il est nativement disponible. À défaut, elles sont exportées dans leur format d’origine.</td>
+      <td>Données dont l'export est facultatif. Leur export doit toutefois être structuré et documenté, au même titre que pour les documents du périmètre pivot.</td>
     </tr>
     <tr>
       <td>PDF</td>
@@ -519,6 +519,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="lgc-export-formats">
 
   <table class="lgc-table">
+      <!-- Titres -->
     <thead>
       <tr>
         <th>Données</th>
@@ -529,6 +530,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </tr>
     </thead>
     <tbody>
+        <!-- Données d'identification et administratives du patient (VSM) -->
       <tr>
         <td>Identification et données administratives patient</td>
         <td>Patient</td>
@@ -545,6 +547,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         </td>
         <td>Identité, INS qualifiée, coordonnées, professionnels de santé associés,...</td>
       </tr>
+        <!-- Données médicales (VSM) -->
       <tr>
         <td>Données médicales</td>
         <td>Patient</td>
@@ -561,8 +564,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         </td>
         <td>Antécédents, allergies, pathologies, traitements, facteurs de risque,...</td>
       </tr>
+        <!-- Documents médicaux -->
       <tr>
-        <td>Documents médicaux et données de biologie (produits dans le logiciel ou importés)</td>
+        <td>Documents médicaux (produits dans le logiciel ou importés)</td>
         <td>Patient</td>
         <td>
           <ul>
@@ -574,11 +578,30 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         <td>
           <ul>
               <li>Spécifications prioritaires : <span class="flag flag-prioritaire"><a href="https://esante.gouv.fr/offres-services/ci-sis/espace-publication">Volets du CI-SIS</a></span></li>
-              <li>Terminologie prioritaire (obligatoire pour les données de biologie) :  <span class="flag flag-prioritaire">LOINC</span> </li>
           </ul>
         </td>
         <td></td>
       </tr>
+        <!-- Données de biologie -->
+      <tr>
+        <td>Données de biologie</td>
+        <td>Patient</td>
+        <td>
+          <ul>
+            <li>Format opposable : <span class="flag flag-opposable">Tout format structuré documenté</span></li>            
+            <li>Format interop prioritaire : <span class="flag flag-prioritaire">CDA R2 Niveau 1 ou Niveau 3</span></li>
+            <li>Alternative : <span class="flag flag-alternatif">Autre format structuré (JSON, XML,...)</span></li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+              <li>Terminologie obligatoire :  <span class="flag flag-opposable">LOINC</span></li>
+              <li>Spécifications prioritaires pour un format CDA R2 Niveau 3 : <span class="flag flag-prioritaire"><a href="https://esante.gouv.fr/volet-cr-bio-compte-rendu-dexamens-de-biologie-medicale">Volet CR-BIO</a></span></li>
+          </ul>
+        </td>
+        <td></td>
+      </tr>
+        <!-- Notes de consultation -->
       <tr>
         <td>Clinique – Notes de consultation</td>
         <td>Patient</td>
@@ -601,6 +624,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           </ul>
         </td>
       </tr>
+        <!-- Paramètres vitaux -->
       <tr>
         <td>Clinique – Paramètres vitaux</td>
         <td>Patient</td>
@@ -617,6 +641,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         </td>
         <td></td>
       </tr>
+        <!-- Notes personnelles -->
       <tr>
         <td>Clinique – Notes personnelles</td>
         <td>Patient</td>
@@ -628,6 +653,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         <td></td>
         <td></td>
       </tr>
+        <!-- Prescriptions -->
       <tr>
         <td>Prescriptions</td>
         <td>Patient</td>
@@ -640,6 +666,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         <td></td>
         <td>Historique des ordonnances et dispensations</td>
       </tr>
+        <!-- Agenda -->
       <tr>
         <td>Agenda</td>
         <td>Transverse</td>
@@ -657,6 +684,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         </td>
         <td>Rendez-vous passés, rendez-vous à venir</td>
       </tr>
+        <!-- Traces -->
       <tr>
         <td>Traces</td>
         <td>Transverse</td>
@@ -669,7 +697,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         </td>
         <td>
           <ul>
-              <li><a href="https://esante.gouv.fr/sites/default/files/media_entity/documents/pgssi_referentiel_imputabilite_v1.0_0.pdf">Référentiel d'imputabilité</a></li>
+              <li>Spécifications prioritaires : <span class="flag flag-prioritaire"><a href="https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html">Profil IHE ATNA</a></span></li>
+              <li>Autre référence : <a href="https://esante.gouv.fr/sites/default/files/media_entity/documents/pgssi_referentiel_imputabilite_v1.0_0.pdf">Référentiel d'imputabilité</a></li>
           </ul>
         </td>
         <td>
@@ -710,7 +739,7 @@ Elle est déclenchée par le demandeur (Patient ou Professionnel de Santé) qui 
 
 <p><br/></p>
 
-<p><a name="l1618">​</a>La structure complète de l'archive ZIP est décrite dans la section <a href="specs-main-structure-archive">Structure de l'archive de Portabilité</a></p>
+<p><a name="l1690">​</a>La structure complète de l'archive ZIP est décrite dans la section <a href="specs-main-structure-archive">Structure de l'archive de Portabilité</a></p>
 
 <p><br/></p>
 
@@ -865,8 +894,8 @@ Elle est déclenchée par le demandeur (Patient ou Professionnel de Santé) qui 
           IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  
           Package ans.fhir.fr.pdlgc#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-07-15 16:11:00 +0000">
-    2026-07-15
+  <span title="2026-07-16 08:21:00 +0000">
+    2026-07-16
   </span>
 
           <br/>
