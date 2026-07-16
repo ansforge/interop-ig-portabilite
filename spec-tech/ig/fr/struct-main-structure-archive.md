@@ -41,7 +41,7 @@ PAAAAAMMJJThhmmss.ZIP               (Archive ZIP chapeau de portabilité, hors p
 ├── PAT00001.ZIP                    (Archive XDM Patient INS_1, conforme IHE_XDM)
 │   ├── INDEX.HTM
 │   ├── README.TXT
-│   └── PDF/
+│   └── PDF/                        (Répertoire de stockage des PDF pour consultation, extension au profil XDM)
 │   └── IHE_XDM/
 │       └── SUBSET01/
 │           ├── METADATA.XML
@@ -52,7 +52,7 @@ PAAAAAMMJJThhmmss.ZIP               (Archive ZIP chapeau de portabilité, hors p
 └── PAT00002.ZIP                    (Archive XDM Patient INS_2, conforme IHE_XDM)
     ├── INDEX.HTM
     ├── README.TXT
-│   └── PDF/
+│   └── PDF/                        (Répertoire de stockage des PDF pour consultation, extension au profil XDM)
     └── IHE_XDM/
         └── SUBSET01/
             ├── METADATA.XML
@@ -159,7 +159,7 @@ Deux niveaux de `README.TXT` coexistent dans l'archive de Portabilité :
 * un fichier à la racine de l'archive chapeau de portabilité. Ce document complète le MANIFEST.XML et fournit au destinataires les instructions générales sur le contenu de l'archive de portabilité, les modalités d'accès aux documents et, le cas échéant, les informations utiles à leur consultation;
 * un README.TXT au niveau de chaque archive XDM Patient, imposé par le profil IHE_XDM. Il précise la structure propre à chaque archive XDM (différente de celle de l'archive de portabilité)
 
-** Exemple de README.TXT de l'archive de portabilité**
+**Exemple de README.TXT de l'archive de portabilité**
 
 ```
 Fournisseur Sortant :
@@ -197,7 +197,7 @@ Arborescence :
 
 ```
 
-**Exemple de README.TXT d'une archive Patient **
+**Exemple de README.TXT d'une archive Patient**
 
 ```
 Fournisseur Sortant :

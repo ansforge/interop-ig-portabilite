@@ -5,7 +5,7 @@
  
 There is no translation page available for the current page, so it has been rendered in the default language 
 
-### Etude fonctionnelle
+### Etude fonctionnelle {etude-fonctionnelle}
 
 #### Acteurs
 
@@ -173,7 +173,7 @@ PrioritaireFormat recommandé, à utiliser en priorité
 
 AlternatifFormat accepté à défaut
 
-### Spécifications techniques
+### Spécifications techniques {specs-techniques}
 
 #### Transaction Export d'Archive de Portabilité
 

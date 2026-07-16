@@ -26,7 +26,7 @@ This Code system is referenced in the definition of the following value sets:
   "name" : "PDLGCExportStatusCS",
   "title" : "Statut de l'export",
   "status" : "draft",
-  "date" : "2026-07-16T08:46:36+00:00",
+  "date" : "2026-07-16T10:52:32+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

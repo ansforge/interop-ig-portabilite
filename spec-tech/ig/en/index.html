@@ -282,10 +282,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul id="markdown-toc">
   <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
   <li><a href="#structure-du-guide-dimplémentation" id="markdown-toc-structure-du-guide-dimplémentation">Structure du guide d'implémentation</a></li>
-  <li><a href="#scénarios-et-cas-dusage" id="markdown-toc-scénarios-et-cas-dusage">Scénarios et cas d'usage</a></li>
-  <li><a href="#cadre-juridique" id="markdown-toc-cadre-juridique">Cadre juridique</a></li>
-  <li><a href="#définitions" id="markdown-toc-définitions">Définitions</a></li>
-  <li><a href="#organisation-des-processus-collaboratifs" id="markdown-toc-organisation-des-processus-collaboratifs">Organisation des processus collaboratifs</a></li>
+  <li><a href="#scénarios-et-cas-dusage-contexte-metier-cas-usage" id="markdown-toc-scénarios-et-cas-dusage-contexte-metier-cas-usage">Scénarios et cas d'usage {contexte-metier-cas-usage}</a></li>
+  <li><a href="#contexte-metier-cadre-juridique" id="markdown-toc-contexte-metier-cadre-juridique">Cadre juridique</a></li>
+  <li><a href="#contexte-metier-definitions" id="markdown-toc-contexte-metier-definitions">Définitions</a></li>
+  <li><a href="#contexte-metier-orga-processus" id="markdown-toc-contexte-metier-orga-processus">Organisation des processus collaboratifs</a></li>
   <li><a href="#dépendances" id="markdown-toc-dépendances">Dépendances</a></li>
   <li><a href="#propriété-intellectuelle" id="markdown-toc-propriété-intellectuelle">Propriété intellectuelle</a></li>
 </ul>
@@ -310,35 +310,38 @@ This guide defines the functional and technical specifications for the portabili
 
 <div style="background-color: #edf5ec ; border-left: 4px solid #4a9e5c; padding: 15px; margin: 20px 0;">
     <strong>Contexte métier</strong>
-    <ul style="margin: 10px 0 0 0;"><a name="l489">​</a>
-    Le contexte métier, défini sur la présente page, présente les <a href="#contexte-metier-cas-usage">cas d'usage</a>, les <a href="#contexte-metier-definitions">définitions</a>, le <a href="#contexte-metier-cadre-juridique">cadre juridique</a> ainsi que l'<a href="#contexte-metier-orga-processus">organisation des processus collaboratifs</a> et les <a href="#contexte-metier-acteurs">acteurs impliqués</a>.
-    </ul>
+    <p style="margin: 10px 0 0 0;padding-left: 30px;"><a name="l489">​</a>
+    Le contexte métier, défini sur la présente page, présente les <a href="#contexte-metier-cas-usage">cas d'usage</a>, les <a href="#contexte-metier-definitions">définitions</a>, le <a href="#contexte-metier-cadre-juridique">cadre juridique</a> ainsi que l'<a href="#contexte-metier-orga-processus">organisation des processus collaboratifs</a>.
+    </p>
 </div>
 
 <div style="background-color: #e8f4f8; border-left: 4px solid #0077be; padding: 15px; margin: 20px 0;">
     <strong>Spécifications</strong>
-    <ul style="margin: 10px 0 0 0;"><a name="l513">​</a>
-    La section <a href="#specifications">Spécifications</a> présente les spécifications fonctionnelles et techniques associcées à chaque processus collaboratif <br/>
-    Les <strong>spécifications fonctionnelles</strong> présentent notamment une définition du processus collaboratif et les concepts métiers utilisés.<br/>
-    Les <strong>spécifications techniques</strong> décrivent quant à elles la structure de l'archive de portabilité, les formats des documents et les métadonnées nécessaires aux échanges entre systèmes d'information.
-    </ul>
-</div>
-
-<div style="background-color: #f0edf5 ; border-left: 4px solid #7b52a8; padding: 15px; margin: 20px 0;">
-    <strong>Ressources de conformité</strong>
-    <ul style="margin: 10px 0 0 0;"><a name="l535">​</a>
-    La section <a href="#artifacts">Ressources de conformité</a> liste les différents artefacts supportant les spécifications fonctionnelles et techniques
-    </ul>
+    <p style="margin: 10px 0 0 0;padding-left: 30px;"><a name="l510">​</a>
+    La section <strong>Spécifications</strong> présente les spécifications fonctionnelles et techniques associcées à chaque processus collaboratif <br/>
+    L'<a href="specs-main-flux-export-archive-portabilite.html#etude-fonctionnelle">étude fonctionnelle</a> présente notamment les acteurs, une définition du processus collaboratif et les concepts métiers utilisés.<br/>
+    Les <a href="sspecs-main-flux-export-archive-portabilite.html#specs-techniques">spécifications techniques</a> décrivent le flux d'export d'archive de Portabilité et son positionnement par rapport à d'autres profils, ainsi que les formats des documents échangés.<br/>
+    La <a href="struct-main-structure-archive.html">structure de l'archive de Portabilité</a> décrit quant à elle l'arborescence, les conventions d'écriture, et le contenu des différents fichiers de gestion de l'archive
+    </p>
 </div>
 
 <div style="background-color: #fdf0e6; border-left: 4px solid #e07b39; padding: 15px; margin: 20px 0;">
     <strong>Annexes</strong>
-    <ul style="margin: 10px 0 0 0;"><a name="l547">​</a>
-    Cette <a href="#annexes">section</a> renvoie aux annexes relatives à la sécurité, aux téléchargements, et à toute autre documentation utile au présent volet
-    </ul>
+    <p style="margin: 10px 0 0 0;padding-left: 30px;">
+    Cette <a href="annexes.html">section</a> renvoie aux annexes relatives à la sécurité, aux téléchargements, et à toute autre documentation utile au présent volet
+    </p>
 </div>
 
-<h3 id="scénarios-et-cas-dusage">Scénarios et cas d'usage</h3>
+<div style="background-color: #f0edf5 ; border-left: 4px solid #7b52a8; padding: 15px; margin: 20px 0;">
+    <strong>Ressources de conformité</strong>
+    <p style="margin: 10px 0 0 0;padding-left: 30px;"><a name="l549">​</a>
+    La section <a href="#artifacts">Ressources de conformité</a> liste les différents artefacts supportant les spécifications fonctionnelles et techniques
+    </p>
+</div>
+
+<p><br/></p>
+
+<h3 id="scénarios-et-cas-dusage-contexte-metier-cas-usage">Scénarios et cas d'usage {contexte-metier-cas-usage}</h3>
 
 <p>Cette section décrit 3 Scenarios et plusieurs cas d'usage (non exclusifs) d'utilisation de la Portabilité extraits du <strong>Référentiel de sécurité, d'interopérabilité et d'éthique relatif à la portabilité des données des LGC</strong>.</p>
 
@@ -348,7 +351,6 @@ This guide defines the functional and technical specifications for the portabili
       <th>Scenario</th>
       <th>Périmètre</th>
       <th>Exemple</th>
-      <th>Délai attendu</th>
     </tr>
   </thead>
   <tbody>
@@ -356,24 +358,21 @@ This guide defines the functional and technical specifications for the portabili
       <td>Export massif</td>
       <td>Intégralité de la patientèle</td>
       <td>Changement de LGC, départ à la retraite,…</td>
-      <td>≤ 30 jours</td>
     </tr>
     <tr>
       <td>Export ciblé</td>
       <td>Sous-ensemble de la patientèle</td>
       <td>Départ d'un praticien, réquisition judiciaire ciblée,…</td>
-      <td>≤ 30 jours</td>
     </tr>
     <tr>
       <td>Export unitaire</td>
       <td>Dossier d'un patient</td>
       <td>Droit du patient, transfert à un confrère,…</td>
-      <td>Immédiat ou sans délai indu</td>
     </tr>
   </tbody>
 </table>
 
-<h4 id="scenario-1--export-massif">Scenario 1 : Export massif</h4>
+<h4 id="scénario-1--export-massif">Scénario 1 : Export massif</h4>
 
 <p>Dans ce contexte, l'intégralité de la patientèle est transférée d'un fournisseur sortant vers un fournisseur destinataire.</p>
 
@@ -385,7 +384,7 @@ This guide defines the functional and technical specifications for the portabili
 
 <p><strong>Cas d'usage 1.4 - Export d'archivage</strong> : un professionnel ou une structure cesse l'utilisation d'un LGC sans migration immédiate vers un autre logiciel. Les données sont exportées afin d'assurer leur conservation et leur disponibilité pour répondre aux obligations réglementaires ou aux besoins ultérieurs de continuité des soins.</p>
 
-<h4 id="scenario-2--export-ciblé">Scenario 2 : Export ciblé</h4>
+<h4 id="scénario-2--export-ciblé">Scénario 2 : Export ciblé</h4>
 
 <p>Dans ce contexte, une sélection de la patientièle est transférée d'un fournisseur sortant vers un fournisseur destinataire. La sélection peut correspondre à un filtre par professionnel de santé ou par période.</p>
 
@@ -397,7 +396,7 @@ This guide defines the functional and technical specifications for the portabili
 
 <p><strong>Cas d'usage 2.4 - Réquisition judiciaire ciblée</strong> : dans le cadre d'une procédure judiciaire ou d'une expertise, une autorité compétente demande la communication d'un ensemble déterminé de dossiers répondant à des critères précis (patients, période, activité, etc.). Le professionnel de santé doit pouvoir réaliser un export sélectif des données concernées, dans le respect des exigences de sécurité, de traçabilité et de confidentialité.</p>
 
-<h4 id="scenario-3--export-unitaire">Scenario 3 : Export unitaire</h4>
+<h4 id="scénario-3--export-unitaire">Scénario 3 : Export unitaire</h4>
 
 <p>Dans ce contexte, seul un dossier patient est transféré d'un fournisseur sortant vers un fournisseur destinataire.</p>
 
@@ -411,7 +410,7 @@ This guide defines the functional and technical specifications for the portabili
 
 <p><br/></p>
 
-<h3 id="cadre-juridique">Cadre juridique</h3>
+<h3 id="contexte-metier-cadre-juridique">Cadre juridique</h3>
 
 <h4 id="cadre-réglementaire">Cadre réglementaire</h4>
 
@@ -433,7 +432,7 @@ This guide defines the functional and technical specifications for the portabili
 
 <p><br/></p>
 
-<h3 id="définitions">Définitions</h3>
+<h3 id="contexte-metier-definitions">Définitions</h3>
 
 <p><strong>Portabilité des données LGC</strong> : La portabilité des données des logiciels de gestion de cabinet désigne l'obligation faite aux éditeurs de permettre l'export et le transfert des données de santé traitées dans leur logiciel, sans entrave technique, contractuelle ou tarifaire sur le périmètre pivot.</p>
 
@@ -461,7 +460,7 @@ Les données transverses peuvent être incluses ou exclues du périmètre d'expo
 
 <p><br/></p>
 
-<h3 id="organisation-des-processus-collaboratifs">Organisation des processus collaboratifs</h3>
+<h3 id="contexte-metier-orga-processus">Organisation des processus collaboratifs</h3>
 
 <p>Le domaine "Export de données de santé" comprend les différents volets permettant un échange de données de santé s'appuyant sur le profil IHE_XDM.</p>
 
@@ -470,8 +469,9 @@ Les données transverses peuvent être incluses ou exclues du périmètre d'expo
 <figcaption>Organisation des processus collaboratifs d'export de données de santé</figcaption>
 </figure>
 
-<p><br/>
-Le processus collaboratif d'<em>*export d'archive XDM via MS Santé</em> est relatif à l'échange d'un ou plusieurs documents de santé concernant un même patient entre un système initiateur et un système cible. Les documents sont transmis sous la forme d'une archive normalisée, accompagnée de leurs métadonnées, au moyen d'une messagerie sécurisée de santé (MS Santé). Ce processus fait l'objet de spécifications dédiées.</p>
+<p><br/></p>
+
+<p>Le processus collaboratif d'<strong>échanges de document de Santé via MS Santé</strong> est relatif à l'échange d'un ou plusieurs documents de santé concernant un même patient entre un système initiateur et un système cible. Les documents sont transmis sous la forme d'une archive XDM, accompagnés de leurs métadonnées, au moyen d'une messagerie sécurisée de santé (MS Santé). Ce processus fait l'objet de spécifications dédiées.</p>
 
 <p>Le périmètre du présent guide d'implémentation couvre le processus collaboratif d'<strong>export d'archive de Portabilité</strong>.</p>
 
@@ -579,7 +579,7 @@ Le processus collaboratif d'<em>*export d'archive XDM via MS Santé</em> est rel
           IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  
           Package ans.fhir.fr.pdlgc#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-07-16 08:46:00 +0000">
+  <span title="2026-07-16 10:52:00 +0000">
     2026-07-16
   </span>
 
