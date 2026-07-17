@@ -103,7 +103,11 @@ Le `MANIFEST.XML` recense notamment :
 * les statistiques générales ;
 * la liste des archives patients et transverses incluses avec leurs caractéristiques essentielles ;
 
-**Exemple de MANIFEST.XML**
+**Modèle logique**
+
+Le modèle logique associé au fichier `MANIFEST.XML` est consultable [ici](StructureDefinition-pdlgc-manifest.md)
+
+**Exemple de `MANIFEST.XML`**
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -162,10 +166,14 @@ Le contenu du README.TXT est codé en ASCII 7 bits avec le retour chariot codé 
 
 Deux niveaux de `README.TXT` coexistent dans l'archive de Portabilité :
 
-* un fichier à la racine de l'archive chapeau de portabilité. Ce document complète le MANIFEST.XML et fournit au destinataires les informations générales sur le contenu de l'archive de portabilité, les modalités d'accès aux documents et, le cas échéant, les informations utiles à leur consultation;
-* un README.TXT au niveau de chaque archive XDM Patient, imposé par le profil IHE_XDM. Il précise la structure propre à chaque archive XDM (différente de celle de l'archive de portabilité)
+* un fichier à la racine de l'archive chapeau de portabilité. Ce document complète le MANIFEST.XML et fournit aux destinataires les informations générales sur le contenu de l'archive de portabilité, les modalités d'accès aux documents et, le cas échéant, les informations utiles à leur consultation;
+* un README.TXT au niveau de chaque archive XDM Patient et de l'archive de données transverse.
 
-**Exemple de README.TXT de l'archive de portabilité**
+**Modèle logique**
+
+Le modèle logique associé au fichier `README.TXT` est consultable [ici](StructureDefinition-pdlgc-readme.md)
+
+**Exemple de `README.TXT` de l'archive de portabilité**
 
 ```
 Fournisseur Sortant :
@@ -203,47 +211,13 @@ Arborescence :
 
 ```
 
-**Exemple de README.TXT d'une archive Patient**
-
-```
-Fournisseur Sortant :
-=============
-    . IdNatStruct : 175259803546
-    . raisonSociale : Editeur Exemple de LGC
-    . Contact de Portabilité : service Portabilité
-        . email : portabilite@editeur.fr
-        . Téléphone : +33100000000
-
-Application du fournisseur sortant :
-=========================
-    . Nom : LGC example
-    . Version : 1.2
-
-Instructions :
-=============
-. Consultez les fichiers de documentation accessibles dans le répertoire DOCUMENTATION\ pour interpréter les données
-
-Arborescence :
-============
-     README.TXT
-     INDEX.HTM
-     + IHE_XDM
-        + SUBSET01
-        + README.TXT
-            METADATA.XML
-            DOC10001.XML
-            DOC10002.XML
-
-
-```
-
 #### SIGN.XML
 
-Le fichier SIGN.XML, positionné à la racine de l'archive de portabilité, contient la signature électronique de l'archive conformément au format XAdES. Il garantit l'intégrité de l'ensemble des fichiers de données LGC constituant l'archive et permet de vérifier l'identité du signataire ainsi que l'imputabilité de la production de l'archive. Les fichiers à vocation documentaire (README, documentation technique, schémas, exemples, etc.) ne sont pas couverts par la signature électronique.
+Le fichier `SIGN.XML`, positionné à la racine de l'archive de portabilité, contient la signature électronique de l'archive conformément au format XAdES. Il garantit l'intégrité de l'ensemble des fichiers de données LGC constituant l'archive et permet de vérifier l'identité du signataire ainsi que l'imputabilité de la production de l'archive. Les fichiers à vocation documentaire (README, documentation technique, schémas, exemples, etc.) ne sont pas couverts par la signature électronique.
 
 Le fichier est destiné à être traité automatiquement par le système destinataire lors de l'import de l'archive.
 
-Le SIGN.XML contient notamment :
+Le `SIGN.XML` contient notamment :
 
 * les références vers les fichiers signés ;
 * les empreintes cryptographiques des fichiers référencés ;
@@ -252,6 +226,10 @@ Le SIGN.XML contient notamment :
 * les propriétés XAdES nécessaires à la validation de la signature.
 
 Toute modification du contenu de l'archive après sa signature conduit à l'échec de la vérification de la signature électronique.
+
+**Modèle logique**
+
+Le modèle logique associé au fichier `SIGN.XML` est consultable [ici](StructureDefinition-pdlgc-signature.md)
 
 **Exemple de SIGN.XML de l'archive de portabilité**
 
@@ -325,7 +303,141 @@ Toute modification du contenu de l'archive après sa signature conduit à l'éch
 
 ```
 
-### METADATA.XML
+### Documentation d'export
+
+Le répertoire `DOCUMENTATION/`, positionné à la racine de l'archive de portabilité, regroupe l'ensemble des éléments permettant au fournisseur destinataire d'interpréter et d'intégrer les données reçues de manière autonome, sans échange préalable avec le fournisseur sortant.
+
+Cette documentation peut notamment comprendre les fichiers décrits ci-après.
+
+#### Dictionnaire de données
+
+Le dictionnaire de données décrit les données exportées dans un format propriétaire structuré, pour lesquelles il n'existe pas de spécification publique de référence permettant au fournisseur destinataire d'en déduire la structure et la sémantique. Les données exportées conformément à un volet du CI-SIS ou à un standard publié (CDA R2, FHIR, LOINC…) n'ont pas à faire l'objet d'un dictionnaire de données : le mapping de fichiers renvoie dans ce cas directement aux spécifications applicables.
+
+Pour chaque donnée relevant de son périmètre, le dictionnaire couvre a minima :
+
+* son intitulé et sa définition métier ;
+* sa cardinalité ;
+* son type ;
+* la terminologie associée s'il s'agit d'un élément codé (terminologies de référence ou dictionnaire de terminologies propriétaires);
+* les conventions retenues pour distinguer les données renseignées, les données négatives et les données non renseignées, lorsque la distinction s'applique ;
+* si la donnée relève ou non du périmètre pivot ;
+* la profondeur historique.
+
+Le format du dictionnaire de données est libre. Il doit néanmoins être lisible sans logiciel propriétaire et accompagné d'une description de sa propre structure si celle-ci n'est pas autodescriptive.
+
+#### Mapping de fichiers
+
+Le mapping de fichiers est centré sur les fichiers présents dans l'archive. Pour chaque fichier ou type de fichier produit dans l'archive, il précise :
+
+* le nom ou le schéma de nommage du fichier ;
+* le format technique (CDA R2 N1 ou N3, JSON, CSV, ICS…) ;
+* l'encodage du fichier ;
+* les données couvertes, par référence aux entrées correspondantes du dictionnaire de données s'il s'agit d'un format propriétaire ou à la version du volet CI-SIS s'il s'agit d'un format standardisé ;
+
+Pour les fichiers exportés dans un format propriétaire, le mapping précise en outre les règles d'interprétation nécessaires à leur exploitation.
+
+#### Schéma de structure
+
+Pour les données exportées dans un format propriétaire structuré, le fournisseur sortant peut fournir les schémas décrivant la structure des fichiers concernés (XSD, JSON Schema ou équivalent). Ces schémas constituent, au même titre que le dictionnaire de données, une ressource d'implémentation pour le fournisseur destinataire : ils lui permettent de comprendre l'organisation des données reçues et d'adapter son traitement en conséquence. Comme pour le dictionnaire de données, les fichiers conformes à un volet CI-SIS ou à un standard publié n'appellent pas de schéma complémentaire : le mapping de fichiers renvoie dans ce cas aux spécifications applicables.
+
+#### Jeu d'échantillons
+
+Le fournisseur sortant peut fournir, pour chaque type de document ou de fichier structuré présent dans l'archive, un exemple anonymisé illustrant la structure et le contenu attendus. Ce jeu d'échantillons facilite l'intégration par le fournisseur destinataire.
+
+#### Paramètres de configuration
+
+Lorsque certains paramètres de configuration de l'éditeur conditionnent l'interprétation, l'affichage, le traitement ou la production des données exportées, le fournisseur sortant peut fournir une description de ces paramètres.
+
+Cette description permet au fournisseur destinataire d'identifier les comportements applicatifs susceptibles d'avoir un impact sur l'exploitation des données et, le cas échéant, de reconfigurer son propre système afin de garantir une reprise fonctionnelle cohérente.
+
+Le format de cette description est libre. Elle doit être lisible sans logiciel propriétaire et permettre d'identifier sans ambiguïté les paramètres ayant une incidence sur la compréhension ou le traitement des données.
+
+### Archive XDM Patient
+
+L'archive `PATNNNNN.ZIP`contient les répertoires `IHE_XDM/` et `PDF/` ainsi que les fichiers `INDEX.HTM` et `README.TXT`.
+
+Le modèle logique associé à cette archive est consultable [ici](StructureDefinition-pdlgc-archive-patient.md)
+
+#### INDEX.HTM
+
+Le fichier `INDEX.HTM` est imposé par le profil IHE_XDM à la racine d'une archive XDM. Il renferme des informations éditoriales et est conforme aux spécifications XHTML et [Echanges de Documents de santé](https://esante.gouv.fr/annexe-sources-des-donnees-personnes-et-structures). Il contient :
+
+* l'identification obligatoire du fournisseur sortant ayant créé le media : StructIdNat (identifiant de stucture de santé) et StructNom (nom de la structure) ;
+* l'avertissement optionnel de cette institution concernant la sécurité et la confidentialité;
+* un lien vers le fichier README.TXT.
+
+**Modèle logique**
+
+Le modèle logique associé au fichier INDEX.HTM est consultable [ici](StructureDefinition-pdlgc-index.md)
+
+**Exemple de fichier INDEX.HTM** :
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    Emetteur : LGC Exemple (3859645252)
+    Voir le fichier <a href="README.TXT">ReadMe</a>
+</html>
+
+```
+
+#### README.TXT
+
+Ce `README.TXT` suit la même trame que le `README.TXT` de l'archive de portabilité et les archives Patient. Voir section [README.TXT de l'archive de portabilité](struct-main-structure-archive.md#readme). Ce fichier est imposé par le profil IHE_XDM et précise la structure propre à chaque archive XDM (différente de l'archive de portabilité).
+
+**Modèle logique**
+
+Le modèle logique associé au fichier README.TXT est consultable [ici](StructureDefinition-pdlgc-readme.md)
+
+**Exemple de README.TXT d'une archive Patient**
+
+```
+Fournisseur Sortant :
+=============
+    . IdNatStruct : 175259803546
+    . raisonSociale : Editeur Exemple de LGC
+    . Contact de Portabilité : service Portabilité
+        . email : portabilite@editeur.fr
+        . Téléphone : +33100000000
+
+Application du fournisseur sortant :
+=========================
+    . Nom : LGC example
+    . Version : 1.2
+
+Instructions :
+=============
+. Consultez les fichiers de documentation accessibles dans le répertoire DOCUMENTATION\ pour interpréter les données
+
+Arborescence :
+============
+     README.TXT
+     INDEX.HTM
+     + IHE_XDM
+        + SUBSET01
+        + README.TXT
+            METADATA.XML
+            DOC10001.XML
+            DOC10002.XML
+
+
+```
+
+#### Répertoire IHE_XDM/
+
+Ce répertoire `IHE_XDM` contient un sous-répertoire `SUBSET01 contenant l'ensemble des documents transmis :
+
+* le ou les documents de données administratives et médicales du patient ;
+* le document METADATA.XML obligatoire, contenant les métadonnées XDS, représentations logiques du lot de documents.
+
+#### Répertoire PDF/
+
+Le répertoire `PDF/`, positionné à la racine de l'archive XDM, constitue une extension au profil IHE_XDM. Il regroupe une version PDF des documents structurés contenus dans le répertoire `IHE_XDM/` destinée exclusivement à la consultation humaine. Ces fichiers ne sont pas destinés à être exploités par un système d'information et ne se substituent en aucun cas aux documents structurés, qui demeurent la source de référence pour les traitements automatisés.
+
+Le nommage des fichiers PDF doit pouvoir permettre d'établir sans ambiguïté la correspondance avec le document structuré auquel ils se rapportent.
+
+#### METADATA.XML
 
 Conformément au profil IHE XDM, chaque archive XDM Patient contient, dans son sous-répertoire `SUBSET01`, un fichier `METADATA.XML` structuré selon le modèle de métadonnées XDS-like (lot de soumission, fiches et associations). Certaines contraintes sont appliquées à ce fichier pour s'adapter au contexte de portabilité LGC.
 
@@ -339,23 +451,15 @@ Le modèle logique associé au fichier METADATA.XML est consultable [ici](Struct
 
 De nombreux exemples de fichiers METADATA sont accessibles sur le repository GitHub ANS [interop-exemples-xdm](https://github.com/ansforge/interop-exemples-xdm).
 
-### INDEX.HTM
+### Archive Transverse
 
-Le fichier INDEX.HTM est imposé par le profil IHE_XDM à la racine d'une archive XDM. Il renferme des informations éditoriales et est conforme aux spécifications XHTML et [Echanges de Documents de santé](https://esante.gouv.fr/annexe-sources-des-donnees-personnes-et-structures). Il contient :
+L'archive `TRANSVERSE.ZIP` est dédiée aux données transverses associées au cabinet ou au praticien, et ne relevant pas d'un dossier patient individuel.
 
-* l'identification obligatoire du fournisseur sortant ayant créé le media : StructIdNat (identifiant de stucture de santé) et StructNom (nom de la structure) ;
-* l'avertissement optionnel de cette institution concernant la sécurité et la confidentialité;
-* un lien vers le fichier README.TXT.
+#### README.TXT de l'archive TRANSVERSE.ZIP
 
-**Exemple de fichier INDEX.HTM** :
+Ce `README.TXT` suit la même trame que le `README.TXT` de l'archive de portabilité et les archives Patient. Voir section [README.TXT de l'archive de portabilité](struct-main-structure-archive.md#readme)
 
-```
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html>
-    Emetteur : LGC Exemple (3859645252)
-    Voir le fichier <a href="README.TXT">ReadMe</a>
-</html>
+#### Sous-répertoire TRANSVERSE/
 
-```
+Ce sous-répertoire regroupe les données propres au cabinet ou au praticien exporté : agenda, données de gestion, traces, logs d'activité,… La liste des fichiers effectivement présents dépend du périmètre de l'export (se référer au **Référentiel de sécurité, d'interopérabilité et d'éthique relatif à la portabilité des données des LGC**) et des données disponibles dans le logiciel source.
 
