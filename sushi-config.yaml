@@ -109,7 +109,7 @@ groups:
       - StructureDefinition/Identifiant   
   LogicalModelArchivePortabilite:
     name:  Modèle logique structure Archive de portabilité
-    description: Modèles logiques associés aux différents composant d'une archive de portabilité
+    description: Modèles logiques associés aux différents fichiers et répertoires structurant une archive de portabilité
     resources:
       - StructureDefinition/pdlgc-archive-portabilite 
       - StructureDefinition/pdlgc-manifest

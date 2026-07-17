@@ -92,7 +92,6 @@ Le présent guide d'implémentation traduit en spécifications fonctionnelles et
 
 {% include contexte-metier-orga-processus.md %}
 
-
 <br>
 
 ### Dépendances
