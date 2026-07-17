@@ -228,9 +228,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul id="markdown-toc">
   <li><a href="#arborescence-globale" id="markdown-toc-arborescence-globale">Arborescence globale</a></li>
   <li><a href="#conventions-décritures-des-répertoires-et-des-fichiers" id="markdown-toc-conventions-décritures-des-répertoires-et-des-fichiers">Conventions d'écritures des répertoires et des fichiers</a></li>
-  <li><a href="#manifestxml" id="markdown-toc-manifestxml">MANIFEST.XML</a></li>
-  <li><a href="#readmetxt" id="markdown-toc-readmetxt">README.TXT</a></li>
-  <li><a href="#signxml" id="markdown-toc-signxml">SIGN.XML</a></li>
+  <li><a href="#fichiers-de-gestion-de-larchive-de-portabilité-manifest-readme-signature" id="markdown-toc-fichiers-de-gestion-de-larchive-de-portabilité-manifest-readme-signature">Fichiers de gestion de l'archive de portabilité (Manifest, readme, signature)</a></li>
   <li><a href="#metadataxml" id="markdown-toc-metadataxml">METADATA.XML</a></li>
   <li><a href="#indexhtm" id="markdown-toc-indexhtm">INDEX.HTM</a></li>
 </ul>
@@ -333,7 +331,9 @@ d'origine. Par exemple, <code class="language-plaintext highlighter-rouge">CR_SE
 
 <p><br /></p>
 
-<h3 id="manifestxml">MANIFEST.XML</h3>
+<h3 id="fichiers-de-gestion-de-larchive-de-portabilité-manifest-readme-signature">Fichiers de gestion de l'archive de portabilité (Manifest, readme, signature)</h3>
+
+<h4 id="manifestxml">MANIFEST.XML</h4>
 
 <p>Le fichier <code class="language-plaintext highlighter-rouge">MANIFEST.XML</code>, positionné à la racine de l'archive de portabilité, fournit une vue d'ensemble synthétique et exploitable par traitement automatisé du contenu global de l'export. Il complète le <code class="language-plaintext highlighter-rouge">README.TXT</code> de niveau chapeau, destiné à la lecture humaine. Il porte exclusivement sur le pilotage de la collection d'archives. Le détail des fichiers transportés est quant à lui décrit dans le fichier <code class="language-plaintext highlighter-rouge">METADATA.XML</code> de chaque lot de soumission.</p>
 
@@ -390,7 +390,7 @@ d'origine. Par exemple, <code class="language-plaintext highlighter-rouge">CR_SE
 
 <p><br /></p>
 
-<h3 id="readmetxt">README.TXT</h3>
+<h4 id="readmetxt">README.TXT</h4>
 
 <p>Le fichier README.TXT est indépendant du contenu clinique de l'archive. Il contient des informations éditoriales dont le caractère obligatoire relève du fournisseur sortant, conformément au volume 2b du cadre technique ITI :</p>
 <ul>
@@ -479,7 +479,7 @@ Arborescence :
 
 <p><br /></p>
 
-<h3 id="signxml">SIGN.XML</h3>
+<h4 id="signxml">SIGN.XML</h4>
 
 <p>Le fichier SIGN.XML, positionné à la racine de l'archive de portabilité, contient la signature électronique de l'archive conformément au format XAdES. Il garantit l'intégrité de l'ensemble des fichiers de données LGC constituant l'archive et permet de vérifier l'identité du signataire ainsi que l'imputabilité de la production de l'archive. Les fichiers à vocation documentaire (README, documentation technique, schémas, exemples, etc.) ne sont pas couverts par la signature électronique.</p>
 
@@ -572,6 +572,12 @@ Arborescence :
 
 <p>Conformément au profil IHE XDM, chaque archive XDM Patient contient, dans son sous-répertoire <code class="language-plaintext highlighter-rouge">SUBSET01</code>, un fichier <code class="language-plaintext highlighter-rouge">METADATA.XML</code> structuré selon le modèle de métadonnées XDS-like (lot de soumission, fiches et associations). Certaines contraintes sont appliquées à ce fichier pour s'adapter au contexte de portabilité LGC.</p>
 
+<p>La construction de ce fichier est détaillée dans les spécifications <a href="https://esante.gouv.fr/volet-echange-de-documents-de-sante">Echanges des documents de Santé</a>.</p>
+
+<p><strong>Modèle logique</strong></p>
+
+<p>Le modèle logique associé au fichier METADATA.XML est consultable <a href="StructureDefinition-pdlgc-metadata.html">ici</a></p>
+
 <p><strong>Exemple de METADATA.XML d'une archive XDM</strong></p>
 
 <p>De nombreux exemples de fichiers METADATA sont accessibles sur le repository GitHub ANS <a href="https://github.com/ansforge/interop-exemples-xdm">interop-exemples-xdm</a>.</p>
@@ -646,7 +652,7 @@ Arborescence :
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.pdlgc#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-07-17 08:00:00 +0000">
+  <span title="2026-07-17 11:25:00 +0000">
     2026-07-17
   </span>
 

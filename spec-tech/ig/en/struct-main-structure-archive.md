@@ -91,7 +91,9 @@ Le nom des répertoires et sous-archives ZIP doit respecter le format suivant :
 * `TRANSVERSE.ZIP` : contient les données transverses (logs, comptabilité, agenda,…) ;
 * `PATNNNNN.ZIP` : contient les données d'un patient et est conforme au profil IHE_XDM, ou "NNNNN" est incrémenté à partir de 00001. Exemple : `PAT00183.ZIP`.
 
-### MANIFEST.XML
+### Fichiers de gestion de l'archive de portabilité (Manifest, readme, signature)
+
+#### MANIFEST.XML
 
 Le fichier `MANIFEST.XML`, positionné à la racine de l'archive de portabilité, fournit une vue d'ensemble synthétique et exploitable par traitement automatisé du contenu global de l'export. Il complète le `README.TXT` de niveau chapeau, destiné à la lecture humaine. Il porte exclusivement sur le pilotage de la collection d'archives. Le détail des fichiers transportés est quant à lui décrit dans le fichier `METADATA.XML` de chaque lot de soumission.
 
@@ -147,7 +149,7 @@ Le `MANIFEST.XML` recense notamment :
 
 ```
 
-### README.TXT
+#### README.TXT
 
 Le fichier README.TXT est indépendant du contenu clinique de l'archive. Il contient des informations éditoriales dont le caractère obligatoire relève du fournisseur sortant, conformément au volume 2b du cadre technique ITI :
 
@@ -235,7 +237,7 @@ Arborescence :
 
 ```
 
-### SIGN.XML
+#### SIGN.XML
 
 Le fichier SIGN.XML, positionné à la racine de l'archive de portabilité, contient la signature électronique de l'archive conformément au format XAdES. Il garantit l'intégrité de l'ensemble des fichiers de données LGC constituant l'archive et permet de vérifier l'identité du signataire ainsi que l'imputabilité de la production de l'archive. Les fichiers à vocation documentaire (README, documentation technique, schémas, exemples, etc.) ne sont pas couverts par la signature électronique.
 
@@ -326,6 +328,12 @@ Toute modification du contenu de l'archive après sa signature conduit à l'éch
 ### METADATA.XML
 
 Conformément au profil IHE XDM, chaque archive XDM Patient contient, dans son sous-répertoire `SUBSET01`, un fichier `METADATA.XML` structuré selon le modèle de métadonnées XDS-like (lot de soumission, fiches et associations). Certaines contraintes sont appliquées à ce fichier pour s'adapter au contexte de portabilité LGC.
+
+La construction de ce fichier est détaillée dans les spécifications [Echanges des documents de Santé](https://esante.gouv.fr/volet-echange-de-documents-de-sante).
+
+**Modèle logique**
+
+Le modèle logique associé au fichier METADATA.XML est consultable [ici](StructureDefinition-pdlgc-metadata.md)
 
 **Exemple de METADATA.XML d'une archive XDM**
 

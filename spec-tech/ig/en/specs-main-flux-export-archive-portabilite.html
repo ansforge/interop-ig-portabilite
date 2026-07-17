@@ -723,10 +723,10 @@ Elle est déclenchée par le demandeur (Patient ou Professionnel de Santé) qui 
 
 <p><strong>Une archive chapeau de Portabilite</strong></p>
 
-<p>Contrairement au volet EDS, qui traite le dossier d'un patient unique dans un fichier ZIP unique, la portabilité LGC nécessite de transporter en une seule opération le dossier de plusieurs patients. Le présent volet définit à cet effet une archive chapeau de Portabilité, hors profil XDM, qui encapsule une collection d'archives autonomes :</p>
+<p>Contrairement au volet Echange de Documents de Santé, qui traite le dossier d'un patient unique dans un fichier ZIP unique, la portabilité LGC nécessite de transporter en une seule opération le dossier de plusieurs patients. Le présent volet définit à cet effet une archive chapeau de Portabilité, hors profil XDM, qui encapsule une collection d'archives :</p>
 <ul>
-  <li>une archive XDM par patient exporté (<code class="language-plaintext highlighter-rouge">PATnnn</code>), conforme au profil IHE XDM et intégrable isolément par le système destinataire sans dépendance aux autres archives de la collection ;</li>
-  <li>une archive de données transverses (<code class="language-plaintext highlighter-rouge">TRANSV</code>), construite sur le modèle XDM qui regroupe les données ne relevant pas d'un dossier patient individuel (agenda, traces d'activité, données de gestion,…).</li>
+  <li>une archive XDM par patient exporté, conforme au profil IHE XDM et intégrable isolément par le système destinataire sans dépendance aux autres archives de la collection ;</li>
+  <li>une archive de données transverses, regroupant les données ne relevant pas d'un dossier patient individuel (agenda, traces d'activité, données de gestion,…).</li>
 </ul>
 
 <p>L'archive chapeau porte à sa racine un <code class="language-plaintext highlighter-rouge">MANIFEST.XML</code>, distinct des <code class="language-plaintext highlighter-rouge">METADATA.XML</code> présents dans chaque archive XDM patient. Le <code class="language-plaintext highlighter-rouge">MANIFEST.XML</code> décrit la collection dans son ensemble (nombre de dossiers, volumétrie, intégrité globale) et constitue le point d'entrée pour le traitement automatisé de l'export par le système destinataire.</p>
@@ -767,13 +767,13 @@ Elle est déclenchée par le demandeur (Patient ou Professionnel de Santé) qui 
       <td><strong>Structure de l'archive</strong></td>
       <td><code class="language-plaintext highlighter-rouge">INDEX.HTM</code> + <code class="language-plaintext highlighter-rouge">README.TXT</code>+ répertoire <code class="language-plaintext highlighter-rouge">IHE_XDM/</code>contenant 1 à n <code class="language-plaintext highlighter-rouge">SUBSETnn/</code>.<br/> Chaque répertoire <code class="language-plaintext highlighter-rouge">SUBSETnn/</code> stocke 1 <code class="language-plaintext highlighter-rouge">METADATA.XML</code> + des documents</td>
       <td>Conforme IHE_XDM.<br/>Encapsulation obligatoire de la structure XDM dans une archive <code class="language-plaintext highlighter-rouge">IHE_XDM.ZIP</code>.<br/>Limité à un seul <code class="language-plaintext highlighter-rouge">SUBSET01/</code></td>
-      <td>Archive chapeau <code class="language-plaintext highlighter-rouge">Nom à déterminer.ZIP</code> (hors profil IHE_XDM) encapsulant 1 <code class="language-plaintext highlighter-rouge">MANIFEST.XML</code>, des archives XDM Patient autonomes (<code class="language-plaintext highlighter-rouge">PATnnn</code>) et une archive de donnée transverse</td>
+      <td>Archive chapeau <code class="language-plaintext highlighter-rouge">PAAAAAMMJJThhmmss.ZIP</code> (hors profil IHE_XDM) encapsulant 1 <code class="language-plaintext highlighter-rouge">MANIFEST.XML</code>, 1 <code class="language-plaintext highlighter-rouge">README.TXT</code>, des archives XDM Patient, une archive de donnée transverse et un répertoire de documentation</td>
     </tr>
     <tr>
       <td><strong>Fichier de contrôle global</strong></td>
       <td>Non prévu</td>
       <td>Non prévu</td>
-      <td><code class="language-plaintext highlighter-rouge">MANIFEST.XML</code> à la racine de <code class="language-plaintext highlighter-rouge">NOM à préciser.ZIP</code> (synthèse de la collection)</td>
+      <td><code class="language-plaintext highlighter-rouge">MANIFEST.XML</code> à la racine de l'archive de Portabilité</td>
     </tr>
     <tr>
       <td><strong>Métadonnées documentaires</strong></td>
@@ -785,7 +785,7 @@ Elle est déclenchée par le demandeur (Patient ou Professionnel de Santé) qui 
       <td><strong>Données transverses</strong></td>
       <td>Autorisées mais non couvertes par le profil</td>
       <td>Non prévu</td>
-      <td>Archive <code class="language-plaintext highlighter-rouge">STRUCT</code> (agenda, traces, gestion,…) intégrée dans l'archive de portabilité.<br/> Construite sur le modèle IHE_XDM</td>
+      <td>Archive <code class="language-plaintext highlighter-rouge">TRANSVERSE</code> (agenda, traces, gestion,…) intégrée dans l'archive de portabilité.<br/> Construite sur le modèle IHE_XDM</td>
     </tr>
     <tr>
       <td><strong>Mode de transport</strong></td>
@@ -868,7 +868,7 @@ Elle est déclenchée par le demandeur (Patient ou Professionnel de Santé) qui 
           IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  
           Package ans.fhir.fr.pdlgc#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-07-17 08:00:00 +0000">
+  <span title="2026-07-17 11:25:00 +0000">
     2026-07-17
   </span>
 

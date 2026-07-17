@@ -164,10 +164,10 @@ Le présent volet s'inscrit dans la continuité des travaux du volet Echanges de
 
 **Une archive chapeau de Portabilite**
 
-Contrairement au volet EDS, qui traite le dossier d'un patient unique dans un fichier ZIP unique, la portabilité LGC nécessite de transporter en une seule opération le dossier de plusieurs patients. Le présent volet définit à cet effet une archive chapeau de Portabilité, hors profil XDM, qui encapsule une collection d'archives autonomes :
+Contrairement au volet Echange de Documents de Santé, qui traite le dossier d'un patient unique dans un fichier ZIP unique, la portabilité LGC nécessite de transporter en une seule opération le dossier de plusieurs patients. Le présent volet définit à cet effet une archive chapeau de Portabilité, hors profil XDM, qui encapsule une collection d'archives :
 
-* une archive XDM par patient exporté (`PATnnn`), conforme au profil IHE XDM et intégrable isolément par le système destinataire sans dépendance aux autres archives de la collection ;
-* une archive de données transverses (`TRANSV`), construite sur le modèle XDM qui regroupe les données ne relevant pas d'un dossier patient individuel (agenda, traces d'activité, données de gestion,…).
+* une archive XDM par patient exporté, conforme au profil IHE XDM et intégrable isolément par le système destinataire sans dépendance aux autres archives de la collection ;
+* une archive de données transverses, regroupant les données ne relevant pas d'un dossier patient individuel (agenda, traces d'activité, données de gestion,…).
 
 L'archive chapeau porte à sa racine un `MANIFEST.XML`, distinct des `METADATA.XML` présents dans chaque archive XDM patient. Le `MANIFEST.XML` décrit la collection dans son ensemble (nombre de dossiers, volumétrie, intégrité globale) et constitue le point d'entrée pour le traitement automatisé de l'export par le système destinataire.
 
@@ -187,10 +187,10 @@ Le choix du mode de transport ne modifie pas la structure de l'archive chapeau d
 | | | | |
 | :--- | :--- | :--- | :--- |
 | **Périmètre patient** | 1 à n patient(s) par archive ZIP.1 unique patient par lot de soumission | 1 patient par archive ZIP | Collection multi-patients (1 archive XDM ZIP par patient) + données transverses (archive ZIP dédiée) |
-| **Structure de l'archive** | `INDEX.HTM`+`README.TXT`+ répertoire`IHE_XDM/`contenant 1 à n`SUBSETnn/`.Chaque répertoire`SUBSETnn/`stocke 1`METADATA.XML`+ des documents | Conforme IHE_XDM.Encapsulation obligatoire de la structure XDM dans une archive`IHE_XDM.ZIP`.Limité à un seul`SUBSET01/` | Archive chapeau`Nom à déterminer.ZIP`(hors profil IHE_XDM) encapsulant 1`MANIFEST.XML`, des archives XDM Patient autonomes (`PATnnn`) et une archive de donnée transverse |
-| **Fichier de contrôle global** | Non prévu | Non prévu | `MANIFEST.XML`à la racine de`NOM à préciser.ZIP`(synthèse de la collection) |
+| **Structure de l'archive** | `INDEX.HTM`+`README.TXT`+ répertoire`IHE_XDM/`contenant 1 à n`SUBSETnn/`.Chaque répertoire`SUBSETnn/`stocke 1`METADATA.XML`+ des documents | Conforme IHE_XDM.Encapsulation obligatoire de la structure XDM dans une archive`IHE_XDM.ZIP`.Limité à un seul`SUBSET01/` | Archive chapeau`PAAAAAMMJJThhmmss.ZIP`(hors profil IHE_XDM) encapsulant 1`MANIFEST.XML`, 1`README.TXT`, des archives XDM Patient, une archive de donnée transverse et un répertoire de documentation |
+| **Fichier de contrôle global** | Non prévu | Non prévu | `MANIFEST.XML`à la racine de l'archive de Portabilité |
 | **Métadonnées documentaires** | `METADATA.XML`par`SUBSET` | `METADATA.XML`par`SUBSET` | `METADATA.XML`par`SUBSET` |
-| **Données transverses** | Autorisées mais non couvertes par le profil | Non prévu | Archive`STRUCT`(agenda, traces, gestion,…) intégrée dans l'archive de portabilité.Construite sur le modèle IHE_XDM |
+| **Données transverses** | Autorisées mais non couvertes par le profil | Non prévu | Archive`TRANSVERSE`(agenda, traces, gestion,…) intégrée dans l'archive de portabilité.Construite sur le modèle IHE_XDM |
 | **Mode de transport** | CD-R, USB, ZIP par messagerie | ZIP par messagerie sécurisée de santé (MSSanté) uniquement | Non contraint (téléchargement sécurisé, plateforme HDS, support physique chiffré, email,…) |
 | **Acteur initiateur** | Portable Media Creator | Portable Media Creator | Fournisseur sortant |
 | **Acteur destinataire** | Portable Media Importer | Portable Media Importer | Fournisseur destinataire ou personne physique dans le cas d'une consultation directe (professionnel de santé, patient,…) |

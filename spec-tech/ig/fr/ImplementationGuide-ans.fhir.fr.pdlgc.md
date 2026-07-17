@@ -14,7 +14,7 @@
   "name" : "PDLGC",
   "title" : "Portabilité des Données LGC",
   "status" : "draft",
-  "date" : "2026-07-17T08:00:04+00:00",
+  "date" : "2026-07-17T11:25:46+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -877,7 +877,7 @@
     {
       "id" : "LogicalModelArchivePortabilite",
       "name" : "Modèle logique structure Archive de portabilité",
-      "description" : "Modèles logiques associés aux différents composant d'une archive de portabilité"
+      "description" : "Modèles logiques associés aux différents fichiers et répertoires structurant une archive de portabilité"
     }],
     "resource" : [{
       "extension" : [{
