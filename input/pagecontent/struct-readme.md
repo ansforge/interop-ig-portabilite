@@ -8,10 +8,14 @@ documents de santé enregistrés avec leur feuille de style dans un même réper
 Le contenu du README.TXT est codé en ASCII 7 bits avec le retour chariot codé en CRLF.
 
 Deux niveaux de `README.TXT` coexistent dans l'archive de Portabilité : 
-- un fichier à la racine de l'archive chapeau de portabilité. Ce document complète le MANIFEST.XML et fournit au destinataires les informations générales sur le contenu de l'archive de portabilité, les modalités d'accès aux documents et, le cas échéant, les informations utiles à leur consultation;
-- un README.TXT au niveau de chaque archive XDM Patient, imposé par le profil IHE_XDM. Il précise la structure propre à chaque archive XDM (différente de celle de l'archive de portabilité)
+- un fichier à la racine de l'archive chapeau de portabilité. Ce document complète le MANIFEST.XML et fournit aux destinataires les informations générales sur le contenu de l'archive de portabilité, les modalités d'accès aux documents et, le cas échéant, les informations utiles à leur consultation;
+- un README.TXT au niveau de chaque archive XDM Patient et de l'archive de données transverse.
 
-**Exemple de README.TXT de l'archive de portabilité**
+**Modèle logique**
+
+Le modèle logique associé au fichier `README.TXT` est consultable <a href="StructureDefinition-pdlgc-readme.html">ici</a>
+
+**Exemple de `README.TXT` de l'archive de portabilité**
 
 ```txt
 Fournisseur Sortant :
@@ -46,38 +50,4 @@ Arborescence :
             ECH001.ZIP
         + PAT00001.ZIP
         + PAT00002.ZIP
-```
-
-
-**Exemple de README.TXT d'une archive Patient**
-
-```txt
-Fournisseur Sortant :
-=============
-    . IdNatStruct : 175259803546
-    . raisonSociale : Editeur Exemple de LGC
-    . Contact de Portabilité : service Portabilité
-        . email : portabilite@editeur.fr
-        . Téléphone : +33100000000
-
-Application du fournisseur sortant :
-=========================
-    . Nom : LGC example
-    . Version : 1.2
-
-Instructions :
-=============
-. Consultez les fichiers de documentation accessibles dans le répertoire DOCUMENTATION\ pour interpréter les données
-
-Arborescence :
-============
-     README.TXT
-     INDEX.HTM
-     + IHE_XDM
-        + SUBSET01
-        + README.TXT
-            METADATA.XML
-            DOC10001.XML
-            DOC10002.XML
-
 ```

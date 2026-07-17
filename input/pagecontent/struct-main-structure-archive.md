@@ -20,7 +20,7 @@ L'archive de portabilité retient une structure de collection d'archives afin de
 
 <br>
 
-#### README.TXT
+#### README.TXT {#readme}
 
 {% include struct-readme.md %}
 
@@ -32,15 +32,23 @@ L'archive de portabilité retient une structure de collection d'archives afin de
 
 <br>
 
-### METADATA.XML
+### Documentation d'export
 
-{% include struct-metadata.md %}
+{% include struct-documentation.md %}
 
 <br>
 
-### INDEX.HTM
+### Archive XDM Patient
 
-{% include struct-index.md %}
+{% include struct-archive-patient.md %}
+
+<br>
+
+### Archive Transverse
+
+{% include struct-archive-transverse.md %}
+
+<br>
 
 
 

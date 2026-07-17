@@ -5,7 +5,11 @@ Le `MANIFEST.XML` recense notamment :
 - les statistiques générales ;
 - la liste des archives patients et transverses incluses avec leurs caractéristiques essentielles ;
 
-**Exemple de MANIFEST.XML**
+**Modèle logique**
+
+Le modèle logique associé au fichier `MANIFEST.XML` est consultable <a href="StructureDefinition-pdlgc-manifest.html">ici</a>
+
+**Exemple de `MANIFEST.XML`**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
