@@ -1,7 +1,7 @@
 Les concepts métiers portés par ce flux sont les suivants : 
 
 
-<figure style="text-align:center;width:100%;">
+<figure style="text-align:center;width:80%;">
     {% include sf-concepts-portabilite.svg %}
     <figcaption>Diagramme des concepts contenus dans le flux "Export d'archive Portabilité" </figcaption>
 </figure>
@@ -19,4 +19,4 @@ Le tableau ci-dessous définit les différents objets :
 | Document périmètre pivot | Ensemble minimal, obligatoire et structuré de données administratives et médicales (confère [Périmètre pivot](sf-perimetre-pivot.html)). |
 | Document hors périmètre pivot | Données dont l'export est facultatif. Leur export doit toutefois être structuré et documenté, au même titre que pour les documents du périmètre pivot. |
 | PDF | Format de consultation pour les données Patient. Ces documents n'ont pas vocation à être intégrés par le destinataire si le destinataire est un système. |
-| Fichiers de gestion du media (MANIFEST.XML, README.TXT, METADATA.XML, INDEX.HTM, SIGN.XML) | Fichiers attestant de l'intégrité et l'imputabilité de des données de l'archive de Portabilité. Ces fichiers permettent également au fournisseur destinataire de comprendre et d'intégrer les données de l'archive. |
+| Fichiers de gestion (MANIFEST.XML, README.TXT, METADATA.XML, INDEX.HTM, SIGN.XML) | Fichiers attestant de l'intégrité et l'imputabilité de des données de l'archive de Portabilité. Ces fichiers permettent également au fournisseur destinataire de comprendre et d'intégrer les données de l'archive. |

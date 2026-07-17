@@ -32,14 +32,14 @@ Description: "signature XAdES de l'archive attestant de l'imputabilité et l'int
 
 // ── Périmètre de la signature ───────────────────────────────────────────────
 
-* Object 1..1 BackboneElement "Périmètre des objets couverts par la signature"
-  * Manifest 1..1 BackboneElement "Périmètre des objets couverts par la signature. Id fixé à manifest"
+* Object 1..* BackboneElement "Périmètre des objets couverts par la signature"
+  * Manifest 0..1 BackboneElement "Périmètre des objets couverts par la signature. Id fixé à manifest"
     * Id 1..1 string "Valeur fixée à 'manifest'."
     * Reference 1..* BackboneElement "Références aux objets signés. Chaque référence pointe vers un fichier constitutif du périmètre signé de l'archive de portabilité (MANIFEST.XML, archives XDM patient et archive transverse)."
       * Uri 1..1 string "URI de la référence"
       * DigestMethod 1..1 string "Algorithme de hachage de la référence. Valeur recommandée : http://www.w3.org/2001/04/xmlenc#sha256"
       * DigestValue 1..1 base64Binary "Empreinte base64 de l'objet référencé"
-  * QualifyingProperties 1..1 BackboneElement "Propriétés qualifiantes XAdES"
+  * QualifyingProperties 0..1 BackboneElement "Propriétés qualifiantes XAdES"
     // ── Propriétés signées (XAdES SignedProperties) ─────────────────────────────  
     * Target 1..1 string "Signature concernée"
     * SignedProperties 1..1 BackboneElement "Propriétés incluses dans la signature"
