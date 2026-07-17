@@ -56,32 +56,9 @@ Il est important de noter que les modalités d'exploitation de l'archive (import
 
 ##### Contraintes
 
-Les contraintes suivantes s'appliquent spécifiquement selon le type d'export, sans modifier la transaction décrite ci-dessus.
+Les modalités détaillées encadrant les opérations d'export (périmètre des données obligatoires, délais de mise à disposition, conditions de gratuité, gestion des cas particuliers,…) sont définies dans le **Référentiel de sécurité, d'interopérabilité et d'éthique relatif à la portabilité des données des LGC**, opposable par arrêté du ministre chargé de la santé.
 
-**Export unitaire**
-
-* Porte sur le dossier d'un patient individuel, dans le cadre d'un transfert à un confrère, d'une demande du patient ou d'une réquisition judiciaire ;
-* Tout document structuré doit être accompagné de son pendant PDF pour permettre une consultation humaine sans logiciel métier compatible ;
-* La mise à disposition est immédiate, sans délai de 30 jours applicable ;
-* L'export est gratuit et peut être renouvelé autant que nécessaire ;
-* Les notes personnelles, l'agenda et les logs d'accès sont exclus du périmètre, sauf cas de réquisition judiciaire ;
-* Une implémentation usuelle consiste à permettre la désélection de certains documents par le professionnel avant transmission.
-
-**Export ciblé**
-
-* Porte sur un sous-ensemble de la patientèle défini par un critère de sélection (professionnel de santé référent, période, type de données) ;
-* Le format attendu est structuré, conformément au périmètre pivot et doit être accompagné d'un format PDF pour permettre une consultation humaine sans logiciel métier compatible;
-* Un délai de mise à disposition de 30 jours ainsi qu'un mécanisme d'accusé de réception sous 48 heures s'appliquent, conformément au référentiel ;
-* L'export est gratuit la première fois pour le périmètre concerné.
-
-**Export massif**
-
-* Porte sur l'intégralité de la patientèle, dans le cadre d'un changement d'éditeur ou d'un départ à la retraite ;
-* Le format attendu combine documents PDF « simples » et données structurées ;
-* Le délai de mise à disposition de 30 jours et le mécanisme d'accusé de réception sous 48 heures s'appliquent ;
-* Pour les structures de grande taille, un plan de migration phasé peut être proposé sous 7 jours dès lors que la première livraison (données actives de moins de deux ans) respecte le délai initial de 30 jours ;
-* L'éditeur sortant maintient l'accès à la fonctionnalité d'export pendant 90 jours à compter de la fin du contrat, période durant laquelle l'export du périmètre pivot demeure gratuit ;
-* L'export inclut les notes personnelles, l'agenda et les logs d'accès, sauf disposition contraire convenue avec le professionnel.
+Le présent guide d'implémentation ne reprend pas ces contraintes et renvoie au référentiel pour toute question relative aux obligations de résultat pesant sur le fournisseur sortant et le fournisseur destinataire. Les spécifications du présent guide portent exclusivement sur les aspects techniques d'interopérabilité : structure de l'archive de portabilité, formats d'interchange, métadonnées et mécanismes d'intégrité.
 
 #### Concepts métiers utilisés dans le flux d'export d'archive de Portabilité
 
@@ -101,7 +78,7 @@ Le tableau ci-dessous définit les différents objets :
 | Document périmètre pivot | Ensemble minimal, obligatoire et structuré de données administratives et médicales (confère[Périmètre pivot](sf-perimetre-pivot.md)). |
 | Document hors périmètre pivot | Données dont l'export est facultatif. Leur export doit toutefois être structuré et documenté, au même titre que pour les documents du périmètre pivot. |
 | PDF | Format de consultation pour les données Patient. Ces documents n'ont pas vocation à être intégrés par le destinataire si le destinataire est un système. |
-| Fichiers de gestion du media (MANIFEST.XML, README.TXT, METADATA.XML, INDEX.HTM, SIGN.XML) | Fichiers attestant de l'intégrité et l'imputabilité de des données de l'archive de Portabilité. Ces fichiers permettent également au fournisseur destinataire de comprendre et d'intégrer les données de l'archive. |
+| Fichiers de gestion (MANIFEST.XML, README.TXT, METADATA.XML, INDEX.HTM, SIGN.XML) | Fichiers attestant de l'intégrité et l'imputabilité de des données de l'archive de Portabilité. Ces fichiers permettent également au fournisseur destinataire de comprendre et d'intégrer les données de l'archive. |
 
 ### Spécifications techniques
 

@@ -28,7 +28,7 @@ Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base)
 
 ** Résumé **
 
-Obligatoire : 0 élément(55 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 0 élément(53 éléments obligatoire(s) imbriqué(s))
 
  **Vue différentielle** 
 
@@ -42,7 +42,7 @@ Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base)
 
 ** Résumé **
 
-Obligatoire : 0 élément(55 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 0 élément(53 éléments obligatoire(s) imbriqué(s))
 
  
 
@@ -61,7 +61,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-signature
   "name" : "PDLGCSignature",
   "title" : "PDLGC Signature",
   "status" : "draft",
-  "date" : "2026-07-16T21:31:30+00:00",
+  "date" : "2026-07-17T08:00:04+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -262,7 +262,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-signature
       "short" : "Périmètre des objets couverts par la signature",
       "definition" : "Périmètre des objets couverts par la signature",
       "min" : 1,
-      "max" : "1",
+      "max" : "*",
       "type" : [{
         "code" : "BackboneElement"
       }]
@@ -272,7 +272,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-signature
       "path" : "pdlgc-signature.Object.Manifest",
       "short" : "Périmètre des objets couverts par la signature. Id fixé à manifest",
       "definition" : "Périmètre des objets couverts par la signature. Id fixé à manifest",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "BackboneElement"
@@ -338,7 +338,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-signature
       "path" : "pdlgc-signature.Object.QualifyingProperties",
       "short" : "Propriétés qualifiantes XAdES",
       "definition" : "Propriétés qualifiantes XAdES",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "BackboneElement"

@@ -101,8 +101,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Nom distinctif de l'autorité de certification","Nom distinctif de l'autorité de certification","","","","","","","","","",,,,,"",,,,"pdlgc-signature.keyInfo.x509Data.x509IssuerSerial.x509IssuerName",1,1,"",""
 "pdlgc-signature.keyInfo.x509Data.x509IssuerSerial.x509SerialNumber","pdlgc-signature.keyInfo.x509Data.x509IssuerSerial.x509SerialNumber","","","",1,1,"","","","string {[]} {[]}
 ","Numéro de série du certificat","Numéro de série du certificat","","","","","","","","","",,,,,"",,,,"pdlgc-signature.keyInfo.x509Data.x509IssuerSerial.x509SerialNumber",1,1,"",""
-"pdlgc-signature.Object","pdlgc-signature.Object","","","",1,1,"","","","BackboneElement {[]} {[]}
-","Périmètre des objets couverts par la signature","Périmètre des objets couverts par la signature","","","","","","","","","",,,,,"",,,,"pdlgc-signature.Object",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"pdlgc-signature.Object","pdlgc-signature.Object","","","",1,*,"","","","BackboneElement {[]} {[]}
+","Périmètre des objets couverts par la signature","Périmètre des objets couverts par la signature","","","","","","","","","",,,,,"",,,,"pdlgc-signature.Object",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "pdlgc-signature.Object.id","pdlgc-signature.Object.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
@@ -117,8 +117,8 @@ user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"pdlgc-signature.Object.Manifest","pdlgc-signature.Object.Manifest","","","",1,1,"","","","BackboneElement {[]} {[]}
-","Périmètre des objets couverts par la signature. Id fixé à manifest","Périmètre des objets couverts par la signature. Id fixé à manifest","","","","","","","","","",,,,,"",,,,"pdlgc-signature.Object.Manifest",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"pdlgc-signature.Object.Manifest","pdlgc-signature.Object.Manifest","","","",0,1,"","","","BackboneElement {[]} {[]}
+","Périmètre des objets couverts par la signature. Id fixé à manifest","Périmètre des objets couverts par la signature. Id fixé à manifest","","","","","","","","","",,,,,"",,,,"pdlgc-signature.Object.Manifest",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "pdlgc-signature.Object.Manifest.id","pdlgc-signature.Object.Manifest.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
@@ -157,8 +157,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Algorithme de hachage de la référence. Valeur recommandée : http://www.w3.org/2001/04/xmlenc#sha256","Algorithme de hachage de la référence. Valeur recommandée : http://www.w3.org/2001/04/xmlenc#sha256","","","","","","","","","",,,,,"",,,,"pdlgc-signature.Object.Manifest.Reference.DigestMethod",1,1,"",""
 "pdlgc-signature.Object.Manifest.Reference.DigestValue","pdlgc-signature.Object.Manifest.Reference.DigestValue","","","",1,1,"","","","base64Binary {[]} {[]}
 ","Empreinte base64 de l'objet référencé","Empreinte base64 de l'objet référencé","","","","","","","","","",,,,,"",,,,"pdlgc-signature.Object.Manifest.Reference.DigestValue",1,1,"",""
-"pdlgc-signature.Object.QualifyingProperties","pdlgc-signature.Object.QualifyingProperties","","","",1,1,"","","","BackboneElement {[]} {[]}
-","Propriétés qualifiantes XAdES","Propriétés qualifiantes XAdES","","","","","","","","","",,,,,"",,,,"pdlgc-signature.Object.QualifyingProperties",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"pdlgc-signature.Object.QualifyingProperties","pdlgc-signature.Object.QualifyingProperties","","","",0,1,"","","","BackboneElement {[]} {[]}
+","Propriétés qualifiantes XAdES","Propriétés qualifiantes XAdES","","","","","","","","","",,,,,"",,,,"pdlgc-signature.Object.QualifyingProperties",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "pdlgc-signature.Object.QualifyingProperties.id","pdlgc-signature.Object.QualifyingProperties.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
