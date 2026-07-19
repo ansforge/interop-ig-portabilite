@@ -1,7 +1,7 @@
-Logical: AuthorDocumentEntry
-Parent: Author
-Id: AuthorDocumentEntry
-Title: "AuthorDocumentEntry (LM)"
+Logical:  XDMAuthorDocumentEntry
+Parent: XDMAuthor
+Id: xdm-author-document-entry
+Title: "XDM AuthorDocumentEntry"
 Description: """
 Modèle logique d'un auteur d'un document
 Cette métadonnée représente les personnes physiques et/ou les systèmes (dispositifs, automates, services numériques référencés…) auteurs d’un document. 
@@ -20,7 +20,7 @@ Mapping: AuthorDocumentEntryCDA
 Title: "AuthorDocumentEntryCDA"
 Target : "http://hl7.org/v3/cda"
 Description : "Mapping CDA"
-Source: AuthorDocumentEntry
+Source: XDMAuthorDocumentEntry
 * -> "Author"
 * role -> "author/functionCode@displayName"
 * specialty -> "author/assignedAuthor/code@code"
@@ -29,7 +29,7 @@ Mapping: AuthorDocumentEntryDICOMKOS
 Title: "AuthorDocumentEntryDICOMKOS"
 Target : "https://www.dicomstandard.org/"
 Description : "Mapping DICOM KOS"
-Source: AuthorDocumentEntry
+Source: XDMAuthorDocumentEntry
 * -> "Author"
 * role -> "Cet attribut n'a pas besoin d’être alimenté par un élément du DICOM KOS"
 * specialty -> "Cette métadonnée peut ne pas être renseignée dans le cas d’un DICOM KOS.   Si elle contient une valeur, elle devra contenir le code : 'DISPOSITIF' du JDV_J01_XdsAuthorSpecialty_CISIS"

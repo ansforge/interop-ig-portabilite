@@ -1,7 +1,7 @@
-Logical: EventCode
+Logical: XDMEventCode
 Parent: Base
-Id: EventCode
-Title: "EventCode (LM)"
+Id: xdm-event-code
+Title: "XDM EventCode"
 Description: """
 Modèle logique d'un eventCode.
 Un EventCode peut contenir le code représentant : 

@@ -1,4 +1,5 @@
 Logical: SNR
+Id: snr
 Title: "SNR"
 Description: """
 Identifiant interne de l’instance de la solution ayant produit le document au format OID 

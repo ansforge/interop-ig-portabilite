@@ -1,7 +1,7 @@
-Logical: DocumentEntry
+Logical: XDMDocumentEntry
 Parent: Base
-Id: DocumentEntry
-Title: "Document Entry (LM)"
+Id: xdm-document-entry
+Title: "XDM DocumentEntry"
 Description: """
 Modèle logique  d’une fiche
 """
@@ -14,17 +14,17 @@ Modèle logique  d’une fiche
 * hash 1..1 string "Cette métadonnée contient le résultat du hachage du document déposé" 
 * size 1..1 integer "Cette métadonnée correspond à la taille du document déposé."
 * languageCode 1..1 string "Cette métadonnée représente le code de la langue dans laquelle le document est rédigé." "Pour tous les documents produits système initiateur français : 'fr-FR'" 
-* author 1..* AuthorDocumentEntry "Cette métadonnée représente les personnes physiques et/ou les systèmes (dispositifs, automates, services numériques référencés…) auteurs d’un document."
-* legalAuthenticator[x] 1..1 ActorPS or ActorPatient  or ActorSystem "Cette métadonnée représente l'acteur prenant la responsabilité du contenu médical du document" "XCN"
+* author 1..* XDMAuthorDocumentEntry "Cette métadonnée représente les personnes physiques et/ou les systèmes (dispositifs, automates, services numériques référencés…) auteurs d’un document."
+* legalAuthenticator[x] 1..1 XDMActorPS or XDMActorPatient  or XDMActorSystem "Cette métadonnée représente l'acteur prenant la responsabilité du contenu médical du document" "XCN"
 * repositoryUniqueId 1..1 oid "Cette métadonnée représente l'identifiant unique global de l'entrepôt de documents dans lequel est stocké le document"
 * serviceStartTime 1..1 dateTime "Cette métadonnée représente la date de début de l'acte de référence."
 * serviceStopTime 0..1 dateTime "Cette métadonnée correspond à la date de fin de l'acte de référence, si connue."
-* sourcePatientID 1..1 SourcePatientId "Cette métadonnée contient l'identifiant secondaire du patient dans le système d'information du producteur (IPP) ou l'INS, s'il n'y a pas d'identifiant secondaire."
-* sourcePatientInfo 1..1 SourcePatientInfo "Cette métadonnée contient les traits d'identité du patient concerné par le document, connus par le producteur du document."
+* sourcePatientID 1..1 XDMSourcePatientId "Cette métadonnée contient l'identifiant secondaire du patient dans le système d'information du producteur (IPP) ou l'INS, s'il n'y a pas d'identifiant secondaire."
+* sourcePatientInfo 1..1 XDMSourcePatientInfo "Cette métadonnée contient les traits d'identité du patient concerné par le document, connus par le producteur du document."
 * URI 1..1 uri  "Cette métadonnée n'est exploitée que par la transaction XDM 'Distribute document set on media ITI-32'"
 * title 1..1 string "Cette métadonnée représente le titre du document."
 * comments 0..1 string "Cette métadonnée contient le commentaire associé au document."
-* patientID 1..1 PatientId "Cette métadonnée représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient lorsque celui-ci est qualifié."
+* patientID 1..1 XDMPatientId "Cette métadonnée représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient lorsque celui-ci est qualifié."
 * uniqueId 1..1 Identifier "Identifiant unique affecté au document par son créateur. "
 * class 1..1 CodeableConcept "class représente la classe du document (compte rendu, imagerie médicale, traitement, certificat, etc.)." """
 class est constitué des attributs : 
@@ -51,7 +51,7 @@ class est constitué des attributs :
 * class from https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS (preferred)
 * confidentiality 1..4 CodeableConcept "Métadonnée contenant les informations définissant le niveau de confidentialité d'un document déposé dans l'entrepôt. Dans le cadre de la mise en œuvre du masquage et de la non-visibilité, ces métadonnées sont utilisées pour rendre inaccessible un document à l'utilisateur" "**Confidentiality Code**"
 * confidentiality from https://mos.esante.gouv.fr/NOS/JDV_J58-ConfidentialityCode-DMP/FHIR/JDV-J58-ConfidentialityCode-DMP (preferred)
-* eventCodeList 0..* EventCode "Cette métadonnée contient les codes, libellés et codes système représentant :  -un évènement documenté (acte, traitement, diagnostic, etc…), -une modalité d'acquisition (contexte imagerie), -une région anatomique (contexte imagerie). "
+* eventCodeList 0..* XDMEventCode "Cette métadonnée contient les codes, libellés et codes système représentant :  -un évènement documenté (acte, traitement, diagnostic, etc…), -une modalité d'acquisition (contexte imagerie), -une région anatomique (contexte imagerie). "
 * format 1..1 CodeableConcept "Métadonnée contenant les informations définissant le format du document." "**Format Code**"
 * format from https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS (preferred)
 * healthcareFacilityTypeCode 1..1 CodeableConcept "Secteur d'activité lié à la prise en charge de la personne, en lien avec le document produit. " "Healthcare Facility Type Code**"
@@ -75,7 +75,7 @@ Mapping: DocumentEntryCDA
 Title: "DocumentEntryCDA"
 Target : "http://hl7.org/v3/cda"
 Description : "Mapping CDA"
-Source: DocumentEntry
+Source: XDMDocumentEntry
 * -> "DocumentEntry"
 * availabilityStatus -> "Non applicable, cette métadonnée n'est pas soumise par le système initiateur. Le registre du système cible gère cette information et fournit sa valeur en réponse à une requête stockée."
 * class -> "code@code (classCode est déduit de typeCode selon la table de correspondance entre ces deux métadonnées référencée dans les Nomenclatures des Objets de Santé (NOS) : ASS_X04-CorrespondanceType-Classe)"

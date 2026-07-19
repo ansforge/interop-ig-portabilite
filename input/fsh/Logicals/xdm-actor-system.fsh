@@ -1,13 +1,13 @@
-Logical: ActorSystem
-Parent: ActorXDS
-Id: ActorSystem
-Title: "ActorSystem (LM)"
+Logical:  XDMActorSystem
+Parent: xdm-actor-xds
+Id: xdm-actor-system
+Title: "XDM ActorSystem"
 Description: """
 Cet attribut représente l'acteur System.
 """
 
 
-* XCN1.value[x] only IdentifiantSysteme
+* XCN1.value[x] only XDMIdentifiantSysteme
 * XCN1 ^example.label = "système avec un identifiant interne dans une structure de santé FINESS"
 * XCN1 ^example.valueString = "3750100125/88"
 * XCN2 ^short = "Nom du système"

@@ -1,7 +1,7 @@
-Logical: AuthorInstitution
+Logical: XDMAuthorInstitution
 Parent: Base
-Id: AuthorInstitution
-Title: "AuthorInstitution (LM)"
+Id: xdm-author-institution
+Title: "XDM AuthorInstitution"
 Description: """
 Cet attribut représente la structure de l’auteur. 
 Pour les documents d’expression personnelle du patient, cette métadonnée est absente, cela signifie que l’élément XML <rim:Slot name='authorInstitution'> n’est pas transmis. 
@@ -45,7 +45,7 @@ Mapping: AuthorInstitutionCDA
 Title: "AuthorInstitutionCDA"
 Target : "http://hl7.org/v3/cda"
 Description : "Mapping CDA"
-Source: AuthorInstitution
+Source: XDMAuthorInstitution
 * -> "AuthorInstitution"
 * XON1 -> "author/assignedAuthor/representedOrganization/name (Si l’élément name fait l’objet d’un nullFlavor dans l’en-tête CDA, le composant 1 de la métadonnée authorInstitution doit être vide)"
 * XON6.composant1 -> "NA"
@@ -59,7 +59,7 @@ Title: "AuthorInstitutionDICOMKOS"
 Id: KOS
 Target : "https://www.dicomstandard.org/"
 Description : "Mapping DICOM KOS"
-Source: AuthorInstitution
+Source: XDMAuthorInstitution
 * -> "AuthorInstitution"
 * XON1 -> "NA"
 * XON6.composant1 -> "NA"

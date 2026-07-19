@@ -1,7 +1,7 @@
-Logical: ActorSNR
-Parent: ActorXDS
-Id: ActorSNR
-Title: "ActorSNR (LM)"
+Logical: XDMActorSNR
+Parent: xdm-actor-xds
+Id: xdm-actor-snr
+Title: "XDM ActorSNR"
 Description: """
 Cet attribut représente l'acteur SNR.
 """
