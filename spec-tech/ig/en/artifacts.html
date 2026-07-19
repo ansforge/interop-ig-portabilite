@@ -185,7 +185,7 @@
 
             <a href="#bottom">bottom</a>
 
-          | <a href="StructureDefinition-ActorPatient.html">next &gt;</a>
+          | <a href="StructureDefinition-matricule-ins.html">next &gt;</a>
 
           </span>
 
@@ -257,9 +257,76 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-ActorPatient.html"
-                  title="StructureDefinition/ActorPatient">
-                  <span title="StructureDefinition/ActorPatient">ActorPatient (LM)
+               <a href="StructureDefinition-matricule-ins.html"
+                  title="StructureDefinition/matricule-ins">
+                  <span title="StructureDefinition/matricule-ins">MatriculeINS
+</span>
+               </a>
+            </td>
+            <td>
+<p>Matricule de l'Identité Nationale de Santé (INS). Il correspond au NIR (Numéro d’Identification au Répertoire des personnes physiques) ou au NIA (Numéro Identifiant Attente) de l’individu).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ps-id-nat.html"
+                  title="StructureDefinition/ps-id-nat">
+                  <span title="StructureDefinition/ps-id-nat">PSIdNat
+</span>
+               </a>
+            </td>
+            <td>
+<p>Identification nationale principale du professionnel propre aux SI de l’ANS et au CI-SIS. (Correspondance dans le MOS : idNat_PS)</p>
+
+<p>L’identification nationale du PS est construite selon le tableau dessous :</p>
+<ul>
+  <li>0 + N° ADELI</li>
+  <li>1 + Identifiant cabinet ADELI/identifiant interne</li>
+  <li>3 + FINESS/identifiant interne</li>
+  <li>4 + SIREN/identifiant interne</li>
+  <li>5 + SIRET/identifiant interne</li>
+  <li>6 + Identifiant cabinet RPPS/identifiant interne</li>
+  <li>8 + N° RPPS</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-snr.html" title="StructureDefinition/snr">
+                  <span title="StructureDefinition/snr">SNR
+</span>
+               </a>
+            </td>
+            <td>
+<p>Identifiant interne de l’instance de la solution ayant produit le document au format OID</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-struct-id-nat.html"
+                  title="StructureDefinition/struct-id-nat">
+                  <span title="StructureDefinition/struct-id-nat">StructIdNat
+</span>
+               </a>
+            </td>
+            <td>
+<p>Identification nationale principale d’une structure propre aux SI de l'ANS et au CI-SIS 4.</p>
+
+<p>L’identification nationale d’une structure est construite selon le tableau dessous :</p>
+<ul>
+  <li>0 + Identifiant cabinet ADELI</li>
+  <li>1 + N° FINESS 2 + N° SIREN</li>
+  <li>3 + N° SIRET</li>
+  <li>4 + N° RPPS-rang</li>
+  <li>Néant + N° technique</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-xdm-actor-patient.html"
+                  title="StructureDefinition/xdm-actor-patient">
+                  <span title="StructureDefinition/xdm-actor-patient">XDM ActorPatient
 </span>
                </a>
             </td>
@@ -269,9 +336,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-ActorPS.html"
-                  title="StructureDefinition/ActorPS">
-                  <span title="StructureDefinition/ActorPS">ActorPS (LM)
+               <a href="StructureDefinition-xdm-actor-ps.html"
+                  title="StructureDefinition/xdm-actor-ps">
+                  <span title="StructureDefinition/xdm-actor-ps">XDM ActorPS
 </span>
                </a>
             </td>
@@ -282,9 +349,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-ActorSNR.html"
-                  title="StructureDefinition/ActorSNR">
-                  <span title="StructureDefinition/ActorSNR">ActorSNR (LM)
+               <a href="StructureDefinition-xdm-actor-snr.html"
+                  title="StructureDefinition/xdm-actor-snr">
+                  <span title="StructureDefinition/xdm-actor-snr">XDM ActorSNR
 </span>
                </a>
             </td>
@@ -294,9 +361,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-ActorSystem.html"
-                  title="StructureDefinition/ActorSystem">
-                  <span title="StructureDefinition/ActorSystem">ActorSystem (LM)
+               <a href="StructureDefinition-xdm-actor-system.html"
+                  title="StructureDefinition/xdm-actor-system">
+                  <span title="StructureDefinition/xdm-actor-system">XDM ActorSystem
 </span>
                </a>
             </td>
@@ -306,9 +373,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-ActorXDS.html"
-                  title="StructureDefinition/ActorXDS">
-                  <span title="StructureDefinition/ActorXDS">ActorXDS (LM)
+               <a href="StructureDefinition-xdm-actor-xds.html"
+                  title="StructureDefinition/xdm-actor-xds">
+                  <span title="StructureDefinition/xdm-actor-xds">XDM ActorXDS
 </span>
                </a>
             </td>
@@ -320,9 +387,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-archive-xdm.html"
-                  title="StructureDefinition/archive-xdm">
-                  <span title="StructureDefinition/archive-xdm">Archive XDM (LM)
+               <a href="StructureDefinition-xdm-archive.html"
+                  title="StructureDefinition/xdm-archive">
+                  <span title="StructureDefinition/xdm-archive">XDM Archive XDM
 </span>
                </a>
             </td>
@@ -333,9 +400,9 @@ Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-association-xdm.html"
-                  title="StructureDefinition/association-xdm">
-                  <span title="StructureDefinition/association-xdm">Association XDM (LM)
+               <a href="StructureDefinition-xdm-association.html"
+                  title="StructureDefinition/xdm-association">
+                  <span title="StructureDefinition/xdm-association">XDM Association
 </span>
                </a>
             </td>
@@ -346,9 +413,9 @@ Permet de relier un SubmissionSet ou un DocumentEntry à un autre (remplacement 
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-Author.html"
-                  title="StructureDefinition/Author">
-                  <span title="StructureDefinition/Author">Author (LM)
+               <a href="StructureDefinition-xdm-author.html"
+                  title="StructureDefinition/xdm-author">
+                  <span title="StructureDefinition/xdm-author">XDM Author
 </span>
                </a>
             </td>
@@ -370,9 +437,9 @@ Permet de relier un SubmissionSet ou un DocumentEntry à un autre (remplacement 
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-AuthorDocumentEntry.html"
-                  title="StructureDefinition/AuthorDocumentEntry">
-                  <span title="StructureDefinition/AuthorDocumentEntry">AuthorDocumentEntry (LM)
+               <a href="StructureDefinition-xdm-author-document-entry.html"
+                  title="StructureDefinition/xdm-author-document-entry">
+                  <span title="StructureDefinition/xdm-author-document-entry">XDM AuthorDocumentEntry
 </span>
                </a>
             </td>
@@ -390,9 +457,9 @@ L’auteur peut être :</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-AuthorInstitution.html"
-                  title="StructureDefinition/AuthorInstitution">
-                  <span title="StructureDefinition/AuthorInstitution">AuthorInstitution (LM)
+               <a href="StructureDefinition-xdm-author-institution.html"
+                  title="StructureDefinition/xdm-author-institution">
+                  <span title="StructureDefinition/xdm-author-institution">XDM AuthorInstitution
 </span>
                </a>
             </td>
@@ -403,9 +470,9 @@ Pour les documents d’expression personnelle du patient, cette métadonnée est
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-AuthorSubmissionSet.html"
-                  title="StructureDefinition/AuthorSubmissionSet">
-                  <span title="StructureDefinition/AuthorSubmissionSet">AuthorSubmissionSet (LM)
+               <a href="StructureDefinition-xdm-author-submission-set.html"
+                  title="StructureDefinition/xdm-author-submission-set">
+                  <span title="StructureDefinition/xdm-author-submission-set">XDM AuthorSubmissionSet
 </span>
                </a>
             </td>
@@ -417,9 +484,9 @@ Constituée des sous-attributs <strong>authorInstitution</strong>, <strong>autho
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-DocumentEntry.html"
-                  title="StructureDefinition/DocumentEntry">
-                  <span title="StructureDefinition/DocumentEntry">Document Entry (LM)
+               <a href="StructureDefinition-xdm-document-entry.html"
+                  title="StructureDefinition/xdm-document-entry">
+                  <span title="StructureDefinition/xdm-document-entry">XDM DocumentEntry
 </span>
                </a>
             </td>
@@ -429,9 +496,9 @@ Constituée des sous-attributs <strong>authorInstitution</strong>, <strong>autho
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-EventCode.html"
-                  title="StructureDefinition/EventCode">
-                  <span title="StructureDefinition/EventCode">EventCode (LM)
+               <a href="StructureDefinition-xdm-event-code.html"
+                  title="StructureDefinition/xdm-event-code">
+                  <span title="StructureDefinition/xdm-event-code">XDM EventCode
 </span>
                </a>
             </td>
@@ -447,9 +514,9 @@ Un EventCode peut contenir le code représentant :</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-Identifiant.html"
-                  title="StructureDefinition/Identifiant">
-                  <span title="StructureDefinition/Identifiant">Identifiant
+               <a href="StructureDefinition-xdm-identifiant.html"
+                  title="StructureDefinition/xdm-identifiant">
+                  <span title="StructureDefinition/xdm-identifiant">XDM Identifiant
 </span>
                </a>
             </td>
@@ -459,16 +526,16 @@ Un EventCode peut contenir le code représentant :</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-IdentifiantSysteme.html"
-                  title="StructureDefinition/IdentifiantSysteme">
-                  <span title="StructureDefinition/IdentifiantSysteme">IdentifiantSysteme
+               <a href="StructureDefinition-xdm-identifiant-systeme.html"
+                  title="StructureDefinition/xdm-identifiant-systeme">
+                  <span title="StructureDefinition/xdm-identifiant-systeme">XDM IdentifiantSysteme
 </span>
                </a>
             </td>
             <td>
 <p>Identification d'un systeme</p>
 
-<p>L’identification du ssyteme  est construite selon le tableau dessous :</p>
+<p>L’identification du systeme  est construite selon le tableau dessous :</p>
 <ul>
   <li>1 + Identifiant cabinet ADELI/Identifiant interne du système dans la structure</li>
   <li>3 + FINESS/Identifiant interne du système dans la structure</li>
@@ -480,21 +547,9 @@ Un EventCode peut contenir le code représentant :</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-MatriculeINS.html"
-                  title="StructureDefinition/MatriculeINS">
-                  <span title="StructureDefinition/MatriculeINS">MatriculeINS
-</span>
-               </a>
-            </td>
-            <td>
-<p>Matricule de l'Identité Nationale de Santé (INS). Il correspond au NIR (Numéro d’Identification au Répertoire des personnes physiques) ou au NIA (Numéro Identifiant Attente) de l’individu).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-PatientId.html"
-                  title="StructureDefinition/PatientId">
-                  <span title="StructureDefinition/PatientId">PatientId (LM)
+               <a href="StructureDefinition-xdm-patient-id.html"
+                  title="StructureDefinition/xdm-patient-id">
+                  <span title="StructureDefinition/xdm-patient-id">XDM PatientId
 </span>
                </a>
             </td>
@@ -505,43 +560,9 @@ PatientID représente l’identifiant du patient, en l’occurrence, le matricul
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-PSIdNat.html"
-                  title="StructureDefinition/PSIdNat">
-                  <span title="StructureDefinition/PSIdNat">PSIdNat
-</span>
-               </a>
-            </td>
-            <td>
-<p>Identification nationale principale du professionnel propre aux SI de l’ANS et au CI-SIS. (Correspondance dans le MOS : idNat_PS)</p>
-
-<p>L’identification nationale du PS est construite selon le tableau dessous :</p>
-<ul>
-  <li>0 + N° ADELI</li>
-  <li>1 + Identifiant cabinet ADELI/identifiant interne</li>
-  <li>3 + FINESS/identifiant interne</li>
-  <li>4 + SIREN/identifiant interne</li>
-  <li>5 + SIRET/identifiant interne</li>
-  <li>6 + Identifiant cabinet RPPS/identifiant interne</li>
-  <li>8 + N° RPPS</li>
-</ul>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-SNR.html" title="StructureDefinition/SNR">
-                  <span title="StructureDefinition/SNR">SNR
-</span>
-               </a>
-            </td>
-            <td>
-<p>Identifiant interne de l’instance de la solution ayant produit le document au format OID</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-SourcePatientId.html"
-                  title="StructureDefinition/SourcePatientId">
-                  <span title="StructureDefinition/SourcePatientId">SourcePatientId (LM)
+               <a href="StructureDefinition-xdm-source-patient-id.html"
+                  title="StructureDefinition/xdm-source-patient-id">
+                  <span title="StructureDefinition/xdm-source-patient-id">XDM SourcePatientId
 </span>
                </a>
             </td>
@@ -551,9 +572,9 @@ PatientID représente l’identifiant du patient, en l’occurrence, le matricul
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-SourcePatientInfo.html"
-                  title="StructureDefinition/SourcePatientInfo">
-                  <span title="StructureDefinition/SourcePatientInfo">SourcePatientInfo (LM)
+               <a href="StructureDefinition-xdm-source-patient-info.html"
+                  title="StructureDefinition/xdm-source-patient-info">
+                  <span title="StructureDefinition/xdm-source-patient-info">XDM SourcePatientInfo
 </span>
                </a>
             </td>
@@ -563,30 +584,9 @@ PatientID représente l’identifiant du patient, en l’occurrence, le matricul
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-StructIdNat.html"
-                  title="StructureDefinition/StructIdNat">
-                  <span title="StructureDefinition/StructIdNat">StructIdNat
-</span>
-               </a>
-            </td>
-            <td>
-<p>Identification nationale principale d’une structure propre aux SI de l'ANS et au CI-SIS 4.</p>
-
-<p>L’identification nationale d’une structure est construite selon le tableau dessous :</p>
-<ul>
-  <li>0 + Identifiant cabinet ADELI</li>
-  <li>1 + N° FINESS 2 + N° SIREN</li>
-  <li>3 + N° SIRET</li>
-  <li>4 + N° RPPS-rang</li>
-  <li>Néant + N° technique</li>
-</ul>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-SubmissionSet.html"
-                  title="StructureDefinition/SubmissionSet">
-                  <span title="StructureDefinition/SubmissionSet">SubmissionSet (LM)
+               <a href="StructureDefinition-xdm-submission-set.html"
+                  title="StructureDefinition/xdm-submission-set">
+                  <span title="StructureDefinition/xdm-submission-set">XDM SubmissionSet
 </span>
                </a>
             </td>
@@ -971,7 +971,7 @@ Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.
               </td>
               <td style="text-align:var(--ig-right);">&#xA0;
 
-                <a href="StructureDefinition-ActorPatient.html">next ></a>
+                <a href="StructureDefinition-matricule-ins.html">next ></a>
 
               </td>
             </tr>
@@ -987,8 +987,8 @@ Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Package ans.fhir.fr.pdlgc#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-07-17 14:49:00 +0000">
-    2026-07-17
+  <span title="2026-07-19 17:20:00 +0000">
+    2026-07-19
   </span>
 
           <br/>

@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.name [ fhir:value "PDLGC"] ;
   fhir:ImplementationGuide.title [ fhir:value "Portabilité des Données LGC"] ;
   fhir:ImplementationGuide.status [ fhir:value "draft"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-07-17T14:49:58+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-07-19T17:20:25+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ;
   fhir:ImplementationGuide.contact [
      fhir:index 0 ;
@@ -988,255 +988,15 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/ActorPatient> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/ActorPatient" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ActorPatient (LM)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Cet attribut représente l'acteur Patient." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
-     ], [
-       fhir:index 1 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/ActorPS> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/ActorPS" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ActorPS (LM)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "\nCet attribut représente un acteur PS." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
-     ], [
-       fhir:index 2 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/ActorSNR> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/ActorSNR" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ActorSNR (LM)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Cet attribut représente l'acteur SNR." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
-     ], [
-       fhir:index 3 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/ActorSystem> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/ActorSystem" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ActorSystem (LM)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Cet attribut représente l'acteur System." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
-     ], [
-       fhir:index 4 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/ActorXDS> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/ActorXDS" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ActorXDS (LM)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Cet attribut représente un acteur (humain ou système) ayant contribué au document. Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient. \n\nXCN de HL7 v2.5" ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
-     ], [
-       fhir:index 5 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/archive-xdm> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/archive-xdm" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Archive XDM (LM)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Modèle logique décrivant la structure d'un SUBSET IHE XDM.\nRegroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
-     ], [
-       fhir:index 6 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/association-xdm> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/association-xdm" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Association XDM (LM)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Modèle logique d'une association IHE XDS entre deux objets de l'archive de portabilité.\nPermet de relier un SubmissionSet ou un DocumentEntry à un autre (remplacement ou transformation)." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
-     ], [
-       fhir:index 7 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/Author> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/Author" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Author (LM)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Modèle logique d'un auteur.\n\nReprésente les personnes physiques et/ou les systèmes (dispositifs, automates, services numériques référencés…) auteurs d’un document ou d'un lot de soummission. \n\nL’auteur peut être : \n- Un professionnel (personne physique) via son logiciel de professionnel, \n- Le patient/usager (personne physique) via Mon espace Santé, \n- Un système de structure (dispositif, automate, appareil connecté…), \n- Un SNR (Service Numérique Référencé), \n\n\n**author** est un ensemble constitué des sous-attributs **authorInstitution** , **authorPerson**, **authorRole** et **authorSpecialty** et ne porte pas de valeur par lui-même." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
-     ], [
-       fhir:index 8 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/AuthorDocumentEntry> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/AuthorDocumentEntry" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AuthorDocumentEntry (LM)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Modèle logique d'un auteur d'un document\nCette métadonnée représente les personnes physiques et/ou les systèmes (dispositifs, automates, services numériques référencés…) auteurs d’un document. \nL’auteur peut être : \n-  Un professionnel (personne physique) via son logiciel de professionnel, \n- Le patient/usager (personne physique) via Mon espace Santé, \n-  Un système de structure (dispositif, automate, appareil connecté…), \n-  Un SNR (Service Numérique Référencé)," ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
-     ], [
-       fhir:index 9 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/AuthorInstitution> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/AuthorInstitution" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AuthorInstitution (LM)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Cet attribut représente la structure de l’auteur. \nPour les documents d’expression personnelle du patient, cette métadonnée est absente, cela signifie que l’élément XML <rim:Slot name='authorInstitution'> n’est pas transmis." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
-     ], [
-       fhir:index 10 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/AuthorSubmissionSet> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/AuthorSubmissionSet" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "AuthorSubmissionSet (LM)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Modèle logique d'un auteur d'un lot de soumission\nCette métadonnée représente les personnes physiques et/ou les systèmes auteurs d’un lot de soumission. \nConstituée des sous-attributs **authorInstitution**, **authorPerson**, **authorRole** et **authorSpecialty**, elle ne porte pas de valeur par elle-même." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
-     ], [
-       fhir:index 11 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/DocumentEntry> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/DocumentEntry" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Document Entry (LM)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Modèle logique  d’une fiche" ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
-     ], [
-       fhir:index 12 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/EventCode> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/EventCode" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EventCode (LM)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Modèle logique d'un eventCode.\nUn EventCode peut contenir le code représentant : \n-  un évènement documenté (acte, traitement, diagnostic, etc…),  \n-  une modalité d’acquisition, \n-  une région anatomique." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
-     ], [
-       fhir:index 13 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/Identifiant> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/Identifiant" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Identifiant" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifiant de professionnel de santé, de patient, de SNR ou de système" ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
-     ], [
-       fhir:index 14 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:primitive-type" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/IdentifiantSysteme> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/IdentifiantSysteme" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "IdentifiantSysteme" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identification d'un systeme\n\nL’identification du ssyteme  est construite selon le tableau dessous :\n- 1 + Identifiant cabinet ADELI/Identifiant interne du système dans la structure \n- 3 + FINESS/Identifiant interne du système dans la structure  \n- 4 + SIREN/Identifiant interne du système dans la structure \n- 5 + SIRET/Identifiant interne du système dans la structure \n- 6 + Identifiant cabinet RPPS/Identifiant interne du système dans la structure" ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
-     ], [
-       fhir:index 15 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/MatriculeINS> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/MatriculeINS" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/matricule-ins> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/matricule-ins" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "MatriculeINS" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Matricule de l'Identité Nationale de Santé (INS). Il correspond au NIR (Numéro d’Identification au Répertoire des personnes physiques) ou au NIA (Numéro Identifiant Attente) de l’individu)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
      ], [
-       fhir:index 16 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/PatientId> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/PatientId" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PatientId (LM)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Modèle logique de patientID.\nPatientID représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
-     ], [
-       fhir:index 17 ;
+       fhir:index 1 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1251,7 +1011,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelArchivePortabilite" ]
      ], [
-       fhir:index 18 ;
+       fhir:index 2 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1266,7 +1026,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelArchivePortabilite" ]
      ], [
-       fhir:index 19 ;
+       fhir:index 3 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1281,7 +1041,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelArchivePortabilite" ]
      ], [
-       fhir:index 20 ;
+       fhir:index 4 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1296,7 +1056,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelArchivePortabilite" ]
      ], [
-       fhir:index 21 ;
+       fhir:index 5 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1310,7 +1070,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Demandeur de l'export.\n\nIl peut s'agir d'un médecin ou professionnel de santé libéral, responsable du contenu médical transféré.\n\nIl peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 22 ;
+       fhir:index 6 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1324,7 +1084,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Destinataire de l'export de données de LGC.\n\nIl peut s'agir d'un médecin ou professionnel de santé libéral recevant l'export via son LGC.\n\nIl peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP).\n\nDans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le destinataire." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 23 ;
+       fhir:index 7 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1339,7 +1099,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelArchivePortabilite" ]
      ], [
-       fhir:index 24 ;
+       fhir:index 8 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1353,7 +1113,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Fournisseur de LGC recevant les données en vue de leur intégration. Il est tenu d'une obligation de moyens pour l'import dès lors que le format réceptionné est conforme au référentiel." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 25 ;
+       fhir:index 9 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1368,7 +1128,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelArchivePortabilite" ]
      ], [
-       fhir:index 26 ;
+       fhir:index 10 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1382,7 +1142,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Fournisseur du LGC dont le contrat prend fin ou depuis lequel l'utilisateur souhaite exporter ses données. C'est lui qui est redevable de l'obligation de portabilité gratuite du Périmètre Pivot sous 30 jours calendaires." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 27 ;
+       fhir:index 11 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1397,7 +1157,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelArchivePortabilite" ]
      ], [
-       fhir:index 28 ;
+       fhir:index 12 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1412,7 +1172,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelArchivePortabilite" ]
      ], [
-       fhir:index 29 ;
+       fhir:index 13 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1427,7 +1187,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelArchivePortabilite" ]
      ], [
-       fhir:index 30 ;
+       fhir:index 14 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1442,7 +1202,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelArchivePortabilite" ]
      ], [
-       fhir:index 31 ;
+       fhir:index 15 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1457,7 +1217,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelArchivePortabilite" ]
      ], [
-       fhir:index 32 ;
+       fhir:index 16 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1472,7 +1232,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelArchivePortabilite" ]
      ], [
-       fhir:index 33 ;
+       fhir:index 17 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1486,7 +1246,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "PDLGC Statut de l'export" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 34 ;
+       fhir:index 18 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1501,7 +1261,7 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelArchivePortabilite" ]
      ], [
-       fhir:index 35 ;
+       fhir:index 19 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1515,7 +1275,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "PDLGC Type d'Export" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 36 ;
+       fhir:index 20 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1529,67 +1289,37 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "PDLGC Type de répertoire" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 37 ;
+       fhir:index 21 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
          fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/PSIdNat> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/PSIdNat" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/ps-id-nat> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ps-id-nat" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PSIdNat" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identification nationale principale du professionnel propre aux SI de l’ANS et au CI-SIS. (Correspondance dans le MOS : idNat_PS) \n\nL’identification nationale du PS est construite selon le tableau dessous :\n-  0 + N° ADELI \n- 1 + Identifiant cabinet ADELI/identifiant interne \n- 3 + FINESS/identifiant interne \n- 4 + SIREN/identifiant interne \n- 5 + SIRET/identifiant interne \n- 6 + Identifiant cabinet RPPS/identifiant interne \n- 8 + N° RPPS" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
      ], [
-       fhir:index 38 ;
+       fhir:index 22 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
          fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/SNR> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/SNR" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/snr> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/snr" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SNR" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifiant interne de l’instance de la solution ayant produit le document au format OID" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
      ], [
-       fhir:index 39 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/SourcePatientId> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/SourcePatientId" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SourcePatientId (LM)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Cette métadonnée contient l’identifiant secondaire du patient dans le système d’information du producteur (IPP) ou l’INS, s’il n’y a pas d’identifiant secondaire. Pour les documents d’expression personnelle du patient, cette métadonnée contient l’INS du patient, à savoir le même identifiant que patientId." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
-     ], [
-       fhir:index 40 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/SourcePatientInfo> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/SourcePatientInfo" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SourcePatientInfo (LM)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Cette métadonnée contient les traits d’identité du patient concerné par le document, connus par le producteur du document. Les informations présentes dans la métadonnée sourcePatientInfo ne doivent en aucun cas être réutilisées pour calculer un identifiant, ni être mises à jour après la soumission du document." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
-     ], [
-       fhir:index 41 ;
+       fhir:index 23 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1603,37 +1333,22 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Statut de l'export" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 42 ;
+       fhir:index 24 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
          fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/StructIdNat> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/StructIdNat" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/struct-id-nat> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/struct-id-nat" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "StructIdNat" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identification nationale principale d’une structure propre aux SI de l'ANS et au CI-SIS 4. \n\nL’identification nationale d’une structure est construite selon le tableau dessous :\n-  0 + Identifiant cabinet ADELI \n- 1 + N° FINESS 2 + N° SIREN \n- 3 + N° SIRET \n- 4 + N° RPPS-rang \n- Néant + N° technique" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
      ], [
-       fhir:index 43 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/SubmissionSet> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/SubmissionSet" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SubmissionSet (LM)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Modèle logique d'un lot de soummission (SubmissionSet)." ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
-     ], [
-       fhir:index 44 ;
+       fhir:index 25 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1647,7 +1362,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Types d'association entre objets XDS dans le contexte portabilité." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 45 ;
+       fhir:index 26 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1661,7 +1376,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Valeurs autorisées pour le type d'association entre objets XDS." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 46 ;
+       fhir:index 27 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1675,7 +1390,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Type d'export de données LGC" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 47 ;
+       fhir:index 28 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1688,6 +1403,291 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Type de répertoire" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Type de répertoire" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 29 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-actor-patient> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/xdm-actor-patient" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "XDM ActorPatient" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Cet attribut représente l'acteur Patient." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
+     ], [
+       fhir:index 30 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-actor-ps> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/xdm-actor-ps" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "XDM ActorPS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "\nCet attribut représente un acteur PS." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
+     ], [
+       fhir:index 31 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-actor-snr> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/xdm-actor-snr" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "XDM ActorSNR" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Cet attribut représente l'acteur SNR." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
+     ], [
+       fhir:index 32 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-actor-system> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/xdm-actor-system" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "XDM ActorSystem" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Cet attribut représente l'acteur System." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
+     ], [
+       fhir:index 33 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-actor-xds> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/xdm-actor-xds" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "XDM ActorXDS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Cet attribut représente un acteur (humain ou système) ayant contribué au document. Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient. \n\nXCN de HL7 v2.5" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
+     ], [
+       fhir:index 34 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-archive> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/xdm-archive" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "XDM Archive XDM" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Modèle logique décrivant la structure d'un SUBSET IHE XDM.\nRegroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
+     ], [
+       fhir:index 35 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-association> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/xdm-association" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "XDM Association" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Modèle logique d'une association IHE XDS entre deux objets de l'archive de portabilité.\nPermet de relier un SubmissionSet ou un DocumentEntry à un autre (remplacement ou transformation)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
+     ], [
+       fhir:index 36 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-author> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/xdm-author" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "XDM Author" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Modèle logique d'un auteur.\n\nReprésente les personnes physiques et/ou les systèmes (dispositifs, automates, services numériques référencés…) auteurs d’un document ou d'un lot de soummission. \n\nL’auteur peut être : \n- Un professionnel (personne physique) via son logiciel de professionnel, \n- Le patient/usager (personne physique) via Mon espace Santé, \n- Un système de structure (dispositif, automate, appareil connecté…), \n- Un SNR (Service Numérique Référencé), \n\n\n**author** est un ensemble constitué des sous-attributs **authorInstitution** , **authorPerson**, **authorRole** et **authorSpecialty** et ne porte pas de valeur par lui-même." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
+     ], [
+       fhir:index 37 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-author-document-entry> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/xdm-author-document-entry" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "XDM AuthorDocumentEntry" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Modèle logique d'un auteur d'un document\nCette métadonnée représente les personnes physiques et/ou les systèmes (dispositifs, automates, services numériques référencés…) auteurs d’un document. \nL’auteur peut être : \n-  Un professionnel (personne physique) via son logiciel de professionnel, \n- Le patient/usager (personne physique) via Mon espace Santé, \n-  Un système de structure (dispositif, automate, appareil connecté…), \n-  Un SNR (Service Numérique Référencé)," ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
+     ], [
+       fhir:index 38 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-author-institution> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/xdm-author-institution" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "XDM AuthorInstitution" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Cet attribut représente la structure de l’auteur. \nPour les documents d’expression personnelle du patient, cette métadonnée est absente, cela signifie que l’élément XML <rim:Slot name='authorInstitution'> n’est pas transmis." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
+     ], [
+       fhir:index 39 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-author-submission-set> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/xdm-author-submission-set" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "XDM AuthorSubmissionSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Modèle logique d'un auteur d'un lot de soumission\nCette métadonnée représente les personnes physiques et/ou les systèmes auteurs d’un lot de soumission. \nConstituée des sous-attributs **authorInstitution**, **authorPerson**, **authorRole** et **authorSpecialty**, elle ne porte pas de valeur par elle-même." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
+     ], [
+       fhir:index 40 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-document-entry> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/xdm-document-entry" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "XDM DocumentEntry" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Modèle logique  d’une fiche" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
+     ], [
+       fhir:index 41 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-event-code> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/xdm-event-code" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "XDM EventCode" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Modèle logique d'un eventCode.\nUn EventCode peut contenir le code représentant : \n-  un évènement documenté (acte, traitement, diagnostic, etc…),  \n-  une modalité d’acquisition, \n-  une région anatomique." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
+     ], [
+       fhir:index 42 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-identifiant> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/xdm-identifiant" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "XDM Identifiant" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifiant de professionnel de santé, de patient, de SNR ou de système" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
+     ], [
+       fhir:index 43 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-identifiant-systeme> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/xdm-identifiant-systeme" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "XDM IdentifiantSysteme" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identification d'un systeme\n\nL’identification du systeme  est construite selon le tableau dessous :\n- 1 + Identifiant cabinet ADELI/Identifiant interne du système dans la structure \n- 3 + FINESS/Identifiant interne du système dans la structure  \n- 4 + SIREN/Identifiant interne du système dans la structure \n- 5 + SIRET/Identifiant interne du système dans la structure \n- 6 + Identifiant cabinet RPPS/Identifiant interne du système dans la structure" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
+     ], [
+       fhir:index 44 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-patient-id> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/xdm-patient-id" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "XDM PatientId" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Modèle logique de patientID.\nPatientID représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
+     ], [
+       fhir:index 45 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-source-patient-id> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/xdm-source-patient-id" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "XDM SourcePatientId" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Cette métadonnée contient l’identifiant secondaire du patient dans le système d’information du producteur (IPP) ou l’INS, s’il n’y a pas d’identifiant secondaire. Pour les documents d’expression personnelle du patient, cette métadonnée contient l’INS du patient, à savoir le même identifiant que patientId." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
+     ], [
+       fhir:index 46 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-source-patient-info> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/xdm-source-patient-info" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "XDM SourcePatientInfo" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Cette métadonnée contient les traits d’identité du patient concerné par le document, connus par le producteur du document. Les informations présentes dans la métadonnée sourcePatientInfo ne doivent en aucun cas être réutilisées pour calculer un identifiant, ni être mises à jour après la soumission du document." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
+     ], [
+       fhir:index 47 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-submission-set> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/xdm-submission-set" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "XDM SubmissionSet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Modèle logique d'un lot de soummission (SubmissionSet)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDS" ]
      ] ;
      fhir:ImplementationGuide.definition.page [
        fhir:Element.extension [

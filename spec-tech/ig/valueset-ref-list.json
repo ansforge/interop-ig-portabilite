@@ -30,8 +30,8 @@
     "systems" : ["https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs"],
     "uses" : {
     },
-    "StructureDefinition-pdlgc-manifest-archives.html" : "PDLGC Manifest Archives",
-    "StructureDefinition-pdlgc-manifest.html" : "PDLGC Manifest"
+    "StructureDefinition-pdlgc-manifest.html" : "PDLGC Manifest",
+    "StructureDefinition-pdlgc-manifest-archives.html" : "PDLGC Manifest Archives"
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-association-type",
@@ -43,7 +43,7 @@
     "systems" : ["https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type"],
     "uses" : {
     },
-    "StructureDefinition-association-xdm.html" : "Association XDM (LM)"
+    "StructureDefinition-xdm-association.html" : "XDM Association"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS",
@@ -61,9 +61,9 @@
     "sources" : ["1.2.250.1.213.1.1.5.461"],
     "uses" : {
     },
-    "StructureDefinition-AuthorDocumentEntry.html" : "AuthorDocumentEntry (LM)",
-    "StructureDefinition-AuthorSubmissionSet.html" : "AuthorSubmissionSet (LM)",
-    "StructureDefinition-Author.html" : "Author (LM)"
+    "StructureDefinition-xdm-author-document-entry.html" : "XDM AuthorDocumentEntry",
+    "StructureDefinition-xdm-author.html" : "XDM Author",
+    "StructureDefinition-xdm-author-submission-set.html" : "XDM AuthorSubmissionSet"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS",
@@ -78,7 +78,7 @@
     "sources" : ["1.2.250.1.213.1.1.5.466"],
     "uses" : {
     },
-    "StructureDefinition-DocumentEntry.html" : "Document Entry (LM)"
+    "StructureDefinition-xdm-document-entry.html" : "XDM DocumentEntry"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/JDV_J03-XdsContentTypeCode-CISIS/FHIR/JDV-J03-XdsContentTypeCode-CISIS",
@@ -95,7 +95,7 @@
     "sources" : ["1.2.250.1.213.1.1.5.464"],
     "uses" : {
     },
-    "StructureDefinition-SubmissionSet.html" : "SubmissionSet (LM)"
+    "StructureDefinition-xdm-submission-set.html" : "XDM SubmissionSet"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS",
@@ -110,7 +110,7 @@
     "sources" : ["1.2.250.1.213.1.1.5.467"],
     "uses" : {
     },
-    "StructureDefinition-DocumentEntry.html" : "Document Entry (LM)"
+    "StructureDefinition-xdm-document-entry.html" : "XDM DocumentEntry"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS",
@@ -125,7 +125,7 @@
     "sources" : ["1.2.250.1.213.1.1.5.462"],
     "uses" : {
     },
-    "StructureDefinition-DocumentEntry.html" : "Document Entry (LM)"
+    "StructureDefinition-xdm-document-entry.html" : "XDM DocumentEntry"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS",
@@ -141,7 +141,7 @@
     "sources" : ["1.2.250.1.213.1.1.5.471"],
     "uses" : {
     },
-    "StructureDefinition-DocumentEntry.html" : "Document Entry (LM)"
+    "StructureDefinition-xdm-document-entry.html" : "XDM DocumentEntry"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS",
@@ -158,7 +158,7 @@
     "sources" : ["1.2.250.1.213.1.1.5.465"],
     "uses" : {
     },
-    "StructureDefinition-DocumentEntry.html" : "Document Entry (LM)"
+    "StructureDefinition-xdm-document-entry.html" : "XDM DocumentEntry"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/JDV_J197-XdsTypesIdentifiantsReferenceId-CISIS/FHIR/JDV-J197-XdsTypesIdentifiantsReferenceId-CISIS",
@@ -172,7 +172,7 @@
     "sources" : ["1.2.250.1.213.1.1.5.692"],
     "uses" : {
     },
-    "StructureDefinition-DocumentEntry.html" : "Document Entry (LM)"
+    "StructureDefinition-xdm-document-entry.html" : "XDM DocumentEntry"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/JDV_J47-FunctionCode-CISIS/FHIR/JDV-J47-FunctionCode-CISIS",
@@ -188,9 +188,9 @@
     "sources" : ["1.2.250.1.213.1.1.5.124"],
     "uses" : {
     },
-    "StructureDefinition-AuthorDocumentEntry.html" : "AuthorDocumentEntry (LM)",
-    "StructureDefinition-AuthorSubmissionSet.html" : "AuthorSubmissionSet (LM)",
-    "StructureDefinition-Author.html" : "Author (LM)"
+    "StructureDefinition-xdm-author-document-entry.html" : "XDM AuthorDocumentEntry",
+    "StructureDefinition-xdm-author.html" : "XDM Author",
+    "StructureDefinition-xdm-author-submission-set.html" : "XDM AuthorSubmissionSet"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/JDV_J52-AvailabilityStatus-CISIS/FHIR/JDV-J52-AvailabilityStatus-CISIS",
@@ -205,8 +205,8 @@
     "sources" : ["1.2.250.1.213.1.1.5.131"],
     "uses" : {
     },
-    "StructureDefinition-SubmissionSet.html" : "SubmissionSet (LM)",
-    "StructureDefinition-DocumentEntry.html" : "Document Entry (LM)"
+    "StructureDefinition-xdm-document-entry.html" : "XDM DocumentEntry",
+    "StructureDefinition-xdm-submission-set.html" : "XDM SubmissionSet"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/JDV_J58-ConfidentialityCode-DMP/FHIR/JDV-J58-ConfidentialityCode-DMP",
@@ -221,6 +221,6 @@
     "sources" : ["1.2.250.1.213.1.1.5.9"],
     "uses" : {
     },
-    "StructureDefinition-DocumentEntry.html" : "Document Entry (LM)"
+    "StructureDefinition-xdm-document-entry.html" : "XDM DocumentEntry"
   }]
 }
