@@ -23,6 +23,8 @@ Le nom de l'archive de portabilité doit respecter le format `PAAAAAMMJJThhmmss.
 
 Le nom des répertoires et sous-archives ZIP doit respecter le format suivant : 
 - `DOCUMENTATION/`: documentation d'export permettant au fournisseur sortant d'interpréter et d'intégrer les données ;
-- `TRANSVERSE.ZIP` : contient les données transverses (logs, comptabilité, agenda,...) ;
-- `PATNNNNN.ZIP` : contient les données d'un patient et est conforme au profil IHE_XDM, ou "NNNNN" est incrémenté à partir de 00001. Exemple : `PAT00183.ZIP`.
-
+- `TRANSVERSE.ZIP` : archive contenant les données transverses (logs, comptabilité, agenda,...) ;
+- `TRANSVERSE/` : répertoire contenant les données transverses (logs, comptabilité, agenda,...) ;
+- `PATNNNNN.ZIP` : contient les données d'un patient et est conforme au profil IHE_XDM, ou "NNNNN" est incrémenté à partir de 00001. Exemple : `PAT00183.ZIP`;
+- `PDF`: sous-répertoire de l'archive patient contenant les documents PDF destinés à la consultation humaine ;
+- `IHE_XDM`et `SUBSET01`: sous-répertoires de l'archive XDM contenant les documents d'un patient.

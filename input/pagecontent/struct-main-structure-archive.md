@@ -14,19 +14,19 @@ L'archive de portabilité retient une structure de collection d'archives afin de
 
 ### Fichiers de gestion de l'archive de portabilité (Manifest, readme, signature)
 
-#### MANIFEST.XML
+#### `MANIFEST.XML`
 
 {% include struct-manifest.md %}
 
 <br>
 
-#### README.TXT {#readme}
+#### `README.TXT` {#readme}
 
 {% include struct-readme.md %}
 
 <br>
 
-#### SIGN.XML
+#### `SIGN.XML`
 
 {% include struct-signature.md %}
 
