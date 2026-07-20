@@ -1,6 +1,6 @@
-Logical: Association
-Id: association-xdm
-Title: "Association XDM (LM)"
+Logical: XDMAssociation
+Id: xdm-association
+Title: "XDM Association"
 Description: """
 Modèle logique d'une association IHE XDS entre deux objets de l'archive de portabilité.
 Permet de relier un SubmissionSet ou un DocumentEntry à un autre (remplacement ou transformation).

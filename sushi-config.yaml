@@ -84,29 +84,29 @@ groups:
     name:  Modèle logique Metadata XDS (Lot de soumission (SubmissionSet), DocumentEntry (XDS) et association)
     description: Modèles logiques associés aux différents artifacts des METADATA XDS
     resources:
-      - StructureDefinition/SubmissionSet
-      - StructureDefinition/DocumentEntry      
-      - StructureDefinition/EventCode           
-      - StructureDefinition/PatientId
-      - StructureDefinition/SourcePatientId
-      - StructureDefinition/SourcePatientInfo      
-      - StructureDefinition/Author
-      - StructureDefinition/AuthorDocumentEntry
-      - StructureDefinition/AuthorSubmissionSet          
-      - StructureDefinition/AuthorInstitution
-      - StructureDefinition/ActorXDS            
-      - StructureDefinition/ActorPS
-      - StructureDefinition/ActorPatient
-      - StructureDefinition/ActorSNR
-      - StructureDefinition/ActorSystem   
-      - StructureDefinition/IdentifiantSysteme
-      - StructureDefinition/MatriculeINS
-      - StructureDefinition/PSIdNat
-      - StructureDefinition/SNR            
-      - StructureDefinition/StructIdNat
-      - StructureDefinition/archive-xdm
-      - StructureDefinition/association-xdm      
-      - StructureDefinition/Identifiant   
+      - StructureDefinition/xdm-submission-set
+      - StructureDefinition/xdm-document-entry
+      - StructureDefinition/xdm-event-code
+      - StructureDefinition/xdm-patient-id
+      - StructureDefinition/xdm-source-patient-id
+      - StructureDefinition/xdm-source-patient-info
+      - StructureDefinition/xdm-author
+      - StructureDefinition/xdm-author-document-entry
+      - StructureDefinition/xdm-author-submission-set
+      - StructureDefinition/xdm-author-institution
+      - StructureDefinition/xdm-actor-xds
+      - StructureDefinition/xdm-actor-ps
+      - StructureDefinition/xdm-actor-patient
+      - StructureDefinition/xdm-actor-snr
+      - StructureDefinition/xdm-actor-system
+      - StructureDefinition/xdm-identifiant-systeme
+      - StructureDefinition/matricule-ins
+      - StructureDefinition/ps-id-nat
+      - StructureDefinition/snr
+      - StructureDefinition/struct-id-nat
+      - StructureDefinition/xdm-archive
+      - StructureDefinition/xdm-association
+      - StructureDefinition/xdm-identifiant   
   LogicalModelArchivePortabilite:
     name:  Modèle logique structure Archive de portabilité
     description: Modèles logiques associés aux différents fichiers et répertoires structurant une archive de portabilité

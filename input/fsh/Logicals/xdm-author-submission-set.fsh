@@ -1,7 +1,7 @@
-Logical: AuthorSubmissionSet
-Parent: Author
-Id: AuthorSubmissionSet
-Title: "AuthorSubmissionSet (LM)"
+Logical: XDMAuthorSubmissionSet
+Parent: xdm-author
+Id: xdm-author-submission-set
+Title: "XDM AuthorSubmissionSet"
 Description: """
 Modèle logique d'un auteur d'un lot de soumission
 Cette métadonnée représente les personnes physiques et/ou les systèmes auteurs d’un lot de soumission. 

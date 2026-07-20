@@ -1,7 +1,7 @@
-Logical: ActorPS
-Parent: ActorXDS
-Id: ActorPS
-Title: "ActorPS (LM)"
+Logical: XDMActorPS
+Parent: xdm-actor-xds
+Id: xdm-actor-ps
+Title: "XDM ActorPS"
 Description: "
 Cet attribut représente un acteur PS.
 "

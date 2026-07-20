@@ -1,4 +1,5 @@
 Logical: StructIdNat
+Id: struct-id-nat
 Title: "StructIdNat"
 Description: """
 Identification nationale principale d’une structure propre aux SI de l'ANS et au CI-SIS 4. 

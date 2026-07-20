@@ -1,7 +1,7 @@
-Logical: PatientId
+Logical: XDMPatientId
 Parent: Base
-Id: PatientId
-Title: "PatientId (LM)"
+Id: xdm-patient-id
+Title: "XDM PatientId"
 Description: """
 Modèle logique de patientID.
 PatientID représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient. 

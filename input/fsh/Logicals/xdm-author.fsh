@@ -1,7 +1,7 @@
-Logical: Author
+Logical: XDMAuthor
 Parent: Base
-Id: Author
-Title: "Author (LM)"
+Id: xdm-author
+Title: "XDM Author"
 Description: """
 Modèle logique d'un auteur.
 
@@ -17,10 +17,10 @@ L’auteur peut être :
 **author** est un ensemble constitué des sous-attributs **authorInstitution** , **authorPerson**, **authorRole** et **authorSpecialty** et ne porte pas de valeur par lui-même. 
 """
 
-* institution 0..1 AuthorInstitution "Cet attribut représente la structure de l’auteur." """Cet attribut représente la structure de l’auteur."""
+* institution 0..1 XDMAuthorInstitution "Cet attribut représente la structure de l’auteur." """Cet attribut représente la structure de l’auteur."""
 
 
-* person[x] 1..1 ActorPS or ActorPatient or ActorSNR or ActorSystem "Author" """Author"""
+* person[x] 1..1 XDMActorPS or XDMActorPatient or XDMActorSNR or XDMActorSystem "Author" """Author"""
 
 * role 0..* CodeableConcept "Cet attribut représente le rôle fonctionnel joué par l’auteur vis-à-vis du patient/usager lors de la création du document, c'est-à-dire à quel titre l’auteur est intervenu vis-à-vis du patient (ex : médecin traitant, Responsable de l'admission, Membre de l'équipe de soins, etc.). " "**Author Role**"
 * role from https://mos.esante.gouv.fr/NOS/JDV_J47-FunctionCode-CISIS/FHIR/JDV-J47-FunctionCode-CISIS (preferred)
