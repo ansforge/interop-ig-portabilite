@@ -11,7 +11,7 @@
   "name" : "PDLGC",
   "title" : "Portabilité des Données LGC",
   "status" : "draft",
-  "date" : "2026-07-21T08:40:48+00:00",
+  "date" : "2026-07-21T15:50:20+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -867,8 +867,8 @@
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     }],
     "grouping" : [{
-      "id" : "LogicalModelXDS",
-      "name" : "Modèle logique Metadata XDS (Lot de soumission (SubmissionSet), DocumentEntry (XDS) et association)",
+      "id" : "LogicalModelXDM",
+      "name" : "Modèle logique Metadata XDM (Lot de soumission (SubmissionSet), DocumentEntry (XDS) et association)",
       "description" : "Modèles logiques associés aux différents artifacts des METADATA XDS"
     },
     {
@@ -887,7 +887,7 @@
       "name" : "MatriculeINS",
       "description" : "Matricule de l'Identité Nationale de Santé (INS). Il correspond au NIR (Numéro d’Identification au Répertoire des personnes physiques) ou au NIA (Numéro Identifiant Attente) de l’individu).",
       "exampleBoolean" : false,
-      "groupingId" : "LogicalModelXDS"
+      "groupingId" : "LogicalModelXDM"
     },
     {
       "extension" : [{
@@ -1153,7 +1153,7 @@
       "name" : "PSIdNat",
       "description" : "Identification nationale principale du professionnel propre aux SI de l’ANS et au CI-SIS. (Correspondance dans le MOS : idNat_PS) \n\nL’identification nationale du PS est construite selon le tableau dessous :\n-  0 + N° ADELI \n- 1 + Identifiant cabinet ADELI/identifiant interne \n- 3 + FINESS/identifiant interne \n- 4 + SIREN/identifiant interne \n- 5 + SIRET/identifiant interne \n- 6 + Identifiant cabinet RPPS/identifiant interne \n- 8 + N° RPPS",
       "exampleBoolean" : false,
-      "groupingId" : "LogicalModelXDS"
+      "groupingId" : "LogicalModelXDM"
     },
     {
       "extension" : [{
@@ -1166,7 +1166,7 @@
       "name" : "SNR",
       "description" : "Identifiant interne de l’instance de la solution ayant produit le document au format OID",
       "exampleBoolean" : false,
-      "groupingId" : "LogicalModelXDS"
+      "groupingId" : "LogicalModelXDM"
     },
     {
       "extension" : [{
@@ -1191,7 +1191,7 @@
       "name" : "StructIdNat",
       "description" : "Identification nationale principale d’une structure propre aux SI de l'ANS et au CI-SIS 4. \n\nL’identification nationale d’une structure est construite selon le tableau dessous :\n-  0 + Identifiant cabinet ADELI \n- 1 + N° FINESS 2 + N° SIREN \n- 3 + N° SIRET \n- 4 + N° RPPS-rang \n- Néant + N° technique",
       "exampleBoolean" : false,
-      "groupingId" : "LogicalModelXDS"
+      "groupingId" : "LogicalModelXDM"
     },
     {
       "extension" : [{
@@ -1252,7 +1252,7 @@
       "name" : "XDM ActorPatient",
       "description" : "Cet attribut représente l'acteur Patient.",
       "exampleBoolean" : false,
-      "groupingId" : "LogicalModelXDS"
+      "groupingId" : "LogicalModelXDM"
     },
     {
       "extension" : [{
@@ -1265,7 +1265,7 @@
       "name" : "XDM ActorPS",
       "description" : "\nCet attribut représente un acteur PS.",
       "exampleBoolean" : false,
-      "groupingId" : "LogicalModelXDS"
+      "groupingId" : "LogicalModelXDM"
     },
     {
       "extension" : [{
@@ -1278,7 +1278,7 @@
       "name" : "XDM ActorSNR",
       "description" : "Cet attribut représente l'acteur SNR.",
       "exampleBoolean" : false,
-      "groupingId" : "LogicalModelXDS"
+      "groupingId" : "LogicalModelXDM"
     },
     {
       "extension" : [{
@@ -1291,7 +1291,7 @@
       "name" : "XDM ActorSystem",
       "description" : "Cet attribut représente l'acteur System.",
       "exampleBoolean" : false,
-      "groupingId" : "LogicalModelXDS"
+      "groupingId" : "LogicalModelXDM"
     },
     {
       "extension" : [{
@@ -1304,7 +1304,7 @@
       "name" : "XDM ActorXDS",
       "description" : "Cet attribut représente un acteur (humain ou système) ayant contribué au document. Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient. \n\nXCN de HL7 v2.5",
       "exampleBoolean" : false,
-      "groupingId" : "LogicalModelXDS"
+      "groupingId" : "LogicalModelXDM"
     },
     {
       "extension" : [{
@@ -1317,7 +1317,7 @@
       "name" : "XDM Archive XDM",
       "description" : "Modèle logique décrivant la structure d'un SUBSET IHE XDM.\nRegroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.",
       "exampleBoolean" : false,
-      "groupingId" : "LogicalModelXDS"
+      "groupingId" : "LogicalModelXDM"
     },
     {
       "extension" : [{
@@ -1330,7 +1330,7 @@
       "name" : "XDM Association",
       "description" : "Modèle logique d'une association IHE XDS entre deux objets de l'archive de portabilité.\nPermet de relier un SubmissionSet ou un DocumentEntry à un autre (remplacement ou transformation).",
       "exampleBoolean" : false,
-      "groupingId" : "LogicalModelXDS"
+      "groupingId" : "LogicalModelXDM"
     },
     {
       "extension" : [{
@@ -1343,7 +1343,7 @@
       "name" : "XDM Author",
       "description" : "Modèle logique d'un auteur.\n\nReprésente les personnes physiques et/ou les systèmes (dispositifs, automates, services numériques référencés…) auteurs d’un document ou d'un lot de soummission. \n\nL’auteur peut être : \n- Un professionnel (personne physique) via son logiciel de professionnel, \n- Le patient/usager (personne physique) via Mon espace Santé, \n- Un système de structure (dispositif, automate, appareil connecté…), \n- Un SNR (Service Numérique Référencé), \n\n\n**author** est un ensemble constitué des sous-attributs **authorInstitution** , **authorPerson**, **authorRole** et **authorSpecialty** et ne porte pas de valeur par lui-même.",
       "exampleBoolean" : false,
-      "groupingId" : "LogicalModelXDS"
+      "groupingId" : "LogicalModelXDM"
     },
     {
       "extension" : [{
@@ -1356,7 +1356,7 @@
       "name" : "XDM AuthorDocumentEntry",
       "description" : "Modèle logique d'un auteur d'un document\nCette métadonnée représente les personnes physiques et/ou les systèmes (dispositifs, automates, services numériques référencés…) auteurs d’un document. \nL’auteur peut être : \n-  Un professionnel (personne physique) via son logiciel de professionnel, \n- Le patient/usager (personne physique) via Mon espace Santé, \n-  Un système de structure (dispositif, automate, appareil connecté…), \n-  Un SNR (Service Numérique Référencé),",
       "exampleBoolean" : false,
-      "groupingId" : "LogicalModelXDS"
+      "groupingId" : "LogicalModelXDM"
     },
     {
       "extension" : [{
@@ -1369,7 +1369,7 @@
       "name" : "XDM AuthorInstitution",
       "description" : "Cet attribut représente la structure de l’auteur. \nPour les documents d’expression personnelle du patient, cette métadonnée est absente, cela signifie que l’élément XML <rim:Slot name='authorInstitution'> n’est pas transmis.",
       "exampleBoolean" : false,
-      "groupingId" : "LogicalModelXDS"
+      "groupingId" : "LogicalModelXDM"
     },
     {
       "extension" : [{
@@ -1382,7 +1382,7 @@
       "name" : "XDM AuthorSubmissionSet",
       "description" : "Modèle logique d'un auteur d'un lot de soumission\nCette métadonnée représente les personnes physiques et/ou les systèmes auteurs d’un lot de soumission. \nConstituée des sous-attributs **authorInstitution**, **authorPerson**, **authorRole** et **authorSpecialty**, elle ne porte pas de valeur par elle-même.",
       "exampleBoolean" : false,
-      "groupingId" : "LogicalModelXDS"
+      "groupingId" : "LogicalModelXDM"
     },
     {
       "extension" : [{
@@ -1395,7 +1395,7 @@
       "name" : "XDM DocumentEntry",
       "description" : "Modèle logique  d’une fiche",
       "exampleBoolean" : false,
-      "groupingId" : "LogicalModelXDS"
+      "groupingId" : "LogicalModelXDM"
     },
     {
       "extension" : [{
@@ -1408,7 +1408,7 @@
       "name" : "XDM EventCode",
       "description" : "Modèle logique d'un eventCode.\nUn EventCode peut contenir le code représentant : \n-  un évènement documenté (acte, traitement, diagnostic, etc…),  \n-  une modalité d’acquisition, \n-  une région anatomique.",
       "exampleBoolean" : false,
-      "groupingId" : "LogicalModelXDS"
+      "groupingId" : "LogicalModelXDM"
     },
     {
       "extension" : [{
@@ -1421,7 +1421,7 @@
       "name" : "XDM Identifiant",
       "description" : "Identifiant de professionnel de santé, de patient, de SNR ou de système",
       "exampleBoolean" : false,
-      "groupingId" : "LogicalModelXDS"
+      "groupingId" : "LogicalModelXDM"
     },
     {
       "extension" : [{
@@ -1434,7 +1434,7 @@
       "name" : "XDM IdentifiantSysteme",
       "description" : "Identification d'un systeme\n\nL’identification du systeme  est construite selon le tableau dessous :\n- 1 + Identifiant cabinet ADELI/Identifiant interne du système dans la structure \n- 3 + FINESS/Identifiant interne du système dans la structure  \n- 4 + SIREN/Identifiant interne du système dans la structure \n- 5 + SIRET/Identifiant interne du système dans la structure \n- 6 + Identifiant cabinet RPPS/Identifiant interne du système dans la structure",
       "exampleBoolean" : false,
-      "groupingId" : "LogicalModelXDS"
+      "groupingId" : "LogicalModelXDM"
     },
     {
       "extension" : [{
@@ -1447,7 +1447,7 @@
       "name" : "XDM PatientId",
       "description" : "Modèle logique de patientID.\nPatientID représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient.",
       "exampleBoolean" : false,
-      "groupingId" : "LogicalModelXDS"
+      "groupingId" : "LogicalModelXDM"
     },
     {
       "extension" : [{
@@ -1460,7 +1460,7 @@
       "name" : "XDM SourcePatientId",
       "description" : "Cette métadonnée contient l’identifiant secondaire du patient dans le système d’information du producteur (IPP) ou l’INS, s’il n’y a pas d’identifiant secondaire. Pour les documents d’expression personnelle du patient, cette métadonnée contient l’INS du patient, à savoir le même identifiant que patientId.",
       "exampleBoolean" : false,
-      "groupingId" : "LogicalModelXDS"
+      "groupingId" : "LogicalModelXDM"
     },
     {
       "extension" : [{
@@ -1473,7 +1473,7 @@
       "name" : "XDM SourcePatientInfo",
       "description" : "Cette métadonnée contient les traits d’identité du patient concerné par le document, connus par le producteur du document. Les informations présentes dans la métadonnée sourcePatientInfo ne doivent en aucun cas être réutilisées pour calculer un identifiant, ni être mises à jour après la soumission du document.",
       "exampleBoolean" : false,
-      "groupingId" : "LogicalModelXDS"
+      "groupingId" : "LogicalModelXDM"
     },
     {
       "extension" : [{
@@ -1486,7 +1486,7 @@
       "name" : "XDM SubmissionSet",
       "description" : "Modèle logique d'un lot de soummission (SubmissionSet).",
       "exampleBoolean" : false,
-      "groupingId" : "LogicalModelXDS"
+      "groupingId" : "LogicalModelXDM"
     }],
     "page" : {
       "extension" : [{

@@ -14,51 +14,8 @@ L'archive de Portabilité est constituée de :
 * 1 archive de données transverses (`TRANSVERSE/`) associées au professionnel et/ou au cabinet ;
 * 1 ou plusieurs archive(s) de patient (`PATNNNNN`), conformes au profil IHE XDM.
 
-```
-PAAAAAMMJJThhmmss.ZIP               (Archive ZIP chapeau de portabilité, hors profil XDM)
-│
-├── README.TXT                      (Informations éditoriales et instructions relative à l'archive de portabilité)
-├── MANIFEST.XML                    (Vue synthétique du contenu de l'archive de Portabilité et rapport d'intégrité)
-├── SIGN.XML                        (Signature attestant de l'authenticité et de l'imputabilité des données)
-│
-├── DOCUMENTATION/                  (Archive de documentation)
-│   ├── DICO001.XML                 (Dictionnaire de données 1)
-│   ├── DICO002.JSON                (Dictionnaire de données 2)
-│   ├── VALUESET.JSON               (Dictionnaire des terminologies propriétaires)
-│   ├── MAPPING.JSON                (Dictionnaire des terminologies propriétaires)
-│   ├── ECH001.ZIP                  (jeu d'échantillons)
-│   └── ...
-│
-├── TRANSVERSE.ZIP                  (Archive de données transverse liées au professionnel et/ou à la structure)
-│   ├── README.TXT                  (Informations éditoriales et instructions relative à l'archive de donnée transverse)            
-│   └── TRANSVERSE/
-│        ├── AGENDA.ICS
-│        ├── COMPTA.txt
-│        ├── LOGS.CSV
-│        └── ...
-│
-├── PAT00001.ZIP                    (Archive XDM Patient INS_1, conforme IHE_XDM)
-│   ├── INDEX.HTM
-│   ├── README.TXT                  (Informations éditoriales et instructions relative à l'archive de données Patient INS_1)
-│   └── PDF/                        (Répertoire de stockage des PDF pour consultation, extension au profil XDM)
-│   └── IHE_XDM/
-│       └── SUBSET01/
-│           ├── METADATA.XML
-│           ├── DOC10001.XML
-│           ├── DOC10002.XML
-│           └── ...
-│
-└── PAT00002.ZIP                    (Archive XDM Patient INS_2, conforme IHE_XDM)
-    ├── INDEX.HTM
-    ├── README.TXT                  (Informations éditoriales et instructions relative à l'archive de données Patient INS_2)
-    └── PDF/                        (Répertoire de stockage des PDF pour consultation, extension au profil XDM)
-    └── IHE_XDM/
-        └── SUBSET01/
-            ├── METADATA.XML
-            ├── DOC20001.XML
-            └── ...
+Représentation graphique de la structure de l'archive de portabilité
 
-```
 
 ### Conventions d'écritures des répertoires et des fichiers
 

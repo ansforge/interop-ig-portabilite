@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgc-manifest-ar
   "name" : "PDLGCManifestArchives",
   "title" : "PDLGC Manifest Archives",
   "status" : "draft",
-  "date" : "2026-07-21T08:40:48+00:00",
+  "date" : "2026-07-21T15:50:20+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

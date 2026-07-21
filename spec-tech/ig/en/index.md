@@ -79,7 +79,7 @@ Dans ce contexte, seul un dossier patient est transféré d'un fournisseur sorta
 
 ### Cadre juridique
 
-Le cadre réglementaire applicable à la portabilité des données LGC est détaillé dans le Référentiel de sécurité, d'interopérabilité et d'éthique relatif à la portabilité des données des LGC. Le présent guide d'implémentation ne reprend pas ces éléments et renvoie au référentiel pour toute question relative aux obligations légales et aux responsabilités des acteurs.
+Le cadre réglementaire applicable à la portabilité des données LGC est détaillé dans le **Référentiel de sécurité, d'interopérabilité et d'éthique relatif à la portabilité des données des LGC**. Le présent guide d'implémentation ne reprend pas ces éléments et renvoie au référentiel pour toute question relative aux obligations légales et aux responsabilités des acteurs.
 
 ### Définitions
 

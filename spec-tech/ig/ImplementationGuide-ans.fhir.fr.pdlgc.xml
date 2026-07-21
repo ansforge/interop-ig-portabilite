@@ -13,7 +13,7 @@
   <name value="PDLGC"/>
   <title value="Portabilité des Données LGC"/>
   <status value="draft"/>
-  <date value="2026-07-21T08:40:48+00:00"/>
+  <date value="2026-07-21T15:50:20+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -644,8 +644,8 @@
         <valueString value="true"/>
       </extension>
     </extension>
-    <grouping id="LogicalModelXDS">
-      <name value="Modèle logique Metadata XDS (Lot de soumission (SubmissionSet), DocumentEntry (XDS) et association)"/>
+    <grouping id="LogicalModelXDM">
+      <name value="Modèle logique Metadata XDM (Lot de soumission (SubmissionSet), DocumentEntry (XDS) et association)"/>
       <description value="Modèles logiques associés aux différents artifacts des METADATA XDS"/>
     </grouping>
     <grouping id="LogicalModelArchivePortabilite">
@@ -662,7 +662,7 @@
       <name value="MatriculeINS"/>
       <description value="Matricule de l'Identité Nationale de Santé (INS). Il correspond au NIR (Numéro d’Identification au Répertoire des personnes physiques) ou au NIA (Numéro Identifiant Attente) de l’individu)."/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelXDS"/>
+      <groupingId value="LogicalModelXDM"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -907,7 +907,7 @@
       <name value="PSIdNat"/>
       <description value="Identification nationale principale du professionnel propre aux SI de l’ANS et au CI-SIS. (Correspondance dans le MOS : idNat_PS) &#xA;&#xA;L’identification nationale du PS est construite selon le tableau dessous :&#xA;-  0 + N° ADELI &#xA;- 1 + Identifiant cabinet ADELI/identifiant interne &#xA;- 3 + FINESS/identifiant interne &#xA;- 4 + SIREN/identifiant interne &#xA;- 5 + SIRET/identifiant interne &#xA;- 6 + Identifiant cabinet RPPS/identifiant interne &#xA;- 8 + N° RPPS"/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelXDS"/>
+      <groupingId value="LogicalModelXDM"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -919,7 +919,7 @@
       <name value="SNR"/>
       <description value="Identifiant interne de l’instance de la solution ayant produit le document au format OID"/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelXDS"/>
+      <groupingId value="LogicalModelXDM"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -942,7 +942,7 @@
       <name value="StructIdNat"/>
       <description value="Identification nationale principale d’une structure propre aux SI de l'ANS et au CI-SIS 4. &#xA;&#xA;L’identification nationale d’une structure est construite selon le tableau dessous :&#xA;-  0 + Identifiant cabinet ADELI &#xA;- 1 + N° FINESS 2 + N° SIREN &#xA;- 3 + N° SIRET &#xA;- 4 + N° RPPS-rang &#xA;- Néant + N° technique"/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelXDS"/>
+      <groupingId value="LogicalModelXDM"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -998,7 +998,7 @@
       <name value="XDM ActorPatient"/>
       <description value="Cet attribut représente l'acteur Patient."/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelXDS"/>
+      <groupingId value="LogicalModelXDM"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1010,7 +1010,7 @@
       <name value="XDM ActorPS"/>
       <description value="&#xA;Cet attribut représente un acteur PS."/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelXDS"/>
+      <groupingId value="LogicalModelXDM"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1022,7 +1022,7 @@
       <name value="XDM ActorSNR"/>
       <description value="Cet attribut représente l'acteur SNR."/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelXDS"/>
+      <groupingId value="LogicalModelXDM"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1034,7 +1034,7 @@
       <name value="XDM ActorSystem"/>
       <description value="Cet attribut représente l'acteur System."/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelXDS"/>
+      <groupingId value="LogicalModelXDM"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1046,7 +1046,7 @@
       <name value="XDM ActorXDS"/>
       <description value="Cet attribut représente un acteur (humain ou système) ayant contribué au document. Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient. &#xA;&#xA;XCN de HL7 v2.5"/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelXDS"/>
+      <groupingId value="LogicalModelXDM"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1058,7 +1058,7 @@
       <name value="XDM Archive XDM"/>
       <description value="Modèle logique décrivant la structure d'un SUBSET IHE XDM.&#xA;Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets."/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelXDS"/>
+      <groupingId value="LogicalModelXDM"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1070,7 +1070,7 @@
       <name value="XDM Association"/>
       <description value="Modèle logique d'une association IHE XDS entre deux objets de l'archive de portabilité.&#xA;Permet de relier un SubmissionSet ou un DocumentEntry à un autre (remplacement ou transformation)."/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelXDS"/>
+      <groupingId value="LogicalModelXDM"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1082,7 +1082,7 @@
       <name value="XDM Author"/>
       <description value="Modèle logique d'un auteur.&#xA;&#xA;Représente les personnes physiques et/ou les systèmes (dispositifs, automates, services numériques référencés…) auteurs d’un document ou d'un lot de soummission. &#xA;&#xA;L’auteur peut être : &#xA;- Un professionnel (personne physique) via son logiciel de professionnel, &#xA;- Le patient/usager (personne physique) via Mon espace Santé, &#xA;- Un système de structure (dispositif, automate, appareil connecté…), &#xA;- Un SNR (Service Numérique Référencé), &#xA;&#xA;&#xA;**author** est un ensemble constitué des sous-attributs **authorInstitution** , **authorPerson**, **authorRole** et **authorSpecialty** et ne porte pas de valeur par lui-même."/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelXDS"/>
+      <groupingId value="LogicalModelXDM"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1094,7 +1094,7 @@
       <name value="XDM AuthorDocumentEntry"/>
       <description value="Modèle logique d'un auteur d'un document&#xA;Cette métadonnée représente les personnes physiques et/ou les systèmes (dispositifs, automates, services numériques référencés…) auteurs d’un document. &#xA;L’auteur peut être : &#xA;-  Un professionnel (personne physique) via son logiciel de professionnel, &#xA;- Le patient/usager (personne physique) via Mon espace Santé, &#xA;-  Un système de structure (dispositif, automate, appareil connecté…), &#xA;-  Un SNR (Service Numérique Référencé),"/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelXDS"/>
+      <groupingId value="LogicalModelXDM"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1106,7 +1106,7 @@
       <name value="XDM AuthorInstitution"/>
       <description value="Cet attribut représente la structure de l’auteur. &#xA;Pour les documents d’expression personnelle du patient, cette métadonnée est absente, cela signifie que l’élément XML &lt;rim:Slot name='authorInstitution'&gt; n’est pas transmis."/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelXDS"/>
+      <groupingId value="LogicalModelXDM"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1118,7 +1118,7 @@
       <name value="XDM AuthorSubmissionSet"/>
       <description value="Modèle logique d'un auteur d'un lot de soumission&#xA;Cette métadonnée représente les personnes physiques et/ou les systèmes auteurs d’un lot de soumission. &#xA;Constituée des sous-attributs **authorInstitution**, **authorPerson**, **authorRole** et **authorSpecialty**, elle ne porte pas de valeur par elle-même."/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelXDS"/>
+      <groupingId value="LogicalModelXDM"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1130,7 +1130,7 @@
       <name value="XDM DocumentEntry"/>
       <description value="Modèle logique  d’une fiche"/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelXDS"/>
+      <groupingId value="LogicalModelXDM"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1142,7 +1142,7 @@
       <name value="XDM EventCode"/>
       <description value="Modèle logique d'un eventCode.&#xA;Un EventCode peut contenir le code représentant : &#xA;-  un évènement documenté (acte, traitement, diagnostic, etc…),  &#xA;-  une modalité d’acquisition, &#xA;-  une région anatomique."/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelXDS"/>
+      <groupingId value="LogicalModelXDM"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1154,7 +1154,7 @@
       <name value="XDM Identifiant"/>
       <description value="Identifiant de professionnel de santé, de patient, de SNR ou de système"/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelXDS"/>
+      <groupingId value="LogicalModelXDM"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1166,7 +1166,7 @@
       <name value="XDM IdentifiantSysteme"/>
       <description value="Identification d'un systeme&#xA;&#xA;L’identification du systeme  est construite selon le tableau dessous :&#xA;- 1 + Identifiant cabinet ADELI/Identifiant interne du système dans la structure &#xA;- 3 + FINESS/Identifiant interne du système dans la structure  &#xA;- 4 + SIREN/Identifiant interne du système dans la structure &#xA;- 5 + SIRET/Identifiant interne du système dans la structure &#xA;- 6 + Identifiant cabinet RPPS/Identifiant interne du système dans la structure"/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelXDS"/>
+      <groupingId value="LogicalModelXDM"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1178,7 +1178,7 @@
       <name value="XDM PatientId"/>
       <description value="Modèle logique de patientID.&#xA;PatientID représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient."/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelXDS"/>
+      <groupingId value="LogicalModelXDM"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1190,7 +1190,7 @@
       <name value="XDM SourcePatientId"/>
       <description value="Cette métadonnée contient l’identifiant secondaire du patient dans le système d’information du producteur (IPP) ou l’INS, s’il n’y a pas d’identifiant secondaire. Pour les documents d’expression personnelle du patient, cette métadonnée contient l’INS du patient, à savoir le même identifiant que patientId."/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelXDS"/>
+      <groupingId value="LogicalModelXDM"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1202,7 +1202,7 @@
       <name value="XDM SourcePatientInfo"/>
       <description value="Cette métadonnée contient les traits d’identité du patient concerné par le document, connus par le producteur du document. Les informations présentes dans la métadonnée sourcePatientInfo ne doivent en aucun cas être réutilisées pour calculer un identifiant, ni être mises à jour après la soumission du document."/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelXDS"/>
+      <groupingId value="LogicalModelXDM"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1214,7 +1214,7 @@
       <name value="XDM SubmissionSet"/>
       <description value="Modèle logique d'un lot de soummission (SubmissionSet)."/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelXDS"/>
+      <groupingId value="LogicalModelXDM"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
