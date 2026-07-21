@@ -19,7 +19,7 @@ Le diagramme ci-dessous illustre le contexte fonctionnel de la transaction Expor
 <br>
 
 <figure style="text-align:center;">
-{% include activity-pdlg-export-archive-portabilite.svg %}
+{% include sf-activity-pdlg-export-archive-portabilite.svg %}
     <figcaption> 
         Diagramme d'activité du processus collaboratif "Export d'archive Portabilité"
     </figcaption>
