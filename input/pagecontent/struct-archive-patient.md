@@ -4,7 +4,7 @@ Le modèle logique associé à cette archive est consultable <a href="StructureD
 
 <br>
 
-#### `INDEX.HTM`
+#### `INDEX.HTM` de l'archive XDM Patient
 
 Le fichier `INDEX.HTM` est imposé par le profil IHE_XDM à la racine d'une archive XDM. Il renferme des informations éditoriales et est conforme aux spécifications XHTML et [Echanges de Documents de santé](https://esante.gouv.fr/annexe-sources-des-donnees-personnes-et-structures). Il contient : 
 - l'identification obligatoire du fournisseur sortant ayant créé le media : StructIdNat (identifiant de stucture de santé) et StructNom (nom de la structure) ; 
@@ -28,7 +28,7 @@ Le modèle logique associé au fichier INDEX.HTM est consultable <a href="Struct
 ```
 <br>
 
-#### `README.TXT`
+#### `README.TXT` de l'archive XDM Patient
 
 Ce `README.TXT` suit la même trame que le `README.TXT` de l'archive de portabilité et les archives Patient. Voir section <a href="struct-main-structure-archive.html#readme">README.TXT de l'archive de portabilité</a>.
 Ce fichier est imposé par le profil IHE_XDM et précise la structure propre à chaque archive XDM (différente de l'archive de portabilité).
@@ -71,7 +71,7 @@ Arborescence :
 ```
 <br>
 
-#### Répertoire `IHE_XDM/`
+#### Répertoire `IHE_XDM/` 
 
 Ce répertoire `IHE_XDM` contient un sous-répertoire `SUBSET01 contenant l'ensemble des documents transmis : 
 - le ou les documents de données administratives et médicales du patient ;
@@ -79,7 +79,7 @@ Ce répertoire `IHE_XDM` contient un sous-répertoire `SUBSET01 contenant l'ense
 
 <br>
 
-#### Répertoire `PDF/`
+#### Répertoire `PDF/` de l'archive XDM Patient
 
 Le répertoire `PDF/`, positionné à la racine de l'archive XDM, constitue une extension au profil IHE_XDM. Il regroupe une version PDF des documents structurés contenus dans le répertoire `IHE_XDM/` destinée exclusivement à la consultation humaine. Ces fichiers ne sont pas destinés à être exploités par un système d'information et ne se substituent en aucun cas aux documents structurés, qui demeurent la source de référence pour les traitements automatisés.
 
@@ -87,7 +87,7 @@ Le nommage des fichiers PDF doit pouvoir permettre d'établir sans ambiguïté l
 
 <br>
 
-#### `METADATA.XML`
+#### `METADATA.XML` de l'archive XDM Patient
 
 Conformément au profil IHE XDM, chaque archive XDM Patient contient, dans son sous-répertoire `SUBSET01`, un fichier `METADATA.XML` structuré selon le modèle de métadonnées XDS-like (lot de soumission, fiches et associations). Certaines contraintes sont appliquées à ce fichier pour s'adapter au contexte de portabilité LGC.
 

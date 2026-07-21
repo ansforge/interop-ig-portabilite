@@ -40,14 +40,12 @@ Arborescence :
      README.TXT
      MANIFEST.XML
      + DOCUMENTATION
+        DICO001.XML
+        DICOOO2.XML
+        VALUESET.JSON
+        MAPPING.JSON
+        ECH001.ZIP     
      + TRANSVERSE.ZIP
-        + README.TXT
-        + TRANVERSE.ZIP
-            DICO001.XML
-            DICOOO2.XML
-            VALUESET.JSON
-            MAPPING.JSON
-            ECH001.ZIP
-        + PAT00001.ZIP
-        + PAT00002.ZIP
+     + PAT00001.ZIP
+     + PAT00002.ZIP
 ```

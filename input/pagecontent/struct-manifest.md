@@ -9,7 +9,7 @@ Le `MANIFEST.XML` recense notamment :
 
 Le modèle logique associé au fichier `MANIFEST.XML` est consultable <a href="StructureDefinition-pdlgc-manifest.html">ici</a>
 
-**Exemple de `MANIFEST.XML`**
+**Exemple de `MANIFEST.XML` de l'archive de portabilité**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -20,7 +20,7 @@ Le modèle logique associé au fichier `MANIFEST.XML` est consultable <a href="S
     <comments>Export de données LGC répondant à la demande du Dr Dupond le 13 juin 2026</comments>
     <editeurSortant>
       <raisonSociale>Editeur Exemple de LGC</raisonSociale>
-      <idNatStruc>175259803546</idNatStruct>
+      <idNatStruct>175259803546</idNatStruct>
       <contact>
         <nom>Service Portabilité</nom>
         <email>portabilite@editeur.fr</email>

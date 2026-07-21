@@ -6,6 +6,41 @@ L'archive `TRANSVERSE.ZIP` est dédiée aux données transverses associées au c
 
 Ce `README.TXT` suit la même trame que le `README.TXT` de l'archive de portabilité et les archives Patient. Voir section <a href="struct-main-structure-archive.html#readme">README.TXT de l'archive de portabilité</a>
 
+**Modèle logique**
+
+Le modèle logique associé au fichier README.TXT est consultable <a href="StructureDefinition-pdlgc-readme.html">ici</a>
+
+**Exemple de README.TXT d'une archive transverse**
+
+```txt
+Fournisseur Sortant :
+=============
+    . IdNatStruct : 175259803546
+    . raisonSociale : Editeur Exemple de LGC
+    . Contact de Portabilité : service Portabilité
+        . email : portabilite@editeur.fr
+        . Téléphone : +33100000000
+
+Application du fournisseur sortant :
+=========================
+    . Nom : LGC example
+    . Version : 1.2
+
+Instructions :
+=============
+. Consultez les fichiers de documentation accessibles dans le répertoire DOCUMENTATION\ pour interpréter les données
+
+Arborescence :
+============
+     README.TXT
+     + TRANSVERSE
+        AGENDA.ICS
+│       COMPTA.txt
+│       LOGS.CSV
+
+```
+
+
 <br>
 
 #### Sous-répertoire TRANSVERSE/
