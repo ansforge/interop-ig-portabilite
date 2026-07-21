@@ -1,40 +1,40 @@
 @startsalt
 {
 {T
-+ 📦 <b>PAAAAAMMJJThhmmss.ZIP</b>  //Archive de portabilité//
-++ 📄 README.TXT                    //Informations éditoriales et instructions//
-++ 📄 MANIFEST.XML                  //Vue synthétique du contenu de l'archive et rapport d'intégrité//
-++ 📄 SIGN.XML                      //Signature attestant de l'authenticité et de l'imputabilité des données//
-++ 📁 DOCUMENTATION/                //Documentation d'export//
-+++ 📄 DICO001.XML                  //Dictionnaire de données 1//
-+++ 📄 DICO002.JSON                 //Dictionnaire de données 2//
-+++ 📄 VALUESET.JSON                //Dictionnaire des terminologies propriétaires//
-+++ 📄 MAPPING.JSON                 //Mapping des fichiers//
-+++ 📦 ECH001.ZIP                   //Jeu d'échantillons//
++ 📦  <b>PAAAAAMMJJThhmmss.ZIP</b>      //Archive de portabilité//
+++ 📄 README.TXT                                //Informations éditoriales et instructions//
+++ 📄 MANIFEST.XML                            //Vue synthétique du contenu de l'archive et rapport d'intégrité//
+++ 📄 SIGN.XML                                      //Signature attestant de l'authenticité et de l'imputabilité des données//
+++ 📁 DOCUMENTATION/                     //Documentation d'export//
++++ 📄 DICO001.XML                            //Dictionnaire de données 1//
++++ 📄 DICO002.JSON                         //Dictionnaire de données 2//
++++ 📄 VALUESET.JSON                     //Dictionnaire des terminologies propriétaires//
++++ 📄 MAPPING.JSON                        //Mapping des fichiers//
++++ 📦 ECH001.ZIP                              //Jeu d'échantillons//
 +++ 📄 ...
-++ 📦 TRANSVERSE.ZIP                //Archive de données transverse (professionnel et/ou structure)//
+++ 📦 TRANSVERSE.ZIP                       //Archive de données transverse (professionnel et/ou structure)//
 +++ 📄 README.TXT                   
 +++ 📁 TRANSVERSE/
 ++++ 📄 AGENDA.ICS
 ++++ 📄 COMPTA.txt
 ++++ 📄 LOGS.CSV
 ++++ 📄 ...
-++ 📦 PAT00001.ZIP                  //Archive XDM Patient INS_1, conforme IHE_XDM//
+++ 📦 PAT00001.ZIP                               //Archive XDM Patient INS_1, conforme IHE_XDM//
 +++ 📄 INDEX.HTM
 +++ 📄 README.TXT                   
-+++ 📁 PDF/                         //Répertoire de stockage des PDF pour consultation, extension au profil XDM//
++++ 📁 PDF/                                             //Répertoire de stockage des PDF pour consultation, extension au profil XDM//
 +++ 📁 IHE_XDM/ 
-++++ 📁 SUBSET01/                   //lot de soumission//
+++++ 📁 SUBSET01/                             //Lot de soumission//
 +++++ 📄 METADATA.XML
 +++++ 📄 DOC10001.XML
 +++++ 📄 DOC10002.XML
 +++++ 📄 ...
-++ 📦 PAT00002.ZIP                  //Archive XDM Patient INS_2, conforme IHE_XDM//
+++ 📦 PAT00002.ZIP                                //Archive XDM Patient INS_2, conforme IHE_XDM//
 +++ 📄 INDEX.HTM
 +++ 📄 README.TXT                   
-+++ 📁 PDF/                         //Répertoire de stockage des PDF pour consultation, extension au profil XDM//
++++ 📁 PDF/                                             //Répertoire de stockage des PDF pour consultation, extension au profil XDM//
 +++ 📁 IHE_XDM/
-++++ 📁 SUBSET01/                   //lot de soumission//
+++++ 📁 SUBSET01/                             //Lot de soumission//
 +++++ 📄 METADATA.XML
 +++++ 📄 DOC20001.XML
 +++++ 📄 ...
