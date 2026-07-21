@@ -347,7 +347,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p><br/></p>
 
-<p>Le tableau ci-dessous définit les différents objets :</p>
+<p>Le tableau ci-dessous définit les différents objets de l'archive de portabilité:</p>
+
+<p><strong>Archives et répertoires</strong></p>
 
 <table>
   <thead>
@@ -358,36 +360,82 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </thead>
   <tbody>
     <tr>
-      <td>Archive de portabilité</td>
+      <td>Archive de portabilité [1..1]</td>
       <td>Conteneur structuré regroupant l'ensemble des documents et données exportés, ainsi que les éléments de métadonnées, d'index et de documentation nécessaires à leur exploitation par le destinataire.</td>
     </tr>
     <tr>
-      <td>Archive XDM Patient (données médicales et administratives du patient)</td>
+      <td>Archive XDM Patient (données médicales et administratives du patient) [1..1]</td>
       <td>Répertoire contenant l'ensemble des données de santé d'un patient dans un format structuré standardisé ou propriétaire.</td>
     </tr>
     <tr>
-      <td>Archive de données transverses</td>
+      <td>Archive de données transverses [0..1]</td>
       <td>Répertoire contenant l'ensemble des données transverses associées au praticien ou au cabinet (agenda, logs, comptabilité,…).</td>
     </tr>
     <tr>
-      <td>Documentation d'export</td>
+      <td>Documentation d'export [1..1]</td>
       <td>Ensemble des éléments accompagnant l'archive et permettant son interprétation par le système destinataire : dictionnaire de données, dictionnaire de terminologies propriétaires, schéma technique de validation, jeu d'échantillons,…</td>
     </tr>
+  </tbody>
+</table>
+
+<p><br/></p>
+
+<p><strong>Fichiers de gestion</strong></p>
+
+<table>
+  <thead>
     <tr>
-      <td>Document périmètre pivot</td>
-      <td><a name="l939">​</a>Ensemble minimal, obligatoire et structuré de données administratives et médicales (confère <a href="sf-perimetre-pivot.html">Périmètre pivot</a>).</td>
+      <th>Nom</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MANIFEST.XML [1..1]</td>
+      <td>Vue synthétique du contenu de l'archive de portabilité et rapport d'intégrité.</td>
     </tr>
     <tr>
-      <td>Document hors périmètre pivot</td>
+      <td>SIGN.XML [1..1]</td>
+      <td>Signature attestant de l'authenticité et de l'imputabilité des données de l'archive de portabilité.</td>
+    </tr>
+    <tr>
+      <td>README.TXT [2..*]</td>
+      <td>Informations éditoriales et instructions d'utilisation relatives à l'archive dans laquelle il se trouve (portabilité, transverse ou patient). Un README est décliné pour chacune de ces trois archives, à partir d'un socle commun.</td>
+    </tr>
+    <tr>
+      <td>METADATA.XML [1..*]</td>
+      <td>Fichier de métadonnées du lot de soumission, conforme au profil IHE XDM, décrivant les documents patient qu'il accompagne.</td>
+    </tr>
+    <tr>
+      <td>INDEX.HTM [1..*]</td>
+      <td>Page d'index renfermant les informations éditoriales, conformément au volet <strong>Echanges de Documents de Santé</strong>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br/></p>
+
+<p><strong>Documents médicaux et administratifs</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nom</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Document périmètre pivot [1..*]</td>
+      <td><a name="l1041">​</a>Ensemble minimal, obligatoire et structuré de données administratives et médicales (confère <a href="sf-perimetre-pivot.html">Périmètre pivot</a>).</td>
+    </tr>
+    <tr>
+      <td>Document hors périmètre pivot [0..*]</td>
       <td>Données dont l'export est facultatif. Leur export doit toutefois être structuré et documenté, au même titre que pour les documents du périmètre pivot.</td>
     </tr>
     <tr>
-      <td>PDF</td>
+      <td>PDF [1..*]</td>
       <td>Format de consultation pour les données Patient. Ces documents n'ont pas vocation à être intégrés par le destinataire si le destinataire est un système.</td>
-    </tr>
-    <tr>
-      <td>Fichiers de gestion (MANIFEST.XML, README.TXT, METADATA.XML, INDEX.HTM, SIGN.XML)</td>
-      <td>Fichiers attestant de l'intégrité et l'imputabilité de des données de l'archive de Portabilité. Ces fichiers permettent également au fournisseur destinataire de comprendre et d'intégrer les données de l'archive.</td>
     </tr>
   </tbody>
 </table>
@@ -408,7 +456,7 @@ Elle est déclenchée par le demandeur (Patient ou Professionnel de Santé) qui 
 
 <p><br/></p>
 
-<p><a name="l1015">​</a>La structure complète de l'archive ZIP est décrite dans la section <a href="specs-main-structure-archive">Structure de l'archive de Portabilité</a></p>
+<p><a name="l1108">​</a>La structure complète de l'archive ZIP est décrite dans la section <a href="specs-main-structure-archive">Structure de l'archive de Portabilité</a></p>
 
 <p><br/></p>
 
@@ -861,7 +909,7 @@ Elle est déclenchée par le demandeur (Patient ou Professionnel de Santé) qui 
           IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.pdlgc#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-07-21 15:50:00 +0000">
+  <span title="2026-07-21 16:28:00 +0000">
     2026-07-21
   </span>
 

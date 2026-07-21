@@ -30,8 +30,8 @@
     "systems" : ["https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs"],
     "uses" : {
     },
-    "StructureDefinition-pdlgc-manifest-archives.html" : "PDLGC Manifest Archives",
-    "StructureDefinition-pdlgc-manifest.html" : "PDLGC Manifest"
+    "StructureDefinition-pdlgc-manifest.html" : "PDLGC Manifest",
+    "StructureDefinition-pdlgc-manifest-archives.html" : "PDLGC Manifest Archives"
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-association-type",
@@ -74,8 +74,8 @@
     "sources" : ["1.2.250.1.213.1.1.5.461"],
     "uses" : {
     },
-    "StructureDefinition-xdm-author.html" : "XDM Author",
     "StructureDefinition-xdm-author-submission-set.html" : "XDM AuthorSubmissionSet",
+    "StructureDefinition-xdm-author.html" : "XDM Author",
     "StructureDefinition-xdm-author-document-entry.html" : "XDM AuthorDocumentEntry"
   },
   {
@@ -201,8 +201,8 @@
     "sources" : ["1.2.250.1.213.1.1.5.124"],
     "uses" : {
     },
-    "StructureDefinition-xdm-author.html" : "XDM Author",
     "StructureDefinition-xdm-author-submission-set.html" : "XDM AuthorSubmissionSet",
+    "StructureDefinition-xdm-author.html" : "XDM Author",
     "StructureDefinition-xdm-author-document-entry.html" : "XDM AuthorDocumentEntry"
   },
   {
@@ -218,8 +218,8 @@
     "sources" : ["1.2.250.1.213.1.1.5.131"],
     "uses" : {
     },
-    "StructureDefinition-xdm-submission-set.html" : "XDM SubmissionSet",
-    "StructureDefinition-xdm-document-entry.html" : "XDM DocumentEntry"
+    "StructureDefinition-xdm-document-entry.html" : "XDM DocumentEntry",
+    "StructureDefinition-xdm-submission-set.html" : "XDM SubmissionSet"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/JDV_J58-ConfidentialityCode-DMP/FHIR/JDV-J58-ConfidentialityCode-DMP",
