@@ -236,7 +236,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#arborescence-globale" id="markdown-toc-arborescence-globale">Arborescence globale</a></li>
   <li><a href="#conventions-décritures-des-répertoires-et-des-fichiers" id="markdown-toc-conventions-décritures-des-répertoires-et-des-fichiers">Conventions d'écritures des répertoires et des fichiers</a></li>
   <li><a href="#fichiers-de-gestion-de-larchive-de-portabilité-manifest-readme-signature" id="markdown-toc-fichiers-de-gestion-de-larchive-de-portabilité-manifest-readme-signature">Fichiers de gestion de l'archive de portabilité (Manifest, readme, signature)</a></li>
-  <li><a href="#documentation-dexport" id="markdown-toc-documentation-dexport">Documentation d'export</a></li>
+  <li><a href="#documentation-dexport-de-larchive-de-portabilité" id="markdown-toc-documentation-dexport-de-larchive-de-portabilité">Documentation d'export de l'archive de portabilité</a></li>
   <li><a href="#archive-xdm-patient" id="markdown-toc-archive-xdm-patient">Archive XDM Patient</a></li>
   <li><a href="#archive-transverse" id="markdown-toc-archive-transverse">Archive Transverse</a></li>
 </ul>
@@ -257,7 +257,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PAAAAAMMJJThhmmss.ZIP               (Archive ZIP chapeau de portabilité, hors profil XDM)
 │
-├── README.TXT                      (Informations éditoriales et instructions)
+├── README.TXT                      (Informations éditoriales et instructions relative à l'archive de portabilité)
 ├── MANIFEST.XML                    (Vue synthétique du contenu de l'archive de Portabilité et rapport d'intégrité)
 ├── SIGN.XML                        (Signature attestant de l'authenticité et de l'imputabilité des données)
 │
@@ -270,7 +270,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 │   └── ...
 │
 ├── TRANSVERSE.ZIP                  (Archive de données transverse liées au professionnel et/ou à la structure)
-│   ├── README.TXT                  
+│   ├── README.TXT                  (Informations éditoriales et instructions relative à l'archive de donnée transverse)            
 │   └── TRANSVERSE/
 │        ├── AGENDA.ICS
 │        ├── COMPTA.txt
@@ -279,7 +279,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 │
 ├── PAT00001.ZIP                    (Archive XDM Patient INS_1, conforme IHE_XDM)
 │   ├── INDEX.HTM
-│   ├── README.TXT
+│   ├── README.TXT                  (Informations éditoriales et instructions relative à l'archive de données Patient INS_1)
 │   └── PDF/                        (Répertoire de stockage des PDF pour consultation, extension au profil XDM)
 │   └── IHE_XDM/
 │       └── SUBSET01/
@@ -290,7 +290,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 │
 └── PAT00002.ZIP                    (Archive XDM Patient INS_2, conforme IHE_XDM)
     ├── INDEX.HTM
-    ├── README.TXT
+    ├── README.TXT                  (Informations éditoriales et instructions relative à l'archive de données Patient INS_2)
     └── PDF/                        (Répertoire de stockage des PDF pour consultation, extension au profil XDM)
     └── IHE_XDM/
         └── SUBSET01/
@@ -333,15 +333,18 @@ d'origine. Par exemple, <code class="language-plaintext highlighter-rouge">CR_SE
 <p>Le nom des répertoires et sous-archives ZIP doit respecter le format suivant :</p>
 <ul>
   <li><code class="language-plaintext highlighter-rouge">DOCUMENTATION/</code>: documentation d'export permettant au fournisseur sortant d'interpréter et d'intégrer les données ;</li>
-  <li><code class="language-plaintext highlighter-rouge">TRANSVERSE.ZIP</code> : contient les données transverses (logs, comptabilité, agenda,…) ;</li>
-  <li><code class="language-plaintext highlighter-rouge">PATNNNNN.ZIP</code> : contient les données d'un patient et est conforme au profil IHE_XDM, ou "NNNNN" est incrémenté à partir de 00001. Exemple : <code class="language-plaintext highlighter-rouge">PAT00183.ZIP</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">TRANSVERSE.ZIP</code> : archive contenant les données transverses (logs, comptabilité, agenda,…) ;</li>
+  <li><code class="language-plaintext highlighter-rouge">TRANSVERSE/</code> : répertoire contenant les données transverses (logs, comptabilité, agenda,…) ;</li>
+  <li><code class="language-plaintext highlighter-rouge">PATNNNNN.ZIP</code> : contient les données d'un patient et est conforme au profil IHE_XDM, ou "NNNNN" est incrémenté à partir de 00001. Exemple : <code class="language-plaintext highlighter-rouge">PAT00183.ZIP</code>;</li>
+  <li><code class="language-plaintext highlighter-rouge">PDF</code>: sous-répertoire de l'archive patient contenant les documents PDF destinés à la consultation humaine ;</li>
+  <li><code class="language-plaintext highlighter-rouge">IHE_XDM</code>et <code class="language-plaintext highlighter-rouge">SUBSET01</code>: sous-répertoires de l'archive XDM contenant les documents d'un patient.</li>
 </ul>
 
 <p><br /></p>
 
 <h3 id="fichiers-de-gestion-de-larchive-de-portabilité-manifest-readme-signature">Fichiers de gestion de l'archive de portabilité (Manifest, readme, signature)</h3>
 
-<h4 id="manifestxml">MANIFEST.XML</h4>
+<h4 id="manifestxml-de-larchive-de-portabilité"><code class="language-plaintext highlighter-rouge">MANIFEST.XML</code> de l'archive de portabilité</h4>
 
 <p>Le fichier <code class="language-plaintext highlighter-rouge">MANIFEST.XML</code>, positionné à la racine de l'archive de portabilité, fournit une vue d'ensemble synthétique et exploitable par traitement automatisé du contenu global de l'export. Il complète le <code class="language-plaintext highlighter-rouge">README.TXT</code> de niveau chapeau, destiné à la lecture humaine. Il porte exclusivement sur le pilotage de la collection d'archives. Le détail des fichiers transportés est quant à lui décrit dans le fichier <code class="language-plaintext highlighter-rouge">METADATA.XML</code> de chaque lot de soumission.</p>
 
@@ -356,7 +359,7 @@ d'origine. Par exemple, <code class="language-plaintext highlighter-rouge">CR_SE
 
 <p>Le modèle logique associé au fichier <code class="language-plaintext highlighter-rouge">MANIFEST.XML</code> est consultable <a href="StructureDefinition-pdlgc-manifest.html">ici</a></p>
 
-<p><strong>Exemple de <code class="language-plaintext highlighter-rouge">MANIFEST.XML</code></strong></p>
+<p><strong>Exemple de <code class="language-plaintext highlighter-rouge">MANIFEST.XML</code> de l'archive de portabilité</strong></p>
 
 <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
 <span class="nt">&lt;Manifest&gt;</span>
@@ -366,7 +369,7 @@ d'origine. Par exemple, <code class="language-plaintext highlighter-rouge">CR_SE
     <span class="nt">&lt;comments&gt;</span>Export de données LGC répondant à la demande du Dr Dupond le 13 juin 2026<span class="nt">&lt;/comments&gt;</span>
     <span class="nt">&lt;editeurSortant&gt;</span>
       <span class="nt">&lt;raisonSociale&gt;</span>Editeur Exemple de LGC<span class="nt">&lt;/raisonSociale&gt;</span>
-      <span class="nt">&lt;idNatStruc&gt;</span>175259803546<span class="nt">&lt;/idNatStruct&gt;</span>
+      <span class="nt">&lt;idNatStruct&gt;</span>175259803546<span class="nt">&lt;/idNatStruct&gt;</span>
       <span class="nt">&lt;contact&gt;</span>
         <span class="nt">&lt;nom&gt;</span>Service Portabilité<span class="nt">&lt;/nom&gt;</span>
         <span class="nt">&lt;email&gt;</span>portabilite@editeur.fr<span class="nt">&lt;/email&gt;</span>
@@ -402,7 +405,7 @@ d'origine. Par exemple, <code class="language-plaintext highlighter-rouge">CR_SE
 
 <p><br /></p>
 
-<h4 id="readme">README.TXT</h4>
+<h4 id="readme"><code class="language-plaintext highlighter-rouge">README.TXT</code> de l'archive de portabilité</h4>
 
 <p>Le fichier README.TXT est indépendant du contenu clinique de l'archive. Il contient des informations éditoriales dont le caractère obligatoire relève du fournisseur sortant, conformément au volume 2b du cadre technique ITI :</p>
 <ul>
@@ -449,21 +452,19 @@ Arborescence :
      README.TXT
      MANIFEST.XML
      + DOCUMENTATION
+        DICO001.XML
+        DICOOO2.XML
+        VALUESET.JSON
+        MAPPING.JSON
+        ECH001.ZIP     
      + TRANSVERSE.ZIP
-        + README.TXT
-        + TRANVERSE.ZIP
-            DICO001.XML
-            DICOOO2.XML
-            VALUESET.JSON
-            MAPPING.JSON
-            ECH001.ZIP
-        + PAT00001.ZIP
-        + PAT00002.ZIP
+     + PAT00001.ZIP
+     + PAT00002.ZIP
 </code></pre>
 
 <p><br /></p>
 
-<h4 id="signxml">SIGN.XML</h4>
+<h4 id="signxml-de-larchive-de-portabilité"><code class="language-plaintext highlighter-rouge">SIGN.XML</code> de l'archive de portabilité</h4>
 
 <p>Le fichier <code class="language-plaintext highlighter-rouge">SIGN.XML</code>, positionné à la racine de l'archive de portabilité, contient la signature électronique de l'archive conformément au format XAdES. Il garantit l'intégrité de l'ensemble des fichiers de données LGC constituant l'archive et permet de vérifier l'identité du signataire ainsi que l'imputabilité de la production de l'archive. Les fichiers à vocation documentaire (README, documentation technique, schémas, exemples, etc.) ne sont pas couverts par la signature électronique.</p>
 
@@ -556,7 +557,7 @@ Arborescence :
 
 <p><br /></p>
 
-<h3 id="documentation-dexport">Documentation d'export</h3>
+<h3 id="documentation-dexport-de-larchive-de-portabilité">Documentation d'export de l'archive de portabilité</h3>
 
 <p>Le répertoire <code class="language-plaintext highlighter-rouge">DOCUMENTATION/</code>, positionné à la racine de l'archive de portabilité, regroupe l'ensemble des éléments permettant au fournisseur destinataire d'interpréter et d'intégrer les données reçues de manière autonome, sans échange préalable avec le fournisseur sortant.</p>
 
@@ -618,7 +619,7 @@ Comme pour le dictionnaire de données, les fichiers conformes à un volet CI-SI
 
 <p><br /></p>
 
-<h4 id="indexhtm">INDEX.HTM</h4>
+<h4 id="indexhtm-de-larchive-xdm-patient"><code class="language-plaintext highlighter-rouge">INDEX.HTM</code> de l'archive XDM Patient</h4>
 
 <p>Le fichier <code class="language-plaintext highlighter-rouge">INDEX.HTM</code> est imposé par le profil IHE_XDM à la racine d'une archive XDM. Il renferme des informations éditoriales et est conforme aux spécifications XHTML et <a href="https://esante.gouv.fr/annexe-sources-des-donnees-personnes-et-structures">Echanges de Documents de santé</a>. Il contient :</p>
 <ul>
@@ -642,7 +643,7 @@ Comme pour le dictionnaire de données, les fichiers conformes à un volet CI-SI
 </code></pre></div></div>
 <p><br /></p>
 
-<h4 id="readmetxt">README.TXT</h4>
+<h4 id="readmetxt-de-larchive-xdm-patient"><code class="language-plaintext highlighter-rouge">README.TXT</code> de l'archive XDM Patient</h4>
 
 <p>Ce <code class="language-plaintext highlighter-rouge">README.TXT</code> suit la même trame que le <code class="language-plaintext highlighter-rouge">README.TXT</code> de l'archive de portabilité et les archives Patient. Voir section <a href="struct-main-structure-archive.html#readme">README.TXT de l'archive de portabilité</a>.
 Ce fichier est imposé par le profil IHE_XDM et précise la structure propre à chaque archive XDM (différente de l'archive de portabilité).</p>
@@ -694,13 +695,15 @@ Arborescence :
 
 <p><br /></p>
 
-<h4 id="répertoire-pdf">Répertoire <code class="language-plaintext highlighter-rouge">PDF/</code></h4>
+<h4 id="répertoire-pdf-de-larchive-xdm-patient">Répertoire <code class="language-plaintext highlighter-rouge">PDF/</code> de l'archive XDM Patient</h4>
 
 <p>Le répertoire <code class="language-plaintext highlighter-rouge">PDF/</code>, positionné à la racine de l'archive XDM, constitue une extension au profil IHE_XDM. Il regroupe une version PDF des documents structurés contenus dans le répertoire <code class="language-plaintext highlighter-rouge">IHE_XDM/</code> destinée exclusivement à la consultation humaine. Ces fichiers ne sont pas destinés à être exploités par un système d'information et ne se substituent en aucun cas aux documents structurés, qui demeurent la source de référence pour les traitements automatisés.</p>
 
 <p>Le nommage des fichiers PDF doit pouvoir permettre d'établir sans ambiguïté la correspondance avec le document structuré auquel ils se rapportent.</p>
 
-<h4 id="metadataxml">METADATA.XML</h4>
+<p><br /></p>
+
+<h4 id="metadataxml-de-larchive-xdm-patient"><code class="language-plaintext highlighter-rouge">METADATA.XML</code> de l'archive XDM Patient</h4>
 
 <p>Conformément au profil IHE XDM, chaque archive XDM Patient contient, dans son sous-répertoire <code class="language-plaintext highlighter-rouge">SUBSET01</code>, un fichier <code class="language-plaintext highlighter-rouge">METADATA.XML</code> structuré selon le modèle de métadonnées XDS-like (lot de soumission, fiches et associations). Certaines contraintes sont appliquées à ce fichier pour s'adapter au contexte de portabilité LGC.</p>
 
@@ -720,9 +723,46 @@ Arborescence :
 
 <p>L'archive <code class="language-plaintext highlighter-rouge">TRANSVERSE.ZIP</code> est dédiée aux données transverses associées au cabinet ou au praticien, et ne relevant pas d'un dossier patient individuel.</p>
 
+<p><br /></p>
+
 <h4 id="readmetxt-de-larchive-transversezip">README.TXT de l'archive TRANSVERSE.ZIP</h4>
 
 <p>Ce <code class="language-plaintext highlighter-rouge">README.TXT</code> suit la même trame que le <code class="language-plaintext highlighter-rouge">README.TXT</code> de l'archive de portabilité et les archives Patient. Voir section <a href="struct-main-structure-archive.html#readme">README.TXT de l'archive de portabilité</a></p>
+
+<p><strong>Modèle logique</strong></p>
+
+<p>Le modèle logique associé au fichier README.TXT est consultable <a href="StructureDefinition-pdlgc-readme.html">ici</a></p>
+
+<p><strong>Exemple de README.TXT d'une archive transverse</strong></p>
+
+<pre><code class="language-txt">Fournisseur Sortant :
+=============
+    . IdNatStruct : 175259803546
+    . raisonSociale : Editeur Exemple de LGC
+    . Contact de Portabilité : service Portabilité
+        . email : portabilite@editeur.fr
+        . Téléphone : +33100000000
+
+Application du fournisseur sortant :
+=========================
+    . Nom : LGC example
+    . Version : 1.2
+
+Instructions :
+=============
+. Consultez les fichiers de documentation accessibles dans le répertoire DOCUMENTATION\ pour interpréter les données
+
+Arborescence :
+============
+     README.TXT
+     + TRANSVERSE
+        AGENDA.ICS
+│       COMPTA.txt
+│       LOGS.CSV
+
+</code></pre>
+
+<p><br /></p>
 
 <h4 id="sous-répertoire-transverse">Sous-répertoire TRANSVERSE/</h4>
 
@@ -780,8 +820,8 @@ La liste des fichiers effectivement présents dépend du périmètre de l'export
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Package ans.fhir.fr.pdlgc#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-07-19 17:20:00 +0000">
-    2026-07-19
+  <span title="2026-07-21 08:40:00 +0000">
+    2026-07-21
   </span>
 
           <br/>

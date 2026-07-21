@@ -17,7 +17,7 @@ L'archive de Portabilité est constituée de :
 ```
 PAAAAAMMJJThhmmss.ZIP               (Archive ZIP chapeau de portabilité, hors profil XDM)
 │
-├── README.TXT                      (Informations éditoriales et instructions)
+├── README.TXT                      (Informations éditoriales et instructions relative à l'archive de portabilité)
 ├── MANIFEST.XML                    (Vue synthétique du contenu de l'archive de Portabilité et rapport d'intégrité)
 ├── SIGN.XML                        (Signature attestant de l'authenticité et de l'imputabilité des données)
 │
@@ -30,7 +30,7 @@ PAAAAAMMJJThhmmss.ZIP               (Archive ZIP chapeau de portabilité, hors p
 │   └── ...
 │
 ├── TRANSVERSE.ZIP                  (Archive de données transverse liées au professionnel et/ou à la structure)
-│   ├── README.TXT                  
+│   ├── README.TXT                  (Informations éditoriales et instructions relative à l'archive de donnée transverse)            
 │   └── TRANSVERSE/
 │        ├── AGENDA.ICS
 │        ├── COMPTA.txt
@@ -39,7 +39,7 @@ PAAAAAMMJJThhmmss.ZIP               (Archive ZIP chapeau de portabilité, hors p
 │
 ├── PAT00001.ZIP                    (Archive XDM Patient INS_1, conforme IHE_XDM)
 │   ├── INDEX.HTM
-│   ├── README.TXT
+│   ├── README.TXT                  (Informations éditoriales et instructions relative à l'archive de données Patient INS_1)
 │   └── PDF/                        (Répertoire de stockage des PDF pour consultation, extension au profil XDM)
 │   └── IHE_XDM/
 │       └── SUBSET01/
@@ -50,7 +50,7 @@ PAAAAAMMJJThhmmss.ZIP               (Archive ZIP chapeau de portabilité, hors p
 │
 └── PAT00002.ZIP                    (Archive XDM Patient INS_2, conforme IHE_XDM)
     ├── INDEX.HTM
-    ├── README.TXT
+    ├── README.TXT                  (Informations éditoriales et instructions relative à l'archive de données Patient INS_2)
     └── PDF/                        (Répertoire de stockage des PDF pour consultation, extension au profil XDM)
     └── IHE_XDM/
         └── SUBSET01/
@@ -85,12 +85,15 @@ Le nom de l'archive de portabilité doit respecter le format `PAAAAAMMJJThhmmss.
 Le nom des répertoires et sous-archives ZIP doit respecter le format suivant :
 
 * `DOCUMENTATION/`: documentation d'export permettant au fournisseur sortant d'interpréter et d'intégrer les données ;
-* `TRANSVERSE.ZIP` : contient les données transverses (logs, comptabilité, agenda,…) ;
-* `PATNNNNN.ZIP` : contient les données d'un patient et est conforme au profil IHE_XDM, ou "NNNNN" est incrémenté à partir de 00001. Exemple : `PAT00183.ZIP`.
+* `TRANSVERSE.ZIP` : archive contenant les données transverses (logs, comptabilité, agenda,…) ;
+* `TRANSVERSE/` : répertoire contenant les données transverses (logs, comptabilité, agenda,…) ;
+* `PATNNNNN.ZIP` : contient les données d'un patient et est conforme au profil IHE_XDM, ou "NNNNN" est incrémenté à partir de 00001. Exemple : `PAT00183.ZIP`;
+* `PDF`: sous-répertoire de l'archive patient contenant les documents PDF destinés à la consultation humaine ;
+* `IHE_XDM`et `SUBSET01`: sous-répertoires de l'archive XDM contenant les documents d'un patient.
 
 ### Fichiers de gestion de l'archive de portabilité (Manifest, readme, signature)
 
-#### MANIFEST.XML
+#### MANIFEST.XML de l'archive de portabilité
 
 Le fichier `MANIFEST.XML`, positionné à la racine de l'archive de portabilité, fournit une vue d'ensemble synthétique et exploitable par traitement automatisé du contenu global de l'export. Il complète le `README.TXT` de niveau chapeau, destiné à la lecture humaine. Il porte exclusivement sur le pilotage de la collection d'archives. Le détail des fichiers transportés est quant à lui décrit dans le fichier `METADATA.XML` de chaque lot de soumission.
 
@@ -104,7 +107,7 @@ Le `MANIFEST.XML` recense notamment :
 
 Le modèle logique associé au fichier `MANIFEST.XML` est consultable [ici](StructureDefinition-pdlgc-manifest.md)
 
-**Exemple de `MANIFEST.XML`**
+**Exemple de `MANIFEST.XML` de l'archive de portabilité**
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -115,7 +118,7 @@ Le modèle logique associé au fichier `MANIFEST.XML` est consultable [ici](Stru
     <comments>Export de données LGC répondant à la demande du Dr Dupond le 13 juin 2026</comments>
     <editeurSortant>
       <raisonSociale>Editeur Exemple de LGC</raisonSociale>
-      <idNatStruc>175259803546</idNatStruct>
+      <idNatStruct>175259803546</idNatStruct>
       <contact>
         <nom>Service Portabilité</nom>
         <email>portabilite@editeur.fr</email>
@@ -150,7 +153,7 @@ Le modèle logique associé au fichier `MANIFEST.XML` est consultable [ici](Stru
 
 ```
 
-#### README.TXT
+#### README.TXT de l'archive de portabilité
 
 Le fichier README.TXT est indépendant du contenu clinique de l'archive. Il contient des informations éditoriales dont le caractère obligatoire relève du fournisseur sortant, conformément au volume 2b du cadre technique ITI :
 
@@ -195,20 +198,18 @@ Arborescence :
      README.TXT
      MANIFEST.XML
      + DOCUMENTATION
+        DICO001.XML
+        DICOOO2.XML
+        VALUESET.JSON
+        MAPPING.JSON
+        ECH001.ZIP     
      + TRANSVERSE.ZIP
-        + README.TXT
-        + TRANVERSE.ZIP
-            DICO001.XML
-            DICOOO2.XML
-            VALUESET.JSON
-            MAPPING.JSON
-            ECH001.ZIP
-        + PAT00001.ZIP
-        + PAT00002.ZIP
+     + PAT00001.ZIP
+     + PAT00002.ZIP
 
 ```
 
-#### SIGN.XML
+#### SIGN.XML de l'archive de portabilité
 
 Le fichier `SIGN.XML`, positionné à la racine de l'archive de portabilité, contient la signature électronique de l'archive conformément au format XAdES. Il garantit l'intégrité de l'ensemble des fichiers de données LGC constituant l'archive et permet de vérifier l'identité du signataire ainsi que l'imputabilité de la production de l'archive. Les fichiers à vocation documentaire (README, documentation technique, schémas, exemples, etc.) ne sont pas couverts par la signature électronique.
 
@@ -300,7 +301,7 @@ Le modèle logique associé au fichier `SIGN.XML` est consultable [ici](Structur
 
 ```
 
-### Documentation d'export
+### Documentation d'export de l'archive de portabilité
 
 Le répertoire `DOCUMENTATION/`, positionné à la racine de l'archive de portabilité, regroupe l'ensemble des éléments permettant au fournisseur destinataire d'interpréter et d'intégrer les données reçues de manière autonome, sans échange préalable avec le fournisseur sortant.
 
@@ -355,7 +356,7 @@ L'archive `PATNNNNN.ZIP`contient les répertoires `IHE_XDM/` et `PDF/` ainsi que
 
 Le modèle logique associé à cette archive est consultable [ici](StructureDefinition-pdlgc-archive-patient.md)
 
-#### INDEX.HTM
+#### INDEX.HTM de l'archive XDM Patient
 
 Le fichier `INDEX.HTM` est imposé par le profil IHE_XDM à la racine d'une archive XDM. Il renferme des informations éditoriales et est conforme aux spécifications XHTML et [Echanges de Documents de santé](https://esante.gouv.fr/annexe-sources-des-donnees-personnes-et-structures). Il contient :
 
@@ -379,7 +380,7 @@ Le modèle logique associé au fichier INDEX.HTM est consultable [ici](Structure
 
 ```
 
-#### README.TXT
+#### README.TXT de l'archive XDM Patient
 
 Ce `README.TXT` suit la même trame que le `README.TXT` de l'archive de portabilité et les archives Patient. Voir section [README.TXT de l'archive de portabilité](struct-main-structure-archive.md#readme). Ce fichier est imposé par le profil IHE_XDM et précise la structure propre à chaque archive XDM (différente de l'archive de portabilité).
 
@@ -428,13 +429,13 @@ Ce répertoire `IHE_XDM` contient un sous-répertoire `SUBSET01 contenant l'ense
 * le ou les documents de données administratives et médicales du patient ;
 * le document METADATA.XML obligatoire, contenant les métadonnées XDS, représentations logiques du lot de documents.
 
-#### Répertoire PDF/
+#### Répertoire PDF/ de l'archive XDM Patient
 
 Le répertoire `PDF/`, positionné à la racine de l'archive XDM, constitue une extension au profil IHE_XDM. Il regroupe une version PDF des documents structurés contenus dans le répertoire `IHE_XDM/` destinée exclusivement à la consultation humaine. Ces fichiers ne sont pas destinés à être exploités par un système d'information et ne se substituent en aucun cas aux documents structurés, qui demeurent la source de référence pour les traitements automatisés.
 
 Le nommage des fichiers PDF doit pouvoir permettre d'établir sans ambiguïté la correspondance avec le document structuré auquel ils se rapportent.
 
-#### METADATA.XML
+#### METADATA.XML de l'archive XDM Patient
 
 Conformément au profil IHE XDM, chaque archive XDM Patient contient, dans son sous-répertoire `SUBSET01`, un fichier `METADATA.XML` structuré selon le modèle de métadonnées XDS-like (lot de soumission, fiches et associations). Certaines contraintes sont appliquées à ce fichier pour s'adapter au contexte de portabilité LGC.
 
@@ -455,6 +456,41 @@ L'archive `TRANSVERSE.ZIP` est dédiée aux données transverses associées au c
 #### README.TXT de l'archive TRANSVERSE.ZIP
 
 Ce `README.TXT` suit la même trame que le `README.TXT` de l'archive de portabilité et les archives Patient. Voir section [README.TXT de l'archive de portabilité](struct-main-structure-archive.md#readme)
+
+**Modèle logique**
+
+Le modèle logique associé au fichier README.TXT est consultable [ici](StructureDefinition-pdlgc-readme.md)
+
+**Exemple de README.TXT d'une archive transverse**
+
+```
+Fournisseur Sortant :
+=============
+    . IdNatStruct : 175259803546
+    . raisonSociale : Editeur Exemple de LGC
+    . Contact de Portabilité : service Portabilité
+        . email : portabilite@editeur.fr
+        . Téléphone : +33100000000
+
+Application du fournisseur sortant :
+=========================
+    . Nom : LGC example
+    . Version : 1.2
+
+Instructions :
+=============
+. Consultez les fichiers de documentation accessibles dans le répertoire DOCUMENTATION\ pour interpréter les données
+
+Arborescence :
+============
+     README.TXT
+     + TRANSVERSE
+        AGENDA.ICS
+│       COMPTA.txt
+│       LOGS.CSV
+
+
+```
 
 #### Sous-répertoire TRANSVERSE/
 
