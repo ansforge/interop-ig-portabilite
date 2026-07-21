@@ -1,4 +1,4 @@
-@startuml activity-pdlg-export-archive-portabilite 
+@startuml
 
 skinparam backgroundColor #fcf6eb
 skinparam activityBackgroundColor #efd9fc

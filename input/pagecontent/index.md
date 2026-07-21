@@ -78,7 +78,7 @@ Le présent guide d'implémentation traduit en spécifications fonctionnelles et
 
 ### Cadre juridique {#contexte-metier-cadre-juridique}
 
-Le cadre réglementaire applicable à la portabilité des données LGC est détaillé dans le Référentiel de sécurité, d'interopérabilité et d'éthique relatif à la portabilité des données des LGC. Le présent guide d'implémentation ne reprend pas ces éléments et renvoie au référentiel pour toute question relative aux obligations légales et aux responsabilités des acteurs.
+Le cadre réglementaire applicable à la portabilité des données LGC est détaillé dans le **Référentiel de sécurité, d'interopérabilité et d'éthique relatif à la portabilité des données des LGC**. Le présent guide d'implémentation ne reprend pas ces éléments et renvoie au référentiel pour toute question relative aux obligations légales et aux responsabilités des acteurs.
 
 <br>
 

@@ -80,8 +80,8 @@ menu:
 
 
 groups:
-  LogicalModelXDS:
-    name:  Modèle logique Metadata XDS (Lot de soumission (SubmissionSet), DocumentEntry (XDS) et association)
+  LogicalModelXDM:
+    name:  Modèle logique Metadata XDM (Lot de soumission (SubmissionSet), DocumentEntry (XDS) et association)
     description: Modèles logiques associés aux différents artifacts des METADATA XDS
     resources:
       - StructureDefinition/xdm-submission-set
