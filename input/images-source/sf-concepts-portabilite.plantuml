@@ -32,7 +32,7 @@ mindmapDiagram {
 ** 📄  [[StructureDefinition-pdlgc-readme README.TXT]] (1..1) <<file>>
 ** 📄  [[StructureDefinition-pdlgc-signature SIGN.XML]] (1..1) <<file>>
 
-** 📦 Documentation d'export (1..1) <<folder>>
+** 📁 Documentation d'export (1..1) <<folder>>
 
 ** 📦  [[StructureDefinition-pdlgc-archive-transverse Archive de données transverses]] (0..1) <<archive>>
 *** 📄  [[StructureDefinition-pdlgc-readme README.TXT]] (1..1) <<file>>
