@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.name [ fhir:value "PDLGC"] ;
   fhir:ImplementationGuide.title [ fhir:value "Portabilité des Données LGC"] ;
   fhir:ImplementationGuide.status [ fhir:value "draft"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-07-22T08:07:11+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-07-22T10:39:39+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ;
   fhir:ImplementationGuide.contact [
      fhir:index -1 ;
@@ -1733,9 +1733,9 @@
            fhir:Element.extension [
              fhir:index -1 ;
              fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
-             fhir:Extension.valueUrl [ fhir:value "struct-main-structure-archive.html" ]
+             fhir:Extension.valueUrl [ fhir:value "specs-main-structure-archive.html" ]
            ] ;
-           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "struct-main-structure-archive.html" ] ;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "specs-main-structure-archive.html" ] ;
            fhir:ImplementationGuide.definition.page.title [ fhir:value "Structure de l'archive de portabilité" ] ;
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
          ]

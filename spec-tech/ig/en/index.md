@@ -23,7 +23,7 @@ Le présent guide d'implémentation traduit en spécifications fonctionnelles et
  Cette section présente les spécifications fonctionnelles et techniques associcées à chaque processus collaboratif.
  L'[étude fonctionnelle](specs-main-flux-export-archive-portabilite.md#etude-fonctionnelle) présente notamment les acteurs, une définition du processus collaboratif et les concepts métiers utilisés.
  Les [spécifications techniques](specs-main-flux-export-archive-portabilite.md#specs-techniques) décrivent le flux d'export d'archive de Portabilité et son positionnement par rapport à d'autres profils, ainsi que les formats des documents échangés.
- La [structure de l'archive de Portabilité](struct-main-structure-archive.md) décrit quant à elle l'arborescence, les conventions d'écriture, et le contenu des différents fichiers de gestion de l'archive 
+ La [structure de l'archive de Portabilité](specs-main-structure-archive.md) décrit quant à elle l'arborescence, les conventions d'écriture, et le contenu des différents fichiers de gestion de l'archive 
 
 **Annexes**
  Cette section renvoie aux annexes relatives à la sécurité, aux téléchargements, et à toute autre documentation utile au présent volet 

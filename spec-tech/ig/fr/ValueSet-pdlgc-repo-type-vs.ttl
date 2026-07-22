@@ -18,7 +18,7 @@
   fhir:ValueSet.name [ fhir:value "PDLGCRepoTypeVS"] ;
   fhir:ValueSet.title [ fhir:value "PDLGC Type de répertoire"] ;
   fhir:ValueSet.status [ fhir:value "draft"] ;
-  fhir:ValueSet.date [ fhir:value "2026-07-22T08:07:11+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.date [ fhir:value "2026-07-22T10:39:39+00:00"^^xsd:dateTime] ;
   fhir:ValueSet.publisher [ fhir:value "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ;
   fhir:ValueSet.contact [
      fhir:index -1 ;

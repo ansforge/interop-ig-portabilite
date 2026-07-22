@@ -11,7 +11,6 @@
 * [PDLGC Demandeur - TTL Representation](ActorDefinition-PDLGC-Demandeur.ttl.md)
 * [PDLGC Fournisseur Sortant - XML Representation](ActorDefinition-PDLGC-Fournisseur-Sortant.xml.md)
 * [Sécurité](annexe-securite.md)
-* [Structure de l'archive de portabilité](struct-main-structure-archive.md)
 * [Annexes](annexes.md)
 * [](ActorDefinition-PDLGC-Destinataire.change.history.md)
 * [PDLGC Demandeur](ActorDefinition-PDLGC-Demandeur.ai.md)
@@ -40,6 +39,7 @@
 * [PDLGC Fournisseur Sortant - TTL Representation](ActorDefinition-PDLGC-Fournisseur-Sortant.ttl.md)
 * [PDLGC Demandeur](ActorDefinition-PDLGC-Demandeur.md)
 * [Références](annexe-references.md)
+* [Structure de l'archive de portabilité](specs-main-structure-archive.md)
 * [Téléchargements et usages](annexe-downloads.md)
 * [Résumé des artefacts](artifacts.md)
 
