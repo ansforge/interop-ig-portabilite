@@ -63,7 +63,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-fournisse
   "name" : "PDLGCFournisseurSortant",
   "title" : "PDLGC Fournisseur Sortant",
   "status" : "draft",
-  "date" : "2026-07-21T16:53:48+00:00",
+  "date" : "2026-07-22T08:07:11+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -117,8 +117,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-fournisse
     {
       "id" : "pdlgc-fournisseur-sortant.LGCSystem",
       "path" : "pdlgc-fournisseur-sortant.LGCSystem",
-      "short" : "Informations relatives au LGC",
-      "definition" : "Informations relatives au LGC",
+      "short" : "Informations relatives au LGC.",
+      "definition" : "Informations relatives au LGC.",
       "min" : 1,
       "max" : "1",
       "type" : [{

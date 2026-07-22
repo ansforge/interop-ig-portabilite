@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgc-documentati
   "name" : "PDLGCDocumentation",
   "title" : "PDLGC Documentation",
   "status" : "draft",
-  "date" : "2026-07-21T16:53:48+00:00",
+  "date" : "2026-07-22T08:07:11+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -59,15 +59,15 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgc-documentati
     "element" : [{
       "id" : "pdlgc-documentation",
       "path" : "pdlgc-documentation",
-      "short" : "Documentation d'export permettant au fournisseur destinataire d'intégrer les données LGC du fournisseur sortant",
-      "definition" : "Documentation d'export permettant au fournisseur destinataire d'intégrer les données LGC du fournisseur sortant",
-      "comment" : "Transaction ExportArchivePortabilite"
+      "short" : "Documentation d'export permettant au fournisseur destinataire d'intégrer les données LGC du fournisseur sortant.",
+      "definition" : "Documentation d'export permettant au fournisseur destinataire d'intégrer les données LGC du fournisseur sortant.",
+      "comment" : "Transaction ExportArchivePortabilite."
     },
     {
       "id" : "pdlgc-documentation.documents",
       "path" : "pdlgc-documentation.documents",
-      "short" : "Documents permettant au fournisseur destinataire d'interpréter et d'intégrer les données (dictionnaire de données, mapping, dictionnaire de terminologies propriétaures, jeu d'échantillons)",
-      "definition" : "Documents permettant au fournisseur destinataire d'interpréter et d'intégrer les données (dictionnaire de données, mapping, dictionnaire de terminologies propriétaures, jeu d'échantillons)",
+      "short" : "Documents permettant au fournisseur destinataire d'interpréter et d'intégrer les données (dictionnaire de données, mapping, dictionnaire de terminologies propriétaures, jeu d'échantillons).",
+      "definition" : "Documents permettant au fournisseur destinataire d'interpréter et d'intégrer les données (dictionnaire de données, mapping, dictionnaire de terminologies propriétaures, jeu d'échantillons).",
       "min" : 1,
       "max" : "*",
       "type" : [{

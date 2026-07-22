@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgc-archive-pat
   "name" : "PDLGCArchivePatient",
   "title" : "PDLGC Archive Patient",
   "status" : "draft",
-  "date" : "2026-07-21T16:53:48+00:00",
+  "date" : "2026-07-22T08:07:11+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -66,8 +66,8 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgc-archive-pat
     {
       "id" : "pdlgc-archive-patient.README",
       "path" : "pdlgc-archive-patient.README",
-      "short" : "Informations éditoriales et instructions d'exploitation de l'archive",
-      "definition" : "Informations éditoriales et instructions d'exploitation de l'archive",
+      "short" : "Informations éditoriales et instructions d'exploitation de l'archive.",
+      "definition" : "Informations éditoriales et instructions d'exploitation de l'archive.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -77,8 +77,8 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgc-archive-pat
     {
       "id" : "pdlgc-archive-patient.INDEX",
       "path" : "pdlgc-archive-patient.INDEX",
-      "short" : "Informations éditoriales",
-      "definition" : "Informations éditoriales",
+      "short" : "Informations éditoriales.",
+      "definition" : "Informations éditoriales.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -97,10 +97,10 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgc-archive-pat
       }]
     },
     {
-      "id" : "pdlgc-archive-patient.PDF.documentsPDF",
-      "path" : "pdlgc-archive-patient.PDF.documentsPDF",
-      "short" : "Documents PDF destinés à la consultation. Ces documents ne sont pas intégrés par le destinataire si le destinataire est une système",
-      "definition" : "Documents PDF destinés à la consultation. Ces documents ne sont pas intégrés par le destinataire si le destinataire est une système",
+      "id" : "pdlgc-archive-patient.PDF.documentPDF",
+      "path" : "pdlgc-archive-patient.PDF.documentPDF",
+      "short" : "Document PDF destiné à la consultation. Ces documents ne sont pas intégrés par le destinataire si le destinataire est une système.",
+      "definition" : "Document PDF destiné à la consultation. Ces documents ne sont pas intégrés par le destinataire si le destinataire est une système.",
       "min" : 1,
       "max" : "*",
       "type" : [{
@@ -110,8 +110,8 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgc-archive-pat
     {
       "id" : "pdlgc-archive-patient.IHEXDM",
       "path" : "pdlgc-archive-patient.IHEXDM",
-      "short" : "répertoire IHE_XDM contenant le lot de soumissions des données d'un patient. Nom du répertoire fixé à IHE_XDM",
-      "definition" : "répertoire IHE_XDM contenant le lot de soumissions des données d'un patient. Nom du répertoire fixé à IHE_XDM",
+      "short" : "répertoire IHE_XDM contenant le lot de soumissions des données d'un patient. Nom du répertoire fixé à IHE_XDM.",
+      "definition" : "répertoire IHE_XDM contenant le lot de soumissions des données d'un patient. Nom du répertoire fixé à IHE_XDM.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -121,8 +121,8 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgc-archive-pat
     {
       "id" : "pdlgc-archive-patient.IHEXDM.SUBSET01",
       "path" : "pdlgc-archive-patient.IHEXDM.SUBSET01",
-      "short" : "lot de soumission contenant les données d'un patient",
-      "definition" : "lot de soumission contenant les données d'un patient",
+      "short" : "lot de soumission contenant les données d'un patient.",
+      "definition" : "lot de soumission contenant les données d'un patient.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -132,8 +132,8 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgc-archive-pat
     {
       "id" : "pdlgc-archive-patient.IHEXDM.SUBSET01.METADATA",
       "path" : "pdlgc-archive-patient.IHEXDM.SUBSET01.METADATA",
-      "short" : "métadonnées associées aux documents du lot de soumission",
-      "definition" : "métadonnées associées aux documents du lot de soumission",
+      "short" : "métadonnées du lot de soumission, conforme au profil IHE XDM, décrivant les documents patient qu'il accompagne.",
+      "definition" : "métadonnées du lot de soumission, conforme au profil IHE XDM, décrivant les documents patient qu'il accompagne.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -141,11 +141,22 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgc-archive-pat
       }]
     },
     {
-      "id" : "pdlgc-archive-patient.IHEXDM.SUBSET01.documents",
-      "path" : "pdlgc-archive-patient.IHEXDM.SUBSET01.documents",
-      "short" : "Documents de santé du patient",
-      "definition" : "Documents de santé du patient",
+      "id" : "pdlgc-archive-patient.IHEXDM.SUBSET01.documentPivot",
+      "path" : "pdlgc-archive-patient.IHEXDM.SUBSET01.documentPivot",
+      "short" : "Données structurées du périmètres pivot, concernant les informations administratives et médicales du patient. Leur export est obligatoire.",
+      "definition" : "Données structurées du périmètres pivot, concernant les informations administratives et médicales du patient. Leur export est obligatoire.",
       "min" : 1,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Document"
+      }]
+    },
+    {
+      "id" : "pdlgc-archive-patient.IHEXDM.SUBSET01.documentHorsPivot",
+      "path" : "pdlgc-archive-patient.IHEXDM.SUBSET01.documentHorsPivot",
+      "short" : "Données structurées hors périmètre pivot. Leur export est facultatif.",
+      "definition" : "Données structurées hors périmètre pivot. Leur export est facultatif.",
+      "min" : 0,
       "max" : "*",
       "type" : [{
         "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Document"

@@ -26,7 +26,7 @@ Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base)
 
 ** Résumé **
 
-Obligatoire : 0 élément(5 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 0 élément(6 éléments obligatoire(s) imbriqué(s))
  Must-Support : 6 éléments
 
  **Vue différentielle** 
@@ -39,7 +39,7 @@ Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base)
 
 ** Résumé **
 
-Obligatoire : 0 élément(5 éléments obligatoire(s) imbriqué(s))
+Obligatoire : 0 élément(6 éléments obligatoire(s) imbriqué(s))
  Must-Support : 6 éléments
 
  
@@ -59,7 +59,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-archive-p
   "name" : "PDLGCArchivePortabilite",
   "title" : "PDLGC Archive Portabilite",
   "status" : "draft",
-  "date" : "2026-07-21T16:53:48+00:00",
+  "date" : "2026-07-22T08:07:11+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -93,8 +93,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-archive-p
     {
       "id" : "pdlgc-archive-portabilite.README",
       "path" : "pdlgc-archive-portabilite.README",
-      "short" : "Informations éditoriales et instructions d'exploitation de l'archive",
-      "definition" : "Informations éditoriales et instructions d'exploitation de l'archive",
+      "short" : "Informations éditoriales et instructions d'exploitation de l'archive de portabilité.",
+      "definition" : "Informations éditoriales et instructions d'exploitation de l'archive de portabilité.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -105,8 +105,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-archive-p
     {
       "id" : "pdlgc-archive-portabilite.MANIFEST",
       "path" : "pdlgc-archive-portabilite.MANIFEST",
-      "short" : "Rapport de volumétrie et d'intégrité",
-      "definition" : "Rapport de volumétrie et d'intégrité",
+      "short" : "Vue synthétique du contenu de l'archive de portabilité, incluant rapport de volumétrie et d'intégrité.",
+      "definition" : "Vue synthétique du contenu de l'archive de portabilité, incluant rapport de volumétrie et d'intégrité.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -117,8 +117,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-archive-p
     {
       "id" : "pdlgc-archive-portabilite.SIGN",
       "path" : "pdlgc-archive-portabilite.SIGN",
-      "short" : "signature XAdES de l'archive attestant de l'imputabilité et l'intégrité des données",
-      "definition" : "signature XAdES de l'archive attestant de l'imputabilité et l'intégrité des données",
+      "short" : "signature XAdES de l'archive attestant de l'imputabilité et l'intégrité des données.",
+      "definition" : "signature XAdES de l'archive attestant de l'imputabilité et l'intégrité des données.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -129,8 +129,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-archive-p
     {
       "id" : "pdlgc-archive-portabilite.DOCUMENTATION",
       "path" : "pdlgc-archive-portabilite.DOCUMENTATION",
-      "short" : "répertoire de stockage de la documentation d'export (dictionnaire de données, mapping, schémas techniques, jeu d'échantillons,...)",
-      "definition" : "répertoire de stockage de la documentation d'export (dictionnaire de données, mapping, schémas techniques, jeu d'échantillons,...)",
+      "short" : "répertoire de stockage de la documentation d'export permettant l'interprétation de l'archive par le système destinataire (dictionnaire de données, mapping, schémas techniques, jeu d'échantillons,...).",
+      "definition" : "répertoire de stockage de la documentation d'export permettant l'interprétation de l'archive par le système destinataire (dictionnaire de données, mapping, schémas techniques, jeu d'échantillons,...).",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -141,9 +141,9 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-archive-p
     {
       "id" : "pdlgc-archive-portabilite.TRANSVERSE",
       "path" : "pdlgc-archive-portabilite.TRANSVERSE",
-      "short" : "Archive de données transverses liées au praticien ou au cabinet (agenda, données de comptabilité, logs d'accès,...)",
-      "definition" : "Archive de données transverses liées au praticien ou au cabinet (agenda, données de comptabilité, logs d'accès,...)",
-      "min" : 0,
+      "short" : "Archive de données transverses liées au praticien ou au cabinet (agenda, données de comptabilité, logs d'accès,...).",
+      "definition" : "Archive de données transverses liées au praticien ou au cabinet (agenda, données de comptabilité, logs d'accès,...).",
+      "min" : 1,
       "max" : "1",
       "type" : [{
         "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-archive-transverse"
@@ -153,8 +153,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-archive-p
     {
       "id" : "pdlgc-archive-portabilite.PATNNNNN",
       "path" : "pdlgc-archive-portabilite.PATNNNNN",
-      "short" : "Archive de données médicales liées au patient, ou NNNNN est incrémenté à partir de 00001. Chaque patient est représenté par une archive distincte conforme au profil IHE_XDM",
-      "definition" : "Archive de données médicales liées au patient, ou NNNNN est incrémenté à partir de 00001. Chaque patient est représenté par une archive distincte conforme au profil IHE_XDM",
+      "short" : "Archive de données médicales liées au patient, ou NNNNN est incrémenté à partir de 00001. Chaque patient est représenté par une archive distincte conforme au profil IHE_XDM.",
+      "definition" : "Archive de données médicales liées au patient, ou NNNNN est incrémenté à partir de 00001. Chaque patient est représenté par une archive distincte conforme au profil IHE_XDM.",
       "min" : 1,
       "max" : "*",
       "type" : [{

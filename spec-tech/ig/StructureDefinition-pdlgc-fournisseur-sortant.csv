@@ -56,4 +56,4 @@
 "pdlgc-fournisseur-sortant.Certificat","pdlgc-fournisseur-sortant.Certificat","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Certificat {[]} {[]}
 ","Lien vers la classe Certificat","Lien vers la classe Certificat","","","","","","","","","",,,,,"",,,,"EntiteJuridique.Certificat",0,1,"",""
 "pdlgc-fournisseur-sortant.LGCSystem","pdlgc-fournisseur-sortant.LGCSystem","","","",1,1,"Y","","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-system {[]} {[]}
-","Informations relatives au LGC","Informations relatives au LGC","","","","","","","","","",,,,,"",,,,"pdlgc-fournisseur-sortant.LGCSystem",1,1,"",""
+","Informations relatives au LGC.","Informations relatives au LGC.","","","","","","","","","",,,,,"",,,,"pdlgc-fournisseur-sortant.LGCSystem",1,1,"",""

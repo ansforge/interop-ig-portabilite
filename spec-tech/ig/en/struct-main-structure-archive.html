@@ -237,8 +237,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#conventions-décritures-des-répertoires-et-des-fichiers" id="markdown-toc-conventions-décritures-des-répertoires-et-des-fichiers">Conventions d'écritures des répertoires et des fichiers</a></li>
   <li><a href="#fichiers-de-gestion-de-larchive-de-portabilité-manifest-readme-signature" id="markdown-toc-fichiers-de-gestion-de-larchive-de-portabilité-manifest-readme-signature">Fichiers de gestion de l'archive de portabilité (Manifest, readme, signature)</a></li>
   <li><a href="#documentation-dexport-de-larchive-de-portabilité" id="markdown-toc-documentation-dexport-de-larchive-de-portabilité">Documentation d'export de l'archive de portabilité</a></li>
-  <li><a href="#archive-xdm-patient" id="markdown-toc-archive-xdm-patient">Archive XDM Patient</a></li>
-  <li><a href="#archive-transverse" id="markdown-toc-archive-transverse">Archive Transverse</a></li>
+  <li><a href="#archive-xdm-patient-patnnnnnzip" id="markdown-toc-archive-xdm-patient-patnnnnnzip">Archive XDM Patient <code class="language-plaintext highlighter-rouge">PATNNNNN.ZIP</code></a></li>
+  <li><a href="#archive-transverse" id="markdown-toc-archive-transverse">Archive <code class="language-plaintext highlighter-rouge">TRANSVERSE</code></a></li>
 </ul>
 
 </div>
@@ -574,7 +574,7 @@ Comme pour le dictionnaire de données, les fichiers conformes à un volet CI-SI
 
 <p><br /></p>
 
-<h3 id="archive-xdm-patient">Archive XDM Patient</h3>
+<h3 id="archive-xdm-patient-patnnnnnzip">Archive XDM Patient <code class="language-plaintext highlighter-rouge">PATNNNNN.ZIP</code></h3>
 
 <p>L'archive <code class="language-plaintext highlighter-rouge">PATNNNNN.ZIP</code>contient les répertoires <code class="language-plaintext highlighter-rouge">IHE_XDM/</code> et <code class="language-plaintext highlighter-rouge">PDF/</code> ainsi que les fichiers <code class="language-plaintext highlighter-rouge">INDEX.HTM</code> et <code class="language-plaintext highlighter-rouge">README.TXT</code>.</p>
 
@@ -595,7 +595,7 @@ Comme pour le dictionnaire de données, les fichiers conformes à un volet CI-SI
 
 <p>Le modèle logique associé au fichier INDEX.HTM est consultable <a href="StructureDefinition-pdlgc-index.html">ici</a></p>
 
-<p><strong>Exemple de fichier INDEX.HTM</strong> :</p>
+<p><strong>Exemple de fichier <code class="language-plaintext highlighter-rouge">INDEX.HTM</code></strong> :</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
 <span class="cp">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;</span>
@@ -615,7 +615,7 @@ Ce fichier est imposé par le profil IHE_XDM et précise la structure propre à 
 
 <p>Le modèle logique associé au fichier README.TXT est consultable <a href="StructureDefinition-pdlgc-readme.html">ici</a></p>
 
-<p><strong>Exemple de README.TXT d'une archive Patient</strong></p>
+<p><strong>Exemple de <code class="language-plaintext highlighter-rouge">README.TXT</code> d'une archive Patient</strong></p>
 
 <pre><code class="language-txt">Fournisseur Sortant :
 =============
@@ -676,19 +676,19 @@ Arborescence :
 
 <p>Le modèle logique associé au fichier METADATA.XML est consultable <a href="StructureDefinition-pdlgc-metadata.html">ici</a></p>
 
-<p><strong>Exemple de METADATA.XML d'une archive XDM</strong></p>
+<p><strong>Exemple de <code class="language-plaintext highlighter-rouge">METADATA.XML</code> d'une archive XDM</strong></p>
 
 <p>De nombreux exemples de fichiers METADATA sont accessibles sur le repository GitHub ANS <a href="https://github.com/ansforge/interop-exemples-xdm">interop-exemples-xdm</a>.</p>
 
 <p><br /></p>
 
-<h3 id="archive-transverse">Archive Transverse</h3>
+<h3 id="archive-transverse">Archive <code class="language-plaintext highlighter-rouge">TRANSVERSE</code></h3>
 
 <p>L'archive <code class="language-plaintext highlighter-rouge">TRANSVERSE.ZIP</code> est dédiée aux données transverses associées au cabinet ou au praticien, et ne relevant pas d'un dossier patient individuel.</p>
 
 <p><br /></p>
 
-<h4 id="readmetxt-de-larchive-transversezip">README.TXT de l'archive TRANSVERSE.ZIP</h4>
+<h4 id="readmetxt-de-larchive-transversezip"><code class="language-plaintext highlighter-rouge">README.TXT</code> de l'archive <code class="language-plaintext highlighter-rouge">TRANSVERSE.ZIP</code></h4>
 
 <p>Ce <code class="language-plaintext highlighter-rouge">README.TXT</code> suit la même trame que le <code class="language-plaintext highlighter-rouge">README.TXT</code> de l'archive de portabilité et les archives Patient. Voir section <a href="struct-main-structure-archive.html#readme">README.TXT de l'archive de portabilité</a></p>
 
@@ -696,7 +696,7 @@ Arborescence :
 
 <p>Le modèle logique associé au fichier README.TXT est consultable <a href="StructureDefinition-pdlgc-readme.html">ici</a></p>
 
-<p><strong>Exemple de README.TXT d'une archive transverse</strong></p>
+<p><strong>Exemple de <code class="language-plaintext highlighter-rouge">README.TXT</code> d'une archive transverse</strong></p>
 
 <pre><code class="language-txt">Fournisseur Sortant :
 =============
@@ -727,7 +727,7 @@ Arborescence :
 
 <p><br /></p>
 
-<h4 id="sous-répertoire-transverse">Sous-répertoire TRANSVERSE/</h4>
+<h4 id="sous-répertoire-transverse">Sous-répertoire <code class="language-plaintext highlighter-rouge">TRANSVERSE</code></h4>
 
 <p>Ce sous-répertoire regroupe les données propres au cabinet ou au praticien exporté : agenda, données de gestion, traces, logs d'activité,… 
 La liste des fichiers effectivement présents dépend du périmètre de l'export (se référer au <strong>Référentiel de sécurité, d'interopérabilité et d'éthique relatif à la portabilité des données des LGC</strong>) et des données disponibles dans le logiciel source.</p>
@@ -783,8 +783,8 @@ La liste des fichiers effectivement présents dépend du périmètre de l'export
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Package ans.fhir.fr.pdlgc#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-07-21 16:53:00 +0000">
-    2026-07-21
+  <span title="2026-07-22 08:07:00 +0000">
+    2026-07-22
   </span>
 
           <br/>

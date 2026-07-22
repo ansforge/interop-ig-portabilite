@@ -307,7 +307,7 @@ Cette description permet au fournisseur destinataire d'identifier les comporteme
 
 Le format de cette description est libre. Elle doit être lisible sans logiciel propriétaire et permettre d'identifier sans ambiguïté les paramètres ayant une incidence sur la compréhension ou le traitement des données.
 
-### Archive XDM Patient
+### Archive XDM Patient PATNNNNN.ZIP
 
 L'archive `PATNNNNN.ZIP`contient les répertoires `IHE_XDM/` et `PDF/` ainsi que les fichiers `INDEX.HTM` et `README.TXT`.
 
@@ -325,7 +325,7 @@ Le fichier `INDEX.HTM` est imposé par le profil IHE_XDM à la racine d'une arch
 
 Le modèle logique associé au fichier INDEX.HTM est consultable [ici](StructureDefinition-pdlgc-index.md)
 
-**Exemple de fichier INDEX.HTM** :
+**Exemple de fichier `INDEX.HTM`** :
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -345,7 +345,7 @@ Ce `README.TXT` suit la même trame que le `README.TXT` de l'archive de portabil
 
 Le modèle logique associé au fichier README.TXT est consultable [ici](StructureDefinition-pdlgc-readme.md)
 
-**Exemple de README.TXT d'une archive Patient**
+**Exemple de `README.TXT` d'une archive Patient**
 
 ```
 Fournisseur Sortant :
@@ -402,11 +402,11 @@ La construction de ce fichier est détaillée dans les spécifications [Echanges
 
 Le modèle logique associé au fichier METADATA.XML est consultable [ici](StructureDefinition-pdlgc-metadata.md)
 
-**Exemple de METADATA.XML d'une archive XDM**
+**Exemple de `METADATA.XML` d'une archive XDM**
 
 De nombreux exemples de fichiers METADATA sont accessibles sur le repository GitHub ANS [interop-exemples-xdm](https://github.com/ansforge/interop-exemples-xdm).
 
-### Archive Transverse
+### Archive TRANSVERSE
 
 L'archive `TRANSVERSE.ZIP` est dédiée aux données transverses associées au cabinet ou au praticien, et ne relevant pas d'un dossier patient individuel.
 
@@ -418,7 +418,7 @@ Ce `README.TXT` suit la même trame que le `README.TXT` de l'archive de portabil
 
 Le modèle logique associé au fichier README.TXT est consultable [ici](StructureDefinition-pdlgc-readme.md)
 
-**Exemple de README.TXT d'une archive transverse**
+**Exemple de `README.TXT` d'une archive transverse**
 
 ```
 Fournisseur Sortant :
@@ -449,7 +449,7 @@ Arborescence :
 
 ```
 
-#### Sous-répertoire TRANSVERSE/
+#### Sous-répertoire TRANSVERSE
 
 Ce sous-répertoire regroupe les données propres au cabinet ou au praticien exporté : agenda, données de gestion, traces, logs d'activité,… La liste des fichiers effectivement présents dépend du périmètre de l'export (se référer au **Référentiel de sécurité, d'interopérabilité et d'éthique relatif à la portabilité des données des LGC**) et des données disponibles dans le logiciel source.
 

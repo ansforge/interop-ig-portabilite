@@ -1,10 +1,10 @@
 PDLGC : Validation Results
 =========================================
 
-err = 1, warn = 925, info = 322
+err = 1, warn = 935, info = 324
 $--
 Generated $--. FHIR version $-- for ans.fhir.fr.pdlgc#$-- (canonical = https://interop.esante.gouv.fr/ig/fhir/pdlgc)
- Build Errors : 54 / 5 / 0
+ Build Errors : 50 / 5 / 0
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ActorDefinition-PDLGC-Demandeur : 0 / 0 / 3
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ActorDefinition-PDLGC-Destinataire : 0 / 0 / 3
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ActorDefinition-PDLGC-Fournisseur-Destinataire : 0 / 0 / 3
@@ -15,14 +15,14 @@ Generated $--. FHIR version $-- for ans.fhir.fr.pdlgc#$-- (canonical = https://i
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/CodeSystem-pdlgc-type-export-cs : 0 / 3 / 2
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.pdlgc : 0 / 1 / 2
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-matricule-ins : 0 / 4 / 3
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgc-archive-patient : 0 / 27 / 16
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgc-archive-patient : 0 / 29 / 16
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgc-archive-portabilite : 0 / 14 / 3
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgc-archive-transverse : 0 / 11 / 7
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgc-archive-transverse : 0 / 13 / 7
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgc-contact-portabilite : 0 / 28 / 4
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgc-documentation : 0 / 4 / 3
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgc-fournisseur-sortant : 0 / 41 / 3
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgc-index : 0 / 4 / 3
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgc-manifest : 0 / 35 / 16
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgc-index : 0 / 10 / 6
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgc-manifest : 0 / 35 / 15
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgc-manifest-archives : 0 / 12 / 5
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgc-metadata : 0 / 8 / 3
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgc-readme : 0 / 8 / 3
@@ -69,21 +69,19 @@ ERROR: en/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 2
 ERROR: en/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 267, column 8: The link 'examples.ttl.zip' for "Exemples Turtle (zip)" cannot be resolved
 ERROR: en/autres_ressources.html#/html/body/div/div/div/div/div/ul/li/a at Line 238, column 8: The link './downloads.html' for "Téléchargements et usage" cannot be resolved
 ERROR: en/paquetage.svg#/svg/g/g/a at Line 1, column 2396: The link 'specification.html' for "Export d'archive de portabilité" cannot be resolved
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 353, column 620: The link 'StructureDefinition-pdlgc-archive-portabilite' for "Archive de portabilité" cannot be resolved
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 353, column 1503: The link 'StructureDefinition-pdlgc-manifest' for "MANIFEST.XML" cannot be resolved
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 353, column 2476: The link 'StructureDefinition-pdlgc-readme' for "README.TXT" cannot be resolved
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 353, column 3439: The link 'StructureDefinition-pdlgc-signature' for "SIGN.XML" cannot be resolved
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 353, column 4867: The link 'StructureDefinition-pdlgc-archive-transverse' for "Archive de données transverses" cannot be resolved
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 353, column 5763: The link 'StructureDefinition-pdlgc-readme' for "README.TXT" cannot be resolved
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 353, column 6755: The link 'sf-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 353, column 8328: The link 'StructureDefinition-pdlgc-archive-patient' for "Archive XDM patient" cannot be resolved
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 353, column 9196: The link 'StructureDefinition-pdlgc-readme' for "README.TXT" cannot be resolved
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 353, column 10166: The link 'StructureDefinition-pdlgc-index' for "INDEX.HTM" cannot be resolved
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 353, column 11861: The link 'StructureDefinition-pdlgc-metadata' for "METADATA.XML" cannot be resolved
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 353, column 12860: The link 'sf-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 420, column 104: The link 'sf-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 482, column 104: The link 'sf-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved
-ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/p/a at Line 507, column 72: The link 'specs-main-structure-archive' for "Structure de l'archive de Portabilité" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 353, column 619: The link 'StructureDefinition-pdlgc-archive-portabilite' for "Archive de portabilité" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 353, column 1502: The link 'StructureDefinition-pdlgc-manifest' for "MANIFEST.XML" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 353, column 2475: The link 'StructureDefinition-pdlgc-readme' for "README.TXT" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 353, column 3438: The link 'StructureDefinition-pdlgc-signature' for "SIGN.XML" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 353, column 5300: The link 'StructureDefinition-pdlgc-archive-transverse' for "Archive de données transverses" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 353, column 6196: The link 'StructureDefinition-pdlgc-readme' for "README.TXT" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 353, column 7476: The link 'sf-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 353, column 9198: The link 'StructureDefinition-pdlgc-archive-patient' for "Archive XDM patient" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 353, column 10064: The link 'StructureDefinition-pdlgc-readme' for "README.TXT" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 353, column 11034: The link 'StructureDefinition-pdlgc-index' for "INDEX.HTM" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 353, column 13442: The link 'StructureDefinition-pdlgc-metadata' for "METADATA.XML" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 353, column 14443: The link 'sf-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/p/a at Line 375, column 72: The link 'specs-main-structure-archive' for "Structure de l'archive de Portabilité" cannot be resolved
 WARNING: /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/output/fr/StructureDefinition-xdm-author-institution.html: Illegal HTML: illegal html element: Slot ( n’est pas transmis.)
 ERROR: fr/annexe-downloads.html#/html/body/div/div/div/div/div/p/a at Line 236, column 48: The link 'package.tgz' for "téléchargeable ici" cannot be resolved
 ERROR: fr/annexe-downloads.html#/html/body/div/div/div/div/div/p/a at Line 238, column 44: The link 'package.tgz' for "package.tgz" cannot be resolved
@@ -96,21 +94,19 @@ ERROR: fr/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 2
 ERROR: fr/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 260, column 8: The link 'examples.ttl.zip' for "Exemples Turtle (zip)" cannot be resolved
 ERROR: fr/autres_ressources.html#/html/body/div/div/div/div/div/ul/li/a at Line 231, column 8: The link './downloads.html' for "Téléchargements et usage" cannot be resolved
 ERROR: fr/paquetage.svg#/svg/g/g/a at Line 1, column 2396: The link 'specification.html' for "Export d'archive de portabilité" cannot be resolved
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 346, column 620: The link 'StructureDefinition-pdlgc-archive-portabilite' for "Archive de portabilité" cannot be resolved
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 346, column 1503: The link 'StructureDefinition-pdlgc-manifest' for "MANIFEST.XML" cannot be resolved
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 346, column 2476: The link 'StructureDefinition-pdlgc-readme' for "README.TXT" cannot be resolved
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 346, column 3439: The link 'StructureDefinition-pdlgc-signature' for "SIGN.XML" cannot be resolved
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 346, column 4867: The link 'StructureDefinition-pdlgc-archive-transverse' for "Archive de données transverses" cannot be resolved
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 346, column 5763: The link 'StructureDefinition-pdlgc-readme' for "README.TXT" cannot be resolved
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 346, column 6755: The link 'sf-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 346, column 8328: The link 'StructureDefinition-pdlgc-archive-patient' for "Archive XDM patient" cannot be resolved
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 346, column 9196: The link 'StructureDefinition-pdlgc-readme' for "README.TXT" cannot be resolved
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 346, column 10166: The link 'StructureDefinition-pdlgc-index' for "INDEX.HTM" cannot be resolved
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 346, column 11861: The link 'StructureDefinition-pdlgc-metadata' for "METADATA.XML" cannot be resolved
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 346, column 12860: The link 'sf-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 413, column 104: The link 'sf-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 475, column 104: The link 'sf-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved
-ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/p/a at Line 500, column 72: The link 'specs-main-structure-archive' for "Structure de l'archive de Portabilité" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 346, column 619: The link 'StructureDefinition-pdlgc-archive-portabilite' for "Archive de portabilité" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 346, column 1502: The link 'StructureDefinition-pdlgc-manifest' for "MANIFEST.XML" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 346, column 2475: The link 'StructureDefinition-pdlgc-readme' for "README.TXT" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 346, column 3438: The link 'StructureDefinition-pdlgc-signature' for "SIGN.XML" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 346, column 5300: The link 'StructureDefinition-pdlgc-archive-transverse' for "Archive de données transverses" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 346, column 6196: The link 'StructureDefinition-pdlgc-readme' for "README.TXT" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 346, column 7476: The link 'sf-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 346, column 9198: The link 'StructureDefinition-pdlgc-archive-patient' for "Archive XDM patient" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 346, column 10064: The link 'StructureDefinition-pdlgc-readme' for "README.TXT" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 346, column 11034: The link 'StructureDefinition-pdlgc-index' for "INDEX.HTM" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 346, column 13442: The link 'StructureDefinition-pdlgc-metadata' for "METADATA.XML" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 346, column 14443: The link 'sf-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/p/a at Line 368, column 72: The link 'specs-main-structure-archive' for "Structure de l'archive de Portabilité" cannot be resolved
 ERROR: paquetage.svg#/svg/g/g/a at Line 1, column 2396: The link 'specification.html' for "Export d'archive de portabilité" cannot be resolved
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml, cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: An HTML fragment from the set [globals-table.xhtml, globals-table.xhtml] is not included anywhere in the produced implementation guide
@@ -190,6 +186,7 @@ WARNING: StructureDefinition/pdlgc-archive-patient: StructureDefinition.snapshot
 WARNING: StructureDefinition/pdlgc-archive-patient: StructureDefinition.snapshot.element[15]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/pdlgc-archive-patient: StructureDefinition.snapshot.element[16]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/pdlgc-archive-patient: StructureDefinition.snapshot.element[17]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/pdlgc-archive-patient: StructureDefinition.snapshot.element[18]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/pdlgc-archive-patient: StructureDefinition.differential.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/pdlgc-archive-patient: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/pdlgc-archive-patient: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
@@ -199,6 +196,7 @@ WARNING: StructureDefinition/pdlgc-archive-patient: StructureDefinition.differen
 WARNING: StructureDefinition/pdlgc-archive-patient: StructureDefinition.differential.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/pdlgc-archive-patient: StructureDefinition.differential.element[7]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/pdlgc-archive-patient: StructureDefinition.differential.element[8]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/pdlgc-archive-patient: StructureDefinition.differential.element[9]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 INFORMATION: Resource: The resource StructureDefinition/pdlgc-archive-patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-pdlgc-archive-portabilite.json ==
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
@@ -230,10 +228,12 @@ WARNING: StructureDefinition/pdlgc-archive-transverse: StructureDefinition.snaps
 WARNING: StructureDefinition/pdlgc-archive-transverse: StructureDefinition.snapshot.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/pdlgc-archive-transverse: StructureDefinition.snapshot.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/pdlgc-archive-transverse: StructureDefinition.snapshot.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/pdlgc-archive-transverse: StructureDefinition.snapshot.element[7]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/pdlgc-archive-transverse: StructureDefinition.differential.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/pdlgc-archive-transverse: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/pdlgc-archive-transverse: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/pdlgc-archive-transverse: StructureDefinition.differential.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/pdlgc-archive-transverse: StructureDefinition.differential.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 INFORMATION: Resource: The resource StructureDefinition/pdlgc-archive-transverse could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-pdlgc-contact-portabilite.json ==
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Contact to 0.1.0-ballot
@@ -320,10 +320,19 @@ WARNING: StructureDefinition/pdlgc-fournisseur-sortant: StructureDefinition.diff
 INFORMATION: Resource: The resource StructureDefinition/pdlgc-fournisseur-sortant could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-pdlgc-index.json ==
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[1].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier to 5.3.0
+INFORMATION: StructureDefinition.differential.element[1].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier to 5.3.0
 WARNING: StructureDefinition/pdlgc-index: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/pdlgc-index: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/pdlgc-index: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/pdlgc-index: StructureDefinition.snapshot.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/pdlgc-index: StructureDefinition.snapshot.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/pdlgc-index: StructureDefinition.differential.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/pdlgc-index: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/pdlgc-index: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/pdlgc-index: StructureDefinition.differential.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/pdlgc-index: StructureDefinition.differential.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+INFORMATION: StructureDefinition/pdlgc-index: pdlgc-index.Struct_idNat: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.3.0 is deprecated with the note: 'Use either ElementDefinition.code or ElementDefinition.mapping to provide the mapping instead'
 INFORMATION: Resource: The resource StructureDefinition/pdlgc-index could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-pdlgc-manifest.json ==
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
@@ -374,7 +383,6 @@ WARNING: StructureDefinition/pdlgc-manifest: StructureDefinition.differential.el
 WARNING: StructureDefinition/pdlgc-manifest: StructureDefinition.differential.element[13]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/pdlgc-manifest: StructureDefinition.differential.element[14]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/pdlgc-manifest: StructureDefinition.differential.element[15]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-INFORMATION: StructureDefinition/pdlgc-manifest: pdlgc-manifest.Archive.archiveid: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.3.0 is deprecated with the note: 'Use either ElementDefinition.code or ElementDefinition.mapping to provide the mapping instead'
 INFORMATION: Resource: The resource StructureDefinition/pdlgc-manifest could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-pdlgc-manifest-archives.json ==
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1

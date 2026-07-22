@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgc-archive-tra
   "name" : "PDLGCArchiveTransverse",
   "title" : "PDLGC Archive Transverse",
   "status" : "draft",
-  "date" : "2026-07-21T16:53:48+00:00",
+  "date" : "2026-07-22T08:07:11+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -59,15 +59,15 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgc-archive-tra
     "element" : [{
       "id" : "pdlgc-archive-transverse",
       "path" : "pdlgc-archive-transverse",
-      "short" : "Archive stockant les données transverses associés au praticien et/ou au cabinet",
-      "definition" : "Archive stockant les données transverses associés au praticien et/ou au cabinet",
-      "comment" : "Transaction ExportArchivePortabilite"
+      "short" : "Archive stockant les données transverses associés au praticien et/ou au cabinet.",
+      "definition" : "Archive stockant les données transverses associés au praticien et/ou au cabinet.",
+      "comment" : "Transaction ExportArchivePortabilite."
     },
     {
       "id" : "pdlgc-archive-transverse.README",
       "path" : "pdlgc-archive-transverse.README",
-      "short" : "Informations éditoriales et instructions d'exploitation de l'archive",
-      "definition" : "Informations éditoriales et instructions d'exploitation de l'archive",
+      "short" : "Informations éditoriales et instructions d'exploitation de l'archive.",
+      "definition" : "Informations éditoriales et instructions d'exploitation de l'archive.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -77,8 +77,8 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgc-archive-tra
     {
       "id" : "pdlgc-archive-transverse.TRANSVERSE",
       "path" : "pdlgc-archive-transverse.TRANSVERSE",
-      "short" : "répertoire contenant les données du praticien et/ ou du cabinet",
-      "definition" : "répertoire contenant les données du praticien et/ ou du cabinet",
+      "short" : "répertoire contenant les données du praticien et/ou du cabinet.",
+      "definition" : "répertoire contenant les données du praticien et/ou du cabinet.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -86,11 +86,22 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgc-archive-tra
       }]
     },
     {
-      "id" : "pdlgc-archive-transverse.TRANSVERSE.documents",
-      "path" : "pdlgc-archive-transverse.TRANSVERSE.documents",
-      "short" : "Documents trasnverses associés au praticien et/ou au cabinet",
-      "definition" : "Documents trasnverses associés au praticien et/ou au cabinet",
+      "id" : "pdlgc-archive-transverse.TRANSVERSE.documentPivot",
+      "path" : "pdlgc-archive-transverse.TRANSVERSE.documentPivot",
+      "short" : "Données structurées du périmètre pivot relative au praticien et/ou au cabinet. Leur export est obligatoire.",
+      "definition" : "Données structurées du périmètre pivot relative au praticien et/ou au cabinet. Leur export est obligatoire.",
       "min" : 1,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Document"
+      }]
+    },
+    {
+      "id" : "pdlgc-archive-transverse.TRANSVERSE.documentHorsPivot",
+      "path" : "pdlgc-archive-transverse.TRANSVERSE.documentHorsPivot",
+      "short" : "Données structurées hors périmètre pivot. Leur export est facultatif.",
+      "definition" : "Données structurées hors périmètre pivot. Leur export est facultatif.",
+      "min" : 0,
       "max" : "*",
       "type" : [{
         "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Document"

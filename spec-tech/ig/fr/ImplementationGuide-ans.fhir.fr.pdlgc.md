@@ -14,7 +14,7 @@
   "name" : "PDLGC",
   "title" : "Portabilité des Données LGC",
   "status" : "draft",
-  "date" : "2026-07-21T16:53:48+00:00",
+  "date" : "2026-07-22T08:07:11+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -1027,7 +1027,7 @@
         "reference" : "StructureDefinition/pdlgc-index"
       },
       "name" : "PDLGC Index",
-      "description" : "L'INDEX.HTM est destiné à la lecture humaine",
+      "description" : "L'INDEX.HTM est renferme des informations éditoriales et est conforme aux spécifications XHTML et Echanges de Documents de santé.",
       "exampleBoolean" : false,
       "groupingId" : "LogicalModelArchivePortabilite"
     },
