@@ -73,7 +73,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdm-author.csv)
   "name" : "XDMAuthor",
   "title" : "XDM Author",
   "status" : "draft",
-  "date" : "2026-07-22T10:39:39+00:00",
+  "date" : "2026-07-22T17:16:50+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -137,7 +137,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdm-author.csv)
     {
       "id" : "xdm-author.role",
       "path" : "xdm-author.role",
-      "short" : "Cet attribut représente le rôle fonctionnel joué par l’auteur vis-à-vis du patient/usager lors de la création du document, c'est-à-dire à quel titre l’auteur est intervenu vis-à-vis du patient (ex : médecin traitant, Responsable de l'admission, Membre de l'équipe de soins, etc.). ",
+      "short" : "Cet attribut représente le rôle fonctionnel joué par l’auteur vis-à-vis du patient/usager lors de la création du document, c'est-à-dire à quel titre l’auteur est intervenu vis-à-vis du patient (ex : médecin traitant, Responsable de l'admission, Membre de l'équipe de soins, etc.).",
       "definition" : "**Author Role**",
       "min" : 0,
       "max" : "*",
@@ -152,7 +152,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdm-author.csv)
     {
       "id" : "xdm-author.specialty",
       "path" : "xdm-author.specialty",
-      "short" : "Cet attribut représente la profession éventuellement associée au savoir-faire de l’auteur professionnel caractérisé par sa profession ou la profession associée au genre d’activité pour l’auteur professionnel caractérisé par son rôle. ",
+      "short" : "Cet attribut représente la profession éventuellement associée au savoir-faire de l’auteur professionnel caractérisé par sa profession ou la profession associée au genre d’activité pour l’auteur professionnel caractérisé par son rôle.",
       "definition" : "**AutorSpecialty**",
       "min" : 0,
       "max" : "1",

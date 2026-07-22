@@ -3,7 +3,7 @@
 ## Modèle logique: XDM AuthorInstitution 
 
  
-Cet attribut représente la structure de l’auteur. Pour les documents d’expression personnelle du patient, cette métadonnée est absente, cela signifie que l’élément XML  n’est pas transmis. 
+Cet attribut représente la structure de l’auteur. Pour les documents d’expression personnelle du patient, cette métadonnée est absente, cela signifie que l’élément XML `<rim:Slot name='authorInstitution'>` n’est pas transmis. 
 
 **Utilisations:**
 
@@ -59,7 +59,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdm-author-inst
   "name" : "XDMAuthorInstitution",
   "title" : "XDM AuthorInstitution",
   "status" : "draft",
-  "date" : "2026-07-22T10:39:39+00:00",
+  "date" : "2026-07-22T17:16:50+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -68,7 +68,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdm-author-inst
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Cet attribut représente la structure de l’auteur. \nPour les documents d’expression personnelle du patient, cette métadonnée est absente, cela signifie que l’élément XML <rim:Slot name='authorInstitution'> n’est pas transmis. ",
+  "description" : "Cet attribut représente la structure de l’auteur. \nPour les documents d’expression personnelle du patient, cette métadonnée est absente, cela signifie que l’élément XML `<rim:Slot name='authorInstitution'>` n’est pas transmis. ",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -99,7 +99,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdm-author-inst
       "id" : "xdm-author-institution",
       "path" : "xdm-author-institution",
       "short" : "XDM AuthorInstitution",
-      "definition" : "Cet attribut représente la structure de l’auteur. \nPour les documents d’expression personnelle du patient, cette métadonnée est absente, cela signifie que l’élément XML <rim:Slot name='authorInstitution'> n’est pas transmis. ",
+      "definition" : "Cet attribut représente la structure de l’auteur. \nPour les documents d’expression personnelle du patient, cette métadonnée est absente, cela signifie que l’élément XML `<rim:Slot name='authorInstitution'>` n’est pas transmis. ",
       "mapping" : [{
         "identity" : "AuthorInstitutionCDA",
         "map" : "AuthorInstitution"
@@ -125,11 +125,11 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdm-author-inst
       },
       {
         "label" : "Cabinet libéral",
-        "valueString" : "CABINET MEDICAL DR DURANT "
+        "valueString" : "CABINET MEDICAL DR DURANT"
       },
       {
         "label" : "SNR",
-        "valueString" : "NOM EDITEUR "
+        "valueString" : "NOM EDITEUR"
       }],
       "mapping" : [{
         "identity" : "AuthorInstitutionCDA",
@@ -144,7 +144,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdm-author-inst
       "id" : "xdm-author-institution.XON6",
       "path" : "xdm-author-institution.XON6",
       "short" : "Autorité d’affectation",
-      "definition" : "Identifiant de l’organisme gérant l’identifiant de la structure. Cet identifiant, au format HL7 v.2.5 est constitué de trois sous-composants qui prennent les valeurs suivantes. ",
+      "definition" : "Identifiant de l’organisme gérant l’identifiant de la structure. Cet identifiant, au format HL7 v.2.5 est constitué de trois sous-composants qui prennent les valeurs suivantes.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -198,7 +198,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdm-author-inst
       },
       {
         "identity" : "KOS",
-        "map" : "NA "
+        "map" : "NA"
       }]
     },
     {
@@ -254,8 +254,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdm-author-inst
     {
       "id" : "xdm-author-institution.XON10",
       "path" : "xdm-author-institution.XON10",
-      "short" : " Identifiant de la structure (Struct_IdNat)",
-      "definition" : " Identifiant de la structure (Struct_IdNat)",
+      "short" : "Identifiant de la structure (Struct_IdNat)",
+      "definition" : "Identifiant de la structure (Struct_IdNat)",
       "min" : 1,
       "max" : "1",
       "type" : [{

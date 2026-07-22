@@ -65,7 +65,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdm-submission-
   "name" : "XDMSubmissionSet",
   "title" : "XDM SubmissionSet",
   "status" : "draft",
-  "date" : "2026-07-22T10:39:39+00:00",
+  "date" : "2026-07-22T17:16:50+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -109,8 +109,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdm-submission-
     {
       "id" : "xdm-submission-set.availabilityStatus",
       "path" : "xdm-submission-set.availabilityStatus",
-      "short" : "Cette métadonnée représente la pertinence d'un lot de soumission. ",
-      "definition" : "Cette métadonnée représente la pertinence d'un lot de soumission. ",
+      "short" : "Cette métadonnée représente la pertinence d'un lot de soumission.",
+      "definition" : "Cette métadonnée représente la pertinence d'un lot de soumission.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -122,7 +122,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdm-submission-
       },
       {
         "label" : "version archivée du lot de soumission",
-        "valueString" : "urn:asip:ci-sis:2010:StatusType:Archived "
+        "valueString" : "urn:asip:ci-sis:2010:StatusType:Archived"
       }],
       "binding" : {
         "strength" : "required",
@@ -143,8 +143,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdm-submission-
     {
       "id" : "xdm-submission-set.title",
       "path" : "xdm-submission-set.title",
-      "short" : "Titre du lot de soumission ",
-      "definition" : "Titre du lot de soumission ",
+      "short" : "Titre du lot de soumission",
+      "definition" : "Titre du lot de soumission",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -154,8 +154,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdm-submission-
     {
       "id" : "xdm-submission-set.comments",
       "path" : "xdm-submission-set.comments",
-      "short" : "Cette métadonnée contient le commentaire associé au lot de soumission. ",
-      "definition" : "Cette métadonnée contient le commentaire associé au lot de soumission. ",
+      "short" : "Cette métadonnée contient le commentaire associé au lot de soumission.",
+      "definition" : "Cette métadonnée contient le commentaire associé au lot de soumission.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -198,7 +198,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdm-submission-
     {
       "id" : "xdm-submission-set.contentTypeCode",
       "path" : "xdm-submission-set.contentTypeCode",
-      "short" : "Ensemble de métadonnées représentant le type d’activité associé à l’événement clinique ayant abouti à la constitution du lot de soumission. ",
+      "short" : "Ensemble de métadonnées représentant le type d’activité associé à l’événement clinique ayant abouti à la constitution du lot de soumission.",
       "definition" : "**Submission Set**",
       "min" : 1,
       "max" : "1",

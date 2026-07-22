@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-xdm-author-submis
   "name" : "XDMAuthorSubmissionSet",
   "title" : "XDM AuthorSubmissionSet",
   "status" : "draft",
-  "date" : "2026-07-22T10:39:39+00:00",
+  "date" : "2026-07-22T17:16:50+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -70,12 +70,12 @@ Other representations of profile: [CSV](../StructureDefinition-xdm-author-submis
     {
       "id" : "xdm-author-submission-set.person[x]",
       "path" : "xdm-author-submission-set.person[x]",
-      "short" : "Cette métadonnée représente la personne physique ou le système émetteur du lot de soumission.Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient.  "
+      "short" : "Cette métadonnée représente la personne physique ou le système émetteur du lot de soumission.Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient."
     },
     {
       "id" : "xdm-author-submission-set.role",
       "path" : "xdm-author-submission-set.role",
-      "short" : "ette métadonnée représente le rôle joué par l’auteur vis-à-vis du patient lors de la constitution du lot de soumission, c'est-à-dire à quel titre l’auteur est intervenu vis-à-vis du patient (ex : médecin traitant, Responsable de l'admission, Membre de l'équipe de soins, etc.)."
+      "short" : "Cette métadonnée représente le rôle joué par l’auteur vis-à-vis du patient lors de la constitution du lot de soumission, c'est-à-dire à quel titre l’auteur est intervenu vis-à-vis du patient (ex : médecin traitant, Responsable de l'admission, Membre de l'équipe de soins, etc.)."
     }]
   }
 }

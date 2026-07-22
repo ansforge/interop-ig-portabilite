@@ -57,7 +57,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdm-patient-id.
   "name" : "XDMPatientId",
   "title" : "XDM PatientId",
   "status" : "draft",
-  "date" : "2026-07-22T10:39:39+00:00",
+  "date" : "2026-07-22T17:16:50+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -112,8 +112,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdm-patient-id.
     {
       "id" : "xdm-patient-id.CX5",
       "path" : "xdm-patient-id.CX5",
-      "short" : " 'NH' pour un maticule INS tel que défini dans le cadre juridique",
-      "definition" : " 'NH' pour un maticule INS tel que défini dans le cadre juridique",
+      "short" : "'NH' pour un maticule INS tel que défini dans le cadre juridique",
+      "definition" : "'NH' pour un maticule INS tel que défini dans le cadre juridique",
       "min" : 1,
       "max" : "1",
       "type" : [{

@@ -47,17 +47,17 @@
 
 ### CodeSystems
 
-* [Type d'association XDS](fr/CodeSystem-cs-association-type.md)
-* [Statut de l'export](fr/CodeSystem-pdlgc-export-status-cs.md)
-* [Type de répertoire](fr/CodeSystem-pdlgc-repo-type-cs.md)
-* [Type d'export de données LGC](fr/CodeSystem-pdlgc-type-export-cs.md)
+* [Type d'archive](fr/CodeSystem-cs-pdlgc-archive-type.md)
+* [Statut de l'export](fr/CodeSystem-cs-pdlgc-export-status.md)
+* [Type d'export de données LGC](fr/CodeSystem-cs-pdlgc-export-type.md)
+* [Type d'association XDS](fr/CodeSystem-cs-xdm-association-type.md)
 
 ### ValueSets
 
-* [PDLGC Statut de l'export](fr/ValueSet-pdlgc-export-status-vs.md)
-* [PDLGC Type d'Export](fr/ValueSet-pdlgc-export-type-vs.md)
-* [PDLGC Type de répertoire](fr/ValueSet-pdlgc-repo-type-vs.md)
 * [Type d'association XDS (VS)](fr/ValueSet-vs-association-type.md)
+* [PDLGC Type d'archive](fr/ValueSet-vs-pdlgc-archive-type.md)
+* [PDLGC Statut de l'export](fr/ValueSet-vs-pdlgc-export-status.md)
+* [PDLGC Type d'Export](fr/ValueSet-vs-pdlgc-export-type.md)
 
 ### Logicals
 
@@ -67,7 +67,7 @@
 * [PDLGC Archive Transverse](fr/StructureDefinition-pdlgc-archive-transverse.md)
 * [PDLGC Contact Portabilite](fr/StructureDefinition-pdlgc-contact-portabilite.md)
 * [PDLGC Documentation](fr/StructureDefinition-pdlgc-documentation.md)
-* [PDLGC Fournisseur Sortant](fr/StructureDefinition-pdlgc-fournisseur-sortant.md)
+* [PDLGC FournisseurSortant](fr/StructureDefinition-pdlgc-fournisseur-sortant.md)
 * [PDLGC Index](fr/StructureDefinition-pdlgc-index.md)
 * [PDLGC Manifest Archives](fr/StructureDefinition-pdlgc-manifest-archives.md)
 * [PDLGC Manifest](fr/StructureDefinition-pdlgc-manifest.md)

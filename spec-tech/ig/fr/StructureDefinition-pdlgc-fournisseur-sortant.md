@@ -1,6 +1,6 @@
-# PDLGC Fournisseur Sortant - Portabilité des Données LGC v0.1.0
+# PDLGC FournisseurSortant - Portabilité des Données LGC v0.1.0
 
-## Modèle logique: PDLGC Fournisseur Sortant 
+## Modèle logique: PDLGC FournisseurSortant 
 
  
 PDLGC Fournisseur Sortant 
@@ -61,9 +61,9 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-fournisse
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-fournisseur-sortant",
   "version" : "0.1.0",
   "name" : "PDLGCFournisseurSortant",
-  "title" : "PDLGC Fournisseur Sortant",
+  "title" : "PDLGC FournisseurSortant",
   "status" : "draft",
-  "date" : "2026-07-22T10:39:39+00:00",
+  "date" : "2026-07-22T17:16:50+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -90,7 +90,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-fournisse
     "element" : [{
       "id" : "pdlgc-fournisseur-sortant",
       "path" : "pdlgc-fournisseur-sortant",
-      "short" : "PDLGC Fournisseur Sortant",
+      "short" : "PDLGC FournisseurSortant",
       "definition" : "PDLGC Fournisseur Sortant"
     },
     {
@@ -115,8 +115,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-fournisse
       }]
     },
     {
-      "id" : "pdlgc-fournisseur-sortant.LGCSystem",
-      "path" : "pdlgc-fournisseur-sortant.LGCSystem",
+      "id" : "pdlgc-fournisseur-sortant.lgcSystem",
+      "path" : "pdlgc-fournisseur-sortant.lgcSystem",
       "short" : "Informations relatives au LGC.",
       "definition" : "Informations relatives au LGC.",
       "min" : 1,

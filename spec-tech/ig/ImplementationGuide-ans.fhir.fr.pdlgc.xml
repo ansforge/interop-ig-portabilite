@@ -13,7 +13,7 @@
   <name value="PDLGC"/>
   <title value="Portabilité des Données LGC"/>
   <status value="draft"/>
-  <date value="2026-07-22T10:39:39+00:00"/>
+  <date value="2026-07-22T17:16:50+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -759,18 +759,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/pdlgc-fournisseur-sortant"/>
-      </reference>
-      <name value="PDLGC Fournisseur Sortant"/>
-      <description value="PDLGC Fournisseur Sortant"/>
-      <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelArchivePortabilite"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ActorDefinition"/>
       </extension>
       <reference>
@@ -779,6 +767,18 @@
       <name value="PDLGC Fournisseur Sortant"/>
       <description value="Fournisseur du LGC dont le contrat prend fin ou depuis lequel l'utilisateur souhaite exporter ses données. C'est lui qui est redevable de l'obligation de portabilité gratuite du Périmètre Pivot sous 30 jours calendaires."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/pdlgc-fournisseur-sortant"/>
+      </reference>
+      <name value="PDLGC FournisseurSortant"/>
+      <description value="PDLGC Fournisseur Sortant"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="LogicalModelArchivePortabilite"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -836,7 +836,7 @@
         <reference value="StructureDefinition/pdlgc-readme"/>
       </reference>
       <name value="PDLGC Readme"/>
-      <description value="Informations éditoriales et instructions"/>
+      <description value="Informations éditoriales et instructions. Le socle du README.TXt est identique pour l'archive de portabilité, l'archive de données transverse et l'archive XDM Patient"/>
       <exampleBoolean value="false"/>
       <groupingId value="LogicalModelArchivePortabilite"/>
     </resource>
@@ -857,7 +857,7 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/pdlgc-export-status-vs"/>
+        <reference value="ValueSet/vs-pdlgc-export-status"/>
       </reference>
       <name value="PDLGC Statut de l'export"/>
       <description value="PDLGC Statut de l'export"/>
@@ -880,10 +880,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/pdlgc-export-type-vs"/>
+        <reference value="ValueSet/vs-pdlgc-archive-type"/>
       </reference>
-      <name value="PDLGC Type d'Export"/>
-      <description value="PDLGC Type d'Export"/>
+      <name value="PDLGC Type d'archive"/>
+      <description value="PDLGC Type d'archive"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -891,10 +891,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/pdlgc-repo-type-vs"/>
+        <reference value="ValueSet/vs-pdlgc-export-type"/>
       </reference>
-      <name value="PDLGC Type de répertoire"/>
-      <description value="PDLGC Type de répertoire"/>
+      <name value="PDLGC Type d'Export"/>
+      <description value="PDLGC Type d'Export"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -926,7 +926,7 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/pdlgc-export-status-cs"/>
+        <reference value="CodeSystem/cs-pdlgc-export-status"/>
       </reference>
       <name value="Statut de l'export"/>
       <description value="Statut de l'export"/>
@@ -949,7 +949,18 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/cs-association-type"/>
+        <reference value="CodeSystem/cs-pdlgc-archive-type"/>
+      </reference>
+      <name value="Type d'archive"/>
+      <description value="Type d'archive"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-xdm-association-type"/>
       </reference>
       <name value="Type d'association XDS"/>
       <description value="Types d'association entre objets XDS dans le contexte portabilité."/>
@@ -971,21 +982,10 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/pdlgc-type-export-cs"/>
+        <reference value="CodeSystem/cs-pdlgc-export-type"/>
       </reference>
       <name value="Type d'export de données LGC"/>
       <description value="Type d'export de données LGC"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/pdlgc-repo-type-cs"/>
-      </reference>
-      <name value="Type de répertoire"/>
-      <description value="Type de répertoire"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1008,7 +1008,7 @@
         <reference value="StructureDefinition/xdm-actor-ps"/>
       </reference>
       <name value="XDM ActorPS"/>
-      <description value="&#xA;Cet attribut représente un acteur PS."/>
+      <description value="Cet attribut représente un acteur PS."/>
       <exampleBoolean value="false"/>
       <groupingId value="LogicalModelXDM"/>
     </resource>
@@ -1104,7 +1104,7 @@
         <reference value="StructureDefinition/xdm-author-institution"/>
       </reference>
       <name value="XDM AuthorInstitution"/>
-      <description value="Cet attribut représente la structure de l’auteur. &#xA;Pour les documents d’expression personnelle du patient, cette métadonnée est absente, cela signifie que l’élément XML &lt;rim:Slot name='authorInstitution'&gt; n’est pas transmis."/>
+      <description value="Cet attribut représente la structure de l’auteur. &#xA;Pour les documents d’expression personnelle du patient, cette métadonnée est absente, cela signifie que l’élément XML `&lt;rim:Slot name='authorInstitution'&gt;` n’est pas transmis."/>
       <exampleBoolean value="false"/>
       <groupingId value="LogicalModelXDM"/>
     </resource>
@@ -1264,18 +1264,18 @@
         <generation value="markdown"/>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="annexe-references.html"/>
-          </extension>
-          <nameUrl value="annexe-references.html"/>
-          <title value="Références"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
             <valueUrl value="annexe-securite.html"/>
           </extension>
           <nameUrl value="annexe-securite.html"/>
           <title value="Sécurité"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="annexe-references.html"/>
+          </extension>
+          <nameUrl value="annexe-references.html"/>
+          <title value="Références"/>
           <generation value="markdown"/>
         </page>
         <page>

@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-xdm-actor-ps.csv)
   "name" : "XDMActorPS",
   "title" : "XDM ActorPS",
   "status" : "draft",
-  "date" : "2026-07-22T10:39:39+00:00",
+  "date" : "2026-07-22T17:16:50+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-xdm-actor-ps.csv)
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "\nCet attribut représente un acteur PS.\n",
+  "description" : "Cet attribut représente un acteur PS.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -70,7 +70,7 @@ Other representations of profile: [CSV](../StructureDefinition-xdm-actor-ps.csv)
       "id" : "xdm-actor-ps",
       "path" : "xdm-actor-ps",
       "short" : "XDM ActorPS",
-      "definition" : "\nCet attribut représente un acteur PS.\n"
+      "definition" : "Cet attribut représente un acteur PS."
     },
     {
       "id" : "xdm-actor-ps.XCN1",

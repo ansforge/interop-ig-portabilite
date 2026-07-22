@@ -3,7 +3,7 @@
 ## Modèle logique: PDLGC Readme 
 
  
-Informations éditoriales et instructions 
+Informations éditoriales et instructions. Le socle du README.TXt est identique pour l'archive de portabilité, l'archive de données transverse et l'archive XDM Patient 
 
 **Utilisations:**
 
@@ -57,7 +57,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-readme.cs
   "name" : "PDLGCReadme",
   "title" : "PDLGC Readme",
   "status" : "draft",
-  "date" : "2026-07-22T10:39:39+00:00",
+  "date" : "2026-07-22T17:16:50+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -66,7 +66,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-readme.cs
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Informations éditoriales et instructions",
+  "description" : "Informations éditoriales et instructions. Le socle du README.TXt est identique pour l'archive de portabilité, l'archive de données transverse et l'archive XDM Patient",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -85,7 +85,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-readme.cs
       "id" : "pdlgc-readme",
       "path" : "pdlgc-readme",
       "short" : "PDLGC Readme",
-      "definition" : "Informations éditoriales et instructions"
+      "definition" : "Informations éditoriales et instructions. Le socle du README.TXt est identique pour l'archive de portabilité, l'archive de données transverse et l'archive XDM Patient"
     },
     {
       "id" : "pdlgc-readme.editeurSortant",

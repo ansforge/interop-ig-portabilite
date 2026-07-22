@@ -10,7 +10,7 @@
 "xdm-actor-system.XCN3","xdm-actor-system.XCN3","","","",1,1,"","","","string {[]} {[]}
 ","Nom du modèle pour les dispositifs ou dénomination pour les autres systèmes.","Prénom usuel de la personne (par défaut le premier prénom), nom du modèle pour les dispositifs ou dénomination pour les autres systèmes.","","","","","","","","","",,,,,"",,,,"xdm-actor-xds.XCN3",1,1,"","","author/assignedAuthor/assignedPerson/name/given"
 "xdm-actor-system.XCN9","xdm-actor-system.XCN9","","","",1,1,"","","","Base {[]} {[]}
-"," Autorité d’affectation"," Autorité d’affectation","","","","","","","","","",,,,,"",,,,"xdm-actor-xds.XCN9",1,1,"","","NA"
+","Autorité d’affectation","Autorité d’affectation","","","","","","","","","",,,,,"",,,,"xdm-actor-xds.XCN9",1,1,"","","NA"
 "xdm-actor-system.XCN9.composant1","xdm-actor-system.XCN9.composant1","","","",0,0,"","","","string {[]} {[]}
 ","Vide, pas de valeur","Vide, pas de valeur","","","","","","","","","",,,,,"",,,,"xdm-actor-xds.XCN9.composant1",0,0,"","","NA"
 "xdm-actor-system.XCN9.composant2","xdm-actor-system.XCN9.composant2","","","",1,1,"","","","string {[]} {[]}

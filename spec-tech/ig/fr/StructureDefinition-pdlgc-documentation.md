@@ -57,7 +57,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-documenta
   "name" : "PDLGCDocumentation",
   "title" : "PDLGC Documentation",
   "status" : "draft",
-  "date" : "2026-07-22T10:39:39+00:00",
+  "date" : "2026-07-22T17:16:50+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -89,8 +89,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-documenta
       "comment" : "Transaction ExportArchivePortabilite."
     },
     {
-      "id" : "pdlgc-documentation.documents",
-      "path" : "pdlgc-documentation.documents",
+      "id" : "pdlgc-documentation.documentation",
+      "path" : "pdlgc-documentation.documentation",
       "short" : "Documents permettant au fournisseur destinataire d'interpréter et d'intégrer les données (dictionnaire de données, mapping, dictionnaire de terminologies propriétaures, jeu d'échantillons).",
       "definition" : "Documents permettant au fournisseur destinataire d'interpréter et d'intégrer les données (dictionnaire de données, mapping, dictionnaire de terminologies propriétaures, jeu d'échantillons).",
       "min" : 1,

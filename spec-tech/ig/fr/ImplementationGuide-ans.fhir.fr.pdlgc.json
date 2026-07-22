@@ -11,7 +11,7 @@
   "name" : "PDLGC",
   "title" : "Portabilité des Données LGC",
   "status" : "draft",
-  "date" : "2026-07-22T10:39:39+00:00",
+  "date" : "2026-07-22T17:16:50+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -993,19 +993,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/pdlgc-fournisseur-sortant"
-      },
-      "name" : "PDLGC Fournisseur Sortant",
-      "description" : "PDLGC Fournisseur Sortant",
-      "exampleBoolean" : false,
-      "groupingId" : "LogicalModelArchivePortabilite"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ActorDefinition"
       }],
       "reference" : {
@@ -1014,6 +1001,19 @@
       "name" : "PDLGC Fournisseur Sortant",
       "description" : "Fournisseur du LGC dont le contrat prend fin ou depuis lequel l'utilisateur souhaite exporter ses données. C'est lui qui est redevable de l'obligation de portabilité gratuite du Périmètre Pivot sous 30 jours calendaires.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/pdlgc-fournisseur-sortant"
+      },
+      "name" : "PDLGC FournisseurSortant",
+      "description" : "PDLGC Fournisseur Sortant",
+      "exampleBoolean" : false,
+      "groupingId" : "LogicalModelArchivePortabilite"
     },
     {
       "extension" : [{
@@ -1076,7 +1076,7 @@
         "reference" : "StructureDefinition/pdlgc-readme"
       },
       "name" : "PDLGC Readme",
-      "description" : "Informations éditoriales et instructions",
+      "description" : "Informations éditoriales et instructions. Le socle du README.TXt est identique pour l'archive de portabilité, l'archive de données transverse et l'archive XDM Patient",
       "exampleBoolean" : false,
       "groupingId" : "LogicalModelArchivePortabilite"
     },
@@ -1099,7 +1099,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/pdlgc-export-status-vs"
+        "reference" : "ValueSet/vs-pdlgc-export-status"
       },
       "name" : "PDLGC Statut de l'export",
       "description" : "PDLGC Statut de l'export",
@@ -1124,10 +1124,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/pdlgc-export-type-vs"
+        "reference" : "ValueSet/vs-pdlgc-archive-type"
       },
-      "name" : "PDLGC Type d'Export",
-      "description" : "PDLGC Type d'Export",
+      "name" : "PDLGC Type d'archive",
+      "description" : "PDLGC Type d'archive",
       "exampleBoolean" : false
     },
     {
@@ -1136,10 +1136,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/pdlgc-repo-type-vs"
+        "reference" : "ValueSet/vs-pdlgc-export-type"
       },
-      "name" : "PDLGC Type de répertoire",
-      "description" : "PDLGC Type de répertoire",
+      "name" : "PDLGC Type d'Export",
+      "description" : "PDLGC Type d'Export",
       "exampleBoolean" : false
     },
     {
@@ -1174,7 +1174,7 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/pdlgc-export-status-cs"
+        "reference" : "CodeSystem/cs-pdlgc-export-status"
       },
       "name" : "Statut de l'export",
       "description" : "Statut de l'export",
@@ -1199,7 +1199,19 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/cs-association-type"
+        "reference" : "CodeSystem/cs-pdlgc-archive-type"
+      },
+      "name" : "Type d'archive",
+      "description" : "Type d'archive",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/cs-xdm-association-type"
       },
       "name" : "Type d'association XDS",
       "description" : "Types d'association entre objets XDS dans le contexte portabilité.",
@@ -1223,22 +1235,10 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/pdlgc-type-export-cs"
+        "reference" : "CodeSystem/cs-pdlgc-export-type"
       },
       "name" : "Type d'export de données LGC",
       "description" : "Type d'export de données LGC",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/pdlgc-repo-type-cs"
-      },
-      "name" : "Type de répertoire",
-      "description" : "Type de répertoire",
       "exampleBoolean" : false
     },
     {
@@ -1263,7 +1263,7 @@
         "reference" : "StructureDefinition/xdm-actor-ps"
       },
       "name" : "XDM ActorPS",
-      "description" : "\nCet attribut représente un acteur PS.",
+      "description" : "Cet attribut représente un acteur PS.",
       "exampleBoolean" : false,
       "groupingId" : "LogicalModelXDM"
     },
@@ -1367,7 +1367,7 @@
         "reference" : "StructureDefinition/xdm-author-institution"
       },
       "name" : "XDM AuthorInstitution",
-      "description" : "Cet attribut représente la structure de l’auteur. \nPour les documents d’expression personnelle du patient, cette métadonnée est absente, cela signifie que l’élément XML <rim:Slot name='authorInstitution'> n’est pas transmis.",
+      "description" : "Cet attribut représente la structure de l’auteur. \nPour les documents d’expression personnelle du patient, cette métadonnée est absente, cela signifie que l’élément XML `<rim:Slot name='authorInstitution'>` n’est pas transmis.",
       "exampleBoolean" : false,
       "groupingId" : "LogicalModelXDM"
     },
@@ -1543,19 +1543,19 @@
         "page" : [{
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "annexe-references.html"
+            "valueUrl" : "annexe-securite.html"
           }],
-          "nameUrl" : "annexe-references.html",
-          "title" : "Références",
+          "nameUrl" : "annexe-securite.html",
+          "title" : "Sécurité",
           "generation" : "markdown"
         },
         {
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "annexe-securite.html"
+            "valueUrl" : "annexe-references.html"
           }],
-          "nameUrl" : "annexe-securite.html",
-          "title" : "Sécurité",
+          "nameUrl" : "annexe-references.html",
+          "title" : "Références",
           "generation" : "markdown"
         },
         {

@@ -1,8 +1,6 @@
 "Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: ActorXDSCDA"
 "xdm-actor-ps","xdm-actor-ps","","","",0,*,"","","","null {[]} {[]}
-","XDM ActorPS","
-Cet attribut représente un acteur PS.
-","","","","","","","","","",,,,,"",,,,"Base",0,*,"","","ActorXDS"
+","XDM ActorPS","Cet attribut représente un acteur PS.","","","","","","","","","",,,,,"",,,,"Base",0,*,"","","ActorXDS"
 "xdm-actor-ps.XCN1","xdm-actor-ps.XCN1","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-identifiant {[]} {[]}
 ","Identifiant de l'acteur","Identifiant de l'acteur","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""801234567890""/>","","",,,,,"",,,,"xdm-actor-xds.XCN1",1,1,"","","author/assignedAuthor/id@extension"
 "xdm-actor-ps.XCN1.value[x]","xdm-actor-ps.XCN1.value[x]","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/ps-id-nat {[]} {[]}
@@ -12,7 +10,7 @@ Cet attribut représente un acteur PS.
 "xdm-actor-ps.XCN3","xdm-actor-ps.XCN3","","","",1,1,"","","","string {[]} {[]}
 ","Prénom usuel de la personne","Prénom usuel de la personne (par défaut le premier prénom), nom du modèle pour les dispositifs ou dénomination pour les autres systèmes.","","","","","","","","","",,,,,"",,,,"xdm-actor-xds.XCN3",1,1,"","","author/assignedAuthor/assignedPerson/name/given"
 "xdm-actor-ps.XCN9","xdm-actor-ps.XCN9","","","",1,1,"","","","Base {[]} {[]}
-"," Autorité d’affectation"," Autorité d’affectation","","","","","","","","","",,,,,"",,,,"xdm-actor-xds.XCN9",1,1,"","","NA"
+","Autorité d’affectation","Autorité d’affectation","","","","","","","","","",,,,,"",,,,"xdm-actor-xds.XCN9",1,1,"","","NA"
 "xdm-actor-ps.XCN9.composant1","xdm-actor-ps.XCN9.composant1","","","",0,0,"","","","string {[]} {[]}
 ","Vide, pas de valeur","Vide, pas de valeur","","","","","","","","","",,,,,"",,,,"xdm-actor-xds.XCN9.composant1",0,0,"","","NA"
 "xdm-actor-ps.XCN9.composant2","xdm-actor-ps.XCN9.composant2","","","",1,1,"","","","string {[]} {[]}

@@ -62,7 +62,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdm-author-docu
   "name" : "XDMAuthorDocumentEntry",
   "title" : "XDM AuthorDocumentEntry",
   "status" : "draft",
-  "date" : "2026-07-22T10:39:39+00:00",
+  "date" : "2026-07-22T17:16:50+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -120,7 +120,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdm-author-docu
     {
       "id" : "xdm-author-document-entry.person[x]",
       "path" : "xdm-author-document-entry.person[x]",
-      "short" : "Cet attribut représente l’auteur (humain ou système) ayant contribué au document. Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient.  "
+      "short" : "Cet attribut représente l’auteur (humain ou système) ayant contribué au document. Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient."
     },
     {
       "id" : "xdm-author-document-entry.role",

@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-xdm-document-entr
   "name" : "XDMDocumentEntry",
   "title" : "XDM DocumentEntry",
   "status" : "draft",
-  "date" : "2026-07-22T10:39:39+00:00",
+  "date" : "2026-07-22T17:16:50+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -108,7 +108,7 @@ Other representations of profile: [CSV](../StructureDefinition-xdm-document-entr
     {
       "id" : "xdm-document-entry.availabilityStatus",
       "path" : "xdm-document-entry.availabilityStatus",
-      "short" : "Cette métadonnée représente la pertinence de la version de la fiche d'un document. ",
+      "short" : "Cette métadonnée représente la pertinence de la version de la fiche d'un document.",
       "definition" : "**Availability Status**",
       "min" : 1,
       "max" : "1",
@@ -287,8 +287,8 @@ Other representations of profile: [CSV](../StructureDefinition-xdm-document-entr
     {
       "id" : "xdm-document-entry.uniqueId",
       "path" : "xdm-document-entry.uniqueId",
-      "short" : "Identifiant unique affecté au document par son créateur. ",
-      "definition" : "Identifiant unique affecté au document par son créateur. ",
+      "short" : "Identifiant unique affecté au document par son créateur.",
+      "definition" : "Identifiant unique affecté au document par son créateur.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -332,8 +332,8 @@ Other representations of profile: [CSV](../StructureDefinition-xdm-document-entr
     {
       "id" : "xdm-document-entry.eventCodeList",
       "path" : "xdm-document-entry.eventCodeList",
-      "short" : "Cette métadonnée contient les codes, libellés et codes système représentant :  -un évènement documenté (acte, traitement, diagnostic, etc…), -une modalité d'acquisition (contexte imagerie), -une région anatomique (contexte imagerie). ",
-      "definition" : "Cette métadonnée contient les codes, libellés et codes système représentant :  -un évènement documenté (acte, traitement, diagnostic, etc…), -une modalité d'acquisition (contexte imagerie), -une région anatomique (contexte imagerie). ",
+      "short" : "Cette métadonnée contient les codes, libellés et codes système représentant :  -un évènement documenté (acte, traitement, diagnostic, etc…), -une modalité d'acquisition (contexte imagerie), -une région anatomique (contexte imagerie).",
+      "definition" : "Cette métadonnée contient les codes, libellés et codes système représentant :  -un évènement documenté (acte, traitement, diagnostic, etc…), -une modalité d'acquisition (contexte imagerie), -une région anatomique (contexte imagerie).",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -358,7 +358,7 @@ Other representations of profile: [CSV](../StructureDefinition-xdm-document-entr
     {
       "id" : "xdm-document-entry.healthcareFacilityTypeCode",
       "path" : "xdm-document-entry.healthcareFacilityTypeCode",
-      "short" : "Secteur d'activité lié à la prise en charge de la personne, en lien avec le document produit. ",
+      "short" : "Secteur d'activité lié à la prise en charge de la personne, en lien avec le document produit.",
       "definition" : "Healthcare Facility Type Code**",
       "min" : 1,
       "max" : "1",
@@ -373,7 +373,7 @@ Other representations of profile: [CSV](../StructureDefinition-xdm-document-entr
     {
       "id" : "xdm-document-entry.practiceSetting",
       "path" : "xdm-document-entry.practiceSetting",
-      "short" : "Contexte de l’acte qui a engendré la création du document. ",
+      "short" : "Contexte de l’acte qui a engendré la création du document.",
       "definition" : "**Practice Setting**",
       "min" : 1,
       "max" : "1",

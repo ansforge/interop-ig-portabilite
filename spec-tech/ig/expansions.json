@@ -1,24 +1,28 @@
 {
   "resourceType" : "Bundle",
-  "id" : "71227d07-e017-4c29-bbe7-e865fac14156",
+  "id" : "8ba7a1dc-9f7a-4bd7-959c-449b7562aed4",
   "meta" : {
-    "lastUpdated" : "2026-07-22T10:39:39.680+00:00"
+    "lastUpdated" : "2026-07-22T17:16:50.281+00:00"
   },
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-export-status-vs",
+    "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-association-type",
     "resource" : {
       "resourceType" : "ValueSet",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
+      },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion effectuée en interne basée sur <a href=\"CodeSystem-pdlgc-export-status-cs.html\">codesystem Statut de l'export v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs|0.1.0\" title=\"Cliquer pour copier l'URL\" class=\"btn-copy\"> </button></span></p><p>Ce jeu de valeur (ValueSet) contient 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>Système</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage (fr)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs-COMPLETE\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-pdlgc-export-status-cs.html#pdlgc-export-status-cs-COMPLETE\">COMPLETE</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;COMPLETE&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;COMPLETE&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs-PARTIAL\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-pdlgc-export-status-cs.html#pdlgc-export-status-cs-PARTIAL\">PARTIAL</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;PARTIAL&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;PARTIAL&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs-SAMPLE\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-pdlgc-export-status-cs.html#pdlgc-export-status-cs-SAMPLE\">SAMPLE</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;SAMPLE&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;SAMPLE&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion effectuée en interne basée sur <a href=\"CodeSystem-cs-xdm-association-type.html\">codesystem Type d'association XDS v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type|0.1.0\" title=\"Cliquer pour copier l'URL\" class=\"btn-copy\"> </button></span></p><p>Ce jeu de valeur (ValueSet) contient 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>Système</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage (fr)</b></td><td><b>Définition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type-RPLC\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-xdm-association-type.html#cs-xdm-association-type-RPLC\">RPLC</a></td><td/><td>Le document source remplace le document cible.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;RPLC&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;RPLC&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type-XFRM\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-xdm-association-type.html#cs-xdm-association-type-XFRM\">XFRM</a></td><td/><td>Le document source est une transformation du document cible (ex : PDF correspondant au document CDA).</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;XFRM&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;XFRM&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
       },
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-export-status-vs",
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-association-type",
       "version" : "0.1.0",
-      "name" : "PDLGCExportStatusVS",
-      "title" : "PDLGC Statut de l'export",
+      "name" : "VS_XDM_AssociationType",
+      "title" : "Type d'association XDS (VS)",
       "status" : "draft",
-      "date" : "2026-07-22T10:39:39+00:00",
+      "experimental" : false,
+      "date" : "2026-07-22T17:16:50+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -27,8 +31,378 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:cbc2587a-4524-4fe2-a461-3a9c28926dbf",
-        "timestamp" : "2026-07-22T10:40:39+00:00",
+        "identifier" : "urn:uuid:19221271-ab45-45e0-9fc1-3d9bd3e0fbeb",
+        "timestamp" : "2026-07-22T17:17:49+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "fr"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type",
+          "code" : "RPLC"
+        },
+        {
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type",
+          "code" : "XFRM"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-association-type",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion effectuée en interne basée sur <a href=\"CodeSystem-cs-xdm-association-type.html\">codesystem Type d'association XDS v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type|0.1.0\" title=\"Cliquer pour copier l'URL\" class=\"btn-copy\"> </button></span></p><p>Ce jeu de valeur (ValueSet) contient 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>Système</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage (fr)</b></td><td><b>Définition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type-RPLC\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-xdm-association-type.html#cs-xdm-association-type-RPLC\">RPLC</a></td><td/><td>Le document source remplace le document cible.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;RPLC&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;RPLC&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type-XFRM\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-xdm-association-type.html#cs-xdm-association-type-XFRM\">XFRM</a></td><td/><td>Le document source est une transformation du document cible (ex : PDF correspondant au document CDA).</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;XFRM&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;XFRM&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-association-type",
+      "version" : "0.1.0",
+      "name" : "VS_XDM_AssociationType",
+      "title" : "Type d'association XDS (VS)",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2026-07-22T17:16:50+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FR",
+          "display" : "France (la)"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:19221271-ab45-45e0-9fc1-3d9bd3e0fbeb",
+        "timestamp" : "2026-07-22T17:17:49+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "fr"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type",
+          "code" : "RPLC"
+        },
+        {
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type",
+          "code" : "XFRM"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-association-type",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-cs-xdm-association-type.html\">codesystem Type d'association XDS v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type|0.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type-RPLC\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-xdm-association-type.html#cs-xdm-association-type-RPLC\">RPLC</a></td><td>Remplacement</td><td>Le document source remplace le document cible.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;RPLC&quot;, &quot;display&quot;: &quot;Remplacement&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;RPLC&quot;&gt;&lt;display value=&quot;Remplacement&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type-XFRM\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-xdm-association-type.html#cs-xdm-association-type-XFRM\">XFRM</a></td><td>Transformation</td><td>Le document source est une transformation du document cible (ex : PDF correspondant au document CDA).</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;XFRM&quot;, &quot;display&quot;: &quot;Transformation&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;XFRM&quot;&gt;&lt;display value=&quot;Transformation&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-association-type",
+      "version" : "0.1.0",
+      "name" : "VS_XDM_AssociationType",
+      "title" : "Type d'association XDS (VS)",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2026-07-22T17:16:50+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FR",
+          "display" : "France (la)"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:d9731534-1eab-4bb3-9833-9a39434feb02",
+        "timestamp" : "2026-07-22T17:17:49+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type",
+          "code" : "RPLC",
+          "display" : "Remplacement"
+        },
+        {
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type",
+          "code" : "XFRM",
+          "display" : "Transformation"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-archive-type",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion effectuée en interne basée sur <a href=\"CodeSystem-cs-pdlgc-archive-type.html\">codesystem Type d'archive v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type|0.1.0\" title=\"Cliquer pour copier l'URL\" class=\"btn-copy\"> </button></span></p><p>Ce jeu de valeur (ValueSet) contient 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>Système</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage (fr)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type-PATIENT\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-pdlgc-archive-type.html#cs-pdlgc-archive-type-PATIENT\">PATIENT</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;PATIENT&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;PATIENT&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type-TRANSVERSE\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-pdlgc-archive-type.html#cs-pdlgc-archive-type-TRANSVERSE\">TRANSVERSE</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;TRANSVERSE&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;TRANSVERSE&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-archive-type",
+      "version" : "0.1.0",
+      "name" : "VS_PDLGC_ArchiveType",
+      "title" : "PDLGC Type d'archive",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2026-07-22T17:16:50+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FR",
+          "display" : "France (la)"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:358b63bf-ae8c-4138-940c-5ca2532e9c24",
+        "timestamp" : "2026-07-22T17:17:49+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "fr"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type",
+          "code" : "PATIENT"
+        },
+        {
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type",
+          "code" : "TRANSVERSE"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-archive-type",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion effectuée en interne basée sur <a href=\"CodeSystem-cs-pdlgc-archive-type.html\">codesystem Type d'archive v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type|0.1.0\" title=\"Cliquer pour copier l'URL\" class=\"btn-copy\"> </button></span></p><p>Ce jeu de valeur (ValueSet) contient 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>Système</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage (fr)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type-PATIENT\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-pdlgc-archive-type.html#cs-pdlgc-archive-type-PATIENT\">PATIENT</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;PATIENT&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;PATIENT&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type-TRANSVERSE\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-pdlgc-archive-type.html#cs-pdlgc-archive-type-TRANSVERSE\">TRANSVERSE</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;TRANSVERSE&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;TRANSVERSE&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-archive-type",
+      "version" : "0.1.0",
+      "name" : "VS_PDLGC_ArchiveType",
+      "title" : "PDLGC Type d'archive",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2026-07-22T17:16:50+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FR",
+          "display" : "France (la)"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:358b63bf-ae8c-4138-940c-5ca2532e9c24",
+        "timestamp" : "2026-07-22T17:17:49+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "fr"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type",
+          "code" : "PATIENT"
+        },
+        {
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type",
+          "code" : "TRANSVERSE"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-archive-type",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-cs-pdlgc-archive-type.html\">codesystem Type d'archive v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type|0.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type-PATIENT\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-pdlgc-archive-type.html#cs-pdlgc-archive-type-PATIENT\">PATIENT</a></td><td>Archive stockant les données médicales et administratives d'un patient</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;PATIENT&quot;, &quot;display&quot;: &quot;Archive stockant les données médicales et administratives d'un patient&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;PATIENT&quot;&gt;&lt;display value=&quot;Archive stockant les données médicales et administratives d'un patient&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type-TRANSVERSE\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-pdlgc-archive-type.html#cs-pdlgc-archive-type-TRANSVERSE\">TRANSVERSE</a></td><td>Archive stockant les données transverses associées à un praticien ou une structure</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;TRANSVERSE&quot;, &quot;display&quot;: &quot;Archive stockant les données transverses associées à un praticien ou une structure&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;TRANSVERSE&quot;&gt;&lt;display value=&quot;Archive stockant les données transverses associées à un praticien ou une structure&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-archive-type",
+      "version" : "0.1.0",
+      "name" : "VS_PDLGC_ArchiveType",
+      "title" : "PDLGC Type d'archive",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2026-07-22T17:16:50+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FR",
+          "display" : "France (la)"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:165458df-e880-46a0-9e4a-9c5e30f99901",
+        "timestamp" : "2026-07-22T17:17:49+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type",
+          "code" : "PATIENT",
+          "display" : "Archive stockant les données médicales et administratives d'un patient"
+        },
+        {
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type",
+          "code" : "TRANSVERSE",
+          "display" : "Archive stockant les données transverses associées à un praticien ou une structure"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-export-status",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion effectuée en interne basée sur <a href=\"CodeSystem-cs-pdlgc-export-status.html\">codesystem Statut de l'export v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status|0.1.0\" title=\"Cliquer pour copier l'URL\" class=\"btn-copy\"> </button></span></p><p>Ce jeu de valeur (ValueSet) contient 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>Système</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage (fr)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status-COMPLETE\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-pdlgc-export-status.html#cs-pdlgc-export-status-COMPLETE\">COMPLETE</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;COMPLETE&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;COMPLETE&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status-PARTIAL\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-pdlgc-export-status.html#cs-pdlgc-export-status-PARTIAL\">PARTIAL</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;PARTIAL&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;PARTIAL&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status-SAMPLE\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-pdlgc-export-status.html#cs-pdlgc-export-status-SAMPLE\">SAMPLE</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;SAMPLE&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;SAMPLE&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-export-status",
+      "version" : "0.1.0",
+      "name" : "VS_PDLGC_ExportStatus",
+      "title" : "PDLGC Statut de l'export",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2026-07-22T17:16:50+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FR",
+          "display" : "France (la)"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:f42464a3-b6f7-4002-93e2-f31e45fae096",
+        "timestamp" : "2026-07-22T17:17:49+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -49,37 +423,41 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs|0.1.0"
+          "valueUri" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status|0.1.0"
         }],
         "contains" : [{
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs",
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status",
           "code" : "COMPLETE"
         },
         {
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs",
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status",
           "code" : "PARTIAL"
         },
         {
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs",
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status",
           "code" : "SAMPLE"
         }]
       }
     }
   },
   {
-    "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-export-status-vs",
+    "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-export-status",
     "resource" : {
       "resourceType" : "ValueSet",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
+      },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion effectuée en interne basée sur <a href=\"CodeSystem-pdlgc-export-status-cs.html\">codesystem Statut de l'export v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs|0.1.0\" title=\"Cliquer pour copier l'URL\" class=\"btn-copy\"> </button></span></p><p>Ce jeu de valeur (ValueSet) contient 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>Système</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage (fr)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs-COMPLETE\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-pdlgc-export-status-cs.html#pdlgc-export-status-cs-COMPLETE\">COMPLETE</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;COMPLETE&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;COMPLETE&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs-PARTIAL\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-pdlgc-export-status-cs.html#pdlgc-export-status-cs-PARTIAL\">PARTIAL</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;PARTIAL&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;PARTIAL&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs-SAMPLE\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-pdlgc-export-status-cs.html#pdlgc-export-status-cs-SAMPLE\">SAMPLE</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;SAMPLE&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;SAMPLE&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion effectuée en interne basée sur <a href=\"CodeSystem-cs-pdlgc-export-status.html\">codesystem Statut de l'export v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status|0.1.0\" title=\"Cliquer pour copier l'URL\" class=\"btn-copy\"> </button></span></p><p>Ce jeu de valeur (ValueSet) contient 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>Système</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage (fr)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status-COMPLETE\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-pdlgc-export-status.html#cs-pdlgc-export-status-COMPLETE\">COMPLETE</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;COMPLETE&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;COMPLETE&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status-PARTIAL\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-pdlgc-export-status.html#cs-pdlgc-export-status-PARTIAL\">PARTIAL</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;PARTIAL&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;PARTIAL&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status-SAMPLE\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-pdlgc-export-status.html#cs-pdlgc-export-status-SAMPLE\">SAMPLE</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;SAMPLE&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;SAMPLE&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
       },
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-export-status-vs",
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-export-status",
       "version" : "0.1.0",
-      "name" : "PDLGCExportStatusVS",
+      "name" : "VS_PDLGC_ExportStatus",
       "title" : "PDLGC Statut de l'export",
       "status" : "draft",
-      "date" : "2026-07-22T10:39:39+00:00",
+      "experimental" : false,
+      "date" : "2026-07-22T17:16:50+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -88,8 +466,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:cbc2587a-4524-4fe2-a461-3a9c28926dbf",
-        "timestamp" : "2026-07-22T10:40:39+00:00",
+        "identifier" : "urn:uuid:f42464a3-b6f7-4002-93e2-f31e45fae096",
+        "timestamp" : "2026-07-22T17:17:49+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -110,37 +488,41 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs|0.1.0"
+          "valueUri" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status|0.1.0"
         }],
         "contains" : [{
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs",
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status",
           "code" : "COMPLETE"
         },
         {
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs",
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status",
           "code" : "PARTIAL"
         },
         {
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs",
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status",
           "code" : "SAMPLE"
         }]
       }
     }
   },
   {
-    "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-export-status-vs",
+    "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-export-status",
     "resource" : {
       "resourceType" : "ValueSet",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
+      },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-pdlgc-export-status-cs.html\">codesystem Statut de l'export v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs|0.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs-COMPLETE\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-pdlgc-export-status-cs.html#pdlgc-export-status-cs-COMPLETE\">COMPLETE</a></td><td>Export complet des données LGC</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;COMPLETE&quot;, &quot;display&quot;: &quot;Export complet des données LGC&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;COMPLETE&quot;&gt;&lt;display value=&quot;Export complet des données LGC&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs-PARTIAL\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-pdlgc-export-status-cs.html#pdlgc-export-status-cs-PARTIAL\">PARTIAL</a></td><td>Export partiel d'une fraction des données LGC</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;PARTIAL&quot;, &quot;display&quot;: &quot;Export partiel d'une fraction des données LGC&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;PARTIAL&quot;&gt;&lt;display value=&quot;Export partiel d'une fraction des données LGC&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs-SAMPLE\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-pdlgc-export-status-cs.html#pdlgc-export-status-cs-SAMPLE\">SAMPLE</a></td><td>Export d'un échantillon de données pour test d'intégration</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;SAMPLE&quot;, &quot;display&quot;: &quot;Export d'un échantillon de données pour test d'intégration&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;SAMPLE&quot;&gt;&lt;display value=&quot;Export d'un échantillon de données pour test d'intégration&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-cs-pdlgc-export-status.html\">codesystem Statut de l'export v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status|0.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status-COMPLETE\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-pdlgc-export-status.html#cs-pdlgc-export-status-COMPLETE\">COMPLETE</a></td><td>Export complet des données LGC</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;COMPLETE&quot;, &quot;display&quot;: &quot;Export complet des données LGC&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;COMPLETE&quot;&gt;&lt;display value=&quot;Export complet des données LGC&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status-PARTIAL\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-pdlgc-export-status.html#cs-pdlgc-export-status-PARTIAL\">PARTIAL</a></td><td>Export partiel d'une fraction des données LGC</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;PARTIAL&quot;, &quot;display&quot;: &quot;Export partiel d'une fraction des données LGC&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;PARTIAL&quot;&gt;&lt;display value=&quot;Export partiel d'une fraction des données LGC&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status-SAMPLE\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-pdlgc-export-status.html#cs-pdlgc-export-status-SAMPLE\">SAMPLE</a></td><td>Export d'un échantillon de données pour test d'intégration</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;SAMPLE&quot;, &quot;display&quot;: &quot;Export d'un échantillon de données pour test d'intégration&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;SAMPLE&quot;&gt;&lt;display value=&quot;Export d'un échantillon de données pour test d'intégration&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
       },
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-export-status-vs",
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-export-status",
       "version" : "0.1.0",
-      "name" : "PDLGCExportStatusVS",
+      "name" : "VS_PDLGC_ExportStatus",
       "title" : "PDLGC Statut de l'export",
       "status" : "draft",
-      "date" : "2026-07-22T10:39:39+00:00",
+      "experimental" : false,
+      "date" : "2026-07-22T17:16:50+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -149,8 +531,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:88e4970d-fe37-4a8a-97e0-bcbdd4ae8192",
-        "timestamp" : "2026-07-22T10:40:39+00:00",
+        "identifier" : "urn:uuid:1a36b8cb-5f7e-42bf-9fb9-cbb53b3f0a95",
+        "timestamp" : "2026-07-22T17:17:49+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -171,20 +553,20 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs|0.1.0"
+          "valueUri" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status|0.1.0"
         }],
         "contains" : [{
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs",
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status",
           "code" : "COMPLETE",
           "display" : "Export complet des données LGC"
         },
         {
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs",
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status",
           "code" : "PARTIAL",
           "display" : "Export partiel d'une fraction des données LGC"
         },
         {
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs",
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status",
           "code" : "SAMPLE",
           "display" : "Export d'un échantillon de données pour test d'intégration"
         }]
@@ -192,19 +574,23 @@
     }
   },
   {
-    "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-export-type-vs",
+    "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-export-type",
     "resource" : {
       "resourceType" : "ValueSet",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
+      },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion effectuée en interne basée sur <a href=\"CodeSystem-pdlgc-type-export-cs.html\">codesystem Type d'export de données LGC v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs|0.1.0\" title=\"Cliquer pour copier l'URL\" class=\"btn-copy\"> </button></span></p><p>Ce jeu de valeur (ValueSet) contient 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>Système</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage (fr)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs-UNITAIRE\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-pdlgc-type-export-cs.html#pdlgc-type-export-cs-UNITAIRE\">UNITAIRE</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;UNITAIRE&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;UNITAIRE&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs-CIBLE\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-pdlgc-type-export-cs.html#pdlgc-type-export-cs-CIBLE\">CIBLE</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;CIBLE&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;CIBLE&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs-MASSIF\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-pdlgc-type-export-cs.html#pdlgc-type-export-cs-MASSIF\">MASSIF</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;MASSIF&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;MASSIF&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion effectuée en interne basée sur <a href=\"CodeSystem-cs-pdlgc-export-type.html\">codesystem Type d'export de données LGC v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type|0.1.0\" title=\"Cliquer pour copier l'URL\" class=\"btn-copy\"> </button></span></p><p>Ce jeu de valeur (ValueSet) contient 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>Système</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage (fr)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type-UNITAIRE\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-pdlgc-export-type.html#cs-pdlgc-export-type-UNITAIRE\">UNITAIRE</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;UNITAIRE&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;UNITAIRE&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type-CIBLE\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-pdlgc-export-type.html#cs-pdlgc-export-type-CIBLE\">CIBLE</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;CIBLE&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;CIBLE&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type-MASSIF\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-pdlgc-export-type.html#cs-pdlgc-export-type-MASSIF\">MASSIF</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;MASSIF&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;MASSIF&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
       },
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-export-type-vs",
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-export-type",
       "version" : "0.1.0",
-      "name" : "PDLGCExportTypeVS",
+      "name" : "VS_PDLGC_ExportType",
       "title" : "PDLGC Type d'Export",
       "status" : "draft",
-      "date" : "2026-07-22T10:39:39+00:00",
+      "experimental" : false,
+      "date" : "2026-07-22T17:16:50+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -213,8 +599,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c0ee4d05-c80b-4e64-8969-5faf793fd444",
-        "timestamp" : "2026-07-22T10:40:39+00:00",
+        "identifier" : "urn:uuid:03a6f128-df89-4de8-9a70-5cbeee6efe02",
+        "timestamp" : "2026-07-22T17:17:49+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -235,37 +621,41 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs|0.1.0"
+          "valueUri" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type|0.1.0"
         }],
         "contains" : [{
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs",
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type",
           "code" : "UNITAIRE"
         },
         {
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs",
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type",
           "code" : "CIBLE"
         },
         {
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs",
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type",
           "code" : "MASSIF"
         }]
       }
     }
   },
   {
-    "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-export-type-vs",
+    "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-export-type",
     "resource" : {
       "resourceType" : "ValueSet",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
+      },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion effectuée en interne basée sur <a href=\"CodeSystem-pdlgc-type-export-cs.html\">codesystem Type d'export de données LGC v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs|0.1.0\" title=\"Cliquer pour copier l'URL\" class=\"btn-copy\"> </button></span></p><p>Ce jeu de valeur (ValueSet) contient 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>Système</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage (fr)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs-UNITAIRE\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-pdlgc-type-export-cs.html#pdlgc-type-export-cs-UNITAIRE\">UNITAIRE</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;UNITAIRE&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;UNITAIRE&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs-CIBLE\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-pdlgc-type-export-cs.html#pdlgc-type-export-cs-CIBLE\">CIBLE</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;CIBLE&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;CIBLE&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs-MASSIF\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-pdlgc-type-export-cs.html#pdlgc-type-export-cs-MASSIF\">MASSIF</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;MASSIF&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;MASSIF&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion effectuée en interne basée sur <a href=\"CodeSystem-cs-pdlgc-export-type.html\">codesystem Type d'export de données LGC v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type|0.1.0\" title=\"Cliquer pour copier l'URL\" class=\"btn-copy\"> </button></span></p><p>Ce jeu de valeur (ValueSet) contient 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>Système</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage (fr)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type-UNITAIRE\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-pdlgc-export-type.html#cs-pdlgc-export-type-UNITAIRE\">UNITAIRE</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;UNITAIRE&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;UNITAIRE&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type-CIBLE\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-pdlgc-export-type.html#cs-pdlgc-export-type-CIBLE\">CIBLE</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;CIBLE&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;CIBLE&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type-MASSIF\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-pdlgc-export-type.html#cs-pdlgc-export-type-MASSIF\">MASSIF</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;MASSIF&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;MASSIF&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
       },
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-export-type-vs",
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-export-type",
       "version" : "0.1.0",
-      "name" : "PDLGCExportTypeVS",
+      "name" : "VS_PDLGC_ExportType",
       "title" : "PDLGC Type d'Export",
       "status" : "draft",
-      "date" : "2026-07-22T10:39:39+00:00",
+      "experimental" : false,
+      "date" : "2026-07-22T17:16:50+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -274,8 +664,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c0ee4d05-c80b-4e64-8969-5faf793fd444",
-        "timestamp" : "2026-07-22T10:40:39+00:00",
+        "identifier" : "urn:uuid:03a6f128-df89-4de8-9a70-5cbeee6efe02",
+        "timestamp" : "2026-07-22T17:17:49+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -296,37 +686,41 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs|0.1.0"
+          "valueUri" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type|0.1.0"
         }],
         "contains" : [{
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs",
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type",
           "code" : "UNITAIRE"
         },
         {
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs",
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type",
           "code" : "CIBLE"
         },
         {
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs",
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type",
           "code" : "MASSIF"
         }]
       }
     }
   },
   {
-    "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-export-type-vs",
+    "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-export-type",
     "resource" : {
       "resourceType" : "ValueSet",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
+      },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-pdlgc-type-export-cs.html\">codesystem Type d'export de données LGC v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs|0.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs-UNITAIRE\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-pdlgc-type-export-cs.html#pdlgc-type-export-cs-UNITAIRE\">UNITAIRE</a></td><td>Export unitaire d'un unique dossier patient</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;UNITAIRE&quot;, &quot;display&quot;: &quot;Export unitaire d'un unique dossier patient&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;UNITAIRE&quot;&gt;&lt;display value=&quot;Export unitaire d'un unique dossier patient&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs-CIBLE\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-pdlgc-type-export-cs.html#pdlgc-type-export-cs-CIBLE\">CIBLE</a></td><td>Export d'un sélection de la patientèle répondant à un filtre par professionnel de santé ou par période</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;CIBLE&quot;, &quot;display&quot;: &quot;Export d'un sélection de la patientèle répondant à un filtre par professionnel de santé ou par période&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;CIBLE&quot;&gt;&lt;display value=&quot;Export d'un sélection de la patientèle répondant à un filtre par professionnel de santé ou par période&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs-MASSIF\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-pdlgc-type-export-cs.html#pdlgc-type-export-cs-MASSIF\">MASSIF</a></td><td>Export Massif de l'intégralité de la patientèle</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;MASSIF&quot;, &quot;display&quot;: &quot;Export Massif de l'intégralité de la patientèle&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;MASSIF&quot;&gt;&lt;display value=&quot;Export Massif de l'intégralité de la patientèle&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-cs-pdlgc-export-type.html\">codesystem Type d'export de données LGC v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type|0.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type-UNITAIRE\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-pdlgc-export-type.html#cs-pdlgc-export-type-UNITAIRE\">UNITAIRE</a></td><td>Export unitaire d'un unique dossier patient</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;UNITAIRE&quot;, &quot;display&quot;: &quot;Export unitaire d'un unique dossier patient&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;UNITAIRE&quot;&gt;&lt;display value=&quot;Export unitaire d'un unique dossier patient&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type-CIBLE\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-pdlgc-export-type.html#cs-pdlgc-export-type-CIBLE\">CIBLE</a></td><td>Export d'un sélection de la patientèle répondant à un filtre par professionnel de santé ou par période</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;CIBLE&quot;, &quot;display&quot;: &quot;Export d'un sélection de la patientèle répondant à un filtre par professionnel de santé ou par période&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;CIBLE&quot;&gt;&lt;display value=&quot;Export d'un sélection de la patientèle répondant à un filtre par professionnel de santé ou par période&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type-MASSIF\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-pdlgc-export-type.html#cs-pdlgc-export-type-MASSIF\">MASSIF</a></td><td>Export Massif de l'intégralité de la patientèle</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;MASSIF&quot;, &quot;display&quot;: &quot;Export Massif de l'intégralité de la patientèle&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;MASSIF&quot;&gt;&lt;display value=&quot;Export Massif de l'intégralité de la patientèle&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
       },
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-export-type-vs",
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-export-type",
       "version" : "0.1.0",
-      "name" : "PDLGCExportTypeVS",
+      "name" : "VS_PDLGC_ExportType",
       "title" : "PDLGC Type d'Export",
       "status" : "draft",
-      "date" : "2026-07-22T10:39:39+00:00",
+      "experimental" : false,
+      "date" : "2026-07-22T17:16:50+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -335,8 +729,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:a2243c80-7bf8-4681-b568-650581af48a4",
-        "timestamp" : "2026-07-22T10:40:39+00:00",
+        "identifier" : "urn:uuid:dc0acb88-7286-48af-83ac-37cee7309cdc",
+        "timestamp" : "2026-07-22T17:17:49+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -357,368 +751,22 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs|0.1.0"
+          "valueUri" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type|0.1.0"
         }],
         "contains" : [{
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs",
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type",
           "code" : "UNITAIRE",
           "display" : "Export unitaire d'un unique dossier patient"
         },
         {
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs",
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type",
           "code" : "CIBLE",
           "display" : "Export d'un sélection de la patientèle répondant à un filtre par professionnel de santé ou par période"
         },
         {
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs",
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type",
           "code" : "MASSIF",
           "display" : "Export Massif de l'intégralité de la patientèle"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-repo-type-vs",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion effectuée en interne basée sur <a href=\"CodeSystem-pdlgc-repo-type-cs.html\">codesystem Type de répertoire v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs|0.1.0\" title=\"Cliquer pour copier l'URL\" class=\"btn-copy\"> </button></span></p><p>Ce jeu de valeur (ValueSet) contient 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>Système</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage (fr)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs-PATIENT\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-pdlgc-repo-type-cs.html#pdlgc-repo-type-cs-PATIENT\">PATIENT</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;PATIENT&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;PATIENT&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs-TRANSVERSE\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-pdlgc-repo-type-cs.html#pdlgc-repo-type-cs-TRANSVERSE\">TRANSVERSE</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;TRANSVERSE&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;TRANSVERSE&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
-      },
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-repo-type-vs",
-      "version" : "0.1.0",
-      "name" : "PDLGCRepoTypeVS",
-      "title" : "PDLGC Type de répertoire",
-      "status" : "draft",
-      "date" : "2026-07-22T10:39:39+00:00",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "France (la)"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:97dd59ea-ba95-403d-b592-5416079e1088",
-        "timestamp" : "2026-07-22T10:40:39+00:00",
-        "total" : 2,
-        "offset" : 0,
-        "parameter" : [{
-          "name" : "displayLanguage",
-          "valueCode" : "fr"
-        },
-        {
-          "name" : "count",
-          "valueInteger" : 1000
-        },
-        {
-          "name" : "offset",
-          "valueInteger" : 0
-        },
-        {
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "used-codesystem",
-          "valueUri" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs|0.1.0"
-        }],
-        "contains" : [{
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs",
-          "code" : "PATIENT"
-        },
-        {
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs",
-          "code" : "TRANSVERSE"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-repo-type-vs",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion effectuée en interne basée sur <a href=\"CodeSystem-pdlgc-repo-type-cs.html\">codesystem Type de répertoire v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs|0.1.0\" title=\"Cliquer pour copier l'URL\" class=\"btn-copy\"> </button></span></p><p>Ce jeu de valeur (ValueSet) contient 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>Système</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage (fr)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs-PATIENT\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-pdlgc-repo-type-cs.html#pdlgc-repo-type-cs-PATIENT\">PATIENT</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;PATIENT&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;PATIENT&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs-TRANSVERSE\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-pdlgc-repo-type-cs.html#pdlgc-repo-type-cs-TRANSVERSE\">TRANSVERSE</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;TRANSVERSE&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;TRANSVERSE&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
-      },
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-repo-type-vs",
-      "version" : "0.1.0",
-      "name" : "PDLGCRepoTypeVS",
-      "title" : "PDLGC Type de répertoire",
-      "status" : "draft",
-      "date" : "2026-07-22T10:39:39+00:00",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "France (la)"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:97dd59ea-ba95-403d-b592-5416079e1088",
-        "timestamp" : "2026-07-22T10:40:39+00:00",
-        "total" : 2,
-        "offset" : 0,
-        "parameter" : [{
-          "name" : "displayLanguage",
-          "valueCode" : "fr"
-        },
-        {
-          "name" : "count",
-          "valueInteger" : 1000
-        },
-        {
-          "name" : "offset",
-          "valueInteger" : 0
-        },
-        {
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "used-codesystem",
-          "valueUri" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs|0.1.0"
-        }],
-        "contains" : [{
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs",
-          "code" : "PATIENT"
-        },
-        {
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs",
-          "code" : "TRANSVERSE"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-repo-type-vs",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-pdlgc-repo-type-cs.html\">codesystem Type de répertoire v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs|0.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs-PATIENT\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-pdlgc-repo-type-cs.html#pdlgc-repo-type-cs-PATIENT\">PATIENT</a></td><td>Répertoire stockant les données médicales d'un patient</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;PATIENT&quot;, &quot;display&quot;: &quot;Répertoire stockant les données médicales d'un patient&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;PATIENT&quot;&gt;&lt;display value=&quot;Répertoire stockant les données médicales d'un patient&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs-TRANSVERSE\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-pdlgc-repo-type-cs.html#pdlgc-repo-type-cs-TRANSVERSE\">TRANSVERSE</a></td><td>Répertoire stockant les données transverses associées à un praticien ou une structure</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;TRANSVERSE&quot;, &quot;display&quot;: &quot;Répertoire stockant les données transverses associées à un praticien ou une structure&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;TRANSVERSE&quot;&gt;&lt;display value=&quot;Répertoire stockant les données transverses associées à un praticien ou une structure&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
-      },
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-repo-type-vs",
-      "version" : "0.1.0",
-      "name" : "PDLGCRepoTypeVS",
-      "title" : "PDLGC Type de répertoire",
-      "status" : "draft",
-      "date" : "2026-07-22T10:39:39+00:00",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "France (la)"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:2079a3a4-c08c-494a-bcd8-26635ab73705",
-        "timestamp" : "2026-07-22T10:40:39+00:00",
-        "total" : 2,
-        "offset" : 0,
-        "parameter" : [{
-          "name" : "displayLanguage",
-          "valueCode" : "en"
-        },
-        {
-          "name" : "count",
-          "valueInteger" : 1000
-        },
-        {
-          "name" : "offset",
-          "valueInteger" : 0
-        },
-        {
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "used-codesystem",
-          "valueUri" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs|0.1.0"
-        }],
-        "contains" : [{
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs",
-          "code" : "PATIENT",
-          "display" : "Répertoire stockant les données médicales d'un patient"
-        },
-        {
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs",
-          "code" : "TRANSVERSE",
-          "display" : "Répertoire stockant les données transverses associées à un praticien ou une structure"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-association-type",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion effectuée en interne basée sur <a href=\"CodeSystem-cs-association-type.html\">codesystem Type d'association XDS v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type|0.1.0\" title=\"Cliquer pour copier l'URL\" class=\"btn-copy\"> </button></span></p><p>Ce jeu de valeur (ValueSet) contient 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>Système</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage (fr)</b></td><td><b>Définition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type-RPLC\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-association-type.html#cs-association-type-RPLC\">RPLC</a></td><td/><td>Le document source remplace le document cible.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;RPLC&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;RPLC&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type-XFRM\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-association-type.html#cs-association-type-XFRM\">XFRM</a></td><td/><td>Le document source est une transformation du document cible (ex : PDF correspondant au document CDA).</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;XFRM&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;XFRM&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
-      },
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-association-type",
-      "version" : "0.1.0",
-      "name" : "VS_AssociationType",
-      "title" : "Type d'association XDS (VS)",
-      "status" : "draft",
-      "date" : "2026-07-22T10:39:39+00:00",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "France (la)"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:af1098c6-4172-48bd-a65d-a69b6c565775",
-        "timestamp" : "2026-07-22T10:40:39+00:00",
-        "total" : 2,
-        "offset" : 0,
-        "parameter" : [{
-          "name" : "displayLanguage",
-          "valueCode" : "fr"
-        },
-        {
-          "name" : "count",
-          "valueInteger" : 1000
-        },
-        {
-          "name" : "offset",
-          "valueInteger" : 0
-        },
-        {
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "used-codesystem",
-          "valueUri" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type|0.1.0"
-        }],
-        "contains" : [{
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type",
-          "code" : "RPLC"
-        },
-        {
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type",
-          "code" : "XFRM"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-association-type",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion effectuée en interne basée sur <a href=\"CodeSystem-cs-association-type.html\">codesystem Type d'association XDS v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type|0.1.0\" title=\"Cliquer pour copier l'URL\" class=\"btn-copy\"> </button></span></p><p>Ce jeu de valeur (ValueSet) contient 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>Système</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage (fr)</b></td><td><b>Définition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type-RPLC\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-association-type.html#cs-association-type-RPLC\">RPLC</a></td><td/><td>Le document source remplace le document cible.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;RPLC&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;RPLC&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type-XFRM\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-association-type.html#cs-association-type-XFRM\">XFRM</a></td><td/><td>Le document source est une transformation du document cible (ex : PDF correspondant au document CDA).</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;XFRM&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;XFRM&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
-      },
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-association-type",
-      "version" : "0.1.0",
-      "name" : "VS_AssociationType",
-      "title" : "Type d'association XDS (VS)",
-      "status" : "draft",
-      "date" : "2026-07-22T10:39:39+00:00",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "France (la)"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:af1098c6-4172-48bd-a65d-a69b6c565775",
-        "timestamp" : "2026-07-22T10:40:39+00:00",
-        "total" : 2,
-        "offset" : 0,
-        "parameter" : [{
-          "name" : "displayLanguage",
-          "valueCode" : "fr"
-        },
-        {
-          "name" : "count",
-          "valueInteger" : 1000
-        },
-        {
-          "name" : "offset",
-          "valueInteger" : 0
-        },
-        {
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "used-codesystem",
-          "valueUri" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type|0.1.0"
-        }],
-        "contains" : [{
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type",
-          "code" : "RPLC"
-        },
-        {
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type",
-          "code" : "XFRM"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-association-type",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-cs-association-type.html\">codesystem Type d'association XDS v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type|0.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type-RPLC\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-association-type.html#cs-association-type-RPLC\">RPLC</a></td><td>Remplacement</td><td>Le document source remplace le document cible.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;RPLC&quot;, &quot;display&quot;: &quot;Remplacement&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;RPLC&quot;&gt;&lt;display value=&quot;Remplacement&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type-XFRM\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-association-type.html#cs-association-type-XFRM\">XFRM</a></td><td>Transformation</td><td>Le document source est une transformation du document cible (ex : PDF correspondant au document CDA).</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;XFRM&quot;, &quot;display&quot;: &quot;Transformation&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;XFRM&quot;&gt;&lt;display value=&quot;Transformation&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
-      },
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-association-type",
-      "version" : "0.1.0",
-      "name" : "VS_AssociationType",
-      "title" : "Type d'association XDS (VS)",
-      "status" : "draft",
-      "date" : "2026-07-22T10:39:39+00:00",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "France (la)"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:9ea906e5-36ad-4ef6-831c-f7d8ddbd5340",
-        "timestamp" : "2026-07-22T10:40:39+00:00",
-        "total" : 2,
-        "offset" : 0,
-        "parameter" : [{
-          "name" : "displayLanguage",
-          "valueCode" : "en"
-        },
-        {
-          "name" : "count",
-          "valueInteger" : 1000
-        },
-        {
-          "name" : "offset",
-          "valueInteger" : 0
-        },
-        {
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "used-codesystem",
-          "valueUri" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type|0.1.0"
-        }],
-        "contains" : [{
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type",
-          "code" : "RPLC",
-          "display" : "Remplacement"
-        },
-        {
-          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type",
-          "code" : "XFRM",
-          "display" : "Transformation"
         }]
       }
     }

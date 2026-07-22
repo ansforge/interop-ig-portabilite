@@ -59,7 +59,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-archive-p
   "name" : "PDLGCArchivePortabilite",
   "title" : "PDLGC Archive Portabilite",
   "status" : "draft",
-  "date" : "2026-07-22T10:39:39+00:00",
+  "date" : "2026-07-22T17:16:50+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -91,8 +91,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-archive-p
       "comment" : "Transaction ExportArchivePortabilite"
     },
     {
-      "id" : "pdlgc-archive-portabilite.README",
-      "path" : "pdlgc-archive-portabilite.README",
+      "id" : "pdlgc-archive-portabilite.readme",
+      "path" : "pdlgc-archive-portabilite.readme",
       "short" : "Informations éditoriales et instructions d'exploitation de l'archive de portabilité.",
       "definition" : "Informations éditoriales et instructions d'exploitation de l'archive de portabilité.",
       "min" : 1,
@@ -103,8 +103,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-archive-p
       "mustSupport" : true
     },
     {
-      "id" : "pdlgc-archive-portabilite.MANIFEST",
-      "path" : "pdlgc-archive-portabilite.MANIFEST",
+      "id" : "pdlgc-archive-portabilite.manifest",
+      "path" : "pdlgc-archive-portabilite.manifest",
       "short" : "Vue synthétique du contenu de l'archive de portabilité, incluant rapport de volumétrie et d'intégrité.",
       "definition" : "Vue synthétique du contenu de l'archive de portabilité, incluant rapport de volumétrie et d'intégrité.",
       "min" : 1,
@@ -115,8 +115,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-archive-p
       "mustSupport" : true
     },
     {
-      "id" : "pdlgc-archive-portabilite.SIGN",
-      "path" : "pdlgc-archive-portabilite.SIGN",
+      "id" : "pdlgc-archive-portabilite.signature",
+      "path" : "pdlgc-archive-portabilite.signature",
       "short" : "signature XAdES de l'archive attestant de l'imputabilité et l'intégrité des données.",
       "definition" : "signature XAdES de l'archive attestant de l'imputabilité et l'intégrité des données.",
       "min" : 1,
@@ -127,8 +127,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-archive-p
       "mustSupport" : true
     },
     {
-      "id" : "pdlgc-archive-portabilite.DOCUMENTATION",
-      "path" : "pdlgc-archive-portabilite.DOCUMENTATION",
+      "id" : "pdlgc-archive-portabilite.Documentation",
+      "path" : "pdlgc-archive-portabilite.Documentation",
       "short" : "répertoire de stockage de la documentation d'export permettant l'interprétation de l'archive par le système destinataire (dictionnaire de données, mapping, schémas techniques, jeu d'échantillons,...).",
       "definition" : "répertoire de stockage de la documentation d'export permettant l'interprétation de l'archive par le système destinataire (dictionnaire de données, mapping, schémas techniques, jeu d'échantillons,...).",
       "min" : 1,
@@ -139,8 +139,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-archive-p
       "mustSupport" : true
     },
     {
-      "id" : "pdlgc-archive-portabilite.TRANSVERSE",
-      "path" : "pdlgc-archive-portabilite.TRANSVERSE",
+      "id" : "pdlgc-archive-portabilite.ArchiveTransverse",
+      "path" : "pdlgc-archive-portabilite.ArchiveTransverse",
       "short" : "Archive de données transverses liées au praticien ou au cabinet (agenda, données de comptabilité, logs d'accès,...).",
       "definition" : "Archive de données transverses liées au praticien ou au cabinet (agenda, données de comptabilité, logs d'accès,...).",
       "min" : 1,
@@ -151,10 +151,10 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-archive-p
       "mustSupport" : true
     },
     {
-      "id" : "pdlgc-archive-portabilite.PATNNNNN",
-      "path" : "pdlgc-archive-portabilite.PATNNNNN",
-      "short" : "Archive de données médicales liées au patient, ou NNNNN est incrémenté à partir de 00001. Chaque patient est représenté par une archive distincte conforme au profil IHE_XDM.",
-      "definition" : "Archive de données médicales liées au patient, ou NNNNN est incrémenté à partir de 00001. Chaque patient est représenté par une archive distincte conforme au profil IHE_XDM.",
+      "id" : "pdlgc-archive-portabilite.ArchivePatient",
+      "path" : "pdlgc-archive-portabilite.ArchivePatient",
+      "short" : "Archive de données médicales liées au patient respectant le nommage `PATNNNNN` ou NNNNN est incrémenté à partir de 00001. Chaque patient est représenté par une archive distincte conforme au profil IHE_XDM.",
+      "definition" : "Archive de données médicales liées au patient respectant le nommage `PATNNNNN` ou NNNNN est incrémenté à partir de 00001. Chaque patient est représenté par une archive distincte conforme au profil IHE_XDM.",
       "min" : 1,
       "max" : "*",
       "type" : [{

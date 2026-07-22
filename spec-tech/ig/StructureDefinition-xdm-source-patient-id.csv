@@ -6,4 +6,4 @@
 "xdm-source-patient-id.CX4","xdm-source-patient-id.CX4","","","",1,1,"","","","string {[]} {[]}
 ","Identifiant de l’autorité d’affectation de l’INS utilisé.","Identifiant de l’autorité d’affectation de l’INS utilisé.","","","","","","","","","",,,,,"",,,,"xdm-source-patient-id.CX4",1,1,"",""
 "xdm-source-patient-id.CX5","xdm-source-patient-id.CX5","","","",1,1,"","","","string {[]} {[]}
-"," 'NH' pour un maticule INS tel que défini dans le cadre juridique"," 'NH' pour un maticule INS tel que défini dans le cadre juridique","","","","","","","","","",,,,,"",,,,"xdm-source-patient-id.CX5",1,1,"",""
+","'NH' pour un maticule INS tel que défini dans le cadre juridique","'NH' pour un maticule INS tel que défini dans le cadre juridique","","","","","","","","","",,,,,"",,,,"xdm-source-patient-id.CX5",1,1,"",""

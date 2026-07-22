@@ -9,4 +9,4 @@ PatientID représente l’identifiant du patient, en l’occurrence, le matricul
 |Valeur de Namespace ID (IS)| Valeur de Universal ID (ST)| Valeur de Universal ID type (ID)
 Vide, pas de valeur |OID de l’autorité d’affectation de l’INS utilisé Valeur de Universal ID type (ID) ISO prise dans la liste des OID des autorités d'affectation des INS | ISO","","","","","","","","","",,,,,"",,,,"xdm-patient-id.CX4",1,1,"",""
 "xdm-patient-id.CX5","xdm-patient-id.CX5","","","",1,1,"","","","string {[]} {[]}
-"," 'NH' pour un maticule INS tel que défini dans le cadre juridique"," 'NH' pour un maticule INS tel que défini dans le cadre juridique","","","","","","","","","",,,,,"",,,,"xdm-patient-id.CX5",1,1,"",""
+","'NH' pour un maticule INS tel que défini dans le cadre juridique","'NH' pour un maticule INS tel que défini dans le cadre juridique","","","","","","","","","",,,,,"",,,,"xdm-patient-id.CX5",1,1,"",""

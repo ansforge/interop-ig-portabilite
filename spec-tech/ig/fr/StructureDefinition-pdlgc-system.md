@@ -7,7 +7,7 @@ Informations relatives au Logiciel de Gestion de Cabinet
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [PDLGC Fournisseur Sortant](StructureDefinition-pdlgc-fournisseur-sortant.md)
+* Utilise ce/t/te Modèle logique: [PDLGC FournisseurSortant](StructureDefinition-pdlgc-fournisseur-sortant.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.pdlgc|current/StructureDefinition/pdlgc-system)
 
@@ -57,7 +57,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-system.cs
   "name" : "PDLGCSystem",
   "title" : "PDLGC System",
   "status" : "draft",
-  "date" : "2026-07-22T10:39:39+00:00",
+  "date" : "2026-07-22T17:16:50+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -88,8 +88,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-system.cs
       "definition" : "Informations relatives au Logiciel de Gestion de Cabinet"
     },
     {
-      "id" : "pdlgc-system.LGCNom",
-      "path" : "pdlgc-system.LGCNom",
+      "id" : "pdlgc-system.lgcNom",
+      "path" : "pdlgc-system.lgcNom",
       "short" : "Nom du logiciel",
       "definition" : "Nom du logiciel",
       "min" : 1,
@@ -99,8 +99,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-system.cs
       }]
     },
     {
-      "id" : "pdlgc-system.LGCVersion",
-      "path" : "pdlgc-system.LGCVersion",
+      "id" : "pdlgc-system.lgcVersion",
+      "path" : "pdlgc-system.lgcVersion",
       "short" : "Version du logiciel",
       "definition" : "Version du logiciel",
       "min" : 1,
@@ -110,8 +110,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-system.cs
       }]
     },
     {
-      "id" : "pdlgc-system.LGCIdentifiant",
-      "path" : "pdlgc-system.LGCIdentifiant",
+      "id" : "pdlgc-system.lgcIdentifiant",
+      "path" : "pdlgc-system.lgcIdentifiant",
       "short" : "Identifiant du logiciel",
       "definition" : "Identifiant du logiciel",
       "min" : 0,

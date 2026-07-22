@@ -336,7 +336,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </a>
             </td>
             <td>
-
 <p>Cet attribut représente un acteur PS.</p>
 </td>
          </tr>
@@ -458,7 +457,7 @@ L’auteur peut être :</p>
             </td>
             <td>
 <p>Cet attribut représente la structure de l’auteur. 
-Pour les documents d’expression personnelle du patient, cette métadonnée est absente, cela signifie que l’élément XML &lt;rim:Slot name='authorInstitution'&gt; n’est pas transmis.</p>
+Pour les documents d’expression personnelle du patient, cette métadonnée est absente, cela signifie que l’élément XML <code class="language-plaintext highlighter-rouge">&amp;lt;rim:Slot name='authorInstitution'&amp;gt;</code> n’est pas transmis.</p>
 </td>
          </tr>
          <tr>
@@ -659,7 +658,7 @@ PatientID représente l’identifiant du patient, en l’occurrence, le matricul
             <td style="column-width:30%">
                <a href="StructureDefinition-pdlgc-fournisseur-sortant.html"
                   title="StructureDefinition/pdlgc-fournisseur-sortant">
-                  <span title="StructureDefinition/pdlgc-fournisseur-sortant">PDLGC Fournisseur Sortant
+                  <span title="StructureDefinition/pdlgc-fournisseur-sortant">PDLGC FournisseurSortant
 </span>
                </a>
             </td>
@@ -725,7 +724,7 @@ Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.
                </a>
             </td>
             <td>
-<p>Informations éditoriales et instructions</p>
+<p>Informations éditoriales et instructions. Le socle du README.TXt est identique pour l'archive de portabilité, l'archive de données transverse et l'archive XDM Patient</p>
 </td>
          </tr>
          <tr>
@@ -828,9 +827,9 @@ Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-pdlgc-export-status-vs.html"
-                  title="ValueSet/pdlgc-export-status-vs">
-                  <span title="ValueSet/pdlgc-export-status-vs">PDLGC Statut de l'export
+               <a href="ValueSet-vs-pdlgc-export-status.html"
+                  title="ValueSet/vs-pdlgc-export-status">
+                  <span title="ValueSet/vs-pdlgc-export-status">PDLGC Statut de l'export
 </span>
                </a>
             </td>
@@ -840,9 +839,9 @@ Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-pdlgc-export-type-vs.html"
-                  title="ValueSet/pdlgc-export-type-vs">
-                  <span title="ValueSet/pdlgc-export-type-vs">PDLGC Type d'Export
+               <a href="ValueSet-vs-pdlgc-export-type.html"
+                  title="ValueSet/vs-pdlgc-export-type">
+                  <span title="ValueSet/vs-pdlgc-export-type">PDLGC Type d'Export
 </span>
                </a>
             </td>
@@ -852,14 +851,14 @@ Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-pdlgc-repo-type-vs.html"
-                  title="ValueSet/pdlgc-repo-type-vs">
-                  <span title="ValueSet/pdlgc-repo-type-vs">PDLGC Type de répertoire
+               <a href="ValueSet-vs-pdlgc-archive-type.html"
+                  title="ValueSet/vs-pdlgc-archive-type">
+                  <span title="ValueSet/vs-pdlgc-archive-type">PDLGC Type d'archive
 </span>
                </a>
             </td>
             <td>
-<p>PDLGC Type de répertoire</p>
+<p>PDLGC Type d'archive</p>
 </td>
          </tr>
          <tr>
@@ -884,9 +883,9 @@ Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-pdlgc-export-status-cs.html"
-                  title="CodeSystem/pdlgc-export-status-cs">
-                  <span title="CodeSystem/pdlgc-export-status-cs">Statut de l'export
+               <a href="CodeSystem-cs-pdlgc-export-status.html"
+                  title="CodeSystem/cs-pdlgc-export-status">
+                  <span title="CodeSystem/cs-pdlgc-export-status">Statut de l'export
 </span>
                </a>
             </td>
@@ -896,9 +895,21 @@ Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-cs-association-type.html"
-                  title="CodeSystem/cs-association-type">
-                  <span title="CodeSystem/cs-association-type">Type d'association XDS
+               <a href="CodeSystem-cs-pdlgc-archive-type.html"
+                  title="CodeSystem/cs-pdlgc-archive-type">
+                  <span title="CodeSystem/cs-pdlgc-archive-type">Type d'archive
+</span>
+               </a>
+            </td>
+            <td>
+<p>Type d'archive</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-cs-xdm-association-type.html"
+                  title="CodeSystem/cs-xdm-association-type">
+                  <span title="CodeSystem/cs-xdm-association-type">Type d'association XDS
 </span>
                </a>
             </td>
@@ -908,26 +919,14 @@ Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-pdlgc-type-export-cs.html"
-                  title="CodeSystem/pdlgc-type-export-cs">
-                  <span title="CodeSystem/pdlgc-type-export-cs">Type d'export de données LGC
+               <a href="CodeSystem-cs-pdlgc-export-type.html"
+                  title="CodeSystem/cs-pdlgc-export-type">
+                  <span title="CodeSystem/cs-pdlgc-export-type">Type d'export de données LGC
 </span>
                </a>
             </td>
             <td>
 <p>Type d'export de données LGC</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-pdlgc-repo-type-cs.html"
-                  title="CodeSystem/pdlgc-repo-type-cs">
-                  <span title="CodeSystem/pdlgc-repo-type-cs">Type de répertoire
-</span>
-               </a>
-            </td>
-            <td>
-<p>Type de répertoire</p>
 </td>
          </tr>
       </tbody>
@@ -980,7 +979,7 @@ Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.pdlgc#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-07-22 10:39:00 +0000">
+  <span title="2026-07-22 17:16:00 +0000">
     2026-07-22
   </span>
 

@@ -6,4 +6,4 @@ Un EventCode peut contenir le code représentant :
 -  une modalité d’acquisition, 
 -  une région anatomique. ","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "xdm-event-code.eventCode","xdm-event-code.eventCode","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Cet attribut peut contenir le code représentant : • un évènement documenté (acte, traitement, diagnostic, etc…),  • une modalité d'acquisition, • une région anatomique. ","Cet attribut peut contenir le code représentant : • un évènement documenté (acte, traitement, diagnostic, etc…),  • une modalité d'acquisition, • une région anatomique.","","","","","","","","","",,,,,"",,,,"xdm-event-code.eventCode",1,1,"",""
+","Cet attribut peut contenir le code représentant : • un évènement documenté (acte, traitement, diagnostic, etc…),  • une modalité d'acquisition, • une région anatomique.","Cet attribut peut contenir le code représentant : • un évènement documenté (acte, traitement, diagnostic, etc…),  • une modalité d'acquisition, • une région anatomique.","","","","","","","","","",,,,,"",,,,"xdm-event-code.eventCode",1,1,"",""

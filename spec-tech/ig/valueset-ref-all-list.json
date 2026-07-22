@@ -1,49 +1,52 @@
 {
   "codeSystems" : [{
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-export-status-vs",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "PDLGCExportStatusVS",
-    "title" : "PDLGC Statut de l'export",
-    "description" : "PDLGC Statut de l'export",
-    "systems" : ["https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs"]
-  },
-  {
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-export-type-vs",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "PDLGCExportTypeVS",
-    "title" : "PDLGC Type d'Export",
-    "description" : "PDLGC Type d'Export",
-    "systems" : ["https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs"],
-    "uses" : {
-    },
-    "StructureDefinition-pdlgc-manifest.html" : "PDLGC Manifest"
-  },
-  {
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-repo-type-vs",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "PDLGCRepoTypeVS",
-    "title" : "PDLGC Type de répertoire",
-    "description" : "PDLGC Type de répertoire",
-    "systems" : ["https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs"],
-    "uses" : {
-    },
-    "StructureDefinition-pdlgc-manifest-archives.html" : "PDLGC Manifest Archives",
-    "StructureDefinition-pdlgc-manifest.html" : "PDLGC Manifest"
-  },
-  {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-association-type",
     "version" : "0.1.0",
     "status" : "draft",
-    "name" : "VS_AssociationType",
+    "name" : "VS_XDM_AssociationType",
     "title" : "Type d'association XDS (VS)",
     "description" : "Valeurs autorisées pour le type d'association entre objets XDS.",
-    "systems" : ["https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type"],
+    "systems" : ["https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type"],
     "uses" : {
     },
     "StructureDefinition-xdm-association.html" : "XDM Association"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-archive-type",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "VS_PDLGC_ArchiveType",
+    "title" : "PDLGC Type d'archive",
+    "description" : "PDLGC Type d'archive",
+    "systems" : ["https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type"],
+    "uses" : {
+    },
+    "StructureDefinition-pdlgc-manifest.html" : "PDLGC Manifest",
+    "StructureDefinition-pdlgc-manifest-archives.html" : "PDLGC Manifest Archives"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-export-status",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "VS_PDLGC_ExportStatus",
+    "title" : "PDLGC Statut de l'export",
+    "description" : "PDLGC Statut de l'export",
+    "systems" : ["https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status"],
+    "uses" : {
+    },
+    "StructureDefinition-pdlgc-manifest.html" : "PDLGC Manifest"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-export-type",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "VS_PDLGC_ExportType",
+    "title" : "PDLGC Type d'Export",
+    "description" : "PDLGC Type d'Export",
+    "systems" : ["https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type"],
+    "uses" : {
+    },
+    "StructureDefinition-pdlgc-manifest.html" : "PDLGC Manifest"
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/relation-vs",
@@ -74,8 +77,8 @@
     "sources" : ["1.2.250.1.213.1.1.5.461"],
     "uses" : {
     },
-    "StructureDefinition-xdm-author.html" : "XDM Author",
     "StructureDefinition-xdm-author-document-entry.html" : "XDM AuthorDocumentEntry",
+    "StructureDefinition-xdm-author.html" : "XDM Author",
     "StructureDefinition-xdm-author-submission-set.html" : "XDM AuthorSubmissionSet"
   },
   {
@@ -201,8 +204,8 @@
     "sources" : ["1.2.250.1.213.1.1.5.124"],
     "uses" : {
     },
-    "StructureDefinition-xdm-author.html" : "XDM Author",
     "StructureDefinition-xdm-author-document-entry.html" : "XDM AuthorDocumentEntry",
+    "StructureDefinition-xdm-author.html" : "XDM Author",
     "StructureDefinition-xdm-author-submission-set.html" : "XDM AuthorSubmissionSet"
   },
   {

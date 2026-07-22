@@ -27,32 +27,32 @@
   "name" : "PDLGC_FournisseurSortant"
 },
 {
-  "id" : "cs-association-type",
+  "id" : "cs-pdlgc-archive-type",
   "type" : "CodeSystem",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type",
   "version" : "0.1.0",
-  "name" : "CS_AssociationType"
+  "name" : "CS_PDLGC_ArchiveType"
 },
 {
-  "id" : "pdlgc-export-status-cs",
+  "id" : "cs-pdlgc-export-status",
   "type" : "CodeSystem",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-export-status-cs",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status",
   "version" : "0.1.0",
-  "name" : "PDLGCExportStatusCS"
+  "name" : "CS_PDLGC_ExportStatus"
 },
 {
-  "id" : "pdlgc-repo-type-cs",
+  "id" : "cs-pdlgc-export-type",
   "type" : "CodeSystem",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-repo-type-cs",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type",
   "version" : "0.1.0",
-  "name" : "PDLGCRepoTypeCS"
+  "name" : "CS_PDLGC_ExportType"
 },
 {
-  "id" : "pdlgc-type-export-cs",
+  "id" : "cs-xdm-association-type",
   "type" : "CodeSystem",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/pdlgc-type-export-cs",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type",
   "version" : "0.1.0",
-  "name" : "PDLGCExportTypeCS"
+  "name" : "CS_XDM_AssociationType"
 },
 {
   "id" : "ans.fhir.fr.pdlgc",
@@ -314,30 +314,30 @@
   "name" : "XDMSubmissionSet"
 },
 {
-  "id" : "pdlgc-export-status-vs",
-  "type" : "ValueSet",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-export-status-vs",
-  "version" : "0.1.0",
-  "name" : "PDLGCExportStatusVS"
-},
-{
-  "id" : "pdlgc-export-type-vs",
-  "type" : "ValueSet",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-export-type-vs",
-  "version" : "0.1.0",
-  "name" : "PDLGCExportTypeVS"
-},
-{
-  "id" : "pdlgc-repo-type-vs",
-  "type" : "ValueSet",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-repo-type-vs",
-  "version" : "0.1.0",
-  "name" : "PDLGCRepoTypeVS"
-},
-{
   "id" : "vs-association-type",
   "type" : "ValueSet",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-association-type",
   "version" : "0.1.0",
-  "name" : "VS_AssociationType"
+  "name" : "VS_XDM_AssociationType"
+},
+{
+  "id" : "vs-pdlgc-archive-type",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-archive-type",
+  "version" : "0.1.0",
+  "name" : "VS_PDLGC_ArchiveType"
+},
+{
+  "id" : "vs-pdlgc-export-status",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-export-status",
+  "version" : "0.1.0",
+  "name" : "VS_PDLGC_ExportStatus"
+},
+{
+  "id" : "vs-pdlgc-export-type",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-export-type",
+  "version" : "0.1.0",
+  "name" : "VS_PDLGC_ExportType"
 }]

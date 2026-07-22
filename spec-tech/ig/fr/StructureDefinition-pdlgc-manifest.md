@@ -81,7 +81,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-manifest.
   "name" : "PDLGCManifest",
   "title" : "PDLGC Manifest",
   "status" : "draft",
-  "date" : "2026-07-22T10:39:39+00:00",
+  "date" : "2026-07-22T17:16:50+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -134,7 +134,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-manifest.
       }],
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-export-type-vs|0.1.0"
+        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-export-type|0.1.0"
       }
     },
     {
@@ -171,7 +171,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-manifest.
       }],
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-repo-type-vs|0.1.0"
+        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-export-status|0.1.0"
       }
     },
     {
@@ -197,8 +197,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-manifest.
       }]
     },
     {
-      "id" : "pdlgc-manifest.PatientArchiveCount",
-      "path" : "pdlgc-manifest.PatientArchiveCount",
+      "id" : "pdlgc-manifest.patientArchiveCount",
+      "path" : "pdlgc-manifest.patientArchiveCount",
       "short" : "Nombre d'archives patients transportées",
       "definition" : "Nombre d'archives patients transportées",
       "min" : 1,
@@ -208,8 +208,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-manifest.
       }]
     },
     {
-      "id" : "pdlgc-manifest.TransverseArchiveCount",
-      "path" : "pdlgc-manifest.TransverseArchiveCount",
+      "id" : "pdlgc-manifest.transverseArchiveCount",
+      "path" : "pdlgc-manifest.transverseArchiveCount",
       "short" : "Nombre d'archives transverse trasnportées",
       "definition" : "Nombre d'archives transverse trasnportées",
       "min" : 1,
@@ -253,7 +253,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgc-manifest.
       }],
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/pdlgc-repo-type-vs|0.1.0"
+        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-archive-type|0.1.0"
       }
     },
     {

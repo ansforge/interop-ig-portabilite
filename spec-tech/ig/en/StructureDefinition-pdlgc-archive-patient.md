@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgc-archive-pat
   "name" : "PDLGCArchivePatient",
   "title" : "PDLGC Archive Patient",
   "status" : "draft",
-  "date" : "2026-07-22T10:39:39+00:00",
+  "date" : "2026-07-22T17:16:50+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -64,8 +64,8 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgc-archive-pat
       "comment" : "Transaction ExportArchivePortabilite"
     },
     {
-      "id" : "pdlgc-archive-patient.README",
-      "path" : "pdlgc-archive-patient.README",
+      "id" : "pdlgc-archive-patient.readme",
+      "path" : "pdlgc-archive-patient.readme",
       "short" : "Informations éditoriales et instructions d'exploitation de l'archive.",
       "definition" : "Informations éditoriales et instructions d'exploitation de l'archive.",
       "min" : 1,
@@ -75,8 +75,8 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgc-archive-pat
       }]
     },
     {
-      "id" : "pdlgc-archive-patient.INDEX",
-      "path" : "pdlgc-archive-patient.INDEX",
+      "id" : "pdlgc-archive-patient.index",
+      "path" : "pdlgc-archive-patient.index",
       "short" : "Informations éditoriales.",
       "definition" : "Informations éditoriales.",
       "min" : 1,
@@ -108,8 +108,8 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgc-archive-pat
       }]
     },
     {
-      "id" : "pdlgc-archive-patient.IHEXDM",
-      "path" : "pdlgc-archive-patient.IHEXDM",
+      "id" : "pdlgc-archive-patient.iheXdm",
+      "path" : "pdlgc-archive-patient.iheXdm",
       "short" : "répertoire IHE_XDM contenant le lot de soumissions des données d'un patient. Nom du répertoire fixé à IHE_XDM.",
       "definition" : "répertoire IHE_XDM contenant le lot de soumissions des données d'un patient. Nom du répertoire fixé à IHE_XDM.",
       "min" : 1,
@@ -119,8 +119,8 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgc-archive-pat
       }]
     },
     {
-      "id" : "pdlgc-archive-patient.IHEXDM.SUBSET01",
-      "path" : "pdlgc-archive-patient.IHEXDM.SUBSET01",
+      "id" : "pdlgc-archive-patient.iheXdm.subset01",
+      "path" : "pdlgc-archive-patient.iheXdm.subset01",
       "short" : "lot de soumission contenant les données d'un patient.",
       "definition" : "lot de soumission contenant les données d'un patient.",
       "min" : 1,
@@ -130,8 +130,8 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgc-archive-pat
       }]
     },
     {
-      "id" : "pdlgc-archive-patient.IHEXDM.SUBSET01.METADATA",
-      "path" : "pdlgc-archive-patient.IHEXDM.SUBSET01.METADATA",
+      "id" : "pdlgc-archive-patient.iheXdm.subset01.metadata",
+      "path" : "pdlgc-archive-patient.iheXdm.subset01.metadata",
       "short" : "métadonnées du lot de soumission, conforme au profil IHE XDM, décrivant les documents patient qu'il accompagne.",
       "definition" : "métadonnées du lot de soumission, conforme au profil IHE XDM, décrivant les documents patient qu'il accompagne.",
       "min" : 1,
@@ -141,8 +141,8 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgc-archive-pat
       }]
     },
     {
-      "id" : "pdlgc-archive-patient.IHEXDM.SUBSET01.documentPivot",
-      "path" : "pdlgc-archive-patient.IHEXDM.SUBSET01.documentPivot",
+      "id" : "pdlgc-archive-patient.iheXdm.subset01.documentPivot",
+      "path" : "pdlgc-archive-patient.iheXdm.subset01.documentPivot",
       "short" : "Données structurées du périmètres pivot, concernant les informations administratives et médicales du patient. Leur export est obligatoire.",
       "definition" : "Données structurées du périmètres pivot, concernant les informations administratives et médicales du patient. Leur export est obligatoire.",
       "min" : 1,
@@ -152,8 +152,8 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgc-archive-pat
       }]
     },
     {
-      "id" : "pdlgc-archive-patient.IHEXDM.SUBSET01.documentHorsPivot",
-      "path" : "pdlgc-archive-patient.IHEXDM.SUBSET01.documentHorsPivot",
+      "id" : "pdlgc-archive-patient.iheXdm.subset01.documentHorsPivot",
+      "path" : "pdlgc-archive-patient.iheXdm.subset01.documentHorsPivot",
       "short" : "Données structurées hors périmètre pivot. Leur export est facultatif.",
       "definition" : "Données structurées hors périmètre pivot. Leur export est facultatif.",
       "min" : 0,

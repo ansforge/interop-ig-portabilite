@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-xdm-event-code.cs
   "name" : "XDMEventCode",
   "title" : "XDM EventCode",
   "status" : "draft",
-  "date" : "2026-07-22T10:39:39+00:00",
+  "date" : "2026-07-22T17:16:50+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -69,8 +69,8 @@ Other representations of profile: [CSV](../StructureDefinition-xdm-event-code.cs
     {
       "id" : "xdm-event-code.eventCode",
       "path" : "xdm-event-code.eventCode",
-      "short" : "Cet attribut peut contenir le code représentant : • un évènement documenté (acte, traitement, diagnostic, etc…),  • une modalité d'acquisition, • une région anatomique. ",
-      "definition" : "Cet attribut peut contenir le code représentant : • un évènement documenté (acte, traitement, diagnostic, etc…),  • une modalité d'acquisition, • une région anatomique. ",
+      "short" : "Cet attribut peut contenir le code représentant : • un évènement documenté (acte, traitement, diagnostic, etc…),  • une modalité d'acquisition, • une région anatomique.",
+      "definition" : "Cet attribut peut contenir le code représentant : • un évènement documenté (acte, traitement, diagnostic, etc…),  • une modalité d'acquisition, • une région anatomique.",
       "min" : 1,
       "max" : "1",
       "type" : [{
