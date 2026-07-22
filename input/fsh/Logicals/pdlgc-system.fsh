@@ -3,7 +3,6 @@ Id: pdlgc-system
 Title: "PDLGC System"
 Description: "Informations relatives au Logiciel de Gestion de Cabinet"
 
-
-* LGCNom 1..1 string "Nom du logiciel"
-* LGCVersion 1..1 string "Version du logiciel"
-* LGCIdentifiant 0..1 Identifier "Identifiant du logiciel"
+* lgcNom 1..1 string "Nom du logiciel"
+* lgcVersion 1..1 string "Version du logiciel"
+* lgcIdentifiant 0..1 Identifier "Identifiant du logiciel"

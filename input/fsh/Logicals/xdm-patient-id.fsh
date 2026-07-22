@@ -13,4 +13,4 @@ Cet identifiant, au format HL7 v.2.5 est constitué de trois sous-composants qui
 |Valeur de Namespace ID (IS)| Valeur de Universal ID (ST)| Valeur de Universal ID type (ID)
 Vide, pas de valeur |OID de l’autorité d’affectation de l’INS utilisé Valeur de Universal ID type (ID) ISO prise dans la liste des OID des autorités d'affectation des INS | ISO
 """
-* CX5 1..1 string " 'NH' pour un maticule INS tel que défini dans le cadre juridique"
+* CX5 1..1 string "'NH' pour un maticule INS tel que défini dans le cadre juridique"

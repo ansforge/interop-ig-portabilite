@@ -2,9 +2,7 @@ Logical: XDMActorPS
 Parent: xdm-actor-xds
 Id: xdm-actor-ps
 Title: "XDM ActorPS"
-Description: "
-Cet attribut représente un acteur PS.
-"
+Description: "Cet attribut représente un acteur PS."
 Characteristics: #can-be-target
 
 * XCN1.value[x] only PSIdNat

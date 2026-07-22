@@ -51,10 +51,10 @@ pages:
             title : Structure de l'archive de portabilité
     annexes.md : 
         title : Annexes
-        annexe-references.md : 
-            title : Références
         annexe-securite.md:
             title: Sécurité
+        annexe-references.md : 
+            title : Références
         annexe-downloads.md:
             title: Téléchargements et usages
     change-log.md:

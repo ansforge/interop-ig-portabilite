@@ -9,7 +9,7 @@ Modèle logique  d’une fiche
 * entryUUID 1..1 uuid "Identifiant unique affecté à la version de la fiche référençant le document." """Les valeurs possibles pour cette métadonnée doivent être un code provenant du jeu de valeurs mis à disposition par le projet. En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J52_AvailabilityStatus_CISIS peut être utilisé."""
 * logicalId 1..1 uuid "Cette métadonnée représente un identifiant invariable pour toutes les versions de la fiche d'un document, à la différence de la métadonnée entryUUID qui a une valeur différente pour chaque version de la fiche"
 * mimeType 1..1 string "Cette métadonnée représente le type de contenu du document, défini par le standard MIME."
-* availabilityStatus 1..1 CodeableConcept "Cette métadonnée représente la pertinence de la version de la fiche d'un document. " "**Availability Status**"
+* availabilityStatus 1..1 CodeableConcept "Cette métadonnée représente la pertinence de la version de la fiche d'un document." "**Availability Status**"
 * availabilityStatus from https://mos.esante.gouv.fr/NOS/JDV_J52-AvailabilityStatus-CISIS/FHIR/JDV-J52-AvailabilityStatus-CISIS (preferred)
 * hash 1..1 string "Cette métadonnée contient le résultat du hachage du document déposé" 
 * size 1..1 integer "Cette métadonnée correspond à la taille du document déposé."
@@ -25,7 +25,7 @@ Modèle logique  d’une fiche
 * title 1..1 string "Cette métadonnée représente le titre du document."
 * comments 0..1 string "Cette métadonnée contient le commentaire associé au document."
 * patientID 1..1 XDMPatientId "Cette métadonnée représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient lorsque celui-ci est qualifié."
-* uniqueId 1..1 Identifier "Identifiant unique affecté au document par son créateur. "
+* uniqueId 1..1 Identifier "Identifiant unique affecté au document par son créateur."
 * class 1..1 CodeableConcept "class représente la classe du document (compte rendu, imagerie médicale, traitement, certificat, etc.)." """
 class est constitué des attributs : 
 - **classCode**
@@ -51,12 +51,12 @@ class est constitué des attributs :
 * class from https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS (preferred)
 * confidentiality 1..4 CodeableConcept "Métadonnée contenant les informations définissant le niveau de confidentialité d'un document déposé dans l'entrepôt. Dans le cadre de la mise en œuvre du masquage et de la non-visibilité, ces métadonnées sont utilisées pour rendre inaccessible un document à l'utilisateur" "**Confidentiality Code**"
 * confidentiality from https://mos.esante.gouv.fr/NOS/JDV_J58-ConfidentialityCode-DMP/FHIR/JDV-J58-ConfidentialityCode-DMP (preferred)
-* eventCodeList 0..* XDMEventCode "Cette métadonnée contient les codes, libellés et codes système représentant :  -un évènement documenté (acte, traitement, diagnostic, etc…), -une modalité d'acquisition (contexte imagerie), -une région anatomique (contexte imagerie). "
+* eventCodeList 0..* XDMEventCode "Cette métadonnée contient les codes, libellés et codes système représentant :  -un évènement documenté (acte, traitement, diagnostic, etc…), -une modalité d'acquisition (contexte imagerie), -une région anatomique (contexte imagerie)."
 * format 1..1 CodeableConcept "Métadonnée contenant les informations définissant le format du document." "**Format Code**"
 * format from https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS (preferred)
-* healthcareFacilityTypeCode 1..1 CodeableConcept "Secteur d'activité lié à la prise en charge de la personne, en lien avec le document produit. " "Healthcare Facility Type Code**"
+* healthcareFacilityTypeCode 1..1 CodeableConcept "Secteur d'activité lié à la prise en charge de la personne, en lien avec le document produit." "Healthcare Facility Type Code**"
 * healthcareFacilityTypeCode from https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS (preferred)
-* practiceSetting 1..1 CodeableConcept "Contexte de l’acte qui a engendré la création du document. " "**Practice Setting**"
+* practiceSetting 1..1 CodeableConcept "Contexte de l’acte qui a engendré la création du document." "**Practice Setting**"
 * practiceSetting from https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS (preferred)
 * type 1..1 CodeableConcept "Métadonnée représentant le type du document." "**Type Code**"
 * type from https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS (preferred)

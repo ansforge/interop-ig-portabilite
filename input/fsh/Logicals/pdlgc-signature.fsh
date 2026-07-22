@@ -8,6 +8,7 @@ Id: pdlgc-signature
 Title: "PDLGC Signature"
 Description: "signature XAdES de l'archive attestant de l'imputabilité et l'intégrité des données"
 
+
 // ── Structure générale ──────────────────────────────────────────────────────
 
 * SignedInfo 1..1 BackboneElement "Informations couvertes par la signature"

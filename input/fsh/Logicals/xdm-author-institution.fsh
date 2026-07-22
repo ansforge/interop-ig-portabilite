@@ -4,19 +4,19 @@ Id: xdm-author-institution
 Title: "XDM AuthorInstitution"
 Description: """
 Cet attribut représente la structure de l’auteur. 
-Pour les documents d’expression personnelle du patient, cette métadonnée est absente, cela signifie que l’élément XML <rim:Slot name='authorInstitution'> n’est pas transmis. 
+Pour les documents d’expression personnelle du patient, cette métadonnée est absente, cela signifie que l’élément XML `<rim:Slot name='authorInstitution'>` n’est pas transmis. 
 """
 
 * XON1 1..1 string "Nom de la structure"
 * XON1 ^example[0].label = "Structure hospitalière"
 * XON1 ^example[=].valueString = "Groupe Pitié Salpêtrière"
 * XON1 ^example[+].label = "Cabinet libéral"
-* XON1 ^example[=].valueString = "CABINET MEDICAL DR DURANT "
+* XON1 ^example[=].valueString = "CABINET MEDICAL DR DURANT"
 * XON1 ^example[+].label = "SNR"
-* XON1 ^example[=].valueString = "NOM EDITEUR "
+* XON1 ^example[=].valueString = "NOM EDITEUR"
 
 
-* XON6 1..1 Base "Autorité d’affectation" """Identifiant de l’organisme gérant l’identifiant de la structure. Cet identifiant, au format HL7 v.2.5 est constitué de trois sous-composants qui prennent les valeurs suivantes. """
+* XON6 1..1 Base "Autorité d’affectation" """Identifiant de l’organisme gérant l’identifiant de la structure. Cet identifiant, au format HL7 v.2.5 est constitué de trois sous-composants qui prennent les valeurs suivantes."""
 * XON6.composant1  0..0 string "Vide, pas de valeur"
 
 * XON6.composant2  1..1 string "Valeur de Universal ID"
@@ -38,7 +38,7 @@ Pour les documents d’expression personnelle du patient, cette métadonnée est
 * XON7  ^example[2].label = "SNR"
 * XON7  ^example[=].valueString = "SIREN"
 
-* XON10 1..1 StructIdNat " Identifiant de la structure (Struct_IdNat)"
+* XON10 1..1 StructIdNat "Identifiant de la structure (Struct_IdNat)"
 
 
 Mapping: AuthorInstitutionCDA
@@ -63,7 +63,7 @@ Source: XDMAuthorInstitution
 * -> "AuthorInstitution"
 * XON1 -> "NA"
 * XON6.composant1 -> "NA"
-* XON6.composant2 -> "NA "
+* XON6.composant2 -> "NA"
 * XON6.composant3 -> "NA"
 * XON7 -> "NA"
 * XON10 -> "NA"
