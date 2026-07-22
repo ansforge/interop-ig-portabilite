@@ -38,13 +38,13 @@ L'archive de portabilité retient une structure de collection d'archives afin de
 
 <br>
 
-### Archive XDM Patient
+### Archive XDM Patient `PATNNNNN.ZIP`
 
 {% include struct-archive-patient.md %}
 
 <br>
 
-### Archive Transverse
+### Archive `TRANSVERSE`
 
 {% include struct-archive-transverse.md %}
 

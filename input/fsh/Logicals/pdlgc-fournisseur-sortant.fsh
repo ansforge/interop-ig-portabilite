@@ -10,7 +10,7 @@ Description: "PDLGC Fournisseur Sortant"
 * contact 1..1 
 * contact only pdlgc-contact-portabilite
 
-* LGCSystem 1..1 pdlgc-system "Informations relatives au LGC"
+* LGCSystem 1..1 pdlgc-system "Informations relatives au LGC."
 
 * idNatStruct ^mustSupport = true
 * raisonSociale ^mustSupport = true

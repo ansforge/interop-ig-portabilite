@@ -16,7 +16,7 @@ Le fichier `INDEX.HTM` est imposé par le profil IHE_XDM à la racine d'une arch
 Le modèle logique associé au fichier INDEX.HTM est consultable <a href="StructureDefinition-pdlgc-index.html">ici</a>
 
 
-**Exemple de fichier INDEX.HTM** : 
+**Exemple de fichier `INDEX.HTM`** : 
 
 ```html
 <?xml version="1.0" encoding="UTF-8"?>
@@ -37,7 +37,7 @@ Ce fichier est imposé par le profil IHE_XDM et précise la structure propre à 
 
 Le modèle logique associé au fichier README.TXT est consultable <a href="StructureDefinition-pdlgc-readme.html">ici</a>
 
-**Exemple de README.TXT d'une archive Patient**
+**Exemple de `README.TXT` d'une archive Patient**
 
 ```txt
 Fournisseur Sortant :
@@ -97,6 +97,6 @@ La construction de ce fichier est détaillée dans les spécifications <a href="
 
 Le modèle logique associé au fichier METADATA.XML est consultable <a href="StructureDefinition-pdlgc-metadata.html">ici</a>
 
-**Exemple de METADATA.XML d'une archive XDM**
+**Exemple de `METADATA.XML` d'une archive XDM**
 
 De nombreux exemples de fichiers METADATA sont accessibles sur le repository GitHub ANS <a href="https://github.com/ansforge/interop-exemples-xdm">interop-exemples-xdm</a>.
