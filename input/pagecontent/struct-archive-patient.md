@@ -30,7 +30,7 @@ Le modèle logique associé au fichier INDEX.HTM est consultable <a href="Struct
 
 #### `README.TXT` de l'archive XDM Patient
 
-Ce `README.TXT` suit la même trame que le `README.TXT` de l'archive de portabilité et les archives Patient. Voir section <a href="struct-main-structure-archive.html#readme">README.TXT de l'archive de portabilité</a>.
+Ce `README.TXT` suit la même trame que le `README.TXT` de l'archive de portabilité et les archives Patient. Voir section <a href="specs-main-structure-archive.html#readme">README.TXT de l'archive de portabilité</a>.
 Ce fichier est imposé par le profil IHE_XDM et précise la structure propre à chaque archive XDM (différente de l'archive de portabilité).
 
 **Modèle logique**

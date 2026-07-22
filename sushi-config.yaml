@@ -47,7 +47,7 @@ pages:
         title: Spécifications
         specs-main-flux-export-archive-portabilite.md :
             title : Flux Export d'Archive de Portabilité
-        struct-main-structure-archive.md : 
+        specs-main-structure-archive.md : 
             title : Structure de l'archive de portabilité
     annexes.md : 
         title : Annexes
@@ -68,7 +68,7 @@ menu:
     Accueil: index.html
     Spécifications:
         Flux Export d'Archive de Portabilité: specs-main-flux-export-archive-portabilite.html
-        Structure de l'architecture de portabilité : struct-main-structure-archive.html
+        Structure de l'architecture de portabilité : specs-main-structure-archive.html
     Annexes:
         Références : annexe-references.html
         Sécurité: annexe-securite.html
