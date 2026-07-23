@@ -1,5 +1,5 @@
 Logical: PDLGCContactPortabilite
-Id: pdlgc-contact-portabilite
+Id: pdlgcContactPortabilite
 Title: "PDLGC Contact Portabilite"
 Parent: https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Contact
 Description: "PDLGC Contact Portabilite"

@@ -4,7 +4,7 @@
 
 
 Logical: PDLGCMetadata
-Id: pdlgc-metadata
+Id: pdlgcMetadata
 Title: "PDLGC Metadata"
 Description: "Modèle logique décrivant la structure d'un fichier METADATA associé à un SUBSET IHE XDM.
 Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets."

@@ -4,7 +4,7 @@
 
 
 Logical: PDLGCManifest
-Id: pdlgc-manifest
+Id: pdlgcManifest
 Title: "PDLGC Manifest"
 Description: "Le fichier MANIFEST.XML porte les métadonnées globales de l'export (nombre de dossiers patients, volumétrie, éléments d'intégrité), distinctes des métadonnées XDM portées par chaque `METADATA.XML` patient"
 
@@ -16,7 +16,7 @@ Description: "Le fichier MANIFEST.XML porte les métadonnées globales de l'expo
 * exportStatus 1..1 code "COMPLETE|PARTIAL|SAMPLE"
 * exportStatus from VS_PDLGC_ExportStatus (required)
 * comments 0..1 string "commentaire associé à l'export"
-* editeurSortant 1..1 pdlgc-fournisseur-sortant "Editeur responsable de l'export des données LGC"
+* editeurSortant 1..1 pdlgcFournisseurSortant "Editeur responsable de l'export des données LGC"
 * patientArchiveCount 1..1 positiveInt "Nombre d'archives patients transportées"
 * transverseArchiveCount 1..1 positiveInt "Nombre d'archives transverse trasnportées"
 * Archive 1..* BackboneElement "informations sur les archives patients et transverses contenues dans l'archive de portabilité"

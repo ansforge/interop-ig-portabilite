@@ -1,5 +1,5 @@
 Logical: PDLGCSystem
-Id: pdlgc-system
+Id: pdlgcSystem
 Title: "PDLGC System"
 Description: "Informations relatives au Logiciel de Gestion de Cabinet"
 

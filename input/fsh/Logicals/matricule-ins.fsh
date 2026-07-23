@@ -1,5 +1,5 @@
 Logical: MatriculeINS
-Id: matricule-ins
+Id: matriculeIns
 Title: "MatriculeINS"
 Description: """ Matricule de l'Identité Nationale de Santé (INS). Il correspond au NIR (Numéro d’Identification au Répertoire des personnes physiques) ou au NIA (Numéro Identifiant Attente) de l’individu)."""
 

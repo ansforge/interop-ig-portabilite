@@ -100,7 +100,7 @@ groups:
       - StructureDefinition/xdm-actor-snr
       - StructureDefinition/xdm-actor-system
       - StructureDefinition/xdm-identifiant-systeme
-      - StructureDefinition/matricule-ins
+      - StructureDefinition/matriculeIns
       - StructureDefinition/ps-id-nat
       - StructureDefinition/snr
       - StructureDefinition/struct-id-nat
@@ -111,16 +111,16 @@ groups:
     name:  Modèle logique structure Archive de portabilité
     description: Modèles logiques associés aux différents fichiers et répertoires structurant une archive de portabilité
     resources:
-      - StructureDefinition/pdlgc-archive-portabilite 
-      - StructureDefinition/pdlgc-manifest
-      - StructureDefinition/pdlgc-fournisseur-sortant
-      - StructureDefinition/pdlgc-contact-portabilite
-      - StructureDefinition/pdlgc-manifest-archives
-      - StructureDefinition/pdlgc-system
-      - StructureDefinition/pdlgc-readme
-      - StructureDefinition/pdlgc-signature
-      - StructureDefinition/pdlgc-documentation
-      - StructureDefinition/pdlgc-archive-transverse
-      - StructureDefinition/pdlgc-archive-patient
-      - StructureDefinition/pdlgc-metadata
-      - StructureDefinition/pdlgc-index
+      - StructureDefinition/pdlgcArchivePortabilite 
+      - StructureDefinition/pdlgcManifest
+      - StructureDefinition/pdlgcFournisseurSortant
+      - StructureDefinition/pdlgcContactPortabilite
+      - StructureDefinition/pdlgcManifestArchives
+      - StructureDefinition/pdlgcSystem
+      - StructureDefinition/pdlgcReadme
+      - StructureDefinition/pdlgcSignature
+      - StructureDefinition/pdlgcDocumentation
+      - StructureDefinition/pdlgcArchiveTransverse
+      - StructureDefinition/pdlgcArchivePatient
+      - StructureDefinition/pdlgcMetadata
+      - StructureDefinition/pdlgcIndex

@@ -4,7 +4,7 @@
 
 
 Logical: PDLGCDocumentation
-Id: pdlgc-documentation
+Id: pdlgcDocumentation
 Title: "PDLGC Documentation"
 Description: "Documentation d'export permettant au fournisseur destinataire d'intégrer les données LGC du fournisseur sortant"
 

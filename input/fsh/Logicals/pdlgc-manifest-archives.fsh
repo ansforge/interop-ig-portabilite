@@ -1,5 +1,5 @@
 Logical: PDLGCManifestArchives
-Id: pdlgc-manifest-archives
+Id: pdlgcManifestArchives
 Title: "PDLGC Manifest Archives"
 Description: "Informations relatives aux répertoires Patient et transverse exportées dans l'archive de portabilité"
 
