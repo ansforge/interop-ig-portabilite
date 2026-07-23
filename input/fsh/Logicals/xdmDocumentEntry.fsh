@@ -24,7 +24,7 @@ Modèle logique  d’une fiche
 * URI 1..1 uri  "Cette métadonnée n'est exploitée que par la transaction XDM 'Distribute document set on media ITI-32'"
 * title 1..1 string "Cette métadonnée représente le titre du document."
 * comments 0..1 string "Cette métadonnée contient le commentaire associé au document."
-* patientID 1..1 XDMPatientId "Cette métadonnée représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient lorsque celui-ci est qualifié."
+* patientID 1..1 XDMPatientId "Cette métadonnée contient l'identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange. Le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité. À défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé."
 * uniqueId 1..1 Identifier "Identifiant unique affecté au document par son créateur."
 * class 1..1 CodeableConcept "class représente la classe du document (compte rendu, imagerie médicale, traitement, certificat, etc.)." """
 class est constitué des attributs : 

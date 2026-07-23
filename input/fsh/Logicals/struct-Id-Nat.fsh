@@ -14,4 +14,4 @@ L’identification nationale d’une structure est construite selon le tableau d
 """
 
 
-* StructIdNat 1..1 string "StructIdNat" "StructIdNat"
+* StructIdNat 1..1 identifier "StructIdNat" "StructIdNat"

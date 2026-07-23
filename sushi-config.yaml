@@ -99,11 +99,6 @@ groups:
       - StructureDefinition/xdmActorPatient
       - StructureDefinition/xdmActorSnr
       - StructureDefinition/xdmActorSystem
-      - StructureDefinition/matriculeIns
-      - StructureDefinition/psIdNat
-      - StructureDefinition/snr
-      - StructureDefinition/structIdNat
-      - StructureDefinition/systIdNat
       - StructureDefinition/xdmArchive
       - StructureDefinition/xdmAssociation
       - StructureDefinition/xdmIdentifiant   
@@ -124,3 +119,12 @@ groups:
       - StructureDefinition/pdlgcArchivePatient
       - StructureDefinition/pdlgcMetadata
       - StructureDefinition/pdlgcIndex
+  LogicalModelIdentifiant:
+    name:  Identifiants nationaux
+    description: Format des identifiants nationaux
+    resources:
+      - StructureDefinition/patId
+      - StructureDefinition/psIdNat
+      - StructureDefinition/structIdNat
+      - StructureDefinition/systIdNat
+      - StructureDefinition/snr

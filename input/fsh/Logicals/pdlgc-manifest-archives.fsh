@@ -6,6 +6,6 @@ Description: "Informations relatives aux répertoires Patient et transverse expo
 * type 1..1 code "Patient | Transverse"
 * type from VS_PDLGC_ArchiveType
 * nom 1..1 string "Nom du répertoire"
-* patientId 0..1 string "Identifiant du Patient s'il s'agit d'un répertoire Patient"
+* patientId 0..1 PatId "Identifiant du Patient s'il s'agit d'un répertoire Patient"
 * periodeCouverte 0..1 Period "Période couverte par l'export dans le cas d'un export ciblé"
 * metadataHash 1..1 string "Hash SHA-256 du fichier Metadata inclus dans le répertoire"

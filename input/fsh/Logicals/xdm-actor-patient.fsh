@@ -7,7 +7,7 @@ Cet attribut représente l'acteur Patient.
 """
 Characteristics: #can-be-target
 
-* XCN1.value[x] only MatriculeINS
+* XCN1.value[x] only PatId
 * XCN1 ^example.label = "General"
 * XCN1 ^example.valueString = "124018852493334"
 * XCN2 ^short = "Nom du patient"

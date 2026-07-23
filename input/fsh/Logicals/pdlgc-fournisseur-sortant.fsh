@@ -12,4 +12,5 @@ Description: "PDLGC Fournisseur Sortant"
 
 * idNatStruct ^mustSupport = true
 * raisonSociale ^mustSupport = true
+* contact ^mustSupport = true
 * lgcSystem ^mustSupport = true
