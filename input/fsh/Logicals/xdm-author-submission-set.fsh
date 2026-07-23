@@ -1,6 +1,6 @@
 Logical: XDMAuthorSubmissionSet
-Parent: xdm-author
-Id: xdm-author-submission-set
+Parent: xdmAuthor
+Id: xdmAuthorSubmissionSet
 Title: "XDM AuthorSubmissionSet"
 Description: """
 Modèle logique d'un auteur d'un lot de soumission

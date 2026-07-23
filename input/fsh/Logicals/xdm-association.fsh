@@ -1,5 +1,5 @@
 Logical: XDMAssociation
-Id: xdm-association
+Id: xdmAssociation
 Title: "XDM Association"
 Description: """
 Modèle logique d'une association IHE XDS entre deux objets de l'archive de portabilité.

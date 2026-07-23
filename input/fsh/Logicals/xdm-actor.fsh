@@ -1,6 +1,6 @@
 Logical: XDMActorXDS
 Parent: Base
-Id: xdm-actor-xds
+Id: xdmActorXds
 Title: "XDM ActorXDS"
 Description: """
 Cet attribut représente un acteur (humain ou système) ayant contribué au document. Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient. 
@@ -8,7 +8,7 @@ Cet attribut représente un acteur (humain ou système) ayant contribué au docu
 XCN de HL7 v2.5
 """
 
-* XCN1 1..1 xdm-identifiant "Identifiant de l'acteur" "Identifiant de l'acteur"
+* XCN1 1..1 xdmIdentifiant "Identifiant de l'acteur" "Identifiant de l'acteur"
 * XCN2 1..1 string "Nom d'exercice du professionnel, nom du patient, nom du système." "Nom d'exercice du professionnel, nom du patient, nom du système."
 * XCN3 1..1 string "Prénom usuel de la personne (par défaut le premier prénom), nom du modèle pour les dispositifs ou dénomination pour les autres systèmes."
 * XCN9 1..1 Base "Autorité d’affectation"

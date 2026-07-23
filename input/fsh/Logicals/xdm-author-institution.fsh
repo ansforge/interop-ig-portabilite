@@ -1,6 +1,6 @@
 Logical: XDMAuthorInstitution
 Parent: Base
-Id: xdm-author-institution
+Id: xdmAuthorInstitution
 Title: "XDM AuthorInstitution"
 Description: """
 Cet attribut représente la structure de l’auteur. 

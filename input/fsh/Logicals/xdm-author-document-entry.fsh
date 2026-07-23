@@ -1,6 +1,6 @@
 Logical:  XDMAuthorDocumentEntry
 Parent: XDMAuthor
-Id: xdm-author-document-entry
+Id: xdmAuthorDocumentEntry
 Title: "XDM AuthorDocumentEntry"
 Description: """
 Modèle logique d'un auteur d'un document

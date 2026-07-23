@@ -1,6 +1,6 @@
 Logical: XDMActorPatient
-Id : xdm-actor-patient
-Parent: xdm-actor-xds
+Id : xdmActorPatient
+Parent: xdmActorXds
 Title: "XDM ActorPatient"
 Description: """
 Cet attribut représente l'acteur Patient.

@@ -1,5 +1,5 @@
 Logical:  XDMArchive
-Id: xdm-archive
+Id: xdmArchive
 Title: "XDM Archive XDM"
 Description: """
 Modèle logique décrivant la structure d'un SUBSET IHE XDM.

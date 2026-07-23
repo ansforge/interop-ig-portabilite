@@ -1,6 +1,6 @@
 Logical: XDMPatientId
 Parent: Base
-Id: xdm-patient-id
+Id: xdmPatientId
 Title: "XDM PatientId"
 Description: """
 Modèle logique de patientID.

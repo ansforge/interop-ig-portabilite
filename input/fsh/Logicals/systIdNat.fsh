@@ -1,7 +1,7 @@
 
-Logical: XDMIdentifiantSysteme
-Id: xdm-identifiant-systeme
-Title: "XDM IdentifiantSysteme"
+Logical: SystIdNat
+Id: systIdNat
+Title: "SystIdNat"
 Description: """
 Identification d'un systeme
 
@@ -14,7 +14,7 @@ L’identification du systeme  est construite selon le tableau dessous :
 
 """
 
-* XDMIdentifiantSysteme 1..1 string "XDMIdentifiantSysteme" "XDMIdentifiantSysteme"
+* systIdNat 1..1 string "XDMIdentifiantSysteme" "XDMIdentifiantSysteme"
 
 
 

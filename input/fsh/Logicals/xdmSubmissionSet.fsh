@@ -1,6 +1,6 @@
 Logical: XDMSubmissionSet
 Parent: Base
-Id: xdm-submission-set
+Id: xdmSubmissionSet
 Title: "XDM SubmissionSet"
 Description: """Modèle logique d'un lot de soummission (SubmissionSet)."""
 

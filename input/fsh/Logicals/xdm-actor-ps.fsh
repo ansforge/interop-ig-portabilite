@@ -1,6 +1,6 @@
 Logical: XDMActorPS
-Parent: xdm-actor-xds
-Id: xdm-actor-ps
+Parent: xdmActorXds
+Id: xdmActorPs
 Title: "XDM ActorPS"
 Description: "Cet attribut représente un acteur PS."
 Characteristics: #can-be-target

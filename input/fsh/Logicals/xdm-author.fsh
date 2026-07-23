@@ -1,6 +1,6 @@
 Logical: XDMAuthor
 Parent: Base
-Id: xdm-author
+Id: xdmAuthor
 Title: "XDM Author"
 Description: """
 Modèle logique d'un auteur.

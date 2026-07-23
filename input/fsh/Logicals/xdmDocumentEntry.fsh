@@ -1,6 +1,6 @@
 Logical: XDMDocumentEntry
 Parent: Base
-Id: xdm-document-entry
+Id: xdmDocumentEntry
 Title: "XDM DocumentEntry"
 Description: """
 Modèle logique  d’une fiche

@@ -127,4 +127,4 @@ Description: "signature XAdES de l'archive attestant de l'imputabilité et l'int
         * archiveTimeStamp 0..* BackboneElement "Horodatage garantissant la validité de la signature sur le long terme."
           * encapsulatedTimeStamp 1..* base64Binary "Jeton d'horodatage."
       * unsignedDataObjectProperties 0..1 BackboneElement "Propriétés non signées relatives aux objets couverts par la signature."
-          * unsignedDataObjectProperty 0..1 string "Propriétés non signées relatives aux objets couverts par la signature."
+        * unsignedDataObjectProperty 0..1 string "Propriétés non signées relatives aux objets couverts par la signature."

@@ -1,6 +1,6 @@
 Logical: XDMEventCode
 Parent: Base
-Id: xdm-event-code
+Id: xdmEventCode
 Title: "XDM EventCode"
 Description: """
 Modèle logique d'un eventCode.
