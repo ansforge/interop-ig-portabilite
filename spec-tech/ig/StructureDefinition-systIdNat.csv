@@ -1,0 +1,13 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"systIdNat","systIdNat","","","",0,*,"","","","null {[]} {[]}
+","SystIdNat","Identification d'un systeme
+
+L’identification du systeme  est construite selon le tableau dessous :
+- 1 + Identifiant cabinet ADELI/Identifiant interne du système dans la structure 
+- 3 + FINESS/Identifiant interne du système dans la structure  
+- 4 + SIREN/Identifiant interne du système dans la structure 
+- 5 + SIRET/Identifiant interne du système dans la structure 
+- 6 + Identifiant cabinet RPPS/Identifiant interne du système dans la structure 
+","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"systIdNat.systIdNat","systIdNat.systIdNat","","","",1,1,"","","","string {[]} {[]}
+","XDMIdentifiantSysteme","XDMIdentifiantSysteme","","","","","","","","","",,,,,"",,,,"systIdNat.systIdNat",1,1,"",""

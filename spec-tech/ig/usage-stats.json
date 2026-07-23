@@ -46,9 +46,9 @@
       "Basic"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.3.0": [
-      "pdlgc-index",
-      "pdlgc-manifest.Archive",
-      "xdm-document-entry.referenceIdList"
+      "pdlgcIndex",
+      "pdlgcManifest.Archive",
+      "xdmDocumentEntry.referenceIdList"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"

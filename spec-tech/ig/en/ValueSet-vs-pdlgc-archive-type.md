@@ -7,8 +7,8 @@ PDLGC Type d'archive
 
  **References** 
 
-* [PDLGC Manifest](StructureDefinition-pdlgc-manifest.md)
-* [PDLGC Manifest Archives](StructureDefinition-pdlgc-manifest-archives.md)
+* [PDLGC Manifest](StructureDefinition-pdlgcManifest.md)
+* [PDLGC Manifest Archives](StructureDefinition-pdlgcManifestArchives.md)
 
 ### Logical Definition (CLD)
 
@@ -37,7 +37,7 @@ PDLGC Type d'archive
   "title" : "PDLGC Type d'archive",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-07-23T08:53:51+00:00",
+  "date" : "2026-07-23T14:32:10+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

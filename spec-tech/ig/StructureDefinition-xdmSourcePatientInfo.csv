@@ -1,0 +1,26 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"xdmSourcePatientInfo","xdmSourcePatientInfo","","","",0,*,"","","","null {[]} {[]}
+","XDM SourcePatientInfo","Cette métadonnée contient les traits d’identité du patient concerné par le document, connus par le producteur du document. Les informations présentes dans la métadonnée sourcePatientInfo ne doivent en aucun cas être réutilisées pour calculer un identifiant, ni être mises à jour après la soumission du document. 
+","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"xdmSourcePatientInfo.PID3","xdmSourcePatientInfo.PID3","","","",0,1,"","","","Identifier {[]} {[]}
+","Liste des identifiants du patient","Liste des identifiants du patient","","","","","","","","","",,,,,"",,,,"xdmSourcePatientInfo.PID3",0,1,"",""
+"xdmSourcePatientInfo.PID5","xdmSourcePatientInfo.PID5","","","",1,*,"","","","string {[]} {[]}
+","Nom et prénoms du patient","Nom et prénoms du patient","","","","","","","","","",,,,,"",,,,"xdmSourcePatientInfo.PID5",1,*,"",""
+"xdmSourcePatientInfo.PID7","xdmSourcePatientInfo.PID7","","","",0,1,"","","","string {[]} {[]}
+","Date/heure de naissance du patient","Date/heure de naissance du patient","","","","","","","","","",,,,,"",,,,"xdmSourcePatientInfo.PID7",0,1,"",""
+"xdmSourcePatientInfo.PID8","xdmSourcePatientInfo.PID8","","","",0,1,"","","","string {[]} {[]}
+","Sexe du patient","Sexe du patient","","","","","","","","","",,,,,"",,,,"xdmSourcePatientInfo.PID8",0,1,"",""
+"xdmSourcePatientInfo.PID11","xdmSourcePatientInfo.PID11","","","",0,1,"","","","string {[]} {[]}
+","Adresse du patient","Adresse du patient","","","","","","","","","",,,,,"",,,,"xdmSourcePatientInfo.PID11",0,1,"",""
+"xdmSourcePatientInfo.PID13","xdmSourcePatientInfo.PID13","","","",0,1,"","","","string {[]} {[]}
+","Téléphone de la résidence du patient","Téléphone de la résidence du patient","","","","","","","","","",,,,,"",,,,"xdmSourcePatientInfo.PID13",0,1,"",""
+"xdmSourcePatientInfo.PID14","xdmSourcePatientInfo.PID14","","","",0,1,"","","","string {[]} {[]}
+","Téléphone professionnel du patient","Téléphone professionnel du patient","","","","","","","","","",,,,,"",,,,"xdmSourcePatientInfo.PID14",0,1,"",""
+"xdmSourcePatientInfo.PID15","xdmSourcePatientInfo.PID15","","","",0,1,"","","","string {[]} {[]}
+","Langue du patient","Langue du patient","","","","","","","","","",,,,,"",,,,"xdmSourcePatientInfo.PID15",0,1,"",""
+"xdmSourcePatientInfo.PID16","xdmSourcePatientInfo.PID16","","","",0,1,"","","","string {[]} {[]}
+","Statut marital du patient","Statut marital du patient","","","","","","","","","",,,,,"",,,,"xdmSourcePatientInfo.PID16",0,1,"",""
+"xdmSourcePatientInfo.PID18","xdmSourcePatientInfo.PID18","","","",0,1,"","","","string {[]} {[]}
+","Numéro de compte du patient","Numéro de compte du patient","","","","","","","","","",,,,,"",,,,"xdmSourcePatientInfo.PID18",0,1,"",""
+"xdmSourcePatientInfo.PID21","xdmSourcePatientInfo.PID21","","","",0,1,"","","","string {[]} {[]}
+","Identifiant de la mère du patient","Identifiant de la mère du patient","","","","","","","","","",,,,,"",,,,"xdmSourcePatientInfo.PID21",0,1,"",""

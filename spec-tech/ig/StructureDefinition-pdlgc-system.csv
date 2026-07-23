@@ -1,9 +1,0 @@
-"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
-"pdlgc-system","pdlgc-system","","","",0,*,"","","","null {[]} {[]}
-","PDLGC System","Informations relatives au Logiciel de Gestion de Cabinet","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"pdlgc-system.lgcNom","pdlgc-system.lgcNom","","","",1,1,"","","","string {[]} {[]}
-","Nom du logiciel","Nom du logiciel","","","","","","","","","",,,,,"",,,,"pdlgc-system.lgcNom",1,1,"",""
-"pdlgc-system.lgcVersion","pdlgc-system.lgcVersion","","","",1,1,"","","","string {[]} {[]}
-","Version du logiciel","Version du logiciel","","","","","","","","","",,,,,"",,,,"pdlgc-system.lgcVersion",1,1,"",""
-"pdlgc-system.lgcIdentifiant","pdlgc-system.lgcIdentifiant","","","",0,1,"","","","Identifier {[]} {[]}
-","Identifiant du logiciel","Identifiant du logiciel","","","","","","","","","",,,,,"",,,,"pdlgc-system.lgcIdentifiant",0,1,"",""

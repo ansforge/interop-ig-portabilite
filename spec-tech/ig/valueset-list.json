@@ -9,7 +9,7 @@
     "systems" : ["https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type"],
     "uses" : {
     },
-    "StructureDefinition-xdm-association.html" : "XDM Association"
+    "StructureDefinition-xdmAssociation.html" : "XDM Association"
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-archive-type",
@@ -21,8 +21,8 @@
     "systems" : ["https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type"],
     "uses" : {
     },
-    "StructureDefinition-pdlgc-manifest-archives.html" : "PDLGC Manifest Archives",
-    "StructureDefinition-pdlgc-manifest.html" : "PDLGC Manifest"
+    "StructureDefinition-pdlgcManifest.html" : "PDLGC Manifest",
+    "StructureDefinition-pdlgcManifestArchives.html" : "PDLGC Manifest Archives"
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-export-status",
@@ -34,7 +34,7 @@
     "systems" : ["https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status"],
     "uses" : {
     },
-    "StructureDefinition-pdlgc-manifest.html" : "PDLGC Manifest"
+    "StructureDefinition-pdlgcManifest.html" : "PDLGC Manifest"
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-export-type",
@@ -46,6 +46,6 @@
     "systems" : ["https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type"],
     "uses" : {
     },
-    "StructureDefinition-pdlgc-manifest.html" : "PDLGC Manifest"
+    "StructureDefinition-pdlgcManifest.html" : "PDLGC Manifest"
   }]
 }

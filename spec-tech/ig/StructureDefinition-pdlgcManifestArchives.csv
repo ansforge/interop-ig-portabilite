@@ -1,0 +1,13 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"pdlgcManifestArchives","pdlgcManifestArchives","","","",0,*,"","","","null {[]} {[]}
+","PDLGC Manifest Archives","Informations relatives aux répertoires Patient et transverse exportées dans l'archive de portabilité","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"pdlgcManifestArchives.type","pdlgcManifestArchives.type","","","",1,1,"","","","code {[]} {[]}
+","Patient | Transverse","Patient | Transverse","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-archive-type|0.1.0","",,,,"pdlgcManifestArchives.type",1,1,"",""
+"pdlgcManifestArchives.nom","pdlgcManifestArchives.nom","","","",1,1,"","","","string {[]} {[]}
+","Nom du répertoire","Nom du répertoire","","","","","","","","","",,,,,"",,,,"pdlgcManifestArchives.nom",1,1,"",""
+"pdlgcManifestArchives.patientId","pdlgcManifestArchives.patientId","","","",0,1,"","","","string {[]} {[]}
+","Identifiant du Patient s'il s'agit d'un répertoire Patient","Identifiant du Patient s'il s'agit d'un répertoire Patient","","","","","","","","","",,,,,"",,,,"pdlgcManifestArchives.patientId",0,1,"",""
+"pdlgcManifestArchives.periodeCouverte","pdlgcManifestArchives.periodeCouverte","","","",0,1,"","","","Period {[]} {[]}
+","Période couverte par l'export dans le cas d'un export ciblé","Période couverte par l'export dans le cas d'un export ciblé","","","","","","","","","",,,,,"",,,,"pdlgcManifestArchives.periodeCouverte",0,1,"",""
+"pdlgcManifestArchives.metadataHash","pdlgcManifestArchives.metadataHash","","","",1,1,"","","","string {[]} {[]}
+","Hash SHA-256 du fichier Metadata inclus dans le répertoire","Hash SHA-256 du fichier Metadata inclus dans le répertoire","","","","","","","","","",,,,,"",,,,"pdlgcManifestArchives.metadataHash",1,1,"",""

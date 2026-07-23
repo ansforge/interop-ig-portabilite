@@ -62,107 +62,107 @@
   "name" : "PDLGC"
 },
 {
-  "id" : "matricule-ins",
+  "id" : "matriculeIns",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/matricule-ins",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/matriculeIns",
   "version" : "0.1.0",
   "name" : "MatriculeINS"
 },
 {
-  "id" : "pdlgc-archive-patient",
+  "id" : "pdlgcArchivePatient",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-archive-patient",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgcArchivePatient",
   "version" : "0.1.0",
   "name" : "PDLGCArchivePatient"
 },
 {
-  "id" : "pdlgc-archive-portabilite",
+  "id" : "pdlgcArchivePortabilite",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-archive-portabilite",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgcArchivePortabilite",
   "version" : "0.1.0",
   "name" : "PDLGCArchivePortabilite"
 },
 {
-  "id" : "pdlgc-archive-transverse",
+  "id" : "pdlgcArchiveTransverse",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-archive-transverse",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgcArchiveTransverse",
   "version" : "0.1.0",
   "name" : "PDLGCArchiveTransverse"
 },
 {
-  "id" : "pdlgc-contact-portabilite",
+  "id" : "pdlgcContactPortabilite",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-contact-portabilite",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgcContactPortabilite",
   "version" : "0.1.0",
   "name" : "PDLGCContactPortabilite"
 },
 {
-  "id" : "pdlgc-documentation",
+  "id" : "pdlgcDocumentation",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-documentation",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgcDocumentation",
   "version" : "0.1.0",
   "name" : "PDLGCDocumentation"
 },
 {
-  "id" : "pdlgc-fournisseur-sortant",
+  "id" : "pdlgcFournisseurSortant",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-fournisseur-sortant",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgcFournisseurSortant",
   "version" : "0.1.0",
   "name" : "PDLGCFournisseurSortant"
 },
 {
-  "id" : "pdlgc-index",
+  "id" : "pdlgcIndex",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-index",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgcIndex",
   "version" : "0.1.0",
   "name" : "PDLGCIndex"
 },
 {
-  "id" : "pdlgc-manifest",
+  "id" : "pdlgcManifest",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-manifest",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgcManifest",
   "version" : "0.1.0",
   "name" : "PDLGCManifest"
 },
 {
-  "id" : "pdlgc-manifest-archives",
+  "id" : "pdlgcManifestArchives",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-manifest-archives",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgcManifestArchives",
   "version" : "0.1.0",
   "name" : "PDLGCManifestArchives"
 },
 {
-  "id" : "pdlgc-metadata",
+  "id" : "pdlgcMetadata",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-metadata",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgcMetadata",
   "version" : "0.1.0",
   "name" : "PDLGCMetadata"
 },
 {
-  "id" : "pdlgc-readme",
+  "id" : "pdlgcReadme",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-readme",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgcReadme",
   "version" : "0.1.0",
   "name" : "PDLGCReadme"
 },
 {
-  "id" : "pdlgc-signature",
+  "id" : "pdlgcSignature",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-signature",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgcSignature",
   "version" : "0.1.0",
   "name" : "PDLGCSignature"
 },
 {
-  "id" : "pdlgc-system",
+  "id" : "pdlgcSystem",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgc-system",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgcSystem",
   "version" : "0.1.0",
   "name" : "PDLGCSystem"
 },
 {
-  "id" : "ps-id-nat",
+  "id" : "psIdNat",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/ps-id-nat",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/psIdNat",
   "version" : "0.1.0",
   "name" : "PSIdNat"
 },
@@ -174,142 +174,142 @@
   "name" : "SNR"
 },
 {
-  "id" : "struct-id-nat",
+  "id" : "structIdNat",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/struct-id-nat",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/structIdNat",
   "version" : "0.1.0",
   "name" : "StructIdNat"
 },
 {
-  "id" : "xdm-actor-patient",
+  "id" : "systIdNat",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-actor-patient",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/systIdNat",
+  "version" : "0.1.0",
+  "name" : "SystIdNat"
+},
+{
+  "id" : "xdmActorPatient",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorPatient",
   "version" : "0.1.0",
   "name" : "XDMActorPatient"
 },
 {
-  "id" : "xdm-actor-ps",
+  "id" : "xdmActorPs",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-actor-ps",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorPs",
   "version" : "0.1.0",
   "name" : "XDMActorPS"
 },
 {
-  "id" : "xdm-actor-snr",
+  "id" : "xdmActorSnr",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-actor-snr",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorSnr",
   "version" : "0.1.0",
   "name" : "XDMActorSNR"
 },
 {
-  "id" : "xdm-actor-system",
+  "id" : "xdmActorSystem",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-actor-system",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorSystem",
   "version" : "0.1.0",
   "name" : "XDMActorSystem"
 },
 {
-  "id" : "xdm-actor-xds",
+  "id" : "xdmActorXds",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-actor-xds",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorXds",
   "version" : "0.1.0",
   "name" : "XDMActorXDS"
 },
 {
-  "id" : "xdm-archive",
+  "id" : "xdmArchive",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-archive",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmArchive",
   "version" : "0.1.0",
   "name" : "XDMArchive"
 },
 {
-  "id" : "xdm-association",
+  "id" : "xdmAssociation",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-association",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmAssociation",
   "version" : "0.1.0",
   "name" : "XDMAssociation"
 },
 {
-  "id" : "xdm-author",
+  "id" : "xdmAuthor",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-author",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmAuthor",
   "version" : "0.1.0",
   "name" : "XDMAuthor"
 },
 {
-  "id" : "xdm-author-document-entry",
+  "id" : "xdmAuthorDocumentEntry",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-author-document-entry",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmAuthorDocumentEntry",
   "version" : "0.1.0",
   "name" : "XDMAuthorDocumentEntry"
 },
 {
-  "id" : "xdm-author-institution",
+  "id" : "xdmAuthorInstitution",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-author-institution",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmAuthorInstitution",
   "version" : "0.1.0",
   "name" : "XDMAuthorInstitution"
 },
 {
-  "id" : "xdm-author-submission-set",
+  "id" : "xdmAuthorSubmissionSet",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-author-submission-set",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmAuthorSubmissionSet",
   "version" : "0.1.0",
   "name" : "XDMAuthorSubmissionSet"
 },
 {
-  "id" : "xdm-document-entry",
+  "id" : "xdmDocumentEntry",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-document-entry",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmDocumentEntry",
   "version" : "0.1.0",
   "name" : "XDMDocumentEntry"
 },
 {
-  "id" : "xdm-event-code",
+  "id" : "xdmEventCode",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-event-code",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmEventCode",
   "version" : "0.1.0",
   "name" : "XDMEventCode"
 },
 {
-  "id" : "xdm-identifiant",
+  "id" : "xdmIdentifiant",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-identifiant",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmIdentifiant",
   "version" : "0.1.0",
   "name" : "XDMIdentifiant"
 },
 {
-  "id" : "xdm-identifiant-systeme",
+  "id" : "xdmPatientId",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-identifiant-systeme",
-  "version" : "0.1.0",
-  "name" : "XDMIdentifiantSysteme"
-},
-{
-  "id" : "xdm-patient-id",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-patient-id",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmPatientId",
   "version" : "0.1.0",
   "name" : "XDMPatientId"
 },
 {
-  "id" : "xdm-source-patient-id",
+  "id" : "xdmSourcePatientId",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-source-patient-id",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmSourcePatientId",
   "version" : "0.1.0",
   "name" : "XDMSourcePatientId"
 },
 {
-  "id" : "xdm-source-patient-info",
+  "id" : "xdmSourcePatientInfo",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-source-patient-info",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmSourcePatientInfo",
   "version" : "0.1.0",
   "name" : "XDMSourcePatientInfo"
 },
 {
-  "id" : "xdm-submission-set",
+  "id" : "xdmSubmissionSet",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdm-submission-set",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmSubmissionSet",
   "version" : "0.1.0",
   "name" : "XDMSubmissionSet"
 },

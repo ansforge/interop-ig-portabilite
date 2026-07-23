@@ -14,7 +14,7 @@
   "name" : "PDLGC",
   "title" : "Portabilité des Données LGC",
   "status" : "draft",
-  "date" : "2026-07-23T08:53:51+00:00",
+  "date" : "2026-07-23T14:32:10+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -885,7 +885,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/matricule-ins"
+        "reference" : "StructureDefinition/matriculeIns"
       },
       "name" : "MatriculeINS",
       "description" : "Matricule de l'Identité Nationale de Santé (INS). Il correspond au NIR (Numéro d’Identification au Répertoire des personnes physiques) ou au NIA (Numéro Identifiant Attente) de l’individu).",
@@ -898,7 +898,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/pdlgc-archive-patient"
+        "reference" : "StructureDefinition/pdlgcArchivePatient"
       },
       "name" : "PDLGC Archive Patient",
       "description" : "Archive stockant les données médicales liées à un patient, ou NNNNN est incrémenté à partir de 00001. Chaque patient est représenté par une archive distincte conforme au profil IHE_XDM",
@@ -911,7 +911,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/pdlgc-archive-portabilite"
+        "reference" : "StructureDefinition/pdlgcArchivePortabilite"
       },
       "name" : "PDLGC Archive Portabilite",
       "description" : "L'archive de Portabilité est un conteneur structuré, regroupant l'ensemble des documents et données LGC exportées ainsi que les éléments de métadonnées, d'index et de documentation nécessaires à leur exploitation par le destinataire. Convention de nommage : PAAAAAMMJJThhmmss.ZIP, avec PA = préfixe, AAAAMMJJThhmmss = horodatage",
@@ -924,7 +924,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/pdlgc-archive-transverse"
+        "reference" : "StructureDefinition/pdlgcArchiveTransverse"
       },
       "name" : "PDLGC Archive Transverse",
       "description" : "Archive stockant les données transverses associés au praticien et/ou au cabinet",
@@ -937,7 +937,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/pdlgc-contact-portabilite"
+        "reference" : "StructureDefinition/pdlgcContactPortabilite"
       },
       "name" : "PDLGC Contact Portabilite",
       "description" : "PDLGC Contact Portabilite",
@@ -974,7 +974,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/pdlgc-documentation"
+        "reference" : "StructureDefinition/pdlgcDocumentation"
       },
       "name" : "PDLGC Documentation",
       "description" : "Documentation d'export permettant au fournisseur destinataire d'intégrer les données LGC du fournisseur sortant",
@@ -1011,7 +1011,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/pdlgc-fournisseur-sortant"
+        "reference" : "StructureDefinition/pdlgcFournisseurSortant"
       },
       "name" : "PDLGC FournisseurSortant",
       "description" : "PDLGC Fournisseur Sortant",
@@ -1024,7 +1024,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/pdlgc-index"
+        "reference" : "StructureDefinition/pdlgcIndex"
       },
       "name" : "PDLGC Index",
       "description" : "L'INDEX.HTM est renferme des informations éditoriales et est conforme aux spécifications XHTML et Echanges de Documents de santé.",
@@ -1037,7 +1037,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/pdlgc-manifest"
+        "reference" : "StructureDefinition/pdlgcManifest"
       },
       "name" : "PDLGC Manifest",
       "description" : "Le fichier MANIFEST.XML porte les métadonnées globales de l'export (nombre de dossiers patients, volumétrie, éléments d'intégrité), distinctes des métadonnées XDM portées par chaque `METADATA.XML` patient",
@@ -1050,7 +1050,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/pdlgc-manifest-archives"
+        "reference" : "StructureDefinition/pdlgcManifestArchives"
       },
       "name" : "PDLGC Manifest Archives",
       "description" : "Informations relatives aux répertoires Patient et transverse exportées dans l'archive de portabilité",
@@ -1063,7 +1063,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/pdlgc-metadata"
+        "reference" : "StructureDefinition/pdlgcMetadata"
       },
       "name" : "PDLGC Metadata",
       "description" : "Modèle logique décrivant la structure d'un fichier METADATA associé à un SUBSET IHE XDM.\nRegroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.",
@@ -1076,7 +1076,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/pdlgc-readme"
+        "reference" : "StructureDefinition/pdlgcReadme"
       },
       "name" : "PDLGC Readme",
       "description" : "Informations éditoriales et instructions. Le socle du README.TXt est identique pour l'archive de portabilité, l'archive de données transverse et l'archive XDM Patient",
@@ -1089,7 +1089,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/pdlgc-signature"
+        "reference" : "StructureDefinition/pdlgcSignature"
       },
       "name" : "PDLGC Signature",
       "description" : "signature XAdES de l'archive attestant de l'imputabilité et l'intégrité des données",
@@ -1114,7 +1114,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/pdlgc-system"
+        "reference" : "StructureDefinition/pdlgcSystem"
       },
       "name" : "PDLGC System",
       "description" : "Informations relatives au Logiciel de Gestion de Cabinet",
@@ -1151,7 +1151,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/ps-id-nat"
+        "reference" : "StructureDefinition/psIdNat"
       },
       "name" : "PSIdNat",
       "description" : "Identification nationale principale du professionnel propre aux SI de l’ANS et au CI-SIS. (Correspondance dans le MOS : idNat_PS) \n\nL’identification nationale du PS est construite selon le tableau dessous :\n-  0 + N° ADELI \n- 1 + Identifiant cabinet ADELI/identifiant interne \n- 3 + FINESS/identifiant interne \n- 4 + SIREN/identifiant interne \n- 5 + SIRET/identifiant interne \n- 6 + Identifiant cabinet RPPS/identifiant interne \n- 8 + N° RPPS",
@@ -1189,10 +1189,23 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/struct-id-nat"
+        "reference" : "StructureDefinition/structIdNat"
       },
       "name" : "StructIdNat",
-      "description" : "Identification nationale principale d’une structure propre aux SI de l'ANS et au CI-SIS 4. \n\nL’identification nationale d’une structure est construite selon le tableau dessous :\n-  0 + Identifiant cabinet ADELI \n- 1 + N° FINESS 2 + N° SIREN \n- 3 + N° SIRET \n- 4 + N° RPPS-rang \n- Néant + N° technique",
+      "description" : "Identification nationale principale d’une structure propre aux SI de l'ANS et au CI-SIS 4. \n\nL’identification nationale d’une structure est construite selon le tableau dessous :\n- 0 + Identifiant cabinet ADELI \n- 1 + N° FINESS 2 + N° SIREN \n- 3 + N° SIRET \n- 4 + N° RPPS-rang \n- Néant + N° technique",
+      "exampleBoolean" : false,
+      "groupingId" : "LogicalModelXDM"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/systIdNat"
+      },
+      "name" : "SystIdNat",
+      "description" : "Identification d'un systeme\n\nL’identification du systeme  est construite selon le tableau dessous :\n- 1 + Identifiant cabinet ADELI/Identifiant interne du système dans la structure \n- 3 + FINESS/Identifiant interne du système dans la structure  \n- 4 + SIREN/Identifiant interne du système dans la structure \n- 5 + SIRET/Identifiant interne du système dans la structure \n- 6 + Identifiant cabinet RPPS/Identifiant interne du système dans la structure",
       "exampleBoolean" : false,
       "groupingId" : "LogicalModelXDM"
     },
@@ -1250,7 +1263,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/xdm-actor-patient"
+        "reference" : "StructureDefinition/xdmActorPatient"
       },
       "name" : "XDM ActorPatient",
       "description" : "Cet attribut représente l'acteur Patient.",
@@ -1263,7 +1276,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/xdm-actor-ps"
+        "reference" : "StructureDefinition/xdmActorPs"
       },
       "name" : "XDM ActorPS",
       "description" : "Cet attribut représente un acteur PS.",
@@ -1276,7 +1289,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/xdm-actor-snr"
+        "reference" : "StructureDefinition/xdmActorSnr"
       },
       "name" : "XDM ActorSNR",
       "description" : "Cet attribut représente l'acteur SNR.",
@@ -1289,7 +1302,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/xdm-actor-system"
+        "reference" : "StructureDefinition/xdmActorSystem"
       },
       "name" : "XDM ActorSystem",
       "description" : "Cet attribut représente l'acteur System.",
@@ -1302,7 +1315,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/xdm-actor-xds"
+        "reference" : "StructureDefinition/xdmActorXds"
       },
       "name" : "XDM ActorXDS",
       "description" : "Cet attribut représente un acteur (humain ou système) ayant contribué au document. Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient. \n\nXCN de HL7 v2.5",
@@ -1315,7 +1328,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/xdm-archive"
+        "reference" : "StructureDefinition/xdmArchive"
       },
       "name" : "XDM Archive XDM",
       "description" : "Modèle logique décrivant la structure d'un SUBSET IHE XDM.\nRegroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.",
@@ -1328,7 +1341,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/xdm-association"
+        "reference" : "StructureDefinition/xdmAssociation"
       },
       "name" : "XDM Association",
       "description" : "Modèle logique d'une association IHE XDS entre deux objets de l'archive de portabilité.\nPermet de relier un SubmissionSet ou un DocumentEntry à un autre (remplacement ou transformation).",
@@ -1341,7 +1354,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/xdm-author"
+        "reference" : "StructureDefinition/xdmAuthor"
       },
       "name" : "XDM Author",
       "description" : "Modèle logique d'un auteur.\n\nReprésente les personnes physiques et/ou les systèmes (dispositifs, automates, services numériques référencés…) auteurs d’un document ou d'un lot de soummission. \n\nL’auteur peut être : \n- Un professionnel (personne physique) via son logiciel de professionnel, \n- Le patient/usager (personne physique) via Mon espace Santé, \n- Un système de structure (dispositif, automate, appareil connecté…), \n- Un SNR (Service Numérique Référencé), \n\n\n**author** est un ensemble constitué des sous-attributs **authorInstitution** , **authorPerson**, **authorRole** et **authorSpecialty** et ne porte pas de valeur par lui-même.",
@@ -1354,7 +1367,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/xdm-author-document-entry"
+        "reference" : "StructureDefinition/xdmAuthorDocumentEntry"
       },
       "name" : "XDM AuthorDocumentEntry",
       "description" : "Modèle logique d'un auteur d'un document\nCette métadonnée représente les personnes physiques et/ou les systèmes (dispositifs, automates, services numériques référencés…) auteurs d’un document. \nL’auteur peut être : \n-  Un professionnel (personne physique) via son logiciel de professionnel, \n- Le patient/usager (personne physique) via Mon espace Santé, \n-  Un système de structure (dispositif, automate, appareil connecté…), \n-  Un SNR (Service Numérique Référencé),",
@@ -1367,7 +1380,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/xdm-author-institution"
+        "reference" : "StructureDefinition/xdmAuthorInstitution"
       },
       "name" : "XDM AuthorInstitution",
       "description" : "Cet attribut représente la structure de l’auteur. \nPour les documents d’expression personnelle du patient, cette métadonnée est absente, cela signifie que l’élément XML `<rim:Slot name='authorInstitution'>` n’est pas transmis.",
@@ -1380,7 +1393,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/xdm-author-submission-set"
+        "reference" : "StructureDefinition/xdmAuthorSubmissionSet"
       },
       "name" : "XDM AuthorSubmissionSet",
       "description" : "Modèle logique d'un auteur d'un lot de soumission\nCette métadonnée représente les personnes physiques et/ou les systèmes auteurs d’un lot de soumission. \nConstituée des sous-attributs **authorInstitution**, **authorPerson**, **authorRole** et **authorSpecialty**, elle ne porte pas de valeur par elle-même.",
@@ -1393,7 +1406,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/xdm-document-entry"
+        "reference" : "StructureDefinition/xdmDocumentEntry"
       },
       "name" : "XDM DocumentEntry",
       "description" : "Modèle logique  d’une fiche",
@@ -1406,7 +1419,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/xdm-event-code"
+        "reference" : "StructureDefinition/xdmEventCode"
       },
       "name" : "XDM EventCode",
       "description" : "Modèle logique d'un eventCode.\nUn EventCode peut contenir le code représentant : \n-  un évènement documenté (acte, traitement, diagnostic, etc…),  \n-  une modalité d’acquisition, \n-  une région anatomique.",
@@ -1419,7 +1432,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/xdm-identifiant"
+        "reference" : "StructureDefinition/xdmIdentifiant"
       },
       "name" : "XDM Identifiant",
       "description" : "Identifiant de professionnel de santé, de patient, de SNR ou de système",
@@ -1432,20 +1445,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/xdm-identifiant-systeme"
-      },
-      "name" : "XDM IdentifiantSysteme",
-      "description" : "Identification d'un systeme\n\nL’identification du systeme  est construite selon le tableau dessous :\n- 1 + Identifiant cabinet ADELI/Identifiant interne du système dans la structure \n- 3 + FINESS/Identifiant interne du système dans la structure  \n- 4 + SIREN/Identifiant interne du système dans la structure \n- 5 + SIRET/Identifiant interne du système dans la structure \n- 6 + Identifiant cabinet RPPS/Identifiant interne du système dans la structure",
-      "exampleBoolean" : false,
-      "groupingId" : "LogicalModelXDM"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/xdm-patient-id"
+        "reference" : "StructureDefinition/xdmPatientId"
       },
       "name" : "XDM PatientId",
       "description" : "Modèle logique de patientID.\nPatientID représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient.",
@@ -1458,7 +1458,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/xdm-source-patient-id"
+        "reference" : "StructureDefinition/xdmSourcePatientId"
       },
       "name" : "XDM SourcePatientId",
       "description" : "Cette métadonnée contient l’identifiant secondaire du patient dans le système d’information du producteur (IPP) ou l’INS, s’il n’y a pas d’identifiant secondaire. Pour les documents d’expression personnelle du patient, cette métadonnée contient l’INS du patient, à savoir le même identifiant que patientId.",
@@ -1471,7 +1471,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/xdm-source-patient-info"
+        "reference" : "StructureDefinition/xdmSourcePatientInfo"
       },
       "name" : "XDM SourcePatientInfo",
       "description" : "Cette métadonnée contient les traits d’identité du patient concerné par le document, connus par le producteur du document. Les informations présentes dans la métadonnée sourcePatientInfo ne doivent en aucun cas être réutilisées pour calculer un identifiant, ni être mises à jour après la soumission du document.",
@@ -1484,7 +1484,7 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/xdm-submission-set"
+        "reference" : "StructureDefinition/xdmSubmissionSet"
       },
       "name" : "XDM SubmissionSet",
       "description" : "Modèle logique d'un lot de soummission (SubmissionSet).",

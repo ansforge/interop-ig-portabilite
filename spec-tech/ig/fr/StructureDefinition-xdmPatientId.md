@@ -1,0 +1,126 @@
+# XDM PatientId - Portabilité des Données LGC v0.1.0
+
+## Modèle logique: XDM PatientId 
+
+ 
+Modèle logique de patientID. PatientID représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient. 
+
+**Utilisations:**
+
+* Utilise ce/t/te Modèle logique: [XDM DocumentEntry](StructureDefinition-xdmDocumentEntry.md) and [XDM SubmissionSet](StructureDefinition-xdmSubmissionSet.md)
+
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.pdlgc|current/StructureDefinition/xdmPatientId)
+
+### Vues formelles du contenu du profil
+
+ [Description des profils, des différentiels, des instantanés et de leurs représentations](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+*  [Tableau différentiel (differential)](#tabs-diff) 
+*  [Tableau récapitulatif (snapshot)](#tabs-snap) 
+*  [Statistiques/Références](#tabs-summ) 
+*  [Tous](#tabs-all) 
+
+Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base) 
+
+Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base) 
+
+** Résumé **
+
+Obligatoire : 0 élément(3 éléments obligatoire(s) imbriqué(s))
+
+ **Vue différentielle** 
+
+Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base) 
+
+ **Vue d'ensembleView** 
+
+Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base) 
+
+** Résumé **
+
+Obligatoire : 0 élément(3 éléments obligatoire(s) imbriqué(s))
+
+ 
+
+Autres représentations du profil : [CSV](../StructureDefinition-xdmPatientId.csv), [Excel](../StructureDefinition-xdmPatientId.xlsx) 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "xdmPatientId",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmPatientId",
+  "version" : "0.1.0",
+  "name" : "XDMPatientId",
+  "title" : "XDM PatientId",
+  "status" : "draft",
+  "date" : "2026-07-23T14:32:10+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Modèle logique de patientID.\nPatientID représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient. ",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "fhirVersion" : "4.0.1",
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmPatientId",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base|4.0.1",
+  "derivation" : "specialization",
+  "differential" : {
+    "element" : [{
+      "id" : "xdmPatientId",
+      "path" : "xdmPatientId",
+      "short" : "XDM PatientId",
+      "definition" : "Modèle logique de patientID.\nPatientID représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient. "
+    },
+    {
+      "id" : "xdmPatientId.CX1",
+      "path" : "xdmPatientId.CX1",
+      "short" : "Identifiant du patient, en l’occurrence, le matricule INS du patient tel que défini dans le cadre juridique",
+      "definition" : "Identifiant du patient, en l’occurrence, le matricule INS du patient tel que défini dans le cadre juridique",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "xdmPatientId.CX4",
+      "path" : "xdmPatientId.CX4",
+      "short" : "Identifiant de l’autorité d’affectation de l’INS utilisé.",
+      "definition" : "Cet identifiant, au format HL7 v.2.5 est constitué de trois sous-composants qui prennent les valeurs suivantes.\n|Valeur de Namespace ID (IS)| Valeur de Universal ID (ST)| Valeur de Universal ID type (ID)\nVide, pas de valeur |OID de l’autorité d’affectation de l’INS utilisé Valeur de Universal ID type (ID) ISO prise dans la liste des OID des autorités d'affectation des INS | ISO",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "xdmPatientId.CX5",
+      "path" : "xdmPatientId.CX5",
+      "short" : "'NH' pour un maticule INS tel que défini dans le cadre juridique",
+      "definition" : "'NH' pour un maticule INS tel que défini dans le cadre juridique",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    }]
+  }
+}
+
+```

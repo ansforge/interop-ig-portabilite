@@ -7,7 +7,7 @@ Identifiant interne de l’instance de la solution ayant produit le document au 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [XDM ActorSNR](StructureDefinition-xdm-actor-snr.md) and [XDM Identifiant](StructureDefinition-xdm-identifiant.md)
+* Utilise ce/t/te Modèle logique: [XDM ActorSNR](StructureDefinition-xdmActorSnr.md) and [XDM Identifiant](StructureDefinition-xdmIdentifiant.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.pdlgc|current/StructureDefinition/snr)
 
@@ -57,7 +57,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-snr.csv), [Exce
   "name" : "SNR",
   "title" : "SNR",
   "status" : "draft",
-  "date" : "2026-07-23T08:53:51+00:00",
+  "date" : "2026-07-23T14:32:10+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
