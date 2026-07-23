@@ -9,5 +9,5 @@ L’identification nationale d’une structure est construite selon le tableau d
 - 4 + N° RPPS-rang 
 - Néant + N° technique 
 ","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"structIdNat.StructIdNat","structIdNat.StructIdNat","","","",1,1,"","","","string {[]} {[]}
+"structIdNat.StructIdNat","structIdNat.StructIdNat","","","",1,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.3.0]]} {[]}
 ","StructIdNat","StructIdNat","","","","","","","","","",,,,,"",,,,"structIdNat.StructIdNat",1,1,"",""

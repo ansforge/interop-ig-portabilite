@@ -6,4 +6,4 @@
 "pdlgcSystem.lgcVersion","pdlgcSystem.lgcVersion","","","",1,1,"","","","string {[]} {[]}
 ","Version du logiciel","Version du logiciel","","","","","","","","","",,,,,"",,,,"pdlgcSystem.lgcVersion",1,1,"",""
 "pdlgcSystem.lgcIdentifiant","pdlgcSystem.lgcIdentifiant","","","",0,1,"","","","Identifier {[]} {[]}
-","Identifiant du logiciel","Identifiant du logiciel","","","","","","","","","",,,,,"",,,,"pdlgcSystem.lgcIdentifiant",0,1,"",""
+","SystIdNat","SystIdNat","","","","","","","","","",,,,,"",,,,"pdlgcSystem.lgcIdentifiant",0,1,"",""

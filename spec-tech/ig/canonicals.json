@@ -62,11 +62,11 @@
   "name" : "PDLGC"
 },
 {
-  "id" : "matriculeIns",
+  "id" : "patId",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/matriculeIns",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/patId",
   "version" : "0.1.0",
-  "name" : "MatriculeINS"
+  "name" : "PatId"
 },
 {
   "id" : "pdlgcArchivePatient",

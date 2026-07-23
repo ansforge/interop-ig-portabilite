@@ -185,7 +185,7 @@
 
             <a href="#bottom">bas de page</a>
 
-          | <a href="StructureDefinition-matriculeIns.html">suivant &gt;</a>
+          | <a href="StructureDefinition-xdmActorPatient.html">suivant &gt;</a>
 
           </span>
 
@@ -227,13 +227,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#2">Modèle logique structure Archive de portabilité</a>
       </li>
       <li>
-         <a href="#3">Exigences: Définitions des acteurs</a>
+         <a href="#3">Identifiants nationaux</a>
       </li>
       <li>
-         <a href="#4">Terminologie: Jeux de valeurs (ValueSets)</a>
+         <a href="#4">Exigences: Définitions des acteurs</a>
       </li>
       <li>
-         <a href="#5">Terminologie: Systèmes de codes (CodeSystems)</a>
+         <a href="#5">Terminologie: Jeux de valeurs (ValueSets)</a>
+      </li>
+      <li>
+         <a href="#6">Terminologie: Systèmes de codes (CodeSystems)</a>
       </li>
    </ul>
 </div>
@@ -248,94 +251,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-matriculeIns.html"
-                  title="StructureDefinition/matriculeIns">
-                  <span title="StructureDefinition/matriculeIns">MatriculeINS
-</span>
-               </a>
-            </td>
-            <td>
-<p>Matricule de l'Identité Nationale de Santé (INS). Il correspond au NIR (Numéro d’Identification au Répertoire des personnes physiques) ou au NIA (Numéro Identifiant Attente) de l’individu).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-psIdNat.html"
-                  title="StructureDefinition/psIdNat">
-                  <span title="StructureDefinition/psIdNat">PSIdNat
-</span>
-               </a>
-            </td>
-            <td>
-<p>Identification nationale principale du professionnel propre aux SI de l’ANS et au CI-SIS. (Correspondance dans le MOS : idNat_PS)</p>
-
-<p>L’identification nationale du PS est construite selon le tableau dessous :</p>
-<ul>
-  <li>0 + N° ADELI</li>
-  <li>1 + Identifiant cabinet ADELI/identifiant interne</li>
-  <li>3 + FINESS/identifiant interne</li>
-  <li>4 + SIREN/identifiant interne</li>
-  <li>5 + SIRET/identifiant interne</li>
-  <li>6 + Identifiant cabinet RPPS/identifiant interne</li>
-  <li>8 + N° RPPS</li>
-</ul>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-snr.html" title="StructureDefinition/snr">
-                  <span title="StructureDefinition/snr">SNR
-</span>
-               </a>
-            </td>
-            <td>
-<p>Identifiant interne de l’instance de la solution ayant produit le document au format OID</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-structIdNat.html"
-                  title="StructureDefinition/structIdNat">
-                  <span title="StructureDefinition/structIdNat">StructIdNat
-</span>
-               </a>
-            </td>
-            <td>
-<p>Identification nationale principale d’une structure propre aux SI de l'ANS et au CI-SIS 4.</p>
-
-<p>L’identification nationale d’une structure est construite selon le tableau dessous :</p>
-<ul>
-  <li>0 + Identifiant cabinet ADELI</li>
-  <li>1 + N° FINESS 2 + N° SIREN</li>
-  <li>3 + N° SIRET</li>
-  <li>4 + N° RPPS-rang</li>
-  <li>Néant + N° technique</li>
-</ul>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-systIdNat.html"
-                  title="StructureDefinition/systIdNat">
-                  <span title="StructureDefinition/systIdNat">SystIdNat
-</span>
-               </a>
-            </td>
-            <td>
-<p>Identification d'un systeme</p>
-
-<p>L’identification du systeme  est construite selon le tableau dessous :</p>
-<ul>
-  <li>1 + Identifiant cabinet ADELI/Identifiant interne du système dans la structure</li>
-  <li>3 + FINESS/Identifiant interne du système dans la structure</li>
-  <li>4 + SIREN/Identifiant interne du système dans la structure</li>
-  <li>5 + SIRET/Identifiant interne du système dans la structure</li>
-  <li>6 + Identifiant cabinet RPPS/Identifiant interne du système dans la structure</li>
-</ul>
-</td>
-         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-xdmActorPatient.html"
@@ -547,7 +462,7 @@ Un EventCode peut contenir le code représentant :</p>
             </td>
             <td>
 <p>Modèle logique de patientID.
-PatientID représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient.</p>
+Cette métadonnée contient l'identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange. Le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité. À défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé.</p>
 </td>
          </tr>
          <tr>
@@ -754,6 +669,101 @@ Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.
       </tbody>
    </table>
    <a name="3"> </a>
+   <h3>Identifiants nationaux </h3>
+    <p>Format des identifiants nationaux</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-patId.html" title="StructureDefinition/patId">
+                  <span title="StructureDefinition/patId">Identifiant Patient
+</span>
+               </a>
+            </td>
+            <td>
+<p>Identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange. Le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité. À défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-psIdNat.html"
+                  title="StructureDefinition/psIdNat">
+                  <span title="StructureDefinition/psIdNat">PSIdNat
+</span>
+               </a>
+            </td>
+            <td>
+<p>Identification nationale principale du professionnel propre aux SI de l’ANS et au CI-SIS. (Correspondance dans le MOS : idNat_PS)</p>
+
+<p>L’identification nationale du PS est construite selon le tableau dessous :</p>
+<ul>
+  <li>0 + N° ADELI</li>
+  <li>1 + Identifiant cabinet ADELI/identifiant interne</li>
+  <li>3 + FINESS/identifiant interne</li>
+  <li>4 + SIREN/identifiant interne</li>
+  <li>5 + SIRET/identifiant interne</li>
+  <li>6 + Identifiant cabinet RPPS/identifiant interne</li>
+  <li>8 + N° RPPS</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-snr.html" title="StructureDefinition/snr">
+                  <span title="StructureDefinition/snr">SNR
+</span>
+               </a>
+            </td>
+            <td>
+<p>Identifiant interne de l’instance de la solution ayant produit le document au format OID</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-structIdNat.html"
+                  title="StructureDefinition/structIdNat">
+                  <span title="StructureDefinition/structIdNat">StructIdNat
+</span>
+               </a>
+            </td>
+            <td>
+<p>Identification nationale principale d’une structure propre aux SI de l'ANS et au CI-SIS 4.</p>
+
+<p>L’identification nationale d’une structure est construite selon le tableau dessous :</p>
+<ul>
+  <li>0 + Identifiant cabinet ADELI</li>
+  <li>1 + N° FINESS 2 + N° SIREN</li>
+  <li>3 + N° SIRET</li>
+  <li>4 + N° RPPS-rang</li>
+  <li>Néant + N° technique</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-systIdNat.html"
+                  title="StructureDefinition/systIdNat">
+                  <span title="StructureDefinition/systIdNat">SystIdNat
+</span>
+               </a>
+            </td>
+            <td>
+<p>Identification d'un systeme</p>
+
+<p>L’identification du systeme  est construite selon le tableau dessous :</p>
+<ul>
+  <li>1 + Identifiant cabinet ADELI/Identifiant interne du système dans la structure</li>
+  <li>3 + FINESS/Identifiant interne du système dans la structure</li>
+  <li>4 + SIREN/Identifiant interne du système dans la structure</li>
+  <li>5 + SIRET/Identifiant interne du système dans la structure</li>
+  <li>6 + Identifiant cabinet RPPS/Identifiant interne du système dans la structure</li>
+</ul>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
    <h3>Exigences: Définitions des acteurs </h3>
     <p>Les artefacts suivants définissent les types de personnes et/ou de systèmes qui interagiront dans le cadre des cas d'utilisation couverts par le présent guide d'implémentation.</p>
 <table class="grid">
@@ -819,7 +829,7 @@ Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.
          </tr>
       </tbody>
    </table>
-   <a name="4"> </a>
+   <a name="5"> </a>
    <h3>Terminologie: Jeux de valeurs (ValueSets) </h3>
     <p>Ils définissent des ensembles de codes utilisés par les systèmes conformes au présent guide d'implémentation.</p>
 <table class="grid">
@@ -875,7 +885,7 @@ Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.
          </tr>
       </tbody>
    </table>
-   <a name="5"> </a>
+   <a name="6"> </a>
    <h3>Terminologie: Systèmes de codes (CodeSystems) </h3>
     <p>Ils définissent les nouveaux systèmes de codes utilisés par les systèmes conformes au présent guide d'implémentation.</p>
 <table class="grid">
@@ -963,7 +973,7 @@ Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.
               </td>
               <td style="text-align:var(--ig-right);">&#xA0;
 
-                <a href="StructureDefinition-matriculeIns.html">suivant ></a>
+                <a href="StructureDefinition-xdmActorPatient.html">suivant ></a>
 
               </td>
             </tr>
@@ -979,7 +989,7 @@ Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.pdlgc#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-07-23 14:32:00 +0000">
+  <span title="2026-07-23 16:03:00 +0000">
     2026-07-23
   </span>
 

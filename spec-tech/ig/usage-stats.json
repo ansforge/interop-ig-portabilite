@@ -46,8 +46,8 @@
       "Basic"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.3.0": [
-      "pdlgcIndex",
       "pdlgcManifest.Archive",
+      "structIdNat",
       "xdmDocumentEntry.referenceIdList"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [

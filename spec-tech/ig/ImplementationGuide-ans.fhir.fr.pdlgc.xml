@@ -13,7 +13,7 @@
   <name value="PDLGC"/>
   <title value="Portabilité des Données LGC"/>
   <status value="draft"/>
-  <date value="2026-07-23T14:32:10+00:00"/>
+  <date value="2026-07-23T16:03:49+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -652,17 +652,21 @@
       <name value="Modèle logique structure Archive de portabilité"/>
       <description value="Modèles logiques associés aux différents fichiers et répertoires structurant une archive de portabilité"/>
     </grouping>
+    <grouping id="LogicalModelIdentifiant">
+      <name value="Identifiants nationaux"/>
+      <description value="Format des identifiants nationaux"/>
+    </grouping>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/matriculeIns"/>
+        <reference value="StructureDefinition/patId"/>
       </reference>
-      <name value="MatriculeINS"/>
-      <description value="Matricule de l'Identité Nationale de Santé (INS). Il correspond au NIR (Numéro d’Identification au Répertoire des personnes physiques) ou au NIA (Numéro Identifiant Attente) de l’individu)."/>
+      <name value="Identifiant Patient"/>
+      <description value="Identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange. Le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité. À défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé."/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelXDM"/>
+      <groupingId value="LogicalModelIdentifiant"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -907,7 +911,7 @@
       <name value="PSIdNat"/>
       <description value="Identification nationale principale du professionnel propre aux SI de l’ANS et au CI-SIS. (Correspondance dans le MOS : idNat_PS) &#xA;&#xA;L’identification nationale du PS est construite selon le tableau dessous :&#xA;-  0 + N° ADELI &#xA;- 1 + Identifiant cabinet ADELI/identifiant interne &#xA;- 3 + FINESS/identifiant interne &#xA;- 4 + SIREN/identifiant interne &#xA;- 5 + SIRET/identifiant interne &#xA;- 6 + Identifiant cabinet RPPS/identifiant interne &#xA;- 8 + N° RPPS"/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelXDM"/>
+      <groupingId value="LogicalModelIdentifiant"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -919,7 +923,7 @@
       <name value="SNR"/>
       <description value="Identifiant interne de l’instance de la solution ayant produit le document au format OID"/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelXDM"/>
+      <groupingId value="LogicalModelIdentifiant"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -942,7 +946,7 @@
       <name value="StructIdNat"/>
       <description value="Identification nationale principale d’une structure propre aux SI de l'ANS et au CI-SIS 4. &#xA;&#xA;L’identification nationale d’une structure est construite selon le tableau dessous :&#xA;- 0 + Identifiant cabinet ADELI &#xA;- 1 + N° FINESS 2 + N° SIREN &#xA;- 3 + N° SIRET &#xA;- 4 + N° RPPS-rang &#xA;- Néant + N° technique"/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelXDM"/>
+      <groupingId value="LogicalModelIdentifiant"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -954,7 +958,7 @@
       <name value="SystIdNat"/>
       <description value="Identification d'un systeme&#xA;&#xA;L’identification du systeme  est construite selon le tableau dessous :&#xA;- 1 + Identifiant cabinet ADELI/Identifiant interne du système dans la structure &#xA;- 3 + FINESS/Identifiant interne du système dans la structure  &#xA;- 4 + SIREN/Identifiant interne du système dans la structure &#xA;- 5 + SIRET/Identifiant interne du système dans la structure &#xA;- 6 + Identifiant cabinet RPPS/Identifiant interne du système dans la structure"/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelXDM"/>
+      <groupingId value="LogicalModelIdentifiant"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1176,7 +1180,7 @@
         <reference value="StructureDefinition/xdmPatientId"/>
       </reference>
       <name value="XDM PatientId"/>
-      <description value="Modèle logique de patientID.&#xA;PatientID représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient."/>
+      <description value="Modèle logique de patientID.&#xA;Cette métadonnée contient l'identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange. Le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité. À défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé."/>
       <exampleBoolean value="false"/>
       <groupingId value="LogicalModelXDM"/>
     </resource>

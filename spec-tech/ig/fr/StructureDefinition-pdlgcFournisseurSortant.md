@@ -29,7 +29,7 @@ Cette structure est dérivée de [EntiteJuridique](https://interop.esante.gouv.f
 ** Résumé **
 
 Obligatoire : 3 éléments(1 élément obligatoire(s) imbriqué(s))
- Must-Support : 3 éléments
+ Must-Support : 4 éléments
 
  **Vue différentielle** 
 
@@ -44,7 +44,7 @@ Cette structure est dérivée de [EntiteJuridique](https://interop.esante.gouv.f
 ** Résumé **
 
 Obligatoire : 3 éléments(1 élément obligatoire(s) imbriqué(s))
- Must-Support : 3 éléments
+ Must-Support : 4 éléments
 
  
 
@@ -63,7 +63,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgcFournisseu
   "name" : "PDLGCFournisseurSortant",
   "title" : "PDLGC FournisseurSortant",
   "status" : "draft",
-  "date" : "2026-07-23T14:32:10+00:00",
+  "date" : "2026-07-23T16:03:49+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -112,7 +112,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgcFournisseu
       "max" : "1",
       "type" : [{
         "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgcContactPortabilite"
-      }]
+      }],
+      "mustSupport" : true
     },
     {
       "id" : "pdlgcFournisseurSortant.lgcSystem",

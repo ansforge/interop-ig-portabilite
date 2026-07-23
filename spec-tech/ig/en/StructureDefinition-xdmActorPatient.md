@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-xdmActorPatient.c
   "name" : "XDMActorPatient",
   "title" : "XDM ActorPatient",
   "status" : "draft",
-  "date" : "2026-07-23T14:32:10+00:00",
+  "date" : "2026-07-23T16:03:49+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -84,7 +84,7 @@ Other representations of profile: [CSV](../StructureDefinition-xdmActorPatient.c
       "id" : "xdmActorPatient.XCN1.value[x]",
       "path" : "xdmActorPatient.XCN1.value[x]",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/matriculeIns"
+        "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/patId"
       }]
     },
     {

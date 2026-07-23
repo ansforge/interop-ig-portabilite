@@ -65,7 +65,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdmSubmissionSe
   "name" : "XDMSubmissionSet",
   "title" : "XDM SubmissionSet",
   "status" : "draft",
-  "date" : "2026-07-23T14:32:10+00:00",
+  "date" : "2026-07-23T16:03:49+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -165,8 +165,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdmSubmissionSe
     {
       "id" : "xdmSubmissionSet.patientID",
       "path" : "xdmSubmissionSet.patientID",
-      "short" : "Cette métadonnée représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient tel que défini dans le cadre juridique.",
-      "definition" : "Cette métadonnée représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient tel que défini dans le cadre juridique.",
+      "short" : "Cette métadonnée contient l'identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange. Le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité. À défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé.",
+      "definition" : "Cette métadonnée contient l'identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange. Le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité. À défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé.",
       "min" : 1,
       "max" : "1",
       "type" : [{

@@ -64,8 +64,8 @@
     "sources" : ["1.2.250.1.213.1.1.5.461"],
     "uses" : {
     },
-    "StructureDefinition-xdmAuthor.html" : "XDM Author",
     "StructureDefinition-xdmAuthorDocumentEntry.html" : "XDM AuthorDocumentEntry",
+    "StructureDefinition-xdmAuthor.html" : "XDM Author",
     "StructureDefinition-xdmAuthorSubmissionSet.html" : "XDM AuthorSubmissionSet"
   },
   {
@@ -191,8 +191,8 @@
     "sources" : ["1.2.250.1.213.1.1.5.124"],
     "uses" : {
     },
-    "StructureDefinition-xdmAuthor.html" : "XDM Author",
     "StructureDefinition-xdmAuthorDocumentEntry.html" : "XDM AuthorDocumentEntry",
+    "StructureDefinition-xdmAuthor.html" : "XDM Author",
     "StructureDefinition-xdmAuthorSubmissionSet.html" : "XDM AuthorSubmissionSet"
   },
   {

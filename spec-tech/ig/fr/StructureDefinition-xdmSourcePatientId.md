@@ -57,7 +57,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdmSourcePatien
   "name" : "XDMSourcePatientId",
   "title" : "XDM SourcePatientId",
   "status" : "draft",
-  "date" : "2026-07-23T14:32:10+00:00",
+  "date" : "2026-07-23T16:03:49+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -90,19 +90,19 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdmSourcePatien
     {
       "id" : "xdmSourcePatientId.CX1",
       "path" : "xdmSourcePatientId.CX1",
-      "short" : "Identifiant du patient, en l’occurrence, le matricule INS du patient tel que défini dans le cadre juridique",
-      "definition" : "Identifiant du patient, en l’occurrence, le matricule INS du patient tel que défini dans le cadre juridique",
+      "short" : "Identifiant secondaire du patient, en l’occurrence. Equivalent à PatientId s'il n'y a pas d'identifiant secondaire.",
+      "definition" : "Identifiant secondaire du patient, en l’occurrence. Equivalent à PatientId s'il n'y a pas d'identifiant secondaire.",
       "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "Identifier"
+        "code" : "string"
       }]
     },
     {
       "id" : "xdmSourcePatientId.CX4",
       "path" : "xdmSourcePatientId.CX4",
-      "short" : "Identifiant de l’autorité d’affectation de l’INS utilisé.",
-      "definition" : "Identifiant de l’autorité d’affectation de l’INS utilisé.",
+      "short" : "Identifiant de l’autorité d’affectation de l'identifiant utilisé.",
+      "definition" : "Cet identifiant, au format HL7 v.2.5 est constitué de trois sous-composants qui prennent les valeurs suivantes en fonction du type d'identifiant.\nINS : Valeur de Namespace ID (IS) = Vide, pas de valeur | Valeur de Universal ID (ST) = OID de l’autorité d’affectation de l’INS utilisé, prise dans la liste des OID des autorités d'affectation des INS | Valeur de Universal ID type (ID) = ISO\nAutre identifiant : Valeur de Namespace ID (IS) = Vide, pas de valeur | Valeur de Universal ID (ST) = OID de l’autorité d’affectation dl'identifiant (i.e. l'instituion qui a attribué cet identifiant) | Valeur de Universal ID type (ID) = ISO",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -112,8 +112,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdmSourcePatien
     {
       "id" : "xdmSourcePatientId.CX5",
       "path" : "xdmSourcePatientId.CX5",
-      "short" : "'NH' pour un maticule INS tel que défini dans le cadre juridique",
-      "definition" : "'NH' pour un maticule INS tel que défini dans le cadre juridique",
+      "short" : "'NH' pour les patients identifiés par leur INS, 'PI' pour les patients identifiés par d'autres identifiants.",
+      "definition" : "'NH' pour les patients identifiés par leur INS, 'PI' pour les patients identifiés par d'autres identifiants.",
       "min" : 1,
       "max" : "1",
       "type" : [{

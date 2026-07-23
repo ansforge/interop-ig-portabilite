@@ -14,7 +14,7 @@
   "name" : "PDLGC",
   "title" : "Portabilité des Données LGC",
   "status" : "draft",
-  "date" : "2026-07-23T14:32:10+00:00",
+  "date" : "2026-07-23T16:03:49+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -878,6 +878,11 @@
       "id" : "LogicalModelArchivePortabilite",
       "name" : "Modèle logique structure Archive de portabilité",
       "description" : "Modèles logiques associés aux différents fichiers et répertoires structurant une archive de portabilité"
+    },
+    {
+      "id" : "LogicalModelIdentifiant",
+      "name" : "Identifiants nationaux",
+      "description" : "Format des identifiants nationaux"
     }],
     "resource" : [{
       "extension" : [{
@@ -885,12 +890,12 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/matriculeIns"
+        "reference" : "StructureDefinition/patId"
       },
-      "name" : "MatriculeINS",
-      "description" : "Matricule de l'Identité Nationale de Santé (INS). Il correspond au NIR (Numéro d’Identification au Répertoire des personnes physiques) ou au NIA (Numéro Identifiant Attente) de l’individu).",
+      "name" : "Identifiant Patient",
+      "description" : "Identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange. Le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité. À défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé.",
       "exampleBoolean" : false,
-      "groupingId" : "LogicalModelXDM"
+      "groupingId" : "LogicalModelIdentifiant"
     },
     {
       "extension" : [{
@@ -1156,7 +1161,7 @@
       "name" : "PSIdNat",
       "description" : "Identification nationale principale du professionnel propre aux SI de l’ANS et au CI-SIS. (Correspondance dans le MOS : idNat_PS) \n\nL’identification nationale du PS est construite selon le tableau dessous :\n-  0 + N° ADELI \n- 1 + Identifiant cabinet ADELI/identifiant interne \n- 3 + FINESS/identifiant interne \n- 4 + SIREN/identifiant interne \n- 5 + SIRET/identifiant interne \n- 6 + Identifiant cabinet RPPS/identifiant interne \n- 8 + N° RPPS",
       "exampleBoolean" : false,
-      "groupingId" : "LogicalModelXDM"
+      "groupingId" : "LogicalModelIdentifiant"
     },
     {
       "extension" : [{
@@ -1169,7 +1174,7 @@
       "name" : "SNR",
       "description" : "Identifiant interne de l’instance de la solution ayant produit le document au format OID",
       "exampleBoolean" : false,
-      "groupingId" : "LogicalModelXDM"
+      "groupingId" : "LogicalModelIdentifiant"
     },
     {
       "extension" : [{
@@ -1194,7 +1199,7 @@
       "name" : "StructIdNat",
       "description" : "Identification nationale principale d’une structure propre aux SI de l'ANS et au CI-SIS 4. \n\nL’identification nationale d’une structure est construite selon le tableau dessous :\n- 0 + Identifiant cabinet ADELI \n- 1 + N° FINESS 2 + N° SIREN \n- 3 + N° SIRET \n- 4 + N° RPPS-rang \n- Néant + N° technique",
       "exampleBoolean" : false,
-      "groupingId" : "LogicalModelXDM"
+      "groupingId" : "LogicalModelIdentifiant"
     },
     {
       "extension" : [{
@@ -1207,7 +1212,7 @@
       "name" : "SystIdNat",
       "description" : "Identification d'un systeme\n\nL’identification du systeme  est construite selon le tableau dessous :\n- 1 + Identifiant cabinet ADELI/Identifiant interne du système dans la structure \n- 3 + FINESS/Identifiant interne du système dans la structure  \n- 4 + SIREN/Identifiant interne du système dans la structure \n- 5 + SIRET/Identifiant interne du système dans la structure \n- 6 + Identifiant cabinet RPPS/Identifiant interne du système dans la structure",
       "exampleBoolean" : false,
-      "groupingId" : "LogicalModelXDM"
+      "groupingId" : "LogicalModelIdentifiant"
     },
     {
       "extension" : [{
@@ -1448,7 +1453,7 @@
         "reference" : "StructureDefinition/xdmPatientId"
       },
       "name" : "XDM PatientId",
-      "description" : "Modèle logique de patientID.\nPatientID représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient.",
+      "description" : "Modèle logique de patientID.\nCette métadonnée contient l'identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange. Le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité. À défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé.",
       "exampleBoolean" : false,
       "groupingId" : "LogicalModelXDM"
     },

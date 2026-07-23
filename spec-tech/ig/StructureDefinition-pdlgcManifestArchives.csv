@@ -5,7 +5,7 @@
 ","Patient | Transverse","Patient | Transverse","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-archive-type|0.1.0","",,,,"pdlgcManifestArchives.type",1,1,"",""
 "pdlgcManifestArchives.nom","pdlgcManifestArchives.nom","","","",1,1,"","","","string {[]} {[]}
 ","Nom du répertoire","Nom du répertoire","","","","","","","","","",,,,,"",,,,"pdlgcManifestArchives.nom",1,1,"",""
-"pdlgcManifestArchives.patientId","pdlgcManifestArchives.patientId","","","",0,1,"","","","string {[]} {[]}
+"pdlgcManifestArchives.patientId","pdlgcManifestArchives.patientId","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/patId {[]} {[]}
 ","Identifiant du Patient s'il s'agit d'un répertoire Patient","Identifiant du Patient s'il s'agit d'un répertoire Patient","","","","","","","","","",,,,,"",,,,"pdlgcManifestArchives.patientId",0,1,"",""
 "pdlgcManifestArchives.periodeCouverte","pdlgcManifestArchives.periodeCouverte","","","",0,1,"","","","Period {[]} {[]}
 ","Période couverte par l'export dans le cas d'un export ciblé","Période couverte par l'export dans le cas d'un export ciblé","","","","","","","","","",,,,,"",,,,"pdlgcManifestArchives.periodeCouverte",0,1,"",""

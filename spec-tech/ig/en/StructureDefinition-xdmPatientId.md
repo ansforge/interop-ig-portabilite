@@ -3,7 +3,7 @@
 ## Logical Model: XDM PatientId 
 
  
-Modèle logique de patientID. PatientID représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient. 
+Modèle logique de patientID. Cette métadonnée contient l'identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange. Le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité. À défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé. 
 
 **Usages:**
 
@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-xdmPatientId.csv)
   "name" : "XDMPatientId",
   "title" : "XDM PatientId",
   "status" : "draft",
-  "date" : "2026-07-23T14:32:10+00:00",
+  "date" : "2026-07-23T16:03:49+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-xdmPatientId.csv)
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Modèle logique de patientID.\nPatientID représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient. ",
+  "description" : "Modèle logique de patientID.\nCette métadonnée contient l'identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange. Le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité. À défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé. ",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -60,13 +60,13 @@ Other representations of profile: [CSV](../StructureDefinition-xdmPatientId.csv)
       "id" : "xdmPatientId",
       "path" : "xdmPatientId",
       "short" : "XDM PatientId",
-      "definition" : "Modèle logique de patientID.\nPatientID représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient. "
+      "definition" : "Modèle logique de patientID.\nCette métadonnée contient l'identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange. Le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité. À défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé. "
     },
     {
       "id" : "xdmPatientId.CX1",
       "path" : "xdmPatientId.CX1",
-      "short" : "Identifiant du patient, en l’occurrence, le matricule INS du patient tel que défini dans le cadre juridique",
-      "definition" : "Identifiant du patient, en l’occurrence, le matricule INS du patient tel que défini dans le cadre juridique",
+      "short" : "Identifiant du patient. L'INS du patient tel que défini dans le cadre juridique, est à utiliser prioritairement. À défaut, un autre identifiant (ex : IPP du système émetteur) peut être utilisé.",
+      "definition" : "Identifiant du patient. L'INS du patient tel que défini dans le cadre juridique, est à utiliser prioritairement. À défaut, un autre identifiant (ex : IPP du système émetteur) peut être utilisé.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -76,8 +76,8 @@ Other representations of profile: [CSV](../StructureDefinition-xdmPatientId.csv)
     {
       "id" : "xdmPatientId.CX4",
       "path" : "xdmPatientId.CX4",
-      "short" : "Identifiant de l’autorité d’affectation de l’INS utilisé.",
-      "definition" : "Cet identifiant, au format HL7 v.2.5 est constitué de trois sous-composants qui prennent les valeurs suivantes.\n|Valeur de Namespace ID (IS)| Valeur de Universal ID (ST)| Valeur de Universal ID type (ID)\nVide, pas de valeur |OID de l’autorité d’affectation de l’INS utilisé Valeur de Universal ID type (ID) ISO prise dans la liste des OID des autorités d'affectation des INS | ISO",
+      "short" : "Identifiant de l’autorité d’affectation de l'identifiant utilisé.",
+      "definition" : "Cet identifiant, au format HL7 v.2.5 est constitué de trois sous-composants qui prennent les valeurs suivantes en fonction du type d'identifiant.\nINS : Valeur de Namespace ID (IS) = Vide, pas de valeur | Valeur de Universal ID (ST) = OID de l’autorité d’affectation de l’INS utilisé, prise dans la liste des OID des autorités d'affectation des INS | Valeur de Universal ID type (ID) = ISO\nAutre identifiant : Valeur de Namespace ID (IS) = Vide, pas de valeur | Valeur de Universal ID (ST) = OID de l’autorité d’affectation dl'identifiant (i.e. l'instituion qui a attribué cet identifiant) | Valeur de Universal ID type (ID) = ISO",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -87,8 +87,8 @@ Other representations of profile: [CSV](../StructureDefinition-xdmPatientId.csv)
     {
       "id" : "xdmPatientId.CX5",
       "path" : "xdmPatientId.CX5",
-      "short" : "'NH' pour un maticule INS tel que défini dans le cadre juridique",
-      "definition" : "'NH' pour un maticule INS tel que défini dans le cadre juridique",
+      "short" : "'NH' pour les patients identifiés par leur INS, 'PI' pour les patients identifiés par d'autres identifiants",
+      "definition" : "'NH' pour les patients identifiés par leur INS, 'PI' pour les patients identifiés par d'autres identifiants",
       "min" : 1,
       "max" : "1",
       "type" : [{

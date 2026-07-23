@@ -14,15 +14,15 @@ Generated $--. FHIR version $-- for ans.fhir.fr.pdlgc#$-- (canonical = https://i
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/CodeSystem-cs-pdlgc-export-type : 0 / 1 / 3
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/CodeSystem-cs-xdm-association-type : 0 / 1 / 3
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.pdlgc : 0 / 0 / 2
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-matriculeIns : 0 / 0 / 3
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-patId : 0 / 0 / 3
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgcArchivePatient : 0 / 0 / 16
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgcArchivePortabilite : 0 / 0 / 3
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgcArchiveTransverse : 0 / 0 / 7
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgcContactPortabilite : 0 / 9 / 4
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgcDocumentation : 0 / 0 / 3
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgcFournisseurSortant : 0 / 10 / 3
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgcIndex : 0 / 0 / 6
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgcManifest : 0 / 15 / 15
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgcIndex : 0 / 0 / 3
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgcManifest : 0 / 15 / 16
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgcManifestArchives : 0 / 0 / 5
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgcMetadata : 0 / 0 / 3
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgcReadme : 0 / 0 / 3
@@ -30,7 +30,7 @@ Generated $--. FHIR version $-- for ans.fhir.fr.pdlgc#$-- (canonical = https://i
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgcSystem : 0 / 0 / 3
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-psIdNat : 0 / 2 / 5
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-snr : 0 / 2 / 3
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-structIdNat : 0 / 2 / 3
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-structIdNat : 0 / 2 / 5
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-systIdNat : 0 / 0 / 3
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-xdmActorPatient : 0 / 17 / 3
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-xdmActorPs : 0 / 17 / 3
@@ -150,9 +150,9 @@ INFORMATION: CodeSystem.meta.profile[0]: Pinned the version of http://hl7.org/fh
 WARNING: Resource: The resource CodeSystem/cs-xdm-association-type should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.pdlgc.json ==
 INFORMATION: Resource: The resource ImplementationGuide/ans.fhir.fr.pdlgc could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/StructureDefinition-matriculeIns.json ==
+== fsh-generated/resources/StructureDefinition-patId.json ==
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
-INFORMATION: Resource: The resource StructureDefinition/matriculeIns could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+INFORMATION: Resource: The resource StructureDefinition/patId could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-pdlgcArchivePatient.json ==
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[3].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -210,9 +210,6 @@ WARNING: StructureDefinition/pdlgcFournisseurSortant: StructureDefinition.snapsh
 INFORMATION: Resource: The resource StructureDefinition/pdlgcFournisseurSortant could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-pdlgcIndex.json ==
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[1].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier to 5.3.0
-INFORMATION: StructureDefinition.differential.element[1].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier to 5.3.0
-INFORMATION: StructureDefinition/pdlgcIndex: pdlgcIndex.structIdNat: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.3.0 is deprecated with the note: 'Use either ElementDefinition.code or ElementDefinition.mapping to provide the mapping instead'
 INFORMATION: Resource: The resource StructureDefinition/pdlgcIndex could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-pdlgcManifest.json ==
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
@@ -243,6 +240,7 @@ WARNING: StructureDefinition/pdlgcManifest: StructureDefinition.differential.ele
 WARNING: StructureDefinition/pdlgcManifest: StructureDefinition.differential.element[13]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/pdlgcManifest: StructureDefinition.differential.element[14]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/pdlgcManifest: StructureDefinition.differential.element[15]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+INFORMATION: StructureDefinition/pdlgcManifest: pdlgcManifest.Archive.archiveid: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.3.0 is deprecated with the note: 'Use either ElementDefinition.code or ElementDefinition.mapping to provide the mapping instead'
 INFORMATION: Resource: The resource StructureDefinition/pdlgcManifest could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-pdlgcManifestArchives.json ==
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
@@ -439,6 +437,8 @@ WARNING: StructureDefinition/snr: StructureDefinition.differential.element[1]: C
 INFORMATION: Resource: The resource StructureDefinition/snr could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-structIdNat.json ==
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[1].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier to 5.3.0
+INFORMATION: StructureDefinition.differential.element[1].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier to 5.3.0
 WARNING: StructureDefinition/structIdNat: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/structIdNat: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 INFORMATION: Resource: The resource StructureDefinition/structIdNat could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)

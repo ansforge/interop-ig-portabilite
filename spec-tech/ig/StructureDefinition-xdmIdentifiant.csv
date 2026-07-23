@@ -2,4 +2,4 @@
 "xdmIdentifiant","xdmIdentifiant","","","",0,*,"","","","null {[]} {[]}
 ","XDM Identifiant","Identifiant de professionnel de santé, de patient, de SNR ou de système","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "xdmIdentifiant.value[x]","xdmIdentifiant.value[x]","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/psIdNat {[]} {[]}
-https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/matriculeIns {[]} {[]}https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/snr {[]} {[]}https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/systIdNat {[]} {[]}","Identifiant","Identifiant","","","","","","","","","",,,,,"",,,,"xdmIdentifiant.value[x]",1,1,"",""
+https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/patId {[]} {[]}https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/snr {[]} {[]}https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/systIdNat {[]} {[]}","Identifiant","Identifiant","","","","","","","","","",,,,,"",,,,"xdmIdentifiant.value[x]",1,1,"",""

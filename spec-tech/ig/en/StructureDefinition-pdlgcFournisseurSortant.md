@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgcFournisseurS
   "name" : "PDLGCFournisseurSortant",
   "title" : "PDLGC FournisseurSortant",
   "status" : "draft",
-  "date" : "2026-07-23T14:32:10+00:00",
+  "date" : "2026-07-23T16:03:49+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -81,7 +81,8 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgcFournisseurS
       "max" : "1",
       "type" : [{
         "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgcContactPortabilite"
-      }]
+      }],
+      "mustSupport" : true
     },
     {
       "id" : "pdlgcFournisseurSortant.lgcSystem",
