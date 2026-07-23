@@ -5,5 +5,5 @@
 ","Nom du logiciel","Nom du logiciel","","","","","","","","","",,,,,"",,,,"pdlgcSystem.lgcNom",1,1,"",""
 "pdlgcSystem.lgcVersion","pdlgcSystem.lgcVersion","","","",1,1,"","","","string {[]} {[]}
 ","Version du logiciel","Version du logiciel","","","","","","","","","",,,,,"",,,,"pdlgcSystem.lgcVersion",1,1,"",""
-"pdlgcSystem.lgcIdentifiant","pdlgcSystem.lgcIdentifiant","","","",0,1,"","","","Identifier {[]} {[]}
-","SystIdNat","SystIdNat","","","","","","","","","",,,,,"",,,,"pdlgcSystem.lgcIdentifiant",0,1,"",""
+"pdlgcSystem.lgcIdentifiant","pdlgcSystem.lgcIdentifiant","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/systIdNat {[]} {[]}
+","Identifiant du système","Identifiant du système","","","","","","","","","",,,,,"",,,,"pdlgcSystem.lgcIdentifiant",0,1,"",""

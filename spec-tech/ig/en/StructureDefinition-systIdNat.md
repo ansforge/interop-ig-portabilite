@@ -14,7 +14,7 @@ L’identification du systeme est construite selon le tableau dessous :
 
 **Usages:**
 
-* Use this Logical Model: [XDM ActorSystem](StructureDefinition-xdmActorSystem.md) and [XDM Identifiant](StructureDefinition-xdmIdentifiant.md)
+* Use this Logical Model: [PDLGC System](StructureDefinition-pdlgcSystem.md), [XDM ActorSystem](StructureDefinition-xdmActorSystem.md) and [XDM Identifiant](StructureDefinition-xdmIdentifiant.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ans.fhir.fr.pdlgc|current/StructureDefinition/StructureDefinition-systIdNat.json)
 
@@ -39,7 +39,7 @@ Other representations of profile: [CSV](../StructureDefinition-systIdNat.csv), [
   "name" : "SystIdNat",
   "title" : "SystIdNat",
   "status" : "draft",
-  "date" : "2026-07-23T16:03:49+00:00",
+  "date" : "2026-07-23T16:11:23+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -77,7 +77,8 @@ Other representations of profile: [CSV](../StructureDefinition-systIdNat.csv), [
       "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "string"
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.3.0"]
       }]
     }]
   }

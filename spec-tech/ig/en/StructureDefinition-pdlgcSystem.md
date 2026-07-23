@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgcSystem.csv),
   "name" : "PDLGCSystem",
   "title" : "PDLGC System",
   "status" : "draft",
-  "date" : "2026-07-23T16:03:49+00:00",
+  "date" : "2026-07-23T16:11:23+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -87,12 +87,12 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgcSystem.csv),
     {
       "id" : "pdlgcSystem.lgcIdentifiant",
       "path" : "pdlgcSystem.lgcIdentifiant",
-      "short" : "SystIdNat",
-      "definition" : "SystIdNat",
+      "short" : "Identifiant du système",
+      "definition" : "Identifiant du système",
       "min" : 0,
       "max" : "1",
       "type" : [{
-        "code" : "Identifier"
+        "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/systIdNat"
       }]
     }]
   }

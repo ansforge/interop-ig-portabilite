@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "380a7ca5-ffb2-42de-a76d-e98340b474b2",
+  "id" : "471c3959-8aad-4d96-bed6-cd4402f0f664",
   "meta" : {
-    "lastUpdated" : "2026-07-23T16:03:49.610+00:00"
+    "lastUpdated" : "2026-07-23T16:11:23.647+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -22,7 +22,7 @@
       "title" : "Type d'association XDS (VS)",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-07-23T16:03:49+00:00",
+      "date" : "2026-07-23T16:11:23+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -31,8 +31,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:8f2720e4-73a9-4b00-b354-ceb74d0091cb",
-        "timestamp" : "2026-07-23T16:04:54+00:00",
+        "identifier" : "urn:uuid:8e7f4a38-28fd-4e4d-8297-94c1d30479f6",
+        "timestamp" : "2026-07-23T16:12:15+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -83,7 +83,7 @@
       "title" : "Type d'association XDS (VS)",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-07-23T16:03:49+00:00",
+      "date" : "2026-07-23T16:11:23+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -92,8 +92,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:8f2720e4-73a9-4b00-b354-ceb74d0091cb",
-        "timestamp" : "2026-07-23T16:04:54+00:00",
+        "identifier" : "urn:uuid:8e7f4a38-28fd-4e4d-8297-94c1d30479f6",
+        "timestamp" : "2026-07-23T16:12:15+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -144,7 +144,7 @@
       "title" : "Type d'association XDS (VS)",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-07-23T16:03:49+00:00",
+      "date" : "2026-07-23T16:11:23+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -153,8 +153,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:9a2c4bfe-0768-4f0f-8ad6-39809db9a72e",
-        "timestamp" : "2026-07-23T16:04:54+00:00",
+        "identifier" : "urn:uuid:92099362-b82d-4105-963f-e092008820e6",
+        "timestamp" : "2026-07-23T16:12:15+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -207,7 +207,7 @@
       "title" : "PDLGC Type d'archive",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-07-23T16:03:49+00:00",
+      "date" : "2026-07-23T16:11:23+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -216,8 +216,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d5c04c91-e38b-4366-be02-d239e3ea47dc",
-        "timestamp" : "2026-07-23T16:04:54+00:00",
+        "identifier" : "urn:uuid:d9eb1561-5516-442b-b8ab-df72f26b19d4",
+        "timestamp" : "2026-07-23T16:12:15+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -268,7 +268,7 @@
       "title" : "PDLGC Type d'archive",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-07-23T16:03:49+00:00",
+      "date" : "2026-07-23T16:11:23+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -277,8 +277,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d5c04c91-e38b-4366-be02-d239e3ea47dc",
-        "timestamp" : "2026-07-23T16:04:54+00:00",
+        "identifier" : "urn:uuid:d9eb1561-5516-442b-b8ab-df72f26b19d4",
+        "timestamp" : "2026-07-23T16:12:15+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -329,7 +329,7 @@
       "title" : "PDLGC Type d'archive",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-07-23T16:03:49+00:00",
+      "date" : "2026-07-23T16:11:23+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -338,8 +338,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:1aaecc3f-2c34-4b42-8a18-8146dbd3830b",
-        "timestamp" : "2026-07-23T16:04:54+00:00",
+        "identifier" : "urn:uuid:454c0748-6d73-4814-8179-7775f6377039",
+        "timestamp" : "2026-07-23T16:12:15+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -392,7 +392,7 @@
       "title" : "PDLGC Statut de l'export",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-07-23T16:03:49+00:00",
+      "date" : "2026-07-23T16:11:23+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -401,8 +401,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:9a6649f2-8a9a-47ff-a7b6-6ecf63ce4d15",
-        "timestamp" : "2026-07-23T16:04:54+00:00",
+        "identifier" : "urn:uuid:80405603-085c-4564-b73e-b30519e55166",
+        "timestamp" : "2026-07-23T16:12:15+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -457,7 +457,7 @@
       "title" : "PDLGC Statut de l'export",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-07-23T16:03:49+00:00",
+      "date" : "2026-07-23T16:11:23+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -466,8 +466,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:9a6649f2-8a9a-47ff-a7b6-6ecf63ce4d15",
-        "timestamp" : "2026-07-23T16:04:54+00:00",
+        "identifier" : "urn:uuid:80405603-085c-4564-b73e-b30519e55166",
+        "timestamp" : "2026-07-23T16:12:15+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -522,7 +522,7 @@
       "title" : "PDLGC Statut de l'export",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-07-23T16:03:49+00:00",
+      "date" : "2026-07-23T16:11:23+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -531,8 +531,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:4b740be0-b501-4deb-a890-c030f5a7583c",
-        "timestamp" : "2026-07-23T16:04:54+00:00",
+        "identifier" : "urn:uuid:6c1d0485-6433-4340-859f-087c42866f9a",
+        "timestamp" : "2026-07-23T16:12:15+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -590,7 +590,7 @@
       "title" : "PDLGC Type d'Export",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-07-23T16:03:49+00:00",
+      "date" : "2026-07-23T16:11:23+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -599,8 +599,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:eeeb84ee-0bed-4244-b474-5010ad96cfb4",
-        "timestamp" : "2026-07-23T16:04:54+00:00",
+        "identifier" : "urn:uuid:5a311571-5944-4186-af3b-21970a08862b",
+        "timestamp" : "2026-07-23T16:12:15+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -655,7 +655,7 @@
       "title" : "PDLGC Type d'Export",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-07-23T16:03:49+00:00",
+      "date" : "2026-07-23T16:11:23+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -664,8 +664,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:eeeb84ee-0bed-4244-b474-5010ad96cfb4",
-        "timestamp" : "2026-07-23T16:04:54+00:00",
+        "identifier" : "urn:uuid:5a311571-5944-4186-af3b-21970a08862b",
+        "timestamp" : "2026-07-23T16:12:15+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -720,7 +720,7 @@
       "title" : "PDLGC Type d'Export",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-07-23T16:03:49+00:00",
+      "date" : "2026-07-23T16:11:23+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -729,8 +729,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:3211604b-788b-4dd7-bf58-e5f5dcf77445",
-        "timestamp" : "2026-07-23T16:04:54+00:00",
+        "identifier" : "urn:uuid:ae4f5ce2-af8d-437c-aa01-edd863c82168",
+        "timestamp" : "2026-07-23T16:12:15+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{

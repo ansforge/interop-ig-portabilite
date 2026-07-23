@@ -9,5 +9,5 @@ L’identification du systeme  est construite selon le tableau dessous :
 - 5 + SIRET/Identifiant interne du système dans la structure 
 - 6 + Identifiant cabinet RPPS/Identifiant interne du système dans la structure 
 ","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"systIdNat.systIdNat","systIdNat.systIdNat","","","",1,1,"","","","string {[]} {[]}
+"systIdNat.systIdNat","systIdNat.systIdNat","","","",1,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.3.0]]} {[]}
 ","XDMIdentifiantSysteme","XDMIdentifiantSysteme","","","","","","","","","",,,,,"",,,,"systIdNat.systIdNat",1,1,"",""

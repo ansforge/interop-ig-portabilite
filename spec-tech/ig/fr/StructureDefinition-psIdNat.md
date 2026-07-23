@@ -41,6 +41,12 @@ Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base)
 
 Obligatoire : 0 élément(1 élément obligatoire(s) imbriqué(s))
 
+**Structures**
+
+Cette structure fait référence à ces autres structures:
+
+* [Identifier (http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.3.0)](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-elementdefinition-identifier.html)
+
  **Vue différentielle** 
 
 Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base) 
@@ -56,6 +62,12 @@ Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base)
 ** Résumé **
 
 Obligatoire : 0 élément(1 élément obligatoire(s) imbriqué(s))
+
+**Structures**
+
+Cette structure fait référence à ces autres structures:
+
+* [Identifier (http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.3.0)](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-elementdefinition-identifier.html)
 
  
 
@@ -74,7 +86,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-psIdNat.csv), [
   "name" : "PSIdNat",
   "title" : "PSIdNat",
   "status" : "draft",
-  "date" : "2026-07-23T16:03:49+00:00",
+  "date" : "2026-07-23T16:11:23+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -112,7 +124,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-psIdNat.csv), [
       "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "string"
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.3.0"]
       }],
       "constraint" : [{
         "key" : "PSIdNat-invariant",
