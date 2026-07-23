@@ -14,7 +14,7 @@ L’identification du systeme  est construite selon le tableau dessous :
 
 """
 
-* systIdNat 1..1 string "XDMIdentifiantSysteme" "XDMIdentifiantSysteme"
+* systIdNat 1..1 identifier "XDMIdentifiantSysteme" "XDMIdentifiantSysteme"
 
 
 

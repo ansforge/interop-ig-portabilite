@@ -14,7 +14,7 @@ L’identification nationale du PS est construite selon le tableau dessous :
 - 8 + N° RPPS 
 
 """
-* PSIdNat 1..1 string "PSIdNat" "PSIdNat"
+* PSIdNat 1..1 identifier "PSIdNat" "PSIdNat"
 * PSIdNat obeys PSIdNat-invariant
 
 Invariant:   PSIdNat-invariant
