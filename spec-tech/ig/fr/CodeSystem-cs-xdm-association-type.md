@@ -30,7 +30,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "Type d'association XDS",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-07-22T17:16:50+00:00",
+  "date" : "2026-07-23T08:53:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
