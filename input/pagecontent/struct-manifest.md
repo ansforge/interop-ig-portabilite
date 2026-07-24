@@ -18,15 +18,21 @@ Le modèle logique associé au fichier `MANIFEST.XML` est consultable <a href="S
     <exportType>MASSIF</exportType>
     <exportStatus>COMPLETE</exportStatus>
     <comments>Export de données LGC répondant à la demande du Dr Dupond le 13 juin 2026</comments>
-    <editeurSortant>
-      <raisonSociale>Editeur Exemple de LGC</raisonSociale>
-      <idNatStruct>175259803546</idNatStruct>
-      <contact>
-        <nom>Service Portabilité</nom>
-        <email>portabilite@editeur.fr</email>
-        <telephone>+33100000000</telephone>
-      </contact>
-    </editeurSortant>
+    <sourceSystem>
+      <lgcSoftwareVendor>
+        <raisonSociale>Editeur Exemple de LGC</raisonSociale>
+        <idNatStruct>175259803546</idNatStruct>
+        <contact>
+          <nom>Service Portabilité</nom>
+          <email>portabilite@editeur.fr</email>
+          <telephone>+33100000000</telephone>
+        </contact>
+      </lgcSoftwareVendor>
+      <lgcSoftwareModelName>Modèle exemple de LGC<lgcSoftwareModelName>
+      <lgcSystemName>Système exemple LGC</lgcSystemName>
+      <lgcVersion>LGC V1.0</lgcVersion>
+      <lgcIdentifier>175259803546/2789345815</lgcIdentifier>
+    </sourceSystem>
     <PatientArchiveCount>2</PatientArchiveCount>
     <TransverseArchiveCount>1</TransverseArchiveCount>
     <Archives>

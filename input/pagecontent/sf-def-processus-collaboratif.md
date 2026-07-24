@@ -33,12 +33,12 @@ Il est important de noter que les modalités d'exploitation de l'archive (import
 
 | Action | Description |
 | ----- | ----- |
-| Initier la demande d'export | Le professionnel de santé adresse à l'éditeur sortant une demande d'export précisant le périmètre souhaité (unitaire, ciblé ou massif). Cette demande intervient soit de sa propre initiative soit à l'initiative du patient. |
-| Produire l'archive | L'éditeur sortant génère l'archive de portabilité conforme au profil IHE XDM, incluant les données du périmètre déterminé, la documentation d'export et le rapport d'intégrité associés. |
-| Mettre à disposition l'archive | L'éditeur sortant met l'archive à disposition du demandeur ou de l'éditeur destinataire selon un mode sécurisé (lien chiffré, plateforme de transfert HDS ou support physique à défaut). |
-| Vérifier la complétude et l'intégrité | Le destinataire de l'archive contrôle, à l'aide du fichier INDEX et du rapport d'intégrité, que l'ensemble des données attendues a été correctement transmis. |
+| Initier la demande d'export | Le professionnel de santé adresse au fournisseur sortant une demande d'export précisant le périmètre souhaité (unitaire, ciblé ou massif). Cette demande intervient soit de sa propre initiative soit à l'initiative du patient. |
+| Produire l'archive | Le fournisseur sortant génère l'archive de portabilité conforme au présent volet. |
+| Mettre à disposition l'archive | L'éditeur sortant met l'archive à disposition du demandeur ou du fournisseur destinataire selon un mode sécurisé (lien chiffré, plateforme de transfert HDS ou support physique à défaut). |
+| Vérifier la complétude et l'intégrité | Le destinataire de l'archive s'assure que l'ensemble des données attendues a été correctement transmis. |
 | Intégrer les données / ouvrir l'archive | Si le destinataire est un système, alors il exploite les données reçues en les intégrant. Si le destinataire est une personne alors elle télécharge/ouvre l'archive. |
-| Mettre à disposition / consulter les données | Si le destinataire est un système, il met à disposition les données à l'utilisateur de logiciel. Si le destinataire est une personne, elle consulte directement les données. |
+| Mettre à disposition / consulter les données | Si le destinataire est un système, il met les données à disposition de l'utilisateur du logiciel. Si le destinataire est une personne, elle consulte directement les données. |
 
 <br>
 

@@ -16,7 +16,7 @@ Description: "Le fichier MANIFEST.XML porte les métadonnées globales de l'expo
 * exportStatus 1..1 code "COMPLETE|PARTIAL|SAMPLE"
 * exportStatus from VS_PDLGC_ExportStatus (required)
 * comments 0..1 string "commentaire associé à l'export"
-* editeurSortant 1..1 pdlgcFournisseurSortant "Editeur responsable de l'export des données LGC"
+* sourceSystem 1..1 pdlgcSystem "Logiciel responsable de la production et de l'export de l'archive de portabiltié"
 * patientArchiveCount 1..1 positiveInt "Nombre d'archives patients transportées"
 * transverseArchiveCount 1..1 positiveInt "Nombre d'archives transverse trasnportées"
 * Archive 1..* BackboneElement "informations sur les archives patients et transverses contenues dans l'archive de portabilité"

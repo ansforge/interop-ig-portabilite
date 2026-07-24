@@ -1,4 +1,5 @@
-Cette transaction définit les exigences relatives à la structure d'une archive Zip de Portabilité.
+Cette transaction définit les exigences relatives à la structure d'une archive de Portabilité, les formats d'interchange, les métadonnées et les mécanismes d'intégrité et d'imputabiltié.
+
 Elle est déclenchée par le demandeur (Patient ou Professionnel de Santé) qui souhaite la portabilité de données d'un LGC. Le fournisseur sortant assemble alors le contenu de l'archive ZIP pour la transmettre au destinataire (fournissuer destinataire ou personne physique) qui intègrera / lira les données.
 
 <figure style="text-align:center;">

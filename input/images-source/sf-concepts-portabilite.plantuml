@@ -38,7 +38,7 @@ mindmapDiagram {
 ** 📦  [[StructureDefinition-pdlgc-archive-transverse Archive de données transverses]] (1..1) <<archive>>
 *** 📄  [[StructureDefinition-pdlgc-readme README.TXT]] (1..1) <<file>>
 *** 📁 TRANSVERSE (1..1) <<folder>>
-**** 📄 Document transverse [[sf-perimetre-pivot.html Périmètre pivot]] (1..*) <<file>>
+**** 📄 Document transverse [[st-perimetre-pivot.html Périmètre pivot]] (1..*) <<file>>
 **** 📄 Document transverse hors périmètre pivot (0..*) <<file>>
 
 ** 📦  [[StructureDefinition-pdlgc-archive-patient Archive XDM patient]] (1..*) <<archive>>
@@ -49,7 +49,7 @@ mindmapDiagram {
 *** 📁 IHE_XDM (1..1) <<folder>>
 **** 📁 Lot de soumission (1..1) <<folder>>
 ***** 📄  [[StructureDefinition-pdlgc-metadata METADATA.XML]] (1..1) <<file>>
-***** 📄 Document patient [[sf-perimetre-pivot.html Périmètre pivot]] (1..*) <<file>>
+***** 📄 Document patient [[st-perimetre-pivot.html Périmètre pivot]] (1..*) <<file>>
 ***** 📄 Document patient hors périmètre pivot (0..*) <<file>>
 
 @endmindmap

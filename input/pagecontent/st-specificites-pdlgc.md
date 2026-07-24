@@ -6,14 +6,14 @@ Contrairement au volet Echange de Documents de Santé, qui traite le dossier d'u
 - une archive XDM par patient exporté, conforme au profil IHE XDM et intégrable isolément par le système destinataire sans dépendance aux autres archives de la collection ;
 - une archive de données transverses, regroupant les données ne relevant pas d'un dossier patient individuel (agenda, traces d'activité, données de gestion,...).
 
-L'archive chapeau porte à sa racine un `MANIFEST.XML`, distinct des `METADATA.XML` présents dans chaque archive XDM patient. Le `MANIFEST.XML` décrit la collection dans son ensemble (nombre de dossiers, volumétrie, intégrité globale) et constitue le point d'entrée pour le traitement automatisé de l'export par le système destinataire.
+L'archive chapeau porte à sa racine un `MANIFEST.XML`, distinct des `METADATA.XML` présents dans chaque archive XDM patient. Le `MANIFEST.XML` décrit la collection dans son ensemble (nombre de dossiers, volumétrie, intégrité globale) et constitue le point d'entrée pour le traitement automatisé de l'archive par le système destinataire.
 
 **Un mode de transport non contraint**
 
 Contrairement au volet EDS, le présent volet ne restreint pas le mode de transport de l'archive chapeau. Plusieurs modalités sont admises, à la discrétion des acteurs et dans le respect des exigences de sécurité du référentiel (chiffrement, traçabilité, hébergement HDS) :
 - mise à disposition via une interface de téléchargement sécurisée ;
 - transfert via une plateforme d'échange HDS ;
-- email ;
+- messagerie sécurisée de santé ;
 - support physique chiffré, à titre exceptionnel et dérogatoire.
 
 Le choix du mode de transport ne modifie pas la structure de l'archive chapeau de Portabilité, ni le contenu des archives XDM patient. Les spécifications définies dans ce volet s'appliquent indépendamment du canal retenu.

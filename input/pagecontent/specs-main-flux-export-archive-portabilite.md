@@ -29,7 +29,7 @@
 
 #### Périmètre pivot
 
-{% include sf-perimetre-pivot.md %}
+{% include st-perimetre-pivot.md %}
 
 <br>
 
