@@ -8,7 +8,7 @@ XCN de HL7 v2.5
 
 **Utilisations:**
 
-* Dérivé de ce Modèle logique: [XDM ActorPatient](StructureDefinition-xdmActorPatient.md), [XDM ActorPS](StructureDefinition-xdmActorPs.md), [XDM ActorSNR](StructureDefinition-xdmActorSnr.md) and [XDM ActorSystem](StructureDefinition-xdmActorSystem.md)
+* Dérivé de ce Modèle logique: [XDM ActorPatient](StructureDefinition-xdmActorPatient.md), [XDM ActorPS](StructureDefinition-xdmActorPs.md) and [XDM ActorSystem](StructureDefinition-xdmActorSystem.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.pdlgc|current/StructureDefinition/xdmActorXds)
 
@@ -60,7 +60,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdmActorXds.csv
   "name" : "XDMActorXDS",
   "title" : "XDM ActorXDS",
   "status" : "draft",
-  "date" : "2026-07-23T16:11:23+00:00",
+  "date" : "2026-07-27T13:36:25+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

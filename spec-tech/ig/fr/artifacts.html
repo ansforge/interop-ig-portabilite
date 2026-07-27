@@ -277,18 +277,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-xdmActorSnr.html"
-                  title="StructureDefinition/xdmActorSnr">
-                  <span title="StructureDefinition/xdmActorSnr">XDM ActorSNR
-</span>
-               </a>
-            </td>
-            <td>
-<p>Cet attribut représente l'acteur SNR.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-xdmActorSystem.html"
                   title="StructureDefinition/xdmActorSystem">
                   <span title="StructureDefinition/xdmActorSystem">XDM ActorSystem
@@ -357,7 +345,6 @@ Permet de relier un SubmissionSet ou un DocumentEntry à un autre (remplacement 
   <li>Un professionnel (personne physique) via son logiciel de professionnel,</li>
   <li>Le patient/usager (personne physique) via Mon espace Santé,</li>
   <li>Un système de structure (dispositif, automate, appareil connecté…),</li>
-  <li>Un SNR (Service Numérique Référencé),</li>
 </ul>
 
 <p><strong>author</strong> est un ensemble constitué des sous-attributs <strong>authorInstitution</strong> , <strong>authorPerson</strong>, <strong>authorRole</strong> et <strong>authorSpecialty</strong> et ne porte pas de valeur par lui-même.</p>
@@ -379,7 +366,6 @@ L’auteur peut être :</p>
   <li>Un professionnel (personne physique) via son logiciel de professionnel,</li>
   <li>Le patient/usager (personne physique) via Mon espace Santé,</li>
   <li>Un système de structure (dispositif, automate, appareil connecté…),</li>
-  <li>Un SNR (Service Numérique Référencé),</li>
 </ul>
 </td>
          </tr>
@@ -449,7 +435,7 @@ Un EventCode peut contenir le code représentant :</p>
                </a>
             </td>
             <td>
-<p>Identifiant de professionnel de santé, de patient, de SNR ou de système</p>
+<p>Identifiant de professionnel de santé, de patient ou de système</p>
 </td>
          </tr>
          <tr>
@@ -475,6 +461,12 @@ Cette métadonnée contient l'identifiant du patient tel que connu par les inter
             </td>
             <td>
 <p>Cette métadonnée contient l’identifiant secondaire du patient dans le système d’information du producteur (IPP) ou l’INS, s’il n’y a pas d’identifiant secondaire. Pour les documents d’expression personnelle du patient, cette métadonnée contient l’INS du patient, à savoir le même identifiant que patientId.</p>
+
+<p>Cette métadonnée reprend la structure du segment CX  défini par  HL7v2  et  conformément aux spécifications  :</p>
+<ul>
+  <li><a href="https://esante.gouv.fr/annexe-prise-en-charge-de-lins-dans-les-volets-du-ci-sis">Prise en Charge de l'INS dans les volets du CI-SIS </a></li>
+  <li><a href="https://esante.gouv.fr/volet-partage-de-documents-de-sante">Volet Partage de Documents de Santé</a></li>
+</ul>
 </td>
          </tr>
          <tr>
@@ -487,6 +479,12 @@ Cette métadonnée contient l'identifiant du patient tel que connu par les inter
             </td>
             <td>
 <p>Cette métadonnée contient les traits d’identité du patient concerné par le document, connus par le producteur du document. Les informations présentes dans la métadonnée sourcePatientInfo ne doivent en aucun cas être réutilisées pour calculer un identifiant, ni être mises à jour après la soumission du document.</p>
+
+<p>Cette métadonnée reprend la structure du segment PID (Patient Identification) défini par  HL7v2 et l'extension du profil IHE PAM, conformément aux spécifications  :</p>
+<ul>
+  <li><a href="https://www.interopsante.org/publications">Extension française du profil IHE PAM</a></li>
+  <li><a href="https://esante.gouv.fr/annexe-prise-en-charge-de-lins-dans-les-volets-du-ci-sis">Prise en Charge de l'INS dans les volets du CI-SIS </a></li>
+</ul>
 </td>
          </tr>
          <tr>
@@ -706,17 +704,6 @@ Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.
   <li>6 + Identifiant cabinet RPPS/identifiant interne</li>
   <li>8 + N° RPPS</li>
 </ul>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-snr.html" title="StructureDefinition/snr">
-                  <span title="StructureDefinition/snr">SNR
-</span>
-               </a>
-            </td>
-            <td>
-<p>Identifiant interne de l’instance de la solution ayant produit le document au format OID</p>
 </td>
          </tr>
          <tr>
@@ -989,8 +976,8 @@ Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.pdlgc#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-07-23 16:11:00 +0000">
-    2026-07-23
+  <span title="2026-07-27 13:36:00 +0000">
+    2026-07-27
   </span>
 
           <br/>

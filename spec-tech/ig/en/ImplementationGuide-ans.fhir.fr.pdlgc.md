@@ -14,7 +14,7 @@
   "name" : "PDLGC",
   "title" : "Portabilité des Données LGC",
   "status" : "draft",
-  "date" : "2026-07-23T16:11:23+00:00",
+  "date" : "2026-07-27T13:36:25+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -42,7 +42,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.2.0"
+    "version" : "7.3.0"
   },
   {
     "id" : "hl7ext",
@@ -888,6 +888,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-patId.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/patId"
@@ -901,6 +905,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-pdlgcArchivePatient.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/pdlgcArchivePatient"
@@ -914,6 +922,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-pdlgcArchivePortabilite.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/pdlgcArchivePortabilite"
@@ -927,6 +939,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-pdlgcArchiveTransverse.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/pdlgcArchiveTransverse"
@@ -940,6 +956,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-pdlgcContactPortabilite.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/pdlgcContactPortabilite"
@@ -953,6 +973,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ActorDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ActorDefinition-PDLGC-Demandeur.html"
       }],
       "reference" : {
         "reference" : "ActorDefinition/PDLGC-Demandeur"
@@ -965,6 +989,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ActorDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ActorDefinition-PDLGC-Destinataire.html"
       }],
       "reference" : {
         "reference" : "ActorDefinition/PDLGC-Destinataire"
@@ -977,6 +1005,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-pdlgcDocumentation.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/pdlgcDocumentation"
@@ -990,6 +1022,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ActorDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ActorDefinition-PDLGC-Fournisseur-Destinataire.html"
       }],
       "reference" : {
         "reference" : "ActorDefinition/PDLGC-Fournisseur-Destinataire"
@@ -1002,6 +1038,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ActorDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ActorDefinition-PDLGC-Fournisseur-Sortant.html"
       }],
       "reference" : {
         "reference" : "ActorDefinition/PDLGC-Fournisseur-Sortant"
@@ -1014,6 +1054,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-pdlgcFournisseurSortant.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/pdlgcFournisseurSortant"
@@ -1027,6 +1071,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-pdlgcIndex.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/pdlgcIndex"
@@ -1040,6 +1088,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-pdlgcManifest.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/pdlgcManifest"
@@ -1053,6 +1105,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-pdlgcManifestArchives.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/pdlgcManifestArchives"
@@ -1066,6 +1122,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-pdlgcMetadata.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/pdlgcMetadata"
@@ -1079,6 +1139,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-pdlgcReadme.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/pdlgcReadme"
@@ -1092,6 +1156,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-pdlgcSignature.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/pdlgcSignature"
@@ -1105,6 +1173,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-vs-pdlgc-export-status.html"
       }],
       "reference" : {
         "reference" : "ValueSet/vs-pdlgc-export-status"
@@ -1117,6 +1189,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-pdlgcSystem.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/pdlgcSystem"
@@ -1130,6 +1206,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-vs-pdlgc-archive-type.html"
       }],
       "reference" : {
         "reference" : "ValueSet/vs-pdlgc-archive-type"
@@ -1142,6 +1222,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-vs-pdlgc-export-type.html"
       }],
       "reference" : {
         "reference" : "ValueSet/vs-pdlgc-export-type"
@@ -1154,6 +1238,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-psIdNat.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/psIdNat"
@@ -1166,20 +1254,11 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/snr"
-      },
-      "name" : "SNR",
-      "description" : "Identifiant interne de l’instance de la solution ayant produit le document au format OID",
-      "exampleBoolean" : false,
-      "groupingId" : "LogicalModelIdentifiant"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-cs-pdlgc-export-status.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/cs-pdlgc-export-status"
@@ -1192,6 +1271,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-structIdNat.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/structIdNat"
@@ -1205,6 +1288,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-systIdNat.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/systIdNat"
@@ -1218,6 +1305,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-cs-pdlgc-archive-type.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/cs-pdlgc-archive-type"
@@ -1230,6 +1321,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-cs-xdm-association-type.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/cs-xdm-association-type"
@@ -1242,6 +1337,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-vs-association-type.html"
       }],
       "reference" : {
         "reference" : "ValueSet/vs-association-type"
@@ -1254,6 +1353,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-cs-pdlgc-export-type.html"
       }],
       "reference" : {
         "reference" : "CodeSystem/cs-pdlgc-export-type"
@@ -1266,6 +1369,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-xdmActorPatient.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/xdmActorPatient"
@@ -1279,6 +1386,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-xdmActorPs.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/xdmActorPs"
@@ -1292,19 +1403,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/xdmActorSnr"
       },
-      "name" : "XDM ActorSNR",
-      "description" : "Cet attribut représente l'acteur SNR.",
-      "exampleBoolean" : false,
-      "groupingId" : "LogicalModelXDM"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-xdmActorSystem.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/xdmActorSystem"
@@ -1318,6 +1420,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-xdmActorXds.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/xdmActorXds"
@@ -1331,6 +1437,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-xdmArchive.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/xdmArchive"
@@ -1344,6 +1454,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-xdmAssociation.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/xdmAssociation"
@@ -1357,12 +1471,16 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-xdmAuthor.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/xdmAuthor"
       },
       "name" : "XDM Author",
-      "description" : "Modèle logique d'un auteur.\n\nReprésente les personnes physiques et/ou les systèmes (dispositifs, automates, services numériques référencés…) auteurs d’un document ou d'un lot de soummission. \n\nL’auteur peut être : \n- Un professionnel (personne physique) via son logiciel de professionnel, \n- Le patient/usager (personne physique) via Mon espace Santé, \n- Un système de structure (dispositif, automate, appareil connecté…), \n- Un SNR (Service Numérique Référencé), \n\n\n**author** est un ensemble constitué des sous-attributs **authorInstitution** , **authorPerson**, **authorRole** et **authorSpecialty** et ne porte pas de valeur par lui-même.",
+      "description" : "Modèle logique d'un auteur.\n\nReprésente les personnes physiques et/ou les systèmes (dispositifs, automates, services numériques référencés…) auteurs d’un document ou d'un lot de soummission. \n\nL’auteur peut être : \n- Un professionnel (personne physique) via son logiciel de professionnel, \n- Le patient/usager (personne physique) via Mon espace Santé, \n- Un système de structure (dispositif, automate, appareil connecté…), \n\n\n**author** est un ensemble constitué des sous-attributs **authorInstitution** , **authorPerson**, **authorRole** et **authorSpecialty** et ne porte pas de valeur par lui-même.",
       "exampleBoolean" : false,
       "groupingId" : "LogicalModelXDM"
     },
@@ -1370,12 +1488,16 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-xdmAuthorDocumentEntry.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/xdmAuthorDocumentEntry"
       },
       "name" : "XDM AuthorDocumentEntry",
-      "description" : "Modèle logique d'un auteur d'un document\nCette métadonnée représente les personnes physiques et/ou les systèmes (dispositifs, automates, services numériques référencés…) auteurs d’un document. \nL’auteur peut être : \n-  Un professionnel (personne physique) via son logiciel de professionnel, \n- Le patient/usager (personne physique) via Mon espace Santé, \n-  Un système de structure (dispositif, automate, appareil connecté…), \n-  Un SNR (Service Numérique Référencé),",
+      "description" : "Modèle logique d'un auteur d'un document\nCette métadonnée représente les personnes physiques et/ou les systèmes (dispositifs, automates, services numériques référencés…) auteurs d’un document. \nL’auteur peut être : \n-  Un professionnel (personne physique) via son logiciel de professionnel, \n- Le patient/usager (personne physique) via Mon espace Santé, \n-  Un système de structure (dispositif, automate, appareil connecté…),",
       "exampleBoolean" : false,
       "groupingId" : "LogicalModelXDM"
     },
@@ -1383,6 +1505,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-xdmAuthorInstitution.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/xdmAuthorInstitution"
@@ -1396,6 +1522,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-xdmAuthorSubmissionSet.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/xdmAuthorSubmissionSet"
@@ -1409,6 +1539,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-xdmDocumentEntry.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/xdmDocumentEntry"
@@ -1422,6 +1556,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-xdmEventCode.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/xdmEventCode"
@@ -1435,12 +1573,16 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-xdmIdentifiant.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/xdmIdentifiant"
       },
       "name" : "XDM Identifiant",
-      "description" : "Identifiant de professionnel de santé, de patient, de SNR ou de système",
+      "description" : "Identifiant de professionnel de santé, de patient ou de système",
       "exampleBoolean" : false,
       "groupingId" : "LogicalModelXDM"
     },
@@ -1448,6 +1590,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-xdmPatientId.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/xdmPatientId"
@@ -1461,12 +1607,16 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-xdmSourcePatientId.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/xdmSourcePatientId"
       },
       "name" : "XDM SourcePatientId",
-      "description" : "Cette métadonnée contient l’identifiant secondaire du patient dans le système d’information du producteur (IPP) ou l’INS, s’il n’y a pas d’identifiant secondaire. Pour les documents d’expression personnelle du patient, cette métadonnée contient l’INS du patient, à savoir le même identifiant que patientId.",
+      "description" : "Cette métadonnée contient l’identifiant secondaire du patient dans le système d’information du producteur (IPP) ou l’INS, s’il n’y a pas d’identifiant secondaire. Pour les documents d’expression personnelle du patient, cette métadonnée contient l’INS du patient, à savoir le même identifiant que patientId. \n\nCette métadonnée reprend la structure du segment CX  défini par  HL7v2  et  conformément aux spécifications  : \n- [Prise en Charge de l'INS dans les volets du CI-SIS ](https://esante.gouv.fr/annexe-prise-en-charge-de-lins-dans-les-volets-du-ci-sis)\n- [Volet Partage de Documents de Santé](https://esante.gouv.fr/volet-partage-de-documents-de-sante)",
       "exampleBoolean" : false,
       "groupingId" : "LogicalModelXDM"
     },
@@ -1474,12 +1624,16 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-xdmSourcePatientInfo.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/xdmSourcePatientInfo"
       },
       "name" : "XDM SourcePatientInfo",
-      "description" : "Cette métadonnée contient les traits d’identité du patient concerné par le document, connus par le producteur du document. Les informations présentes dans la métadonnée sourcePatientInfo ne doivent en aucun cas être réutilisées pour calculer un identifiant, ni être mises à jour après la soumission du document.",
+      "description" : "Cette métadonnée contient les traits d’identité du patient concerné par le document, connus par le producteur du document. Les informations présentes dans la métadonnée sourcePatientInfo ne doivent en aucun cas être réutilisées pour calculer un identifiant, ni être mises à jour après la soumission du document.\n\nCette métadonnée reprend la structure du segment PID (Patient Identification) défini par  HL7v2 et l'extension du profil IHE PAM, conformément aux spécifications  : \n- [Extension française du profil IHE PAM](https://www.interopsante.org/publications)\n- [Prise en Charge de l'INS dans les volets du CI-SIS ](https://esante.gouv.fr/annexe-prise-en-charge-de-lins-dans-les-volets-du-ci-sis)",
       "exampleBoolean" : false,
       "groupingId" : "LogicalModelXDM"
     },
@@ -1487,6 +1641,10 @@
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-xdmSubmissionSet.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/xdmSubmissionSet"

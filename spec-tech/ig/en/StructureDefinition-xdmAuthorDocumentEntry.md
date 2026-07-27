@@ -7,7 +7,6 @@ Modèle logique d'un auteur d'un document Cette métadonnée représente les per
 * Un professionnel (personne physique) via son logiciel de professionnel,
 * Le patient/usager (personne physique) via Mon espace Santé,
 * Un système de structure (dispositif, automate, appareil connecté…),
-* Un SNR (Service Numérique Référencé),
  
 
 **Usages:**
@@ -37,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-xdmAuthorDocument
   "name" : "XDMAuthorDocumentEntry",
   "title" : "XDM AuthorDocumentEntry",
   "status" : "draft",
-  "date" : "2026-07-23T16:11:23+00:00",
+  "date" : "2026-07-27T13:36:25+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -46,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-xdmAuthorDocument
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Modèle logique d'un auteur d'un document\nCette métadonnée représente les personnes physiques et/ou les systèmes (dispositifs, automates, services numériques référencés…) auteurs d’un document. \nL’auteur peut être : \n-  Un professionnel (personne physique) via son logiciel de professionnel, \n- Le patient/usager (personne physique) via Mon espace Santé, \n-  Un système de structure (dispositif, automate, appareil connecté…), \n-  Un SNR (Service Numérique Référencé), ",
+  "description" : "Modèle logique d'un auteur d'un document\nCette métadonnée représente les personnes physiques et/ou les systèmes (dispositifs, automates, services numériques référencés…) auteurs d’un document. \nL’auteur peut être : \n-  Un professionnel (personne physique) via son logiciel de professionnel, \n- Le patient/usager (personne physique) via Mon espace Santé, \n-  Un système de structure (dispositif, automate, appareil connecté…), ",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -77,7 +76,7 @@ Other representations of profile: [CSV](../StructureDefinition-xdmAuthorDocument
       "id" : "xdmAuthorDocumentEntry",
       "path" : "xdmAuthorDocumentEntry",
       "short" : "XDM AuthorDocumentEntry",
-      "definition" : "Modèle logique d'un auteur d'un document\nCette métadonnée représente les personnes physiques et/ou les systèmes (dispositifs, automates, services numériques référencés…) auteurs d’un document. \nL’auteur peut être : \n-  Un professionnel (personne physique) via son logiciel de professionnel, \n- Le patient/usager (personne physique) via Mon espace Santé, \n-  Un système de structure (dispositif, automate, appareil connecté…), \n-  Un SNR (Service Numérique Référencé), ",
+      "definition" : "Modèle logique d'un auteur d'un document\nCette métadonnée représente les personnes physiques et/ou les systèmes (dispositifs, automates, services numériques référencés…) auteurs d’un document. \nL’auteur peut être : \n-  Un professionnel (personne physique) via son logiciel de professionnel, \n- Le patient/usager (personne physique) via Mon espace Santé, \n-  Un système de structure (dispositif, automate, appareil connecté…), ",
       "mapping" : [{
         "identity" : "AuthorDocumentEntryCDA",
         "map" : "Author"

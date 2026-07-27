@@ -3,7 +3,7 @@
 ## Logical Model: XDM Identifiant 
 
  
-Identifiant de professionnel de santé, de patient, de SNR ou de système 
+Identifiant de professionnel de santé, de patient ou de système 
 
 **Usages:**
 
@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-xdmIdentifiant.cs
   "name" : "XDMIdentifiant",
   "title" : "XDM Identifiant",
   "status" : "draft",
-  "date" : "2026-07-23T16:11:23+00:00",
+  "date" : "2026-07-27T13:36:25+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-xdmIdentifiant.cs
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Identifiant de professionnel de santé, de patient, de SNR ou de système",
+  "description" : "Identifiant de professionnel de santé, de patient ou de système",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -60,7 +60,7 @@ Other representations of profile: [CSV](../StructureDefinition-xdmIdentifiant.cs
       "id" : "xdmIdentifiant",
       "path" : "xdmIdentifiant",
       "short" : "XDM Identifiant",
-      "definition" : "Identifiant de professionnel de santé, de patient, de SNR ou de système"
+      "definition" : "Identifiant de professionnel de santé, de patient ou de système"
     },
     {
       "id" : "xdmIdentifiant.value[x]",
@@ -74,9 +74,6 @@ Other representations of profile: [CSV](../StructureDefinition-xdmIdentifiant.cs
       },
       {
         "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/patId"
-      },
-      {
-        "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/snr"
       },
       {
         "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/systIdNat"

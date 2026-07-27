@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="471c3959-8aad-4d96-bed6-cd4402f0f664"/>
+  <id value="b3b9b6d8-d63c-43f4-9390-fa9a41b77e90"/>
   <meta>
-    <lastUpdated value="2026-07-23T16:11:23.647+00:00"/>
+    <lastUpdated value="2026-07-27T13:36:25.585+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -96,7 +96,7 @@
         <title value="Type d'association XDS (VS)"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-07-23T16:11:23+00:00"/>
+        <date value="2026-07-27T13:36:25+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -105,8 +105,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8e7f4a38-28fd-4e4d-8297-94c1d30479f6"/>
-          <timestamp value="2026-07-23T16:12:15+00:00"/>
+          <identifier value="urn:uuid:df3dfdcb-e1f9-4008-93a5-cb88a44a4305"/>
+          <timestamp value="2026-07-27T13:37:38+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -231,7 +231,7 @@
         <title value="Type d'association XDS (VS)"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-07-23T16:11:23+00:00"/>
+        <date value="2026-07-27T13:36:25+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -240,8 +240,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8e7f4a38-28fd-4e4d-8297-94c1d30479f6"/>
-          <timestamp value="2026-07-23T16:12:15+00:00"/>
+          <identifier value="urn:uuid:df3dfdcb-e1f9-4008-93a5-cb88a44a4305"/>
+          <timestamp value="2026-07-27T13:37:38+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -366,7 +366,7 @@
         <title value="Type d'association XDS (VS)"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-07-23T16:11:23+00:00"/>
+        <date value="2026-07-27T13:36:25+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -375,8 +375,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:92099362-b82d-4105-963f-e092008820e6"/>
-          <timestamp value="2026-07-23T16:12:15+00:00"/>
+          <identifier value="urn:uuid:ae2b3542-96a5-4415-887b-1309ff552cdf"/>
+          <timestamp value="2026-07-27T13:37:38+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -498,7 +498,7 @@
         <title value="PDLGC Type d'archive"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-07-23T16:11:23+00:00"/>
+        <date value="2026-07-27T13:36:25+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -507,8 +507,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d9eb1561-5516-442b-b8ab-df72f26b19d4"/>
-          <timestamp value="2026-07-23T16:12:15+00:00"/>
+          <identifier value="urn:uuid:c4ea057b-499d-40e8-b084-63f3fde163b3"/>
+          <timestamp value="2026-07-27T13:37:38+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -628,7 +628,7 @@
         <title value="PDLGC Type d'archive"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-07-23T16:11:23+00:00"/>
+        <date value="2026-07-27T13:36:25+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -637,8 +637,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d9eb1561-5516-442b-b8ab-df72f26b19d4"/>
-          <timestamp value="2026-07-23T16:12:15+00:00"/>
+          <identifier value="urn:uuid:c4ea057b-499d-40e8-b084-63f3fde163b3"/>
+          <timestamp value="2026-07-27T13:37:38+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -758,7 +758,7 @@
         <title value="PDLGC Type d'archive"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-07-23T16:11:23+00:00"/>
+        <date value="2026-07-27T13:36:25+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -767,8 +767,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:454c0748-6d73-4814-8179-7775f6377039"/>
-          <timestamp value="2026-07-23T16:12:15+00:00"/>
+          <identifier value="urn:uuid:295791b3-8a9d-4375-bdb4-1ea6465b5df3"/>
+          <timestamp value="2026-07-27T13:37:38+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -910,7 +910,7 @@
         <title value="PDLGC Statut de l'export"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-07-23T16:11:23+00:00"/>
+        <date value="2026-07-27T13:36:25+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -919,8 +919,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:80405603-085c-4564-b73e-b30519e55166"/>
-          <timestamp value="2026-07-23T16:12:15+00:00"/>
+          <identifier value="urn:uuid:d77fb6a8-f642-4469-b4a9-5b69af2a332d"/>
+          <timestamp value="2026-07-27T13:37:38+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -1064,7 +1064,7 @@
         <title value="PDLGC Statut de l'export"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-07-23T16:11:23+00:00"/>
+        <date value="2026-07-27T13:36:25+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1073,8 +1073,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:80405603-085c-4564-b73e-b30519e55166"/>
-          <timestamp value="2026-07-23T16:12:15+00:00"/>
+          <identifier value="urn:uuid:d77fb6a8-f642-4469-b4a9-5b69af2a332d"/>
+          <timestamp value="2026-07-27T13:37:38+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -1218,7 +1218,7 @@
         <title value="PDLGC Statut de l'export"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-07-23T16:11:23+00:00"/>
+        <date value="2026-07-27T13:36:25+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1227,8 +1227,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6c1d0485-6433-4340-859f-087c42866f9a"/>
-          <timestamp value="2026-07-23T16:12:15+00:00"/>
+          <identifier value="urn:uuid:93f5e122-0f1a-4c6e-9853-513b4c2f4b86"/>
+          <timestamp value="2026-07-27T13:37:38+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -1375,7 +1375,7 @@
         <title value="PDLGC Type d'Export"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-07-23T16:11:23+00:00"/>
+        <date value="2026-07-27T13:36:25+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1384,8 +1384,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5a311571-5944-4186-af3b-21970a08862b"/>
-          <timestamp value="2026-07-23T16:12:15+00:00"/>
+          <identifier value="urn:uuid:eb6f12c3-e194-4aac-b92d-91b1cb18db8e"/>
+          <timestamp value="2026-07-27T13:37:38+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -1529,7 +1529,7 @@
         <title value="PDLGC Type d'Export"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-07-23T16:11:23+00:00"/>
+        <date value="2026-07-27T13:36:25+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1538,8 +1538,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5a311571-5944-4186-af3b-21970a08862b"/>
-          <timestamp value="2026-07-23T16:12:15+00:00"/>
+          <identifier value="urn:uuid:eb6f12c3-e194-4aac-b92d-91b1cb18db8e"/>
+          <timestamp value="2026-07-27T13:37:38+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -1683,7 +1683,7 @@
         <title value="PDLGC Type d'Export"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-07-23T16:11:23+00:00"/>
+        <date value="2026-07-27T13:36:25+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1692,8 +1692,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ae4f5ce2-af8d-437c-aa01-edd863c82168"/>
-          <timestamp value="2026-07-23T16:12:15+00:00"/>
+          <identifier value="urn:uuid:cc53706d-f13e-44e7-92b4-ccaf19c86fbb"/>
+          <timestamp value="2026-07-27T13:37:38+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>

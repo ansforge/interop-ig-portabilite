@@ -1094,10 +1094,6 @@ L’identification nationale du PS est construite selon le tableau dessous :
 "psIdNat","psIdNat.PSIdNat","psIdNat.PSIdNat","","","",1,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.3.0]]} {[]}
 ","PSIdNat","PSIdNat","","","","","","","","","",,,,,"",,,,"psIdNat.PSIdNat",1,1,"","PSIdNat-invariant:Le numéro PSIdNat doit être un entier commençant par 0, 1, 3, 4, 5, 6 ou 8 {$this.matches('^(0|1|3|4|5|6|8)\d*$')}
 "
-"snr","snr","snr","","","",0,*,"","","","null {[]} {[]}
-","SNR","Identifiant interne de l’instance de la solution ayant produit le document au format OID ","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"snr","snr.SNR","snr.SNR","","","",1,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.3.0]]} {[]}
-","SNR","SNR","","","","","","","","","",,,,,"",,,,"snr.SNR",1,1,"",""
 "structIdNat","structIdNat","structIdNat","","","",0,*,"","","","null {[]} {[]}
 ","StructIdNat","Identification nationale principale d’une structure propre aux SI de l'ANS et au CI-SIS 4. 
 
@@ -1166,28 +1162,6 @@ L’identification du systeme  est construite selon le tableau dessous :
 ","Type de nom : Valeur en fonction de l’auteur :  D, pour les personnes physiques, -U, pour les systèmes.","Type de nom : Valeur en fonction de l’auteur :  D, pour les personnes physiques, -U, pour les systèmes.","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""D""/>","","","",,,,,"",,,,"xdmActorXds.XCN10",1,1,"",""
 "xdmActorPs","xdmActorPs.XCN13","xdmActorPs.XCN13","","","",1,1,"","","","code {[]} {[]}
 ","Type d’identifiant","Type d’identifiant","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""IDNPS""/>","","","",,,,,"",,,,"xdmActorXds.XCN13",1,1,"",""
-"xdmActorSnr","xdmActorSnr","xdmActorSnr","","","",0,*,"","","","null {[]} {[]}
-","XDM ActorSNR","Cet attribut représente l'acteur SNR.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"xdmActorSnr","xdmActorSnr.XCN1","xdmActorSnr.XCN1","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmIdentifiant {[]} {[]}
-","Identifiant de l'acteur","Identifiant de l'acteur","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""9.8.7.6.5.4.3.2.1""/>","","",,,,,"",,,,"xdmActorXds.XCN1",1,1,"",""
-"xdmActorSnr","xdmActorSnr.XCN1.value[x]","xdmActorSnr.XCN1.value[x]","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/snr {[]} {[]}
-","Identifiant","Identifiant","","","","","","","","","",,,,,"",,,,"xdmIdentifiant.value[x]",1,1,"",""
-"xdmActorSnr","xdmActorSnr.XCN2","xdmActorSnr.XCN2","","","",1,1,"","","","string {[]} {[]}
-","Nom du système","Nom d'exercice du professionnel, nom du patient, nom du système.","","","","","","","","","",,,,,"",,,,"xdmActorXds.XCN2",1,1,"",""
-"xdmActorSnr","xdmActorSnr.XCN3","xdmActorSnr.XCN3","","","",1,1,"","","","string {[]} {[]}
-","Nom du modèle pour les dispositifs ou dénomination pour les autres systèmes.","Prénom usuel de la personne (par défaut le premier prénom), nom du modèle pour les dispositifs ou dénomination pour les autres systèmes.","","","","","","","","","",,,,,"",,,,"xdmActorXds.XCN3",1,1,"",""
-"xdmActorSnr","xdmActorSnr.XCN9","xdmActorSnr.XCN9","","","",1,1,"","","","Base {[]} {[]}
-","Autorité d’affectation","Autorité d’affectation","","","","","","","","","",,,,,"",,,,"xdmActorXds.XCN9",1,1,"",""
-"xdmActorSnr","xdmActorSnr.XCN9.composant1","xdmActorSnr.XCN9.composant1","","","",0,0,"","","","string {[]} {[]}
-","Vide, pas de valeur","Vide, pas de valeur","","","","","","","","","",,,,,"",,,,"xdmActorXds.XCN9.composant1",0,0,"",""
-"xdmActorSnr","xdmActorSnr.XCN9.composant2","xdmActorSnr.XCN9.composant2","","","",1,1,"","","","string {[]} {[]}
-","OID de l'éditeur","Valeur de Universal ID","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""9.8.7.6.5.4.3.2.1.""/>","","",,,,,"",,,,"xdmActorXds.XCN9.composant2",1,1,"",""
-"xdmActorSnr","xdmActorSnr.XCN9.composant3","xdmActorSnr.XCN9.composant3","","","",1,1,"","","","string {[]} {[]}
-","Valeur de Universal ID type (ID)","Valeur de Universal ID type (ID)","","","","","","","","","",,,,,"",,,,"xdmActorXds.XCN9.composant3",1,1,"",""
-"xdmActorSnr","xdmActorSnr.XCN10","xdmActorSnr.XCN10","","","",1,1,"","","","code {[]} {[]}
-","Type de nom : Valeur en fonction de l’auteur :  D, pour les personnes physiques, -U, pour les systèmes.","Type de nom : Valeur en fonction de l’auteur :  D, pour les personnes physiques, -U, pour les systèmes.","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""U""/>","","","",,,,,"",,,,"xdmActorXds.XCN10",1,1,"",""
-"xdmActorSnr","xdmActorSnr.XCN13","xdmActorSnr.XCN13","","","",1,1,"","","","code {[]} {[]}
-","Type d’identifiant","Type d’identifiant","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""RI""/>","","","",,,,,"",,,,"xdmActorXds.XCN13",1,1,"",""
 "xdmActorSystem","xdmActorSystem","xdmActorSystem","","","",0,*,"","","","null {[]} {[]}
 ","XDM ActorSystem","Cet attribut représente l'acteur System.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "xdmActorSystem","xdmActorSystem.XCN1","xdmActorSystem.XCN1","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmIdentifiant {[]} {[]}
@@ -1259,14 +1233,13 @@ L’auteur peut être :
 - Un professionnel (personne physique) via son logiciel de professionnel, 
 - Le patient/usager (personne physique) via Mon espace Santé, 
 - Un système de structure (dispositif, automate, appareil connecté…), 
-- Un SNR (Service Numérique Référencé), 
 
 
 **author** est un ensemble constitué des sous-attributs **authorInstitution** , **authorPerson**, **authorRole** et **authorSpecialty** et ne porte pas de valeur par lui-même. ","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "xdmAuthor","xdmAuthor.institution","xdmAuthor.institution","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmAuthorInstitution {[]} {[]}
 ","Cet attribut représente la structure de l’auteur.","Cet attribut représente la structure de l’auteur.","","","","","","","","","",,,,,"",,,,"xdmAuthor.institution",0,1,"",""
 "xdmAuthor","xdmAuthor.person[x]","xdmAuthor.person[x]","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorPs {[]} {[]}
-https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorPatient {[]} {[]}https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorSnr {[]} {[]}https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorSystem {[]} {[]}","Author","Author","","","","","","","","","",,,,,"",,,,"xdmAuthor.person[x]",1,1,"",""
+https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorPatient {[]} {[]}https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorSystem {[]} {[]}","Author","Author","","","","","","","","","",,,,,"",,,,"xdmAuthor.person[x]",1,1,"",""
 "xdmAuthor","xdmAuthor.role","xdmAuthor.role","","","",0,*,"","","","CodeableConcept {[]} {[]}
 ","Cet attribut représente le rôle fonctionnel joué par l’auteur vis-à-vis du patient/usager lors de la création du document, c'est-à-dire à quel titre l’auteur est intervenu vis-à-vis du patient (ex : médecin traitant, Responsable de l'admission, Membre de l'équipe de soins, etc.).","**Author Role**","","","","","","","","","",,"preferred","","https://mos.esante.gouv.fr/NOS/JDV_J47-FunctionCode-CISIS/FHIR/JDV-J47-FunctionCode-CISIS|20250523120000","",,,,"xdmAuthor.role",0,*,"",""
 "xdmAuthor","xdmAuthor.specialty","xdmAuthor.specialty","","","",0,1,"","","","CodeableConcept {[]} {[]}
@@ -1277,12 +1250,11 @@ Cette métadonnée représente les personnes physiques et/ou les systèmes (disp
 L’auteur peut être : 
 -  Un professionnel (personne physique) via son logiciel de professionnel, 
 - Le patient/usager (personne physique) via Mon espace Santé, 
--  Un système de structure (dispositif, automate, appareil connecté…), 
--  Un SNR (Service Numérique Référencé), ","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+-  Un système de structure (dispositif, automate, appareil connecté…), ","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "xdmAuthorDocumentEntry","xdmAuthorDocumentEntry.institution","xdmAuthorDocumentEntry.institution","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmAuthorInstitution {[]} {[]}
 ","Cet attribut représente la structure de l’auteur. Pour les documents d’expression personnelle du patient, cette métadonnée est absente.","Cet attribut représente la structure de l’auteur.","","","","","","","","","",,,,,"",,,,"xdmAuthor.institution",0,1,"",""
 "xdmAuthorDocumentEntry","xdmAuthorDocumentEntry.person[x]","xdmAuthorDocumentEntry.person[x]","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorPs {[]} {[]}
-https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorPatient {[]} {[]}https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorSnr {[]} {[]}https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorSystem {[]} {[]}","Cet attribut représente l’auteur (humain ou système) ayant contribué au document. Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient.","Author","","","","","","","","","",,,,,"",,,,"xdmAuthor.person[x]",1,1,"",""
+https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorPatient {[]} {[]}https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorSystem {[]} {[]}","Cet attribut représente l’auteur (humain ou système) ayant contribué au document. Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient.","Author","","","","","","","","","",,,,,"",,,,"xdmAuthor.person[x]",1,1,"",""
 "xdmAuthorDocumentEntry","xdmAuthorDocumentEntry.role","xdmAuthorDocumentEntry.role","","","",0,*,"","","","CodeableConcept {[]} {[]}
 ","cette métadonnée représente le rôle joué par l’auteur vis-à-vis du patient lors de la constitution du lot de soumission, c'est-à-dire à quel titre l’auteur est intervenu vis-à-vis du patient (ex : médecin traitant, Responsable de l'admission, Membre de l'équipe de soins, etc.).","**Author Role**","","","","","","","","","",,"preferred","","https://mos.esante.gouv.fr/NOS/JDV_J47-FunctionCode-CISIS/FHIR/JDV-J47-FunctionCode-CISIS|20250523120000","",,,,"xdmAuthor.role",0,*,"",""
 "xdmAuthorDocumentEntry","xdmAuthorDocumentEntry.specialty","xdmAuthorDocumentEntry.specialty","","","",0,1,"","","","CodeableConcept {[]} {[]}
@@ -1311,7 +1283,7 @@ Constituée des sous-attributs **authorInstitution**, **authorPerson**, **author
 "xdmAuthorSubmissionSet","xdmAuthorSubmissionSet.institution","xdmAuthorSubmissionSet.institution","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmAuthorInstitution {[]} {[]}
 ","Cette métadonnée représente la structure émettrice du lot de soumission","Cet attribut représente la structure de l’auteur.","","","","","","","","","",,,,,"",,,,"xdmAuthor.institution",0,1,"",""
 "xdmAuthorSubmissionSet","xdmAuthorSubmissionSet.person[x]","xdmAuthorSubmissionSet.person[x]","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorPs {[]} {[]}
-https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorPatient {[]} {[]}https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorSnr {[]} {[]}https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorSystem {[]} {[]}","Cette métadonnée représente la personne physique ou le système émetteur du lot de soumission.Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient.","Author","","","","","","","","","",,,,,"",,,,"xdmAuthor.person[x]",1,1,"",""
+https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorPatient {[]} {[]}https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorSystem {[]} {[]}","Cette métadonnée représente la personne physique ou le système émetteur du lot de soumission.Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient.","Author","","","","","","","","","",,,,,"",,,,"xdmAuthor.person[x]",1,1,"",""
 "xdmAuthorSubmissionSet","xdmAuthorSubmissionSet.role","xdmAuthorSubmissionSet.role","","","",0,*,"","","","CodeableConcept {[]} {[]}
 ","Cette métadonnée représente le rôle joué par l’auteur vis-à-vis du patient lors de la constitution du lot de soumission, c'est-à-dire à quel titre l’auteur est intervenu vis-à-vis du patient (ex : médecin traitant, Responsable de l'admission, Membre de l'équipe de soins, etc.).","**Author Role**","","","","","","","","","",,"preferred","","https://mos.esante.gouv.fr/NOS/JDV_J47-FunctionCode-CISIS/FHIR/JDV-J47-FunctionCode-CISIS|20250523120000","",,,,"xdmAuthor.role",0,*,"",""
 "xdmAuthorSubmissionSet","xdmAuthorSubmissionSet.specialty","xdmAuthorSubmissionSet.specialty","","","",0,1,"","","","CodeableConcept {[]} {[]}
@@ -1411,9 +1383,9 @@ Un EventCode peut contenir le code représentant :
 "xdmEventCode","xdmEventCode.eventCode","xdmEventCode.eventCode","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Cet attribut peut contenir le code représentant : • un évènement documenté (acte, traitement, diagnostic, etc…),  • une modalité d'acquisition, • une région anatomique.","Cet attribut peut contenir le code représentant : • un évènement documenté (acte, traitement, diagnostic, etc…),  • une modalité d'acquisition, • une région anatomique.","","","","","","","","","",,,,,"",,,,"xdmEventCode.eventCode",1,1,"",""
 "xdmIdentifiant","xdmIdentifiant","xdmIdentifiant","","","",0,*,"","","","null {[]} {[]}
-","XDM Identifiant","Identifiant de professionnel de santé, de patient, de SNR ou de système","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","XDM Identifiant","Identifiant de professionnel de santé, de patient ou de système","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "xdmIdentifiant","xdmIdentifiant.value[x]","xdmIdentifiant.value[x]","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/psIdNat {[]} {[]}
-https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/patId {[]} {[]}https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/snr {[]} {[]}https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/systIdNat {[]} {[]}","Identifiant","Identifiant","","","","","","","","","",,,,,"",,,,"xdmIdentifiant.value[x]",1,1,"",""
+https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/patId {[]} {[]}https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/systIdNat {[]} {[]}","Identifiant","Identifiant","","","","","","","","","",,,,,"",,,,"xdmIdentifiant.value[x]",1,1,"",""
 "xdmPatientId","xdmPatientId","xdmPatientId","","","",0,*,"","","","null {[]} {[]}
 ","XDM PatientId","Modèle logique de patientID.
 Cette métadonnée contient l'identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange. Le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité. À défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé. ","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
@@ -1426,7 +1398,13 @@ Autre identifiant : Valeur de Namespace ID (IS) = Vide, pas de valeur | Valeur d
 "xdmPatientId","xdmPatientId.CX5","xdmPatientId.CX5","","","",1,1,"","","","string {[]} {[]}
 ","'NH' pour les patients identifiés par leur INS, 'PI' pour les patients identifiés par d'autres identifiants","'NH' pour les patients identifiés par leur INS, 'PI' pour les patients identifiés par d'autres identifiants","","","","","","","","","",,,,,"",,,,"xdmPatientId.CX5",1,1,"",""
 "xdmSourcePatientId","xdmSourcePatientId","xdmSourcePatientId","","","",0,*,"","","","null {[]} {[]}
-","XDM SourcePatientId","Cette métadonnée contient l’identifiant secondaire du patient dans le système d’information du producteur (IPP) ou l’INS, s’il n’y a pas d’identifiant secondaire. Pour les documents d’expression personnelle du patient, cette métadonnée contient l’INS du patient, à savoir le même identifiant que patientId. ","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","XDM SourcePatientId","Cette métadonnée contient l’identifiant secondaire du patient dans le système d’information du producteur (IPP) ou l’INS, s’il n’y a pas d’identifiant secondaire. Pour les documents d’expression personnelle du patient, cette métadonnée contient l’INS du patient, à savoir le même identifiant que patientId. 
+
+Cette métadonnée reprend la structure du segment CX  défini par  HL7v2  et  conformément aux spécifications  : 
+- [Prise en Charge de l'INS dans les volets du CI-SIS ](https://esante.gouv.fr/annexe-prise-en-charge-de-lins-dans-les-volets-du-ci-sis)
+- [Volet Partage de Documents de Santé](https://esante.gouv.fr/volet-partage-de-documents-de-sante)
+
+","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "xdmSourcePatientId","xdmSourcePatientId.CX1","xdmSourcePatientId.CX1","","","",1,1,"","","","string {[]} {[]}
 ","Identifiant secondaire du patient, en l’occurrence. Equivalent à PatientId s'il n'y a pas d'identifiant secondaire.","Identifiant secondaire du patient, en l’occurrence. Equivalent à PatientId s'il n'y a pas d'identifiant secondaire.","","","","","","","","","",,,,,"",,,,"xdmSourcePatientId.CX1",1,1,"",""
 "xdmSourcePatientId","xdmSourcePatientId.CX4","xdmSourcePatientId.CX4","","","",1,1,"","","","string {[]} {[]}
@@ -1436,8 +1414,11 @@ Autre identifiant : Valeur de Namespace ID (IS) = Vide, pas de valeur | Valeur d
 "xdmSourcePatientId","xdmSourcePatientId.CX5","xdmSourcePatientId.CX5","","","",1,1,"","","","string {[]} {[]}
 ","'NH' pour les patients identifiés par leur INS, 'PI' pour les patients identifiés par d'autres identifiants.","'NH' pour les patients identifiés par leur INS, 'PI' pour les patients identifiés par d'autres identifiants.","","","","","","","","","",,,,,"",,,,"xdmSourcePatientId.CX5",1,1,"",""
 "xdmSourcePatientInfo","xdmSourcePatientInfo","xdmSourcePatientInfo","","","",0,*,"","","","null {[]} {[]}
-","XDM SourcePatientInfo","Cette métadonnée contient les traits d’identité du patient concerné par le document, connus par le producteur du document. Les informations présentes dans la métadonnée sourcePatientInfo ne doivent en aucun cas être réutilisées pour calculer un identifiant, ni être mises à jour après la soumission du document. 
-","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","XDM SourcePatientInfo","Cette métadonnée contient les traits d’identité du patient concerné par le document, connus par le producteur du document. Les informations présentes dans la métadonnée sourcePatientInfo ne doivent en aucun cas être réutilisées pour calculer un identifiant, ni être mises à jour après la soumission du document.
+
+Cette métadonnée reprend la structure du segment PID (Patient Identification) défini par  HL7v2 et l'extension du profil IHE PAM, conformément aux spécifications  : 
+- [Extension française du profil IHE PAM](https://www.interopsante.org/publications)
+- [Prise en Charge de l'INS dans les volets du CI-SIS ](https://esante.gouv.fr/annexe-prise-en-charge-de-lins-dans-les-volets-du-ci-sis)","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "xdmSourcePatientInfo","xdmSourcePatientInfo.PID3","xdmSourcePatientInfo.PID3","","","",0,1,"","","","Identifier {[]} {[]}
 ","Liste des identifiants du patient","Liste des identifiants du patient","","","","","","","","","",,,,,"",,,,"xdmSourcePatientInfo.PID3",0,1,"",""
 "xdmSourcePatientInfo","xdmSourcePatientInfo.PID5","xdmSourcePatientInfo.PID5","","","",1,*,"","","","string {[]} {[]}

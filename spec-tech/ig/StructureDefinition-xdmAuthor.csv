@@ -8,14 +8,13 @@ L’auteur peut être :
 - Un professionnel (personne physique) via son logiciel de professionnel, 
 - Le patient/usager (personne physique) via Mon espace Santé, 
 - Un système de structure (dispositif, automate, appareil connecté…), 
-- Un SNR (Service Numérique Référencé), 
 
 
 **author** est un ensemble constitué des sous-attributs **authorInstitution** , **authorPerson**, **authorRole** et **authorSpecialty** et ne porte pas de valeur par lui-même. ","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "xdmAuthor.institution","xdmAuthor.institution","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmAuthorInstitution {[]} {[]}
 ","Cet attribut représente la structure de l’auteur.","Cet attribut représente la structure de l’auteur.","","","","","","","","","",,,,,"",,,,"xdmAuthor.institution",0,1,"",""
 "xdmAuthor.person[x]","xdmAuthor.person[x]","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorPs {[]} {[]}
-https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorPatient {[]} {[]}https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorSnr {[]} {[]}https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorSystem {[]} {[]}","Author","Author","","","","","","","","","",,,,,"",,,,"xdmAuthor.person[x]",1,1,"",""
+https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorPatient {[]} {[]}https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorSystem {[]} {[]}","Author","Author","","","","","","","","","",,,,,"",,,,"xdmAuthor.person[x]",1,1,"",""
 "xdmAuthor.role","xdmAuthor.role","","","",0,*,"","","","CodeableConcept {[]} {[]}
 ","Cet attribut représente le rôle fonctionnel joué par l’auteur vis-à-vis du patient/usager lors de la création du document, c'est-à-dire à quel titre l’auteur est intervenu vis-à-vis du patient (ex : médecin traitant, Responsable de l'admission, Membre de l'équipe de soins, etc.).","**Author Role**","","","","","","","","","",,"preferred","","https://mos.esante.gouv.fr/NOS/JDV_J47-FunctionCode-CISIS/FHIR/JDV-J47-FunctionCode-CISIS|20250523120000","",,,,"xdmAuthor.role",0,*,"",""
 "xdmAuthor.specialty","xdmAuthor.specialty","","","",0,1,"","","","CodeableConcept {[]} {[]}

@@ -167,13 +167,6 @@
   "name" : "PSIdNat"
 },
 {
-  "id" : "snr",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/snr",
-  "version" : "0.1.0",
-  "name" : "SNR"
-},
-{
   "id" : "structIdNat",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/structIdNat",
@@ -200,13 +193,6 @@
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorPs",
   "version" : "0.1.0",
   "name" : "XDMActorPS"
-},
-{
-  "id" : "xdmActorSnr",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorSnr",
-  "version" : "0.1.0",
-  "name" : "XDMActorSNR"
 },
 {
   "id" : "xdmActorSystem",

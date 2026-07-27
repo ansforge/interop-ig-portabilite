@@ -1,7 +1,10 @@
 "Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
 "xdmSourcePatientInfo","xdmSourcePatientInfo","","","",0,*,"","","","null {[]} {[]}
-","XDM SourcePatientInfo","Cette métadonnée contient les traits d’identité du patient concerné par le document, connus par le producteur du document. Les informations présentes dans la métadonnée sourcePatientInfo ne doivent en aucun cas être réutilisées pour calculer un identifiant, ni être mises à jour après la soumission du document. 
-","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","XDM SourcePatientInfo","Cette métadonnée contient les traits d’identité du patient concerné par le document, connus par le producteur du document. Les informations présentes dans la métadonnée sourcePatientInfo ne doivent en aucun cas être réutilisées pour calculer un identifiant, ni être mises à jour après la soumission du document.
+
+Cette métadonnée reprend la structure du segment PID (Patient Identification) défini par  HL7v2 et l'extension du profil IHE PAM, conformément aux spécifications  : 
+- [Extension française du profil IHE PAM](https://www.interopsante.org/publications)
+- [Prise en Charge de l'INS dans les volets du CI-SIS ](https://esante.gouv.fr/annexe-prise-en-charge-de-lins-dans-les-volets-du-ci-sis)","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "xdmSourcePatientInfo.PID3","xdmSourcePatientInfo.PID3","","","",0,1,"","","","Identifier {[]} {[]}
 ","Liste des identifiants du patient","Liste des identifiants du patient","","","","","","","","","",,,,,"",,,,"xdmSourcePatientInfo.PID3",0,1,"",""
 "xdmSourcePatientInfo.PID5","xdmSourcePatientInfo.PID5","","","",1,*,"","","","string {[]} {[]}

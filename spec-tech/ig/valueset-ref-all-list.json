@@ -77,8 +77,8 @@
     "sources" : ["1.2.250.1.213.1.1.5.461"],
     "uses" : {
     },
-    "StructureDefinition-xdmAuthorDocumentEntry.html" : "XDM AuthorDocumentEntry",
     "StructureDefinition-xdmAuthorSubmissionSet.html" : "XDM AuthorSubmissionSet",
+    "StructureDefinition-xdmAuthorDocumentEntry.html" : "XDM AuthorDocumentEntry",
     "StructureDefinition-xdmAuthor.html" : "XDM Author"
   },
   {
@@ -204,8 +204,8 @@
     "sources" : ["1.2.250.1.213.1.1.5.124"],
     "uses" : {
     },
-    "StructureDefinition-xdmAuthorDocumentEntry.html" : "XDM AuthorDocumentEntry",
     "StructureDefinition-xdmAuthorSubmissionSet.html" : "XDM AuthorSubmissionSet",
+    "StructureDefinition-xdmAuthorDocumentEntry.html" : "XDM AuthorDocumentEntry",
     "StructureDefinition-xdmAuthor.html" : "XDM Author"
   },
   {
@@ -221,8 +221,8 @@
     "sources" : ["1.2.250.1.213.1.1.5.131"],
     "uses" : {
     },
-    "StructureDefinition-xdmDocumentEntry.html" : "XDM DocumentEntry",
-    "StructureDefinition-xdmSubmissionSet.html" : "XDM SubmissionSet"
+    "StructureDefinition-xdmSubmissionSet.html" : "XDM SubmissionSet",
+    "StructureDefinition-xdmDocumentEntry.html" : "XDM DocumentEntry"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/JDV_J58-ConfidentialityCode-DMP/FHIR/JDV-J58-ConfidentialityCode-DMP",
