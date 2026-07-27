@@ -4,6 +4,12 @@ Id:  xdmSourcePatientId
 Title: "XDM SourcePatientId"
 Description: """
 Cette métadonnée contient l’identifiant secondaire du patient dans le système d’information du producteur (IPP) ou l’INS, s’il n’y a pas d’identifiant secondaire. Pour les documents d’expression personnelle du patient, cette métadonnée contient l’INS du patient, à savoir le même identifiant que patientId. 
+
+Cette métadonnée reprend la structure du segment CX  défini par  HL7v2  et  conformément aux spécifications  : 
+- [Prise en Charge de l'INS dans les volets du CI-SIS ](https://esante.gouv.fr/annexe-prise-en-charge-de-lins-dans-les-volets-du-ci-sis)
+- [Volet Partage de Documents de Santé](https://esante.gouv.fr/volet-partage-de-documents-de-sante)
+
+
 """
 
 * CX1 1..1 string "Identifiant secondaire du patient, en l’occurrence. Equivalent à PatientId s'il n'y a pas d'identifiant secondaire."

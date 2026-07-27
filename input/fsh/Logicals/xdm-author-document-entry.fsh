@@ -9,7 +9,7 @@ L’auteur peut être :
 -  Un professionnel (personne physique) via son logiciel de professionnel, 
 - Le patient/usager (personne physique) via Mon espace Santé, 
 -  Un système de structure (dispositif, automate, appareil connecté…), 
--  Un SNR (Service Numérique Référencé), """
+ """
 
 * institution ^short =  "Cet attribut représente la structure de l’auteur. Pour les documents d’expression personnelle du patient, cette métadonnée est absente."
 * person[x] ^short = "Cet attribut représente l’auteur (humain ou système) ayant contribué au document. Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient."
