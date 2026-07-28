@@ -97,7 +97,6 @@ groups:
       - StructureDefinition/xdmActorXds
       - StructureDefinition/xdmActorPs
       - StructureDefinition/xdmActorPatient
-      - StructureDefinition/xdmActorSnr
       - StructureDefinition/xdmActorSystem
       - StructureDefinition/xdmArchive
       - StructureDefinition/xdmAssociation
@@ -127,4 +126,3 @@ groups:
       - StructureDefinition/psIdNat
       - StructureDefinition/structIdNat
       - StructureDefinition/systIdNat
-      - StructureDefinition/snr
