@@ -31,7 +31,7 @@ This guide defines the functional and technical specifications for the portabili
 
 ### Introduction
 
-La portabilité des données des logiciels de gestion de cabinet (LGC) permet de garantir qu'un changement d'éditeur de logiciel ne constitue plus un obstacle à l'exercice professionnel ni à la continuité des soins. Elle repose sur l'obligation de transfert des données de santé entre fournisseurs de services numériques, telle qu'introduite par l'article L.1470-5-1 du Code de la Santé Publique (<a href="https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000054131648">article 55 de la loi n° 2026-403 du 26 mai 2026 de simplification de la vie économique</a>).
+La portabilité des données des logiciels de gestion de cabinet (LGC) permet de garantir qu'un changement d'éditeur de logiciel ne constitue plus un obstacle à l'exercice professionnel ni à la continuité des soins. Elle repose sur l'obligation de transfert des données de santé entre éditeurs de services numériques, telle qu'introduite par l'article L.1470-5-1 du Code de la Santé Publique (<a href="https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000054131648">article 55 de la loi n° 2026-403 du 26 mai 2026 de simplification de la vie économique</a>).
 
 Le présent guide d'implémentation traduit en spécifications fonctionnelles et techniques les exigences du **Référentiel de sécurité, d'interopérabilité et d'éthique relatif à la portabilité des données des LGC** élaboré par l'ANS et approuvé par arrêté du ministre chargé de la santé. 
 

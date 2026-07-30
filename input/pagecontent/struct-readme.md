@@ -1,5 +1,5 @@
-Le fichier README.TXT est indépendant du contenu clinique de l'archive. Il contient des informations éditoriales dont le caractère obligatoire relève du fournisseur sortant, conformément au volume 2b du cadre technique ITI : 
-- point de contact du fournisseur sortant ayant créé l'archive ; 
+Le fichier README.TXT est indépendant du contenu clinique de l'archive. Il contient des informations éditoriales dont le caractère obligatoire du système émetteur, conformément au volume 2b du cadre technique ITI : 
+- point de contact de l'éditeur émetteur ayant créé l'archive ; 
 - nom et version du logiciel ayant créé l'archive ; 
 - informations générales sur la structure de l'archive (ces informations n'ont pas vocation à être spécifique au contenu stocké dans l'archive) ;
 - instructions permettant de visualiser les documents joints, dans le cas ou un viewer est transmis (ex. visualisation des 
@@ -26,10 +26,12 @@ Fournisseur Sortant :
         . email : portabilite@editeur.fr
         . Téléphone : +33100000000
 
-Application du fournisseur sortant :
+Application de l'éditeur émetteur :
 =========================
+    . Modèle : LGC modèle
     . Nom : LGC example
     . Version : 1.2
+    . Identifiant : 175259803546/2789345815
 
 Instructions :
 =============

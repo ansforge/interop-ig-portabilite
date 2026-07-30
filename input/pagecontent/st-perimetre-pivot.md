@@ -1,8 +1,13 @@
 Les données du périmètre pivot, telles que définies en annexe 1 du **Référentiel de sécurité, d'interopérabilité et d'éthique relatif à la portabilité des données des LGC**, doivent être exportées conformément aux formats indiqués dans le tableau ci-après. 
 
-Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilisés ou disponibles au sein du logiciel. Lorsqu'un document existe dans un format standardisé, **il DOIT être exporté dans la version et le format dans laquelle il a été produit ou reçu, sans obligation de  conversion  vers une version plus récente des spécifications**. La documentation d'export doit préciser la version des spécifications ayant présidé à la production de chaque type de document.
+Les formats standardisés DOIVENT être privilégiés pour les données destinées à être intégrées par le système destinatiare, lorsqu'ils sont nativement utilisés ou disponibles au sein du système émetteur. Lorsqu'un document existe dans un format standardisé, **il DOIT être exporté dans la version et le format dans laquelle il a été produit ou reçu, sans obligation de  conversion  vers une version plus récente des spécifications**. La documentation d'export doit préciser la version des spécifications ayant présidé à la production de chaque type de document.
 
-**En complément des formats structurés détaillés ci-dessous, et destinés à être intégrés par le fournisseur destinataire, tous les documents du dossier patient DOIVENT être exportés dans un format de consultation de type PDF**. Cette représentation vise à garantir l’accès et la consultation des informations exportées, y compris en l’absence d’un logiciel capable d’exploiter les formats structurés associés.
+**En complément des formats structurés détaillés ci-dessous, et destinés à être intégrés par le LGC destinataire, tous les documents du dossier patient DOIVENT être exportés dans un format de consultation de type PDF/A-1**. Cette représentation vise à garantir l’accès et la consultation des informations exportées, y compris en l’absence d’un logiciel capable d’exploiter les formats structurés associés.
+
+Une archive XDM Patient doit par conséquent contenir : 
+- un lot de soumission (SUBSET) contenant un ou plusieurs documents structurés ;
+- les mêmes documents médicaux au format PDF/A-1
+
 <br>
 
 
@@ -94,7 +99,8 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
       <tr>
         <th>Données</th>
         <th>Type de données</th>
-        <th>Format</th>
+        <th>Format machine</th>
+        <th>Format lecture humaine</th>  <!-- cases Patient fusionnées par rowspan sur la première ligne -->
         <th>Spécifications / Référence</th>
         <th>Contenu</th>
       </tr>
@@ -108,6 +114,11 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
         <ul>
             <li> Format interop opposable : <span class="flag flag-opposable"> CDA R2 Niveau 3</span></li>
             <li><i>Format cible européen (non requis à date) : FHIR</i></li>
+          </ul>
+        </td>
+        <td rowspan="8" style="vertical-align: middle;"> <!-- rowspan à mettre à jour si augmentation ou diminution du nombre de ligne -->
+        <ul>
+            <li> Format opposable : <span class="flag flag-opposable">PDF/A-1</span></li>
           </ul>
         </td>
         <td>
@@ -127,6 +138,7 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
             <li><i>Format cible européen (non requis à date) : FHIR</i></li>
           </ul>
         </td>
+        <!--  <td></td> case vide, alimentée par le rowspan de la première ligne -->
         <td>
           <ul>
               <li>Spécifications opposables : <span class="flag flag-opposable"><a href="https://esante.gouv.fr/volet-synthese-medicale">Volet de Synthèse Médicale</a> (CI-SIS)</span></li>
@@ -145,6 +157,7 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
             <li>Alternative : <span class="flag flag-alternatif">Autre format structuré (JSON, XML,...)</span></li>
           </ul>
         </td>
+        <!--  <td></td> case vide, alimentée par le rowspan de la première ligne -->
         <td>
           <ul>
               <li>Spécifications prioritaires : <span class="flag flag-prioritaire"><a href="https://esante.gouv.fr/offres-services/ci-sis/espace-publication">Volets du CI-SIS</a></span></li>
@@ -163,6 +176,7 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
             <li>Alternative : <span class="flag flag-alternatif">Autre format structuré (JSON, XML,...)</span></li>
           </ul>
         </td>
+        <!--  <td></td> case vide, alimentée par le rowspan de la première ligne -->
         <td>
           <ul>
               <li>Terminologie obligatoire :  <span class="flag flag-opposable">LOINC</span></li>
@@ -181,6 +195,7 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
               <li><i>Format cible (non requis à date) : FHIR</i></li>
           </ul>
         </td>
+        <!--  <td></td> case vide, alimentée par le rowspan de la première ligne -->
         <td>
           <ul>
               <li><i>Spécifications cibles :  <a href="https://interop.esante.gouv.fr/ig/fhir/cdl/">Cahier de liaison</a></i></li>
@@ -204,6 +219,7 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
             <li> <i>Format cible CI-SIS (non requis à date) : FHIR</i></li>
           </ul>      
         </td>
+        <!--  <td></td> case vide, alimentée par le rowspan de la première ligne -->
         <td>
           <ul>
               <li><i>Spécifications cibles :  <a href="https://interop.esante.gouv.fr/ig/fhir/mesures/">Mesures de santé</a></i></li>
@@ -220,6 +236,7 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
               <li>Format opposable : <span class="flag flag-opposable">Tout format structuré documenté (JSON, XML,...)</span></li>
           </ul>
         </td>
+        <!--  <td></td> case vide, alimentée par le rowspan de la première ligne -->
         <td></td>
         <td></td>
       </tr>
@@ -233,6 +250,7 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
               <li><i>Format cible européen (non requis à date) : FHIR</i></li>
           </ul>
         </td>
+        <!--  <td></td> case vide, alimentée par le rowspan de la première ligne -->
         <td></td>
         <td>Historique des ordonnances et dispensations</td>
       </tr>
@@ -247,6 +265,7 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
               <li>Alternative : <span class="flag flag-alternatif">Autre format structuré (JSON, XML,...)</span></li>
           </ul>
         </td>
+        <td>N/A</td> <!--  non alimenté par le rowspan de la première ligne car donnée transverse et non patient -->
         <td>
           <ul>
               <li>Spécifications prioritaires :  <span class="flag flag-prioritaire"> RFC 5545</span></li>
@@ -265,6 +284,7 @@ Les formats standardisés sont à privilégier lorsqu'ils sont nativement utilis
               <li>Alternative : <span class="flag flag-alternatif">Autre format structuré (JSON, XML,...)</span></li>
           </ul>
         </td>
+        <td>N/A</td> <!--  non alimenté par le rowspan de la première ligne car donnée transverse et non patient -->
         <td>
           <ul>
               <li>Spécifications prioritaires : <span class="flag flag-prioritaire"><a href = "https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html">Profil IHE ATNA</a></span></li>

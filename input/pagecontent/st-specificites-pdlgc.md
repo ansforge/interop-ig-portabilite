@@ -13,7 +13,7 @@ L'archive chapeau porte à sa racine un `MANIFEST.XML`, distinct des `METADATA.X
 Contrairement au volet EDS, le présent volet ne restreint pas le mode de transport de l'archive chapeau. Plusieurs modalités sont admises, à la discrétion des acteurs et dans le respect des exigences de sécurité du référentiel (chiffrement, traçabilité, hébergement HDS) :
 - mise à disposition via une interface de téléchargement sécurisée ;
 - transfert via une plateforme d'échange HDS ;
-- messagerie sécurisée de santé ;
+- messagerie sécurisée de santé (MSS);
 - support physique chiffré, à titre exceptionnel et dérogatoire.
 
 Le choix du mode de transport ne modifie pas la structure de l'archive chapeau de Portabilité, ni le contenu des archives XDM patient. Les spécifications définies dans ce volet s'appliquent indépendamment du canal retenu.

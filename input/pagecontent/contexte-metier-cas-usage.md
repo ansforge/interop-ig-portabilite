@@ -8,9 +8,9 @@ Cette section décrit 3 Scenarios et plusieurs cas d'usage (non exclusifs) d'uti
 
 #### Scénario 1 : Export massif
 
-Dans ce contexte, l'intégralité de la patientèle est transférée d'un fournisseur sortant vers un fournisseur destinataire.
+Dans ce contexte, l'intégralité de la patientèle est transférée d'un LGC émetteur vers un LGC destinataire.
 
-**Cas d'usage 1.1 - changement de LGC** : Un médecin généraliste exerçant en cabinet libéral décide de changer de logiciel de gestion de cabinet. Son contrat avec l'éditeur sortant prend fin et il souhaite migrer l'intégralité de sa patientèle vers le nouveau logiciel.
+**Cas d'usage 1.1 - changement de LGC** : Un médecin généraliste exerçant en cabinet libéral décide de changer de logiciel de gestion de cabinet. Son contrat avec l'éditeur émetteur prend fin et il souhaite migrer l'intégralité de sa patientèle vers le nouveau logiciel.
 
 **Cas d'usage 1.2 - départ à la retraite** : Un médecin part à la retraite. Il doit transmettre les dossiers de ses patients à un confrère repreneur qui n'utilise pas le même LGC.
 
@@ -20,7 +20,7 @@ Dans ce contexte, l'intégralité de la patientèle est transférée d'un fourni
 
 #### Scénario 2 : Export ciblé
 
-Dans ce contexte, une sélection de la patientièle est transférée d'un fournisseur sortant vers un fournisseur destinataire. La sélection peut correspondre à un filtre par professionnel de santé ou par période.
+Dans ce contexte, une sélection de la patientièle est transférée d'un LGC émetteur vers un LGC destinataire. La sélection peut correspondre à un filtre par professionnel de santé ou par période.
 
 **Cas d'usage 2.1 - Scission d'une structure collective** : Un praticien quitte une maison de santé pluriprofessionnelle (MSP) pour s'installer en cabinet individuel. Il souhaite récupérer les dossiers de ses patients.
 
@@ -33,7 +33,7 @@ Dans ce contexte, une sélection de la patientièle est transférée d'un fourni
 
 #### Scénario 3 : Export unitaire
 
-Dans ce contexte, seul un dossier patient est transféré d'un fournisseur sortant vers un fournisseur destinataire.
+Dans ce contexte, seul un dossier patient est transféré d'un LGC émetteur vers un LGC destinataire.
 
 **Cas d'usage 3.1 - Exercice du droit du patient** : un patient demande la communication ou la portabilité de son dossier médical. Le professionnel de santé doit être en mesure de produire un export individuel des données le concernant dans un format exploitable et lisible.
 

@@ -11,14 +11,14 @@ skinparam defaultFontSize 12
 start
 :Demande l'export des données\nen précisant le périmètre\n(unitaire, ciblé, massif);
 
-|**Fournisseur sortant**\n(Système)|
+|**LGC émetteur**\n(Système)|
 :Génère l'archive Portabilité;
-:Met l'archive à disposition\ndu fournisseur destinataire;
+:Met l'archive à disposition\ndu LGC destinataire;
 
 -[dashed]-> Flux 1 - **ExportArchivePortabilite**;
 
 |**Destinataire**\n(Système ou Personne)|
-:Contrôle l'intégrité de l'archive\nà l'aide du rapport d'intégrité;
+:Contrôle l'intégrité de l'archive\nà l'aide du manifest;
 
 |**Destinataire**\n(Système ou Personne)|
 if(Type de Destinataire) then (Sytème)

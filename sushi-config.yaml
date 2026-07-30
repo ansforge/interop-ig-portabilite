@@ -94,23 +94,21 @@ groups:
       - StructureDefinition/xdmAuthorDocumentEntry
       - StructureDefinition/xdmAuthorSubmissionSet
       - StructureDefinition/xdmAuthorInstitution
-      - StructureDefinition/xdmActorXds
+      - StructureDefinition/xdmActorXdsCore
       - StructureDefinition/xdmActorPs
       - StructureDefinition/xdmActorPatient
       - StructureDefinition/xdmActorSystem
       - StructureDefinition/xdmArchive
       - StructureDefinition/xdmAssociation
-      - StructureDefinition/xdmIdentifiant   
   LogicalModelArchivePortabilite:
     name:  Modèle logique structure Archive de portabilité
     description: Modèles logiques associés aux différents fichiers et répertoires structurant une archive de portabilité
     resources:
       - StructureDefinition/pdlgcArchivePortabilite 
       - StructureDefinition/pdlgcManifest
-      - StructureDefinition/pdlgcFournisseurSortant
-      - StructureDefinition/pdlgcContactPortabilite
-      - StructureDefinition/pdlgcManifestArchives
       - StructureDefinition/pdlgcSystem
+      - StructureDefinition/pdlgcSoftwareVendor
+      - StructureDefinition/pdlgcContactPortabilite
       - StructureDefinition/pdlgcReadme
       - StructureDefinition/pdlgcSignature
       - StructureDefinition/pdlgcDocumentation
@@ -118,9 +116,9 @@ groups:
       - StructureDefinition/pdlgcArchivePatient
       - StructureDefinition/pdlgcMetadata
       - StructureDefinition/pdlgcIndex
-  LogicalModelIdentifiant:
-    name:  Identifiants nationaux
-    description: Format des identifiants nationaux
+  DataTypeProfile:
+    name:  Valeur des identifiants
+    description: Profilage du datatype string pour les identifiants
     resources:
       - StructureDefinition/patId
       - StructureDefinition/psIdNat

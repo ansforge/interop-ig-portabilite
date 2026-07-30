@@ -21,10 +21,12 @@ Fournisseur Sortant :
         . email : portabilite@editeur.fr
         . Téléphone : +33100000000
 
-Application du fournisseur sortant :
+Application de l'éditeur émetteur :
 =========================
+    . Modèle : LGC modèle
     . Nom : LGC example
     . Version : 1.2
+    . Identifiant : 175259803546/2789345815
 
 Instructions :
 =============

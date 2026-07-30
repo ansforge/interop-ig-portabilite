@@ -7,7 +7,7 @@ Le modèle logique associé à cette archive est consultable <a href="StructureD
 #### `INDEX.HTM` de l'archive XDM Patient
 
 Le fichier `INDEX.HTM` est imposé par le profil IHE_XDM à la racine d'une archive XDM. Il renferme des informations éditoriales et est conforme aux spécifications XHTML et [Echanges de Documents de santé](https://esante.gouv.fr/annexe-sources-des-donnees-personnes-et-structures). Il contient : 
-- l'identification obligatoire du fournisseur sortant ayant créé le media : StructIdNat (identifiant de stucture de santé) et StructNom (nom de la structure) ; 
+- l'identification obligatoire du système émetteur ayant créé le media : StructIdNat (identifiant de stucture de santé) et StructNom (nom de la structure) ; 
 - l'avertissement optionnel de cette institution concernant la sécurité et la confidentialité; 
 - un lien vers le fichier README.TXT.
 
@@ -48,10 +48,12 @@ Fournisseur Sortant :
         . email : portabilite@editeur.fr
         . Téléphone : +33100000000
 
-Application du fournisseur sortant :
+Application de l'éditeur émetteur :
 =========================
+    . Modèle : LGC modèle
     . Nom : LGC example
     . Version : 1.2
+    . Identifiant : 175259803546/2789345815
 
 Instructions :
 =============
@@ -81,7 +83,7 @@ Ce répertoire `IHE_XDM` contient un sous-répertoire `SUBSET01 contenant l'ense
 
 #### Répertoire `PDF/` de l'archive XDM Patient
 
-Le répertoire `PDF/`, positionné à la racine de l'archive XDM, constitue une extension au profil IHE_XDM. Il regroupe une version PDF des documents structurés contenus dans le répertoire `IHE_XDM/` destinée exclusivement à la consultation humaine. Ces fichiers ne sont pas destinés à être exploités par un système d'information et ne se substituent en aucun cas aux documents structurés, qui demeurent la source de référence pour les traitements automatisés.
+Le répertoire `PDF/`, positionné à la racine de l'archive XDM, constitue une extension au profil IHE_XDM. Il regroupe une version PDF/A-1 des documents structurés contenus dans le répertoire `IHE_XDM/` destinée exclusivement à la consultation humaine. Ces fichiers ne sont pas destinés à être exploités par un système d'information et ne se substituent en aucun cas aux documents structurés, qui demeurent la source de référence pour les traitements automatisés.
 
 Le nommage des fichiers PDF doit pouvoir permettre d'établir sans ambiguïté la correspondance avec le document structuré auquel ils se rapportent.
 

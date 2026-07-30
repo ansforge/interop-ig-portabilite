@@ -20,42 +20,49 @@ Le modèle logique associé au fichier `MANIFEST.XML` est consultable <a href="S
     <comments>Export de données LGC répondant à la demande du Dr Dupond le 13 juin 2026</comments>
     <sourceSystem>
       <lgcSoftwareVendor>
-        <raisonSociale>Editeur Exemple de LGC</raisonSociale>
+        <name>Editeur Exemple de LGC</raisonSociale>
         <idNatStruct>175259803546</idNatStruct>
+        <institution>Editeur Exemple de LGC^^^^^&amp;1.2.250.1.71.4.2.2&amp;ISO^IDNST^^^175259803546"</institution>
         <contact>
-          <nom>Service Portabilité</nom>
-          <email>portabilite@editeur.fr</email>
+          <name>Service Portabilité</name>
+          <telecom>
+            <type>EMAIL</system>
+            <value>portabilite@editeur.fr</value>
+          </telecom>
+          <telecom>
+            <system>phone</system>
+            <value>02 98 54 26 45</value>
+          </telecom>
           <telephone>+33100000000</telephone>
         </contact>
       </lgcSoftwareVendor>
-      <lgcSoftwareModelName>Modèle exemple de LGC<lgcSoftwareModelName>
-      <lgcSystemName>Système exemple LGC</lgcSystemName>
-      <lgcVersion>LGC V1.0</lgcVersion>
-      <lgcIdentifier>175259803546/2789345815</lgcIdentifier>
+      <lgcSystem>175259803546/2789345815^Système exemple LGC V1.0^Modèle Exemple^^^^^&amp;1.2.250.1.71.4.2.1&amp;ISO^U^^^RI<lgcSystem>
     </sourceSystem>
-    <PatientArchiveCount>2</PatientArchiveCount>
-    <TransverseArchiveCount>1</TransverseArchiveCount>
+    <statistics>
+      <patientArchiveCount>2</PatientArchiveCount>
+      <transverseArchiveCount>1</TransverseArchiveCount>
+    </statistics>
     <Archives>
       <Archive>
-        <type>Transverse</type>
         <archiveid>TRANSV</archiveid>
+        <type>Transverse</type>
         <size>503</size>
         <hash>127e6fbfe24a750e72930c220a8e138275656b8e5d8f48a98c3c92df2caba935</hash>
       </Archive>
       <Archive>
         <type>Patient</type>
         <archiveid>PAT00001</archiveid>
-        <patientId>1850615458136</patientId>
+        <patientId>1850615458136^^^&amp;1.2.250.1.213.1.4.10&amp;ISO^NH"</patientId>
         <size>10652</size>
         <hash>152e6fbfc23a758e75930a220a7e138275256b8e5c8f48a97c3c92df2ccba945</hash>
       </Archive>
-         <Archive>
-          <type>Patient</type>
-          <archiveid>PAT00002<archiveid>
-          <patientId>1930707245385</patientId>
-          <size>856</size>
-          <hash>956e6fbfc56d758e75930a225d7e138275256c9e4c8f48a97c3c92ec2ccba945</hash>
-        </Archive>
+      <Archive>
+        <type>Patient</type>
+        <archiveid>PAT00002<archiveid>
+        <patientId>279035121518989^^^&amp;1.2.250.1.213.1.4.10&amp;ISO^NH"</patientId>
+        <size>856</size>
+        <hash>956e6fbfc56d758e75930a225d7e138275256c9e4c8f48a97c3c92ec2ccba945</hash>
+      </Archive>
     </Archives>
 </Manifest>
 ```

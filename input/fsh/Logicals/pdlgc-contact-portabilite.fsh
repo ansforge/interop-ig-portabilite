@@ -1,11 +1,10 @@
 Logical: PDLGCContactPortabilite
 Id: pdlgcContactPortabilite
 Title: "PDLGC Contact Portabilite"
-Parent: https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Contact
 Description: "PDLGC Contact Portabilite"
 
-* nom 1..1
-* telecommunication 1..*
-
-* nom ^mustSupport = true
-* telecommunication ^mustSupport = true
+* name 1..1 string "Nom de la personne identifiée comme Point de contact Portabilité de l'éditeur"
+* telecom 1..* BackboneElement "Moyen de communication"
+  * type 1..1 code "type de moyen de contact. TEL | EMAIL | FAX"
+  * type from VS_PDLGC_TelecomType (required)
+  * value 1..1 string "valeur du contact (numéro de télépone, adresse email, numéro de fax)"

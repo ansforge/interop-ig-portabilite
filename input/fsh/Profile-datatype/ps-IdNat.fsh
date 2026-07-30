@@ -1,11 +1,12 @@
-Logical: PSIdNat 
+Profile: PSIdNat 
+Parent: string
 Id: psIdNat
 Title: "PSIdNat"
 Description: """
 Identification nationale principale du professionnel propre aux SI de l’ANS et au CI-SIS. (Correspondance dans le MOS : idNat_PS) 
 
 L’identification nationale du PS est construite selon le tableau dessous :
--  0 + N° ADELI 
+- 0 + N° ADELI 
 - 1 + Identifiant cabinet ADELI/identifiant interne 
 - 3 + FINESS/identifiant interne 
 - 4 + SIREN/identifiant interne 
@@ -14,8 +15,8 @@ L’identification nationale du PS est construite selon le tableau dessous :
 - 8 + N° RPPS 
 
 """
-* PSIdNat 1..1 identifier "PSIdNat" "PSIdNat"
-* PSIdNat obeys PSIdNat-invariant
+
+* obeys PSIdNat-invariant
 
 Invariant:   PSIdNat-invariant
 Description: "Le numéro PSIdNat doit être un entier commençant par 0, 1, 3, 4, 5, 6 ou 8"

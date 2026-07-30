@@ -1,4 +1,5 @@
-Logical: StructIdNat
+Profile: StructIdNat
+Parent: string
 Id: structIdNat
 Title: "StructIdNat"
 Description: """
@@ -12,6 +13,3 @@ L’identification nationale d’une structure est construite selon le tableau d
 - Néant + N° technique 
 
 """
-
-
-* StructIdNat 1..1 identifier "StructIdNat" "StructIdNat"

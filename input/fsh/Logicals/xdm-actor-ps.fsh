@@ -1,11 +1,11 @@
 Logical: XDMActorPS
-Parent: xdmActorXds
+Parent: xdmActorXdsCore
 Id: xdmActorPs
 Title: "XDM ActorPS"
 Description: "Cet attribut représente un acteur PS."
 Characteristics: #can-be-target
 
-* XCN1.value[x] only PSIdNat
+* XCN1 only PSIdNat
 * XCN1 ^example[0].label = "Professionnel avec un identifiant national RPPS (préfixe 8)"
 * XCN1 ^example[=].valueString = "801234567890"
 * XCN1 ^example[+].label = "Professionnel avec un identifiant interne dans une structure de santé FINESS"

@@ -27,28 +27,28 @@ mindmapDiagram {
 }
 </style>
 
-* 📦  [[StructureDefinition-pdlgc-archive-portabilite Archive de portabilité]] <<archive>>
-** 📄  [[StructureDefinition-pdlgc-manifest MANIFEST.XML]] (1..1) <<file>>
-** 📄  [[StructureDefinition-pdlgc-readme README.TXT]] (1..1) <<file>>
-** 📄  [[StructureDefinition-pdlgc-signature SIGN.XML]] (1..1) <<file>>
+* 📦  [[StructureDefinition-pdlgcArchivePortabilite Archive de portabilité]] <<archive>>
+** 📄  [[StructureDefinition-pdlgcManifest MANIFEST.XML]] (1..1) <<file>>
+** 📄  [[StructureDefinition-pdlgcReadme README.TXT]] (1..1) <<file>>
+** 📄  [[StructureDefinition-pdlgcSignature SIGN.XML]] (1..1) <<file>>
 
 ** 📁 Documentation d'export (1..1) <<folder>>
 *** 📄 Document (1..*) <<file>>
 
-** 📦  [[StructureDefinition-pdlgc-archive-transverse Archive de données transverses]] (1..1) <<archive>>
-*** 📄  [[StructureDefinition-pdlgc-readme README.TXT]] (1..1) <<file>>
+** 📦  [[StructureDefinition-pdlgcArchiveTransverse Archive de données transverses]] (1..1) <<archive>>
+*** 📄  [[StructureDefinition-pdlgcReadme README.TXT]] (1..1) <<file>>
 *** 📁 TRANSVERSE (1..1) <<folder>>
 **** 📄 Document transverse [[st-perimetre-pivot.html Périmètre pivot]] (1..*) <<file>>
 **** 📄 Document transverse hors périmètre pivot (0..*) <<file>>
 
-** 📦  [[StructureDefinition-pdlgc-archive-patient Archive XDM patient]] (1..*) <<archive>>
-*** 📄  [[StructureDefinition-pdlgc-readme README.TXT]] (1..1) <<file>>
-*** 📄  [[StructureDefinition-pdlgc-index INDEX.HTM]] (1..1) <<file>>
+** 📦  [[StructureDefinition-pdlgcArchivePatient Archive XDM patient]] (1..*) <<archive>>
+*** 📄  [[StructureDefinition-pdlgcReadme README.TXT]] (1..1) <<file>>
+*** 📄  [[StructureDefinition-pdlgcIndex INDEX.HTM]] (1..1) <<file>>
 *** 📁 PDF (1..1) <<folder>>
-**** 📄 Document PDF (1..*) <<file>>
+**** 📄 Document PDF/A-1 (1..*) <<file>>
 *** 📁 IHE_XDM (1..1) <<folder>>
 **** 📁 Lot de soumission (1..1) <<folder>>
-***** 📄  [[StructureDefinition-pdlgc-metadata METADATA.XML]] (1..1) <<file>>
+***** 📄  [[StructureDefinition-pdlgcMetadata METADATA.XML]] (1..1) <<file>>
 ***** 📄 Document patient [[st-perimetre-pivot.html Périmètre pivot]] (1..*) <<file>>
 ***** 📄 Document patient hors périmètre pivot (0..*) <<file>>
 
