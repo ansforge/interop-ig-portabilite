@@ -14,5 +14,5 @@ Pour les documents d’expression personnelle du patient, cette métadonnée est
 ","Valeur de Universal ID type (ID)","Valeur de Universal ID type (ID)","","","","","","","","","",,,,,"",,,,"xdmAuthorInstitution.XON6.composant3",1,1,"","","NA","NA"
 "xdmAuthorInstitution.XON7","xdmAuthorInstitution.XON7","","","",1,1,"","","","code {[]} {[]}
 ","Type d’identifiant","Type d’identifiant","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""IDNST""/>","","",,,,,"",,,,"xdmAuthorInstitution.XON7",1,1,"","","Valeur ne provenant pas de l’en-tête CDA","NA"
-"xdmAuthorInstitution.XON10","xdmAuthorInstitution.XON10","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/structIdNat {[]} {[]}
+"xdmAuthorInstitution.XON10","xdmAuthorInstitution.XON10","","","",1,1,"","","","string {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/structIdNat|0.1.0]]} {[]}
 ","Identifiant de la structure (Struct_IdNat)","Identifiant de la structure (Struct_IdNat)","","","","","","","","","",,,,,"",,,,"xdmAuthorInstitution.XON10",1,1,"","","author/assignedAuthor/representedOrganization/id@extension","NA"

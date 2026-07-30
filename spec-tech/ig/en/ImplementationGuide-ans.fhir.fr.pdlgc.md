@@ -14,7 +14,7 @@
   "name" : "PDLGC",
   "title" : "Portabilité des Données LGC",
   "status" : "draft",
-  "date" : "2026-07-27T13:36:25+00:00",
+  "date" : "2026-07-30T09:32:03+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -880,14 +880,14 @@
       "description" : "Modèles logiques associés aux différents fichiers et répertoires structurant une archive de portabilité"
     },
     {
-      "id" : "LogicalModelIdentifiant",
-      "name" : "Identifiants nationaux",
-      "description" : "Format des identifiants nationaux"
+      "id" : "DataTypeProfile",
+      "name" : "Valeur des identifiants",
+      "description" : "Profilage du datatype string pour les identifiants"
     }],
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
+        "valueString" : "StructureDefinition:primitive-type"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
@@ -897,9 +897,41 @@
         "reference" : "StructureDefinition/patId"
       },
       "name" : "Identifiant Patient",
-      "description" : "Identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange. Le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité. À défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé.",
+      "description" : "Identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange. \n- Matricule INS : le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité. \n- Autre identifiant : à défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé.",
       "exampleBoolean" : false,
-      "groupingId" : "LogicalModelIdentifiant"
+      "groupingId" : "DataTypeProfile"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActorDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ActorDefinition-PDLGC-Systeme-Destinataire.html"
+      }],
+      "reference" : {
+        "reference" : "ActorDefinition/PDLGC-Systeme-Destinataire"
+      },
+      "name" : "LGC Destinataire",
+      "description" : "LGC responsable de la réception et de l'intégration des données contenues dans l'archive de portabilité.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActorDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ActorDefinition-PDLGC-Systeme-Emetteur.html"
+      }],
+      "reference" : {
+        "reference" : "ActorDefinition/PDLGC-Systeme-Emetteur"
+      },
+      "name" : "LGC émetteur",
+      "description" : "LGC responsable de la production et de la mise à disposition de l'archive de portabilité à l'issue d'une demande d'export.",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1014,56 +1046,7 @@
         "reference" : "StructureDefinition/pdlgcDocumentation"
       },
       "name" : "PDLGC Documentation",
-      "description" : "Documentation d'export permettant au fournisseur destinataire d'intégrer les données LGC du fournisseur sortant",
-      "exampleBoolean" : false,
-      "groupingId" : "LogicalModelArchivePortabilite"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ActorDefinition"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ActorDefinition-PDLGC-Fournisseur-Destinataire.html"
-      }],
-      "reference" : {
-        "reference" : "ActorDefinition/PDLGC-Fournisseur-Destinataire"
-      },
-      "name" : "PDLGC Fournisseur Destinataire",
-      "description" : "Fournisseur de LGC recevant les données en vue de leur intégration. Il est tenu d'une obligation de moyens pour l'import dès lors que le format réceptionné est conforme au référentiel.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ActorDefinition"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ActorDefinition-PDLGC-Fournisseur-Sortant.html"
-      }],
-      "reference" : {
-        "reference" : "ActorDefinition/PDLGC-Fournisseur-Sortant"
-      },
-      "name" : "PDLGC Fournisseur Sortant",
-      "description" : "Fournisseur du LGC dont le contrat prend fin ou depuis lequel l'utilisateur souhaite exporter ses données. C'est lui qui est redevable de l'obligation de portabilité gratuite du Périmètre Pivot sous 30 jours calendaires.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-pdlgcFournisseurSortant.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/pdlgcFournisseurSortant"
-      },
-      "name" : "PDLGC FournisseurSortant",
-      "description" : "PDLGC Fournisseur Sortant",
+      "description" : "Documentation d'export permettant au LGC destinataire d'intégrer les données du LGC émetteur",
       "exampleBoolean" : false,
       "groupingId" : "LogicalModelArchivePortabilite"
     },
@@ -1098,23 +1081,6 @@
       },
       "name" : "PDLGC Manifest",
       "description" : "Le fichier MANIFEST.XML porte les métadonnées globales de l'export (nombre de dossiers patients, volumétrie, éléments d'intégrité), distinctes des métadonnées XDM portées par chaque `METADATA.XML` patient",
-      "exampleBoolean" : false,
-      "groupingId" : "LogicalModelArchivePortabilite"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-pdlgcManifestArchives.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/pdlgcManifestArchives"
-      },
-      "name" : "PDLGC Manifest Archives",
-      "description" : "Informations relatives aux répertoires Patient et transverse exportées dans l'archive de portabilité",
       "exampleBoolean" : false,
       "groupingId" : "LogicalModelArchivePortabilite"
     },
@@ -1166,6 +1132,23 @@
       },
       "name" : "PDLGC Signature",
       "description" : "signature XAdES de l'archive attestant de l'imputabilité et l'intégrité des données",
+      "exampleBoolean" : false,
+      "groupingId" : "LogicalModelArchivePortabilite"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-pdlgcSoftwareVendor.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/pdlgcSoftwareVendor"
+      },
+      "name" : "PDLGC SoftwareVendor",
+      "description" : "Editeur du logiciel",
       "exampleBoolean" : false,
       "groupingId" : "LogicalModelArchivePortabilite"
     },
@@ -1237,7 +1220,23 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-vs-pdlgc-telecom-type.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-pdlgc-telecom-type"
+      },
+      "name" : "PDLGC Type de moyen de communication",
+      "description" : "PDLGC Type de moyen de communication",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:primitive-type"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
@@ -1247,9 +1246,9 @@
         "reference" : "StructureDefinition/psIdNat"
       },
       "name" : "PSIdNat",
-      "description" : "Identification nationale principale du professionnel propre aux SI de l’ANS et au CI-SIS. (Correspondance dans le MOS : idNat_PS) \n\nL’identification nationale du PS est construite selon le tableau dessous :\n-  0 + N° ADELI \n- 1 + Identifiant cabinet ADELI/identifiant interne \n- 3 + FINESS/identifiant interne \n- 4 + SIREN/identifiant interne \n- 5 + SIRET/identifiant interne \n- 6 + Identifiant cabinet RPPS/identifiant interne \n- 8 + N° RPPS",
+      "description" : "Identification nationale principale du professionnel propre aux SI de l’ANS et au CI-SIS. (Correspondance dans le MOS : idNat_PS) \n\nL’identification nationale du PS est construite selon le tableau dessous :\n- 0 + N° ADELI \n- 1 + Identifiant cabinet ADELI/identifiant interne \n- 3 + FINESS/identifiant interne \n- 4 + SIREN/identifiant interne \n- 5 + SIRET/identifiant interne \n- 6 + Identifiant cabinet RPPS/identifiant interne \n- 8 + N° RPPS",
       "exampleBoolean" : false,
-      "groupingId" : "LogicalModelIdentifiant"
+      "groupingId" : "DataTypeProfile"
     },
     {
       "extension" : [{
@@ -1270,7 +1269,7 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
+        "valueString" : "StructureDefinition:primitive-type"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
@@ -1282,12 +1281,12 @@
       "name" : "StructIdNat",
       "description" : "Identification nationale principale d’une structure propre aux SI de l'ANS et au CI-SIS 4. \n\nL’identification nationale d’une structure est construite selon le tableau dessous :\n- 0 + Identifiant cabinet ADELI \n- 1 + N° FINESS 2 + N° SIREN \n- 3 + N° SIRET \n- 4 + N° RPPS-rang \n- Néant + N° technique",
       "exampleBoolean" : false,
-      "groupingId" : "LogicalModelIdentifiant"
+      "groupingId" : "DataTypeProfile"
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
+        "valueString" : "StructureDefinition:primitive-type"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
@@ -1297,9 +1296,9 @@
         "reference" : "StructureDefinition/systIdNat"
       },
       "name" : "SystIdNat",
-      "description" : "Identification d'un systeme\n\nL’identification du systeme  est construite selon le tableau dessous :\n- 1 + Identifiant cabinet ADELI/Identifiant interne du système dans la structure \n- 3 + FINESS/Identifiant interne du système dans la structure  \n- 4 + SIREN/Identifiant interne du système dans la structure \n- 5 + SIRET/Identifiant interne du système dans la structure \n- 6 + Identifiant cabinet RPPS/Identifiant interne du système dans la structure",
+      "description" : "Identification d'un système\n\nL’identification du système  est construite selon le tableau dessous :\n- 1 + Identifiant cabinet ADELI/Identifiant interne du système dans la structure \n- 3 + FINESS/Identifiant interne du système dans la structure  \n- 4 + SIREN/Identifiant interne du système dans la structure \n- 5 + SIRET/Identifiant interne du système dans la structure \n- 6 + Identifiant cabinet RPPS/Identifiant interne du système dans la structure",
       "exampleBoolean" : false,
-      "groupingId" : "LogicalModelIdentifiant"
+      "groupingId" : "DataTypeProfile"
     },
     {
       "extension" : [{
@@ -1368,6 +1367,22 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-cs-pdlgc-telecom-type.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/cs-pdlgc-telecom-type"
+      },
+      "name" : "Type de moyen de communication",
+      "description" : "Type de moyen de communication",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
       },
       {
@@ -1423,13 +1438,13 @@
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-xdmActorXds.html"
+        "valueUri" : "StructureDefinition-xdmActorXdsCore.html"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/xdmActorXds"
+        "reference" : "StructureDefinition/xdmActorXdsCore"
       },
-      "name" : "XDM ActorXDS",
-      "description" : "Cet attribut représente un acteur (humain ou système) ayant contribué au document. Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient. \n\nXCN de HL7 v2.5",
+      "name" : "XDM ActorXDS Core",
+      "description" : "Cet attribut représente un acteur (humain ou système) ayant contribué au document. Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient. \n\nType XCN de HL7 v2.5",
       "exampleBoolean" : false,
       "groupingId" : "LogicalModelXDM"
     },
@@ -1566,23 +1581,6 @@
       },
       "name" : "XDM EventCode",
       "description" : "Modèle logique d'un eventCode.\nUn EventCode peut contenir le code représentant : \n-  un évènement documenté (acte, traitement, diagnostic, etc…),  \n-  une modalité d’acquisition, \n-  une région anatomique.",
-      "exampleBoolean" : false,
-      "groupingId" : "LogicalModelXDM"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-xdmIdentifiant.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/xdmIdentifiant"
-      },
-      "name" : "XDM Identifiant",
-      "description" : "Identifiant de professionnel de santé, de patient ou de système",
       "exampleBoolean" : false,
       "groupingId" : "LogicalModelXDM"
     },

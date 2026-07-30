@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "b3b9b6d8-d63c-43f4-9390-fa9a41b77e90",
+  "id" : "8255ed3f-5f8e-465a-b86a-5da052b41220",
   "meta" : {
-    "lastUpdated" : "2026-07-27T13:36:25.585+00:00"
+    "lastUpdated" : "2026-07-30T09:32:03.604+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -22,7 +22,7 @@
       "title" : "Type d'association XDS (VS)",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-07-27T13:36:25+00:00",
+      "date" : "2026-07-30T09:32:03+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -31,8 +31,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:df3dfdcb-e1f9-4008-93a5-cb88a44a4305",
-        "timestamp" : "2026-07-27T13:37:38+00:00",
+        "identifier" : "urn:uuid:56bbb1a6-f0fe-42cf-ba91-eda93da218ed",
+        "timestamp" : "2026-07-30T09:33:09+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -83,7 +83,7 @@
       "title" : "Type d'association XDS (VS)",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-07-27T13:36:25+00:00",
+      "date" : "2026-07-30T09:32:03+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -92,8 +92,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:df3dfdcb-e1f9-4008-93a5-cb88a44a4305",
-        "timestamp" : "2026-07-27T13:37:38+00:00",
+        "identifier" : "urn:uuid:56bbb1a6-f0fe-42cf-ba91-eda93da218ed",
+        "timestamp" : "2026-07-30T09:33:09+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -144,7 +144,7 @@
       "title" : "Type d'association XDS (VS)",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-07-27T13:36:25+00:00",
+      "date" : "2026-07-30T09:32:03+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -153,8 +153,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ae2b3542-96a5-4415-887b-1309ff552cdf",
-        "timestamp" : "2026-07-27T13:37:38+00:00",
+        "identifier" : "urn:uuid:c2a33214-0b20-4436-b357-5948894f2ee2",
+        "timestamp" : "2026-07-30T09:33:09+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -207,7 +207,7 @@
       "title" : "PDLGC Type d'archive",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-07-27T13:36:25+00:00",
+      "date" : "2026-07-30T09:32:03+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -216,8 +216,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c4ea057b-499d-40e8-b084-63f3fde163b3",
-        "timestamp" : "2026-07-27T13:37:38+00:00",
+        "identifier" : "urn:uuid:525cd20e-c875-466d-80a1-cc6d9f774654",
+        "timestamp" : "2026-07-30T09:33:09+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -268,7 +268,7 @@
       "title" : "PDLGC Type d'archive",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-07-27T13:36:25+00:00",
+      "date" : "2026-07-30T09:32:03+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -277,8 +277,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c4ea057b-499d-40e8-b084-63f3fde163b3",
-        "timestamp" : "2026-07-27T13:37:38+00:00",
+        "identifier" : "urn:uuid:525cd20e-c875-466d-80a1-cc6d9f774654",
+        "timestamp" : "2026-07-30T09:33:09+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -329,7 +329,7 @@
       "title" : "PDLGC Type d'archive",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-07-27T13:36:25+00:00",
+      "date" : "2026-07-30T09:32:03+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -338,8 +338,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:295791b3-8a9d-4375-bdb4-1ea6465b5df3",
-        "timestamp" : "2026-07-27T13:37:38+00:00",
+        "identifier" : "urn:uuid:acda104b-ee68-4ff2-bc9b-a0211394cdf9",
+        "timestamp" : "2026-07-30T09:33:09+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -392,7 +392,7 @@
       "title" : "PDLGC Statut de l'export",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-07-27T13:36:25+00:00",
+      "date" : "2026-07-30T09:32:03+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -401,8 +401,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d77fb6a8-f642-4469-b4a9-5b69af2a332d",
-        "timestamp" : "2026-07-27T13:37:38+00:00",
+        "identifier" : "urn:uuid:43c087c6-e7f2-4eb3-97a4-f33afa22f941",
+        "timestamp" : "2026-07-30T09:33:09+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -457,7 +457,7 @@
       "title" : "PDLGC Statut de l'export",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-07-27T13:36:25+00:00",
+      "date" : "2026-07-30T09:32:03+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -466,8 +466,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d77fb6a8-f642-4469-b4a9-5b69af2a332d",
-        "timestamp" : "2026-07-27T13:37:38+00:00",
+        "identifier" : "urn:uuid:43c087c6-e7f2-4eb3-97a4-f33afa22f941",
+        "timestamp" : "2026-07-30T09:33:09+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -522,7 +522,7 @@
       "title" : "PDLGC Statut de l'export",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-07-27T13:36:25+00:00",
+      "date" : "2026-07-30T09:32:03+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -531,8 +531,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:93f5e122-0f1a-4c6e-9853-513b4c2f4b86",
-        "timestamp" : "2026-07-27T13:37:38+00:00",
+        "identifier" : "urn:uuid:26d01f64-21b0-4868-af56-3397cf15755a",
+        "timestamp" : "2026-07-30T09:33:09+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -590,7 +590,7 @@
       "title" : "PDLGC Type d'Export",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-07-27T13:36:25+00:00",
+      "date" : "2026-07-30T09:32:03+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -599,8 +599,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:eb6f12c3-e194-4aac-b92d-91b1cb18db8e",
-        "timestamp" : "2026-07-27T13:37:38+00:00",
+        "identifier" : "urn:uuid:bfaca974-543f-4b48-8701-ff77d8c7de7e",
+        "timestamp" : "2026-07-30T09:33:09+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -655,7 +655,7 @@
       "title" : "PDLGC Type d'Export",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-07-27T13:36:25+00:00",
+      "date" : "2026-07-30T09:32:03+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -664,8 +664,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:eb6f12c3-e194-4aac-b92d-91b1cb18db8e",
-        "timestamp" : "2026-07-27T13:37:38+00:00",
+        "identifier" : "urn:uuid:bfaca974-543f-4b48-8701-ff77d8c7de7e",
+        "timestamp" : "2026-07-30T09:33:09+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -720,7 +720,7 @@
       "title" : "PDLGC Type d'Export",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-07-27T13:36:25+00:00",
+      "date" : "2026-07-30T09:32:03+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -729,8 +729,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:cc53706d-f13e-44e7-92b4-ccaf19c86fbb",
-        "timestamp" : "2026-07-27T13:37:38+00:00",
+        "identifier" : "urn:uuid:22df38b3-cbc9-4794-8ada-dce855b3b19e",
+        "timestamp" : "2026-07-30T09:33:09+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -767,6 +767,204 @@
           "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type",
           "code" : "MASSIF",
           "display" : "Export Massif de l'intégralité de la patientèle"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-telecom-type",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion effectuée en interne basée sur <a href=\"CodeSystem-cs-pdlgc-telecom-type.html\">codesystem Type de moyen de communication v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type|0.1.0\" title=\"Cliquer pour copier l'URL\" class=\"btn-copy\"> </button></span></p><p>Ce jeu de valeur (ValueSet) contient 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>Système</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage (fr)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type-TEL\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-pdlgc-telecom-type.html#cs-pdlgc-telecom-type-TEL\">TEL</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;TEL&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;TEL&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type-EMAIL\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-pdlgc-telecom-type.html#cs-pdlgc-telecom-type-EMAIL\">EMAIL</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;EMAIL&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;EMAIL&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type-FAX\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-pdlgc-telecom-type.html#cs-pdlgc-telecom-type-FAX\">FAX</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;FAX&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;FAX&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-telecom-type",
+      "version" : "0.1.0",
+      "name" : "VS_PDLGC_TelecomType",
+      "title" : "PDLGC Type de moyen de communication",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2026-07-30T09:32:03+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FR",
+          "display" : "France (la)"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:3465d568-ec59-4a1c-8f83-73d983fc2e2a",
+        "timestamp" : "2026-07-30T09:33:09+00:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "fr"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type",
+          "code" : "TEL"
+        },
+        {
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type",
+          "code" : "EMAIL"
+        },
+        {
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type",
+          "code" : "FAX"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-telecom-type",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion effectuée en interne basée sur <a href=\"CodeSystem-cs-pdlgc-telecom-type.html\">codesystem Type de moyen de communication v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type|0.1.0\" title=\"Cliquer pour copier l'URL\" class=\"btn-copy\"> </button></span></p><p>Ce jeu de valeur (ValueSet) contient 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>Système</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage (fr)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type-TEL\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-pdlgc-telecom-type.html#cs-pdlgc-telecom-type-TEL\">TEL</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;TEL&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;TEL&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type-EMAIL\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-pdlgc-telecom-type.html#cs-pdlgc-telecom-type-EMAIL\">EMAIL</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;EMAIL&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;EMAIL&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type-FAX\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-pdlgc-telecom-type.html#cs-pdlgc-telecom-type-FAX\">FAX</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;FAX&quot;}\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;FAX&quot;&gt;&lt;/coding&gt;\" title=\"Cliquer pour copier en tant que Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-telecom-type",
+      "version" : "0.1.0",
+      "name" : "VS_PDLGC_TelecomType",
+      "title" : "PDLGC Type de moyen de communication",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2026-07-30T09:32:03+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FR",
+          "display" : "France (la)"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:3465d568-ec59-4a1c-8f83-73d983fc2e2a",
+        "timestamp" : "2026-07-30T09:33:09+00:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "fr"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type",
+          "code" : "TEL"
+        },
+        {
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type",
+          "code" : "EMAIL"
+        },
+        {
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type",
+          "code" : "FAX"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-telecom-type",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-cs-pdlgc-telecom-type.html\">codesystem Type de moyen de communication v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type|0.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type-TEL\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-pdlgc-telecom-type.html#cs-pdlgc-telecom-type-TEL\">TEL</a></td><td>Téléphone</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;TEL&quot;, &quot;display&quot;: &quot;Téléphone&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;TEL&quot;&gt;&lt;display value=&quot;Téléphone&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type-EMAIL\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-pdlgc-telecom-type.html#cs-pdlgc-telecom-type-EMAIL\">EMAIL</a></td><td>Email</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;EMAIL&quot;, &quot;display&quot;: &quot;Email&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;EMAIL&quot;&gt;&lt;display value=&quot;Email&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type-FAX\"> </a><code>https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-cs-pdlgc-telecom-type.html#cs-pdlgc-telecom-type-FAX\">FAX</a></td><td>Fax</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;FAX&quot;, &quot;display&quot;: &quot;Fax&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;FAX&quot;&gt;&lt;display value=&quot;Fax&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-telecom-type",
+      "version" : "0.1.0",
+      "name" : "VS_PDLGC_TelecomType",
+      "title" : "PDLGC Type de moyen de communication",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2026-07-30T09:32:03+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FR",
+          "display" : "France (la)"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:82f79b1d-7006-4317-b564-e1d6227e7507",
+        "timestamp" : "2026-07-30T09:33:09+00:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type",
+          "code" : "TEL",
+          "display" : "Téléphone"
+        },
+        {
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type",
+          "code" : "EMAIL",
+          "display" : "Email"
+        },
+        {
+          "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type",
+          "code" : "FAX",
+          "display" : "Fax"
         }]
       }
     }

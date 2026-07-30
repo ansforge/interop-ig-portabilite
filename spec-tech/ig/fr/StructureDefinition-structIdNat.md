@@ -1,6 +1,6 @@
 # StructIdNat - Portabilité des Données LGC v0.1.0
 
-## Modèle logique: StructIdNat 
+## Profil du type de données: StructIdNat 
 
  
 Identification nationale principale d’une structure propre aux SI de l'ANS et au CI-SIS 4. 
@@ -14,7 +14,7 @@ L’identification nationale d’une structure est construite selon le tableau d
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [PDLGC Index](StructureDefinition-pdlgcIndex.md) and [XDM AuthorInstitution](StructureDefinition-xdmAuthorInstitution.md)
+* Utilise ce/t/te Profil de type primitif: [PDLGC Index](StructureDefinition-pdlgcIndex.md) and [XDM AuthorInstitution](StructureDefinition-xdmAuthorInstitution.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.pdlgc|current/StructureDefinition/structIdNat)
 
@@ -22,46 +22,41 @@ Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https:/
 
  [Description des profils, des différentiels, des instantanés et de leurs représentations](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
 
+*  [Tableau des éléments clés](#tabs-key) 
 *  [Tableau différentiel (differential)](#tabs-diff) 
 *  [Tableau récapitulatif (snapshot)](#tabs-snap) 
 *  [Statistiques/Références](#tabs-summ) 
 *  [Tous](#tabs-all) 
 
-Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base) 
+#### Contraintes
 
-Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base) 
+Cette structure est dérivée de [string](http://hl7.org/fhir/R4/datatypes.html#string) 
+
+#### Contraintes
+
+Cette structure est dérivée de [string](http://hl7.org/fhir/R4/datatypes.html#string) 
 
 ** Résumé **
 
-Obligatoire : 0 élément(1 élément obligatoire(s) imbriqué(s))
+ **Vue des éléments clés** 
 
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [Identifier (http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.3.0)](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-elementdefinition-identifier.html)
+#### Contraintes
 
  **Vue différentielle** 
 
-Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base) 
+Cette structure est dérivée de [string](http://hl7.org/fhir/R4/datatypes.html#string) 
 
  **Vue d'ensembleView** 
 
-Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base) 
+#### Contraintes
+
+Cette structure est dérivée de [string](http://hl7.org/fhir/R4/datatypes.html#string) 
 
 ** Résumé **
 
-Obligatoire : 0 élément(1 élément obligatoire(s) imbriqué(s))
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [Identifier (http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.3.0)](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-elementdefinition-identifier.html)
-
  
 
-Autres représentations du profil : [CSV](../StructureDefinition-structIdNat.csv), [Excel](../StructureDefinition-structIdNat.xlsx) 
+Autres représentations du profil : [CSV](../StructureDefinition-structIdNat.csv), [Excel](../StructureDefinition-structIdNat.xlsx), [Schematron](../StructureDefinition-structIdNat.sch) 
 
 
 
@@ -76,7 +71,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-structIdNat.csv
   "name" : "StructIdNat",
   "title" : "StructIdNat",
   "status" : "draft",
-  "date" : "2026-07-27T13:36:25+00:00",
+  "date" : "2026-07-30T09:32:03+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -94,29 +89,15 @@ Autres représentations du profil : [CSV](../StructureDefinition-structIdNat.csv
     }]
   }],
   "fhirVersion" : "4.0.1",
-  "kind" : "logical",
+  "kind" : "primitive-type",
   "abstract" : false,
-  "type" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/structIdNat",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base|4.0.1",
-  "derivation" : "specialization",
+  "type" : "string",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/string|4.0.1",
+  "derivation" : "constraint",
   "differential" : {
     "element" : [{
-      "id" : "structIdNat",
-      "path" : "structIdNat",
-      "short" : "StructIdNat",
-      "definition" : "Identification nationale principale d’une structure propre aux SI de l'ANS et au CI-SIS 4. \n\nL’identification nationale d’une structure est construite selon le tableau dessous :\n- 0 + Identifiant cabinet ADELI \n- 1 + N° FINESS 2 + N° SIREN \n- 3 + N° SIRET \n- 4 + N° RPPS-rang \n- Néant + N° technique \n"
-    },
-    {
-      "id" : "structIdNat.StructIdNat",
-      "path" : "structIdNat.StructIdNat",
-      "short" : "StructIdNat",
-      "definition" : "StructIdNat",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.3.0"]
-      }]
+      "id" : "string",
+      "path" : "string"
     }]
   }
 }

@@ -19,18 +19,31 @@ Représentation graphique de la structure de l'archive de portabilité
 
 ### Conventions d'écritures des répertoires et des fichiers
 
-**Format de nommage pour les fichiers et répertoire des archives XDM**
+**Format de nommage pour les fichiers et répertoire des lots de soumission (`SUBSET`) des archives XDM**
 
 Les noms des répertoires et des fichiers inclus dans l'archive Patient XDM doivent être conformes à la norme ISO 9660 niveau 1, comme défini dans le profil IHE_XDM :
 
 * **format 8.3** : 8 caractères maximum pour le nom des fichiers et répertoires, 3 caractère pour l'extension des fichiers;
 * **caractères limités** : lettres en majuscules, chiffres et trait de soulignement ("underscore" en anglais, signe typographique "_").
 
-Il se peut que les noms des fichiers et des répertoires inclus dans l'archive soient différents de leurs noms d'origine. Par exemple, `CR_SER01.XML` aurait pour nom d'origine `Compte-rendu de sérologie du 10 mai 2013.xml`. Le fournisseur sortant doit alors assurer le transcodage et la traçabilité entre le nom d'origine des répertoires et des fichiers et le nom conforme à la norme ISO 9660 niveau 1 de ces mêmes répertoires et fichiers, lorsque ceux-ci sont copiés dans IHE_XDM. Cette traçabilité peut être obtenue en établissant une table de correspondance entre le nom d'origine du fichier ou du répertoire et son nom une fois copié dans IHE_XDM.
+Afin de respecter ce format, les noms des fichiers et des répertoires de documents multifichiers peuvent être différents de leurs noms d'origine. Par exemple, `CR_SER01.XML` aurait pour nom d'origine `Compte-rendu de sérologie du 10 mai 2013.xml`. Le système émetteur doit alors assurer le transcodage et la traçabilité entre le nom d'origine des répertoires et des fichiers et le nom conforme à la norme ISO 9660 niveau 1 de ces mêmes répertoires et fichiers, lorsque ceux-ci sont copiés dans IHE_XDM. Cette traçabilité est obtenue en exploitant la métadonnées XDS `typeCodeDisplayName` pour enregistrer le nom d'origine.
+
+**Format de nommage pour les fichiers du répertoire `PDF` des archives XDM**
+
+Les documents PDF de ce répertoire étant destinés à une lecture humaine, ils DOIVENT respecter la convention de nommage suivante, afin de faciliter l’identification des documents de santé : `<date de l’acte>_<type document>_<NOM>_<prenom>_<numéro de dossier>.pdf` Tous les champs sont obligatoires à l’exception du champ `<numéro de dossier>` qui est optionnel.
+
+Avec :
+
+* `<date de l’acte>` : date à laquelle l’acte a été réalisé (AAAAMMJJ). Correspond à la métadonnée XDS `serviceStartTime` du document structuré équivalent ;
+* `<type document>` : métadonnée XDS `typeCodeDisplayName` du document structuré équivalent. Pour une meilleure lisibilité du nom du PDF, ce libellé doit être tronqué à 40 caractères, si sa longueur est supérieure ;
+* `<NOM>` : nom de naissance de l’usager en majuscule, si disponible. Sinon renseigner avec le nom usuel ;
+* `<prenom>` : prénom de l’usager ;
+* `<numéro de dossier>` : numéro d’identification propre à l’émetteur et partagé avec le destinataire. Pour les comptes rendus d’examens de biologie, il correspond au numéro d’enregistrement de la prescription initiale reçue par le laboratoire principal ;
+* « _ » : caractère underscore (ASCII - décimal 95).
 
 **Format de nommage pour les fichiers et répertoires de l'archive de portabilité, hors archives XDM**
 
-En dehors des archives patients XDM, les noms des répertoires et fichiers ne sont pas soumis au format 8.3.
+En dehors des répertoires et fichiers de l'archive Patient XDM, les noms des répertoires et fichiers ne sont pas soumis au format 8.3.
 
 **Conventions de nommage**
 
@@ -41,11 +54,11 @@ Le nom de l'archive de portabilité doit respecter le format `PA{AAAAMMJJThhmmss
 
 Le nom des répertoires et sous-archives ZIP doit respecter le format suivant :
 
-* `DOCUMENTATION/`: documentation d'export permettant au fournisseur sortant d'interpréter et d'intégrer les données ;
+* `DOCUMENTATION/`: documentation d'export permettant à l'éditeur émetteur d'interpréter et d'intégrer les données ;
 * `TRANSVERSE.ZIP` : archive contenant les données transverses (logs, comptabilité, agenda,…) ;
 * `TRANSVERSE/` : répertoire contenant les données transverses (logs, comptabilité, agenda,…) ;
 * `PATNNNNN.ZIP` : contient les données d'un patient et est conforme au profil IHE_XDM, ou "NNNNN" est incrémenté à partir de 00001. Exemple : `PAT00183.ZIP`;
-* `PDF`: sous-répertoire de l'archive patient contenant les documents PDF destinés à la consultation humaine ;
+* `PDF`: sous-répertoire de l'archive patient contenant les documents PDF/A-1 destinés à la consultation humaine ;
 * `IHE_XDM`et `SUBSET01`: sous-répertoires de l'archive XDM contenant les documents d'un patient.
 
 ### Fichiers de gestion de l'archive de portabilité (Manifest, readme, signature)
@@ -73,38 +86,51 @@ Le modèle logique associé au fichier `MANIFEST.XML` est consultable [ici](Stru
     <exportType>MASSIF</exportType>
     <exportStatus>COMPLETE</exportStatus>
     <comments>Export de données LGC répondant à la demande du Dr Dupond le 13 juin 2026</comments>
-    <editeurSortant>
-      <raisonSociale>Editeur Exemple de LGC</raisonSociale>
-      <idNatStruct>175259803546</idNatStruct>
-      <contact>
-        <nom>Service Portabilité</nom>
-        <email>portabilite@editeur.fr</email>
-        <telephone>+33100000000</telephone>
-      </contact>
-    </editeurSortant>
-    <PatientArchiveCount>2</PatientArchiveCount>
-    <TransverseArchiveCount>1</TransverseArchiveCount>
+    <sourceSystem>
+      <lgcSoftwareVendor>
+        <name>Editeur Exemple de LGC</raisonSociale>
+        <idNatStruct>175259803546</idNatStruct>
+        <institution>Editeur Exemple de LGC^^^^^&amp;1.2.250.1.71.4.2.2&amp;ISO^IDNST^^^175259803546"</institution>
+        <contact>
+          <name>Service Portabilité</name>
+          <telecom>
+            <type>EMAIL</system>
+            <value>portabilite@editeur.fr</value>
+          </telecom>
+          <telecom>
+            <system>phone</system>
+            <value>02 98 54 26 45</value>
+          </telecom>
+          <telephone>+33100000000</telephone>
+        </contact>
+      </lgcSoftwareVendor>
+      <lgcSystem>175259803546/2789345815^Système exemple LGC V1.0^Modèle Exemple^^^^^&amp;1.2.250.1.71.4.2.1&amp;ISO^U^^^RI<lgcSystem>
+    </sourceSystem>
+    <statistics>
+      <patientArchiveCount>2</PatientArchiveCount>
+      <transverseArchiveCount>1</TransverseArchiveCount>
+    </statistics>
     <Archives>
       <Archive>
-        <type>Transverse</type>
         <archiveid>TRANSV</archiveid>
+        <type>Transverse</type>
         <size>503</size>
         <hash>127e6fbfe24a750e72930c220a8e138275656b8e5d8f48a98c3c92df2caba935</hash>
       </Archive>
       <Archive>
         <type>Patient</type>
         <archiveid>PAT00001</archiveid>
-        <patientId>1850615458136</patientId>
+        <patientId>1850615458136^^^&amp;1.2.250.1.213.1.4.10&amp;ISO^NH"</patientId>
         <size>10652</size>
         <hash>152e6fbfc23a758e75930a220a7e138275256b8e5c8f48a97c3c92df2ccba945</hash>
       </Archive>
-         <Archive>
-          <type>Patient</type>
-          <archiveid>PAT00002<archiveid>
-          <patientId>1930707245385</patientId>
-          <size>856</size>
-          <hash>956e6fbfc56d758e75930a225d7e138275256c9e4c8f48a97c3c92ec2ccba945</hash>
-        </Archive>
+      <Archive>
+        <type>Patient</type>
+        <archiveid>PAT00002<archiveid>
+        <patientId>279035121518989^^^&amp;1.2.250.1.213.1.4.10&amp;ISO^NH"</patientId>
+        <size>856</size>
+        <hash>956e6fbfc56d758e75930a225d7e138275256c9e4c8f48a97c3c92ec2ccba945</hash>
+      </Archive>
     </Archives>
 </Manifest>
 
@@ -112,9 +138,9 @@ Le modèle logique associé au fichier `MANIFEST.XML` est consultable [ici](Stru
 
 #### README.TXT de l'archive de portabilité
 
-Le fichier README.TXT est indépendant du contenu clinique de l'archive. Il contient des informations éditoriales dont le caractère obligatoire relève du fournisseur sortant, conformément au volume 2b du cadre technique ITI :
+Le fichier README.TXT est indépendant du contenu clinique de l'archive. Il contient des informations éditoriales dont le caractère obligatoire du système émetteur, conformément au volume 2b du cadre technique ITI :
 
-* point de contact du fournisseur sortant ayant créé l'archive ;
+* point de contact de l'éditeur émetteur ayant créé l'archive ;
 * nom et version du logiciel ayant créé l'archive ;
 * informations générales sur la structure de l'archive (ces informations n'ont pas vocation à être spécifique au contenu stocké dans l'archive) ;
 * instructions permettant de visualiser les documents joints, dans le cas ou un viewer est transmis (ex. visualisation des documents de santé enregistrés avec leur feuille de style dans un même répertoire).
@@ -141,10 +167,12 @@ Fournisseur Sortant :
         . email : portabilite@editeur.fr
         . Téléphone : +33100000000
 
-Application du fournisseur sortant :
+Application de l'éditeur émetteur :
 =========================
+    . Modèle : LGC modèle
     . Nom : LGC example
     . Version : 1.2
+    . Identifiant : 175259803546/2789345815
 
 Instructions :
 =============
@@ -260,13 +288,13 @@ Le modèle logique associé au fichier `SIGN.XML` est consultable [ici](Structur
 
 ### Documentation d'export de l'archive de portabilité
 
-Le répertoire `DOCUMENTATION/`, positionné à la racine de l'archive de portabilité, regroupe l'ensemble des éléments permettant au fournisseur destinataire d'interpréter et d'intégrer les données reçues de manière autonome, sans échange préalable avec le fournisseur sortant.
+Le répertoire `DOCUMENTATION/`, positionné à la racine de l'archive de portabilité, regroupe l'ensemble des éléments permettant au LGC destinataire d'interpréter et d'intégrer les données reçues de manière autonome, sans échange préalable avec le LGC émetteur.
 
 Cette documentation peut notamment comprendre les fichiers décrits ci-après.
 
 #### Dictionnaire de données
 
-Le dictionnaire de données décrit les données exportées dans un format propriétaire structuré, pour lesquelles il n'existe pas de spécification publique de référence permettant au fournisseur destinataire d'en déduire la structure et la sémantique. Les données exportées conformément à un volet du CI-SIS ou à un standard publié (CDA R2, FHIR, LOINC…) n'ont pas à faire l'objet d'un dictionnaire de données : le mapping de fichiers renvoie dans ce cas directement aux spécifications applicables.
+Le dictionnaire de données décrit les données exportées dans un format propriétaire structuré, pour lesquelles il n'existe pas de spécification publique de référence permettant au LGC destinataire d'en déduire la structure et la sémantique. Les données exportées conformément à un volet du CI-SIS ou à un standard publié (CDA R2, FHIR, LOINC…) n'ont pas à faire l'objet d'un dictionnaire de données : le mapping de fichiers renvoie dans ce cas directement aux spécifications applicables.
 
 Pour chaque donnée relevant de son périmètre, le dictionnaire couvre a minima :
 
@@ -293,17 +321,17 @@ Pour les fichiers exportés dans un format propriétaire, le mapping précise en
 
 #### Schéma de structure
 
-Pour les données exportées dans un format propriétaire structuré, le fournisseur sortant peut fournir les schémas décrivant la structure des fichiers concernés (XSD, JSON Schema ou équivalent). Ces schémas constituent, au même titre que le dictionnaire de données, une ressource d'implémentation pour le fournisseur destinataire : ils lui permettent de comprendre l'organisation des données reçues et d'adapter son traitement en conséquence. Comme pour le dictionnaire de données, les fichiers conformes à un volet CI-SIS ou à un standard publié n'appellent pas de schéma complémentaire : le mapping de fichiers renvoie dans ce cas aux spécifications applicables.
+Pour les données exportées dans un format propriétaire structuré, l'éditeur émetteur peut fournir les schémas décrivant la structure des fichiers concernés (XSD, JSON Schema ou équivalent). Ces schémas constituent, au même titre que le dictionnaire de données, une ressource d'implémentation pour le système destinataire : ils lui permettent de comprendre l'organisation des données reçues et d'adapter son traitement en conséquence. Comme pour le dictionnaire de données, les fichiers conformes à un volet CI-SIS ou à un standard publié n'appellent pas de schéma complémentaire : le mapping de fichiers renvoie dans ce cas aux spécifications applicables.
 
 #### Jeu d'échantillons
 
-Le fournisseur sortant peut fournir, pour chaque type de document ou de fichier structuré présent dans l'archive, un exemple anonymisé illustrant la structure et le contenu attendus. Ce jeu d'échantillons facilite l'intégration par le fournisseur destinataire.
+L'éditeur émetteur peut fournir, pour chaque type de document ou de fichier structuré présent dans l'archive, un exemple anonymisé illustrant la structure et le contenu attendus. Ce jeu d'échantillons facilite l'intégration par le système destinataire.
 
 #### Paramètres de configuration
 
-Lorsque certains paramètres de configuration de l'éditeur conditionnent l'interprétation, l'affichage, le traitement ou la production des données exportées, le fournisseur sortant peut fournir une description de ces paramètres.
+Lorsque certains paramètres de configuration de l'éditeur conditionnent l'interprétation, l'affichage, le traitement ou la production des données exportées, l'éditeur émetteur peut fournir une description de ces paramètres.
 
-Cette description permet au fournisseur destinataire d'identifier les comportements applicatifs susceptibles d'avoir un impact sur l'exploitation des données et, le cas échéant, de reconfigurer son propre système afin de garantir une reprise fonctionnelle cohérente.
+Cette description permet à l'éditeur destinataire d'identifier les comportements applicatifs susceptibles d'avoir un impact sur l'exploitation des données et, le cas échéant, de reconfigurer son propre système afin de garantir une reprise fonctionnelle cohérente.
 
 Le format de cette description est libre. Elle doit être lisible sans logiciel propriétaire et permettre d'identifier sans ambiguïté les paramètres ayant une incidence sur la compréhension ou le traitement des données.
 
@@ -317,7 +345,7 @@ Le modèle logique associé à cette archive est consultable [ici](StructureDefi
 
 Le fichier `INDEX.HTM` est imposé par le profil IHE_XDM à la racine d'une archive XDM. Il renferme des informations éditoriales et est conforme aux spécifications XHTML et [Echanges de Documents de santé](https://esante.gouv.fr/annexe-sources-des-donnees-personnes-et-structures). Il contient :
 
-* l'identification obligatoire du fournisseur sortant ayant créé le media : StructIdNat (identifiant de stucture de santé) et StructNom (nom de la structure) ;
+* l'identification obligatoire du système émetteur ayant créé le media : StructIdNat (identifiant de stucture de santé) et StructNom (nom de la structure) ;
 * l'avertissement optionnel de cette institution concernant la sécurité et la confidentialité;
 * un lien vers le fichier README.TXT.
 
@@ -356,10 +384,12 @@ Fournisseur Sortant :
         . email : portabilite@editeur.fr
         . Téléphone : +33100000000
 
-Application du fournisseur sortant :
+Application de l'éditeur émetteur :
 =========================
+    . Modèle : LGC modèle
     . Nom : LGC example
     . Version : 1.2
+    . Identifiant : 175259803546/2789345815
 
 Instructions :
 =============
@@ -388,7 +418,7 @@ Ce répertoire `IHE_XDM` contient un sous-répertoire `SUBSET01 contenant l'ense
 
 #### Répertoire PDF/ de l'archive XDM Patient
 
-Le répertoire `PDF/`, positionné à la racine de l'archive XDM, constitue une extension au profil IHE_XDM. Il regroupe une version PDF des documents structurés contenus dans le répertoire `IHE_XDM/` destinée exclusivement à la consultation humaine. Ces fichiers ne sont pas destinés à être exploités par un système d'information et ne se substituent en aucun cas aux documents structurés, qui demeurent la source de référence pour les traitements automatisés.
+Le répertoire `PDF/`, positionné à la racine de l'archive XDM, constitue une extension au profil IHE_XDM. Il regroupe une version PDF/A-1 des documents structurés contenus dans le répertoire `IHE_XDM/` destinée exclusivement à la consultation humaine. Ces fichiers ne sont pas destinés à être exploités par un système d'information et ne se substituent en aucun cas aux documents structurés, qui demeurent la source de référence pour les traitements automatisés.
 
 Le nommage des fichiers PDF doit pouvoir permettre d'établir sans ambiguïté la correspondance avec le document structuré auquel ils se rapportent.
 
@@ -429,10 +459,12 @@ Fournisseur Sortant :
         . email : portabilite@editeur.fr
         . Téléphone : +33100000000
 
-Application du fournisseur sortant :
+Application de l'éditeur émetteur :
 =========================
+    . Modèle : LGC modèle
     . Nom : LGC example
     . Version : 1.2
+    . Identifiant : 175259803546/2789345815
 
 Instructions :
 =============

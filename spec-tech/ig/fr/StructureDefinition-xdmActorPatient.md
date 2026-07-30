@@ -20,21 +20,41 @@ Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https:/
 *  [Statistiques/Références](#tabs-summ) 
 *  [Tous](#tabs-all) 
 
-Cette structure est dérivée de [XDMActorXDS](StructureDefinition-xdmActorXds.md) 
+Cette structure est dérivée de [XDMActorXDSCore](StructureDefinition-xdmActorXdsCore.md) 
 
-Cette structure est dérivée de [XDMActorXDS](StructureDefinition-xdmActorXds.md) 
+#### Contraintes
+
+#### Contraintes
+
+Cette structure est dérivée de [XDMActorXDSCore](StructureDefinition-xdmActorXdsCore.md) 
 
 ** Résumé **
+
+**Structures**
+
+Cette structure fait référence à ces autres structures:
+
+* [Identifiant Patient (https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/patId|0.1.0)](StructureDefinition-patId.md)
 
  **Vue différentielle** 
 
-Cette structure est dérivée de [XDMActorXDS](StructureDefinition-xdmActorXds.md) 
+Cette structure est dérivée de [XDMActorXDSCore](StructureDefinition-xdmActorXdsCore.md) 
+
+#### Contraintes
 
  **Vue d'ensembleView** 
 
-Cette structure est dérivée de [XDMActorXDS](StructureDefinition-xdmActorXds.md) 
+#### Contraintes
+
+Cette structure est dérivée de [XDMActorXDSCore](StructureDefinition-xdmActorXdsCore.md) 
 
 ** Résumé **
+
+**Structures**
+
+Cette structure fait référence à ces autres structures:
+
+* [Identifiant Patient (https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/patId|0.1.0)](StructureDefinition-patId.md)
 
  
 
@@ -57,7 +77,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdmActorPatient
   "name" : "XDMActorPatient",
   "title" : "XDM ActorPatient",
   "status" : "draft",
-  "date" : "2026-07-27T13:36:25+00:00",
+  "date" : "2026-07-30T09:32:03+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -84,7 +104,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdmActorPatient
   "kind" : "logical",
   "abstract" : false,
   "type" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorPatient",
-  "baseDefinition" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorXds|0.1.0",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorXdsCore|0.1.0",
   "derivation" : "specialization",
   "differential" : {
     "element" : [{
@@ -96,16 +116,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdmActorPatient
     {
       "id" : "xdmActorPatient.XCN1",
       "path" : "xdmActorPatient.XCN1",
+      "short" : "Identifiant du patient. Le matricule INS du patient, tel que défini dans le cadre juridique, est à utiliser prioritairement. À défaut, un autre identifiant (ex : IPP du système émetteur) peut être utilisé.",
+      "type" : [{
+        "code" : "string",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/patId|0.1.0"]
+      }],
       "example" : [{
         "label" : "General",
         "valueString" : "124018852493334"
-      }]
-    },
-    {
-      "id" : "xdmActorPatient.XCN1.value[x]",
-      "path" : "xdmActorPatient.XCN1.value[x]",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/patId"
       }]
     },
     {
@@ -121,7 +139,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdmActorPatient
     {
       "id" : "xdmActorPatient.XCN9.composant2",
       "path" : "xdmActorPatient.XCN9.composant2",
-      "short" : "Valeur de l'OID de l’autorité d’affectation de l’identifiant"
+      "short" : "Valeur de l'OID de l’autorité d’affectation de l’identifiant. Identifiant de l’autorité d’affectation de l'identifiant utilisé.",
+      "definition" : "Cet identifiant, au format HL7 v.2.5 est constitué de trois sous-composants qui prennent les valeurs suivantes en fonction du type d'identifiant.\nINS : Valeur de Namespace ID (IS) = Vide, pas de valeur | Valeur de Universal ID (ST) = OID de l’autorité d’affectation de l’INS utilisé, prise dans la liste des OID des autorités d'affectation des INS | Valeur de Universal ID type (ID) = ISO\nAutre identifiant : Valeur de Namespace ID (IS) = Vide, pas de valeur | Valeur de Universal ID (ST) = OID de l’autorité d’affectation dl'identifiant (i.e. l'instituion qui a attribué cet identifiant) | Valeur de Universal ID type (ID) = ISO\n"
     },
     {
       "id" : "xdmActorPatient.XCN10",
@@ -131,7 +150,14 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdmActorPatient
     {
       "id" : "xdmActorPatient.XCN13",
       "path" : "xdmActorPatient.XCN13",
-      "patternCode" : "NH"
+      "short" : "'NH' pour les patients identifiés par leur INS, 'PI' pour les patients identifiés par d'autres identifiants",
+      "constraint" : [{
+        "key" : "TypeIdPatient",
+        "severity" : "error",
+        "human" : "XCN.13 doit valoir 'NH' ou 'PI'",
+        "expression" : "XCN13 = 'NH' or XCN13 = 'PI'",
+        "source" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorPatient|0.1.0"
+      }]
     }]
   }
 }

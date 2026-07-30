@@ -1,6 +1,6 @@
 # PSIdNat - Portabilité des Données LGC v0.1.0
 
-## Logical Model: PSIdNat 
+## Data Type Profile: PSIdNat 
 
  
 Identification nationale principale du professionnel propre aux SI de l’ANS et au CI-SIS. (Correspondance dans le MOS : idNat_PS) 
@@ -16,7 +16,7 @@ L’identification nationale du PS est construite selon le tableau dessous :
 
 **Usages:**
 
-* Use this Logical Model: [XDM ActorPS](StructureDefinition-xdmActorPs.md) and [XDM Identifiant](StructureDefinition-xdmIdentifiant.md)
+* Use this Primitive Type Profile: [XDM ActorPS](StructureDefinition-xdmActorPs.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ans.fhir.fr.pdlgc|current/StructureDefinition/StructureDefinition-psIdNat.json)
 
@@ -26,7 +26,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
  
 
-Other representations of profile: [CSV](../StructureDefinition-psIdNat.csv), [Excel](../StructureDefinition-psIdNat.xlsx) 
+Other representations of profile: [CSV](../StructureDefinition-psIdNat.csv), [Excel](../StructureDefinition-psIdNat.xlsx), [Schematron](../StructureDefinition-psIdNat.sch) 
 
 
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-psIdNat.csv), [Ex
   "name" : "PSIdNat",
   "title" : "PSIdNat",
   "status" : "draft",
-  "date" : "2026-07-27T13:36:25+00:00",
+  "date" : "2026-07-30T09:32:03+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -50,7 +50,7 @@ Other representations of profile: [CSV](../StructureDefinition-psIdNat.csv), [Ex
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Identification nationale principale du professionnel propre aux SI de l’ANS et au CI-SIS. (Correspondance dans le MOS : idNat_PS) \n\nL’identification nationale du PS est construite selon le tableau dessous :\n-  0 + N° ADELI \n- 1 + Identifiant cabinet ADELI/identifiant interne \n- 3 + FINESS/identifiant interne \n- 4 + SIREN/identifiant interne \n- 5 + SIRET/identifiant interne \n- 6 + Identifiant cabinet RPPS/identifiant interne \n- 8 + N° RPPS \n",
+  "description" : "Identification nationale principale du professionnel propre aux SI de l’ANS et au CI-SIS. (Correspondance dans le MOS : idNat_PS) \n\nL’identification nationale du PS est construite selon le tableau dessous :\n- 0 + N° ADELI \n- 1 + Identifiant cabinet ADELI/identifiant interne \n- 3 + FINESS/identifiant interne \n- 4 + SIREN/identifiant interne \n- 5 + SIRET/identifiant interne \n- 6 + Identifiant cabinet RPPS/identifiant interne \n- 8 + N° RPPS \n",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -59,29 +59,15 @@ Other representations of profile: [CSV](../StructureDefinition-psIdNat.csv), [Ex
     }]
   }],
   "fhirVersion" : "4.0.1",
-  "kind" : "logical",
+  "kind" : "primitive-type",
   "abstract" : false,
-  "type" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/psIdNat",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base|4.0.1",
-  "derivation" : "specialization",
+  "type" : "string",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/string|4.0.1",
+  "derivation" : "constraint",
   "differential" : {
     "element" : [{
-      "id" : "psIdNat",
-      "path" : "psIdNat",
-      "short" : "PSIdNat",
-      "definition" : "Identification nationale principale du professionnel propre aux SI de l’ANS et au CI-SIS. (Correspondance dans le MOS : idNat_PS) \n\nL’identification nationale du PS est construite selon le tableau dessous :\n-  0 + N° ADELI \n- 1 + Identifiant cabinet ADELI/identifiant interne \n- 3 + FINESS/identifiant interne \n- 4 + SIREN/identifiant interne \n- 5 + SIRET/identifiant interne \n- 6 + Identifiant cabinet RPPS/identifiant interne \n- 8 + N° RPPS \n"
-    },
-    {
-      "id" : "psIdNat.PSIdNat",
-      "path" : "psIdNat.PSIdNat",
-      "short" : "PSIdNat",
-      "definition" : "PSIdNat",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.3.0"]
-      }],
+      "id" : "string",
+      "path" : "string",
       "constraint" : [{
         "key" : "PSIdNat-invariant",
         "severity" : "error",

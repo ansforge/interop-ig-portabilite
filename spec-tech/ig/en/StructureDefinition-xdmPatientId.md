@@ -7,7 +7,7 @@ Modèle logique de patientID. Cette métadonnée contient l'identifiant du patie
 
 **Usages:**
 
-* Use this Logical Model: [XDM DocumentEntry](StructureDefinition-xdmDocumentEntry.md) and [XDM SubmissionSet](StructureDefinition-xdmSubmissionSet.md)
+* Use this Logical Model: [PDLGC Manifest](StructureDefinition-pdlgcManifest.md), [XDM DocumentEntry](StructureDefinition-xdmDocumentEntry.md) and [XDM SubmissionSet](StructureDefinition-xdmSubmissionSet.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ans.fhir.fr.pdlgc|current/StructureDefinition/StructureDefinition-xdmPatientId.json)
 
@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-xdmPatientId.csv)
   "name" : "XDMPatientId",
   "title" : "XDM PatientId",
   "status" : "draft",
-  "date" : "2026-07-27T13:36:25+00:00",
+  "date" : "2026-07-30T09:32:03+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -70,7 +70,8 @@ Other representations of profile: [CSV](../StructureDefinition-xdmPatientId.csv)
       "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "Identifier"
+        "code" : "string",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/patId|0.1.0"]
       }]
     },
     {

@@ -7,7 +7,7 @@ Cet attribut représente l'acteur System.
 
 **Usages:**
 
-* Use this Logical Model: [XDM Author](StructureDefinition-xdmAuthor.md) and [XDM DocumentEntry](StructureDefinition-xdmDocumentEntry.md)
+* Use this Logical Model: [PDLGC System](StructureDefinition-pdlgcSystem.md), [XDM Author](StructureDefinition-xdmAuthor.md) and [XDM DocumentEntry](StructureDefinition-xdmDocumentEntry.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ans.fhir.fr.pdlgc|current/StructureDefinition/StructureDefinition-xdmActorSystem.json)
 
@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-xdmActorSystem.cs
   "name" : "XDMActorSystem",
   "title" : "XDM ActorSystem",
   "status" : "draft",
-  "date" : "2026-07-27T13:36:25+00:00",
+  "date" : "2026-07-30T09:32:03+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -59,7 +59,7 @@ Other representations of profile: [CSV](../StructureDefinition-xdmActorSystem.cs
   "kind" : "logical",
   "abstract" : false,
   "type" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorSystem",
-  "baseDefinition" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorXds|0.1.0",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorXdsCore|0.1.0",
   "derivation" : "specialization",
   "differential" : {
     "element" : [{
@@ -71,22 +71,19 @@ Other representations of profile: [CSV](../StructureDefinition-xdmActorSystem.cs
     {
       "id" : "xdmActorSystem.XCN1",
       "path" : "xdmActorSystem.XCN1",
+      "type" : [{
+        "code" : "string",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/systIdNat|0.1.0"]
+      }],
       "example" : [{
         "label" : "système avec un identifiant interne dans une structure de santé FINESS",
         "valueString" : "3750100125/88"
       }]
     },
     {
-      "id" : "xdmActorSystem.XCN1.value[x]",
-      "path" : "xdmActorSystem.XCN1.value[x]",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/systIdNat"
-      }]
-    },
-    {
       "id" : "xdmActorSystem.XCN2",
       "path" : "xdmActorSystem.XCN2",
-      "short" : "Nom du système"
+      "short" : "Nom et version du système"
     },
     {
       "id" : "xdmActorSystem.XCN3",

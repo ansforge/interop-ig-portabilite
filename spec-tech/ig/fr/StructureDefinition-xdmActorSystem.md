@@ -7,7 +7,7 @@ Cet attribut représente l'acteur System.
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [XDM Author](StructureDefinition-xdmAuthor.md) and [XDM DocumentEntry](StructureDefinition-xdmDocumentEntry.md)
+* Utilise ce/t/te Modèle logique: [PDLGC System](StructureDefinition-pdlgcSystem.md), [XDM Author](StructureDefinition-xdmAuthor.md) and [XDM DocumentEntry](StructureDefinition-xdmDocumentEntry.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.pdlgc|current/StructureDefinition/xdmActorSystem)
 
@@ -20,21 +20,33 @@ Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https:/
 *  [Statistiques/Références](#tabs-summ) 
 *  [Tous](#tabs-all) 
 
-Cette structure est dérivée de [XDMActorXDS](StructureDefinition-xdmActorXds.md) 
+Cette structure est dérivée de [XDMActorXDSCore](StructureDefinition-xdmActorXdsCore.md) 
 
-Cette structure est dérivée de [XDMActorXDS](StructureDefinition-xdmActorXds.md) 
+Cette structure est dérivée de [XDMActorXDSCore](StructureDefinition-xdmActorXdsCore.md) 
 
 ** Résumé **
+
+**Structures**
+
+Cette structure fait référence à ces autres structures:
+
+* [SystIdNat (https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/systIdNat|0.1.0)](StructureDefinition-systIdNat.md)
 
  **Vue différentielle** 
 
-Cette structure est dérivée de [XDMActorXDS](StructureDefinition-xdmActorXds.md) 
+Cette structure est dérivée de [XDMActorXDSCore](StructureDefinition-xdmActorXdsCore.md) 
 
  **Vue d'ensembleView** 
 
-Cette structure est dérivée de [XDMActorXDS](StructureDefinition-xdmActorXds.md) 
+Cette structure est dérivée de [XDMActorXDSCore](StructureDefinition-xdmActorXdsCore.md) 
 
 ** Résumé **
+
+**Structures**
+
+Cette structure fait référence à ces autres structures:
+
+* [SystIdNat (https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/systIdNat|0.1.0)](StructureDefinition-systIdNat.md)
 
  
 
@@ -53,7 +65,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdmActorSystem.
   "name" : "XDMActorSystem",
   "title" : "XDM ActorSystem",
   "status" : "draft",
-  "date" : "2026-07-27T13:36:25+00:00",
+  "date" : "2026-07-30T09:32:03+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -80,7 +92,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdmActorSystem.
   "kind" : "logical",
   "abstract" : false,
   "type" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorSystem",
-  "baseDefinition" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorXds|0.1.0",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorXdsCore|0.1.0",
   "derivation" : "specialization",
   "differential" : {
     "element" : [{
@@ -92,22 +104,19 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdmActorSystem.
     {
       "id" : "xdmActorSystem.XCN1",
       "path" : "xdmActorSystem.XCN1",
+      "type" : [{
+        "code" : "string",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/systIdNat|0.1.0"]
+      }],
       "example" : [{
         "label" : "système avec un identifiant interne dans une structure de santé FINESS",
         "valueString" : "3750100125/88"
       }]
     },
     {
-      "id" : "xdmActorSystem.XCN1.value[x]",
-      "path" : "xdmActorSystem.XCN1.value[x]",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/systIdNat"
-      }]
-    },
-    {
       "id" : "xdmActorSystem.XCN2",
       "path" : "xdmActorSystem.XCN2",
-      "short" : "Nom du système"
+      "short" : "Nom et version du système"
     },
     {
       "id" : "xdmActorSystem.XCN3",

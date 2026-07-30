@@ -7,7 +7,7 @@ Modèle logique de patientID. Cette métadonnée contient l'identifiant du patie
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [XDM DocumentEntry](StructureDefinition-xdmDocumentEntry.md) and [XDM SubmissionSet](StructureDefinition-xdmSubmissionSet.md)
+* Utilise ce/t/te Modèle logique: [PDLGC Manifest](StructureDefinition-pdlgcManifest.md), [XDM DocumentEntry](StructureDefinition-xdmDocumentEntry.md) and [XDM SubmissionSet](StructureDefinition-xdmSubmissionSet.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.pdlgc|current/StructureDefinition/xdmPatientId)
 
@@ -28,6 +28,12 @@ Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base)
 
 Obligatoire : 0 élément(3 éléments obligatoire(s) imbriqué(s))
 
+**Structures**
+
+Cette structure fait référence à ces autres structures:
+
+* [Identifiant Patient (https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/patId|0.1.0)](StructureDefinition-patId.md)
+
  **Vue différentielle** 
 
 Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base) 
@@ -39,6 +45,12 @@ Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base)
 ** Résumé **
 
 Obligatoire : 0 élément(3 éléments obligatoire(s) imbriqué(s))
+
+**Structures**
+
+Cette structure fait référence à ces autres structures:
+
+* [Identifiant Patient (https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/patId|0.1.0)](StructureDefinition-patId.md)
 
  
 
@@ -57,7 +69,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdmPatientId.cs
   "name" : "XDMPatientId",
   "title" : "XDM PatientId",
   "status" : "draft",
-  "date" : "2026-07-27T13:36:25+00:00",
+  "date" : "2026-07-30T09:32:03+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -95,7 +107,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdmPatientId.cs
       "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "Identifier"
+        "code" : "string",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/patId|0.1.0"]
       }]
     },
     {

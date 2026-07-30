@@ -1,23 +1,21 @@
 "Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: ActorXDSCDA"
 "xdmActorPs","xdmActorPs","","","",0,*,"","","","null {[]} {[]}
 ","XDM ActorPS","Cet attribut représente un acteur PS.","","","","","","","","","",,,,,"",,,,"Base",0,*,"","","ActorXDS"
-"xdmActorPs.XCN1","xdmActorPs.XCN1","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmIdentifiant {[]} {[]}
-","Identifiant de l'acteur","Identifiant de l'acteur","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""801234567890""/>","","",,,,,"",,,,"xdmActorXds.XCN1",1,1,"","","author/assignedAuthor/id@extension"
-"xdmActorPs.XCN1.value[x]","xdmActorPs.XCN1.value[x]","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/psIdNat {[]} {[]}
-","Identifiant","Identifiant","","","","","","","","","",,,,,"",,,,"xdmIdentifiant.value[x]",1,1,"",""
+"xdmActorPs.XCN1","xdmActorPs.XCN1","","","",1,1,"","","","string {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/psIdNat|0.1.0]]} {[]}
+","Identifiant de l'acteur qui. Le format de l'identifiant doit respecter le datatype PatId, PSIdNat ou SystIdNat selon le type d'acteur","Identifiant de l'acteur qui. Le format de l'identifiant doit respecter le datatype PatId, PSIdNat ou SystIdNat selon le type d'acteur","","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""801234567890""/>","","",,,,,"",,,,"xdmActorXdsCore.XCN1",1,1,"","","author/assignedAuthor/id@extension"
 "xdmActorPs.XCN2","xdmActorPs.XCN2","","","",1,1,"","","","string {[]} {[]}
-","Nom d'exercice du professionnel","Nom d'exercice du professionnel, nom du patient, nom du système.","","","","","","","","","",,,,,"",,,,"xdmActorXds.XCN2",1,1,"","","author/assignedAuthor/assignedPerson/name/family"
+","Nom d'exercice du professionnel","Nom d'exercice du professionnel, nom du patient, nom du système.","","","","","","","","","",,,,,"",,,,"xdmActorXdsCore.XCN2",1,1,"","","author/assignedAuthor/assignedPerson/name/family"
 "xdmActorPs.XCN3","xdmActorPs.XCN3","","","",1,1,"","","","string {[]} {[]}
-","Prénom usuel de la personne","Prénom usuel de la personne (par défaut le premier prénom), nom du modèle pour les dispositifs ou dénomination pour les autres systèmes.","","","","","","","","","",,,,,"",,,,"xdmActorXds.XCN3",1,1,"","","author/assignedAuthor/assignedPerson/name/given"
+","Prénom usuel de la personne","Prénom usuel de la personne (par défaut le premier prénom), nom du modèle pour les dispositifs ou dénomination pour les autres systèmes.","","","","","","","","","",,,,,"",,,,"xdmActorXdsCore.XCN3",1,1,"","","author/assignedAuthor/assignedPerson/name/given"
 "xdmActorPs.XCN9","xdmActorPs.XCN9","","","",1,1,"","","","Base {[]} {[]}
-","Autorité d’affectation","Autorité d’affectation","","","","","","","","","",,,,,"",,,,"xdmActorXds.XCN9",1,1,"","","NA"
+","Autorité d’affectation","Autorité d’affectation","","","","","","","","","",,,,,"",,,,"xdmActorXdsCore.XCN9",1,1,"","","NA"
 "xdmActorPs.XCN9.composant1","xdmActorPs.XCN9.composant1","","","",0,0,"","","","string {[]} {[]}
-","Vide, pas de valeur","Vide, pas de valeur","","","","","","","","","",,,,,"",,,,"xdmActorXds.XCN9.composant1",0,0,"","","NA"
+","Vide, pas de valeur","Vide, pas de valeur","","","","","","","","","",,,,,"",,,,"xdmActorXdsCore.XCN9.composant1",0,0,"","","NA"
 "xdmActorPs.XCN9.composant2","xdmActorPs.XCN9.composant2","","","",1,1,"","","","string {[]} {[]}
-","Valeur de Universal ID","Valeur de Universal ID","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""1.2.250.1.71.4.2.1""/>","","","",,,,,"",,,,"xdmActorXds.XCN9.composant2",1,1,"","","author/assignedAuthor/id@root"
+","Valeur de Universal ID","Valeur de Universal ID","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""1.2.250.1.71.4.2.1""/>","","","",,,,,"",,,,"xdmActorXdsCore.XCN9.composant2",1,1,"","","author/assignedAuthor/id@root"
 "xdmActorPs.XCN9.composant3","xdmActorPs.XCN9.composant3","","","",1,1,"","","","string {[]} {[]}
-","Valeur de Universal ID type (ID)","Valeur de Universal ID type (ID)","","","","","","","","","",,,,,"",,,,"xdmActorXds.XCN9.composant3",1,1,"","","NA"
+","Valeur de Universal ID type (ID). Valeur fixée à 'ISO'","Valeur de Universal ID type (ID). Valeur fixée à 'ISO'","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""ISO""/>","","","",,,,,"",,,,"xdmActorXdsCore.XCN9.composant3",1,1,"","","NA"
 "xdmActorPs.XCN10","xdmActorPs.XCN10","","","",1,1,"","","","code {[]} {[]}
-","Type de nom : Valeur en fonction de l’auteur :  D, pour les personnes physiques, -U, pour les systèmes.","Type de nom : Valeur en fonction de l’auteur :  D, pour les personnes physiques, -U, pour les systèmes.","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""D""/>","","","",,,,,"",,,,"xdmActorXds.XCN10",1,1,"","","NA"
+","Type de nom : 'D' pour les personnes physiques, 'U', pour les systèmes.","Type de nom : 'D' pour les personnes physiques, 'U', pour les systèmes.","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""D""/>","","","",,,,,"",,,,"xdmActorXdsCore.XCN10",1,1,"","","NA"
 "xdmActorPs.XCN13","xdmActorPs.XCN13","","","",1,1,"","","","code {[]} {[]}
-","Type d’identifiant","Type d’identifiant","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""IDNPS""/>","","","",,,,,"",,,,"xdmActorXds.XCN13",1,1,"","","Valeur ne provenant pas de l’en-tête CDA"
+","Type d’identifiant","Type d’identifiant","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""IDNPS""/>","","","",,,,,"",,,,"xdmActorXdsCore.XCN13",1,1,"","","Valeur ne provenant pas de l’en-tête CDA"

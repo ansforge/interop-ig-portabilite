@@ -33,6 +33,17 @@
     "ValueSet-vs-pdlgc-export-type.html" : "PDLGC Type d'Export"
   },
   {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "CS_PDLGC_TelecomType",
+    "title" : "Type de moyen de communication",
+    "description" : "Type de moyen de communication",
+    "uses" : {
+    },
+    "ValueSet-vs-pdlgc-telecom-type.html" : "PDLGC Type de moyen de communication"
+  },
+  {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type",
     "version" : "0.1.0",
     "status" : "draft",

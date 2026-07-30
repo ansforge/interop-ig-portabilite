@@ -227,7 +227,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#2">Modèle logique structure Archive de portabilité</a>
       </li>
       <li>
-         <a href="#3">Identifiants nationaux</a>
+         <a href="#3">Valeur des identifiants</a>
       </li>
       <li>
          <a href="#4">Exigences: Définitions des acteurs</a>
@@ -289,16 +289,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-xdmActorXds.html"
-                  title="StructureDefinition/xdmActorXds">
-                  <span title="StructureDefinition/xdmActorXds">XDM ActorXDS
+               <a href="StructureDefinition-xdmActorXdsCore.html"
+                  title="StructureDefinition/xdmActorXdsCore">
+                  <span title="StructureDefinition/xdmActorXdsCore">XDM ActorXDS Core
 </span>
                </a>
             </td>
             <td>
 <p>Cet attribut représente un acteur (humain ou système) ayant contribué au document. Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient.</p>
 
-<p>XCN de HL7 v2.5</p>
+<p>Type XCN de HL7 v2.5</p>
 </td>
          </tr>
          <tr>
@@ -428,18 +428,6 @@ Un EventCode peut contenir le code représentant :</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-xdmIdentifiant.html"
-                  title="StructureDefinition/xdmIdentifiant">
-                  <span title="StructureDefinition/xdmIdentifiant">XDM Identifiant
-</span>
-               </a>
-            </td>
-            <td>
-<p>Identifiant de professionnel de santé, de patient ou de système</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-xdmPatientId.html"
                   title="StructureDefinition/xdmPatientId">
                   <span title="StructureDefinition/xdmPatientId">XDM PatientId
@@ -564,19 +552,7 @@ Cette métadonnée contient l'identifiant du patient tel que connu par les inter
                </a>
             </td>
             <td>
-<p>Documentation d'export permettant au fournisseur destinataire d'intégrer les données LGC du fournisseur sortant</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-pdlgcFournisseurSortant.html"
-                  title="StructureDefinition/pdlgcFournisseurSortant">
-                  <span title="StructureDefinition/pdlgcFournisseurSortant">PDLGC FournisseurSortant
-</span>
-               </a>
-            </td>
-            <td>
-<p>PDLGC Fournisseur Sortant</p>
+<p>Documentation d'export permettant au LGC destinataire d'intégrer les données du LGC émetteur</p>
 </td>
          </tr>
          <tr>
@@ -601,18 +577,6 @@ Cette métadonnée contient l'identifiant du patient tel que connu par les inter
             </td>
             <td>
 <p>Le fichier MANIFEST.XML porte les métadonnées globales de l'export (nombre de dossiers patients, volumétrie, éléments d'intégrité), distinctes des métadonnées XDM portées par chaque <code class="language-plaintext highlighter-rouge">METADATA.XML</code> patient</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-pdlgcManifestArchives.html"
-                  title="StructureDefinition/pdlgcManifestArchives">
-                  <span title="StructureDefinition/pdlgcManifestArchives">PDLGC Manifest Archives
-</span>
-               </a>
-            </td>
-            <td>
-<p>Informations relatives aux répertoires Patient et transverse exportées dans l'archive de portabilité</p>
 </td>
          </tr>
          <tr>
@@ -654,6 +618,18 @@ Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-pdlgcSoftwareVendor.html"
+                  title="StructureDefinition/pdlgcSoftwareVendor">
+                  <span title="StructureDefinition/pdlgcSoftwareVendor">PDLGC SoftwareVendor
+</span>
+               </a>
+            </td>
+            <td>
+<p>Editeur du logiciel</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-pdlgcSystem.html"
                   title="StructureDefinition/pdlgcSystem">
                   <span title="StructureDefinition/pdlgcSystem">PDLGC System
@@ -667,8 +643,8 @@ Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.
       </tbody>
    </table>
    <a name="3"> </a>
-   <h3>Identifiants nationaux </h3>
-    <p>Format des identifiants nationaux</p>
+   <h3>Valeur des identifiants </h3>
+    <p>Profilage du datatype string pour les identifiants</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
@@ -680,7 +656,11 @@ Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.
                </a>
             </td>
             <td>
-<p>Identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange. Le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité. À défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé.</p>
+<p>Identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange.</p>
+<ul>
+  <li>Matricule INS : le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité.</li>
+  <li>Autre identifiant : à défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé.</li>
+</ul>
 </td>
          </tr>
          <tr>
@@ -736,9 +716,9 @@ Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.
                </a>
             </td>
             <td>
-<p>Identification d'un systeme</p>
+<p>Identification d'un système</p>
 
-<p>L’identification du systeme  est construite selon le tableau dessous :</p>
+<p>L’identification du système  est construite selon le tableau dessous :</p>
 <ul>
   <li>1 + Identifiant cabinet ADELI/Identifiant interne du système dans la structure</li>
   <li>3 + FINESS/Identifiant interne du système dans la structure</li>
@@ -756,6 +736,30 @@ Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ActorDefinition-PDLGC-Systeme-Destinataire.html"
+                  title="ActorDefinition/PDLGC-Systeme-Destinataire">
+                  <span title="ActorDefinition/PDLGC-Systeme-Destinataire">LGC Destinataire
+</span>
+               </a>
+            </td>
+            <td>
+<p>LGC responsable de la réception et de l'intégration des données contenues dans l'archive de portabilité.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ActorDefinition-PDLGC-Systeme-Emetteur.html"
+                  title="ActorDefinition/PDLGC-Systeme-Emetteur">
+                  <span title="ActorDefinition/PDLGC-Systeme-Emetteur">LGC émetteur
+</span>
+               </a>
+            </td>
+            <td>
+<p>LGC responsable de la production et de la mise à disposition de l'archive de portabilité à l'issue d'une demande d'export.</p>
+</td>
+         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="ActorDefinition-PDLGC-Demandeur.html"
@@ -788,30 +792,6 @@ Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.
 <p>Il peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP).</p>
 
 <p>Dans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le destinataire.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ActorDefinition-PDLGC-Fournisseur-Destinataire.html"
-                  title="ActorDefinition/PDLGC-Fournisseur-Destinataire">
-                  <span title="ActorDefinition/PDLGC-Fournisseur-Destinataire">PDLGC Fournisseur Destinataire
-</span>
-               </a>
-            </td>
-            <td>
-<p>Fournisseur de LGC recevant les données en vue de leur intégration. Il est tenu d'une obligation de moyens pour l'import dès lors que le format réceptionné est conforme au référentiel.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ActorDefinition-PDLGC-Fournisseur-Sortant.html"
-                  title="ActorDefinition/PDLGC-Fournisseur-Sortant">
-                  <span title="ActorDefinition/PDLGC-Fournisseur-Sortant">PDLGC Fournisseur Sortant
-</span>
-               </a>
-            </td>
-            <td>
-<p>Fournisseur du LGC dont le contrat prend fin ou depuis lequel l'utilisateur souhaite exporter ses données. C'est lui qui est redevable de l'obligation de portabilité gratuite du Périmètre Pivot sous 30 jours calendaires.</p>
 </td>
          </tr>
       </tbody>
@@ -856,6 +836,18 @@ Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.
             </td>
             <td>
 <p>PDLGC Type d'archive</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-pdlgc-telecom-type.html"
+                  title="ValueSet/vs-pdlgc-telecom-type">
+                  <span title="ValueSet/vs-pdlgc-telecom-type">PDLGC Type de moyen de communication
+</span>
+               </a>
+            </td>
+            <td>
+<p>PDLGC Type de moyen de communication</p>
 </td>
          </tr>
          <tr>
@@ -926,6 +918,18 @@ Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.
 <p>Type d'export de données LGC</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-cs-pdlgc-telecom-type.html"
+                  title="CodeSystem/cs-pdlgc-telecom-type">
+                  <span title="CodeSystem/cs-pdlgc-telecom-type">Type de moyen de communication
+</span>
+               </a>
+            </td>
+            <td>
+<p>Type de moyen de communication</p>
+</td>
+         </tr>
       </tbody>
    </table>
 </div>
@@ -976,8 +980,8 @@ Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.pdlgc#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-07-27 13:36:00 +0000">
-    2026-07-27
+  <span title="2026-07-30 09:32:00 +0000">
+    2026-07-30
   </span>
 
           <br/>

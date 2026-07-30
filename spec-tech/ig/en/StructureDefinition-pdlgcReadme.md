@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgcReadme.csv),
   "name" : "PDLGCReadme",
   "title" : "PDLGC Readme",
   "status" : "draft",
-  "date" : "2026-07-27T13:36:25+00:00",
+  "date" : "2026-07-30T09:32:03+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -63,14 +63,14 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgcReadme.csv),
       "definition" : "Informations éditoriales et instructions. Le socle du README.TXt est identique pour l'archive de portabilité, l'archive de données transverse et l'archive XDM Patient"
     },
     {
-      "id" : "pdlgcReadme.editeurSortant",
-      "path" : "pdlgcReadme.editeurSortant",
-      "short" : "Editeur responsable de l'export des données LGC et application utilisée",
-      "definition" : "Editeur responsable de l'export des données LGC et application utilisée",
+      "id" : "pdlgcReadme.systemeEmetteur",
+      "path" : "pdlgcReadme.systemeEmetteur",
+      "short" : "Système responsable de l'export des données LGC et informations de l'éditeur émetteur",
+      "definition" : "Système responsable de l'export des données LGC et informations de l'éditeur émetteur",
       "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgcFournisseurSortant"
+        "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgcSystem"
       }]
     },
     {

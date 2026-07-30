@@ -13,7 +13,7 @@
   <name value="PDLGC"/>
   <title value="Portabilité des Données LGC"/>
   <status value="draft"/>
-  <date value="2026-07-27T13:36:25+00:00"/>
+  <date value="2026-07-30T09:32:03+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -652,21 +652,43 @@
       <name value="Modèle logique structure Archive de portabilité"/>
       <description value="Modèles logiques associés aux différents fichiers et répertoires structurant une archive de portabilité"/>
     </grouping>
-    <grouping id="LogicalModelIdentifiant">
-      <name value="Identifiants nationaux"/>
-      <description value="Format des identifiants nationaux"/>
+    <grouping id="DataTypeProfile">
+      <name value="Valeur des identifiants"/>
+      <description value="Profilage du datatype string pour les identifiants"/>
     </grouping>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
+        <valueString value="StructureDefinition:primitive-type"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/patId"/>
       </reference>
       <name value="Identifiant Patient"/>
-      <description value="Identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange. Le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité. À défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé."/>
+      <description value="Identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange. &#xA;- Matricule INS : le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité. &#xA;- Autre identifiant : à défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé."/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelIdentifiant"/>
+      <groupingId value="DataTypeProfile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/PDLGC-Systeme-Destinataire"/>
+      </reference>
+      <name value="LGC Destinataire"/>
+      <description value="LGC responsable de la réception et de l'intégration des données contenues dans l'archive de portabilité."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/PDLGC-Systeme-Emetteur"/>
+      </reference>
+      <name value="LGC émetteur"/>
+      <description value="LGC responsable de la production et de la mise à disposition de l'archive de portabilité à l'issue d'une demande d'export."/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -746,41 +768,7 @@
         <reference value="StructureDefinition/pdlgcDocumentation"/>
       </reference>
       <name value="PDLGC Documentation"/>
-      <description value="Documentation d'export permettant au fournisseur destinataire d'intégrer les données LGC du fournisseur sortant"/>
-      <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelArchivePortabilite"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ActorDefinition"/>
-      </extension>
-      <reference>
-        <reference value="ActorDefinition/PDLGC-Fournisseur-Destinataire"/>
-      </reference>
-      <name value="PDLGC Fournisseur Destinataire"/>
-      <description value="Fournisseur de LGC recevant les données en vue de leur intégration. Il est tenu d'une obligation de moyens pour l'import dès lors que le format réceptionné est conforme au référentiel."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ActorDefinition"/>
-      </extension>
-      <reference>
-        <reference value="ActorDefinition/PDLGC-Fournisseur-Sortant"/>
-      </reference>
-      <name value="PDLGC Fournisseur Sortant"/>
-      <description value="Fournisseur du LGC dont le contrat prend fin ou depuis lequel l'utilisateur souhaite exporter ses données. C'est lui qui est redevable de l'obligation de portabilité gratuite du Périmètre Pivot sous 30 jours calendaires."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/pdlgcFournisseurSortant"/>
-      </reference>
-      <name value="PDLGC FournisseurSortant"/>
-      <description value="PDLGC Fournisseur Sortant"/>
+      <description value="Documentation d'export permettant au LGC destinataire d'intégrer les données du LGC émetteur"/>
       <exampleBoolean value="false"/>
       <groupingId value="LogicalModelArchivePortabilite"/>
     </resource>
@@ -805,18 +793,6 @@
       </reference>
       <name value="PDLGC Manifest"/>
       <description value="Le fichier MANIFEST.XML porte les métadonnées globales de l'export (nombre de dossiers patients, volumétrie, éléments d'intégrité), distinctes des métadonnées XDM portées par chaque `METADATA.XML` patient"/>
-      <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelArchivePortabilite"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/pdlgcManifestArchives"/>
-      </reference>
-      <name value="PDLGC Manifest Archives"/>
-      <description value="Informations relatives aux répertoires Patient et transverse exportées dans l'archive de portabilité"/>
       <exampleBoolean value="false"/>
       <groupingId value="LogicalModelArchivePortabilite"/>
     </resource>
@@ -853,6 +829,18 @@
       </reference>
       <name value="PDLGC Signature"/>
       <description value="signature XAdES de l'archive attestant de l'imputabilité et l'intégrité des données"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="LogicalModelArchivePortabilite"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/pdlgcSoftwareVendor"/>
+      </reference>
+      <name value="PDLGC SoftwareVendor"/>
+      <description value="Editeur du logiciel"/>
       <exampleBoolean value="false"/>
       <groupingId value="LogicalModelArchivePortabilite"/>
     </resource>
@@ -903,15 +891,26 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-pdlgc-telecom-type"/>
+      </reference>
+      <name value="PDLGC Type de moyen de communication"/>
+      <description value="PDLGC Type de moyen de communication"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:primitive-type"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/psIdNat"/>
       </reference>
       <name value="PSIdNat"/>
-      <description value="Identification nationale principale du professionnel propre aux SI de l’ANS et au CI-SIS. (Correspondance dans le MOS : idNat_PS) &#xA;&#xA;L’identification nationale du PS est construite selon le tableau dessous :&#xA;-  0 + N° ADELI &#xA;- 1 + Identifiant cabinet ADELI/identifiant interne &#xA;- 3 + FINESS/identifiant interne &#xA;- 4 + SIREN/identifiant interne &#xA;- 5 + SIRET/identifiant interne &#xA;- 6 + Identifiant cabinet RPPS/identifiant interne &#xA;- 8 + N° RPPS"/>
+      <description value="Identification nationale principale du professionnel propre aux SI de l’ANS et au CI-SIS. (Correspondance dans le MOS : idNat_PS) &#xA;&#xA;L’identification nationale du PS est construite selon le tableau dessous :&#xA;- 0 + N° ADELI &#xA;- 1 + Identifiant cabinet ADELI/identifiant interne &#xA;- 3 + FINESS/identifiant interne &#xA;- 4 + SIREN/identifiant interne &#xA;- 5 + SIRET/identifiant interne &#xA;- 6 + Identifiant cabinet RPPS/identifiant interne &#xA;- 8 + N° RPPS"/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelIdentifiant"/>
+      <groupingId value="DataTypeProfile"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -926,7 +925,7 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
+        <valueString value="StructureDefinition:primitive-type"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/structIdNat"/>
@@ -934,19 +933,19 @@
       <name value="StructIdNat"/>
       <description value="Identification nationale principale d’une structure propre aux SI de l'ANS et au CI-SIS 4. &#xA;&#xA;L’identification nationale d’une structure est construite selon le tableau dessous :&#xA;- 0 + Identifiant cabinet ADELI &#xA;- 1 + N° FINESS 2 + N° SIREN &#xA;- 3 + N° SIRET &#xA;- 4 + N° RPPS-rang &#xA;- Néant + N° technique"/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelIdentifiant"/>
+      <groupingId value="DataTypeProfile"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
+        <valueString value="StructureDefinition:primitive-type"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/systIdNat"/>
       </reference>
       <name value="SystIdNat"/>
-      <description value="Identification d'un systeme&#xA;&#xA;L’identification du systeme  est construite selon le tableau dessous :&#xA;- 1 + Identifiant cabinet ADELI/Identifiant interne du système dans la structure &#xA;- 3 + FINESS/Identifiant interne du système dans la structure  &#xA;- 4 + SIREN/Identifiant interne du système dans la structure &#xA;- 5 + SIRET/Identifiant interne du système dans la structure &#xA;- 6 + Identifiant cabinet RPPS/Identifiant interne du système dans la structure"/>
+      <description value="Identification d'un système&#xA;&#xA;L’identification du système  est construite selon le tableau dessous :&#xA;- 1 + Identifiant cabinet ADELI/Identifiant interne du système dans la structure &#xA;- 3 + FINESS/Identifiant interne du système dans la structure  &#xA;- 4 + SIREN/Identifiant interne du système dans la structure &#xA;- 5 + SIRET/Identifiant interne du système dans la structure &#xA;- 6 + Identifiant cabinet RPPS/Identifiant interne du système dans la structure"/>
       <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelIdentifiant"/>
+      <groupingId value="DataTypeProfile"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -994,6 +993,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-pdlgc-telecom-type"/>
+      </reference>
+      <name value="Type de moyen de communication"/>
+      <description value="Type de moyen de communication"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
@@ -1033,10 +1043,10 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/xdmActorXds"/>
+        <reference value="StructureDefinition/xdmActorXdsCore"/>
       </reference>
-      <name value="XDM ActorXDS"/>
-      <description value="Cet attribut représente un acteur (humain ou système) ayant contribué au document. Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient. &#xA;&#xA;XCN de HL7 v2.5"/>
+      <name value="XDM ActorXDS Core"/>
+      <description value="Cet attribut représente un acteur (humain ou système) ayant contribué au document. Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient. &#xA;&#xA;Type XCN de HL7 v2.5"/>
       <exampleBoolean value="false"/>
       <groupingId value="LogicalModelXDM"/>
     </resource>
@@ -1133,18 +1143,6 @@
       </reference>
       <name value="XDM EventCode"/>
       <description value="Modèle logique d'un eventCode.&#xA;Un EventCode peut contenir le code représentant : &#xA;-  un évènement documenté (acte, traitement, diagnostic, etc…),  &#xA;-  une modalité d’acquisition, &#xA;-  une région anatomique."/>
-      <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelXDM"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/xdmIdentifiant"/>
-      </reference>
-      <name value="XDM Identifiant"/>
-      <description value="Identifiant de professionnel de santé, de patient ou de système"/>
       <exampleBoolean value="false"/>
       <groupingId value="LogicalModelXDM"/>
     </resource>

@@ -2,7 +2,7 @@
 "xdmPatientId","xdmPatientId","","","",0,*,"","","","null {[]} {[]}
 ","XDM PatientId","Modèle logique de patientID.
 Cette métadonnée contient l'identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange. Le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité. À défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé. ","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"xdmPatientId.CX1","xdmPatientId.CX1","","","",1,1,"","","","Identifier {[]} {[]}
+"xdmPatientId.CX1","xdmPatientId.CX1","","","",1,1,"","","","string {[CanonicalType[https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/patId|0.1.0]]} {[]}
 ","Identifiant du patient. L'INS du patient tel que défini dans le cadre juridique, est à utiliser prioritairement. À défaut, un autre identifiant (ex : IPP du système émetteur) peut être utilisé.","Identifiant du patient. L'INS du patient tel que défini dans le cadre juridique, est à utiliser prioritairement. À défaut, un autre identifiant (ex : IPP du système émetteur) peut être utilisé.","","","","","","","","","",,,,,"",,,,"xdmPatientId.CX1",1,1,"",""
 "xdmPatientId.CX4","xdmPatientId.CX4","","","",1,1,"","","","string {[]} {[]}
 ","Identifiant de l’autorité d’affectation de l'identifiant utilisé.","Cet identifiant, au format HL7 v.2.5 est constitué de trois sous-composants qui prennent les valeurs suivantes en fonction du type d'identifiant.

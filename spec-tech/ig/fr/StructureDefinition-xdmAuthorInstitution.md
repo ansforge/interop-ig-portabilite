@@ -7,7 +7,7 @@ Cet attribut représente la structure de l’auteur. Pour les documents d’expr
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [XDM Author](StructureDefinition-xdmAuthor.md)
+* Utilise ce/t/te Modèle logique: [PDLGC SoftwareVendor](StructureDefinition-pdlgcSoftwareVendor.md) and [XDM Author](StructureDefinition-xdmAuthor.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.pdlgc|current/StructureDefinition/xdmAuthorInstitution)
 
@@ -29,6 +29,12 @@ Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base)
 Obligatoire : 0 élément(6 éléments obligatoire(s) imbriqué(s))
  Interdit : 1 élément
 
+**Structures**
+
+Cette structure fait référence à ces autres structures:
+
+* [StructIdNat (https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/structIdNat|0.1.0)](StructureDefinition-structIdNat.md)
+
  **Vue différentielle** 
 
 Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base) 
@@ -41,6 +47,12 @@ Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base)
 
 Obligatoire : 0 élément(6 éléments obligatoire(s) imbriqué(s))
  Interdit : 1 élément
+
+**Structures**
+
+Cette structure fait référence à ces autres structures:
+
+* [StructIdNat (https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/structIdNat|0.1.0)](StructureDefinition-structIdNat.md)
 
  
 
@@ -59,7 +71,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdmAuthorInstit
   "name" : "XDMAuthorInstitution",
   "title" : "XDM AuthorInstitution",
   "status" : "draft",
-  "date" : "2026-07-27T13:36:25+00:00",
+  "date" : "2026-07-30T09:32:03+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -259,7 +271,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdmAuthorInstit
       "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/structIdNat"
+        "code" : "string",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/structIdNat|0.1.0"]
       }],
       "mapping" : [{
         "identity" : "AuthorInstitutionCDA",

@@ -6,7 +6,7 @@
 "pdlgcArchivePatient.index","pdlgcArchivePatient.index","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgcIndex {[]} {[]}
 ","Informations éditoriales.","Informations éditoriales.","","","","","","","","","",,,,,"",,,,"pdlgcArchivePatient.index",1,1,"",""
 "pdlgcArchivePatient.pdf","pdlgcArchivePatient.pdf","","","",1,1,"","","","BackboneElement {[]} {[]}
-","Répertoire contenant une copie PDF de tous les documents transportés dans le répertoire IHE_XDM.","Répertoire contenant une copie PDF de tous les documents transportés dans le répertoire IHE_XDM.","","","","","","","","","",,,,,"",,,,"pdlgcArchivePatient.pdf",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Répertoire contenant une copie PDF/A-1 de tous les documents transportés dans le répertoire IHE_XDM.","Répertoire contenant une copie PDF/A-1 de tous les documents transportés dans le répertoire IHE_XDM.","","","","","","","","","",,,,,"",,,,"pdlgcArchivePatient.pdf",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "pdlgcArchivePatient.pdf.id","pdlgcArchivePatient.pdf.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""

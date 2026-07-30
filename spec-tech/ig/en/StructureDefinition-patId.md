@@ -1,13 +1,16 @@
 # Identifiant Patient - Portabilité des Données LGC v0.1.0
 
-## Logical Model: Identifiant Patient 
+## Data Type Profile: Identifiant Patient 
 
  
-Identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange. Le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité. À défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé. 
+Identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange. 
+* Matricule INS : le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité.
+* Autre identifiant : à défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé.
+ 
 
 **Usages:**
 
-* Use this Logical Model: [PDLGC Manifest Archives](StructureDefinition-pdlgcManifestArchives.md), [XDM ActorPatient](StructureDefinition-xdmActorPatient.md) and [XDM Identifiant](StructureDefinition-xdmIdentifiant.md)
+* Use this Primitive Type Profile: [XDM ActorPatient](StructureDefinition-xdmActorPatient.md) and [XDM PatientId](StructureDefinition-xdmPatientId.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ans.fhir.fr.pdlgc|current/StructureDefinition/StructureDefinition-patId.json)
 
@@ -17,7 +20,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
  
 
-Other representations of profile: [CSV](../StructureDefinition-patId.csv), [Excel](../StructureDefinition-patId.xlsx) 
+Other representations of profile: [CSV](../StructureDefinition-patId.csv), [Excel](../StructureDefinition-patId.xlsx), [Schematron](../StructureDefinition-patId.sch) 
 
 
 
@@ -32,7 +35,7 @@ Other representations of profile: [CSV](../StructureDefinition-patId.csv), [Exce
   "name" : "PatId",
   "title" : "Identifiant Patient",
   "status" : "draft",
-  "date" : "2026-07-27T13:36:25+00:00",
+  "date" : "2026-07-30T09:32:03+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -41,7 +44,7 @@ Other representations of profile: [CSV](../StructureDefinition-patId.csv), [Exce
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange. Le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité. À défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé.",
+  "description" : "Identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange. \n- Matricule INS : le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité. \n- Autre identifiant : à défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -50,28 +53,15 @@ Other representations of profile: [CSV](../StructureDefinition-patId.csv), [Exce
     }]
   }],
   "fhirVersion" : "4.0.1",
-  "kind" : "logical",
+  "kind" : "primitive-type",
   "abstract" : false,
-  "type" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/patId",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base|4.0.1",
-  "derivation" : "specialization",
+  "type" : "string",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/string|4.0.1",
+  "derivation" : "constraint",
   "differential" : {
     "element" : [{
-      "id" : "patId",
-      "path" : "patId",
-      "short" : "Identifiant Patient",
-      "definition" : "Identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange. Le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité. À défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé."
-    },
-    {
-      "id" : "patId.patId",
-      "path" : "patId.patId",
-      "short" : "Identifiant du patient. L'INS du patient tel que défini dans le cadre juridique, est à utiliser prioritairement. À défaut, un autre identifiant (ex : IPP du système émetteur) peut être utilisé.",
-      "definition" : "Identifiant du patient. L'INS du patient tel que défini dans le cadre juridique, est à utiliser prioritairement. À défaut, un autre identifiant (ex : IPP du système émetteur) peut être utilisé.",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "string"
-      }]
+      "id" : "string",
+      "path" : "string"
     }]
   }
 }

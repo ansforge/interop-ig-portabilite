@@ -46,11 +46,11 @@
       "Basic"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.3.0": [
-      "pdlgcManifest.Archive",
-      "psIdNat",
-      "structIdNat",
-      "systIdNat",
+      "pdlgcManifest.Archives.Archive",
       "xdmDocumentEntry.referenceIdList"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"

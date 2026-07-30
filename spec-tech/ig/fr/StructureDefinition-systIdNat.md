@@ -1,10 +1,10 @@
 # SystIdNat - Portabilité des Données LGC v0.1.0
 
-## Modèle logique: SystIdNat 
+## Profil du type de données: SystIdNat 
 
  
-Identification d'un systeme 
-L’identification du systeme est construite selon le tableau dessous : 
+Identification d'un système 
+L’identification du système est construite selon le tableau dessous : 
 * 1 + Identifiant cabinet ADELI/Identifiant interne du système dans la structure
 * 3 + FINESS/Identifiant interne du système dans la structure
 * 4 + SIREN/Identifiant interne du système dans la structure
@@ -14,7 +14,7 @@ L’identification du systeme est construite selon le tableau dessous :
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [PDLGC System](StructureDefinition-pdlgcSystem.md), [XDM ActorSystem](StructureDefinition-xdmActorSystem.md) and [XDM Identifiant](StructureDefinition-xdmIdentifiant.md)
+* Utilise ce/t/te Profil de type primitif: [XDM ActorSystem](StructureDefinition-xdmActorSystem.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.pdlgc|current/StructureDefinition/systIdNat)
 
@@ -22,46 +22,45 @@ Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https:/
 
  [Description des profils, des différentiels, des instantanés et de leurs représentations](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
 
+*  [Tableau des éléments clés](#tabs-key) 
 *  [Tableau différentiel (differential)](#tabs-diff) 
 *  [Tableau récapitulatif (snapshot)](#tabs-snap) 
 *  [Statistiques/Références](#tabs-summ) 
 *  [Tous](#tabs-all) 
 
-Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base) 
+#### Contraintes
 
-Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base) 
+Cette structure est dérivée de [string](http://hl7.org/fhir/R4/datatypes.html#string) 
+
+#### Contraintes
+
+#### Contraintes
+
+Cette structure est dérivée de [string](http://hl7.org/fhir/R4/datatypes.html#string) 
 
 ** Résumé **
 
-Obligatoire : 0 élément(1 élément obligatoire(s) imbriqué(s))
+ **Vue des éléments clés** 
 
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [Identifier (http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.3.0)](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-elementdefinition-identifier.html)
+#### Contraintes
 
  **Vue différentielle** 
 
-Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base) 
+Cette structure est dérivée de [string](http://hl7.org/fhir/R4/datatypes.html#string) 
+
+#### Contraintes
 
  **Vue d'ensembleView** 
 
-Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base) 
+#### Contraintes
+
+Cette structure est dérivée de [string](http://hl7.org/fhir/R4/datatypes.html#string) 
 
 ** Résumé **
 
-Obligatoire : 0 élément(1 élément obligatoire(s) imbriqué(s))
-
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [Identifier (http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.3.0)](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-elementdefinition-identifier.html)
-
  
 
-Autres représentations du profil : [CSV](../StructureDefinition-systIdNat.csv), [Excel](../StructureDefinition-systIdNat.xlsx) 
+Autres représentations du profil : [CSV](../StructureDefinition-systIdNat.csv), [Excel](../StructureDefinition-systIdNat.xlsx), [Schematron](../StructureDefinition-systIdNat.sch) 
 
 
 
@@ -76,7 +75,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-systIdNat.csv),
   "name" : "SystIdNat",
   "title" : "SystIdNat",
   "status" : "draft",
-  "date" : "2026-07-27T13:36:25+00:00",
+  "date" : "2026-07-30T09:32:03+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -85,7 +84,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-systIdNat.csv),
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Identification d'un systeme\n\nL’identification du systeme  est construite selon le tableau dessous :\n- 1 + Identifiant cabinet ADELI/Identifiant interne du système dans la structure \n- 3 + FINESS/Identifiant interne du système dans la structure  \n- 4 + SIREN/Identifiant interne du système dans la structure \n- 5 + SIRET/Identifiant interne du système dans la structure \n- 6 + Identifiant cabinet RPPS/Identifiant interne du système dans la structure \n",
+  "description" : "Identification d'un système\n\nL’identification du système  est construite selon le tableau dessous :\n- 1 + Identifiant cabinet ADELI/Identifiant interne du système dans la structure \n- 3 + FINESS/Identifiant interne du système dans la structure  \n- 4 + SIREN/Identifiant interne du système dans la structure \n- 5 + SIRET/Identifiant interne du système dans la structure \n- 6 + Identifiant cabinet RPPS/Identifiant interne du système dans la structure \n",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -94,28 +93,21 @@ Autres représentations du profil : [CSV](../StructureDefinition-systIdNat.csv),
     }]
   }],
   "fhirVersion" : "4.0.1",
-  "kind" : "logical",
+  "kind" : "primitive-type",
   "abstract" : false,
-  "type" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/systIdNat",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base|4.0.1",
-  "derivation" : "specialization",
+  "type" : "string",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/string|4.0.1",
+  "derivation" : "constraint",
   "differential" : {
     "element" : [{
-      "id" : "systIdNat",
-      "path" : "systIdNat",
-      "short" : "SystIdNat",
-      "definition" : "Identification d'un systeme\n\nL’identification du systeme  est construite selon le tableau dessous :\n- 1 + Identifiant cabinet ADELI/Identifiant interne du système dans la structure \n- 3 + FINESS/Identifiant interne du système dans la structure  \n- 4 + SIREN/Identifiant interne du système dans la structure \n- 5 + SIRET/Identifiant interne du système dans la structure \n- 6 + Identifiant cabinet RPPS/Identifiant interne du système dans la structure \n"
-    },
-    {
-      "id" : "systIdNat.systIdNat",
-      "path" : "systIdNat.systIdNat",
-      "short" : "XDMIdentifiantSysteme",
-      "definition" : "XDMIdentifiantSysteme",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.3.0"]
+      "id" : "string",
+      "path" : "string",
+      "constraint" : [{
+        "key" : "SystIdNat-invariant",
+        "severity" : "error",
+        "human" : "Le numéro PSIdNat doit être un entier commençant par 0, 1, 3, 4, 5, 6 ou 8",
+        "expression" : "$this.matches('^(0|3|4|5|6)\\d*$')",
+        "source" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/systIdNat|0.1.0"
       }]
     }]
   }

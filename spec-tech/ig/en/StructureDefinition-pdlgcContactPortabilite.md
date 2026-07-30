@@ -7,7 +7,7 @@ PDLGC Contact Portabilite
 
 **Usages:**
 
-* Use this Logical Model: [PDLGC FournisseurSortant](StructureDefinition-pdlgcFournisseurSortant.md)
+* Use this Logical Model: [PDLGC SoftwareVendor](StructureDefinition-pdlgcSoftwareVendor.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ans.fhir.fr.pdlgc|current/StructureDefinition/StructureDefinition-pdlgcContactPortabilite.json)
 
@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgcContactPorta
   "name" : "PDLGCContactPortabilite",
   "title" : "PDLGC Contact Portabilite",
   "status" : "draft",
-  "date" : "2026-07-27T13:36:25+00:00",
+  "date" : "2026-07-30T09:32:03+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -53,7 +53,7 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgcContactPorta
   "kind" : "logical",
   "abstract" : false,
   "type" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgcContactPortabilite",
-  "baseDefinition" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Contact|0.1.0-ballot",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base|4.0.1",
   "derivation" : "specialization",
   "differential" : {
     "element" : [{
@@ -63,16 +63,52 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgcContactPorta
       "definition" : "PDLGC Contact Portabilite"
     },
     {
-      "id" : "pdlgcContactPortabilite.nom",
-      "path" : "pdlgcContactPortabilite.nom",
+      "id" : "pdlgcContactPortabilite.name",
+      "path" : "pdlgcContactPortabilite.name",
+      "short" : "Nom de la personne identifiée comme Point de contact Portabilité de l'éditeur",
+      "definition" : "Nom de la personne identifiée comme Point de contact Portabilité de l'éditeur",
       "min" : 1,
-      "mustSupport" : true
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
     },
     {
-      "id" : "pdlgcContactPortabilite.telecommunication",
-      "path" : "pdlgcContactPortabilite.telecommunication",
+      "id" : "pdlgcContactPortabilite.telecom",
+      "path" : "pdlgcContactPortabilite.telecom",
+      "short" : "Moyen de communication",
+      "definition" : "Moyen de communication",
       "min" : 1,
-      "mustSupport" : true
+      "max" : "*",
+      "type" : [{
+        "code" : "BackboneElement"
+      }]
+    },
+    {
+      "id" : "pdlgcContactPortabilite.telecom.type",
+      "path" : "pdlgcContactPortabilite.telecom.type",
+      "short" : "type de moyen de contact. TEL | EMAIL | FAX",
+      "definition" : "type de moyen de contact. TEL | EMAIL | FAX",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-telecom-type|0.1.0"
+      }
+    },
+    {
+      "id" : "pdlgcContactPortabilite.telecom.value",
+      "path" : "pdlgcContactPortabilite.telecom.value",
+      "short" : "valeur du contact (numéro de télépone, adresse email, numéro de fax)",
+      "definition" : "valeur du contact (numéro de télépone, adresse email, numéro de fax)",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
     }]
   }
 }

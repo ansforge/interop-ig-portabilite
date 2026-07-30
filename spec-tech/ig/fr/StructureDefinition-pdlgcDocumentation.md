@@ -3,7 +3,7 @@
 ## Modèle logique: PDLGC Documentation 
 
  
-Documentation d'export permettant au fournisseur destinataire d'intégrer les données LGC du fournisseur sortant 
+Documentation d'export permettant au LGC destinataire d'intégrer les données du LGC émetteur 
 
 **Utilisations:**
 
@@ -57,7 +57,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgcDocumentat
   "name" : "PDLGCDocumentation",
   "title" : "PDLGC Documentation",
   "status" : "draft",
-  "date" : "2026-07-27T13:36:25+00:00",
+  "date" : "2026-07-30T09:32:03+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -66,7 +66,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgcDocumentat
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Documentation d'export permettant au fournisseur destinataire d'intégrer les données LGC du fournisseur sortant",
+  "description" : "Documentation d'export permettant au LGC destinataire d'intégrer les données du LGC émetteur",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -84,15 +84,15 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgcDocumentat
     "element" : [{
       "id" : "pdlgcDocumentation",
       "path" : "pdlgcDocumentation",
-      "short" : "Documentation d'export permettant au fournisseur destinataire d'intégrer les données LGC du fournisseur sortant.",
-      "definition" : "Documentation d'export permettant au fournisseur destinataire d'intégrer les données LGC du fournisseur sortant.",
+      "short" : "Documentation d'export permettant au système destinataire d'intégrer les données LGC du système émetteur.",
+      "definition" : "Documentation d'export permettant au système destinataire d'intégrer les données LGC du système émetteur.",
       "comment" : "Transaction ExportArchivePortabilite."
     },
     {
       "id" : "pdlgcDocumentation.documentation",
       "path" : "pdlgcDocumentation.documentation",
-      "short" : "Documents permettant au fournisseur destinataire d'interpréter et d'intégrer les données (dictionnaire de données, mapping, dictionnaire de terminologies propriétaures, jeu d'échantillons).",
-      "definition" : "Documents permettant au fournisseur destinataire d'interpréter et d'intégrer les données (dictionnaire de données, mapping, dictionnaire de terminologies propriétaures, jeu d'échantillons).",
+      "short" : "Documents permettant au système destinataire d'interpréter et d'intégrer les données (dictionnaire de données, mapping, dictionnaire de terminologies propriétaures, jeu d'échantillons).",
+      "definition" : "Documents permettant au système destinataire d'interpréter et d'intégrer les données (dictionnaire de données, mapping, dictionnaire de terminologies propriétaures, jeu d'échantillons).",
       "min" : 1,
       "max" : "*",
       "type" : [{

@@ -7,7 +7,7 @@ Informations relatives au Logiciel de Gestion de Cabinet
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [PDLGC FournisseurSortant](StructureDefinition-pdlgcFournisseurSortant.md)
+* Utilise ce/t/te Modèle logique: [PDLGC Manifest](StructureDefinition-pdlgcManifest.md) and [PDLGC Readme](StructureDefinition-pdlgcReadme.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.pdlgc|current/StructureDefinition/pdlgcSystem)
 
@@ -57,7 +57,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgcSystem.csv
   "name" : "PDLGCSystem",
   "title" : "PDLGC System",
   "status" : "draft",
-  "date" : "2026-07-27T13:36:25+00:00",
+  "date" : "2026-07-30T09:32:03+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -88,36 +88,25 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgcSystem.csv
       "definition" : "Informations relatives au Logiciel de Gestion de Cabinet"
     },
     {
-      "id" : "pdlgcSystem.lgcNom",
-      "path" : "pdlgcSystem.lgcNom",
-      "short" : "Nom du logiciel",
-      "definition" : "Nom du logiciel",
+      "id" : "pdlgcSystem.lgcSoftwareVendor",
+      "path" : "pdlgcSystem.lgcSoftwareVendor",
+      "short" : "Editeur du logiciel responsable de la production et de l'export de l'archive de portabilité",
+      "definition" : "Editeur du logiciel responsable de la production et de l'export de l'archive de portabilité",
       "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "string"
+        "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgcSoftwareVendor"
       }]
     },
     {
-      "id" : "pdlgcSystem.lgcVersion",
-      "path" : "pdlgcSystem.lgcVersion",
-      "short" : "Version du logiciel",
-      "definition" : "Version du logiciel",
+      "id" : "pdlgcSystem.lgcSystem",
+      "path" : "pdlgcSystem.lgcSystem",
+      "short" : "Logiciel responsable de la production et de l'export de l'archive de portabilité",
+      "definition" : "Logiciel responsable de la production et de l'export de l'archive de portabilité",
       "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "string"
-      }]
-    },
-    {
-      "id" : "pdlgcSystem.lgcIdentifiant",
-      "path" : "pdlgcSystem.lgcIdentifiant",
-      "short" : "Identifiant du système",
-      "definition" : "Identifiant du système",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/systIdNat"
+        "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorSystem"
       }]
     }]
   }

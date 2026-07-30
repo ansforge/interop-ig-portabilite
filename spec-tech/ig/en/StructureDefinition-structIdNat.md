@@ -1,6 +1,6 @@
 # StructIdNat - Portabilité des Données LGC v0.1.0
 
-## Logical Model: StructIdNat 
+## Data Type Profile: StructIdNat 
 
  
 Identification nationale principale d’une structure propre aux SI de l'ANS et au CI-SIS 4. 
@@ -14,7 +14,7 @@ L’identification nationale d’une structure est construite selon le tableau d
 
 **Usages:**
 
-* Use this Logical Model: [PDLGC Index](StructureDefinition-pdlgcIndex.md) and [XDM AuthorInstitution](StructureDefinition-xdmAuthorInstitution.md)
+* Use this Primitive Type Profile: [PDLGC Index](StructureDefinition-pdlgcIndex.md) and [XDM AuthorInstitution](StructureDefinition-xdmAuthorInstitution.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ans.fhir.fr.pdlgc|current/StructureDefinition/StructureDefinition-structIdNat.json)
 
@@ -24,7 +24,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
  
 
-Other representations of profile: [CSV](../StructureDefinition-structIdNat.csv), [Excel](../StructureDefinition-structIdNat.xlsx) 
+Other representations of profile: [CSV](../StructureDefinition-structIdNat.csv), [Excel](../StructureDefinition-structIdNat.xlsx), [Schematron](../StructureDefinition-structIdNat.sch) 
 
 
 
@@ -39,7 +39,7 @@ Other representations of profile: [CSV](../StructureDefinition-structIdNat.csv),
   "name" : "StructIdNat",
   "title" : "StructIdNat",
   "status" : "draft",
-  "date" : "2026-07-27T13:36:25+00:00",
+  "date" : "2026-07-30T09:32:03+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -57,29 +57,15 @@ Other representations of profile: [CSV](../StructureDefinition-structIdNat.csv),
     }]
   }],
   "fhirVersion" : "4.0.1",
-  "kind" : "logical",
+  "kind" : "primitive-type",
   "abstract" : false,
-  "type" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/structIdNat",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base|4.0.1",
-  "derivation" : "specialization",
+  "type" : "string",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/string|4.0.1",
+  "derivation" : "constraint",
   "differential" : {
     "element" : [{
-      "id" : "structIdNat",
-      "path" : "structIdNat",
-      "short" : "StructIdNat",
-      "definition" : "Identification nationale principale d’une structure propre aux SI de l'ANS et au CI-SIS 4. \n\nL’identification nationale d’une structure est construite selon le tableau dessous :\n- 0 + Identifiant cabinet ADELI \n- 1 + N° FINESS 2 + N° SIREN \n- 3 + N° SIRET \n- 4 + N° RPPS-rang \n- Néant + N° technique \n"
-    },
-    {
-      "id" : "structIdNat.StructIdNat",
-      "path" : "structIdNat.StructIdNat",
-      "short" : "StructIdNat",
-      "definition" : "StructIdNat",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.3.0"]
-      }]
+      "id" : "string",
+      "path" : "string"
     }]
   }
 }

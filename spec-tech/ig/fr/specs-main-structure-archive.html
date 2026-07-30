@@ -257,7 +257,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="conventions-décritures-des-répertoires-et-des-fichiers">Conventions d'écritures des répertoires et des fichiers</h3>
 
-<p><strong>Format de nommage pour les fichiers et répertoire des archives XDM</strong></p>
+<p><strong>Format de nommage pour les fichiers et répertoire des lots de soumission (<code class="language-plaintext highlighter-rouge">SUBSET</code>) des archives XDM</strong></p>
 
 <p>Les noms des répertoires et des fichiers inclus dans l'archive Patient XDM doivent être conformes à la norme ISO 9660 niveau 1, comme défini dans le profil IHE_XDM :</p>
 <ul>
@@ -265,14 +265,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>caractères limités</strong> : lettres en majuscules, chiffres et trait de soulignement ("underscore" en anglais, signe typographique "_").</li>
 </ul>
 
-<p>Il se peut que les noms des fichiers et des répertoires inclus dans l'archive soient différents de leurs noms 
-d'origine. Par exemple, <code class="language-plaintext highlighter-rouge">CR_SER01.XML</code> aurait pour nom d'origine <code class="language-plaintext highlighter-rouge">Compte-rendu de sérologie du 10 mai 2013.xml</code>. Le fournisseur sortant doit alors assurer le transcodage et la traçabilité entre le nom d'origine des répertoires et des fichiers et le nom conforme à la norme ISO 9660 niveau 1 de ces mêmes répertoires et fichiers, lorsque ceux-ci sont copiés dans IHE_XDM. Cette traçabilité peut être obtenue en établissant une table de correspondance entre le nom d'origine du fichier ou du répertoire et son nom une fois copié dans IHE_XDM.</p>
+<p>Afin de respecter ce format, les noms des fichiers et des répertoires de documents multifichiers peuvent être différents de leurs noms d'origine. Par exemple, <code class="language-plaintext highlighter-rouge">CR_SER01.XML</code> aurait pour nom d'origine <code class="language-plaintext highlighter-rouge">Compte-rendu de sérologie du 10 mai 2013.xml</code>. Le système émetteur doit alors assurer le transcodage et la traçabilité entre le nom d'origine des répertoires et des fichiers et le nom conforme à la norme ISO 9660 niveau 1 de ces mêmes répertoires et fichiers, lorsque ceux-ci sont copiés dans IHE_XDM. 
+Cette traçabilité est obtenue en exploitant la métadonnées XDS <code class="language-plaintext highlighter-rouge">typeCodeDisplayName</code> pour enregistrer le nom d'origine.</p>
 
 <p><br/></p>
 
+<p><strong>Format de nommage pour les fichiers du répertoire <code class="language-plaintext highlighter-rouge">PDF</code> des archives XDM</strong></p>
+
+<p>Les documents PDF de ce répertoire étant destinés à une lecture humaine, ils DOIVENT respecter la convention de nommage suivante, afin de faciliter l’identification des documents de santé : <code class="language-plaintext highlighter-rouge">&lt;date de l’acte&gt;_&lt;type document&gt;_&lt;NOM&gt;_&lt;prenom&gt;_&lt;numéro de dossier&gt;.pdf</code>
+Tous les champs sont obligatoires à l’exception du champ <code class="language-plaintext highlighter-rouge">&lt;numéro de dossier&gt;</code> qui est optionnel.</p>
+
+<p>Avec :</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">&lt;date de l’acte&gt;</code> : date à laquelle l’acte a été réalisé (AAAAMMJJ). Correspond à la métadonnée XDS <code class="language-plaintext highlighter-rouge">serviceStartTime</code> du document structuré équivalent ;</li>
+  <li><code class="language-plaintext highlighter-rouge">&lt;type document&gt;</code> : métadonnée XDS <code class="language-plaintext highlighter-rouge">typeCodeDisplayName</code> du document structuré équivalent. Pour une meilleure lisibilité du nom du PDF, ce libellé doit être tronqué à 40 caractères, si sa longueur est supérieure ;</li>
+  <li><code class="language-plaintext highlighter-rouge">&lt;NOM&gt;</code> : nom de naissance de l’usager en majuscule, si disponible. Sinon renseigner avec le nom usuel ;</li>
+  <li><code class="language-plaintext highlighter-rouge">&lt;prenom&gt;</code> : prénom de l’usager ;</li>
+  <li><code class="language-plaintext highlighter-rouge">&lt;numéro de dossier&gt;</code> : numéro d’identification propre à l’émetteur et partagé avec le destinataire. Pour les comptes rendus d’examens de biologie, il correspond au numéro d’enregistrement de la prescription initiale reçue par le laboratoire principal ;</li>
+  <li>« _ » : caractère underscore (ASCII - décimal 95).</li>
+</ul>
+
 <p><strong>Format de nommage pour les fichiers et répertoires de l'archive de portabilité, hors archives XDM</strong></p>
 
-<p>En dehors des archives patients XDM, les noms des répertoires et fichiers ne sont pas soumis au format 8.3.</p>
+<p>En dehors des répertoires et fichiers de l'archive Patient XDM, les noms des répertoires et fichiers ne sont pas soumis au format 8.3.</p>
 
 <p><br/></p>
 
@@ -286,11 +301,11 @@ d'origine. Par exemple, <code class="language-plaintext highlighter-rouge">CR_SE
 
 <p>Le nom des répertoires et sous-archives ZIP doit respecter le format suivant :</p>
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">DOCUMENTATION/</code>: documentation d'export permettant au fournisseur sortant d'interpréter et d'intégrer les données ;</li>
+  <li><code class="language-plaintext highlighter-rouge">DOCUMENTATION/</code>: documentation d'export permettant à l'éditeur émetteur d'interpréter et d'intégrer les données ;</li>
   <li><code class="language-plaintext highlighter-rouge">TRANSVERSE.ZIP</code> : archive contenant les données transverses (logs, comptabilité, agenda,…) ;</li>
   <li><code class="language-plaintext highlighter-rouge">TRANSVERSE/</code> : répertoire contenant les données transverses (logs, comptabilité, agenda,…) ;</li>
   <li><code class="language-plaintext highlighter-rouge">PATNNNNN.ZIP</code> : contient les données d'un patient et est conforme au profil IHE_XDM, ou "NNNNN" est incrémenté à partir de 00001. Exemple : <code class="language-plaintext highlighter-rouge">PAT00183.ZIP</code>;</li>
-  <li><code class="language-plaintext highlighter-rouge">PDF</code>: sous-répertoire de l'archive patient contenant les documents PDF destinés à la consultation humaine ;</li>
+  <li><code class="language-plaintext highlighter-rouge">PDF</code>: sous-répertoire de l'archive patient contenant les documents PDF/A-1 destinés à la consultation humaine ;</li>
   <li><code class="language-plaintext highlighter-rouge">IHE_XDM</code>et <code class="language-plaintext highlighter-rouge">SUBSET01</code>: sous-répertoires de l'archive XDM contenant les documents d'un patient.</li>
 </ul>
 
@@ -311,7 +326,7 @@ d'origine. Par exemple, <code class="language-plaintext highlighter-rouge">CR_SE
 
 <p><strong>Modèle logique</strong></p>
 
-<p><a name="l811">​</a>Le modèle logique associé au fichier <code class="language-plaintext highlighter-rouge">MANIFEST.XML</code> est consultable <a href="StructureDefinition-pdlgc-manifest.html">ici</a></p>
+<p><a name="l873">​</a>Le modèle logique associé au fichier <code class="language-plaintext highlighter-rouge">MANIFEST.XML</code> est consultable <a href="StructureDefinition-pdlgc-manifest.html">ici</a></p>
 
 <p><strong>Exemple de <code class="language-plaintext highlighter-rouge">MANIFEST.XML</code> de l'archive de portabilité</strong></p>
 
@@ -321,38 +336,51 @@ d'origine. Par exemple, <code class="language-plaintext highlighter-rouge">CR_SE
     <span class="nt">&lt;exportType&gt;</span>MASSIF<span class="nt">&lt;/exportType&gt;</span>
     <span class="nt">&lt;exportStatus&gt;</span>COMPLETE<span class="nt">&lt;/exportStatus&gt;</span>
     <span class="nt">&lt;comments&gt;</span>Export de données LGC répondant à la demande du Dr Dupond le 13 juin 2026<span class="nt">&lt;/comments&gt;</span>
-    <span class="nt">&lt;editeurSortant&gt;</span>
-      <span class="nt">&lt;raisonSociale&gt;</span>Editeur Exemple de LGC<span class="nt">&lt;/raisonSociale&gt;</span>
-      <span class="nt">&lt;idNatStruct&gt;</span>175259803546<span class="nt">&lt;/idNatStruct&gt;</span>
-      <span class="nt">&lt;contact&gt;</span>
-        <span class="nt">&lt;nom&gt;</span>Service Portabilité<span class="nt">&lt;/nom&gt;</span>
-        <span class="nt">&lt;email&gt;</span>portabilite@editeur.fr<span class="nt">&lt;/email&gt;</span>
-        <span class="nt">&lt;telephone&gt;</span>+33100000000<span class="nt">&lt;/telephone&gt;</span>
-      <span class="nt">&lt;/contact&gt;</span>
-    <span class="nt">&lt;/editeurSortant&gt;</span>
-    <span class="nt">&lt;PatientArchiveCount&gt;</span>2<span class="nt">&lt;/PatientArchiveCount&gt;</span>
-    <span class="nt">&lt;TransverseArchiveCount&gt;</span>1<span class="nt">&lt;/TransverseArchiveCount&gt;</span>
+    <span class="nt">&lt;sourceSystem&gt;</span>
+      <span class="nt">&lt;lgcSoftwareVendor&gt;</span>
+        <span class="nt">&lt;name&gt;</span>Editeur Exemple de LGC<span class="nt">&lt;/raisonSociale&gt;</span>
+        <span class="nt">&lt;idNatStruct&gt;</span>175259803546<span class="nt">&lt;/idNatStruct&gt;</span>
+        <span class="nt">&lt;institution&gt;</span>Editeur Exemple de LGC^^^^^<span class="ni">&amp;amp;</span>1.2.250.1.71.4.2.2<span class="ni">&amp;amp;</span>ISO^IDNST^^^175259803546"<span class="nt">&lt;/institution&gt;</span>
+        <span class="nt">&lt;contact&gt;</span>
+          <span class="nt">&lt;name&gt;</span>Service Portabilité<span class="nt">&lt;/name&gt;</span>
+          <span class="nt">&lt;telecom&gt;</span>
+            <span class="nt">&lt;type&gt;</span>EMAIL<span class="nt">&lt;/system&gt;</span>
+            <span class="nt">&lt;value&gt;</span>portabilite@editeur.fr<span class="nt">&lt;/value&gt;</span>
+          <span class="nt">&lt;/telecom&gt;</span>
+          <span class="nt">&lt;telecom&gt;</span>
+            <span class="nt">&lt;system&gt;</span>phone<span class="nt">&lt;/system&gt;</span>
+            <span class="nt">&lt;value&gt;</span>02 98 54 26 45<span class="nt">&lt;/value&gt;</span>
+          <span class="nt">&lt;/telecom&gt;</span>
+          <span class="nt">&lt;telephone&gt;</span>+33100000000<span class="nt">&lt;/telephone&gt;</span>
+        <span class="nt">&lt;/contact&gt;</span>
+      <span class="nt">&lt;/lgcSoftwareVendor&gt;</span>
+      <span class="nt">&lt;lgcSystem&gt;</span>175259803546/2789345815^Système exemple LGC V1.0^Modèle Exemple^^^^^<span class="ni">&amp;amp;</span>1.2.250.1.71.4.2.1<span class="ni">&amp;amp;</span>ISO^U^^^RI<span class="nt">&lt;lgcSystem&gt;</span>
+    <span class="nt">&lt;/sourceSystem&gt;</span>
+    <span class="nt">&lt;statistics&gt;</span>
+      <span class="nt">&lt;patientArchiveCount&gt;</span>2<span class="nt">&lt;/PatientArchiveCount&gt;</span>
+      <span class="nt">&lt;transverseArchiveCount&gt;</span>1<span class="nt">&lt;/TransverseArchiveCount&gt;</span>
+    <span class="nt">&lt;/statistics&gt;</span>
     <span class="nt">&lt;Archives&gt;</span>
       <span class="nt">&lt;Archive&gt;</span>
-        <span class="nt">&lt;type&gt;</span>Transverse<span class="nt">&lt;/type&gt;</span>
         <span class="nt">&lt;archiveid&gt;</span>TRANSV<span class="nt">&lt;/archiveid&gt;</span>
+        <span class="nt">&lt;type&gt;</span>Transverse<span class="nt">&lt;/type&gt;</span>
         <span class="nt">&lt;size&gt;</span>503<span class="nt">&lt;/size&gt;</span>
         <span class="nt">&lt;hash&gt;</span>127e6fbfe24a750e72930c220a8e138275656b8e5d8f48a98c3c92df2caba935<span class="nt">&lt;/hash&gt;</span>
       <span class="nt">&lt;/Archive&gt;</span>
       <span class="nt">&lt;Archive&gt;</span>
         <span class="nt">&lt;type&gt;</span>Patient<span class="nt">&lt;/type&gt;</span>
         <span class="nt">&lt;archiveid&gt;</span>PAT00001<span class="nt">&lt;/archiveid&gt;</span>
-        <span class="nt">&lt;patientId&gt;</span>1850615458136<span class="nt">&lt;/patientId&gt;</span>
+        <span class="nt">&lt;patientId&gt;</span>1850615458136^^^<span class="ni">&amp;amp;</span>1.2.250.1.213.1.4.10<span class="ni">&amp;amp;</span>ISO^NH"<span class="nt">&lt;/patientId&gt;</span>
         <span class="nt">&lt;size&gt;</span>10652<span class="nt">&lt;/size&gt;</span>
         <span class="nt">&lt;hash&gt;</span>152e6fbfc23a758e75930a220a7e138275256b8e5c8f48a97c3c92df2ccba945<span class="nt">&lt;/hash&gt;</span>
       <span class="nt">&lt;/Archive&gt;</span>
-         <span class="nt">&lt;Archive&gt;</span>
-          <span class="nt">&lt;type&gt;</span>Patient<span class="nt">&lt;/type&gt;</span>
-          <span class="nt">&lt;archiveid&gt;</span>PAT00002<span class="nt">&lt;archiveid&gt;</span>
-          <span class="nt">&lt;patientId&gt;</span>1930707245385<span class="nt">&lt;/patientId&gt;</span>
-          <span class="nt">&lt;size&gt;</span>856<span class="nt">&lt;/size&gt;</span>
-          <span class="nt">&lt;hash&gt;</span>956e6fbfc56d758e75930a225d7e138275256c9e4c8f48a97c3c92ec2ccba945<span class="nt">&lt;/hash&gt;</span>
-        <span class="nt">&lt;/Archive&gt;</span>
+      <span class="nt">&lt;Archive&gt;</span>
+        <span class="nt">&lt;type&gt;</span>Patient<span class="nt">&lt;/type&gt;</span>
+        <span class="nt">&lt;archiveid&gt;</span>PAT00002<span class="nt">&lt;archiveid&gt;</span>
+        <span class="nt">&lt;patientId&gt;</span>279035121518989^^^<span class="ni">&amp;amp;</span>1.2.250.1.213.1.4.10<span class="ni">&amp;amp;</span>ISO^NH"<span class="nt">&lt;/patientId&gt;</span>
+        <span class="nt">&lt;size&gt;</span>856<span class="nt">&lt;/size&gt;</span>
+        <span class="nt">&lt;hash&gt;</span>956e6fbfc56d758e75930a225d7e138275256c9e4c8f48a97c3c92ec2ccba945<span class="nt">&lt;/hash&gt;</span>
+      <span class="nt">&lt;/Archive&gt;</span>
     <span class="nt">&lt;/Archives&gt;</span>
 <span class="nt">&lt;/Manifest&gt;</span>
 </code></pre></div></div>
@@ -361,9 +389,9 @@ d'origine. Par exemple, <code class="language-plaintext highlighter-rouge">CR_SE
 
 <h4 id="readme"><code class="language-plaintext highlighter-rouge">README.TXT</code> de l'archive de portabilité</h4>
 
-<p>Le fichier README.TXT est indépendant du contenu clinique de l'archive. Il contient des informations éditoriales dont le caractère obligatoire relève du fournisseur sortant, conformément au volume 2b du cadre technique ITI :</p>
+<p>Le fichier README.TXT est indépendant du contenu clinique de l'archive. Il contient des informations éditoriales dont le caractère obligatoire du système émetteur, conformément au volume 2b du cadre technique ITI :</p>
 <ul>
-  <li>point de contact du fournisseur sortant ayant créé l'archive ;</li>
+  <li>point de contact de l'éditeur émetteur ayant créé l'archive ;</li>
   <li>nom et version du logiciel ayant créé l'archive ;</li>
   <li>informations générales sur la structure de l'archive (ces informations n'ont pas vocation à être spécifique au contenu stocké dans l'archive) ;</li>
   <li>instructions permettant de visualiser les documents joints, dans le cas ou un viewer est transmis (ex. visualisation des 
@@ -380,7 +408,7 @@ documents de santé enregistrés avec leur feuille de style dans un même réper
 
 <p><strong>Modèle logique</strong></p>
 
-<p><a name="l1074">​</a>Le modèle logique associé au fichier <code class="language-plaintext highlighter-rouge">README.TXT</code> est consultable <a href="StructureDefinition-pdlgc-readme.html">ici</a></p>
+<p><a name="l1214">​</a>Le modèle logique associé au fichier <code class="language-plaintext highlighter-rouge">README.TXT</code> est consultable <a href="StructureDefinition-pdlgc-readme.html">ici</a></p>
 
 <p><strong>Exemple de <code class="language-plaintext highlighter-rouge">README.TXT</code> de l'archive de portabilité</strong></p>
 
@@ -392,10 +420,12 @@ documents de santé enregistrés avec leur feuille de style dans un même réper
         . email : portabilite@editeur.fr
         . Téléphone : +33100000000
 
-Application du fournisseur sortant :
+Application de l'éditeur émetteur :
 =========================
+    . Modèle : LGC modèle
     . Nom : LGC example
     . Version : 1.2
+    . Identifiant : 175259803546/2789345815
 
 Instructions :
 =============
@@ -437,7 +467,7 @@ Arborescence :
 
 <p><strong>Modèle logique</strong></p>
 
-<p><a name="l1141">​</a>Le modèle logique associé au fichier <code class="language-plaintext highlighter-rouge">SIGN.XML</code> est consultable <a href="StructureDefinition-pdlgc-signature.html">ici</a></p>
+<p><a name="l1281">​</a>Le modèle logique associé au fichier <code class="language-plaintext highlighter-rouge">SIGN.XML</code> est consultable <a href="StructureDefinition-pdlgc-signature.html">ici</a></p>
 
 <p><strong>Exemple de SIGN.XML de l'archive de portabilité</strong></p>
 
@@ -513,13 +543,13 @@ Arborescence :
 
 <h3 id="documentation-dexport-de-larchive-de-portabilité">Documentation d'export de l'archive de portabilité</h3>
 
-<p>Le répertoire <code class="language-plaintext highlighter-rouge">DOCUMENTATION/</code>, positionné à la racine de l'archive de portabilité, regroupe l'ensemble des éléments permettant au fournisseur destinataire d'interpréter et d'intégrer les données reçues de manière autonome, sans échange préalable avec le fournisseur sortant.</p>
+<p>Le répertoire <code class="language-plaintext highlighter-rouge">DOCUMENTATION/</code>, positionné à la racine de l'archive de portabilité, regroupe l'ensemble des éléments permettant au LGC destinataire d'interpréter et d'intégrer les données reçues de manière autonome, sans échange préalable avec le LGC émetteur.</p>
 
 <p>Cette documentation peut notamment comprendre les fichiers décrits ci-après.</p>
 
 <h4 id="dictionnaire-de-données">Dictionnaire de données</h4>
 
-<p>Le dictionnaire de données décrit les données exportées dans un format propriétaire structuré, pour lesquelles il n'existe pas de spécification publique de référence permettant au fournisseur destinataire d'en déduire la structure et la sémantique. Les données exportées conformément à un volet du CI-SIS ou à un standard publié (CDA R2, FHIR, LOINC…) n'ont pas à faire l'objet d'un dictionnaire de données : le mapping de fichiers renvoie dans ce cas directement aux spécifications applicables.</p>
+<p>Le dictionnaire de données décrit les données exportées dans un format propriétaire structuré, pour lesquelles il n'existe pas de spécification publique de référence permettant au LGC destinataire d'en déduire la structure et la sémantique. Les données exportées conformément à un volet du CI-SIS ou à un standard publié (CDA R2, FHIR, LOINC…) n'ont pas à faire l'objet d'un dictionnaire de données : le mapping de fichiers renvoie dans ce cas directement aux spécifications applicables.</p>
 
 <p>Pour chaque donnée relevant de son périmètre, le dictionnaire couvre a minima :</p>
 <ul>
@@ -548,18 +578,18 @@ Arborescence :
 
 <h4 id="schéma-de-structure">Schéma de structure</h4>
 
-<p>Pour les données exportées dans un format propriétaire structuré, le fournisseur sortant peut fournir les schémas décrivant la structure des fichiers concernés (XSD, JSON Schema ou équivalent). Ces schémas constituent, au même titre que le dictionnaire de données, une ressource d'implémentation pour le fournisseur destinataire : ils lui permettent de comprendre l'organisation des données reçues et d'adapter son traitement en conséquence. 
+<p>Pour les données exportées dans un format propriétaire structuré, l'éditeur émetteur peut fournir les schémas décrivant la structure des fichiers concernés (XSD, JSON Schema ou équivalent). Ces schémas constituent, au même titre que le dictionnaire de données, une ressource d'implémentation pour le système destinataire : ils lui permettent de comprendre l'organisation des données reçues et d'adapter son traitement en conséquence. 
 Comme pour le dictionnaire de données, les fichiers conformes à un volet CI-SIS ou à un standard publié n'appellent pas de schéma complémentaire : le mapping de fichiers renvoie dans ce cas aux spécifications applicables.</p>
 
 <h4 id="jeu-déchantillons">Jeu d'échantillons</h4>
 
-<p>Le fournisseur sortant peut fournir, pour chaque type de document ou de fichier structuré présent dans l'archive, un exemple anonymisé illustrant la structure et le contenu attendus. Ce jeu d'échantillons facilite l'intégration par le fournisseur destinataire.</p>
+<p>L'éditeur émetteur peut fournir, pour chaque type de document ou de fichier structuré présent dans l'archive, un exemple anonymisé illustrant la structure et le contenu attendus. Ce jeu d'échantillons facilite l'intégration par le système destinataire.</p>
 
 <h4 id="paramètres-de-configuration">Paramètres de configuration</h4>
 
-<p>Lorsque certains paramètres de configuration de l'éditeur conditionnent l'interprétation, l'affichage, le traitement ou la production des données exportées, le fournisseur sortant peut fournir une description de ces paramètres.</p>
+<p>Lorsque certains paramètres de configuration de l'éditeur conditionnent l'interprétation, l'affichage, le traitement ou la production des données exportées, l'éditeur émetteur peut fournir une description de ces paramètres.</p>
 
-<p>Cette description permet au fournisseur destinataire d'identifier les comportements applicatifs susceptibles d'avoir un impact sur l'exploitation des données et, le cas échéant, de reconfigurer son propre système afin de garantir une reprise fonctionnelle cohérente.</p>
+<p>Cette description permet à l'éditeur destinataire d'identifier les comportements applicatifs susceptibles d'avoir un impact sur l'exploitation des données et, le cas échéant, de reconfigurer son propre système afin de garantir une reprise fonctionnelle cohérente.</p>
 
 <p>Le format de cette description est libre. Elle doit être lisible sans logiciel propriétaire et permettre d'identifier sans ambiguïté les paramètres ayant une incidence sur la compréhension ou le traitement des données.</p>
 
@@ -569,7 +599,7 @@ Comme pour le dictionnaire de données, les fichiers conformes à un volet CI-SI
 
 <p>L'archive <code class="language-plaintext highlighter-rouge">PATNNNNN.ZIP</code>contient les répertoires <code class="language-plaintext highlighter-rouge">IHE_XDM/</code> et <code class="language-plaintext highlighter-rouge">PDF/</code> ainsi que les fichiers <code class="language-plaintext highlighter-rouge">INDEX.HTM</code> et <code class="language-plaintext highlighter-rouge">README.TXT</code>.</p>
 
-<p><a name="l1647">​</a>Le modèle logique associé à cette archive est consultable <a href="StructureDefinition-pdlgc-archive-patient.html">ici</a></p>
+<p><a name="l1787">​</a>Le modèle logique associé à cette archive est consultable <a href="StructureDefinition-pdlgc-archive-patient.html">ici</a></p>
 
 <p><br/></p>
 
@@ -577,14 +607,14 @@ Comme pour le dictionnaire de données, les fichiers conformes à un volet CI-SI
 
 <p>Le fichier <code class="language-plaintext highlighter-rouge">INDEX.HTM</code> est imposé par le profil IHE_XDM à la racine d'une archive XDM. Il renferme des informations éditoriales et est conforme aux spécifications XHTML et <a href="https://esante.gouv.fr/annexe-sources-des-donnees-personnes-et-structures">Echanges de Documents de santé</a>. Il contient :</p>
 <ul>
-  <li>l'identification obligatoire du fournisseur sortant ayant créé le media : StructIdNat (identifiant de stucture de santé) et StructNom (nom de la structure) ;</li>
+  <li>l'identification obligatoire du système émetteur ayant créé le media : StructIdNat (identifiant de stucture de santé) et StructNom (nom de la structure) ;</li>
   <li>l'avertissement optionnel de cette institution concernant la sécurité et la confidentialité;</li>
   <li>un lien vers le fichier README.TXT.</li>
 </ul>
 
 <p><strong>Modèle logique</strong></p>
 
-<p><a name="l1685">​</a>Le modèle logique associé au fichier INDEX.HTM est consultable <a href="StructureDefinition-pdlgc-index.html">ici</a></p>
+<p><a name="l1825">​</a>Le modèle logique associé au fichier INDEX.HTM est consultable <a href="StructureDefinition-pdlgc-index.html">ici</a></p>
 
 <p><strong>Exemple de fichier <code class="language-plaintext highlighter-rouge">INDEX.HTM</code></strong> :</p>
 
@@ -604,7 +634,7 @@ Ce fichier est imposé par le profil IHE_XDM et précise la structure propre à 
 
 <p><strong>Modèle logique</strong></p>
 
-<p><a name="l1751">​</a>Le modèle logique associé au fichier README.TXT est consultable <a href="StructureDefinition-pdlgc-readme.html">ici</a></p>
+<p><a name="l1891">​</a>Le modèle logique associé au fichier README.TXT est consultable <a href="StructureDefinition-pdlgc-readme.html">ici</a></p>
 
 <p><strong>Exemple de <code class="language-plaintext highlighter-rouge">README.TXT</code> d'une archive Patient</strong></p>
 
@@ -616,10 +646,12 @@ Ce fichier est imposé par le profil IHE_XDM et précise la structure propre à 
         . email : portabilite@editeur.fr
         . Téléphone : +33100000000
 
-Application du fournisseur sortant :
+Application de l'éditeur émetteur :
 =========================
+    . Modèle : LGC modèle
     . Nom : LGC example
     . Version : 1.2
+    . Identifiant : 175259803546/2789345815
 
 Instructions :
 =============
@@ -651,7 +683,7 @@ Arborescence :
 
 <h4 id="répertoire-pdf-de-larchive-xdm-patient">Répertoire <code class="language-plaintext highlighter-rouge">PDF/</code> de l'archive XDM Patient</h4>
 
-<p>Le répertoire <code class="language-plaintext highlighter-rouge">PDF/</code>, positionné à la racine de l'archive XDM, constitue une extension au profil IHE_XDM. Il regroupe une version PDF des documents structurés contenus dans le répertoire <code class="language-plaintext highlighter-rouge">IHE_XDM/</code> destinée exclusivement à la consultation humaine. Ces fichiers ne sont pas destinés à être exploités par un système d'information et ne se substituent en aucun cas aux documents structurés, qui demeurent la source de référence pour les traitements automatisés.</p>
+<p>Le répertoire <code class="language-plaintext highlighter-rouge">PDF/</code>, positionné à la racine de l'archive XDM, constitue une extension au profil IHE_XDM. Il regroupe une version PDF/A-1 des documents structurés contenus dans le répertoire <code class="language-plaintext highlighter-rouge">IHE_XDM/</code> destinée exclusivement à la consultation humaine. Ces fichiers ne sont pas destinés à être exploités par un système d'information et ne se substituent en aucun cas aux documents structurés, qui demeurent la source de référence pour les traitements automatisés.</p>
 
 <p>Le nommage des fichiers PDF doit pouvoir permettre d'établir sans ambiguïté la correspondance avec le document structuré auquel ils se rapportent.</p>
 
@@ -665,7 +697,7 @@ Arborescence :
 
 <p><strong>Modèle logique</strong></p>
 
-<p><a name="l1838">​</a>Le modèle logique associé au fichier METADATA.XML est consultable <a href="StructureDefinition-pdlgc-metadata.html">ici</a></p>
+<p><a name="l1978">​</a>Le modèle logique associé au fichier METADATA.XML est consultable <a href="StructureDefinition-pdlgc-metadata.html">ici</a></p>
 
 <p><strong>Exemple de <code class="language-plaintext highlighter-rouge">METADATA.XML</code> d'une archive XDM</strong></p>
 
@@ -685,7 +717,7 @@ Arborescence :
 
 <p><strong>Modèle logique</strong></p>
 
-<p><a name="l1895">​</a>Le modèle logique associé au fichier README.TXT est consultable <a href="StructureDefinition-pdlgc-readme.html">ici</a></p>
+<p><a name="l2035">​</a>Le modèle logique associé au fichier README.TXT est consultable <a href="StructureDefinition-pdlgc-readme.html">ici</a></p>
 
 <p><strong>Exemple de <code class="language-plaintext highlighter-rouge">README.TXT</code> d'une archive transverse</strong></p>
 
@@ -697,10 +729,12 @@ Arborescence :
         . email : portabilite@editeur.fr
         . Téléphone : +33100000000
 
-Application du fournisseur sortant :
+Application de l'éditeur émetteur :
 =========================
+    . Modèle : LGC modèle
     . Nom : LGC example
     . Version : 1.2
+    . Identifiant : 175259803546/2789345815
 
 Instructions :
 =============
@@ -774,8 +808,8 @@ La liste des fichiers effectivement présents dépend du périmètre de l'export
           IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.pdlgc#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-07-27 13:36:00 +0000">
-    2026-07-27
+  <span title="2026-07-30 09:32:00 +0000">
+    2026-07-30
   </span>
 
           <br/>

@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgcManifest.csv
   "name" : "PDLGCManifest",
   "title" : "PDLGC Manifest",
   "status" : "draft",
-  "date" : "2026-07-27T13:36:25+00:00",
+  "date" : "2026-07-30T09:32:03+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -137,19 +137,30 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgcManifest.csv
       }]
     },
     {
-      "id" : "pdlgcManifest.editeurSortant",
-      "path" : "pdlgcManifest.editeurSortant",
-      "short" : "Editeur responsable de l'export des données LGC",
-      "definition" : "Editeur responsable de l'export des données LGC",
+      "id" : "pdlgcManifest.sourceSystem",
+      "path" : "pdlgcManifest.sourceSystem",
+      "short" : "Logiciel responsable de la production et de l'export de l'archive de portabiltié",
+      "definition" : "Logiciel responsable de la production et de l'export de l'archive de portabiltié",
       "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgcFournisseurSortant"
+        "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgcSystem"
       }]
     },
     {
-      "id" : "pdlgcManifest.patientArchiveCount",
-      "path" : "pdlgcManifest.patientArchiveCount",
+      "id" : "pdlgcManifest.statistics",
+      "path" : "pdlgcManifest.statistics",
+      "short" : "Statistiques globales de l'archive",
+      "definition" : "Statistiques globales de l'archive",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "BackboneElement"
+      }]
+    },
+    {
+      "id" : "pdlgcManifest.statistics.patientArchiveCount",
+      "path" : "pdlgcManifest.statistics.patientArchiveCount",
       "short" : "Nombre d'archives patients transportées",
       "definition" : "Nombre d'archives patients transportées",
       "min" : 1,
@@ -159,8 +170,8 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgcManifest.csv
       }]
     },
     {
-      "id" : "pdlgcManifest.transverseArchiveCount",
-      "path" : "pdlgcManifest.transverseArchiveCount",
+      "id" : "pdlgcManifest.statistics.transverseArchiveCount",
+      "path" : "pdlgcManifest.statistics.transverseArchiveCount",
       "short" : "Nombre d'archives transverse trasnportées",
       "definition" : "Nombre d'archives transverse trasnportées",
       "min" : 1,
@@ -170,10 +181,10 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgcManifest.csv
       }]
     },
     {
-      "id" : "pdlgcManifest.Archive",
-      "path" : "pdlgcManifest.Archive",
-      "short" : "informations sur les archives patients et transverses contenues dans l'archive de portabilité",
-      "definition" : "informations sur les archives patients et transverses contenues dans l'archive de portabilité",
+      "id" : "pdlgcManifest.Archives",
+      "path" : "pdlgcManifest.Archives",
+      "short" : "informations relatives aux archives patients et transverses contenues dans l'archive de portabilité",
+      "definition" : "informations relatives aux archives patients et transverses contenues dans l'archive de portabilité",
       "min" : 1,
       "max" : "*",
       "type" : [{
@@ -181,8 +192,26 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgcManifest.csv
       }]
     },
     {
-      "id" : "pdlgcManifest.Archive.archiveid",
-      "path" : "pdlgcManifest.Archive.archiveid",
+      "id" : "pdlgcManifest.Archives.Archive",
+      "path" : "pdlgcManifest.Archives.Archive",
+      "short" : "informations relatives à une archive Patient ou Transverse",
+      "definition" : "informations relatives à une archive Patient ou Transverse",
+      "min" : 1,
+      "max" : "*",
+      "type" : [{
+        "code" : "BackboneElement"
+      }],
+      "constraint" : [{
+        "key" : "ArchiveType-invariant",
+        "severity" : "error",
+        "human" : "Le patientId est obligatoire si et seulement si l'archive est de type PATIENT (absent pour une archive TRANSVERSE)",
+        "expression" : "(type = 'PATIENT') = patientId.exists()",
+        "source" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgcManifest|0.1.0"
+      }]
+    },
+    {
+      "id" : "pdlgcManifest.Archives.Archive.archiveid",
+      "path" : "pdlgcManifest.Archives.Archive.archiveid",
       "short" : "identifiant du répertoire ('PATnnnnn' ou 'TRANSV')",
       "definition" : "identifiant du répertoire ('PATnnnnn' ou 'TRANSV')",
       "min" : 1,
@@ -193,10 +222,10 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgcManifest.csv
       }]
     },
     {
-      "id" : "pdlgcManifest.Archive.type",
-      "path" : "pdlgcManifest.Archive.type",
-      "short" : "Patient | Transverse",
-      "definition" : "Patient | Transverse",
+      "id" : "pdlgcManifest.Archives.Archive.type",
+      "path" : "pdlgcManifest.Archives.Archive.type",
+      "short" : "PATIENT | TRANSVERSE",
+      "definition" : "PATIENT | TRANSVERSE",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -208,19 +237,19 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgcManifest.csv
       }
     },
     {
-      "id" : "pdlgcManifest.Archive.patientId",
-      "path" : "pdlgcManifest.Archive.patientId",
+      "id" : "pdlgcManifest.Archives.Archive.patientId",
+      "path" : "pdlgcManifest.Archives.Archive.patientId",
       "short" : "Identifiant du Patient s'il s'agit d'une archive XDM Patient",
       "definition" : "Identifiant du Patient s'il s'agit d'une archive XDM Patient",
       "min" : 0,
       "max" : "1",
       "type" : [{
-        "code" : "string"
+        "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmPatientId"
       }]
     },
     {
-      "id" : "pdlgcManifest.Archive.size",
-      "path" : "pdlgcManifest.Archive.size",
+      "id" : "pdlgcManifest.Archives.Archive.size",
+      "path" : "pdlgcManifest.Archives.Archive.size",
       "short" : "Taille de l'archive zip",
       "definition" : "Taille de l'archive zip",
       "min" : 1,
@@ -230,10 +259,10 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgcManifest.csv
       }]
     },
     {
-      "id" : "pdlgcManifest.Archive.hash",
-      "path" : "pdlgcManifest.Archive.hash",
-      "short" : "Hash SHA-256 du répertoire",
-      "definition" : "Hash SHA-256 du répertoire",
+      "id" : "pdlgcManifest.Archives.Archive.hash",
+      "path" : "pdlgcManifest.Archives.Archive.hash",
+      "short" : "Hash SHA-256 de l'archive concernée",
+      "definition" : "Hash SHA-256 de l'archive concernée",
       "min" : 1,
       "max" : "1",
       "type" : [{

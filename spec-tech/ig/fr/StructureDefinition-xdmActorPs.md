@@ -20,21 +20,33 @@ Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https:/
 *  [Statistiques/Références](#tabs-summ) 
 *  [Tous](#tabs-all) 
 
-Cette structure est dérivée de [XDMActorXDS](StructureDefinition-xdmActorXds.md) 
+Cette structure est dérivée de [XDMActorXDSCore](StructureDefinition-xdmActorXdsCore.md) 
 
-Cette structure est dérivée de [XDMActorXDS](StructureDefinition-xdmActorXds.md) 
+Cette structure est dérivée de [XDMActorXDSCore](StructureDefinition-xdmActorXdsCore.md) 
 
 ** Résumé **
+
+**Structures**
+
+Cette structure fait référence à ces autres structures:
+
+* [PSIdNat (https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/psIdNat|0.1.0)](StructureDefinition-psIdNat.md)
 
  **Vue différentielle** 
 
-Cette structure est dérivée de [XDMActorXDS](StructureDefinition-xdmActorXds.md) 
+Cette structure est dérivée de [XDMActorXDSCore](StructureDefinition-xdmActorXdsCore.md) 
 
  **Vue d'ensembleView** 
 
-Cette structure est dérivée de [XDMActorXDS](StructureDefinition-xdmActorXds.md) 
+Cette structure est dérivée de [XDMActorXDSCore](StructureDefinition-xdmActorXdsCore.md) 
 
 ** Résumé **
+
+**Structures**
+
+Cette structure fait référence à ces autres structures:
+
+* [PSIdNat (https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/psIdNat|0.1.0)](StructureDefinition-psIdNat.md)
 
  
 
@@ -57,7 +69,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdmActorPs.csv)
   "name" : "XDMActorPS",
   "title" : "XDM ActorPS",
   "status" : "draft",
-  "date" : "2026-07-27T13:36:25+00:00",
+  "date" : "2026-07-30T09:32:03+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -84,7 +96,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdmActorPs.csv)
   "kind" : "logical",
   "abstract" : false,
   "type" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorPs",
-  "baseDefinition" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorXds|0.1.0",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorXdsCore|0.1.0",
   "derivation" : "specialization",
   "differential" : {
     "element" : [{
@@ -96,6 +108,10 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdmActorPs.csv)
     {
       "id" : "xdmActorPs.XCN1",
       "path" : "xdmActorPs.XCN1",
+      "type" : [{
+        "code" : "string",
+        "profile" : ["https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/psIdNat|0.1.0"]
+      }],
       "example" : [{
         "label" : "Professionnel avec un identifiant national RPPS (préfixe 8)",
         "valueString" : "801234567890"
@@ -103,13 +119,6 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdmActorPs.csv)
       {
         "label" : "Professionnel avec un identifiant interne dans une structure de santé FINESS",
         "valueString" : "3750100125/1453"
-      }]
-    },
-    {
-      "id" : "xdmActorPs.XCN1.value[x]",
-      "path" : "xdmActorPs.XCN1.value[x]",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/psIdNat"
       }]
     },
     {

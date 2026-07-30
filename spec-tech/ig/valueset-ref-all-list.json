@@ -21,7 +21,6 @@
     "systems" : ["https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type"],
     "uses" : {
     },
-    "StructureDefinition-pdlgcManifestArchives.html" : "PDLGC Manifest Archives",
     "StructureDefinition-pdlgcManifest.html" : "PDLGC Manifest"
   },
   {
@@ -49,14 +48,13 @@
     "StructureDefinition-pdlgcManifest.html" : "PDLGC Manifest"
   },
   {
-    "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/relation-vs",
-    "version" : "0.1.0-ballot",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-telecom-type",
+    "version" : "0.1.0",
     "status" : "draft",
-    "name" : "RelationVs",
-    "title" : null,
-    "description" : "",
-    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode",
-    "https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique"],
+    "name" : "VS_PDLGC_TelecomType",
+    "title" : "PDLGC Type de moyen de communication",
+    "description" : "PDLGC Type de moyen de communication",
+    "systems" : ["https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type"],
     "uses" : {
     },
     "StructureDefinition-pdlgcContactPortabilite.html" : "PDLGC Contact Portabilite"
@@ -77,8 +75,8 @@
     "sources" : ["1.2.250.1.213.1.1.5.461"],
     "uses" : {
     },
-    "StructureDefinition-xdmAuthorSubmissionSet.html" : "XDM AuthorSubmissionSet",
     "StructureDefinition-xdmAuthorDocumentEntry.html" : "XDM AuthorDocumentEntry",
+    "StructureDefinition-xdmAuthorSubmissionSet.html" : "XDM AuthorSubmissionSet",
     "StructureDefinition-xdmAuthor.html" : "XDM Author"
   },
   {
@@ -204,8 +202,8 @@
     "sources" : ["1.2.250.1.213.1.1.5.124"],
     "uses" : {
     },
-    "StructureDefinition-xdmAuthorSubmissionSet.html" : "XDM AuthorSubmissionSet",
     "StructureDefinition-xdmAuthorDocumentEntry.html" : "XDM AuthorDocumentEntry",
+    "StructureDefinition-xdmAuthorSubmissionSet.html" : "XDM AuthorSubmissionSet",
     "StructureDefinition-xdmAuthor.html" : "XDM Author"
   },
   {
@@ -221,8 +219,8 @@
     "sources" : ["1.2.250.1.213.1.1.5.131"],
     "uses" : {
     },
-    "StructureDefinition-xdmSubmissionSet.html" : "XDM SubmissionSet",
-    "StructureDefinition-xdmDocumentEntry.html" : "XDM DocumentEntry"
+    "StructureDefinition-xdmDocumentEntry.html" : "XDM DocumentEntry",
+    "StructureDefinition-xdmSubmissionSet.html" : "XDM SubmissionSet"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/JDV_J58-ConfidentialityCode-DMP/FHIR/JDV-J58-ConfidentialityCode-DMP",

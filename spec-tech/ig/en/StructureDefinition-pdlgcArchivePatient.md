@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgcArchivePatie
   "name" : "PDLGCArchivePatient",
   "title" : "PDLGC Archive Patient",
   "status" : "draft",
-  "date" : "2026-07-27T13:36:25+00:00",
+  "date" : "2026-07-30T09:32:03+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -88,8 +88,8 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgcArchivePatie
     {
       "id" : "pdlgcArchivePatient.pdf",
       "path" : "pdlgcArchivePatient.pdf",
-      "short" : "Répertoire contenant une copie PDF de tous les documents transportés dans le répertoire IHE_XDM.",
-      "definition" : "Répertoire contenant une copie PDF de tous les documents transportés dans le répertoire IHE_XDM.",
+      "short" : "Répertoire contenant une copie PDF/A-1 de tous les documents transportés dans le répertoire IHE_XDM.",
+      "definition" : "Répertoire contenant une copie PDF/A-1 de tous les documents transportés dans le répertoire IHE_XDM.",
       "min" : 1,
       "max" : "1",
       "type" : [{
