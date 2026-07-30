@@ -30,7 +30,7 @@ mindmapDiagram {
 * 📦  [[StructureDefinition-pdlgcArchivePortabilite Archive de portabilité]] <<archive>>
 ** 📄  [[StructureDefinition-pdlgcManifest MANIFEST.XML]] (1..1) <<file>>
 ** 📄  [[StructureDefinition-pdlgcReadme README.TXT]] (1..1) <<file>>
-** 📄  [[StructureDefinition-pdlgcSignature SIGN.XML]] (1..1) <<file>>
+** 📄  SIGN.XML (1..1) <<file>>
 
 ** 📁 Documentation d'export (1..1) <<folder>>
 *** 📄 Document (1..*) <<file>>

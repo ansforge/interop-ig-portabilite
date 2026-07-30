@@ -18,7 +18,7 @@ Le modèle logique associé au fichier `MANIFEST.XML` est consultable <a href="S
     <exportType>MASSIF</exportType>
     <exportStatus>COMPLETE</exportStatus>
     <comments>Export de données LGC répondant à la demande du Dr Dupond le 13 juin 2026</comments>
-    <sourceSystem>
+    <author>
       <lgcSoftwareVendor>
         <name>Editeur Exemple de LGC</raisonSociale>
         <idNatStruct>175259803546</idNatStruct>
@@ -37,7 +37,7 @@ Le modèle logique associé au fichier `MANIFEST.XML` est consultable <a href="S
         </contact>
       </lgcSoftwareVendor>
       <lgcSystem>175259803546/2789345815^Système exemple LGC V1.0^Modèle Exemple^^^^^&amp;1.2.250.1.71.4.2.1&amp;ISO^U^^^RI<lgcSystem>
-    </sourceSystem>
+    </author>
     <statistics>
       <patientArchiveCount>2</PatientArchiveCount>
       <transverseArchiveCount>1</TransverseArchiveCount>

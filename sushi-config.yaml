@@ -69,13 +69,13 @@ menu:
     Spécifications:
         Flux Export d'Archive de Portabilité: specs-main-flux-export-archive-portabilite.html
         Structure de l'architecture de portabilité : specs-main-structure-archive.html
+    Ressources de conformité: artifacts.html
     Annexes:
         Références : annexe-references.html
         Sécurité: annexe-securite.html
         Téléchargements et usage: annexe-downloads.html
         "Site de l'ANS ": new-tab https://esante.gouv.fr/
         Documentation des guides d'implémentation: new-tab https://interop.esante.gouv.fr/ig/documentation/
-    Ressources de conformité: artifacts.html
     Historique: change-log.html
 
 
@@ -106,11 +106,10 @@ groups:
     resources:
       - StructureDefinition/pdlgcArchivePortabilite 
       - StructureDefinition/pdlgcManifest
-      - StructureDefinition/pdlgcSystem
+      - StructureDefinition/pdlgcAuthor
       - StructureDefinition/pdlgcSoftwareVendor
       - StructureDefinition/pdlgcContactPortabilite
       - StructureDefinition/pdlgcReadme
-      - StructureDefinition/pdlgcSignature
       - StructureDefinition/pdlgcDocumentation
       - StructureDefinition/pdlgcArchiveTransverse
       - StructureDefinition/pdlgcArchivePatient
