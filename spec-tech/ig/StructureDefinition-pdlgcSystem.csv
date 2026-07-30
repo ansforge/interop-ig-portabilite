@@ -1,7 +1,0 @@
-"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
-"pdlgcSystem","pdlgcSystem","","","",0,*,"","","","null {[]} {[]}
-","PDLGC System","Informations relatives au Logiciel de Gestion de Cabinet","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"pdlgcSystem.lgcSoftwareVendor","pdlgcSystem.lgcSoftwareVendor","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgcSoftwareVendor {[]} {[]}
-","Editeur du logiciel responsable de la production et de l'export de l'archive de portabilité","Editeur du logiciel responsable de la production et de l'export de l'archive de portabilité","","","","","","","","","",,,,,"",,,,"pdlgcSystem.lgcSoftwareVendor",1,1,"",""
-"pdlgcSystem.lgcSystem","pdlgcSystem.lgcSystem","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorSystem {[]} {[]}
-","Logiciel responsable de la production et de l'export de l'archive de portabilité","Logiciel responsable de la production et de l'export de l'archive de portabilité","","","","","","","","","",,,,,"",,,,"pdlgcSystem.lgcSystem",1,1,"",""

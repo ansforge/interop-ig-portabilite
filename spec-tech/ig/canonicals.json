@@ -97,6 +97,13 @@
   "name" : "PDLGCArchiveTransverse"
 },
 {
+  "id" : "pdlgcAuthor",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgcAuthor",
+  "version" : "0.1.0",
+  "name" : "PDLGCAuthor"
+},
+{
   "id" : "pdlgcContactPortabilite",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgcContactPortabilite",
@@ -139,25 +146,11 @@
   "name" : "PDLGCReadme"
 },
 {
-  "id" : "pdlgcSignature",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgcSignature",
-  "version" : "0.1.0",
-  "name" : "PDLGCSignature"
-},
-{
   "id" : "pdlgcSoftwareVendor",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgcSoftwareVendor",
   "version" : "0.1.0",
   "name" : "PDLGCSoftwareVendor"
-},
-{
-  "id" : "pdlgcSystem",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgcSystem",
-  "version" : "0.1.0",
-  "name" : "PDLGCSystem"
 },
 {
   "id" : "psIdNat",

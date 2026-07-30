@@ -13,7 +13,7 @@
   <name value="PDLGC"/>
   <title value="Portabilité des Données LGC"/>
   <status value="draft"/>
-  <date value="2026-07-30T09:32:03+00:00"/>
+  <date value="2026-07-30T15:04:16+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -731,6 +731,18 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/pdlgcAuthor"/>
+      </reference>
+      <name value="PDLGC Author"/>
+      <description value="Informations relatives à l'auteur responsable de la production de l'archive de portabilité"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="LogicalModelArchivePortabilite"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/pdlgcContactPortabilite"/>
       </reference>
       <name value="PDLGC Contact Portabilite"/>
@@ -825,18 +837,6 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/pdlgcSignature"/>
-      </reference>
-      <name value="PDLGC Signature"/>
-      <description value="signature XAdES de l'archive attestant de l'imputabilité et l'intégrité des données"/>
-      <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelArchivePortabilite"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/pdlgcSoftwareVendor"/>
       </reference>
       <name value="PDLGC SoftwareVendor"/>
@@ -854,18 +854,6 @@
       <name value="PDLGC Statut de l'export"/>
       <description value="PDLGC Statut de l'export"/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/pdlgcSystem"/>
-      </reference>
-      <name value="PDLGC System"/>
-      <description value="Informations relatives au Logiciel de Gestion de Cabinet"/>
-      <exampleBoolean value="false"/>
-      <groupingId value="LogicalModelArchivePortabilite"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

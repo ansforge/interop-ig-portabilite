@@ -71,7 +71,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-structIdNat.csv
   "name" : "StructIdNat",
   "title" : "StructIdNat",
   "status" : "draft",
-  "date" : "2026-07-30T09:32:03+00:00",
+  "date" : "2026-07-30T15:04:16+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

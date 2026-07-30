@@ -86,7 +86,7 @@ Le modèle logique associé au fichier `MANIFEST.XML` est consultable [ici](Stru
     <exportType>MASSIF</exportType>
     <exportStatus>COMPLETE</exportStatus>
     <comments>Export de données LGC répondant à la demande du Dr Dupond le 13 juin 2026</comments>
-    <sourceSystem>
+    <author>
       <lgcSoftwareVendor>
         <name>Editeur Exemple de LGC</raisonSociale>
         <idNatStruct>175259803546</idNatStruct>
@@ -105,7 +105,7 @@ Le modèle logique associé au fichier `MANIFEST.XML` est consultable [ici](Stru
         </contact>
       </lgcSoftwareVendor>
       <lgcSystem>175259803546/2789345815^Système exemple LGC V1.0^Modèle Exemple^^^^^&amp;1.2.250.1.71.4.2.1&amp;ISO^U^^^RI<lgcSystem>
-    </sourceSystem>
+    </author>
     <statistics>
       <patientArchiveCount>2</PatientArchiveCount>
       <transverseArchiveCount>1</TransverseArchiveCount>
@@ -209,82 +209,6 @@ Le `SIGN.XML` contient notamment :
 * les propriétés XAdES nécessaires à la validation de la signature.
 
 Toute modification du contenu de l'archive après sa signature conduit à l'échec de la vérification de la signature électronique.
-
-**Modèle logique**
-
-Le modèle logique associé au fichier `SIGN.XML` est consultable [ici](StructureDefinition-pdlgc-signature.md)
-
-**Exemple de SIGN.XML de l'archive de portabilité**
-
-```
-<?xml version="1.0" encoding="UTF-8"?>
-<Signature Id="S0" xmlns="http://www.w3.org/2000/09/xmldsig#">
-    <SignedInfo>
-        <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
-        <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
-        <!-- Signature du Manifest -->
-        <Reference Type="http://www.w3.org/2000/09/xmldsig#Manifest" URI="#manifest">
-            <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
-            <DigestValue>Wj93V8lSgF2Ygk4N4jA6...</DigestValue>
-        </Reference>
-        <!-- Signature obligatoire des propriétés XAdES -->
-        <Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#signedProperties">
-            <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
-            <DigestValue>u7+4mN6v8PkL...</DigestValue>
-        </Reference>
-    </SignedInfo>
-    <SignatureValue>
-        KJq9Y+gN5zD4...
-    </SignatureValue>
-    <KeyInfo>
-        <X509Data>
-            <X509Certificate>
-                MIIGKDCCB...
-            </X509Certificate>
-        </X509Data>
-    </KeyInfo>
-    <!-- Périmètre de la signature -->
-    <Object>
-        <Manifest Id="manifest">
-            <Reference URI="MANIFEST.XML">
-                <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
-                <DigestValue>p5+P0Mk8MhLw...</DigestValue>
-            </Reference>
-            <Reference URI="PAT00001_XDM.zip">
-                <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
-                <DigestValue>rF19q9AtJr...</DigestValue>
-            </Reference>
-            <Reference URI="PAT00002_XDM.zip">
-                <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
-                <DigestValue>c1lTzM1QQ7...</DigestValue>
-            </Reference>
-            <Reference URI="TRANSVERSE.zip">
-                <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
-                <DigestValue>F9acxHkL8r...</DigestValue>
-            </Reference>
-        </Manifest>
-    </Object>
-    <!-- Propriétés qualifiantes XAdES -->
-    <Object>
-        <QualifyingProperties Target="#S0">
-            <SignedProperties Id="signedProperties">
-                <SignedSignatureProperties>
-                    <SigningTime>2026-07-16T14:32:18Z</xades:SigningTime>
-                    <SigningCertificate>
-                        <Cert>
-                            <CertDigest>
-                                <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
-                                <DigestValue>n4Z7P2mH6Lx...</DigestValue>
-                            </xades:CertDigest>
-                        </Cert>
-                    </SigningCertificate>
-                </SignedSignatureProperties>
-            </SignedProperties>
-        </QualifyingProperties>
-    </Object>
-</Signature>
-
-```
 
 ### Documentation d'export de l'archive de portabilité
 

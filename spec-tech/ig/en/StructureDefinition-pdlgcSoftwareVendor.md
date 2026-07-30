@@ -7,7 +7,7 @@ Editeur du logiciel
 
 **Usages:**
 
-* Use this Logical Model: [PDLGC System](StructureDefinition-pdlgcSystem.md)
+* Use this Logical Model: [PDLGC Author](StructureDefinition-pdlgcAuthor.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ans.fhir.fr.pdlgc|current/StructureDefinition/StructureDefinition-pdlgcSoftwareVendor.json)
 
@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgcSoftwareVend
   "name" : "PDLGCSoftwareVendor",
   "title" : "PDLGC SoftwareVendor",
   "status" : "draft",
-  "date" : "2026-07-30T09:32:03+00:00",
+  "date" : "2026-07-30T15:04:16+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

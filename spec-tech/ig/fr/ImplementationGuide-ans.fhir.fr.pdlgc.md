@@ -14,7 +14,7 @@
   "name" : "PDLGC",
   "title" : "Portabilité des Données LGC",
   "status" : "draft",
-  "date" : "2026-07-30T09:32:03+00:00",
+  "date" : "2026-07-30T15:04:16+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -991,6 +991,23 @@
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-pdlgcAuthor.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/pdlgcAuthor"
+      },
+      "name" : "PDLGC Author",
+      "description" : "Informations relatives à l'auteur responsable de la production de l'archive de portabilité",
+      "exampleBoolean" : false,
+      "groupingId" : "LogicalModelArchivePortabilite"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "StructureDefinition-pdlgcContactPortabilite.html"
       }],
       "reference" : {
@@ -1125,23 +1142,6 @@
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-pdlgcSignature.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/pdlgcSignature"
-      },
-      "name" : "PDLGC Signature",
-      "description" : "signature XAdES de l'archive attestant de l'imputabilité et l'intégrité des données",
-      "exampleBoolean" : false,
-      "groupingId" : "LogicalModelArchivePortabilite"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "StructureDefinition-pdlgcSoftwareVendor.html"
       }],
       "reference" : {
@@ -1167,23 +1167,6 @@
       "name" : "PDLGC Statut de l'export",
       "description" : "PDLGC Statut de l'export",
       "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "StructureDefinition-pdlgcSystem.html"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/pdlgcSystem"
-      },
-      "name" : "PDLGC System",
-      "description" : "Informations relatives au Logiciel de Gestion de Cabinet",
-      "exampleBoolean" : false,
-      "groupingId" : "LogicalModelArchivePortabilite"
     },
     {
       "extension" : [{

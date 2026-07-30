@@ -7,7 +7,7 @@ Cet attribut représente l'acteur System.
 
 **Usages:**
 
-* Use this Logical Model: [PDLGC System](StructureDefinition-pdlgcSystem.md), [XDM Author](StructureDefinition-xdmAuthor.md) and [XDM DocumentEntry](StructureDefinition-xdmDocumentEntry.md)
+* Use this Logical Model: [PDLGC Author](StructureDefinition-pdlgcAuthor.md), [XDM Author](StructureDefinition-xdmAuthor.md) and [XDM DocumentEntry](StructureDefinition-xdmDocumentEntry.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ans.fhir.fr.pdlgc|current/StructureDefinition/StructureDefinition-xdmActorSystem.json)
 
@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-xdmActorSystem.cs
   "name" : "XDMActorSystem",
   "title" : "XDM ActorSystem",
   "status" : "draft",
-  "date" : "2026-07-30T09:32:03+00:00",
+  "date" : "2026-07-30T15:04:16+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

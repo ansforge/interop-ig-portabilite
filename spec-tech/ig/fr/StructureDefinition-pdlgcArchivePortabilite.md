@@ -59,7 +59,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgcArchivePor
   "name" : "PDLGCArchivePortabilite",
   "title" : "PDLGC Archive Portabilite",
   "status" : "draft",
-  "date" : "2026-07-30T09:32:03+00:00",
+  "date" : "2026-07-30T15:04:16+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -122,7 +122,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgcArchivePor
       "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgcSignature"
+        "code" : "base64Binary"
       }],
       "mustSupport" : true
     },

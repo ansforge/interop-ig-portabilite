@@ -117,6 +117,9 @@
       </li>
     </ul>
   </li>
+  <li>
+    <a href="artifacts.html">Ressources de conformité</a>
+  </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Annexes
       <b class="caret"></b>
@@ -138,9 +141,6 @@
         <a href="https://interop.esante.gouv.fr/ig/documentation/" target="_blank">Documentation des guides d'implémentation</a>
       </li>
     </ul>
-  </li>
-  <li>
-    <a href="artifacts.html">Ressources de conformité</a>
   </li>
   <li>
     <a href="change-log.html">Historique</a>
@@ -336,7 +336,7 @@ Tous les champs sont obligatoires à l’exception du champ <code class="languag
     <span class="nt">&lt;exportType&gt;</span>MASSIF<span class="nt">&lt;/exportType&gt;</span>
     <span class="nt">&lt;exportStatus&gt;</span>COMPLETE<span class="nt">&lt;/exportStatus&gt;</span>
     <span class="nt">&lt;comments&gt;</span>Export de données LGC répondant à la demande du Dr Dupond le 13 juin 2026<span class="nt">&lt;/comments&gt;</span>
-    <span class="nt">&lt;sourceSystem&gt;</span>
+    <span class="nt">&lt;author&gt;</span>
       <span class="nt">&lt;lgcSoftwareVendor&gt;</span>
         <span class="nt">&lt;name&gt;</span>Editeur Exemple de LGC<span class="nt">&lt;/raisonSociale&gt;</span>
         <span class="nt">&lt;idNatStruct&gt;</span>175259803546<span class="nt">&lt;/idNatStruct&gt;</span>
@@ -355,7 +355,7 @@ Tous les champs sont obligatoires à l’exception du champ <code class="languag
         <span class="nt">&lt;/contact&gt;</span>
       <span class="nt">&lt;/lgcSoftwareVendor&gt;</span>
       <span class="nt">&lt;lgcSystem&gt;</span>175259803546/2789345815^Système exemple LGC V1.0^Modèle Exemple^^^^^<span class="ni">&amp;amp;</span>1.2.250.1.71.4.2.1<span class="ni">&amp;amp;</span>ISO^U^^^RI<span class="nt">&lt;lgcSystem&gt;</span>
-    <span class="nt">&lt;/sourceSystem&gt;</span>
+    <span class="nt">&lt;/author&gt;</span>
     <span class="nt">&lt;statistics&gt;</span>
       <span class="nt">&lt;patientArchiveCount&gt;</span>2<span class="nt">&lt;/PatientArchiveCount&gt;</span>
       <span class="nt">&lt;transverseArchiveCount&gt;</span>1<span class="nt">&lt;/TransverseArchiveCount&gt;</span>
@@ -465,80 +465,6 @@ Arborescence :
 
 <p>Toute modification du contenu de l'archive après sa signature conduit à l'échec de la vérification de la signature électronique.</p>
 
-<p><strong>Modèle logique</strong></p>
-
-<p><a name="l1281">​</a>Le modèle logique associé au fichier <code class="language-plaintext highlighter-rouge">SIGN.XML</code> est consultable <a href="StructureDefinition-pdlgc-signature.html">ici</a></p>
-
-<p><strong>Exemple de SIGN.XML de l'archive de portabilité</strong></p>
-
-<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
-<span class="nt">&lt;Signature</span> <span class="na">Id=</span><span class="s">"S0"</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/2000/09/xmldsig#"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;SignedInfo&gt;</span>
-        <span class="nt">&lt;CanonicalizationMethod</span> <span class="na">Algorithm=</span><span class="s">"http://www.w3.org/TR/2001/REC-xml-c14n-20010315"</span><span class="nt">/&gt;</span>
-        <span class="nt">&lt;SignatureMethod</span> <span class="na">Algorithm=</span><span class="s">"http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"</span><span class="nt">/&gt;</span>
-        <span class="c">&lt;!-- Signature du Manifest --&gt;</span>
-        <span class="nt">&lt;Reference</span> <span class="na">Type=</span><span class="s">"http://www.w3.org/2000/09/xmldsig#Manifest"</span> <span class="na">URI=</span><span class="s">"#manifest"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;DigestMethod</span> <span class="na">Algorithm=</span><span class="s">"http://www.w3.org/2001/04/xmlenc#sha256"</span><span class="nt">/&gt;</span>
-            <span class="nt">&lt;DigestValue&gt;</span>Wj93V8lSgF2Ygk4N4jA6...<span class="nt">&lt;/DigestValue&gt;</span>
-        <span class="nt">&lt;/Reference&gt;</span>
-        <span class="c">&lt;!-- Signature obligatoire des propriétés XAdES --&gt;</span>
-        <span class="nt">&lt;Reference</span> <span class="na">Type=</span><span class="s">"http://uri.etsi.org/01903#SignedProperties"</span> <span class="na">URI=</span><span class="s">"#signedProperties"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;DigestMethod</span> <span class="na">Algorithm=</span><span class="s">"http://www.w3.org/2001/04/xmlenc#sha256"</span><span class="nt">/&gt;</span>
-            <span class="nt">&lt;DigestValue&gt;</span>u7+4mN6v8PkL...<span class="nt">&lt;/DigestValue&gt;</span>
-        <span class="nt">&lt;/Reference&gt;</span>
-    <span class="nt">&lt;/SignedInfo&gt;</span>
-    <span class="nt">&lt;SignatureValue&gt;</span>
-        KJq9Y+gN5zD4...
-    <span class="nt">&lt;/SignatureValue&gt;</span>
-    <span class="nt">&lt;KeyInfo&gt;</span>
-        <span class="nt">&lt;X509Data&gt;</span>
-            <span class="nt">&lt;X509Certificate&gt;</span>
-                MIIGKDCCB...
-            <span class="nt">&lt;/X509Certificate&gt;</span>
-        <span class="nt">&lt;/X509Data&gt;</span>
-    <span class="nt">&lt;/KeyInfo&gt;</span>
-    <span class="c">&lt;!-- Périmètre de la signature --&gt;</span>
-    <span class="nt">&lt;Object&gt;</span>
-        <span class="nt">&lt;Manifest</span> <span class="na">Id=</span><span class="s">"manifest"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;Reference</span> <span class="na">URI=</span><span class="s">"MANIFEST.XML"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;DigestMethod</span> <span class="na">Algorithm=</span><span class="s">"http://www.w3.org/2001/04/xmlenc#sha256"</span><span class="nt">/&gt;</span>
-                <span class="nt">&lt;DigestValue&gt;</span>p5+P0Mk8MhLw...<span class="nt">&lt;/DigestValue&gt;</span>
-            <span class="nt">&lt;/Reference&gt;</span>
-            <span class="nt">&lt;Reference</span> <span class="na">URI=</span><span class="s">"PAT00001_XDM.zip"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;DigestMethod</span> <span class="na">Algorithm=</span><span class="s">"http://www.w3.org/2001/04/xmlenc#sha256"</span><span class="nt">/&gt;</span>
-                <span class="nt">&lt;DigestValue&gt;</span>rF19q9AtJr...<span class="nt">&lt;/DigestValue&gt;</span>
-            <span class="nt">&lt;/Reference&gt;</span>
-            <span class="nt">&lt;Reference</span> <span class="na">URI=</span><span class="s">"PAT00002_XDM.zip"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;DigestMethod</span> <span class="na">Algorithm=</span><span class="s">"http://www.w3.org/2001/04/xmlenc#sha256"</span><span class="nt">/&gt;</span>
-                <span class="nt">&lt;DigestValue&gt;</span>c1lTzM1QQ7...<span class="nt">&lt;/DigestValue&gt;</span>
-            <span class="nt">&lt;/Reference&gt;</span>
-            <span class="nt">&lt;Reference</span> <span class="na">URI=</span><span class="s">"TRANSVERSE.zip"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;DigestMethod</span> <span class="na">Algorithm=</span><span class="s">"http://www.w3.org/2001/04/xmlenc#sha256"</span><span class="nt">/&gt;</span>
-                <span class="nt">&lt;DigestValue&gt;</span>F9acxHkL8r...<span class="nt">&lt;/DigestValue&gt;</span>
-            <span class="nt">&lt;/Reference&gt;</span>
-        <span class="nt">&lt;/Manifest&gt;</span>
-    <span class="nt">&lt;/Object&gt;</span>
-    <span class="c">&lt;!-- Propriétés qualifiantes XAdES --&gt;</span>
-    <span class="nt">&lt;Object&gt;</span>
-        <span class="nt">&lt;QualifyingProperties</span> <span class="na">Target=</span><span class="s">"#S0"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;SignedProperties</span> <span class="na">Id=</span><span class="s">"signedProperties"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;SignedSignatureProperties&gt;</span>
-                    <span class="nt">&lt;SigningTime&gt;</span>2026-07-16T14:32:18Z<span class="nt">&lt;/xades:SigningTime&gt;</span>
-                    <span class="nt">&lt;SigningCertificate&gt;</span>
-                        <span class="nt">&lt;Cert&gt;</span>
-                            <span class="nt">&lt;CertDigest&gt;</span>
-                                <span class="nt">&lt;DigestMethod</span> <span class="na">Algorithm=</span><span class="s">"http://www.w3.org/2001/04/xmlenc#sha256"</span><span class="nt">/&gt;</span>
-                                <span class="nt">&lt;DigestValue&gt;</span>n4Z7P2mH6Lx...<span class="nt">&lt;/DigestValue&gt;</span>
-                            <span class="nt">&lt;/xades:CertDigest&gt;</span>
-                        <span class="nt">&lt;/Cert&gt;</span>
-                    <span class="nt">&lt;/SigningCertificate&gt;</span>
-                <span class="nt">&lt;/SignedSignatureProperties&gt;</span>
-            <span class="nt">&lt;/SignedProperties&gt;</span>
-        <span class="nt">&lt;/QualifyingProperties&gt;</span>
-    <span class="nt">&lt;/Object&gt;</span>
-<span class="nt">&lt;/Signature&gt;</span>
-</code></pre></div></div>
-
 <p><br/></p>
 
 <h3 id="documentation-dexport-de-larchive-de-portabilité">Documentation d'export de l'archive de portabilité</h3>
@@ -599,7 +525,7 @@ Comme pour le dictionnaire de données, les fichiers conformes à un volet CI-SI
 
 <p>L'archive <code class="language-plaintext highlighter-rouge">PATNNNNN.ZIP</code>contient les répertoires <code class="language-plaintext highlighter-rouge">IHE_XDM/</code> et <code class="language-plaintext highlighter-rouge">PDF/</code> ainsi que les fichiers <code class="language-plaintext highlighter-rouge">INDEX.HTM</code> et <code class="language-plaintext highlighter-rouge">README.TXT</code>.</p>
 
-<p><a name="l1787">​</a>Le modèle logique associé à cette archive est consultable <a href="StructureDefinition-pdlgc-archive-patient.html">ici</a></p>
+<p><a name="l1402">​</a>Le modèle logique associé à cette archive est consultable <a href="StructureDefinition-pdlgc-archive-patient.html">ici</a></p>
 
 <p><br/></p>
 
@@ -614,7 +540,7 @@ Comme pour le dictionnaire de données, les fichiers conformes à un volet CI-SI
 
 <p><strong>Modèle logique</strong></p>
 
-<p><a name="l1825">​</a>Le modèle logique associé au fichier INDEX.HTM est consultable <a href="StructureDefinition-pdlgc-index.html">ici</a></p>
+<p><a name="l1440">​</a>Le modèle logique associé au fichier INDEX.HTM est consultable <a href="StructureDefinition-pdlgc-index.html">ici</a></p>
 
 <p><strong>Exemple de fichier <code class="language-plaintext highlighter-rouge">INDEX.HTM</code></strong> :</p>
 
@@ -634,7 +560,7 @@ Ce fichier est imposé par le profil IHE_XDM et précise la structure propre à 
 
 <p><strong>Modèle logique</strong></p>
 
-<p><a name="l1891">​</a>Le modèle logique associé au fichier README.TXT est consultable <a href="StructureDefinition-pdlgc-readme.html">ici</a></p>
+<p><a name="l1506">​</a>Le modèle logique associé au fichier README.TXT est consultable <a href="StructureDefinition-pdlgc-readme.html">ici</a></p>
 
 <p><strong>Exemple de <code class="language-plaintext highlighter-rouge">README.TXT</code> d'une archive Patient</strong></p>
 
@@ -697,7 +623,7 @@ Arborescence :
 
 <p><strong>Modèle logique</strong></p>
 
-<p><a name="l1978">​</a>Le modèle logique associé au fichier METADATA.XML est consultable <a href="StructureDefinition-pdlgc-metadata.html">ici</a></p>
+<p><a name="l1593">​</a>Le modèle logique associé au fichier METADATA.XML est consultable <a href="StructureDefinition-pdlgc-metadata.html">ici</a></p>
 
 <p><strong>Exemple de <code class="language-plaintext highlighter-rouge">METADATA.XML</code> d'une archive XDM</strong></p>
 
@@ -717,7 +643,7 @@ Arborescence :
 
 <p><strong>Modèle logique</strong></p>
 
-<p><a name="l2035">​</a>Le modèle logique associé au fichier README.TXT est consultable <a href="StructureDefinition-pdlgc-readme.html">ici</a></p>
+<p><a name="l1650">​</a>Le modèle logique associé au fichier README.TXT est consultable <a href="StructureDefinition-pdlgc-readme.html">ici</a></p>
 
 <p><strong>Exemple de <code class="language-plaintext highlighter-rouge">README.TXT</code> d'une archive transverse</strong></p>
 
@@ -808,7 +734,7 @@ La liste des fichiers effectivement présents dépend du périmètre de l'export
           IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.pdlgc#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-07-30 09:32:00 +0000">
+  <span title="2026-07-30 15:04:00 +0000">
     2026-07-30
   </span>
 

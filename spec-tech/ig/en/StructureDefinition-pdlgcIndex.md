@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgcIndex.csv), 
   "name" : "PDLGCIndex",
   "title" : "PDLGC Index",
   "status" : "draft",
-  "date" : "2026-07-30T09:32:03+00:00",
+  "date" : "2026-07-30T15:04:16+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -63,10 +63,10 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgcIndex.csv), 
       "definition" : "L'INDEX.HTM est renferme des informations éditoriales et est conforme aux spécifications XHTML et Echanges de Documents de santé."
     },
     {
-      "id" : "pdlgcIndex.structIdNat",
-      "path" : "pdlgcIndex.structIdNat",
-      "short" : "Identification nationale de l'Entité juridique initiée pour les besoins du SI-CPS.",
-      "definition" : "Identification nationale de l'Entité juridique initiée pour les besoins du SI-CPS.",
+      "id" : "pdlgcIndex.identifier",
+      "path" : "pdlgcIndex.identifier",
+      "short" : "Identification nationale du système responsable de la production de l'archive de Portabilité.",
+      "definition" : "Identification nationale du système responsable de la production de l'archive de Portabilité.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -75,10 +75,10 @@ Other representations of profile: [CSV](../StructureDefinition-pdlgcIndex.csv), 
       }]
     },
     {
-      "id" : "pdlgcIndex.raisonSociale",
-      "path" : "pdlgcIndex.raisonSociale",
-      "short" : "La raison sociale est le nom de l'entité juridique.Elle figure obligatoirement dans les statuts de l'EJ.Synonyme: Dénomination.",
-      "definition" : "La raison sociale est le nom de l'entité juridique.Elle figure obligatoirement dans les statuts de l'EJ.Synonyme: Dénomination.",
+      "id" : "pdlgcIndex.name",
+      "path" : "pdlgcIndex.name",
+      "short" : "Nom du sytème responsable de la production de l'archive de Portabilité.",
+      "definition" : "Nom du sytème responsable de la production de l'archive de Portabilité.",
       "min" : 1,
       "max" : "1",
       "type" : [{
