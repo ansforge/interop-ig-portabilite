@@ -27,9 +27,9 @@ Le mapping de fichiers est centré sur les fichiers présents dans l'archive. Po
 
 Pour les fichiers exportés dans un format propriétaire, le mapping précise en outre les règles d'interprétation nécessaires à leur exploitation.
 
-#### Schéma de structure
+#### Schéma technique
 
-Pour les données exportées dans un format propriétaire structuré, l'éditeur émetteur peut fournir les schémas décrivant la structure des fichiers concernés (XSD, JSON Schema ou équivalent). Ces schémas constituent, au même titre que le dictionnaire de données, une ressource d'implémentation pour le système destinataire : ils lui permettent de comprendre l'organisation des données reçues et d'adapter son traitement en conséquence. 
+Pour les données exportées dans un format propriétaire structuré, l'éditeur émetteur peut fournir les schémas techniques décrivant la structure des fichiers concernés (XSD, JSON Schema ou équivalent). Ces schémas constituent, au même titre que le dictionnaire de données, une ressource d'implémentation pour le système destinataire : ils lui permettent de comprendre l'organisation des données reçues et d'adapter son traitement en conséquence. 
 Comme pour le dictionnaire de données, les fichiers conformes à un volet CI-SIS ou à un standard publié n'appellent pas de schéma complémentaire : le mapping de fichiers renvoie dans ce cas aux spécifications applicables.
 
 #### Jeu d'échantillons

@@ -32,8 +32,12 @@ mindmapDiagram {
 ** 📄  [[StructureDefinition-pdlgcReadme README.TXT]] (1..1) <<file>>
 ** 📄  SIGN.XML (1..1) <<file>>
 
-** 📁 Documentation d'export (1..1) <<folder>>
-*** 📄 Document (1..*) <<file>>
+** 📁  [[StructureDefinition-pdlgcDocumentation Documentation d'export]] (1..1) <<folder>>
+*** 📄 Dictionnaire de données (1..*) <<file>>
+*** 📄 Mapping de fichier (1..*) <<file>>
+*** 📄 Schéma technique (0..*) <<file>>
+*** 📄 Jeu d'échantillon (1..*) <<file>>
+*** 📄 Paramètres de configuration (0..*) <<file>>
 
 ** 📦  [[StructureDefinition-pdlgcArchiveTransverse Archive de données transverses]] (1..1) <<archive>>
 *** 📄  [[StructureDefinition-pdlgcReadme README.TXT]] (1..1) <<file>>

@@ -48,23 +48,23 @@ Le présent guide d'implémentation traduit en spécifications fonctionnelles et
     <strong>Spécifications</strong>
     <p style="margin: 10px 0 0 0;padding-left: 30px;">
     Cette section présente les spécifications fonctionnelles et techniques associcées à chaque processus collaboratif.<br>
-    L'<a href="specs-main-flux-export-archive-portabilite.html#etude-fonctionnelle">étude fonctionnelle</a> présente notamment les acteurs, une définition du processus collaboratif et les concepts métiers utilisés.<br>
+    L'<a href="specs-main-flux-export-archive-portabilite.html#etude-fonctionnelle">étude fonctionnelle</a> présente notamment les acteurs, une définition du processus collaboratif et une modélisation de l'archive de Portabilité.<br>
     Les <a href="specs-main-flux-export-archive-portabilite.html#specs-techniques">spécifications techniques</a> décrivent le flux d'export d'archive de Portabilité et son positionnement par rapport à d'autres profils, ainsi que les formats des documents échangés.<br>
     La <a href="specs-main-structure-archive.html">structure de l'archive de Portabilité</a> décrit quant à elle l'arborescence, les conventions d'écriture, et le contenu des différents fichiers de gestion de l'archive
     </p>
 </div>
 
 <div style="background-color: #fdf0e6; border-left: 4px solid #e07b39; padding: 15px; margin: 20px 0;">
-    <strong>Annexes</strong>
+    <strong>Ressources de conformité</strong>
     <p style="margin: 10px 0 0 0;padding-left: 30px;">
-    Cette section renvoie aux annexes relatives à la sécurité, aux téléchargements, et à toute autre documentation utile au présent volet
+    La section <a href="artifacts.html">Ressources de conformité</a> liste les différents artefacts supportant les spécifications fonctionnelles et techniques
     </p>
 </div>
 
 <div style="background-color: #f0edf5 ; border-left: 4px solid #7b52a8; padding: 15px; margin: 20px 0;">
-    <strong>Ressources de conformité</strong>
+    <strong>Annexes</strong>
     <p style="margin: 10px 0 0 0;padding-left: 30px;">
-    La section <a href="artifacts.html">Ressources de conformité</a> liste les différents artefacts supportant les spécifications fonctionnelles et techniques
+    Cette section renvoie aux annexes relatives à la sécurité, aux téléchargements, et à toute autre documentation utile au présent volet
     </p>
 </div>
 

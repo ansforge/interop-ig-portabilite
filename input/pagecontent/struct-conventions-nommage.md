@@ -31,9 +31,9 @@ En dehors des répertoires et fichiers de l'archive Patient XDM, les noms des r�
 
 **Conventions de nommage**
 
-Le nom de l'archive de portabilité doit respecter le format `PA{AAAAMMJJThhmmss}.ZIP`, avec : 
+Le nom de l'archive de portabilité doit respecter le format `<PA><AAAAMMJJThhmmss>.ZIP`, avec : 
 - PA = préfixe "Portabilité Archive"
-- AAAAMMJJThhmmss = horodatage 
+- AAAAMMJJThhmmss = horodatage avec AAAA = année, MM = mois, JJ = jour, T = "T" (séparateur de date et heure), hh = heure, mm = minutes, ss = secondes
 
 Le nom des répertoires et sous-archives ZIP doit respecter le format suivant : 
 - `DOCUMENTATION/`: documentation d'export permettant à l'éditeur émetteur d'interpréter et d'intégrer les données ;

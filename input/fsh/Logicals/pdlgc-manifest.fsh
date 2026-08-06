@@ -20,10 +20,12 @@ Description: "Le fichier MANIFEST.XML porte les métadonnées globales de l'expo
 * statistics 1..1 BackboneElement "Statistiques globales de l'archive"
   * patientArchiveCount 1..1 positiveInt "Nombre d'archives patients transportées"
   * transverseArchiveCount 1..1 positiveInt "Nombre d'archives transverse trasnportées"
-* Archives 1..* BackboneElement "informations relatives aux archives patients et transverses contenues dans l'archive de portabilité"
-  * Archive 1..* BackboneElement "informations relatives à une archive Patient ou Transverse"
+* archives 1..* BackboneElement "informations relatives aux archives patients et transverses contenues dans l'archive de portabilité"
+* archives ^extension[$xml-name].valueString = "Archives"
+  * archive 1..* BackboneElement "informations relatives à une archive Patient ou Transverse"
+  * archive ^extension[$xml-name].valueString = "Archive"
     * obeys ArchiveType-invariant
-    * archiveid 1..1 identifier "identifiant du répertoire ('PATnnnnn' ou 'TRANSV')"
+    * archiveid 1..1 Identifier "identifiant du répertoire ('PATnnnnn' ou 'TRANSV')"
     * type 1..1 code "PATIENT | TRANSVERSE"
     * type from VS_PDLGC_ArchiveType
     * patientId 0..1 XDMPatientId "Identifiant du Patient s'il s'agit d'une archive XDM Patient"

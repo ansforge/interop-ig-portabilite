@@ -6,7 +6,7 @@ L'archive de Portabilité est constituée de :
 - 1 ou plusieurs archive(s) de patient (`PATNNNNN`), conformes au profil IHE XDM. 
 
 <figure style="text-align:center;width:80%;">
-    {% include st-arborescence.svg %}
+    {% include struct-arborescence.svg %}
     <figcaption>Représentation graphique de la structure de l'archive de portabilité</figcaption>
 </figure>
 

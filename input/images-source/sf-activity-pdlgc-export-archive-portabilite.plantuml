@@ -1,4 +1,4 @@
-@startuml sf-activity-pdlg-export-archive-portabilite
+@startuml sf-activity-pdlgc-export-archive-portabilite
 
 skinparam backgroundColor #fcf6eb
 skinparam activityBackgroundColor #efd9fc
@@ -21,7 +21,7 @@ start
 :Contrôle l'intégrité de l'archive\nà l'aide du manifest;
 
 |**Destinataire**\n(Système ou Personne)|
-if(Type de Destinataire) then (Sytème)
+if(Type de Destinataire final) then (Sytème)
 :Intègre les données reçues;
 :Met les données à disposition de l'utilisateur de LGC;
 

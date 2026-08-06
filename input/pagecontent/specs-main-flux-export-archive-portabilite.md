@@ -6,15 +6,15 @@
 
 <br>
 
-#### Définition du processus collaboratif
+#### Définition du processus collaboratif métier
 
 {% include sf-def-processus-collaboratif.md %}
 
 <br>
 
-#### Concepts métiers utilisés dans le flux d'export d'archive de Portabilité
+#### Modélisation de l'archive de Portabilité
 
-{% include sf-concepts-metiers.md %}
+{% include sf-model-archive-portabilite.md %}
 
 <br>
 

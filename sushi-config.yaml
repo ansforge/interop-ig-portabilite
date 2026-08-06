@@ -20,6 +20,7 @@ jurisdiction: urn:iso:std:iso:3166#FR "France (la)"
 dependencies:
   ans.fr.terminologies: latest
   ans.fr.mos: 0.1.0-ballot
+  hl7.fhir.uv.tools.r4: current
 
 parameters: #Parameters list - https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html
     shownav: 'true'
@@ -86,7 +87,6 @@ groups:
     resources:
       - StructureDefinition/xdmSubmissionSet
       - StructureDefinition/xdmDocumentEntry
-      - StructureDefinition/xdmEventCode
       - StructureDefinition/xdmPatientId
       - StructureDefinition/xdmSourcePatientId
       - StructureDefinition/xdmSourcePatientInfo
@@ -100,6 +100,7 @@ groups:
       - StructureDefinition/xdmActorSystem
       - StructureDefinition/xdmArchive
       - StructureDefinition/xdmAssociation
+      - StructureDefinition/xdmreferenceId
   LogicalModelArchivePortabilite:
     name:  Modèle logique structure Archive de portabilité
     description: Modèles logiques associés aux différents fichiers et répertoires structurant une archive de portabilité
@@ -115,7 +116,7 @@ groups:
       - StructureDefinition/pdlgcArchivePatient
       - StructureDefinition/pdlgcMetadata
       - StructureDefinition/pdlgcIndex
-  DataTypeProfile:
+  DataTypeIdProfile:
     name:  Valeur des identifiants
     description: Profilage du datatype string pour les identifiants
     resources:
@@ -123,3 +124,8 @@ groups:
       - StructureDefinition/psIdNat
       - StructureDefinition/structIdNat
       - StructureDefinition/systIdNat
+  DataTypeXMLProfile:
+    name:  Datatypes XDM
+    description: Datatypes XDM
+    resources:
+      - StructureDefinition/xdmCode

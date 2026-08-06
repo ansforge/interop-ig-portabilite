@@ -1,6 +1,6 @@
 Le processus collaboratif « Export d'archive de portabilité » couvre l'ensemble des situations dans lesquelles un professionnel de santé ou un patient exerce son droit à la portabilité des données auprès d'un éditeur de logiciel LGC.
 
-Quel que soit le cas d'usage, le processus repose sur un unique flux de production et de mise à disposition d'une archive de portabilité, dont la structure s'appuie sur le profil IHE XDM. Le type d'export (unitaire, ciblé ou massif) ne modifie pas la nature de cette transaction ; il détermine uniquement le périmètre des données incluses dans l'archive produite et certaines contraintes additionnelles (délai de mise à disposition, format des données, intégration dans un logiciel ou consultation directe...).
+Quel que soit le cas d'usage, le processus repose sur un unique flux de production et de mise à disposition d'une archive de portabilité. Le type d'export (unitaire, ciblé ou massif) ne modifie pas la nature de cette transaction ; il détermine uniquement le périmètre des données incluses dans l'archive produite et certaines contraintes additionnelles (se référer aux exigences du **Référentiel de sécurité, d'interopérabilité et d'éthique relatif à la portabilité des données des LGC** pour plus d'informations).
 
 ##### Pré-conditions
 Le professionnel de santé, en tant que demandeur de l'export, doit au préalable :
@@ -8,7 +8,7 @@ Le professionnel de santé, en tant que demandeur de l'export, doit au préalabl
 - Être en mesure de préciser le périmètre de l'export souhaité (dossier patient identifié, ensemble de patients selon un critère de sélection, ou intégralité de la patientèle) ;
 - Disposer, le cas échéant, des coordonnées de l'éditeur ou du système destinataire.
 
-L'éditeur émetteur, en tant que producteur de l'archive, doit au préalable :
+Le système émetteur, en tant que producteur de l'archive, doit au préalable :
 - Disposer d'un mécanisme permettant de recevoir et d'horodater la demande ;
 - Disposer des moyens techniques de génération de l'archive conformément à la structure de l'archive de Portabilité définie dans le présent guide ;
 - Disposer d'un Contact Portabilité identifié et joignable.
@@ -18,8 +18,15 @@ L'éditeur émetteur, en tant que producteur de l'archive, doit au préalable :
 Le diagramme ci-dessous illustre le contexte fonctionnel de la transaction ExportArchivePortabilite. 
 <br>
 
+<style>
+  figure svg {
+    max-width: 100%;
+    height: auto !important;
+  }
+</style>
+
 <figure style="text-align:center;">
-{% include sf-activity-pdlg-export-archive-portabilite.svg %}
+{% include sf-activity-pdlgc-export-archive-portabilite.svg %}
     <figcaption> 
         Diagramme d'activité du processus collaboratif "Export d'archive Portabilité"
     </figcaption>
@@ -27,7 +34,7 @@ Le diagramme ci-dessous illustre le contexte fonctionnel de la transaction Expor
 
 <br>
 
-Il est important de noter que les modalités d'exploitation de l'archive (import dans un système ou consultation directe) sont présentées à titre de contexte et ne relèvent pas du périmètre de la spécification. Seule la transaction de production et de mise à disposition de l'archive de portabilité est spécifiée par le présent guide d'implémentation.
+Il est à noter que les modalités d'exploitation de l'archive (import dans un système ou consultation directe) sont présentées à titre de contexte et ne relèvent pas du périmètre des présentes spécifications. Seule la transaction de production et de mise à disposition de l'archive de portabilité est spécifiée par le présent guide d'implémentation.
 
 <br>
 

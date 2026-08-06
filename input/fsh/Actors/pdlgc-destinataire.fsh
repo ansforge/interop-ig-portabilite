@@ -7,9 +7,8 @@ InstanceOf: ActorDefinition
 Title: "PDLGC Destinataire"
 Usage: #definition
 Description: "Destinataire de l'export de données de LGC.\n
-Il peut s'agir d'un médecin ou professionnel de santé libéral recevant l'export via son LGC.\n
-Il peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP).\n
-Dans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le destinataire."
+Il s'agit d'un professionnel de santé libéral recevant l'export via son LGC.\n
+Suivant le contexte de la demande, le professionnel de santé pourra transférer le dossier au patient."
 * purpose = "Personne"
 * name = "PDLGC_Destinataire"
 * title = "PDLGC Destinataire"

@@ -1,11 +1,11 @@
 | Critère | <a href="https://profiles.ihe.net/ITI/TF/Volume2/ITI-32.html#3.32">IHE XDM (ITI-32)</a> | <a href="https://esante.gouv.fr/volet-echange-de-documents-de-sante">Volet EDS (CI-SIS)</a> | Volet Portabilité LGC |
 | ----- | ----- | ----- | ----- |
 | **Périmètre patient** | 1 à n patient(s) par archive ZIP.<br> 1 unique patient par lot de soumission | 1 patient par archive ZIP | Collection multi-patients (1 archive XDM ZIP par patient) + données transverses (archive ZIP dédiée) |
-| **Structure de l'archive** | `INDEX.HTM` + `README.TXT`+ répertoire `IHE_XDM/`contenant 1 à n `SUBSETnn/`.<br> Chaque répertoire `SUBSETnn/` stocke 1 `METADATA.XML` + des documents| Conforme IHE_XDM.<br>Encapsulation obligatoire de la structure XDM dans une archive `IHE_XDM.ZIP`.<br>Limité à un seul `SUBSET01/` | Archive chapeau `PAAAAAMMJJThhmmss.ZIP` (hors profil IHE_XDM) encapsulant 1 `MANIFEST.XML`, 1 `README.TXT`, des archives XDM Patient, une archive de donnée transverse et un répertoire de documentation|
+| **Structure de l'archive** | `INDEX.HTM` + `README.TXT`+ répertoire `IHE_XDM/`contenant 1 à n `SUBSETnn/`.<br> Chaque répertoire `SUBSETnn/` stocke 1 `METADATA.XML` + des documents| Conforme IHE_XDM.<br>Encapsulation obligatoire de la structure XDM dans une archive `IHE_XDM.ZIP`.<br>Limité à un seul `SUBSET01/` | Archive chapeau `PAAAAAMMJJThhmmss.ZIP` (hors profil IHE_XDM) encapsulant 1 `MANIFEST.XML`, 1 `README.TXT`, des archives XDM Patient, une archive de données transverse et un répertoire de documentation|
 | **Fichier de contrôle global** | Non prévu | Non prévu | `MANIFEST.XML` à la racine de l'archive de Portabilité|
-| **Métadonnées documentaires** | `METADATA.XML` par `SUBSET` | `METADATA.XML` par `SUBSET` | `METADATA.XML` par `SUBSET` |
-| **Données transverses** | Autorisées mais non couvertes par le profil | Non prévu | Archive `TRANSVERSE` (agenda, traces, gestion,...) intégrée dans l'archive de portabilité.<br> Construite sur le modèle IHE_XDM |
-| **Mode de transport** | CD-R, USB, ZIP par messagerie | ZIP par messagerie sécurisée de santé (MSSanté) uniquement | Non contraint (téléchargement sécurisé, plateforme HDS, support physique chiffré, email,...) |
+| **Métadonnées documentaires** | `METADATA.XML` par `SUBSET` | `METADATA.XML` par `SUBSET` | `METADATA.XML` par `SUBSET` pour les données Patient |
+| **Données transverses** | Autorisées mais non couvertes par le profil | Non prévu | Archive dédiée `TRANSVERSE` (agenda, traces, gestion,...) intégrée dans l'archive de portabilité. |
+| **Mode de transport** | CD-R, USB, ZIP par messagerie | ZIP par messagerie sécurisée de santé (MSSanté) uniquement | Téléchargement sécurisé, plateforme HDS, support physique chiffré |
 | **Acteur initiateur** | Portable Media Creator | Portable Media Creator | Système émetteur |
 | **Acteur destinataire** | Portable Media Importer | Portable Media Importer | Fournisseur destinataire ou personne physique dans le cas d'une consultation directe (professionnel de santé, patient,...) |
 | **Réponse applicative** | Optionnelle (messagerie uniquement) | Optionnelle | Non couverte par ce volet |
