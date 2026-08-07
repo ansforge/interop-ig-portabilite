@@ -106,8 +106,21 @@
   <li>
     <a href="index.html">Accueil</a>
   </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Spécifications
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="specs-main-flux-export-archive-portabilite.html">Flux Export d&apos;Archive de Portabilité</a>
+      </li>
+      <li>
+        <a href="specs-main-structure-archive.html">Structure de l&apos;architecture de portabilité</a>
+      </li>
+    </ul>
+  </li>
   <li>
-    <a href="sf-etude-fonctionnelle.html">Vol1 - Etude Fonctionnelle</a>
+    <a href="artifacts.html">Ressources de conformité</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Annexes
@@ -115,24 +128,21 @@
     </a>
     <ul class="dropdown-menu">
       <li>
+        <a href="annexe-references.html">Références</a>
+      </li>
+      <li>
         <a href="annexe-securite.html">Sécurité</a>
       </li>
       <li>
         <a href="annexe-downloads.html">Téléchargements et usage</a>
       </li>
       <li>
-        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR </a>
-      </li>
-      <li>
         <a target="_blank" href="https://esante.gouv.fr/">Site de l&apos;ANS </a>
       </li>
+      <li>
+        <a target="_blank" href="https://interop.esante.gouv.fr/ig/documentation/">Documentation des guides d&apos;implémentation</a>
+      </li>
     </ul>
-  </li>
-  <li>
-    <a href="artifacts.html">Ressources de conformité</a>
-  </li>
-  <li>
-    <a target="_blank" href="https://interop.esante.gouv.fr/ig/documentation/">Documentation</a>
   </li>
   <li>
     <a href="change-log.html">Historique</a>
@@ -175,7 +185,7 @@
 
             <a href="#bottom">bottom</a>
 
-          | <a href="annexe-downloads.html">next &gt;</a>
+          | <a href="annexe-references.html">next &gt;</a>
 
           </span>
 
@@ -221,17 +231,37 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#confidentialité" id="markdown-toc-confidentialité">Confidentialité</a></li>
+  <li><a href="#imputabilité" id="markdown-toc-imputabilité">Imputabilité</a></li>
+  <li><a href="#intégrité" id="markdown-toc-intégrité">Intégrité</a></li>
+</ul>
+
 </div>
-<h3 id="sécurité">Sécurité</h3>
+<p>Ce chapitre présente les dispositions de sécurité locales au volet qui peuvent permettre de couvrir les exigences de sécurité d’un SIS mettant en œuvre ce volet.</p>
 
-<p>Les données véhiculées à travers ces flux sont des données à caractère personnel contenant notamment des données médicales sensibles qu'il convient de protéger.</p>
+<p>Les dispositions présentées dans cette section correspondent à la dimension interopérabilité de dispositions de sécurité plus globales visant à couvrir les exigences de sécurité d’un système cible. En fonction de sa politique de sécurité, un système cible peut choisir ou pas de les mettre en œuvre. Les référentiels de sécurité édités par l’ANS fournissent des recommandations sur ce sujet.</p>
 
-<p>Cette section présente les éventuelles recommandations de sécurité qui s'appliquent à cet Implementation Guide. Il s'agit d'un sous-ensemble lié à la dimension interopérabilité de dispositions de sécurité plus globales visant à couvrir les exigences de sécurité d'un système cible.</p>
+<p>Les systèmes doivent également se conformer aux exigences en matière de sécurité détaillées dans le <strong>Référentiel de sécurité, d'interopérabilité et d'éthique relatif à la portabilité des données des LGC</strong>.</p>
 
-<p>Il est du ressort du responsable de traitement du système cible de mettre en œuvre des dispositions de sécurité adaptées à son analyse de risques pour le service. En fonction de sa politique de sécurité, il peut choisir ou pas de mettre en œuvre les dispositions spécifiques décrites dans cette section. Les référentiels de sécurité édités par l'ANS fournissent des recommandations sur ce sujet.</p>
+<h3 id="confidentialité">Confidentialité</h3>
 
+<p>Les données véhiculées dans le cadre de ce volet sont des données à caractère personnel contenant notamment des données médicales sensibles qu'il convient de protéger.</p>
+
+<h3 id="imputabilité">Imputabilité</h3>
+
+<p>L'imputabilité du dépôt des documents est obtenue par une signature électronique de type XAdES utilisant un certificat de signature émis par une IGC autorisée par les référentiels d’authentification de la PGSSI-S. Cette signature est contenue dans le document SIGN.XML à la racine de l'archive de portabilité.</p>
+
+<p>La signature porte sur la liste des archives Patient et Transverse incluses dans l'archive de portabilité. Les éléments signés sont l'ensemble des hash des archives, référencés par leur identifiant, associé à l'identifiant du MANIFEST.XML de l'archive de Portabilité.</p>
+
+<p>Lors de la transaction "Export d'Archive de Portabilité" le système cible vérifie la signature et valide que le certificat utilisé pour la signature est un certificat émis par une IGC autorisée par les référentiels d’authentification de la PGSSI-S. Ce certificat doit correspondre à l'éditeur, tel que présenté dans la donnée "author" du manifest de l'archive de portabilité.</p>
+
+<p>Le document comportant la signature du lot de soumission est un document XML auquel sont associées des métadonnées permettant son indexation.</p>
+
+<h3 id="intégrité">Intégrité</h3>
+
+<p>le contrôle d’intégrité peut être assuré par le même mécanisme que le mécanisme servant à l’imputabilité (signature électronique de type XAdES utilisant un certificat de signature émis par une IGC autorisée par les référentiels d’authentification de la PGSSI-S).</p>
 
 
 
@@ -265,7 +295,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:var(--ig-right);">&#xA0;
 
-                <a href="annexe-downloads.html">next ></a>
+                <a href="annexe-references.html">next ></a>
 
               </td>
             </tr>
@@ -281,8 +311,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Package ans.fhir.fr.pdlgc#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-07-17 06:15:00 +0000">
-    2026-07-17
+  <span title="2026-08-07 08:39:00 +0000">
+    2026-08-07
   </span>
 
           <br/>

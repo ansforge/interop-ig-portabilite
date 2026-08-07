@@ -7,7 +7,7 @@ Valeurs autorisées pour le type d'association entre objets XDS.
 
  **References** 
 
-* [Association XDM (LM)](StructureDefinition-association-xdm.md)
+* [XDM Association](StructureDefinition-xdmAssociation.md)
 
 ### Définition logique (CLD)
 
@@ -27,12 +27,16 @@ Valeurs autorisées pour le type d'association entre objets XDS.
 {
   "resourceType" : "ValueSet",
   "id" : "vs-association-type",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
+  },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-association-type",
   "version" : "0.1.0",
-  "name" : "VS_AssociationType",
+  "name" : "VS_XDM_AssociationType",
   "title" : "Type d'association XDS (VS)",
   "status" : "draft",
-  "date" : "2026-07-17T06:15:19+00:00",
+  "experimental" : false,
+  "date" : "2026-08-07T08:39:35+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -51,7 +55,7 @@ Valeurs autorisées pour le type d'association entre objets XDS.
   }],
   "compose" : {
     "include" : [{
-      "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type",
+      "system" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type",
       "version" : "0.1.0"
     }]
   }
