@@ -19,6 +19,8 @@ jurisdiction: urn:iso:std:iso:3166#FR "France (la)"
 
 dependencies:
   ans.fr.terminologies: latest
+  ans.fr.mos: 0.1.0-ballot
+  hl7.fhir.uv.tools.r4: latest
 
 parameters: #Parameters list - https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html
     shownav: 'true'
@@ -42,12 +44,18 @@ parameters: #Parameters list - https://build.fhir.org/ig/FHIR/fhir-tools-ig/Code
 pages:
     index.md:
         title: Accueil
-    sf-etude-fonctionnelle.md:
-        title: Vol1 - Etude Fonctionnelle
+    specifications.md:
+        title: Spécifications
+        specs-main-flux-export-archive-portabilite.md :
+            title : Flux Export d'Archive de Portabilité
+        specs-main-structure-archive.md : 
+            title : Structure de l'archive de portabilité
     annexes.md : 
         title : Annexes
         annexe-securite.md:
             title: Sécurité
+        annexe-references.md : 
+            title : Références
         annexe-downloads.md:
             title: Téléchargements et usages
     change-log.md:
@@ -59,43 +67,65 @@ pages:
 
 menu:
     Accueil: index.html
-    Vol1 - Etude Fonctionnelle: sf-etude-fonctionnelle.html
+    Spécifications:
+        Flux Export d'Archive de Portabilité: specs-main-flux-export-archive-portabilite.html
+        Structure de l'architecture de portabilité : specs-main-structure-archive.html
+    Ressources de conformité: artifacts.html
     Annexes:
+        Références : annexe-references.html
         Sécurité: annexe-securite.html
         Téléchargements et usage: annexe-downloads.html
-        "Spécifications FHIR ": new-tab {{site.data.fhir.path}}index.html
         "Site de l'ANS ": new-tab https://esante.gouv.fr/
-    Ressources de conformité: artifacts.html
-    Documentation: new-tab https://interop.esante.gouv.fr/ig/documentation/
+        Documentation des guides d'implémentation: new-tab https://interop.esante.gouv.fr/ig/documentation/
     Historique: change-log.html
 
 
 groups:
-  LogicalModel:
-    name:  Modèle logique XDM (Lot de soumission (SubmissionSet), DocumentEntry (XDS) et association)
-    description: Modèle logique avec les différents artefacts
+  LogicalModelXDM:
+    name:  Modèle logique Metadata XDM (Lot de soumission (SubmissionSet), DocumentEntry (XDS) et association)
+    description: Modèles logiques associés aux différents artifacts des METADATA XDS
     resources:
-      - StructureDefinition/SubmissionSet
-      - StructureDefinition/DocumentEntry      
-      - StructureDefinition/EventCode           
-      - StructureDefinition/PatientId
-      - StructureDefinition/SourcePatientId
-      - StructureDefinition/SourcePatientInfo      
-      - StructureDefinition/Author
-      - StructureDefinition/AuthorDocumentEntry
-      - StructureDefinition/AuthorSubmissionSet          
-      - StructureDefinition/AuthorInstitution
-      - StructureDefinition/ActorXDS            
-      - StructureDefinition/ActorPS
-      - StructureDefinition/ActorPatient
-      - StructureDefinition/ActorSNR
-      - StructureDefinition/ActorSystem   
-      - StructureDefinition/IdentifiantSysteme
-      - StructureDefinition/MatriculeINS
-      - StructureDefinition/PSIdNat
-      - StructureDefinition/SNR            
-      - StructureDefinition/StructIdNat
-      - StructureDefinition/archive-xdm
-      - StructureDefinition/association-xdm      
-      - StructureDefinition/Identifiant       
-      
+      - StructureDefinition/xdmSubmissionSet
+      - StructureDefinition/xdmDocumentEntry
+      - StructureDefinition/xdmPatientId
+      - StructureDefinition/xdmSourcePatientId
+      - StructureDefinition/xdmSourcePatientInfo
+      - StructureDefinition/xdmAuthor
+      - StructureDefinition/xdmAuthorDocumentEntry
+      - StructureDefinition/xdmAuthorSubmissionSet
+      - StructureDefinition/xdmAuthorInstitution
+      - StructureDefinition/xdmActorXdsCore
+      - StructureDefinition/xdmActorPs
+      - StructureDefinition/xdmActorPatient
+      - StructureDefinition/xdmActorSystem
+      - StructureDefinition/xdmArchive
+      - StructureDefinition/xdmAssociation
+      - StructureDefinition/xdmreferenceId
+  LogicalModelArchivePortabilite:
+    name:  Modèle logique structure Archive de portabilité
+    description: Modèles logiques associés aux différents fichiers et répertoires structurant une archive de portabilité
+    resources:
+      - StructureDefinition/pdlgcArchivePortabilite 
+      - StructureDefinition/pdlgcManifest
+      - StructureDefinition/pdlgcAuthor
+      - StructureDefinition/pdlgcSoftwareVendor
+      - StructureDefinition/pdlgcContactPortabilite
+      - StructureDefinition/pdlgcReadme
+      - StructureDefinition/pdlgcDocumentation
+      - StructureDefinition/pdlgcArchiveTransverse
+      - StructureDefinition/pdlgcArchivePatient
+      - StructureDefinition/pdlgcMetadata
+      - StructureDefinition/pdlgcIndex
+  DataTypeIdProfile:
+    name:  Valeur des identifiants
+    description: Profilage du datatype string pour les identifiants
+    resources:
+      - StructureDefinition/patId
+      - StructureDefinition/psIdNat
+      - StructureDefinition/structIdNat
+      - StructureDefinition/systIdNat
+  DataTypeXMLProfile:
+    name:  Datatypes XDM
+    description: Datatypes XDM
+    resources:
+      - StructureDefinition/xdmCode

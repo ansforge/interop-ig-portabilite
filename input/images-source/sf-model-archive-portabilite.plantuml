@@ -1,0 +1,59 @@
+@startmindmap
+
+skinparam monochrome false
+skinparam Shadowing false
+
+<style>
+mindmapDiagram {
+  node {
+    FontName Consolas
+    FontSize 14
+  }
+
+  .archive {
+    BackgroundColor #PeachPuff
+    LineColor #c7b300
+  }
+
+  .folder {
+    BackgroundColor #FFF8E7
+    LineColor #D6A100
+  }
+
+  .file {
+    BackgroundColor white
+    LineColor #808080
+  }
+}
+</style>
+
+* 📦  [[StructureDefinition-pdlgcArchivePortabilite Archive de portabilité]] <<archive>>
+** 📄  [[StructureDefinition-pdlgcManifest MANIFEST.XML]] (1..1) <<file>>
+** 📄  [[StructureDefinition-pdlgcReadme README.TXT]] (1..1) <<file>>
+** 📄  SIGN.XML (1..1) <<file>>
+
+** 📁  [[StructureDefinition-pdlgcDocumentation Documentation d'export]] (1..1) <<folder>>
+*** 📄 Dictionnaire de données (1..*) <<file>>
+*** 📄 Mapping de fichier (1..*) <<file>>
+*** 📄 Schéma technique (0..*) <<file>>
+*** 📄 Jeu d'échantillon (1..*) <<file>>
+*** 📄 Paramètres de configuration (0..*) <<file>>
+
+** 📦  [[StructureDefinition-pdlgcArchiveTransverse Archive de données transverses]] (1..1) <<archive>>
+*** 📄  [[StructureDefinition-pdlgcReadme README.TXT]] (1..1) <<file>>
+*** 📁 TRANSVERSE (1..1) <<folder>>
+**** 📄 Document transverse [[st-perimetre-pivot.html Périmètre pivot]] (1..*) <<file>>
+**** 📄 Document transverse hors périmètre pivot (0..*) <<file>>
+
+** 📦  [[StructureDefinition-pdlgcArchivePatient Archive XDM patient]] (1..*) <<archive>>
+*** 📄  [[StructureDefinition-pdlgcReadme README.TXT]] (1..1) <<file>>
+*** 📄  [[StructureDefinition-pdlgcIndex INDEX.HTM]] (1..1) <<file>>
+*** 📁 PDF (1..1) <<folder>>
+**** 📄 Document PDF/A-1 (1..*) <<file>>
+*** 📁 IHE_XDM (1..1) <<folder>>
+**** 📁 Lot de soumission (1..1) <<folder>>
+***** 📄  [[StructureDefinition-pdlgcMetadata METADATA.XML]] (1..1) <<file>>
+***** 📄 Document patient [[st-perimetre-pivot.html Périmètre pivot]] (1..*) <<file>>
+***** 📄 Document patient hors périmètre pivot (0..*) <<file>>
+
+@endmindmap

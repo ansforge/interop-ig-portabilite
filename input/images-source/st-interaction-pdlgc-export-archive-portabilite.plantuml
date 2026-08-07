@@ -1,0 +1,10 @@
+@startuml
+
+hide footbox 
+
+participant "LGC émetteur" as Sortant
+participant "LGC destinataire\n(Système ou Personne)" as Destinataire
+
+Sortant -> Destinataire : Flux 1 - ExportArchivePortabilite
+
+@enduml

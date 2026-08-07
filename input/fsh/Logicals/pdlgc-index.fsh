@@ -1,0 +1,14 @@
+// ===========================================================================
+// Archive de Portabilité - INDEX.HTM
+// ===========================================================================
+
+
+Logical: PDLGCIndex
+Id: pdlgcIndex
+Title: "PDLGC Index"
+Description: "L'INDEX.HTM est renferme des informations éditoriales et est conforme aux spécifications XHTML et Echanges de Documents de santé."
+
+* identifier 1..1 StructIdNat "Identification nationale du système responsable de la production de l'archive de Portabilité."
+* name 1..1 string "Nom du sytème responsable de la production de l'archive de Portabilité."
+* avertissement 0..1 string "avertissement optionnel de l'émetteur concernant la sécurité et la confidentialité."
+* lienREADME 1..1 string "lien vers le fichier README.TXT de l'archive XDM Patient."

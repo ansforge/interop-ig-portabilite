@@ -1,0 +1,1 @@
+Alias: $xml-name = http://hl7.org/fhir/tools/StructureDefinition/xml-name
