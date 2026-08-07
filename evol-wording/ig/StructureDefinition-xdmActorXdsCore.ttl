@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "XDMActorXDSCore"] ;
   fhir:StructureDefinition.title [ fhir:value "XDM ActorXDS Core"] ;
   fhir:StructureDefinition.status [ fhir:value "draft"] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-08-07T10:08:13+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-08-07T10:10:33+00:00"^^xsd:dateTime] ;
   fhir:StructureDefinition.publisher [ fhir:value "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ;
   fhir:StructureDefinition.contact [
      fhir:index 0 ;

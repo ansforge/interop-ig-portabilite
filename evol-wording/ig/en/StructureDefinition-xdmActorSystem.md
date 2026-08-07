@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-xdmActorSystem.cs
   "name" : "XDMActorSystem",
   "title" : "XDM ActorSystem",
   "status" : "draft",
-  "date" : "2026-08-07T10:08:13+00:00",
+  "date" : "2026-08-07T10:10:33+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
