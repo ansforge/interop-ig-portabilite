@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-xdmSubmissionSet.
   "name" : "XDMSubmissionSet",
   "title" : "XDM SubmissionSet",
   "status" : "draft",
-  "date" : "2026-07-30T15:04:16+00:00",
+  "date" : "2026-08-07T08:28:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -163,19 +163,35 @@ Other representations of profile: [CSV](../StructureDefinition-xdmSubmissionSet.
       }]
     },
     {
-      "id" : "xdmSubmissionSet.contentTypeCode",
-      "path" : "xdmSubmissionSet.contentTypeCode",
+      "id" : "xdmSubmissionSet.contentType",
+      "path" : "xdmSubmissionSet.contentType",
       "short" : "Ensemble de métadonnées représentant le type d’activité associé à l’événement clinique ayant abouti à la constitution du lot de soumission.",
-      "definition" : "**Submission Set**",
+      "definition" : "Ensemble de métadonnées représentant le type d’activité associé à l’événement clinique ayant abouti à la constitution du lot de soumission.",
       "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "CodeableConcept"
+        "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmCode"
       }],
       "binding" : {
         "strength" : "preferred",
         "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J03-XdsContentTypeCode-CISIS/FHIR/JDV-J03-XdsContentTypeCode-CISIS|20260223120000"
       }
+    },
+    {
+      "id" : "xdmSubmissionSet.contentType.code",
+      "path" : "xdmSubmissionSet.contentType.code",
+      "short" : "contentTypeCode correspondant au type d’activité associé à l’événement ayant abouti à la \nconstitution du lot de soumission.",
+      "definition" : "Les valeurs possibles doivent être un code provenant du jeu de valeurs mis à disposition par le projet (exemple : JDV_J59_ContentTypeCode_DMP).\n  En l’absence de spécifications complémentaires, le jeu de valeurs JDV_J03_XdsContentTypeCode_CISIS peut être utilisé. "
+    },
+    {
+      "id" : "xdmSubmissionSet.contentType.displayName",
+      "path" : "xdmSubmissionSet.contentType.displayName",
+      "short" : "Libellé associé au contentTypeCode."
+    },
+    {
+      "id" : "xdmSubmissionSet.contentType.codingScheme",
+      "path" : "xdmSubmissionSet.contentType.codingScheme",
+      "short" : "OID du système de codage associé au code contentTypeCode."
     },
     {
       "id" : "xdmSubmissionSet.author",
@@ -186,28 +202,6 @@ Other representations of profile: [CSV](../StructureDefinition-xdmSubmissionSet.
       "max" : "1",
       "type" : [{
         "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmAuthorSubmissionSet"
-      }]
-    },
-    {
-      "id" : "xdmSubmissionSet.homeCommunityID",
-      "path" : "xdmSubmissionSet.homeCommunityID",
-      "short" : "Cette métadonnée correspond à l’identifiant de la communauté représentée par le système cible si celui-ci offre des fonctionnalités de communication avec d’autres communautés telles que présentées dans le profil XCA d’IHE. Elle n’est pas utilisée par les transactions décrites dans ce volet.",
-      "definition" : "Cette métadonnée correspond à l’identifiant de la communauté représentée par le système cible si celui-ci offre des fonctionnalités de communication avec d’autres communautés telles que présentées dans le profil XCA d’IHE. Elle n’est pas utilisée par les transactions décrites dans ce volet.",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "oid"
-      }]
-    },
-    {
-      "id" : "xdmSubmissionSet.intendedRecipient",
-      "path" : "xdmSubmissionSet.intendedRecipient",
-      "short" : "Cette métadonnée représente les destinataires (structure ou professionnel) auxquels lot de soumission est destiné. Elle n’est pas utilisée par les transactions décrites dans ce volet.",
-      "definition" : "Cette métadonnée représente les destinataires (structure ou professionnel) auxquels lot de soumission est destiné. Elle n’est pas utilisée par les transactions décrites dans ce volet.",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "string"
       }]
     }]
   }

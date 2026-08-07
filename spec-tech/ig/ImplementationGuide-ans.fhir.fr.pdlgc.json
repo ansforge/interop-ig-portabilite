@@ -11,7 +11,7 @@
   "name" : "PDLGC",
   "title" : "Portabilité des Données LGC",
   "status" : "draft",
-  "date" : "2026-07-30T15:04:16+00:00",
+  "date" : "2026-08-07T08:28:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -62,6 +62,12 @@
     "uri" : "https://interop.esante.gouv.fr/ig/mos/ImplementationGuide/ans.fr.mos",
     "packageId" : "ans.fr.mos",
     "version" : "0.1.0-ballot"
+  },
+  {
+    "id" : "hl7_fhir_uv_tools_r4",
+    "uri" : "http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools",
+    "packageId" : "hl7.fhir.uv.tools.r4",
+    "version" : "1.1.2"
   }],
   "definition" : {
     "extension" : [{
@@ -465,10 +471,6 @@
       "valueReference" : {
         "reference" : "Parameters/expansion-parameters"
       }
-    },
-    {
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#1.1.2"
     },
     {
       "extension" : [{
@@ -877,11 +879,29 @@
       "description" : "Modèles logiques associés aux différents fichiers et répertoires structurant une archive de portabilité"
     },
     {
-      "id" : "DataTypeProfile",
+      "id" : "DataTypeIdProfile",
       "name" : "Valeur des identifiants",
       "description" : "Profilage du datatype string pour les identifiants"
+    },
+    {
+      "id" : "DataTypeXMLProfile",
+      "name" : "Datatypes XDM",
+      "description" : "Datatypes XDM"
     }],
     "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/xdmCode"
+      },
+      "name" : "Code XDM",
+      "description" : "Type représentant un concept codé, constitué d'un code, de son libellé et de l'OID du système de codage, portés comme attributs XML. Il ne présente pas lui-même de valeur.",
+      "exampleBoolean" : false,
+      "groupingId" : "DataTypeXMLProfile"
+    },
+    {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:primitive-type"
@@ -892,7 +912,7 @@
       "name" : "Identifiant Patient",
       "description" : "Identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange. \n- Matricule INS : le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité. \n- Autre identifiant : à défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé.",
       "exampleBoolean" : false,
-      "groupingId" : "DataTypeProfile"
+      "groupingId" : "DataTypeIdProfile"
     },
     {
       "extension" : [{
@@ -992,7 +1012,7 @@
         "reference" : "ActorDefinition/PDLGC-Demandeur"
       },
       "name" : "PDLGC Demandeur",
-      "description" : "Demandeur de l'export.\n\nIl peut s'agir d'un médecin ou professionnel de santé libéral, responsable du contenu médical transféré.\n\nIl peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP)",
+      "description" : "Demandeur de l'export.\n\nIl s'agit d'un professionnel de santé libéral, responsable du contenu médical transféré.\n\nIl peut agir à la demande du patient, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP)",
       "exampleBoolean" : false
     },
     {
@@ -1004,7 +1024,7 @@
         "reference" : "ActorDefinition/PDLGC-Destinataire"
       },
       "name" : "PDLGC Destinataire",
-      "description" : "Destinataire de l'export de données de LGC.\n\nIl peut s'agir d'un médecin ou professionnel de santé libéral recevant l'export via son LGC.\n\nIl peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP).\n\nDans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le destinataire.",
+      "description" : "Destinataire de l'export de données de LGC.\n\nIl s'agit d'un professionnel de santé libéral recevant l'export via son LGC.\n\nSuivant le contexte de la demande, le professionnel de santé pourra transférer le dossier au patient.",
       "exampleBoolean" : false
     },
     {
@@ -1144,7 +1164,7 @@
       "name" : "PSIdNat",
       "description" : "Identification nationale principale du professionnel propre aux SI de l’ANS et au CI-SIS. (Correspondance dans le MOS : idNat_PS) \n\nL’identification nationale du PS est construite selon le tableau dessous :\n- 0 + N° ADELI \n- 1 + Identifiant cabinet ADELI/identifiant interne \n- 3 + FINESS/identifiant interne \n- 4 + SIREN/identifiant interne \n- 5 + SIRET/identifiant interne \n- 6 + Identifiant cabinet RPPS/identifiant interne \n- 8 + N° RPPS",
       "exampleBoolean" : false,
-      "groupingId" : "DataTypeProfile"
+      "groupingId" : "DataTypeIdProfile"
     },
     {
       "extension" : [{
@@ -1169,7 +1189,7 @@
       "name" : "StructIdNat",
       "description" : "Identification nationale principale d’une structure propre aux SI de l'ANS et au CI-SIS 4. \n\nL’identification nationale d’une structure est construite selon le tableau dessous :\n- 0 + Identifiant cabinet ADELI \n- 1 + N° FINESS 2 + N° SIREN \n- 3 + N° SIRET \n- 4 + N° RPPS-rang \n- Néant + N° technique",
       "exampleBoolean" : false,
-      "groupingId" : "DataTypeProfile"
+      "groupingId" : "DataTypeIdProfile"
     },
     {
       "extension" : [{
@@ -1182,7 +1202,7 @@
       "name" : "SystIdNat",
       "description" : "Identification d'un système\n\nL’identification du système  est construite selon le tableau dessous :\n- 1 + Identifiant cabinet ADELI/Identifiant interne du système dans la structure \n- 3 + FINESS/Identifiant interne du système dans la structure  \n- 4 + SIREN/Identifiant interne du système dans la structure \n- 5 + SIRET/Identifiant interne du système dans la structure \n- 6 + Identifiant cabinet RPPS/Identifiant interne du système dans la structure",
       "exampleBoolean" : false,
-      "groupingId" : "DataTypeProfile"
+      "groupingId" : "DataTypeIdProfile"
     },
     {
       "extension" : [{
@@ -1292,7 +1312,7 @@
         "reference" : "StructureDefinition/xdmActorXdsCore"
       },
       "name" : "XDM ActorXDS Core",
-      "description" : "Cet attribut représente un acteur (humain ou système) ayant contribué au document. Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient. \n\nType XCN de HL7 v2.5",
+      "description" : "Cet attribut représente un acteur (humain ou système) ayant contribué au document. Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient. \n\nType xcn de HL7 v2.5",
       "exampleBoolean" : false,
       "groupingId" : "LogicalModelXDM"
     },
@@ -1393,10 +1413,10 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/xdmEventCode"
+        "reference" : "StructureDefinition/xdmPatientId"
       },
-      "name" : "XDM EventCode",
-      "description" : "Modèle logique d'un eventCode.\nUn EventCode peut contenir le code représentant : \n-  un évènement documenté (acte, traitement, diagnostic, etc…),  \n-  une modalité d’acquisition, \n-  une région anatomique.",
+      "name" : "XDM PatientId",
+      "description" : "Modèle logique de patientID.\nCette métadonnée contient l'identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange. Le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité. À défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé.",
       "exampleBoolean" : false,
       "groupingId" : "LogicalModelXDM"
     },
@@ -1406,10 +1426,10 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/xdmPatientId"
+        "reference" : "StructureDefinition/xdmreferenceId"
       },
-      "name" : "XDM PatientId",
-      "description" : "Modèle logique de patientID.\nCette métadonnée contient l'identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange. Le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité. À défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé.",
+      "name" : "XDM referenceIdList",
+      "description" : "Modèle logique de referenceIdList.\nCette métadonnée contient une liste d'un ou plusieurs identifiant(s) d'objet(s) associé(s) au document.Liste d'éléments de type CX du standard HL7 v2.5.",
       "exampleBoolean" : false,
       "groupingId" : "LogicalModelXDM"
     },

@@ -13,7 +13,7 @@
   <name value="PDLGC"/>
   <title value="Portabilité des Données LGC"/>
   <status value="draft"/>
-  <date value="2026-07-30T15:04:16+00:00"/>
+  <date value="2026-08-07T08:28:26+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -58,6 +58,11 @@
     <uri value="https://interop.esante.gouv.fr/ig/mos/ImplementationGuide/ans.fr.mos"/>
     <packageId value="ans.fr.mos"/>
     <version value="0.1.0-ballot"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_tools_r4">
+    <uri value="http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools"/>
+    <packageId value="hl7.fhir.uv.tools.r4"/>
+    <version value="1.1.2"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -352,9 +357,6 @@
       <valueReference>
         <reference value="Parameters/expansion-parameters"/>
       </valueReference>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools.r4#1.1.2"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -652,10 +654,26 @@
       <name value="Modèle logique structure Archive de portabilité"/>
       <description value="Modèles logiques associés aux différents fichiers et répertoires structurant une archive de portabilité"/>
     </grouping>
-    <grouping id="DataTypeProfile">
+    <grouping id="DataTypeIdProfile">
       <name value="Valeur des identifiants"/>
       <description value="Profilage du datatype string pour les identifiants"/>
     </grouping>
+    <grouping id="DataTypeXMLProfile">
+      <name value="Datatypes XDM"/>
+      <description value="Datatypes XDM"/>
+    </grouping>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/xdmCode"/>
+      </reference>
+      <name value="Code XDM"/>
+      <description value="Type représentant un concept codé, constitué d'un code, de son libellé et de l'OID du système de codage, portés comme attributs XML. Il ne présente pas lui-même de valeur."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="DataTypeXMLProfile"/>
+    </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:primitive-type"/>
@@ -666,7 +684,7 @@
       <name value="Identifiant Patient"/>
       <description value="Identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange. &#xA;- Matricule INS : le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité. &#xA;- Autre identifiant : à défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé."/>
       <exampleBoolean value="false"/>
-      <groupingId value="DataTypeProfile"/>
+      <groupingId value="DataTypeIdProfile"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -758,7 +776,7 @@
         <reference value="ActorDefinition/PDLGC-Demandeur"/>
       </reference>
       <name value="PDLGC Demandeur"/>
-      <description value="Demandeur de l'export.&#xA;&#xA;Il peut s'agir d'un médecin ou professionnel de santé libéral, responsable du contenu médical transféré.&#xA;&#xA;Il peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP)"/>
+      <description value="Demandeur de l'export.&#xA;&#xA;Il s'agit d'un professionnel de santé libéral, responsable du contenu médical transféré.&#xA;&#xA;Il peut agir à la demande du patient, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -769,7 +787,7 @@
         <reference value="ActorDefinition/PDLGC-Destinataire"/>
       </reference>
       <name value="PDLGC Destinataire"/>
-      <description value="Destinataire de l'export de données de LGC.&#xA;&#xA;Il peut s'agir d'un médecin ou professionnel de santé libéral recevant l'export via son LGC.&#xA;&#xA;Il peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP).&#xA;&#xA;Dans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le destinataire."/>
+      <description value="Destinataire de l'export de données de LGC.&#xA;&#xA;Il s'agit d'un professionnel de santé libéral recevant l'export via son LGC.&#xA;&#xA;Suivant le contexte de la demande, le professionnel de santé pourra transférer le dossier au patient."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -898,7 +916,7 @@
       <name value="PSIdNat"/>
       <description value="Identification nationale principale du professionnel propre aux SI de l’ANS et au CI-SIS. (Correspondance dans le MOS : idNat_PS) &#xA;&#xA;L’identification nationale du PS est construite selon le tableau dessous :&#xA;- 0 + N° ADELI &#xA;- 1 + Identifiant cabinet ADELI/identifiant interne &#xA;- 3 + FINESS/identifiant interne &#xA;- 4 + SIREN/identifiant interne &#xA;- 5 + SIRET/identifiant interne &#xA;- 6 + Identifiant cabinet RPPS/identifiant interne &#xA;- 8 + N° RPPS"/>
       <exampleBoolean value="false"/>
-      <groupingId value="DataTypeProfile"/>
+      <groupingId value="DataTypeIdProfile"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -921,7 +939,7 @@
       <name value="StructIdNat"/>
       <description value="Identification nationale principale d’une structure propre aux SI de l'ANS et au CI-SIS 4. &#xA;&#xA;L’identification nationale d’une structure est construite selon le tableau dessous :&#xA;- 0 + Identifiant cabinet ADELI &#xA;- 1 + N° FINESS 2 + N° SIREN &#xA;- 3 + N° SIRET &#xA;- 4 + N° RPPS-rang &#xA;- Néant + N° technique"/>
       <exampleBoolean value="false"/>
-      <groupingId value="DataTypeProfile"/>
+      <groupingId value="DataTypeIdProfile"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -933,7 +951,7 @@
       <name value="SystIdNat"/>
       <description value="Identification d'un système&#xA;&#xA;L’identification du système  est construite selon le tableau dessous :&#xA;- 1 + Identifiant cabinet ADELI/Identifiant interne du système dans la structure &#xA;- 3 + FINESS/Identifiant interne du système dans la structure  &#xA;- 4 + SIREN/Identifiant interne du système dans la structure &#xA;- 5 + SIRET/Identifiant interne du système dans la structure &#xA;- 6 + Identifiant cabinet RPPS/Identifiant interne du système dans la structure"/>
       <exampleBoolean value="false"/>
-      <groupingId value="DataTypeProfile"/>
+      <groupingId value="DataTypeIdProfile"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1034,7 +1052,7 @@
         <reference value="StructureDefinition/xdmActorXdsCore"/>
       </reference>
       <name value="XDM ActorXDS Core"/>
-      <description value="Cet attribut représente un acteur (humain ou système) ayant contribué au document. Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient. &#xA;&#xA;Type XCN de HL7 v2.5"/>
+      <description value="Cet attribut représente un acteur (humain ou système) ayant contribué au document. Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient. &#xA;&#xA;Type xcn de HL7 v2.5"/>
       <exampleBoolean value="false"/>
       <groupingId value="LogicalModelXDM"/>
     </resource>
@@ -1127,10 +1145,10 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/xdmEventCode"/>
+        <reference value="StructureDefinition/xdmPatientId"/>
       </reference>
-      <name value="XDM EventCode"/>
-      <description value="Modèle logique d'un eventCode.&#xA;Un EventCode peut contenir le code représentant : &#xA;-  un évènement documenté (acte, traitement, diagnostic, etc…),  &#xA;-  une modalité d’acquisition, &#xA;-  une région anatomique."/>
+      <name value="XDM PatientId"/>
+      <description value="Modèle logique de patientID.&#xA;Cette métadonnée contient l'identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange. Le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité. À défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé."/>
       <exampleBoolean value="false"/>
       <groupingId value="LogicalModelXDM"/>
     </resource>
@@ -1139,10 +1157,10 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/xdmPatientId"/>
+        <reference value="StructureDefinition/xdmreferenceId"/>
       </reference>
-      <name value="XDM PatientId"/>
-      <description value="Modèle logique de patientID.&#xA;Cette métadonnée contient l'identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange. Le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité. À défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé."/>
+      <name value="XDM referenceIdList"/>
+      <description value="Modèle logique de referenceIdList.&#xA;Cette métadonnée contient une liste d'un ou plusieurs identifiant(s) d'objet(s) associé(s) au document.Liste d'éléments de type CX du standard HL7 v2.5."/>
       <exampleBoolean value="false"/>
       <groupingId value="LogicalModelXDM"/>
     </resource>

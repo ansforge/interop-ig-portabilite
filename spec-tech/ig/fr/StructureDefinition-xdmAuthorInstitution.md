@@ -71,7 +71,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdmAuthorInstit
   "name" : "XDMAuthorInstitution",
   "title" : "XDM AuthorInstitution",
   "status" : "draft",
-  "date" : "2026-07-30T15:04:16+00:00",
+  "date" : "2026-08-07T08:28:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -122,8 +122,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdmAuthorInstit
       }]
     },
     {
-      "id" : "xdmAuthorInstitution.XON1",
-      "path" : "xdmAuthorInstitution.XON1",
+      "id" : "xdmAuthorInstitution.xon1",
+      "path" : "xdmAuthorInstitution.xon1",
       "short" : "Nom de la structure",
       "definition" : "Nom de la structure",
       "min" : 1,
@@ -153,8 +153,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdmAuthorInstit
       }]
     },
     {
-      "id" : "xdmAuthorInstitution.XON6",
-      "path" : "xdmAuthorInstitution.XON6",
+      "id" : "xdmAuthorInstitution.xon6",
+      "path" : "xdmAuthorInstitution.xon6",
       "short" : "Autorité d’affectation",
       "definition" : "Identifiant de l’organisme gérant l’identifiant de la structure. Cet identifiant, au format HL7 v.2.5 est constitué de trois sous-composants qui prennent les valeurs suivantes.",
       "min" : 1,
@@ -164,8 +164,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdmAuthorInstit
       }]
     },
     {
-      "id" : "xdmAuthorInstitution.XON6.composant1",
-      "path" : "xdmAuthorInstitution.XON6.composant1",
+      "id" : "xdmAuthorInstitution.xon6.composant1",
+      "path" : "xdmAuthorInstitution.xon6.composant1",
       "short" : "Vide, pas de valeur",
       "definition" : "Vide, pas de valeur",
       "min" : 0,
@@ -183,8 +183,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdmAuthorInstit
       }]
     },
     {
-      "id" : "xdmAuthorInstitution.XON6.composant2",
-      "path" : "xdmAuthorInstitution.XON6.composant2",
+      "id" : "xdmAuthorInstitution.xon6.composant2",
+      "path" : "xdmAuthorInstitution.xon6.composant2",
       "short" : "Valeur de Universal ID",
       "definition" : "Valeur de Universal ID",
       "min" : 1,
@@ -214,8 +214,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdmAuthorInstit
       }]
     },
     {
-      "id" : "xdmAuthorInstitution.XON6.composant3",
-      "path" : "xdmAuthorInstitution.XON6.composant3",
+      "id" : "xdmAuthorInstitution.xon6.composant3",
+      "path" : "xdmAuthorInstitution.xon6.composant3",
       "short" : "Valeur de Universal ID type (ID)",
       "definition" : "Valeur de Universal ID type (ID)",
       "min" : 1,
@@ -233,8 +233,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdmAuthorInstit
       }]
     },
     {
-      "id" : "xdmAuthorInstitution.XON7",
-      "path" : "xdmAuthorInstitution.XON7",
+      "id" : "xdmAuthorInstitution.xon7",
+      "path" : "xdmAuthorInstitution.xon7",
       "short" : "Type d’identifiant",
       "definition" : "Type d’identifiant",
       "min" : 1,
@@ -264,8 +264,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdmAuthorInstit
       }]
     },
     {
-      "id" : "xdmAuthorInstitution.XON10",
-      "path" : "xdmAuthorInstitution.XON10",
+      "id" : "xdmAuthorInstitution.xon10",
+      "path" : "xdmAuthorInstitution.xon10",
       "short" : "Identifiant de la structure (Struct_IdNat)",
       "definition" : "Identifiant de la structure (Struct_IdNat)",
       "min" : 1,

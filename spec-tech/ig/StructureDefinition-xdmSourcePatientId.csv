@@ -7,11 +7,11 @@ Cette métadonnée reprend la structure du segment CX  défini par  HL7v2  et  c
 - [Volet Partage de Documents de Santé](https://esante.gouv.fr/volet-partage-de-documents-de-sante)
 
 ","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"xdmSourcePatientId.CX1","xdmSourcePatientId.CX1","","","",1,1,"","","","string {[]} {[]}
-","Identifiant secondaire du patient, en l’occurrence. Equivalent à PatientId s'il n'y a pas d'identifiant secondaire.","Identifiant secondaire du patient, en l’occurrence. Equivalent à PatientId s'il n'y a pas d'identifiant secondaire.","","","","","","","","","",,,,,"",,,,"xdmSourcePatientId.CX1",1,1,"",""
-"xdmSourcePatientId.CX4","xdmSourcePatientId.CX4","","","",1,1,"","","","string {[]} {[]}
+"xdmSourcePatientId.cx1","xdmSourcePatientId.cx1","","","",1,1,"","","","string {[]} {[]}
+","Identifiant secondaire du patient, en l’occurrence. Equivalent à PatientId s'il n'y a pas d'identifiant secondaire.","Identifiant secondaire du patient, en l’occurrence. Equivalent à PatientId s'il n'y a pas d'identifiant secondaire.","","","","","","","","","",,,,,"",,,,"xdmSourcePatientId.cx1",1,1,"",""
+"xdmSourcePatientId.cx4","xdmSourcePatientId.cx4","","","",1,1,"","","","string {[]} {[]}
 ","Identifiant de l’autorité d’affectation de l'identifiant utilisé.","Cet identifiant, au format HL7 v.2.5 est constitué de trois sous-composants qui prennent les valeurs suivantes en fonction du type d'identifiant.
 INS : Valeur de Namespace ID (IS) = Vide, pas de valeur | Valeur de Universal ID (ST) = OID de l’autorité d’affectation de l’INS utilisé, prise dans la liste des OID des autorités d'affectation des INS | Valeur de Universal ID type (ID) = ISO
-Autre identifiant : Valeur de Namespace ID (IS) = Vide, pas de valeur | Valeur de Universal ID (ST) = OID de l’autorité d’affectation dl'identifiant (i.e. l'instituion qui a attribué cet identifiant) | Valeur de Universal ID type (ID) = ISO","","","","","","","","","",,,,,"",,,,"xdmSourcePatientId.CX4",1,1,"",""
-"xdmSourcePatientId.CX5","xdmSourcePatientId.CX5","","","",1,1,"","","","string {[]} {[]}
-","'NH' pour les patients identifiés par leur INS, 'PI' pour les patients identifiés par d'autres identifiants.","'NH' pour les patients identifiés par leur INS, 'PI' pour les patients identifiés par d'autres identifiants.","","","","","","","","","",,,,,"",,,,"xdmSourcePatientId.CX5",1,1,"",""
+Autre identifiant : Valeur de Namespace ID (IS) = Vide, pas de valeur | Valeur de Universal ID (ST) = OID de l’autorité d’affectation dl'identifiant (i.e. l'instituion qui a attribué cet identifiant) | Valeur de Universal ID type (ID) = ISO","","","","","","","","","",,,,,"",,,,"xdmSourcePatientId.cx4",1,1,"",""
+"xdmSourcePatientId.cx5","xdmSourcePatientId.cx5","","","",1,1,"","","","string {[]} {[]}
+","'NH' pour les patients identifiés par leur INS, 'PI' pour les patients identifiés par d'autres identifiants.","'NH' pour les patients identifiés par leur INS, 'PI' pour les patients identifiés par d'autres identifiants.","","","","","","","","","",,,,,"",,,,"xdmSourcePatientId.cx5",1,1,"",""

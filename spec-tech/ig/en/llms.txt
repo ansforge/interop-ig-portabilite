@@ -84,12 +84,13 @@
 * [XDM AuthorDocumentEntry](StructureDefinition-xdmAuthorDocumentEntry.md)
 * [XDM AuthorInstitution](StructureDefinition-xdmAuthorInstitution.md)
 * [XDM AuthorSubmissionSet](StructureDefinition-xdmAuthorSubmissionSet.md)
+* [Code XDM](StructureDefinition-xdmCode.md)
 * [XDM DocumentEntry](StructureDefinition-xdmDocumentEntry.md)
-* [XDM EventCode](StructureDefinition-xdmEventCode.md)
 * [XDM PatientId](StructureDefinition-xdmPatientId.md)
 * [XDM SourcePatientId](StructureDefinition-xdmSourcePatientId.md)
 * [XDM SourcePatientInfo](StructureDefinition-xdmSourcePatientInfo.md)
 * [XDM SubmissionSet](StructureDefinition-xdmSubmissionSet.md)
+* [XDM referenceIdList](StructureDefinition-xdmreferenceId.md)
 
 ### Primitive-type Profiles
 

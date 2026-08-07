@@ -75,8 +75,8 @@
     "sources" : ["1.2.250.1.213.1.1.5.461"],
     "uses" : {
     },
-    "StructureDefinition-xdmAuthorDocumentEntry.html" : "XDM AuthorDocumentEntry",
     "StructureDefinition-xdmAuthor.html" : "XDM Author",
+    "StructureDefinition-xdmAuthorDocumentEntry.html" : "XDM AuthorDocumentEntry",
     "StructureDefinition-xdmAuthorSubmissionSet.html" : "XDM AuthorSubmissionSet"
   },
   {
@@ -186,7 +186,7 @@
     "sources" : ["1.2.250.1.213.1.1.5.692"],
     "uses" : {
     },
-    "StructureDefinition-xdmDocumentEntry.html" : "XDM DocumentEntry"
+    "StructureDefinition-xdmreferenceId.html" : "XDM referenceIdList"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/JDV_J47-FunctionCode-CISIS/FHIR/JDV-J47-FunctionCode-CISIS",
@@ -202,8 +202,8 @@
     "sources" : ["1.2.250.1.213.1.1.5.124"],
     "uses" : {
     },
-    "StructureDefinition-xdmAuthorDocumentEntry.html" : "XDM AuthorDocumentEntry",
     "StructureDefinition-xdmAuthor.html" : "XDM Author",
+    "StructureDefinition-xdmAuthorDocumentEntry.html" : "XDM AuthorDocumentEntry",
     "StructureDefinition-xdmAuthorSubmissionSet.html" : "XDM AuthorSubmissionSet"
   },
   {

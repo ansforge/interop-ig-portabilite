@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-xdmDocumentEntry.
   "name" : "XDMDocumentEntry",
   "title" : "XDM DocumentEntry",
   "status" : "draft",
-  "date" : "2026-07-30T15:04:16+00:00",
+  "date" : "2026-08-07T08:28:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -113,7 +113,7 @@ Other representations of profile: [CSV](../StructureDefinition-xdmDocumentEntry.
       "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "CodeableConcept"
+        "code" : "code"
       }],
       "binding" : {
         "strength" : "preferred",
@@ -144,6 +144,17 @@ Other representations of profile: [CSV](../StructureDefinition-xdmDocumentEntry.
       "max" : "1",
       "type" : [{
         "code" : "integer"
+      }]
+    },
+    {
+      "id" : "xdmDocumentEntry.creationTime",
+      "path" : "xdmDocumentEntry.creationTime",
+      "short" : "Cette métadonnée représente la date et l’heure de la création du document.",
+      "definition" : "Cette métadonnée représente la date et l’heure de la création du document.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
       }]
     },
     {
@@ -241,14 +252,25 @@ Other representations of profile: [CSV](../StructureDefinition-xdmDocumentEntry.
       }]
     },
     {
-      "id" : "xdmDocumentEntry.URI",
-      "path" : "xdmDocumentEntry.URI",
+      "id" : "xdmDocumentEntry.uri",
+      "path" : "xdmDocumentEntry.uri",
       "short" : "Cette métadonnée n'est exploitée que par la transaction XDM 'Distribute document set on media ITI-32'",
       "definition" : "Cette métadonnée n'est exploitée que par la transaction XDM 'Distribute document set on media ITI-32'",
       "min" : 1,
       "max" : "1",
       "type" : [{
         "code" : "uri"
+      }]
+    },
+    {
+      "id" : "xdmDocumentEntry.documentAvailability",
+      "path" : "xdmDocumentEntry.documentAvailability",
+      "short" : "Cette métadonnée représente l’accessibilité du document en indiquant si celui-ci est accessible en ligne ou non",
+      "definition" : "Cette métadonnée représente l’accessibilité du document en indiquant si celui-ci est accessible en ligne ou non",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
       }]
     },
     {
@@ -271,6 +293,17 @@ Other representations of profile: [CSV](../StructureDefinition-xdmDocumentEntry.
       "max" : "1",
       "type" : [{
         "code" : "string"
+      }]
+    },
+    {
+      "id" : "xdmDocumentEntry.version",
+      "path" : "xdmDocumentEntry.version",
+      "short" : "Cette métadonnée représente le numéro de version de la fiche d’un document.  La valeur de la métadonnée version est égale à 1 pour la première version de la fiche.",
+      "definition" : "Cette métadonnée représente le numéro de version de la fiche d’un document.  La valeur de la métadonnée version est égale à 1 pour la première version de la fiche.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "integer"
       }]
     },
     {
@@ -299,11 +332,11 @@ Other representations of profile: [CSV](../StructureDefinition-xdmDocumentEntry.
       "id" : "xdmDocumentEntry.class",
       "path" : "xdmDocumentEntry.class",
       "short" : "class représente la classe du document (compte rendu, imagerie médicale, traitement, certificat, etc.).",
-      "definition" : "class est constitué des attributs : \n- **classCode**\n- **classCodeDisplayName**\n- **codingScheme***\n\n**classCode**\n- Type : Non contraint\n- Contenu : Les valeurs possibles doivent être un code provenant du jeu de valeurs mis à disposition par le projet (exemple : JDV_J57_ClassCode_DMP). En l’absence de spécifications complémentaires, le JDV_J06_XdsClassCode_CISIS peut être utilisé. \n- Source : En fonction de l’interface fournie (ex. paramétrage fixe ou choix dans un menu déroulant). \n\n**classCodeDisplayName**\n- Type : Non contraint\n- Contenu : L’intitulé de la classe de document correspond au libellé associé au code de **classCode**.\n- Source : En fonction de l’interface fournie (ex. paramétrage fixe ou choix dans un menu déroulant). \n\n**codingScheme**\n- Type : OID\n- Le code système de la classe de document correspond à l’OID associé au code de classCode. \n- Source : En fonction de l’interface fournie (ex. paramétrage fixe ou choix dans un menu déroulant). \n",
+      "definition" : "class représente la classe du document (compte rendu, imagerie médicale, traitement, certificat, etc.).",
       "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "CodeableConcept"
+        "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmCode"
       }],
       "binding" : {
         "strength" : "preferred",
@@ -315,14 +348,30 @@ Other representations of profile: [CSV](../StructureDefinition-xdmDocumentEntry.
       }]
     },
     {
+      "id" : "xdmDocumentEntry.class.code",
+      "path" : "xdmDocumentEntry.class.code",
+      "short" : "ClassCode de la classe du document.",
+      "definition" : "Les valeurs possibles doivent être un code provenant du jeu de valeurs mis à disposition par le projet (exemple : JDV_J57_ClassCode_DMP). En l'absence de spécifications complémentaires, le JDV_J06_XdsClassCode_CISIS peut être utilisé."
+    },
+    {
+      "id" : "xdmDocumentEntry.class.displayName",
+      "path" : "xdmDocumentEntry.class.displayName",
+      "short" : "Libellé associé au classCode."
+    },
+    {
+      "id" : "xdmDocumentEntry.class.codingScheme",
+      "path" : "xdmDocumentEntry.class.codingScheme",
+      "short" : "OID du système de codage associé au code classCode."
+    },
+    {
       "id" : "xdmDocumentEntry.confidentiality",
       "path" : "xdmDocumentEntry.confidentiality",
-      "short" : "Métadonnée contenant les informations définissant le niveau de confidentialité d'un document déposé dans l'entrepôt. Dans le cadre de la mise en œuvre du masquage et de la non-visibilité, ces métadonnées sont utilisées pour rendre inaccessible un document à l'utilisateur",
-      "definition" : "**Confidentiality Code**",
+      "short" : "Métadonnée contenant les informations définissant le niveau de confidentialité d'un document déposé dans l'entrepôt. Dans le cadre de la mise en œuvre du masquage et de la non-visibilité, ces métadonnées sont utilisées pour rendre inaccessible un document à l'utilisateur.",
+      "definition" : "Métadonnée contenant les informations définissant le niveau de confidentialité d'un document déposé dans l'entrepôt. Dans le cadre de la mise en œuvre du masquage et de la non-visibilité, ces métadonnées sont utilisées pour rendre inaccessible un document à l'utilisateur.",
       "min" : 1,
       "max" : "4",
       "type" : [{
-        "code" : "CodeableConcept"
+        "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmCode"
       }],
       "binding" : {
         "strength" : "preferred",
@@ -337,23 +386,28 @@ Other representations of profile: [CSV](../StructureDefinition-xdmDocumentEntry.
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmEventCode"
+        "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmCode"
       }]
     },
     {
       "id" : "xdmDocumentEntry.format",
       "path" : "xdmDocumentEntry.format",
-      "short" : "Métadonnée contenant les informations définissant le format du document.",
-      "definition" : "**Format Code**",
+      "short" : "Métadonnée contenant les informations définissant le format du document. Il précise les spécifications techniques auxquelles il est conforme",
+      "definition" : "Métadonnée contenant les informations définissant le format du document. Il précise les spécifications techniques auxquelles il est conforme",
       "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "CodeableConcept"
+        "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmCode"
       }],
       "binding" : {
         "strength" : "preferred",
         "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS|20260629120000"
       }
+    },
+    {
+      "id" : "xdmDocumentEntry.format.code",
+      "path" : "xdmDocumentEntry.format.code",
+      "short" : "code identifiant le format du document et les spécifications auxquelles il est conforme. Fixé à urn:asipSante:modelesHorsProfils:2011 (Document non référencé IHE ou CI-SIS) pour les documents au format propriétaire."
     },
     {
       "id" : "xdmDocumentEntry.healthcareFacilityTypeCode",
@@ -363,7 +417,7 @@ Other representations of profile: [CSV](../StructureDefinition-xdmDocumentEntry.
       "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "CodeableConcept"
+        "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmCode"
       }],
       "binding" : {
         "strength" : "preferred",
@@ -374,11 +428,11 @@ Other representations of profile: [CSV](../StructureDefinition-xdmDocumentEntry.
       "id" : "xdmDocumentEntry.practiceSetting",
       "path" : "xdmDocumentEntry.practiceSetting",
       "short" : "Contexte de l’acte qui a engendré la création du document.",
-      "definition" : "**Practice Setting**",
+      "definition" : "Contexte de l’acte qui a engendré la création du document.",
       "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "CodeableConcept"
+        "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmCode"
       }],
       "binding" : {
         "strength" : "preferred",
@@ -393,7 +447,7 @@ Other representations of profile: [CSV](../StructureDefinition-xdmDocumentEntry.
       "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "CodeableConcept"
+        "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmCode"
       }],
       "binding" : {
         "strength" : "preferred",
@@ -401,87 +455,15 @@ Other representations of profile: [CSV](../StructureDefinition-xdmDocumentEntry.
       }
     },
     {
-      "id" : "xdmDocumentEntry.documentAvailability",
-      "path" : "xdmDocumentEntry.documentAvailability",
-      "short" : "Cette métadonnée représente '’accessibilité du document en indiquant si celui-ci est accessible en ligne ou non",
-      "definition" : "Cette métadonnée représente '’accessibilité du document en indiquant si celui-ci est accessible en ligne ou non",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "string"
-      }]
-    },
-    {
-      "id" : "xdmDocumentEntry.homeCommunityId",
-      "path" : "xdmDocumentEntry.homeCommunityId",
-      "short" : "Cette métadonnée correspond à l'identifiant de la communauté représentée par le système cible, si celui-ci offre les fonctionnalités de communication avec d'autres communautés, présentées dans le profil XCA d'IHE. Elle n'est pas utilisée par les transactions décrites dans ce volet.",
-      "definition" : "Cette métadonnée correspond à l'identifiant de la communauté représentée par le système cible, si celui-ci offre les fonctionnalités de communication avec d'autres communautés, présentées dans le profil XCA d'IHE. Elle n'est pas utilisée par les transactions décrites dans ce volet.",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "oid"
-      }]
-    },
-    {
-      "id" : "xdmDocumentEntry.creationTime",
-      "path" : "xdmDocumentEntry.creationTime",
-      "short" : "Cette métadonnée représente la date et l’heure de la création du document.",
-      "definition" : "Cette métadonnée représente la date et l’heure de la création du document.",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "dateTime"
-      }]
-    },
-    {
       "id" : "xdmDocumentEntry.referenceIdList",
       "path" : "xdmDocumentEntry.referenceIdList",
-      "short" : "Cette métadonnée contient une liste d'un ou plusieurs identifiant(s) d'objet(s) associé(s) au document.",
-      "definition" : "Cette métadonnée contient une liste d'un ou plusieurs identifiant(s) d'objet(s) associé(s) au document.",
+      "short" : "Cette métadonnée contient une liste d'un ou plusieurs identifiant(s) d'objet(s) associé(s) au document. Liste d'éléments de type CX du standard HL7 v2.5.",
+      "definition" : "Cette métadonnée contient une liste d'un ou plusieurs identifiant(s) d'objet(s) associé(s) au document. Liste d'éléments de type CX du standard HL7 v2.5.",
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "Base"
+        "code" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmreferenceId"
       }]
-    },
-    {
-      "id" : "xdmDocumentEntry.referenceIdList.CX1",
-      "path" : "xdmDocumentEntry.referenceIdList.CX1",
-      "short" : "Identifiant de l'objet référencé",
-      "definition" : "Identifiant de l'objet référencé",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.3.0"]
-      }]
-    },
-    {
-      "id" : "xdmDocumentEntry.referenceIdList.CX4",
-      "path" : "xdmDocumentEntry.referenceIdList.CX4",
-      "short" : "Identifiant de l’organisme ayant attribué l’identifiant de l'objet référencé",
-      "definition" : "Identifiant de l’organisme ayant attribué l’identifiant de l'objet référencé",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.3.0"]
-      }]
-    },
-    {
-      "id" : "xdmDocumentEntry.referenceIdList.CX5",
-      "path" : "xdmDocumentEntry.referenceIdList.CX5",
-      "short" : "Type d’identifiant",
-      "definition" : "Type d’identifiant",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "CodeableConcept"
-      }],
-      "binding" : {
-        "strength" : "preferred",
-        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J197-XdsTypesIdentifiantsReferenceId-CISIS/FHIR/JDV-J197-XdsTypesIdentifiantsReferenceId-CISIS|20220624120000"
-      }
     }]
   }
 }

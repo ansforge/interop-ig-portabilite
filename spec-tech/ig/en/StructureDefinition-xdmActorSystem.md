@@ -32,7 +32,7 @@ Other representations of profile: [CSV](../StructureDefinition-xdmActorSystem.cs
   "name" : "XDMActorSystem",
   "title" : "XDM ActorSystem",
   "status" : "draft",
-  "date" : "2026-07-30T15:04:16+00:00",
+  "date" : "2026-08-07T08:28:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -69,8 +69,8 @@ Other representations of profile: [CSV](../StructureDefinition-xdmActorSystem.cs
       "definition" : "Cet attribut représente l'acteur System."
     },
     {
-      "id" : "xdmActorSystem.XCN1",
-      "path" : "xdmActorSystem.XCN1",
+      "id" : "xdmActorSystem.xcn1",
+      "path" : "xdmActorSystem.xcn1",
       "type" : [{
         "code" : "string",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/systIdNat|0.1.0"]
@@ -81,28 +81,28 @@ Other representations of profile: [CSV](../StructureDefinition-xdmActorSystem.cs
       }]
     },
     {
-      "id" : "xdmActorSystem.XCN2",
-      "path" : "xdmActorSystem.XCN2",
+      "id" : "xdmActorSystem.xcn2",
+      "path" : "xdmActorSystem.xcn2",
       "short" : "Nom et version du système"
     },
     {
-      "id" : "xdmActorSystem.XCN3",
-      "path" : "xdmActorSystem.XCN3",
+      "id" : "xdmActorSystem.xcn3",
+      "path" : "xdmActorSystem.xcn3",
       "short" : "Nom du modèle pour les dispositifs ou dénomination pour les autres systèmes."
     },
     {
-      "id" : "xdmActorSystem.XCN9.composant2",
-      "path" : "xdmActorSystem.XCN9.composant2",
+      "id" : "xdmActorSystem.xcn9.composant2",
+      "path" : "xdmActorSystem.xcn9.composant2",
       "patternString" : "1.2.250.1.71.4.2.1"
     },
     {
-      "id" : "xdmActorSystem.XCN10",
-      "path" : "xdmActorSystem.XCN10",
+      "id" : "xdmActorSystem.xcn10",
+      "path" : "xdmActorSystem.xcn10",
       "patternCode" : "U"
     },
     {
-      "id" : "xdmActorSystem.XCN13",
-      "path" : "xdmActorSystem.XCN13",
+      "id" : "xdmActorSystem.xcn13",
+      "path" : "xdmActorSystem.xcn13",
       "patternCode" : "RI"
     }]
   }

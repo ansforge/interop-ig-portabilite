@@ -61,7 +61,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgcArchivePat
   "name" : "PDLGCArchivePatient",
   "title" : "PDLGC Archive Patient",
   "status" : "draft",
-  "date" : "2026-07-30T15:04:16+00:00",
+  "date" : "2026-08-07T08:28:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -137,8 +137,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgcArchivePat
       }]
     },
     {
-      "id" : "pdlgcArchivePatient.iheXdm",
-      "path" : "pdlgcArchivePatient.iheXdm",
+      "id" : "pdlgcArchivePatient.iheXDM",
+      "path" : "pdlgcArchivePatient.iheXDM",
       "short" : "répertoire IHE_XDM contenant le lot de soumissions des données d'un patient. Nom du répertoire fixé à IHE_XDM.",
       "definition" : "répertoire IHE_XDM contenant le lot de soumissions des données d'un patient. Nom du répertoire fixé à IHE_XDM.",
       "min" : 1,
@@ -148,8 +148,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgcArchivePat
       }]
     },
     {
-      "id" : "pdlgcArchivePatient.iheXdm.subset01",
-      "path" : "pdlgcArchivePatient.iheXdm.subset01",
+      "id" : "pdlgcArchivePatient.iheXDM.subset01",
+      "path" : "pdlgcArchivePatient.iheXDM.subset01",
       "short" : "lot de soumission contenant les données d'un patient.",
       "definition" : "lot de soumission contenant les données d'un patient.",
       "min" : 1,
@@ -159,8 +159,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgcArchivePat
       }]
     },
     {
-      "id" : "pdlgcArchivePatient.iheXdm.subset01.metadata",
-      "path" : "pdlgcArchivePatient.iheXdm.subset01.metadata",
+      "id" : "pdlgcArchivePatient.iheXDM.subset01.metadata",
+      "path" : "pdlgcArchivePatient.iheXDM.subset01.metadata",
       "short" : "métadonnées du lot de soumission, conforme au profil IHE XDM, décrivant les documents patient qu'il accompagne.",
       "definition" : "métadonnées du lot de soumission, conforme au profil IHE XDM, décrivant les documents patient qu'il accompagne.",
       "min" : 1,
@@ -170,8 +170,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgcArchivePat
       }]
     },
     {
-      "id" : "pdlgcArchivePatient.iheXdm.subset01.documentPivot",
-      "path" : "pdlgcArchivePatient.iheXdm.subset01.documentPivot",
+      "id" : "pdlgcArchivePatient.iheXDM.subset01.documentPivot",
+      "path" : "pdlgcArchivePatient.iheXDM.subset01.documentPivot",
       "short" : "Données structurées du périmètres pivot, concernant les informations administratives et médicales du patient. Leur export est obligatoire.",
       "definition" : "Données structurées du périmètres pivot, concernant les informations administratives et médicales du patient. Leur export est obligatoire.",
       "min" : 1,
@@ -181,8 +181,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgcArchivePat
       }]
     },
     {
-      "id" : "pdlgcArchivePatient.iheXdm.subset01.documentHorsPivot",
-      "path" : "pdlgcArchivePatient.iheXdm.subset01.documentHorsPivot",
+      "id" : "pdlgcArchivePatient.iheXDM.subset01.documentHorsPivot",
+      "path" : "pdlgcArchivePatient.iheXDM.subset01.documentHorsPivot",
       "short" : "Données structurées hors périmètre pivot. Leur export est facultatif.",
       "definition" : "Données structurées hors périmètre pivot. Leur export est facultatif.",
       "min" : 0,

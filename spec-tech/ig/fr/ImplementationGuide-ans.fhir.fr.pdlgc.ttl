@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.name [ fhir:value "PDLGC"] ;
   fhir:ImplementationGuide.title [ fhir:value "Portabilité des Données LGC"] ;
   fhir:ImplementationGuide.status [ fhir:value "draft"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-07-30T15:04:16+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-08-07T08:28:26+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ;
   fhir:ImplementationGuide.contact [
      fhir:index -1 ;
@@ -91,6 +91,15 @@
      ] ;
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "ans.fr.mos" ] ;
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "0.1.0-ballot" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.id [ fhir:value "hl7_fhir_uv_tools_r4" ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools" ;
+       fhir:link <http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.tools.r4" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.1.2" ]
   ] ;
   fhir:ImplementationGuide.definition [
      fhir:Element.extension [
@@ -532,10 +541,6 @@
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/Parameters/expansion-parameters> ;
          fhir:Reference.reference [ fhir:value "Parameters/expansion-parameters" ]
        ]
-     ], [
-       fhir:index -1 ;
-       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency" ] ;
-       fhir:Extension.valueCode [ fhir:value "hl7.fhir.uv.tools.r4#1.1.2" ]
      ], [
        fhir:index -1 ;
        fhir:Element.extension [
@@ -981,11 +986,31 @@
        fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Modèles logiques associés aux différents fichiers et répertoires structurant une archive de portabilité" ]
      ], [
        fhir:index -1 ;
-       fhir:Element.id [ fhir:value "DataTypeProfile" ] ;
+       fhir:Element.id [ fhir:value "DataTypeIdProfile" ] ;
        fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Valeur des identifiants" ] ;
        fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Profilage du datatype string pour les identifiants" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "DataTypeXMLProfile" ] ;
+       fhir:ImplementationGuide.definition.grouping.name [ fhir:value "Datatypes XDM" ] ;
+       fhir:ImplementationGuide.definition.grouping.description [ fhir:value "Datatypes XDM" ]
      ] ;
      fhir:ImplementationGuide.definition.resource [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmCode> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/xdmCode" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Code XDM" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Type représentant un concept codé, constitué d'un code, de son libellé et de l'OID du système de codage, portés comme attributs XML. Il ne présente pas lui-même de valeur." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "DataTypeXMLProfile" ]
+     ], [
        fhir:index -1 ;
        fhir:Element.extension [
          fhir:index -1 ;
@@ -999,7 +1024,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Identifiant Patient" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange. \n- Matricule INS : le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité. \n- Autre identifiant : à défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "DataTypeProfile" ]
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "DataTypeIdProfile" ]
      ], [
        fhir:index -1 ;
        fhir:Element.extension [
@@ -1115,7 +1140,7 @@
          fhir:Reference.reference [ fhir:value "ActorDefinition/PDLGC-Demandeur" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDLGC Demandeur" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Demandeur de l'export.\n\nIl peut s'agir d'un médecin ou professionnel de santé libéral, responsable du contenu médical transféré.\n\nIl peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Demandeur de l'export.\n\nIl s'agit d'un professionnel de santé libéral, responsable du contenu médical transféré.\n\nIl peut agir à la demande du patient, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index -1 ;
@@ -1129,7 +1154,7 @@
          fhir:Reference.reference [ fhir:value "ActorDefinition/PDLGC-Destinataire" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PDLGC Destinataire" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Destinataire de l'export de données de LGC.\n\nIl peut s'agir d'un médecin ou professionnel de santé libéral recevant l'export via son LGC.\n\nIl peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP).\n\nDans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le destinataire." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Destinataire de l'export de données de LGC.\n\nIl s'agit d'un professionnel de santé libéral recevant l'export via son LGC.\n\nSuivant le contexte de la demande, le professionnel de santé pourra transférer le dossier au patient." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index -1 ;
@@ -1291,7 +1316,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PSIdNat" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identification nationale principale du professionnel propre aux SI de l’ANS et au CI-SIS. (Correspondance dans le MOS : idNat_PS) \n\nL’identification nationale du PS est construite selon le tableau dessous :\n- 0 + N° ADELI \n- 1 + Identifiant cabinet ADELI/identifiant interne \n- 3 + FINESS/identifiant interne \n- 4 + SIREN/identifiant interne \n- 5 + SIRET/identifiant interne \n- 6 + Identifiant cabinet RPPS/identifiant interne \n- 8 + N° RPPS" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "DataTypeProfile" ]
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "DataTypeIdProfile" ]
      ], [
        fhir:index -1 ;
        fhir:Element.extension [
@@ -1320,7 +1345,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "StructIdNat" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identification nationale principale d’une structure propre aux SI de l'ANS et au CI-SIS 4. \n\nL’identification nationale d’une structure est construite selon le tableau dessous :\n- 0 + Identifiant cabinet ADELI \n- 1 + N° FINESS 2 + N° SIREN \n- 3 + N° SIRET \n- 4 + N° RPPS-rang \n- Néant + N° technique" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "DataTypeProfile" ]
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "DataTypeIdProfile" ]
      ], [
        fhir:index -1 ;
        fhir:Element.extension [
@@ -1335,7 +1360,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SystIdNat" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identification d'un système\n\nL’identification du système  est construite selon le tableau dessous :\n- 1 + Identifiant cabinet ADELI/Identifiant interne du système dans la structure \n- 3 + FINESS/Identifiant interne du système dans la structure  \n- 4 + SIREN/Identifiant interne du système dans la structure \n- 5 + SIRET/Identifiant interne du système dans la structure \n- 6 + Identifiant cabinet RPPS/Identifiant interne du système dans la structure" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
-       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "DataTypeProfile" ]
+       fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "DataTypeIdProfile" ]
      ], [
        fhir:index -1 ;
        fhir:Element.extension [
@@ -1463,7 +1488,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/xdmActorXdsCore" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "XDM ActorXDS Core" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Cet attribut représente un acteur (humain ou système) ayant contribué au document. Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient. \n\nType XCN de HL7 v2.5" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Cet attribut représente un acteur (humain ou système) ayant contribué au document. Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient. \n\nType xcn de HL7 v2.5" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDM" ]
      ], [
@@ -1579,11 +1604,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmEventCode> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/xdmEventCode" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmPatientId> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/xdmPatientId" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "XDM EventCode" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Modèle logique d'un eventCode.\nUn EventCode peut contenir le code représentant : \n-  un évènement documenté (acte, traitement, diagnostic, etc…),  \n-  une modalité d’acquisition, \n-  une région anatomique." ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "XDM PatientId" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Modèle logique de patientID.\nCette métadonnée contient l'identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange. Le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité. À défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDM" ]
      ], [
@@ -1594,11 +1619,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmPatientId> ;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/xdmPatientId" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmreferenceId> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/xdmreferenceId" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "XDM PatientId" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Modèle logique de patientID.\nCette métadonnée contient l'identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange. Le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité. À défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé." ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "XDM referenceIdList" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Modèle logique de referenceIdList.\nCette métadonnée contient une liste d'un ou plusieurs identifiant(s) d'objet(s) associé(s) au document.Liste d'éléments de type CX du standard HL7 v2.5." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ] ;
        fhir:ImplementationGuide.definition.resource.groupingId [ fhir:value "LogicalModelXDM" ]
      ], [

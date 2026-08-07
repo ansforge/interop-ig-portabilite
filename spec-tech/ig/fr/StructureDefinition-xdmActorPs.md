@@ -69,7 +69,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdmActorPs.csv)
   "name" : "XDMActorPS",
   "title" : "XDM ActorPS",
   "status" : "draft",
-  "date" : "2026-07-30T15:04:16+00:00",
+  "date" : "2026-08-07T08:28:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -106,8 +106,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdmActorPs.csv)
       "definition" : "Cet attribut représente un acteur PS."
     },
     {
-      "id" : "xdmActorPs.XCN1",
-      "path" : "xdmActorPs.XCN1",
+      "id" : "xdmActorPs.xcn1",
+      "path" : "xdmActorPs.xcn1",
       "type" : [{
         "code" : "string",
         "profile" : ["https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/psIdNat|0.1.0"]
@@ -122,28 +122,28 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdmActorPs.csv)
       }]
     },
     {
-      "id" : "xdmActorPs.XCN2",
-      "path" : "xdmActorPs.XCN2",
+      "id" : "xdmActorPs.xcn2",
+      "path" : "xdmActorPs.xcn2",
       "short" : "Nom d'exercice du professionnel"
     },
     {
-      "id" : "xdmActorPs.XCN3",
-      "path" : "xdmActorPs.XCN3",
+      "id" : "xdmActorPs.xcn3",
+      "path" : "xdmActorPs.xcn3",
       "short" : "Prénom usuel de la personne"
     },
     {
-      "id" : "xdmActorPs.XCN9.composant2",
-      "path" : "xdmActorPs.XCN9.composant2",
+      "id" : "xdmActorPs.xcn9.composant2",
+      "path" : "xdmActorPs.xcn9.composant2",
       "patternString" : "1.2.250.1.71.4.2.1"
     },
     {
-      "id" : "xdmActorPs.XCN10",
-      "path" : "xdmActorPs.XCN10",
+      "id" : "xdmActorPs.xcn10",
+      "path" : "xdmActorPs.xcn10",
       "patternCode" : "D"
     },
     {
-      "id" : "xdmActorPs.XCN13",
-      "path" : "xdmActorPs.XCN13",
+      "id" : "xdmActorPs.xcn13",
+      "path" : "xdmActorPs.xcn13",
       "patternCode" : "IDNPS"
     }]
   }

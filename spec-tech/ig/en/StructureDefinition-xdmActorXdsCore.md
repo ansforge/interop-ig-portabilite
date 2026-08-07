@@ -4,7 +4,7 @@
 
  
 Cet attribut représente un acteur (humain ou système) ayant contribué au document. Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient. 
-Type XCN de HL7 v2.5 
+Type xcn de HL7 v2.5 
 
 **Usages:**
 
@@ -33,7 +33,7 @@ Other representations of profile: [CSV](../StructureDefinition-xdmActorXdsCore.c
   "name" : "XDMActorXDSCore",
   "title" : "XDM ActorXDS Core",
   "status" : "draft",
-  "date" : "2026-07-30T15:04:16+00:00",
+  "date" : "2026-08-07T08:28:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-xdmActorXdsCore.c
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Cet attribut représente un acteur (humain ou système) ayant contribué au document. Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient. \n\nType XCN de HL7 v2.5",
+  "description" : "Cet attribut représente un acteur (humain ou système) ayant contribué au document. Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient. \n\nType xcn de HL7 v2.5",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -67,15 +67,15 @@ Other representations of profile: [CSV](../StructureDefinition-xdmActorXdsCore.c
       "id" : "xdmActorXdsCore",
       "path" : "xdmActorXdsCore",
       "short" : "XDM ActorXDS Core",
-      "definition" : "Cet attribut représente un acteur (humain ou système) ayant contribué au document. Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient. \n\nType XCN de HL7 v2.5",
+      "definition" : "Cet attribut représente un acteur (humain ou système) ayant contribué au document. Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient. \n\nType xcn de HL7 v2.5",
       "mapping" : [{
         "identity" : "ActorXDSCDA",
         "map" : "ActorXDS"
       }]
     },
     {
-      "id" : "xdmActorXdsCore.XCN1",
-      "path" : "xdmActorXdsCore.XCN1",
+      "id" : "xdmActorXdsCore.xcn1",
+      "path" : "xdmActorXdsCore.xcn1",
       "short" : "Identifiant de l'acteur qui. Le format de l'identifiant doit respecter le datatype PatId, PSIdNat ou SystIdNat selon le type d'acteur",
       "definition" : "Identifiant de l'acteur qui. Le format de l'identifiant doit respecter le datatype PatId, PSIdNat ou SystIdNat selon le type d'acteur",
       "min" : 1,
@@ -89,8 +89,8 @@ Other representations of profile: [CSV](../StructureDefinition-xdmActorXdsCore.c
       }]
     },
     {
-      "id" : "xdmActorXdsCore.XCN2",
-      "path" : "xdmActorXdsCore.XCN2",
+      "id" : "xdmActorXdsCore.xcn2",
+      "path" : "xdmActorXdsCore.xcn2",
       "short" : "Nom d'exercice du professionnel, nom du patient, nom du système.",
       "definition" : "Nom d'exercice du professionnel, nom du patient, nom du système.",
       "min" : 1,
@@ -104,8 +104,8 @@ Other representations of profile: [CSV](../StructureDefinition-xdmActorXdsCore.c
       }]
     },
     {
-      "id" : "xdmActorXdsCore.XCN3",
-      "path" : "xdmActorXdsCore.XCN3",
+      "id" : "xdmActorXdsCore.xcn3",
+      "path" : "xdmActorXdsCore.xcn3",
       "short" : "Prénom usuel de la personne (par défaut le premier prénom), nom du modèle pour les dispositifs ou dénomination pour les autres systèmes.",
       "definition" : "Prénom usuel de la personne (par défaut le premier prénom), nom du modèle pour les dispositifs ou dénomination pour les autres systèmes.",
       "min" : 1,
@@ -119,8 +119,8 @@ Other representations of profile: [CSV](../StructureDefinition-xdmActorXdsCore.c
       }]
     },
     {
-      "id" : "xdmActorXdsCore.XCN9",
-      "path" : "xdmActorXdsCore.XCN9",
+      "id" : "xdmActorXdsCore.xcn9",
+      "path" : "xdmActorXdsCore.xcn9",
       "short" : "Autorité d’affectation",
       "definition" : "Autorité d’affectation",
       "min" : 1,
@@ -134,8 +134,8 @@ Other representations of profile: [CSV](../StructureDefinition-xdmActorXdsCore.c
       }]
     },
     {
-      "id" : "xdmActorXdsCore.XCN9.composant1",
-      "path" : "xdmActorXdsCore.XCN9.composant1",
+      "id" : "xdmActorXdsCore.xcn9.composant1",
+      "path" : "xdmActorXdsCore.xcn9.composant1",
       "short" : "Vide, pas de valeur",
       "definition" : "Vide, pas de valeur",
       "min" : 0,
@@ -149,8 +149,8 @@ Other representations of profile: [CSV](../StructureDefinition-xdmActorXdsCore.c
       }]
     },
     {
-      "id" : "xdmActorXdsCore.XCN9.composant2",
-      "path" : "xdmActorXdsCore.XCN9.composant2",
+      "id" : "xdmActorXdsCore.xcn9.composant2",
+      "path" : "xdmActorXdsCore.xcn9.composant2",
       "short" : "Valeur de Universal ID",
       "definition" : "Valeur de Universal ID",
       "min" : 1,
@@ -164,8 +164,8 @@ Other representations of profile: [CSV](../StructureDefinition-xdmActorXdsCore.c
       }]
     },
     {
-      "id" : "xdmActorXdsCore.XCN9.composant3",
-      "path" : "xdmActorXdsCore.XCN9.composant3",
+      "id" : "xdmActorXdsCore.xcn9.composant3",
+      "path" : "xdmActorXdsCore.xcn9.composant3",
       "short" : "Valeur de Universal ID type (ID). Valeur fixée à 'ISO'",
       "definition" : "Valeur de Universal ID type (ID). Valeur fixée à 'ISO'",
       "min" : 1,
@@ -180,8 +180,8 @@ Other representations of profile: [CSV](../StructureDefinition-xdmActorXdsCore.c
       }]
     },
     {
-      "id" : "xdmActorXdsCore.XCN10",
-      "path" : "xdmActorXdsCore.XCN10",
+      "id" : "xdmActorXdsCore.xcn10",
+      "path" : "xdmActorXdsCore.xcn10",
       "short" : "Type de nom : 'D' pour les personnes physiques, 'U', pour les systèmes.",
       "definition" : "Type de nom : 'D' pour les personnes physiques, 'U', pour les systèmes.",
       "min" : 1,
@@ -195,8 +195,8 @@ Other representations of profile: [CSV](../StructureDefinition-xdmActorXdsCore.c
       }]
     },
     {
-      "id" : "xdmActorXdsCore.XCN13",
-      "path" : "xdmActorXdsCore.XCN13",
+      "id" : "xdmActorXdsCore.xcn13",
+      "path" : "xdmActorXdsCore.xcn13",
       "short" : "Type d’identifiant",
       "definition" : "Type d’identifiant",
       "min" : 1,

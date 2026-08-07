@@ -14,16 +14,16 @@ Le tableau ci-dessous récapitule les acteurs impliqués dans l'export d'une arc
 | | | |
 | :--- | :--- | :--- |
 | Acteur | Type d'acteur | Description |
-| [PDLGC Demandeur](ActorDefinition-PDLGC-Demandeur.md) | Personne | Demandeur de l'export.Il peut s'agir d'un médecin ou professionnel de santé libéral, responsable du contenu médical transféré.Il peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP) |
-| [PDLGC Destinataire](ActorDefinition-PDLGC-Destinataire.md) | Personne | Destinataire de l'export de données de LGC.Il peut s'agir d'un médecin ou professionnel de santé libéral recevant l'export via son LGC.Il peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP).Dans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le destinataire. |
+| [PDLGC Demandeur](ActorDefinition-PDLGC-Demandeur.md) | Personne | Demandeur de l'export.Il s'agit d'un professionnel de santé libéral, responsable du contenu médical transféré.Il peut agir à la demande du patient, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP) |
+| [PDLGC Destinataire](ActorDefinition-PDLGC-Destinataire.md) | Personne | Destinataire de l'export de données de LGC.Il s'agit d'un professionnel de santé libéral recevant l'export via son LGC.Suivant le contexte de la demande, le professionnel de santé pourra transférer le dossier au patient. |
 | [LGC Destinataire](ActorDefinition-PDLGC-Systeme-Destinataire.md) | Système | LGC responsable de la réception et de l'intégration des données contenues dans l'archive de portabilité. |
 | [PDLGC Systeme Emetteur](ActorDefinition-PDLGC-Systeme-Emetteur.md) | Système | LGC responsable de la production et de la mise à disposition de l'archive de portabilité à l'issue d'une demande d'export. |
 
-#### Définition du processus collaboratif
+#### Définition du processus collaboratif métier
 
 Le processus collaboratif « Export d'archive de portabilité » couvre l'ensemble des situations dans lesquelles un professionnel de santé ou un patient exerce son droit à la portabilité des données auprès d'un éditeur de logiciel LGC.
 
-Quel que soit le cas d'usage, le processus repose sur un unique flux de production et de mise à disposition d'une archive de portabilité, dont la structure s'appuie sur le profil IHE XDM. Le type d'export (unitaire, ciblé ou massif) ne modifie pas la nature de cette transaction ; il détermine uniquement le périmètre des données incluses dans l'archive produite et certaines contraintes additionnelles (délai de mise à disposition, format des données, intégration dans un logiciel ou consultation directe…).
+Quel que soit le cas d'usage, le processus repose sur un unique flux de production et de mise à disposition d'une archive de portabilité. Le type d'export (unitaire, ciblé ou massif) ne modifie pas la nature de cette transaction ; il détermine uniquement le périmètre des données incluses dans l'archive produite et certaines contraintes additionnelles (se référer aux exigences du **Référentiel de sécurité, d'interopérabilité et d'éthique relatif à la portabilité des données des LGC** pour plus d'informations).
 
 ##### Pré-conditions
 
@@ -33,7 +33,7 @@ Le professionnel de santé, en tant que demandeur de l'export, doit au préalabl
 * Être en mesure de préciser le périmètre de l'export souhaité (dossier patient identifié, ensemble de patients selon un critère de sélection, ou intégralité de la patientèle) ;
 * Disposer, le cas échéant, des coordonnées de l'éditeur ou du système destinataire.
 
-L'éditeur émetteur, en tant que producteur de l'archive, doit au préalable :
+Le système émetteur, en tant que producteur de l'archive, doit au préalable :
 
 * Disposer d'un mécanisme permettant de recevoir et d'horodater la demande ;
 * Disposer des moyens techniques de génération de l'archive conformément à la structure de l'archive de Portabilité définie dans le présent guide ;
@@ -46,7 +46,7 @@ Le diagramme ci-dessous illustre le contexte fonctionnel de la transaction Expor
 Diagramme d'activité du processus collaboratif "Export d'archive Portabilité"
 
 
-Il est important de noter que les modalités d'exploitation de l'archive (import dans un système ou consultation directe) sont présentées à titre de contexte et ne relèvent pas du périmètre de la spécification. Seule la transaction de production et de mise à disposition de l'archive de portabilité est spécifiée par le présent guide d'implémentation.
+Il est à noter que les modalités d'exploitation de l'archive (import dans un système ou consultation directe) sont présentées à titre de contexte et ne relèvent pas du périmètre des présentes spécifications. Seule la transaction de production et de mise à disposition de l'archive de portabilité est spécifiée par le présent guide d'implémentation.
 
 | | |
 | :--- | :--- |
@@ -63,11 +63,11 @@ Les modalités détaillées encadrant les opérations d'export (périmètre des 
 
 Le présent guide d'implémentation ne reprend pas ces contraintes et renvoie au référentiel pour toute question relative aux obligations de résultat pesant sur l'éditeur émetteur et l'éditeur destinataire. Les spécifications du présent guide portent exclusivement sur les aspects techniques d'interopérabilité : structure de l'archive de portabilité, formats d'interchange, métadonnées et mécanismes d'intégrité.
 
-#### Concepts métiers utilisés dans le flux d'export d'archive de Portabilité
+#### Modélisation de l'archive de Portabilité
 
 Les concepts métiers portés par ce flux sont présentés dans le diagramme ci-dessous. Les liens cliquables renvoient vers les modèles logiques associés à chacun des objets.
 
-Diagramme des concepts contenus dans le flux "Export d'archive Portabilité"
+Diagramme représentant l'organisation de l'archive de Portabilité"
 
 
 ### Spécifications techniques
@@ -160,7 +160,7 @@ AlternatifFormat accepté à défaut
 
 Le présent volet s'inscrit dans la continuité des travaux du volet Echanges de Documents de Santé (EDS), s'appuyant sur la transaction ITI-32 et la structure d'archive XDM définie par IHE. Il étend toutefois les usages sur deux points essentiels pour répondre aux contraintes de la portabilité des données LGC.
 
-**Une archive chapeau de Portabilite**
+**Une archive chapeau de Portabilite et l'introduction de données Transverse**
 
 Contrairement au volet Echange de Documents de Santé, qui traite le dossier d'un patient unique dans un fichier ZIP unique, la portabilité LGC nécessite de transporter en une seule opération le dossier de plusieurs patients. Le présent volet définit à cet effet une archive chapeau de Portabilité, hors profil XDM, qui encapsule une collection d'archives :
 
@@ -173,10 +173,9 @@ L'archive chapeau porte à sa racine un `MANIFEST.XML`, distinct des `METADATA.X
 
 Contrairement au volet EDS, le présent volet ne restreint pas le mode de transport de l'archive chapeau. Plusieurs modalités sont admises, à la discrétion des acteurs et dans le respect des exigences de sécurité du référentiel (chiffrement, traçabilité, hébergement HDS) :
 
-* mise à disposition via une interface de téléchargement sécurisée ;
-* transfert via une plateforme d'échange HDS ;
-* messagerie sécurisée de santé (MSS);
-* support physique chiffré, à titre exceptionnel et dérogatoire.
+* mise à disposition via une interface de téléchargement chiffrée ;
+* transfert via une plateforme sécurisée d'échange de fichiers ;
+* support physique chiffré, à titre exceptionnel et dérogatoire (volumétrie supérieure à 500Go).
 
 Le choix du mode de transport ne modifie pas la structure de l'archive chapeau de Portabilité, ni le contenu des archives XDM patient. Les spécifications définies dans ce volet s'appliquent indépendamment du canal retenu.
 
@@ -185,11 +184,11 @@ Le choix du mode de transport ne modifie pas la structure de l'archive chapeau d
 | | | | |
 | :--- | :--- | :--- | :--- |
 | **Périmètre patient** | 1 à n patient(s) par archive ZIP.1 unique patient par lot de soumission | 1 patient par archive ZIP | Collection multi-patients (1 archive XDM ZIP par patient) + données transverses (archive ZIP dédiée) |
-| **Structure de l'archive** | `INDEX.HTM`+`README.TXT`+ répertoire`IHE_XDM/`contenant 1 à n`SUBSETnn/`.Chaque répertoire`SUBSETnn/`stocke 1`METADATA.XML`+ des documents | Conforme IHE_XDM.Encapsulation obligatoire de la structure XDM dans une archive`IHE_XDM.ZIP`.Limité à un seul`SUBSET01/` | Archive chapeau`PAAAAAMMJJThhmmss.ZIP`(hors profil IHE_XDM) encapsulant 1`MANIFEST.XML`, 1`README.TXT`, des archives XDM Patient, une archive de donnée transverse et un répertoire de documentation |
+| **Structure de l'archive** | `INDEX.HTM`+`README.TXT`+ répertoire`IHE_XDM/`contenant 1 à n`SUBSETnn/`.Chaque répertoire`SUBSETnn/`stocke 1`METADATA.XML`+ des documents | Conforme IHE_XDM.Encapsulation obligatoire de la structure XDM dans une archive`IHE_XDM.ZIP`.Limité à un seul`SUBSET01/` | Archive chapeau`PAAAAAMMJJThhmmss.ZIP`(hors profil IHE_XDM) encapsulant 1`MANIFEST.XML`, 1`README.TXT`, des archives XDM Patient, une archive de données transverse et un répertoire de documentation |
 | **Fichier de contrôle global** | Non prévu | Non prévu | `MANIFEST.XML`à la racine de l'archive de Portabilité |
-| **Métadonnées documentaires** | `METADATA.XML`par`SUBSET` | `METADATA.XML`par`SUBSET` | `METADATA.XML`par`SUBSET` |
-| **Données transverses** | Autorisées mais non couvertes par le profil | Non prévu | Archive`TRANSVERSE`(agenda, traces, gestion,…) intégrée dans l'archive de portabilité.Construite sur le modèle IHE_XDM |
-| **Mode de transport** | CD-R, USB, ZIP par messagerie | ZIP par messagerie sécurisée de santé (MSSanté) uniquement | Non contraint (téléchargement sécurisé, plateforme HDS, support physique chiffré, email,…) |
+| **Métadonnées documentaires** | `METADATA.XML`par`SUBSET` | `METADATA.XML`par`SUBSET` | `METADATA.XML`par`SUBSET`pour les données Patient |
+| **Données transverses** | Autorisées mais non couvertes par le profil | Non prévu | Archive dédiée`TRANSVERSE`(agenda, traces, gestion,…) intégrée dans l'archive de portabilité. |
+| **Mode de transport** | CD-R, USB, ZIP par messagerie | ZIP par messagerie sécurisée de santé (MSSanté) uniquement | Téléchargement sécurisé, plateforme HDS, support physique chiffré |
 | **Acteur initiateur** | Portable Media Creator | Portable Media Creator | Système émetteur |
 | **Acteur destinataire** | Portable Media Importer | Portable Media Importer | Fournisseur destinataire ou personne physique dans le cas d'une consultation directe (professionnel de santé, patient,…) |
 | **Réponse applicative** | Optionnelle (messagerie uniquement) | Optionnelle | Non couverte par ce volet |

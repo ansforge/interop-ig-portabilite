@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-xdmSourcePatientI
   "name" : "XDMSourcePatientInfo",
   "title" : "XDM SourcePatientInfo",
   "status" : "draft",
-  "date" : "2026-07-30T15:04:16+00:00",
+  "date" : "2026-08-07T08:28:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -67,10 +67,10 @@ Other representations of profile: [CSV](../StructureDefinition-xdmSourcePatientI
       "definition" : "Cette métadonnée contient les traits d’identité du patient concerné par le document, connus par le producteur du document. Les informations présentes dans la métadonnée sourcePatientInfo ne doivent en aucun cas être réutilisées pour calculer un identifiant, ni être mises à jour après la soumission du document.\n\nCette métadonnée reprend la structure du segment PID (Patient Identification) défini par  HL7v2 et l'extension du profil IHE PAM, conformément aux spécifications  : \n- [Extension française du profil IHE PAM](https://www.interopsante.org/publications)\n- [Prise en Charge de l'INS dans les volets du CI-SIS ](https://esante.gouv.fr/annexe-prise-en-charge-de-lins-dans-les-volets-du-ci-sis)"
     },
     {
-      "id" : "xdmSourcePatientInfo.PID3",
-      "path" : "xdmSourcePatientInfo.PID3",
-      "short" : "Liste des identifiants du patient",
-      "definition" : "Liste des identifiants du patient",
+      "id" : "xdmSourcePatientInfo.pid3",
+      "path" : "xdmSourcePatientInfo.pid3",
+      "short" : "Liste des identifiants du patient.",
+      "definition" : "Liste des identifiants du patient.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -78,10 +78,10 @@ Other representations of profile: [CSV](../StructureDefinition-xdmSourcePatientI
       }]
     },
     {
-      "id" : "xdmSourcePatientInfo.PID5",
-      "path" : "xdmSourcePatientInfo.PID5",
-      "short" : "Nom et prénoms du patient",
-      "definition" : "Nom et prénoms du patient",
+      "id" : "xdmSourcePatientInfo.pid5",
+      "path" : "xdmSourcePatientInfo.pid5",
+      "short" : "Nom et prénoms du patient.",
+      "definition" : "Nom et prénoms du patient.",
       "min" : 1,
       "max" : "*",
       "type" : [{
@@ -89,10 +89,10 @@ Other representations of profile: [CSV](../StructureDefinition-xdmSourcePatientI
       }]
     },
     {
-      "id" : "xdmSourcePatientInfo.PID7",
-      "path" : "xdmSourcePatientInfo.PID7",
-      "short" : "Date/heure de naissance du patient",
-      "definition" : "Date/heure de naissance du patient",
+      "id" : "xdmSourcePatientInfo.pid7",
+      "path" : "xdmSourcePatientInfo.pid7",
+      "short" : "Date/heure de naissance du patient. Obligatoire si l'INS est qualifié.",
+      "definition" : "Date/heure de naissance du patient. Obligatoire si l'INS est qualifié.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -100,10 +100,10 @@ Other representations of profile: [CSV](../StructureDefinition-xdmSourcePatientI
       }]
     },
     {
-      "id" : "xdmSourcePatientInfo.PID8",
-      "path" : "xdmSourcePatientInfo.PID8",
-      "short" : "Sexe du patient",
-      "definition" : "Sexe du patient",
+      "id" : "xdmSourcePatientInfo.pid8",
+      "path" : "xdmSourcePatientInfo.pid8",
+      "short" : "Sexe du patient. Obligatoire si l'INS est qualifié.",
+      "definition" : "Sexe du patient. Obligatoire si l'INS est qualifié.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -111,8 +111,8 @@ Other representations of profile: [CSV](../StructureDefinition-xdmSourcePatientI
       }]
     },
     {
-      "id" : "xdmSourcePatientInfo.PID11",
-      "path" : "xdmSourcePatientInfo.PID11",
+      "id" : "xdmSourcePatientInfo.pid11",
+      "path" : "xdmSourcePatientInfo.pid11",
       "short" : "Adresse du patient",
       "definition" : "Adresse du patient",
       "min" : 0,
@@ -122,8 +122,8 @@ Other representations of profile: [CSV](../StructureDefinition-xdmSourcePatientI
       }]
     },
     {
-      "id" : "xdmSourcePatientInfo.PID13",
-      "path" : "xdmSourcePatientInfo.PID13",
+      "id" : "xdmSourcePatientInfo.pid13",
+      "path" : "xdmSourcePatientInfo.pid13",
       "short" : "Téléphone de la résidence du patient",
       "definition" : "Téléphone de la résidence du patient",
       "min" : 0,
@@ -133,8 +133,8 @@ Other representations of profile: [CSV](../StructureDefinition-xdmSourcePatientI
       }]
     },
     {
-      "id" : "xdmSourcePatientInfo.PID14",
-      "path" : "xdmSourcePatientInfo.PID14",
+      "id" : "xdmSourcePatientInfo.pid14",
+      "path" : "xdmSourcePatientInfo.pid14",
       "short" : "Téléphone professionnel du patient",
       "definition" : "Téléphone professionnel du patient",
       "min" : 0,
@@ -144,8 +144,8 @@ Other representations of profile: [CSV](../StructureDefinition-xdmSourcePatientI
       }]
     },
     {
-      "id" : "xdmSourcePatientInfo.PID15",
-      "path" : "xdmSourcePatientInfo.PID15",
+      "id" : "xdmSourcePatientInfo.pid15",
+      "path" : "xdmSourcePatientInfo.pid15",
       "short" : "Langue du patient",
       "definition" : "Langue du patient",
       "min" : 0,
@@ -155,8 +155,8 @@ Other representations of profile: [CSV](../StructureDefinition-xdmSourcePatientI
       }]
     },
     {
-      "id" : "xdmSourcePatientInfo.PID16",
-      "path" : "xdmSourcePatientInfo.PID16",
+      "id" : "xdmSourcePatientInfo.pid16",
+      "path" : "xdmSourcePatientInfo.pid16",
       "short" : "Statut marital du patient",
       "definition" : "Statut marital du patient",
       "min" : 0,
@@ -166,8 +166,8 @@ Other representations of profile: [CSV](../StructureDefinition-xdmSourcePatientI
       }]
     },
     {
-      "id" : "xdmSourcePatientInfo.PID18",
-      "path" : "xdmSourcePatientInfo.PID18",
+      "id" : "xdmSourcePatientInfo.pid18",
+      "path" : "xdmSourcePatientInfo.pid18",
       "short" : "Numéro de compte du patient",
       "definition" : "Numéro de compte du patient",
       "min" : 0,
@@ -177,14 +177,69 @@ Other representations of profile: [CSV](../StructureDefinition-xdmSourcePatientI
       }]
     },
     {
-      "id" : "xdmSourcePatientInfo.PID21",
-      "path" : "xdmSourcePatientInfo.PID21",
+      "id" : "xdmSourcePatientInfo.pid21",
+      "path" : "xdmSourcePatientInfo.pid21",
       "short" : "Identifiant de la mère du patient",
       "definition" : "Identifiant de la mère du patient",
       "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "string"
+      }]
+    },
+    {
+      "id" : "xdmSourcePatientInfo.pid23",
+      "path" : "xdmSourcePatientInfo.pid23",
+      "short" : "Lieu de naissance du patient. Obligatoire si l'INS est qualifié.",
+      "definition" : "Lieu de naissance du patient. Obligatoire si l'INS est qualifié.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "xdmSourcePatientInfo.pid24",
+      "path" : "xdmSourcePatientInfo.pid24",
+      "short" : "Indicateur de naissance multiple.",
+      "definition" : "Indicateur de naissance multiple.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
+      }]
+    },
+    {
+      "id" : "xdmSourcePatientInfo.pid25",
+      "path" : "xdmSourcePatientInfo.pid25",
+      "short" : "Ordre de naissance du patient.",
+      "definition" : "Ordre de naissance du patient.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "integer"
+      }]
+    },
+    {
+      "id" : "xdmSourcePatientInfo.pid29",
+      "path" : "xdmSourcePatientInfo.pid29",
+      "short" : "Date et heure de décès du patient.",
+      "definition" : "Date et heure de décès du patient.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "xdmSourcePatientInfo.pid30",
+      "path" : "xdmSourcePatientInfo.pid30",
+      "short" : "Indicateur de décès du patient.",
+      "definition" : "Indicateur de décès du patient.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "code"
       }]
     }]
   }

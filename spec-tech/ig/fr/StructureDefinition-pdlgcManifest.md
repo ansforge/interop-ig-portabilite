@@ -36,12 +36,6 @@ Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base)
 
 Obligatoire : 0 élément(13 éléments obligatoire(s) imbriqué(s))
 
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [Identifier (http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.3.0)](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-elementdefinition-identifier.html)
-
  **Vue différentielle** 
 
 Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base) 
@@ -62,12 +56,6 @@ Cette structure est dérivée de [Base](http://build.fhir.org/types.html#Base)
 
 Obligatoire : 0 élément(13 éléments obligatoire(s) imbriqué(s))
 
-**Structures**
-
-Cette structure fait référence à ces autres structures:
-
-* [Identifier (http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.3.0)](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-elementdefinition-identifier.html)
-
  
 
 Autres représentations du profil : [CSV](../StructureDefinition-pdlgcManifest.csv), [Excel](../StructureDefinition-pdlgcManifest.xlsx) 
@@ -85,7 +73,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgcManifest.c
   "name" : "PDLGCManifest",
   "title" : "PDLGC Manifest",
   "status" : "draft",
-  "date" : "2026-07-30T15:04:16+00:00",
+  "date" : "2026-08-07T08:28:26+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -234,8 +222,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgcManifest.c
       }]
     },
     {
-      "id" : "pdlgcManifest.Archives",
-      "path" : "pdlgcManifest.Archives",
+      "id" : "pdlgcManifest.archives",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString" : "Archives"
+      }],
+      "path" : "pdlgcManifest.archives",
       "short" : "informations relatives aux archives patients et transverses contenues dans l'archive de portabilité",
       "definition" : "informations relatives aux archives patients et transverses contenues dans l'archive de portabilité",
       "min" : 1,
@@ -245,8 +237,12 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgcManifest.c
       }]
     },
     {
-      "id" : "pdlgcManifest.Archives.Archive",
-      "path" : "pdlgcManifest.Archives.Archive",
+      "id" : "pdlgcManifest.archives.archive",
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/xml-name",
+        "valueString" : "Archive"
+      }],
+      "path" : "pdlgcManifest.archives.archive",
       "short" : "informations relatives à une archive Patient ou Transverse",
       "definition" : "informations relatives à une archive Patient ou Transverse",
       "min" : 1,
@@ -263,20 +259,19 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgcManifest.c
       }]
     },
     {
-      "id" : "pdlgcManifest.Archives.Archive.archiveid",
-      "path" : "pdlgcManifest.Archives.Archive.archiveid",
+      "id" : "pdlgcManifest.archives.archive.archiveid",
+      "path" : "pdlgcManifest.archives.archive.archiveid",
       "short" : "identifiant du répertoire ('PATnnnnn' ou 'TRANSV')",
       "definition" : "identifiant du répertoire ('PATnnnnn' ou 'TRANSV')",
       "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.3.0"]
+        "code" : "Identifier"
       }]
     },
     {
-      "id" : "pdlgcManifest.Archives.Archive.type",
-      "path" : "pdlgcManifest.Archives.Archive.type",
+      "id" : "pdlgcManifest.archives.archive.type",
+      "path" : "pdlgcManifest.archives.archive.type",
       "short" : "PATIENT | TRANSVERSE",
       "definition" : "PATIENT | TRANSVERSE",
       "min" : 1,
@@ -290,8 +285,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgcManifest.c
       }
     },
     {
-      "id" : "pdlgcManifest.Archives.Archive.patientId",
-      "path" : "pdlgcManifest.Archives.Archive.patientId",
+      "id" : "pdlgcManifest.archives.archive.patientId",
+      "path" : "pdlgcManifest.archives.archive.patientId",
       "short" : "Identifiant du Patient s'il s'agit d'une archive XDM Patient",
       "definition" : "Identifiant du Patient s'il s'agit d'une archive XDM Patient",
       "min" : 0,
@@ -301,8 +296,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgcManifest.c
       }]
     },
     {
-      "id" : "pdlgcManifest.Archives.Archive.size",
-      "path" : "pdlgcManifest.Archives.Archive.size",
+      "id" : "pdlgcManifest.archives.archive.size",
+      "path" : "pdlgcManifest.archives.archive.size",
       "short" : "Taille de l'archive zip",
       "definition" : "Taille de l'archive zip",
       "min" : 1,
@@ -312,8 +307,8 @@ Autres représentations du profil : [CSV](../StructureDefinition-pdlgcManifest.c
       }]
     },
     {
-      "id" : "pdlgcManifest.Archives.Archive.hash",
-      "path" : "pdlgcManifest.Archives.Archive.hash",
+      "id" : "pdlgcManifest.archives.archive.hash",
+      "path" : "pdlgcManifest.archives.archive.hash",
       "short" : "Hash SHA-256 de l'archive concernée",
       "definition" : "Hash SHA-256 de l'archive concernée",
       "min" : 1,

@@ -244,18 +244,18 @@
   "name" : "XDMAuthorSubmissionSet"
 },
 {
+  "id" : "xdmCode",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmCode",
+  "version" : "0.1.0",
+  "name" : "XDMCode"
+},
+{
   "id" : "xdmDocumentEntry",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmDocumentEntry",
   "version" : "0.1.0",
   "name" : "XDMDocumentEntry"
-},
-{
-  "id" : "xdmEventCode",
-  "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmEventCode",
-  "version" : "0.1.0",
-  "name" : "XDMEventCode"
 },
 {
   "id" : "xdmPatientId",
@@ -284,6 +284,13 @@
   "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmSubmissionSet",
   "version" : "0.1.0",
   "name" : "XDMSubmissionSet"
+},
+{
+  "id" : "xdmreferenceId",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmreferenceId",
+  "version" : "0.1.0",
+  "name" : "XDMReferenceId"
 },
 {
   "id" : "vs-association-type",

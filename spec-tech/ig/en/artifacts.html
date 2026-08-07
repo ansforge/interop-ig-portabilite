@@ -237,13 +237,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#3">Valeur des identifiants</a>
       </li>
       <li>
-         <a href="#4">Requirements: Actor Definitions</a>
+         <a href="#4">Datatypes XDM</a>
       </li>
       <li>
-         <a href="#5">Terminology: Value Sets</a>
+         <a href="#5">Requirements: Actor Definitions</a>
       </li>
       <li>
-         <a href="#6">Terminology: Code Systems</a>
+         <a href="#6">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#7">Terminology: Code Systems</a>
       </li>
    </ul>
 </div>
@@ -305,7 +308,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <td>
 <p>Cet attribut représente un acteur (humain ou système) ayant contribué au document. Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient.</p>
 
-<p>Type XCN de HL7 v2.5</p>
+<p>Type xcn de HL7 v2.5</p>
 </td>
          </tr>
          <tr>
@@ -417,24 +420,6 @@ Constituée des sous-attributs <strong>authorInstitution</strong>, <strong>autho
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-xdmEventCode.html"
-                  title="StructureDefinition/xdmEventCode">
-                  <span title="StructureDefinition/xdmEventCode">XDM EventCode
-</span>
-               </a>
-            </td>
-            <td>
-<p>Modèle logique d'un eventCode.
-Un EventCode peut contenir le code représentant :</p>
-<ul>
-  <li>un évènement documenté (acte, traitement, diagnostic, etc…),</li>
-  <li>une modalité d’acquisition,</li>
-  <li>une région anatomique.</li>
-</ul>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-xdmPatientId.html"
                   title="StructureDefinition/xdmPatientId">
                   <span title="StructureDefinition/xdmPatientId">XDM PatientId
@@ -444,6 +429,19 @@ Un EventCode peut contenir le code représentant :</p>
             <td>
 <p>Modèle logique de patientID.
 Cette métadonnée contient l'identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange. Le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité. À défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-xdmreferenceId.html"
+                  title="StructureDefinition/xdmreferenceId">
+                  <span title="StructureDefinition/xdmreferenceId">XDM referenceIdList
+</span>
+               </a>
+            </td>
+            <td>
+<p>Modèle logique de referenceIdList.
+Cette métadonnée contient une liste d'un ou plusieurs identifiant(s) d'objet(s) associé(s) au document.Liste d'éléments de type CX du standard HL7 v2.5.</p>
 </td>
          </tr>
          <tr>
@@ -726,6 +724,26 @@ Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.
       </tbody>
    </table>
    <a name="4"> </a>
+   <h3>Datatypes XDM </h3>
+    <p>Datatypes XDM</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-xdmCode.html"
+                  title="StructureDefinition/xdmCode">
+                  <span title="StructureDefinition/xdmCode">Code XDM
+</span>
+               </a>
+            </td>
+            <td>
+<p>Type représentant un concept codé, constitué d'un code, de son libellé et de l'OID du système de codage, portés comme attributs XML. Il ne présente pas lui-même de valeur.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
    <h3>Requirements: Actor Definitions </h3>
     <p>The following artifacts define the types of individuals and/or systems that will interact as part of the use cases covered by this implementation guide.</p>
 <table class="grid">
@@ -766,9 +784,9 @@ Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.
             <td>
 <p>Demandeur de l'export.</p>
 
-<p>Il peut s'agir d'un médecin ou professionnel de santé libéral, responsable du contenu médical transféré.</p>
+<p>Il s'agit d'un professionnel de santé libéral, responsable du contenu médical transféré.</p>
 
-<p>Il peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP)</p>
+<p>Il peut agir à la demande du patient, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP)</p>
 </td>
          </tr>
          <tr>
@@ -782,16 +800,14 @@ Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.
             <td>
 <p>Destinataire de l'export de données de LGC.</p>
 
-<p>Il peut s'agir d'un médecin ou professionnel de santé libéral recevant l'export via son LGC.</p>
+<p>Il s'agit d'un professionnel de santé libéral recevant l'export via son LGC.</p>
 
-<p>Il peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP).</p>
-
-<p>Dans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le destinataire.</p>
+<p>Suivant le contexte de la demande, le professionnel de santé pourra transférer le dossier au patient.</p>
 </td>
          </tr>
       </tbody>
    </table>
-   <a name="5"> </a>
+   <a name="6"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -859,7 +875,7 @@ Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.
          </tr>
       </tbody>
    </table>
-   <a name="6"> </a>
+   <a name="7"> </a>
    <h3>Terminology: Code Systems </h3>
     <p>These define new code systems used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -975,8 +991,8 @@ Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Package ans.fhir.fr.pdlgc#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-07-30 15:04:00 +0000">
-    2026-07-30
+  <span title="2026-08-07 08:28:00 +0000">
+    2026-08-07
   </span>
 
           <br/>
