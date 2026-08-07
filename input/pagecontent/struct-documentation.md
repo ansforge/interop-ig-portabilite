@@ -4,7 +4,7 @@ Cette documentation peut notamment comprendre les fichiers décrits ci-après.
 
 #### Dictionnaire de données
 
-Le dictionnaire de données décrit les données exportées dans un format propriétaire structuré, pour lesquelles il n'existe pas de spécification publique de référence permettant au LGC destinataire d'en déduire la structure et la sémantique. Les données exportées conformément à un volet du CI-SIS ou à un standard publié (CDA R2, FHIR, LOINC…) n'ont pas à faire l'objet d'un dictionnaire de données : le mapping de fichiers renvoie dans ce cas directement aux spécifications applicables.
+Le dictionnaire de données décrit les données exportées dans un format propriétaire structuré, pour lesquelles il n'existe pas de spécification publique de référence. Les données exportées conformément à un volet du CI-SIS ou à un standard publié n'ont pas à faire l'objet d'un dictionnaire de données : le mapping de fichiers renvoie dans ce cas directement aux spécifications applicables.
 
 Pour chaque donnée relevant de son périmètre, le dictionnaire couvre a minima :
 - son intitulé et sa définition métier ;
@@ -34,7 +34,7 @@ Comme pour le dictionnaire de données, les fichiers conformes à un volet CI-SI
 
 #### Jeu d'échantillons
 
-L'éditeur émetteur peut fournir, pour chaque type de document ou de fichier structuré présent dans l'archive, un exemple anonymisé illustrant la structure et le contenu attendus. Ce jeu d'échantillons facilite l'intégration par le système destinataire.
+L'éditeur émetteur peut fournir, pour chaque type de document ou de fichier structuré présent dans l'archive, un exemple anonymisé illustrant la structure et le contenu attendu. Ce jeu d'échantillons facilite l'intégration par le système destinataire.
 
 #### Paramètres de configuration
 
