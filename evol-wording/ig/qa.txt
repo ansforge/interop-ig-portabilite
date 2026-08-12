@@ -2,9 +2,9 @@ PDLGC : Validation Results
 =========================================
 
 err = 0, warn = 13, info = 188
-IG Publisher Version: 2.3.0 Out of date - current version is 2.3.1
-Generated Fri Aug 07 10:12:31 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.pdlgc#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/pdlgc)
- Build Errors : 58 / 3 / 0
+IG Publisher Version: 2.3.1
+Generated Wed Aug 12 09:50:25 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.pdlgc#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/pdlgc)
+ Build Errors : 60 / 3 / 0
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ActorDefinition-PDLGC-Demandeur : 0 / 0 / 3
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ActorDefinition-PDLGC-Destinataire : 0 / 0 / 3
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ActorDefinition-PDLGC-Systeme-Destinataire : 0 / 0 / 3
@@ -81,6 +81,7 @@ ERROR: en/specs-main-structure-archive.html#/html/body/div/div/div/div/div/p/a a
 ERROR: en/specs-main-structure-archive.html#/html/body/div/div/div/div/div/p/a at Line 537, column 63: The link 'StructureDefinition-pdlgc-archive-patient.html' for "ici" cannot be resolved
 ERROR: en/specs-main-structure-archive.html#/html/body/div/div/div/div/div/p/a at Line 552, column 68: The link 'StructureDefinition-pdlgc-index.html' for "ici" cannot be resolved
 ERROR: en/specs-main-structure-archive.html#/html/body/div/div/div/div/div/p/a at Line 572, column 69: The link 'StructureDefinition-pdlgc-readme.html' for "ici" cannot be resolved
+ERROR: en/specs-main-structure-archive.html#/html/body/div/div/div/div/div/p/a at Line 623, column 168: The link '#conventions-nommage' for "conventions de nommage" cannot be resolved (valid targets: 61 targets)
 ERROR: en/specs-main-structure-archive.html#/html/body/div/div/div/div/div/p/a at Line 635, column 71: The link 'StructureDefinition-pdlgc-metadata.html' for "ici" cannot be resolved
 ERROR: en/specs-main-structure-archive.html#/html/body/div/div/div/div/div/p/a at Line 655, column 69: The link 'StructureDefinition-pdlgc-readme.html' for "ici" cannot be resolved
 ERROR: fr/annexe-downloads.html#/html/body/div/div/div/div/div/p/a at Line 232, column 48: The link 'package.tgz' for "téléchargeable ici" cannot be resolved
@@ -110,6 +111,7 @@ ERROR: fr/specs-main-structure-archive.html#/html/body/div/div/div/div/div/p/a a
 ERROR: fr/specs-main-structure-archive.html#/html/body/div/div/div/div/div/p/a at Line 530, column 63: The link 'StructureDefinition-pdlgc-archive-patient.html' for "ici" cannot be resolved
 ERROR: fr/specs-main-structure-archive.html#/html/body/div/div/div/div/div/p/a at Line 545, column 68: The link 'StructureDefinition-pdlgc-index.html' for "ici" cannot be resolved
 ERROR: fr/specs-main-structure-archive.html#/html/body/div/div/div/div/div/p/a at Line 565, column 69: The link 'StructureDefinition-pdlgc-readme.html' for "ici" cannot be resolved
+ERROR: fr/specs-main-structure-archive.html#/html/body/div/div/div/div/div/p/a at Line 616, column 168: The link '#conventions-nommage' for "conventions de nommage" cannot be resolved (valid targets: 61 targets)
 ERROR: fr/specs-main-structure-archive.html#/html/body/div/div/div/div/div/p/a at Line 628, column 71: The link 'StructureDefinition-pdlgc-metadata.html' for "ici" cannot be resolved
 ERROR: fr/specs-main-structure-archive.html#/html/body/div/div/div/div/div/p/a at Line 648, column 69: The link 'StructureDefinition-pdlgc-readme.html' for "ici" cannot be resolved
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml, cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide

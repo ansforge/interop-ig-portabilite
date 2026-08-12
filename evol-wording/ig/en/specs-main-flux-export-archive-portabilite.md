@@ -17,7 +17,7 @@ Le tableau ci-dessous récapitule les acteurs impliqués dans l'export d'une arc
 | [PDLGC Demandeur](ActorDefinition-PDLGC-Demandeur.md) | Personne | Demandeur de l'export.Il s'agit d'un professionnel de santé libéral, responsable du contenu médical transféré.Il peut agir à la demande du patient, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP) |
 | [PDLGC Destinataire](ActorDefinition-PDLGC-Destinataire.md) | Personne | Destinataire de l'export de données de LGC.Il s'agit d'un professionnel de santé libéral recevant l'export via son LGC.Suivant le contexte de la demande, le professionnel de santé pourra transférer le dossier au patient. |
 | [LGC Destinataire](ActorDefinition-PDLGC-Systeme-Destinataire.md) | Système | LGC responsable de la réception et de l'intégration des données contenues dans l'archive de portabilité. |
-| [PDLGC Systeme Emetteur](ActorDefinition-PDLGC-Systeme-Emetteur.md) | Système | LGC responsable de la production et de la mise à disposition de l'archive de portabilité à l'issue d'une demande d'export. |
+| [LGC émetteur](ActorDefinition-PDLGC-Systeme-Emetteur.md) | Système | LGC responsable de la production et de la mise à disposition de l'archive de portabilité à l'issue d'une demande d'export. |
 
 #### Définition du processus collaboratif métier
 
@@ -94,7 +94,7 @@ Les formats standardisés DOIVENT être privilégiés pour les données destiné
 Une archive XDM Patient doit par conséquent contenir :
 
 * un lot de soumission (SUBSET) contenant un ou plusieurs documents structurés ;
-* les mêmes documents médicaux au format PDF/A-1
+* les mêmes documents médicaux au format PDF/A-1.
 
 | | | | | | |
 | :--- | :--- | :--- | :--- | :--- | :--- |

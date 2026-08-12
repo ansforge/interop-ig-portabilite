@@ -75,9 +75,9 @@
     "sources" : ["1.2.250.1.213.1.1.5.461"],
     "uses" : {
     },
+    "StructureDefinition-xdmAuthor.html" : "XDM Author",
     "StructureDefinition-xdmAuthorSubmissionSet.html" : "XDM AuthorSubmissionSet",
-    "StructureDefinition-xdmAuthorDocumentEntry.html" : "XDM AuthorDocumentEntry",
-    "StructureDefinition-xdmAuthor.html" : "XDM Author"
+    "StructureDefinition-xdmAuthorDocumentEntry.html" : "XDM AuthorDocumentEntry"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS",
@@ -202,9 +202,9 @@
     "sources" : ["1.2.250.1.213.1.1.5.124"],
     "uses" : {
     },
+    "StructureDefinition-xdmAuthor.html" : "XDM Author",
     "StructureDefinition-xdmAuthorSubmissionSet.html" : "XDM AuthorSubmissionSet",
-    "StructureDefinition-xdmAuthorDocumentEntry.html" : "XDM AuthorDocumentEntry",
-    "StructureDefinition-xdmAuthor.html" : "XDM Author"
+    "StructureDefinition-xdmAuthorDocumentEntry.html" : "XDM AuthorDocumentEntry"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/JDV_J52-AvailabilityStatus-CISIS/FHIR/JDV-J52-AvailabilityStatus-CISIS",
