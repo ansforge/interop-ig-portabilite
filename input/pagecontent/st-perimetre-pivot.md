@@ -6,7 +6,7 @@ Les formats standardisés DOIVENT être privilégiés pour les données destiné
 
 Une archive XDM Patient doit par conséquent contenir : 
 - un lot de soumission (SUBSET) contenant un ou plusieurs documents structurés ;
-- les mêmes documents médicaux au format PDF/A-1
+- les mêmes documents médicaux au format PDF/A-1.
 
 <br>
 

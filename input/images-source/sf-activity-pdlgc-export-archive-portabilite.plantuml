@@ -13,7 +13,7 @@ start
 
 |**LGC émetteur**\n(Système)|
 :Génère l'archive Portabilité;
-:Met l'archive à disposition\ndu LGC destinataire;
+:Met l'archive à disposition\ndu destinataire;
 
 -[dashed]-> Flux 1 - **ExportArchivePortabilite**;
 
