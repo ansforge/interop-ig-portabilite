@@ -45,9 +45,6 @@
     "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.version": [
       "Basic"
     ],
-    "http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.3.0": [
-      "DocumentEntry.referenceIdList"
-    ],
     "http://hl7.org/fhir/StructureDefinition/regex": [
       "StructureDefinition.snapshot.element.type"
     ],
@@ -58,9 +55,6 @@
       "StructureDefinition"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters": [
-      "ImplementationGuide.definition"
-    ],
-    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
@@ -79,6 +73,10 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
       "StructureDefinition.snapshot"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/xml-name": [
+      "StructureDefinition.differential.element",
+      "StructureDefinition.snapshot.element"
     ]
   }
 }

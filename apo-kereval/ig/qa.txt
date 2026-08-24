@@ -1,84 +1,117 @@
 PDLGC : Validation Results
 =========================================
 
-err = 0, warn = 224, info = 98
-IG Publisher Version: 2.2.10 Out of date - current version is 2.2.11
-Generated Thu Jul 23 13:06:43 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.pdlgc#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/pdlgc)
- Build Errors : 40 / 5 / 0
+err = 0, warn = 13, info = 188
+IG Publisher Version: 2.3.2
+Generated Mon Aug 24 07:28:52 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.pdlgc#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/pdlgc)
+ Build Errors : 58 / 3 / 0
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ActorDefinition-PDLGC-Demandeur : 0 / 0 / 3
  /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ActorDefinition-PDLGC-Destinataire : 0 / 0 / 3
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ActorDefinition-PDLGC-Fournisseur-Destinataire : 0 / 0 / 3
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ActorDefinition-PDLGC-Fournisseur-Sortant : 0 / 0 / 3
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/CodeSystem-cs-association-type : 0 / 3 / 2
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.pdlgc : 0 / 1 / 2
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-ActorPS : 0 / 18 / 3
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-ActorPatient : 0 / 18 / 3
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-ActorSNR : 0 / 18 / 3
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-ActorSystem : 0 / 18 / 5
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-ActorXDS : 0 / 20 / 3
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-Author : 0 / 4 / 7
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-AuthorDocumentEntry : 0 / 3 / 3
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-AuthorInstitution : 0 / 21 / 3
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-AuthorSubmissionSet : 0 / 3 / 3
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-DocumentEntry : 0 / 18 / 24
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-EventCode : 0 / 2 / 3
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-Identifiant : 0 / 0 / 5
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-IdentifiantSysteme : 0 / 0 / 7
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-MatriculeINS : 0 / 0 / 3
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-PSIdNat : 0 / 2 / 5
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-PatientId : 0 / 8 / 3
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-SNR : 0 / 2 / 3
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-SourcePatientId : 0 / 8 / 3
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-SourcePatientInfo : 0 / 22 / 3
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-StructIdNat : 0 / 2 / 3
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-SubmissionSet : 0 / 10 / 7
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-archive-xdm : 0 / 8 / 3
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-association-xdm : 0 / 8 / 5
- /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ValueSet-vs-association-type : 0 / 2 / 2
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ActorDefinition-PDLGC-Systeme-Destinataire : 0 / 0 / 3
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ActorDefinition-PDLGC-Systeme-Emetteur : 0 / 0 / 3
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/CodeSystem-cs-pdlgc-archive-type : 0 / 1 / 3
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/CodeSystem-cs-pdlgc-export-status : 0 / 1 / 3
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/CodeSystem-cs-pdlgc-export-type : 0 / 1 / 3
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/CodeSystem-cs-pdlgc-telecom-type : 0 / 1 / 3
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/CodeSystem-cs-xdm-association-type : 0 / 1 / 3
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.pdlgc : 0 / 0 / 2
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-patId : 0 / 0 / 7
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgcArchivePatient : 0 / 0 / 16
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgcArchivePortabilite : 0 / 0 / 3
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgcArchiveTransverse : 0 / 0 / 7
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgcAuthor : 0 / 0 / 3
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgcContactPortabilite : 0 / 0 / 9
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgcDocumentation : 0 / 0 / 3
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgcIndex : 0 / 0 / 5
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgcManifest : 0 / 0 / 23
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgcMetadata : 0 / 0 / 3
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgcReadme : 0 / 0 / 3
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-pdlgcSoftwareVendor : 0 / 0 / 3
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-psIdNat : 0 / 0 / 8
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-structIdNat : 0 / 0 / 6
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-systIdNat : 0 / 0 / 8
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-xdmActorPatient : 0 / 0 / 7
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-xdmActorPs : 0 / 0 / 5
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-xdmActorSystem : 0 / 0 / 5
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-xdmActorXdsCore : 0 / 0 / 3
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-xdmArchive : 0 / 0 / 3
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-xdmAssociation : 0 / 0 / 5
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-xdmAuthor : 0 / 0 / 7
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-xdmAuthorDocumentEntry : 0 / 0 / 3
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-xdmAuthorInstitution : 0 / 0 / 5
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-xdmAuthorSubmissionSet : 0 / 0 / 3
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-xdmCode : 0 / 0 / 3
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-xdmDocumentEntry : 0 / 0 / 17
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-xdmPatientId : 0 / 0 / 5
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-xdmSourcePatientId : 0 / 0 / 3
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-xdmSourcePatientInfo : 0 / 0 / 3
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-xdmSubmissionSet : 0 / 0 / 7
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/StructureDefinition-xdmreferenceId : 0 / 0 / 5
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ValueSet-vs-association-type : 0 / 1 / 4
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ValueSet-vs-pdlgc-archive-type : 0 / 1 / 4
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ValueSet-vs-pdlgc-export-status : 0 / 1 / 4
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ValueSet-vs-pdlgc-export-type : 0 / 1 / 4
+ /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/fsh-generated/resources/ValueSet-vs-pdlgc-telecom-type : 0 / 1 / 4
 </table>
 == n/a ==
-WARNING: /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/output/en/StructureDefinition-AuthorInstitution.html: Illegal HTML: illegal html element: Slot ( n’est pas transmis.)
-ERROR: en/annexe-downloads.html#/html/body/div/div/div/div/div/p/a at Line 233, column 48: The link 'package.tgz' for "téléchargeable ici" cannot be resolved
-ERROR: en/annexe-downloads.html#/html/body/div/div/div/div/div/p/a at Line 235, column 44: The link 'package.tgz' for "package.tgz" cannot be resolved
-ERROR: en/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 241, column 8: The link 'package.tgz' for "Package (tgz)" cannot be resolved
-ERROR: en/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 247, column 8: The link 'definitions.json.zip' for "Définitions JSON (zip)" cannot be resolved
-ERROR: en/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 248, column 8: The link 'definitions.xml.zip' for "Définitions XML (zip)" cannot be resolved
-ERROR: en/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 249, column 8: The link 'definitions.ttl.zip' for "Définitions Turtle (zip)" cannot be resolved
-ERROR: en/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 255, column 8: The link 'examples.xml.zip' for "Exemples XML (zip)" cannot be resolved
-ERROR: en/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 256, column 8: The link 'examples.json.zip' for "Exemples JSON (zip)" cannot be resolved
-ERROR: en/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 257, column 8: The link 'examples.ttl.zip' for "Exemples Turtle (zip)" cannot be resolved
-ERROR: en/autres_ressources.html#/html/body/div/div/div/div/div/ul/li/a at Line 228, column 8: The link './downloads.html' for "Téléchargements et usage" cannot be resolved
-ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 307, column 68: The link '#contexte-metier-cas-usage' for "cas d'usage" cannot be resolved (valid targets: 67 targets)
-ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 307, column 126: The link '#contexte-metier-definitions' for "définitions" cannot be resolved (valid targets: 67 targets)
-ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 307, column 185: The link '#contexte-metier-cadre-juridique' for "cadre juridique" cannot be resolved (valid targets: 67 targets)
-ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 307, column 260: The link '#contexte-metier-orga-processus' for "organisation des processus collaboratifs" cannot be resolved (valid targets: 67 targets)
-ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 307, column 354: The link '#contexte-metier-acteurs' for "acteurs impliqués" cannot be resolved (valid targets: 67 targets)
-ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 314, column 17: The link '#specifications' for "Spécifications" cannot be resolved (valid targets: 67 targets)
-ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 323, column 17: The link '#artifacts' for "Ressources de conformité" cannot be resolved (valid targets: 67 targets)
-ERROR: en/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 330, column 12: The link '#annexes' for "section" cannot be resolved (valid targets: 67 targets)
-ERROR: en/index.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 462, column 2405: The link 'specifications.html' for "Export d'archive de portabilité" cannot be resolved
-ERROR: en/sf-etude-fonctionnelle.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 374, column 188: The link 'sf-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved
-WARNING: /__w/interop-ig-portabilite/interop-ig-portabilite/igSource/output/fr/StructureDefinition-AuthorInstitution.html: Illegal HTML: illegal html element: Slot ( n’est pas transmis.)
-ERROR: fr/annexe-downloads.html#/html/body/div/div/div/div/div/p/a at Line 226, column 48: The link 'package.tgz' for "téléchargeable ici" cannot be resolved
-ERROR: fr/annexe-downloads.html#/html/body/div/div/div/div/div/p/a at Line 228, column 44: The link 'package.tgz' for "package.tgz" cannot be resolved
-ERROR: fr/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 234, column 8: The link 'package.tgz' for "Package (tgz)" cannot be resolved
-ERROR: fr/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 240, column 8: The link 'definitions.json.zip' for "Définitions JSON (zip)" cannot be resolved
-ERROR: fr/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 241, column 8: The link 'definitions.xml.zip' for "Définitions XML (zip)" cannot be resolved
-ERROR: fr/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 242, column 8: The link 'definitions.ttl.zip' for "Définitions Turtle (zip)" cannot be resolved
-ERROR: fr/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 248, column 8: The link 'examples.xml.zip' for "Exemples XML (zip)" cannot be resolved
-ERROR: fr/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 249, column 8: The link 'examples.json.zip' for "Exemples JSON (zip)" cannot be resolved
-ERROR: fr/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 250, column 8: The link 'examples.ttl.zip' for "Exemples Turtle (zip)" cannot be resolved
-ERROR: fr/autres_ressources.html#/html/body/div/div/div/div/div/ul/li/a at Line 221, column 8: The link './downloads.html' for "Téléchargements et usage" cannot be resolved
-ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 300, column 68: The link '#contexte-metier-cas-usage' for "cas d'usage" cannot be resolved (valid targets: 67 targets)
-ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 300, column 126: The link '#contexte-metier-definitions' for "définitions" cannot be resolved (valid targets: 67 targets)
-ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 300, column 185: The link '#contexte-metier-cadre-juridique' for "cadre juridique" cannot be resolved (valid targets: 67 targets)
-ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 300, column 260: The link '#contexte-metier-orga-processus' for "organisation des processus collaboratifs" cannot be resolved (valid targets: 67 targets)
-ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 300, column 354: The link '#contexte-metier-acteurs' for "acteurs impliqués" cannot be resolved (valid targets: 67 targets)
-ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 307, column 17: The link '#specifications' for "Spécifications" cannot be resolved (valid targets: 67 targets)
-ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 316, column 17: The link '#artifacts' for "Ressources de conformité" cannot be resolved (valid targets: 67 targets)
-ERROR: fr/index.html#/html/body/div/div/div/div/div/div/ul/a at Line 323, column 12: The link '#annexes' for "section" cannot be resolved (valid targets: 67 targets)
-ERROR: fr/index.html#/html/body/div/div/div/div/div/figure/svg/g/g/a at Line 455, column 2405: The link 'specifications.html' for "Export d'archive de portabilité" cannot be resolved
-ERROR: fr/sf-etude-fonctionnelle.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 367, column 188: The link 'sf-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved
+ERROR: en/annexe-downloads.html#/html/body/div/div/div/div/div/p/a at Line 239, column 48: The link 'package.tgz' for "téléchargeable ici" cannot be resolved
+ERROR: en/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 245, column 8: The link 'package.tgz' for "Package (tgz)" cannot be resolved
+ERROR: en/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 251, column 8: The link 'definitions.json.zip' for "Définitions JSON (zip)" cannot be resolved
+ERROR: en/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 252, column 8: The link 'definitions.xml.zip' for "Définitions XML (zip)" cannot be resolved
+ERROR: en/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 253, column 8: The link 'definitions.ttl.zip' for "Définitions Turtle (zip)" cannot be resolved
+ERROR: en/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 259, column 8: The link 'examples.xml.zip' for "Exemples XML (zip)" cannot be resolved
+ERROR: en/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 260, column 8: The link 'examples.json.zip' for "Exemples JSON (zip)" cannot be resolved
+ERROR: en/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 261, column 8: The link 'examples.ttl.zip' for "Exemples Turtle (zip)" cannot be resolved
+ERROR: en/autres_ressources.html#/html/body/div/div/div/div/div/ul/li/a at Line 238, column 8: The link './downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 366, column 619: The link 'StructureDefinition-pdlgcArchivePortabilite' for "Archive de portabilité" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 366, column 1492: The link 'StructureDefinition-pdlgcManifest' for "MANIFEST.XML" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 366, column 2461: The link 'StructureDefinition-pdlgcReadme' for "README.TXT" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 366, column 3855: The link 'StructureDefinition-pdlgcDocumentation' for "Documentation d'export" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 366, column 7106: The link 'StructureDefinition-pdlgcArchiveTransverse' for "Archive de données transverses" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 366, column 7992: The link 'StructureDefinition-pdlgcReadme' for "README.TXT" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 366, column 9268: The link 'st-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 366, column 10988: The link 'StructureDefinition-pdlgcArchivePatient' for "Archive XDM patient" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 366, column 11848: The link 'StructureDefinition-pdlgcReadme' for "README.TXT" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 366, column 12814: The link 'StructureDefinition-pdlgcIndex' for "INDEX.HTM" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 366, column 15225: The link 'StructureDefinition-pdlgcMetadata' for "METADATA.XML" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 366, column 16222: The link 'st-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved
+ERROR: en/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/p/a at Line 389, column 72: The link 'specs-main-structure-archive' for "Structure de l'archive de Portabilité" cannot be resolved
+ERROR: en/specs-main-structure-archive.html#/html/body/div/div/div/div/div/p/a at Line 338, column 129: The link 'StructureDefinition-pdlgc-manifest.html' for "ici" cannot be resolved
+ERROR: en/specs-main-structure-archive.html#/html/body/div/div/div/div/div/p/a at Line 420, column 127: The link 'StructureDefinition-pdlgc-readme.html' for "ici" cannot be resolved
+ERROR: en/specs-main-structure-archive.html#/html/body/div/div/div/div/div/p/a at Line 537, column 63: The link 'StructureDefinition-pdlgc-archive-patient.html' for "ici" cannot be resolved
+ERROR: en/specs-main-structure-archive.html#/html/body/div/div/div/div/div/p/a at Line 552, column 68: The link 'StructureDefinition-pdlgc-index.html' for "ici" cannot be resolved
+ERROR: en/specs-main-structure-archive.html#/html/body/div/div/div/div/div/p/a at Line 572, column 69: The link 'StructureDefinition-pdlgc-readme.html' for "ici" cannot be resolved
+ERROR: en/specs-main-structure-archive.html#/html/body/div/div/div/div/div/p/a at Line 635, column 71: The link 'StructureDefinition-pdlgc-metadata.html' for "ici" cannot be resolved
+ERROR: en/specs-main-structure-archive.html#/html/body/div/div/div/div/div/p/a at Line 655, column 69: The link 'StructureDefinition-pdlgc-readme.html' for "ici" cannot be resolved
+ERROR: fr/annexe-downloads.html#/html/body/div/div/div/div/div/p/a at Line 232, column 48: The link 'package.tgz' for "téléchargeable ici" cannot be resolved
+ERROR: fr/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 238, column 8: The link 'package.tgz' for "Package (tgz)" cannot be resolved
+ERROR: fr/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 244, column 8: The link 'definitions.json.zip' for "Définitions JSON (zip)" cannot be resolved
+ERROR: fr/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 245, column 8: The link 'definitions.xml.zip' for "Définitions XML (zip)" cannot be resolved
+ERROR: fr/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 246, column 8: The link 'definitions.ttl.zip' for "Définitions Turtle (zip)" cannot be resolved
+ERROR: fr/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 252, column 8: The link 'examples.xml.zip' for "Exemples XML (zip)" cannot be resolved
+ERROR: fr/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 253, column 8: The link 'examples.json.zip' for "Exemples JSON (zip)" cannot be resolved
+ERROR: fr/annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 254, column 8: The link 'examples.ttl.zip' for "Exemples Turtle (zip)" cannot be resolved
+ERROR: fr/autres_ressources.html#/html/body/div/div/div/div/div/ul/li/a at Line 231, column 8: The link './downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 359, column 619: The link 'StructureDefinition-pdlgcArchivePortabilite' for "Archive de portabilité" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 359, column 1492: The link 'StructureDefinition-pdlgcManifest' for "MANIFEST.XML" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 359, column 2461: The link 'StructureDefinition-pdlgcReadme' for "README.TXT" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 359, column 3855: The link 'StructureDefinition-pdlgcDocumentation' for "Documentation d'export" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 359, column 7106: The link 'StructureDefinition-pdlgcArchiveTransverse' for "Archive de données transverses" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 359, column 7992: The link 'StructureDefinition-pdlgcReadme' for "README.TXT" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 359, column 9268: The link 'st-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 359, column 10988: The link 'StructureDefinition-pdlgcArchivePatient' for "Archive XDM patient" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 359, column 11848: The link 'StructureDefinition-pdlgcReadme' for "README.TXT" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 359, column 12814: The link 'StructureDefinition-pdlgcIndex' for "INDEX.HTM" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 359, column 15225: The link 'StructureDefinition-pdlgcMetadata' for "METADATA.XML" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/figure/svg/g/a at Line 359, column 16222: The link 'st-perimetre-pivot.html' for "Périmètre pivot" cannot be resolved
+ERROR: fr/specs-main-flux-export-archive-portabilite.html#/html/body/div/div/div/div/div/p/a at Line 382, column 72: The link 'specs-main-structure-archive' for "Structure de l'archive de Portabilité" cannot be resolved
+ERROR: fr/specs-main-structure-archive.html#/html/body/div/div/div/div/div/p/a at Line 331, column 129: The link 'StructureDefinition-pdlgc-manifest.html' for "ici" cannot be resolved
+ERROR: fr/specs-main-structure-archive.html#/html/body/div/div/div/div/div/p/a at Line 413, column 127: The link 'StructureDefinition-pdlgc-readme.html' for "ici" cannot be resolved
+ERROR: fr/specs-main-structure-archive.html#/html/body/div/div/div/div/div/p/a at Line 530, column 63: The link 'StructureDefinition-pdlgc-archive-patient.html' for "ici" cannot be resolved
+ERROR: fr/specs-main-structure-archive.html#/html/body/div/div/div/div/div/p/a at Line 545, column 68: The link 'StructureDefinition-pdlgc-index.html' for "ici" cannot be resolved
+ERROR: fr/specs-main-structure-archive.html#/html/body/div/div/div/div/div/p/a at Line 565, column 69: The link 'StructureDefinition-pdlgc-readme.html' for "ici" cannot be resolved
+ERROR: fr/specs-main-structure-archive.html#/html/body/div/div/div/div/div/p/a at Line 628, column 71: The link 'StructureDefinition-pdlgc-metadata.html' for "ici" cannot be resolved
+ERROR: fr/specs-main-structure-archive.html#/html/body/div/div/div/div/div/p/a at Line 648, column 69: The link 'StructureDefinition-pdlgc-readme.html' for "ici" cannot be resolved
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml, cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: An HTML fragment from the set [globals-table.xhtml, globals-table.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 5: An HTML fragment from the set [expansion-params.xhtml, expansion-params.xhtml] is not included anywhere in the produced implementation guide
@@ -88,344 +121,242 @@ INFORMATION: Resource: The resource ActorDefinition/PDLGC-Demandeur could useful
 == fsh-generated/resources/ActorDefinition-PDLGC-Destinataire.json ==
 INFORMATION: ActorDefinition/PDLGC-Destinataire: ActorDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
 INFORMATION: Resource: The resource ActorDefinition/PDLGC-Destinataire could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/ActorDefinition-PDLGC-Fournisseur-Destinataire.json ==
-INFORMATION: ActorDefinition/PDLGC-Fournisseur-Destinataire: ActorDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
-INFORMATION: Resource: The resource ActorDefinition/PDLGC-Fournisseur-Destinataire could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/ActorDefinition-PDLGC-Fournisseur-Sortant.json ==
-INFORMATION: ActorDefinition/PDLGC-Fournisseur-Sortant: ActorDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
-INFORMATION: Resource: The resource ActorDefinition/PDLGC-Fournisseur-Sortant could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/CodeSystem-cs-association-type.json ==
-INFORMATION: CodeSystem/cs-association-type: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/cs-association-type: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
-WARNING: CodeSystem/cs-association-type: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
-WARNING: Resource: The resource CodeSystem/cs-association-type should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/ActorDefinition-PDLGC-Systeme-Destinataire.json ==
+INFORMATION: ActorDefinition/PDLGC-Systeme-Destinataire: ActorDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
+INFORMATION: Resource: The resource ActorDefinition/PDLGC-Systeme-Destinataire could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/ActorDefinition-PDLGC-Systeme-Emetteur.json ==
+INFORMATION: ActorDefinition/PDLGC-Systeme-Emetteur: ActorDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
+INFORMATION: Resource: The resource ActorDefinition/PDLGC-Systeme-Emetteur could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/CodeSystem-cs-pdlgc-archive-type.json ==
+INFORMATION: CodeSystem.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablecodesystem to 4.0.1
+WARNING: Resource: The resource CodeSystem/cs-pdlgc-archive-type should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/CodeSystem-cs-pdlgc-export-status.json ==
+INFORMATION: CodeSystem.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablecodesystem to 4.0.1
+WARNING: Resource: The resource CodeSystem/cs-pdlgc-export-status should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/CodeSystem-cs-pdlgc-export-type.json ==
+INFORMATION: CodeSystem.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablecodesystem to 4.0.1
+WARNING: Resource: The resource CodeSystem/cs-pdlgc-export-type should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/CodeSystem-cs-pdlgc-telecom-type.json ==
+INFORMATION: CodeSystem.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablecodesystem to 4.0.1
+WARNING: Resource: The resource CodeSystem/cs-pdlgc-telecom-type should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/CodeSystem-cs-xdm-association-type.json ==
+INFORMATION: CodeSystem.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablecodesystem to 4.0.1
+WARNING: Resource: The resource CodeSystem/cs-xdm-association-type should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.pdlgc.json ==
-WARNING: ImplementationGuide/ans.fhir.fr.pdlgc: ImplementationGuide.definition.resource[1].description: value should not start or finish with whitespace '\nCet attribut représente un acteur PS.'
 INFORMATION: Resource: The resource ImplementationGuide/ans.fhir.fr.pdlgc could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/StructureDefinition-ActorPS.json ==
-INFORMATION: StructureDefinition.baseDefinition: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/ActorXDS to 0.1.0
-WARNING: StructureDefinition/ActorPS: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorPS: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorPS: StructureDefinition.snapshot.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorPS: StructureDefinition.snapshot.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorPS: StructureDefinition.snapshot.element[5].short: value should not start or finish with whitespace ' Autorité d’affectation'
-WARNING: StructureDefinition/ActorPS: StructureDefinition.snapshot.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorPS: StructureDefinition.snapshot.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorPS: StructureDefinition.snapshot.element[7]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorPS: StructureDefinition.snapshot.element[8]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorPS: StructureDefinition.snapshot.element[9]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorPS: StructureDefinition.snapshot.element[10]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorPS: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorPS: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorPS: StructureDefinition.differential.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorPS: StructureDefinition.differential.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorPS: StructureDefinition.differential.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorPS: StructureDefinition.differential.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorPS: StructureDefinition.differential.element[7]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-INFORMATION: Resource: The resource StructureDefinition/ActorPS could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/StructureDefinition-ActorPatient.json ==
-INFORMATION: StructureDefinition.baseDefinition: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/ActorXDS to 0.1.0
-WARNING: StructureDefinition/ActorPatient: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorPatient: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorPatient: StructureDefinition.snapshot.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorPatient: StructureDefinition.snapshot.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorPatient: StructureDefinition.snapshot.element[5].short: value should not start or finish with whitespace ' Autorité d’affectation'
-WARNING: StructureDefinition/ActorPatient: StructureDefinition.snapshot.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorPatient: StructureDefinition.snapshot.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorPatient: StructureDefinition.snapshot.element[7]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorPatient: StructureDefinition.snapshot.element[8]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorPatient: StructureDefinition.snapshot.element[9]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorPatient: StructureDefinition.snapshot.element[10]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorPatient: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorPatient: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorPatient: StructureDefinition.differential.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorPatient: StructureDefinition.differential.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorPatient: StructureDefinition.differential.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorPatient: StructureDefinition.differential.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorPatient: StructureDefinition.differential.element[7]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-INFORMATION: Resource: The resource StructureDefinition/ActorPatient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/StructureDefinition-ActorSNR.json ==
-INFORMATION: StructureDefinition.baseDefinition: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/ActorXDS to 0.1.0
-WARNING: StructureDefinition/ActorSNR: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorSNR: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorSNR: StructureDefinition.snapshot.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorSNR: StructureDefinition.snapshot.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorSNR: StructureDefinition.snapshot.element[5].short: value should not start or finish with whitespace ' Autorité d’affectation'
-WARNING: StructureDefinition/ActorSNR: StructureDefinition.snapshot.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorSNR: StructureDefinition.snapshot.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorSNR: StructureDefinition.snapshot.element[7]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorSNR: StructureDefinition.snapshot.element[8]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorSNR: StructureDefinition.snapshot.element[9]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorSNR: StructureDefinition.snapshot.element[10]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorSNR: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorSNR: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorSNR: StructureDefinition.differential.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorSNR: StructureDefinition.differential.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorSNR: StructureDefinition.differential.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorSNR: StructureDefinition.differential.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorSNR: StructureDefinition.differential.element[7]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-INFORMATION: Resource: The resource StructureDefinition/ActorSNR could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/StructureDefinition-ActorSystem.json ==
-INFORMATION: StructureDefinition.baseDefinition: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/ActorXDS to 0.1.0
-INFORMATION: StructureDefinition.snapshot.element[2].type[0].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/IdentifiantSysteme to 0.1.0
-INFORMATION: StructureDefinition.differential.element[2].type[0].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/IdentifiantSysteme to 0.1.0
-WARNING: StructureDefinition/ActorSystem: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorSystem: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorSystem: StructureDefinition.snapshot.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorSystem: StructureDefinition.snapshot.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorSystem: StructureDefinition.snapshot.element[5].short: value should not start or finish with whitespace ' Autorité d’affectation'
-WARNING: StructureDefinition/ActorSystem: StructureDefinition.snapshot.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorSystem: StructureDefinition.snapshot.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorSystem: StructureDefinition.snapshot.element[7]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorSystem: StructureDefinition.snapshot.element[8]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorSystem: StructureDefinition.snapshot.element[9]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorSystem: StructureDefinition.snapshot.element[10]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorSystem: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorSystem: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorSystem: StructureDefinition.differential.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorSystem: StructureDefinition.differential.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorSystem: StructureDefinition.differential.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorSystem: StructureDefinition.differential.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorSystem: StructureDefinition.differential.element[7]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-INFORMATION: Resource: The resource StructureDefinition/ActorSystem could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/StructureDefinition-ActorXDS.json ==
-INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
-WARNING: StructureDefinition/ActorXDS: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorXDS: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorXDS: StructureDefinition.snapshot.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorXDS: StructureDefinition.snapshot.element[4].short: value should not start or finish with whitespace ' Autorité d’affectation'
-WARNING: StructureDefinition/ActorXDS: StructureDefinition.snapshot.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorXDS: StructureDefinition.snapshot.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorXDS: StructureDefinition.snapshot.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorXDS: StructureDefinition.snapshot.element[7]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorXDS: StructureDefinition.snapshot.element[8]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorXDS: StructureDefinition.snapshot.element[9]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorXDS: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorXDS: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorXDS: StructureDefinition.differential.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorXDS: StructureDefinition.differential.element[4].short: value should not start or finish with whitespace ' Autorité d’affectation'
-WARNING: StructureDefinition/ActorXDS: StructureDefinition.differential.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorXDS: StructureDefinition.differential.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorXDS: StructureDefinition.differential.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorXDS: StructureDefinition.differential.element[7]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorXDS: StructureDefinition.differential.element[8]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/ActorXDS: StructureDefinition.differential.element[9]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-INFORMATION: Resource: The resource StructureDefinition/ActorXDS could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/StructureDefinition-Author.json ==
-INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[3].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J47-FunctionCode-CISIS/FHIR/JDV-J47-FunctionCode-CISIS to 20250523120000
-INFORMATION: StructureDefinition.snapshot.element[4].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS to 20260505120000
-INFORMATION: StructureDefinition.differential.element[3].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J47-FunctionCode-CISIS/FHIR/JDV-J47-FunctionCode-CISIS to 20250523120000
-INFORMATION: StructureDefinition.differential.element[4].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS to 20260505120000
-WARNING: StructureDefinition/Author: StructureDefinition.snapshot.element[3].short: value should not start or finish with whitespace 'Cet attribut représente le rôle fonctionnel joué par l’auteur vis-à-vis du patient/usager lors de la création du document, c'est-à-dire à quel titre l’auteur est intervenu vis-à-vis du patient (ex : médecin traitant, Responsable de l'admission, Membre de l'équipe de soins, etc.). '
-WARNING: StructureDefinition/Author: StructureDefinition.snapshot.element[4].short: value should not start or finish with whitespace 'Cet attribut représente la profession éventuellement associée au savoir-faire de l’auteur professionnel caractérisé par sa profession ou la profession associée au genre d’activité pour l’auteur professionnel caractérisé par son rôle. '
-WARNING: StructureDefinition/Author: StructureDefinition.differential.element[3].short: value should not start or finish with whitespace 'Cet attribut représente le rôle fonctionnel joué par l’auteur vis-à-vis du patient/usager lors de la création du document, c'est-à-dire à quel titre l’auteur est intervenu vis-à-vis du patient (ex : médecin traitant, Responsable de l'admission, Membre de l'équipe de soins, etc.). '
-WARNING: StructureDefinition/Author: StructureDefinition.differential.element[4].short: value should not start or finish with whitespace 'Cet attribut représente la profession éventuellement associée au savoir-faire de l’auteur professionnel caractérisé par sa profession ou la profession associée au genre d’activité pour l’auteur professionnel caractérisé par son rôle. '
-INFORMATION: Resource: The resource StructureDefinition/Author could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/StructureDefinition-AuthorDocumentEntry.json ==
-INFORMATION: StructureDefinition.baseDefinition: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/Author to 0.1.0
-WARNING: StructureDefinition/AuthorDocumentEntry: StructureDefinition.snapshot.element[2].short: value should not start or finish with whitespace 'Cet attribut représente l’auteur (humain ou système) ayant contribué au document. Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient.  '
-WARNING: StructureDefinition/AuthorDocumentEntry: StructureDefinition.snapshot.element[4].short: value should not start or finish with whitespace 'Cet attribut représente la profession éventuellement associée au savoir-faire de l’auteur professionnel caractérisé par sa profession ou la profession associée au genre d’activité pour l’auteur professionnel caractérisé par son rôle. '
-WARNING: StructureDefinition/AuthorDocumentEntry: StructureDefinition.differential.element[2].short: value should not start or finish with whitespace 'Cet attribut représente l’auteur (humain ou système) ayant contribué au document. Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient.  '
-INFORMATION: Resource: The resource StructureDefinition/AuthorDocumentEntry could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/StructureDefinition-AuthorInstitution.json ==
-INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
-WARNING: StructureDefinition/AuthorInstitution: StructureDefinition.snapshot.element[1].example[1].value.ofType(string): value should not start or finish with whitespace 'CABINET MEDICAL DR DURANT '
-WARNING: StructureDefinition/AuthorInstitution: StructureDefinition.snapshot.element[1].example[2].value.ofType(string): value should not start or finish with whitespace 'NOM EDITEUR '
-WARNING: StructureDefinition/AuthorInstitution: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/AuthorInstitution: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/AuthorInstitution: StructureDefinition.snapshot.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/AuthorInstitution: StructureDefinition.snapshot.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/AuthorInstitution: StructureDefinition.snapshot.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/AuthorInstitution: StructureDefinition.snapshot.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/AuthorInstitution: StructureDefinition.snapshot.element[7].short: value should not start or finish with whitespace ' Identifiant de la structure (Struct_IdNat)'
-WARNING: StructureDefinition/AuthorInstitution: StructureDefinition.snapshot.element[7]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/AuthorInstitution: StructureDefinition.differential.element[1].example[1].value.ofType(string): value should not start or finish with whitespace 'CABINET MEDICAL DR DURANT '
-WARNING: StructureDefinition/AuthorInstitution: StructureDefinition.differential.element[1].example[2].value.ofType(string): value should not start or finish with whitespace 'NOM EDITEUR '
-WARNING: StructureDefinition/AuthorInstitution: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/AuthorInstitution: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/AuthorInstitution: StructureDefinition.differential.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/AuthorInstitution: StructureDefinition.differential.element[4].mapping[1].map: value should not start or finish with whitespace 'NA '
-WARNING: StructureDefinition/AuthorInstitution: StructureDefinition.differential.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/AuthorInstitution: StructureDefinition.differential.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/AuthorInstitution: StructureDefinition.differential.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/AuthorInstitution: StructureDefinition.differential.element[7].short: value should not start or finish with whitespace ' Identifiant de la structure (Struct_IdNat)'
-WARNING: StructureDefinition/AuthorInstitution: StructureDefinition.differential.element[7]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-INFORMATION: Resource: The resource StructureDefinition/AuthorInstitution could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/StructureDefinition-AuthorSubmissionSet.json ==
-INFORMATION: StructureDefinition.baseDefinition: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/Author to 0.1.0
-WARNING: StructureDefinition/AuthorSubmissionSet: StructureDefinition.snapshot.element[2].short: value should not start or finish with whitespace 'Cette métadonnée représente la personne physique ou le système émetteur du lot de soumission.Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient.  '
-WARNING: StructureDefinition/AuthorSubmissionSet: StructureDefinition.snapshot.element[4].short: value should not start or finish with whitespace 'Cet attribut représente la profession éventuellement associée au savoir-faire de l’auteur professionnel caractérisé par sa profession ou la profession associée au genre d’activité pour l’auteur professionnel caractérisé par son rôle. '
-WARNING: StructureDefinition/AuthorSubmissionSet: StructureDefinition.differential.element[2].short: value should not start or finish with whitespace 'Cette métadonnée représente la personne physique ou le système émetteur du lot de soumission.Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient.  '
-INFORMATION: Resource: The resource StructureDefinition/AuthorSubmissionSet could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/StructureDefinition-DocumentEntry.json ==
-INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[4].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J52-AvailabilityStatus-CISIS/FHIR/JDV-J52-AvailabilityStatus-CISIS to 20200424120000
-INFORMATION: StructureDefinition.snapshot.element[20].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS to 20230922120000
-INFORMATION: StructureDefinition.snapshot.element[21].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J58-ConfidentialityCode-DMP/FHIR/JDV-J58-ConfidentialityCode-DMP to 20200424120000
-INFORMATION: StructureDefinition.snapshot.element[23].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS to 20260629120000
-INFORMATION: StructureDefinition.snapshot.element[24].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS to 20260223120000
-INFORMATION: StructureDefinition.snapshot.element[25].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS to 20240927120000
-INFORMATION: StructureDefinition.snapshot.element[26].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS to 20260629120000
-INFORMATION: StructureDefinition.snapshot.element[31].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier to 5.3.0
-INFORMATION: StructureDefinition.snapshot.element[32].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier to 5.3.0
-INFORMATION: StructureDefinition.snapshot.element[33].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J197-XdsTypesIdentifiantsReferenceId-CISIS/FHIR/JDV-J197-XdsTypesIdentifiantsReferenceId-CISIS to 20220624120000
-INFORMATION: StructureDefinition.differential.element[4].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J52-AvailabilityStatus-CISIS/FHIR/JDV-J52-AvailabilityStatus-CISIS to 20200424120000
-INFORMATION: StructureDefinition.differential.element[20].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS to 20230922120000
-INFORMATION: StructureDefinition.differential.element[21].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J58-ConfidentialityCode-DMP/FHIR/JDV-J58-ConfidentialityCode-DMP to 20200424120000
-INFORMATION: StructureDefinition.differential.element[23].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS to 20260629120000
-INFORMATION: StructureDefinition.differential.element[24].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS to 20260223120000
-INFORMATION: StructureDefinition.differential.element[25].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS to 20240927120000
-INFORMATION: StructureDefinition.differential.element[26].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS to 20260629120000
-INFORMATION: StructureDefinition.differential.element[31].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier to 5.3.0
-INFORMATION: StructureDefinition.differential.element[32].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier to 5.3.0
-INFORMATION: StructureDefinition.differential.element[33].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J197-XdsTypesIdentifiantsReferenceId-CISIS/FHIR/JDV-J197-XdsTypesIdentifiantsReferenceId-CISIS to 20220624120000
-WARNING: StructureDefinition/DocumentEntry: StructureDefinition.snapshot.element[4].short: value should not start or finish with whitespace 'Cette métadonnée représente la pertinence de la version de la fiche d'un document. '
-WARNING: StructureDefinition/DocumentEntry: StructureDefinition.snapshot.element[15]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/DocumentEntry: StructureDefinition.snapshot.element[19].short: value should not start or finish with whitespace 'Identifiant unique affecté au document par son créateur. '
-WARNING: StructureDefinition/DocumentEntry: StructureDefinition.snapshot.element[22].short: value should not start or finish with whitespace 'Cette métadonnée contient les codes, libellés et codes système représentant :  -un évènement documenté (acte, traitement, diagnostic, etc…), -une modalité d'acquisition (contexte imagerie), -une région anatomique (contexte imagerie). '
-WARNING: StructureDefinition/DocumentEntry: StructureDefinition.snapshot.element[24].short: value should not start or finish with whitespace 'Secteur d'activité lié à la prise en charge de la personne, en lien avec le document produit. '
-WARNING: StructureDefinition/DocumentEntry: StructureDefinition.snapshot.element[25].short: value should not start or finish with whitespace 'Contexte de l’acte qui a engendré la création du document. '
-WARNING: StructureDefinition/DocumentEntry: StructureDefinition.snapshot.element[31]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/DocumentEntry: StructureDefinition.snapshot.element[32]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/DocumentEntry: StructureDefinition.snapshot.element[33]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/DocumentEntry: StructureDefinition.differential.element[4].short: value should not start or finish with whitespace 'Cette métadonnée représente la pertinence de la version de la fiche d'un document. '
-WARNING: StructureDefinition/DocumentEntry: StructureDefinition.differential.element[15]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/DocumentEntry: StructureDefinition.differential.element[19].short: value should not start or finish with whitespace 'Identifiant unique affecté au document par son créateur. '
-WARNING: StructureDefinition/DocumentEntry: StructureDefinition.differential.element[22].short: value should not start or finish with whitespace 'Cette métadonnée contient les codes, libellés et codes système représentant :  -un évènement documenté (acte, traitement, diagnostic, etc…), -une modalité d'acquisition (contexte imagerie), -une région anatomique (contexte imagerie). '
-WARNING: StructureDefinition/DocumentEntry: StructureDefinition.differential.element[24].short: value should not start or finish with whitespace 'Secteur d'activité lié à la prise en charge de la personne, en lien avec le document produit. '
-WARNING: StructureDefinition/DocumentEntry: StructureDefinition.differential.element[25].short: value should not start or finish with whitespace 'Contexte de l’acte qui a engendré la création du document. '
-WARNING: StructureDefinition/DocumentEntry: StructureDefinition.differential.element[31]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/DocumentEntry: StructureDefinition.differential.element[32]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/DocumentEntry: StructureDefinition.differential.element[33]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-INFORMATION: StructureDefinition/DocumentEntry: DocumentEntry.referenceIdList.CX1: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier|5.3.0 is deprecated with the note: 'Use either ElementDefinition.code or ElementDefinition.mapping to provide the mapping instead'
-INFORMATION: Resource: The resource StructureDefinition/DocumentEntry could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/StructureDefinition-EventCode.json ==
-INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
-WARNING: StructureDefinition/EventCode: StructureDefinition.snapshot.element[1].short: value should not start or finish with whitespace 'Cet attribut peut contenir le code représentant : • un évènement documenté (acte, traitement, diagnostic, etc…),  • une modalité d'acquisition, • une région anatomique. '
-WARNING: StructureDefinition/EventCode: StructureDefinition.differential.element[1].short: value should not start or finish with whitespace 'Cet attribut peut contenir le code représentant : • un évènement documenté (acte, traitement, diagnostic, etc…),  • une modalité d'acquisition, • une région anatomique. '
-INFORMATION: Resource: The resource StructureDefinition/EventCode could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/StructureDefinition-Identifiant.json ==
-INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[1].type[3].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/IdentifiantSysteme to 0.1.0
-INFORMATION: StructureDefinition.differential.element[1].type[3].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/IdentifiantSysteme to 0.1.0
-INFORMATION: Resource: The resource StructureDefinition/Identifiant could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/StructureDefinition-IdentifiantSysteme.json ==
+== fsh-generated/resources/StructureDefinition-patId.json ==
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/string to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[0].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[2].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[2].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition/IdentifiantSysteme: StructureDefinition.snapshot.element[3].type[0].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/regex|5.3.0 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'
-INFORMATION: Resource: The resource StructureDefinition/IdentifiantSysteme could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/StructureDefinition-MatriculeINS.json ==
+INFORMATION: StructureDefinition/patId: StructureDefinition.snapshot.element[3].type[0].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/regex|5.3.0 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'
+INFORMATION: Resource: The resource StructureDefinition/patId could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-pdlgcArchivePatient.json ==
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
-INFORMATION: Resource: The resource StructureDefinition/MatriculeINS could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/StructureDefinition-PSIdNat.json ==
+INFORMATION: StructureDefinition.snapshot.element[3].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[5].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[5].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[6].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[6].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[10].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[10].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[11].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[11].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[14].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[14].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[15].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[15].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: Resource: The resource StructureDefinition/pdlgcArchivePatient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-pdlgcArchivePortabilite.json ==
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[1].constraint[0].source: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/PSIdNat to 0.1.0
-INFORMATION: StructureDefinition.differential.element[1].constraint[0].source: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/PSIdNat to 0.1.0
-WARNING: StructureDefinition/PSIdNat: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/PSIdNat: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-INFORMATION: Resource: The resource StructureDefinition/PSIdNat could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/StructureDefinition-PatientId.json ==
+INFORMATION: Resource: The resource StructureDefinition/pdlgcArchivePortabilite could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-pdlgcArchiveTransverse.json ==
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
-WARNING: StructureDefinition/PatientId: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/PatientId: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/PatientId: StructureDefinition.snapshot.element[3].short: value should not start or finish with whitespace ' 'NH' pour un maticule INS tel que défini dans le cadre juridique'
-WARNING: StructureDefinition/PatientId: StructureDefinition.snapshot.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/PatientId: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/PatientId: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/PatientId: StructureDefinition.differential.element[3].short: value should not start or finish with whitespace ' 'NH' pour un maticule INS tel que défini dans le cadre juridique'
-WARNING: StructureDefinition/PatientId: StructureDefinition.differential.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-INFORMATION: Resource: The resource StructureDefinition/PatientId could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/StructureDefinition-SNR.json ==
+INFORMATION: StructureDefinition.snapshot.element[4].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[4].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[5].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[5].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: Resource: The resource StructureDefinition/pdlgcArchiveTransverse could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-pdlgcAuthor.json ==
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
-WARNING: StructureDefinition/SNR: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/SNR: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-INFORMATION: Resource: The resource StructureDefinition/SNR could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/StructureDefinition-SourcePatientId.json ==
+INFORMATION: Resource: The resource StructureDefinition/pdlgcAuthor could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-pdlgcContactPortabilite.json ==
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
-WARNING: StructureDefinition/SourcePatientId: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/SourcePatientId: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/SourcePatientId: StructureDefinition.snapshot.element[3].short: value should not start or finish with whitespace ' 'NH' pour un maticule INS tel que défini dans le cadre juridique'
-WARNING: StructureDefinition/SourcePatientId: StructureDefinition.snapshot.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/SourcePatientId: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/SourcePatientId: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/SourcePatientId: StructureDefinition.differential.element[3].short: value should not start or finish with whitespace ' 'NH' pour un maticule INS tel que défini dans le cadre juridique'
-WARNING: StructureDefinition/SourcePatientId: StructureDefinition.differential.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-INFORMATION: Resource: The resource StructureDefinition/SourcePatientId could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/StructureDefinition-SourcePatientInfo.json ==
+INFORMATION: StructureDefinition.snapshot.element[4].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[4].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[5].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[5].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[6].binding.valueSet: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-telecom-type to 0.1.0
+INFORMATION: StructureDefinition.differential.element[3].binding.valueSet: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-telecom-type to 0.1.0
+INFORMATION: Resource: The resource StructureDefinition/pdlgcContactPortabilite could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-pdlgcDocumentation.json ==
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
-WARNING: StructureDefinition/SourcePatientInfo: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/SourcePatientInfo: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/SourcePatientInfo: StructureDefinition.snapshot.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/SourcePatientInfo: StructureDefinition.snapshot.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/SourcePatientInfo: StructureDefinition.snapshot.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/SourcePatientInfo: StructureDefinition.snapshot.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/SourcePatientInfo: StructureDefinition.snapshot.element[7]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/SourcePatientInfo: StructureDefinition.snapshot.element[8]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/SourcePatientInfo: StructureDefinition.snapshot.element[9]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/SourcePatientInfo: StructureDefinition.snapshot.element[10]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/SourcePatientInfo: StructureDefinition.snapshot.element[11]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/SourcePatientInfo: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/SourcePatientInfo: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/SourcePatientInfo: StructureDefinition.differential.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/SourcePatientInfo: StructureDefinition.differential.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/SourcePatientInfo: StructureDefinition.differential.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/SourcePatientInfo: StructureDefinition.differential.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/SourcePatientInfo: StructureDefinition.differential.element[7]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/SourcePatientInfo: StructureDefinition.differential.element[8]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/SourcePatientInfo: StructureDefinition.differential.element[9]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/SourcePatientInfo: StructureDefinition.differential.element[10]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/SourcePatientInfo: StructureDefinition.differential.element[11]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-INFORMATION: Resource: The resource StructureDefinition/SourcePatientInfo could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/StructureDefinition-StructIdNat.json ==
+INFORMATION: Resource: The resource StructureDefinition/pdlgcDocumentation could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-pdlgcIndex.json ==
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
-WARNING: StructureDefinition/StructIdNat: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/StructIdNat: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-INFORMATION: Resource: The resource StructureDefinition/StructIdNat could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/StructureDefinition-SubmissionSet.json ==
+INFORMATION: StructureDefinition.snapshot.element[1].type[0].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/structIdNat to 0.1.0
+INFORMATION: StructureDefinition.differential.element[1].type[0].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/structIdNat to 0.1.0
+INFORMATION: Resource: The resource StructureDefinition/pdlgcIndex could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-pdlgcManifest.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[2].binding.valueSet: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-export-type to 0.1.0
+INFORMATION: StructureDefinition.snapshot.element[5].binding.valueSet: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-export-status to 0.1.0
+INFORMATION: StructureDefinition.snapshot.element[10].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[10].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[11].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[11].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[16].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[16].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[17].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[17].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[18].constraint[0].source: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgcManifest to 0.1.0
+INFORMATION: StructureDefinition.snapshot.element[20].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[20].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[21].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[21].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[23].binding.valueSet: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-archive-type to 0.1.0
+INFORMATION: StructureDefinition.differential.element[2].binding.valueSet: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-export-type to 0.1.0
+INFORMATION: StructureDefinition.differential.element[5].binding.valueSet: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-export-status to 0.1.0
+INFORMATION: StructureDefinition.differential.element[12].constraint[0].source: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/pdlgcManifest to 0.1.0
+INFORMATION: StructureDefinition.differential.element[14].binding.valueSet: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-pdlgc-archive-type to 0.1.0
+INFORMATION: Resource: The resource StructureDefinition/pdlgcManifest could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-pdlgcMetadata.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
+INFORMATION: Resource: The resource StructureDefinition/pdlgcMetadata could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-pdlgcReadme.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
+INFORMATION: Resource: The resource StructureDefinition/pdlgcReadme could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-pdlgcSoftwareVendor.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
+INFORMATION: Resource: The resource StructureDefinition/pdlgcSoftwareVendor could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-psIdNat.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/string to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[0].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[0].constraint[1].source: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/psIdNat to 0.1.0
+INFORMATION: StructureDefinition.snapshot.element[2].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[2].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.differential.element[0].constraint[0].source: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/psIdNat to 0.1.0
+INFORMATION: Resource: The resource StructureDefinition/psIdNat could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-structIdNat.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/string to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[0].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[2].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[2].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: Resource: The resource StructureDefinition/structIdNat could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-systIdNat.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/string to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[0].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[0].constraint[1].source: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/systIdNat to 0.1.0
+INFORMATION: StructureDefinition.snapshot.element[2].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[2].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
+INFORMATION: StructureDefinition.differential.element[0].constraint[0].source: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/systIdNat to 0.1.0
+INFORMATION: Resource: The resource StructureDefinition/systIdNat could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-xdmActorPatient.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorXdsCore to 0.1.0
+INFORMATION: StructureDefinition.snapshot.element[1].type[0].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/patId to 0.1.0
+INFORMATION: StructureDefinition.snapshot.element[9].constraint[0].source: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorPatient to 0.1.0
+INFORMATION: StructureDefinition.differential.element[1].type[0].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/patId to 0.1.0
+INFORMATION: StructureDefinition.differential.element[6].constraint[0].source: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorPatient to 0.1.0
+INFORMATION: Resource: The resource StructureDefinition/xdmActorPatient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-xdmActorPs.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorXdsCore to 0.1.0
+INFORMATION: StructureDefinition.snapshot.element[1].type[0].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/psIdNat to 0.1.0
+INFORMATION: StructureDefinition.differential.element[1].type[0].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/psIdNat to 0.1.0
+INFORMATION: Resource: The resource StructureDefinition/xdmActorPs could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-xdmActorSystem.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmActorXdsCore to 0.1.0
+INFORMATION: StructureDefinition.snapshot.element[1].type[0].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/systIdNat to 0.1.0
+INFORMATION: StructureDefinition.differential.element[1].type[0].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/systIdNat to 0.1.0
+INFORMATION: Resource: The resource StructureDefinition/xdmActorSystem could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-xdmActorXdsCore.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
+INFORMATION: Resource: The resource StructureDefinition/xdmActorXdsCore could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-xdmArchive.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
+INFORMATION: Resource: The resource StructureDefinition/xdmArchive could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-xdmAssociation.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[1].binding.valueSet: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-association-type to 0.1.0
+INFORMATION: StructureDefinition.differential.element[1].binding.valueSet: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-association-type to 0.1.0
+INFORMATION: Resource: The resource StructureDefinition/xdmAssociation could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-xdmAuthor.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[3].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J47-FunctionCode-CISIS/FHIR/JDV-J47-FunctionCode-CISIS to 20250523120000
+INFORMATION: StructureDefinition.snapshot.element[4].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS to 20260730120000
+INFORMATION: StructureDefinition.differential.element[3].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J47-FunctionCode-CISIS/FHIR/JDV-J47-FunctionCode-CISIS to 20250523120000
+INFORMATION: StructureDefinition.differential.element[4].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS to 20260730120000
+INFORMATION: Resource: The resource StructureDefinition/xdmAuthor could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-xdmAuthorDocumentEntry.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmAuthor to 0.1.0
+INFORMATION: Resource: The resource StructureDefinition/xdmAuthorDocumentEntry could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-xdmAuthorInstitution.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[7].type[0].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/structIdNat to 0.1.0
+INFORMATION: StructureDefinition.differential.element[7].type[0].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/structIdNat to 0.1.0
+INFORMATION: Resource: The resource StructureDefinition/xdmAuthorInstitution could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-xdmAuthorSubmissionSet.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/xdmAuthor to 0.1.0
+INFORMATION: Resource: The resource StructureDefinition/xdmAuthorSubmissionSet could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-xdmCode.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
+INFORMATION: Resource: The resource StructureDefinition/xdmCode could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-xdmDocumentEntry.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[4].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J52-AvailabilityStatus-CISIS/FHIR/JDV-J52-AvailabilityStatus-CISIS to 20200424120000
+INFORMATION: StructureDefinition.snapshot.element[23].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS to 20230922120000
+INFORMATION: StructureDefinition.snapshot.element[27].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J58-ConfidentialityCode-DMP/FHIR/JDV-J58-ConfidentialityCode-DMP to 20200424120000
+INFORMATION: StructureDefinition.snapshot.element[29].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS to 20260629120000
+INFORMATION: StructureDefinition.snapshot.element[33].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS to 20260223120000
+INFORMATION: StructureDefinition.snapshot.element[34].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS to 20240927120000
+INFORMATION: StructureDefinition.snapshot.element[35].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS to 20260629120000
+INFORMATION: StructureDefinition.differential.element[4].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J52-AvailabilityStatus-CISIS/FHIR/JDV-J52-AvailabilityStatus-CISIS to 20200424120000
+INFORMATION: StructureDefinition.differential.element[23].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J06-XdsClassCode-CISIS/FHIR/JDV-J06-XdsClassCode-CISIS to 20230922120000
+INFORMATION: StructureDefinition.differential.element[27].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J58-ConfidentialityCode-DMP/FHIR/JDV-J58-ConfidentialityCode-DMP to 20200424120000
+INFORMATION: StructureDefinition.differential.element[29].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J10-XdsFormatCode-CISIS/FHIR/JDV-J10-XdsFormatCode-CISIS to 20260629120000
+INFORMATION: StructureDefinition.differential.element[31].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J02-XdsHealthcareFacilityTypeCode-CISIS/FHIR/JDV-J02-XdsHealthcareFacilityTypeCode-CISIS to 20260223120000
+INFORMATION: StructureDefinition.differential.element[32].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J04-XdsPracticeSettingCode-CISIS/FHIR/JDV-J04-XdsPracticeSettingCode-CISIS to 20240927120000
+INFORMATION: StructureDefinition.differential.element[33].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J07-XdsTypeCode-CISIS/FHIR/JDV-J07-XdsTypeCode-CISIS to 20260629120000
+INFORMATION: Resource: The resource StructureDefinition/xdmDocumentEntry could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-xdmPatientId.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[1].type[0].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/patId to 0.1.0
+INFORMATION: StructureDefinition.differential.element[1].type[0].profile[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/StructureDefinition/patId to 0.1.0
+INFORMATION: Resource: The resource StructureDefinition/xdmPatientId could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-xdmSourcePatientId.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
+INFORMATION: Resource: The resource StructureDefinition/xdmSourcePatientId could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-xdmSourcePatientInfo.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
+INFORMATION: Resource: The resource StructureDefinition/xdmSourcePatientInfo could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-xdmSubmissionSet.json ==
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[2].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J52-AvailabilityStatus-CISIS/FHIR/JDV-J52-AvailabilityStatus-CISIS to 20200424120000
 INFORMATION: StructureDefinition.snapshot.element[9].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J03-XdsContentTypeCode-CISIS/FHIR/JDV-J03-XdsContentTypeCode-CISIS to 20260223120000
 INFORMATION: StructureDefinition.differential.element[2].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J52-AvailabilityStatus-CISIS/FHIR/JDV-J52-AvailabilityStatus-CISIS to 20200424120000
 INFORMATION: StructureDefinition.differential.element[9].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J03-XdsContentTypeCode-CISIS/FHIR/JDV-J03-XdsContentTypeCode-CISIS to 20260223120000
-WARNING: StructureDefinition/SubmissionSet: StructureDefinition.snapshot.element[2].short: value should not start or finish with whitespace 'Cette métadonnée représente la pertinence d'un lot de soumission. '
-WARNING: StructureDefinition/SubmissionSet: StructureDefinition.snapshot.element[2].example[1].value.ofType(string): value should not start or finish with whitespace 'urn:asip:ci-sis:2010:StatusType:Archived '
-WARNING: StructureDefinition/SubmissionSet: StructureDefinition.snapshot.element[4].short: value should not start or finish with whitespace 'Titre du lot de soumission '
-WARNING: StructureDefinition/SubmissionSet: StructureDefinition.snapshot.element[5].short: value should not start or finish with whitespace 'Cette métadonnée contient le commentaire associé au lot de soumission. '
-WARNING: StructureDefinition/SubmissionSet: StructureDefinition.snapshot.element[9].short: value should not start or finish with whitespace 'Ensemble de métadonnées représentant le type d’activité associé à l’événement clinique ayant abouti à la constitution du lot de soumission. '
-WARNING: StructureDefinition/SubmissionSet: StructureDefinition.differential.element[2].short: value should not start or finish with whitespace 'Cette métadonnée représente la pertinence d'un lot de soumission. '
-WARNING: StructureDefinition/SubmissionSet: StructureDefinition.differential.element[2].example[1].value.ofType(string): value should not start or finish with whitespace 'urn:asip:ci-sis:2010:StatusType:Archived '
-WARNING: StructureDefinition/SubmissionSet: StructureDefinition.differential.element[4].short: value should not start or finish with whitespace 'Titre du lot de soumission '
-WARNING: StructureDefinition/SubmissionSet: StructureDefinition.differential.element[5].short: value should not start or finish with whitespace 'Cette métadonnée contient le commentaire associé au lot de soumission. '
-WARNING: StructureDefinition/SubmissionSet: StructureDefinition.differential.element[9].short: value should not start or finish with whitespace 'Ensemble de métadonnées représentant le type d’activité associé à l’événement clinique ayant abouti à la constitution du lot de soumission. '
-INFORMATION: Resource: The resource StructureDefinition/SubmissionSet could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/StructureDefinition-archive-xdm.json ==
+INFORMATION: Resource: The resource StructureDefinition/xdmSubmissionSet could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-xdmreferenceId.json ==
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
-WARNING: StructureDefinition/archive-xdm: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/archive-xdm: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/archive-xdm: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/archive-xdm: StructureDefinition.snapshot.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/archive-xdm: StructureDefinition.differential.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/archive-xdm: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/archive-xdm: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/archive-xdm: StructureDefinition.differential.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-INFORMATION: Resource: The resource StructureDefinition/archive-xdm could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
-== fsh-generated/resources/StructureDefinition-association-xdm.json ==
-INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[1].binding.valueSet: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-association-type to 0.1.0
-INFORMATION: StructureDefinition.differential.element[1].binding.valueSet: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/ValueSet/vs-association-type to 0.1.0
-WARNING: StructureDefinition/association-xdm: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/association-xdm: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/association-xdm: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/association-xdm: StructureDefinition.snapshot.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/association-xdm: StructureDefinition.differential.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/association-xdm: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/association-xdm: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/association-xdm: StructureDefinition.differential.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-INFORMATION: Resource: The resource StructureDefinition/association-xdm could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+INFORMATION: StructureDefinition.snapshot.element[3].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J197-XdsTypesIdentifiantsReferenceId-CISIS/FHIR/JDV-J197-XdsTypesIdentifiantsReferenceId-CISIS to 20220624120000
+INFORMATION: StructureDefinition.differential.element[3].binding.valueSet: Pinned the version of https://mos.esante.gouv.fr/NOS/JDV_J197-XdsTypesIdentifiantsReferenceId-CISIS/FHIR/JDV-J197-XdsTypesIdentifiantsReferenceId-CISIS to 20220624120000
+INFORMATION: Resource: The resource StructureDefinition/xdmreferenceId could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-vs-association-type.json ==
-INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-association-type to 0.1.0
-WARNING: ValueSet/vs-association-type: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-xdm-association-type to 0.1.0
+INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.1
 WARNING: Resource: The resource ValueSet/vs-association-type should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/ValueSet-vs-pdlgc-archive-type.json ==
+INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-archive-type to 0.1.0
+INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.1
+WARNING: Resource: The resource ValueSet/vs-pdlgc-archive-type should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/ValueSet-vs-pdlgc-export-status.json ==
+INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-status to 0.1.0
+INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.1
+WARNING: Resource: The resource ValueSet/vs-pdlgc-export-status should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/ValueSet-vs-pdlgc-export-type.json ==
+INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-export-type to 0.1.0
+INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.1
+WARNING: Resource: The resource ValueSet/vs-pdlgc-export-type should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/ValueSet-vs-pdlgc-telecom-type.json ==
+INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/pdlgc/CodeSystem/cs-pdlgc-telecom-type to 0.1.0
+INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.1
+WARNING: Resource: The resource ValueSet/vs-pdlgc-telecom-type should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)

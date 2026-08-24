@@ -106,8 +106,21 @@
   <li>
     <a href="index.html">Accueil</a>
   </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Spécifications
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="specs-main-flux-export-archive-portabilite.html">Flux Export d&apos;Archive de Portabilité</a>
+      </li>
+      <li>
+        <a href="specs-main-structure-archive.html">Structure de l&apos;architecture de portabilité</a>
+      </li>
+    </ul>
+  </li>
   <li>
-    <a href="sf-etude-fonctionnelle.html">Vol1 - Etude Fonctionnelle</a>
+    <a href="artifacts.html">Ressources de conformité</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Annexes
@@ -115,24 +128,21 @@
     </a>
     <ul class="dropdown-menu">
       <li>
+        <a href="annexe-references.html">Références</a>
+      </li>
+      <li>
         <a href="annexe-securite.html">Sécurité</a>
       </li>
       <li>
         <a href="annexe-downloads.html">Téléchargements et usage</a>
       </li>
       <li>
-        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR </a>
-      </li>
-      <li>
         <a target="_blank" href="https://esante.gouv.fr/">Site de l&apos;ANS </a>
       </li>
+      <li>
+        <a target="_blank" href="https://interop.esante.gouv.fr/ig/documentation/">Documentation des guides d&apos;implémentation</a>
+      </li>
     </ul>
-  </li>
-  <li>
-    <a href="artifacts.html">Ressources de conformité</a>
-  </li>
-  <li>
-    <a target="_blank" href="https://interop.esante.gouv.fr/ig/documentation/">Documentation</a>
   </li>
   <li>
     <a href="change-log.html">Historique</a>
@@ -175,7 +185,7 @@
 
             <a href="#bottom">bottom</a>
 
-          | <a href="StructureDefinition-ActorPatient.html">next &gt;</a>
+          | <a href="StructureDefinition-xdmActorPatient.html">next &gt;</a>
 
           </span>
 
@@ -218,16 +228,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">Modèle logique XDM (Lot de soumission (SubmissionSet), DocumentEntry (XDS) et association)</a>
+         <a href="#1">Modèle logique Metadata XDM (Lot de soumission (SubmissionSet), DocumentEntry (XDS) et association)</a>
       </li>
       <li>
-         <a href="#2">Requirements: Actor Definitions</a>
+         <a href="#2">Modèle logique structure Archive de portabilité</a>
       </li>
       <li>
-         <a href="#3">Terminology: Value Sets</a>
+         <a href="#3">Valeur des identifiants</a>
       </li>
       <li>
-         <a href="#4">Terminology: Code Systems</a>
+         <a href="#4">Datatypes XDM</a>
+      </li>
+      <li>
+         <a href="#5">Requirements: Actor Definitions</a>
+      </li>
+      <li>
+         <a href="#6">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#7">Terminology: Code Systems</a>
       </li>
    </ul>
 </div>
@@ -237,16 +256,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      data-fhir="generated">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
-   <h3>Modèle logique XDM (Lot de soumission (SubmissionSet), DocumentEntry (XDS) et association) </h3>
-    <p>Modèle logique avec les différents artefacts</p>
+   <h3>Modèle logique Metadata XDM (Lot de soumission (SubmissionSet), DocumentEntry (XDS) et association) </h3>
+    <p>Modèles logiques associés aux différents artifacts des METADATA XDS</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-ActorPatient.html"
-                  title="StructureDefinition/ActorPatient">
-                  <span title="StructureDefinition/ActorPatient">ActorPatient (LM)
+               <a href="StructureDefinition-xdmActorPatient.html"
+                  title="StructureDefinition/xdmActorPatient">
+                  <span title="StructureDefinition/xdmActorPatient">XDM ActorPatient
 </span>
                </a>
             </td>
@@ -256,34 +275,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-ActorPS.html"
-                  title="StructureDefinition/ActorPS">
-                  <span title="StructureDefinition/ActorPS">ActorPS (LM)
+               <a href="StructureDefinition-xdmActorPs.html"
+                  title="StructureDefinition/xdmActorPs">
+                  <span title="StructureDefinition/xdmActorPs">XDM ActorPS
 </span>
                </a>
             </td>
             <td>
-
 <p>Cet attribut représente un acteur PS.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-ActorSNR.html"
-                  title="StructureDefinition/ActorSNR">
-                  <span title="StructureDefinition/ActorSNR">ActorSNR (LM)
-</span>
-               </a>
-            </td>
-            <td>
-<p>Cet attribut représente l'acteur SNR.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-ActorSystem.html"
-                  title="StructureDefinition/ActorSystem">
-                  <span title="StructureDefinition/ActorSystem">ActorSystem (LM)
+               <a href="StructureDefinition-xdmActorSystem.html"
+                  title="StructureDefinition/xdmActorSystem">
+                  <span title="StructureDefinition/xdmActorSystem">XDM ActorSystem
 </span>
                </a>
             </td>
@@ -293,23 +299,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-ActorXDS.html"
-                  title="StructureDefinition/ActorXDS">
-                  <span title="StructureDefinition/ActorXDS">ActorXDS (LM)
+               <a href="StructureDefinition-xdmActorXdsCore.html"
+                  title="StructureDefinition/xdmActorXdsCore">
+                  <span title="StructureDefinition/xdmActorXdsCore">XDM ActorXDS Core
 </span>
                </a>
             </td>
             <td>
 <p>Cet attribut représente un acteur (humain ou système) ayant contribué au document. Pour les documents d’expression personnelle du patient, cette métadonnée fait référence au patient.</p>
 
-<p>XCN de HL7 v2.5</p>
+<p>Type xcn de HL7 v2.5</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-archive-xdm.html"
-                  title="StructureDefinition/archive-xdm">
-                  <span title="StructureDefinition/archive-xdm">Archive XDM (LM)
+               <a href="StructureDefinition-xdmArchive.html"
+                  title="StructureDefinition/xdmArchive">
+                  <span title="StructureDefinition/xdmArchive">XDM Archive XDM
 </span>
                </a>
             </td>
@@ -320,9 +326,9 @@ Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-association-xdm.html"
-                  title="StructureDefinition/association-xdm">
-                  <span title="StructureDefinition/association-xdm">Association XDM (LM)
+               <a href="StructureDefinition-xdmAssociation.html"
+                  title="StructureDefinition/xdmAssociation">
+                  <span title="StructureDefinition/xdmAssociation">XDM Association
 </span>
                </a>
             </td>
@@ -333,9 +339,9 @@ Permet de relier un SubmissionSet ou un DocumentEntry à un autre (remplacement 
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-Author.html"
-                  title="StructureDefinition/Author">
-                  <span title="StructureDefinition/Author">Author (LM)
+               <a href="StructureDefinition-xdmAuthor.html"
+                  title="StructureDefinition/xdmAuthor">
+                  <span title="StructureDefinition/xdmAuthor">XDM Author
 </span>
                </a>
             </td>
@@ -349,7 +355,6 @@ Permet de relier un SubmissionSet ou un DocumentEntry à un autre (remplacement 
   <li>Un professionnel (personne physique) via son logiciel de professionnel,</li>
   <li>Le patient/usager (personne physique) via Mon espace Santé,</li>
   <li>Un système de structure (dispositif, automate, appareil connecté…),</li>
-  <li>Un SNR (Service Numérique Référencé),</li>
 </ul>
 
 <p><strong>author</strong> est un ensemble constitué des sous-attributs <strong>authorInstitution</strong> , <strong>authorPerson</strong>, <strong>authorRole</strong> et <strong>authorSpecialty</strong> et ne porte pas de valeur par lui-même.</p>
@@ -357,9 +362,9 @@ Permet de relier un SubmissionSet ou un DocumentEntry à un autre (remplacement 
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-AuthorDocumentEntry.html"
-                  title="StructureDefinition/AuthorDocumentEntry">
-                  <span title="StructureDefinition/AuthorDocumentEntry">AuthorDocumentEntry (LM)
+               <a href="StructureDefinition-xdmAuthorDocumentEntry.html"
+                  title="StructureDefinition/xdmAuthorDocumentEntry">
+                  <span title="StructureDefinition/xdmAuthorDocumentEntry">XDM AuthorDocumentEntry
 </span>
                </a>
             </td>
@@ -371,28 +376,27 @@ L’auteur peut être :</p>
   <li>Un professionnel (personne physique) via son logiciel de professionnel,</li>
   <li>Le patient/usager (personne physique) via Mon espace Santé,</li>
   <li>Un système de structure (dispositif, automate, appareil connecté…),</li>
-  <li>Un SNR (Service Numérique Référencé),</li>
 </ul>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-AuthorInstitution.html"
-                  title="StructureDefinition/AuthorInstitution">
-                  <span title="StructureDefinition/AuthorInstitution">AuthorInstitution (LM)
+               <a href="StructureDefinition-xdmAuthorInstitution.html"
+                  title="StructureDefinition/xdmAuthorInstitution">
+                  <span title="StructureDefinition/xdmAuthorInstitution">XDM AuthorInstitution
 </span>
                </a>
             </td>
             <td>
 <p>Cet attribut représente la structure de l’auteur. 
-Pour les documents d’expression personnelle du patient, cette métadonnée est absente, cela signifie que l’élément XML &lt;rim:Slot name='authorInstitution'&gt; n’est pas transmis.</p>
+Pour les documents d’expression personnelle du patient, cette métadonnée est absente, cela signifie que l’élément XML <code class="language-plaintext highlighter-rouge">&amp;lt;rim:Slot name='authorInstitution'&amp;gt;</code> n’est pas transmis.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-AuthorSubmissionSet.html"
-                  title="StructureDefinition/AuthorSubmissionSet">
-                  <span title="StructureDefinition/AuthorSubmissionSet">AuthorSubmissionSet (LM)
+               <a href="StructureDefinition-xdmAuthorSubmissionSet.html"
+                  title="StructureDefinition/xdmAuthorSubmissionSet">
+                  <span title="StructureDefinition/xdmAuthorSubmissionSet">XDM AuthorSubmissionSet
 </span>
                </a>
             </td>
@@ -404,9 +408,9 @@ Constituée des sous-attributs <strong>authorInstitution</strong>, <strong>autho
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-DocumentEntry.html"
-                  title="StructureDefinition/DocumentEntry">
-                  <span title="StructureDefinition/DocumentEntry">Document Entry (LM)
+               <a href="StructureDefinition-xdmDocumentEntry.html"
+                  title="StructureDefinition/xdmDocumentEntry">
+                  <span title="StructureDefinition/xdmDocumentEntry">XDM DocumentEntry
 </span>
                </a>
             </td>
@@ -416,85 +420,247 @@ Constituée des sous-attributs <strong>authorInstitution</strong>, <strong>autho
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-EventCode.html"
-                  title="StructureDefinition/EventCode">
-                  <span title="StructureDefinition/EventCode">EventCode (LM)
-</span>
-               </a>
-            </td>
-            <td>
-<p>Modèle logique d'un eventCode.
-Un EventCode peut contenir le code représentant :</p>
-<ul>
-  <li>un évènement documenté (acte, traitement, diagnostic, etc…),</li>
-  <li>une modalité d’acquisition,</li>
-  <li>une région anatomique.</li>
-</ul>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-Identifiant.html"
-                  title="StructureDefinition/Identifiant">
-                  <span title="StructureDefinition/Identifiant">Identifiant
-</span>
-               </a>
-            </td>
-            <td>
-<p>Identifiant de professionnel de santé, de patient, de SNR ou de système</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-IdentifiantSysteme.html"
-                  title="StructureDefinition/IdentifiantSysteme">
-                  <span title="StructureDefinition/IdentifiantSysteme">IdentifiantSysteme
-</span>
-               </a>
-            </td>
-            <td>
-<p>Identification d'un systeme</p>
-
-<p>L’identification du ssyteme  est construite selon le tableau dessous :</p>
-<ul>
-  <li>1 + Identifiant cabinet ADELI/Identifiant interne du système dans la structure</li>
-  <li>3 + FINESS/Identifiant interne du système dans la structure</li>
-  <li>4 + SIREN/Identifiant interne du système dans la structure</li>
-  <li>5 + SIRET/Identifiant interne du système dans la structure</li>
-  <li>6 + Identifiant cabinet RPPS/Identifiant interne du système dans la structure</li>
-</ul>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-MatriculeINS.html"
-                  title="StructureDefinition/MatriculeINS">
-                  <span title="StructureDefinition/MatriculeINS">MatriculeINS
-</span>
-               </a>
-            </td>
-            <td>
-<p>Matricule de l'Identité Nationale de Santé (INS). Il correspond au NIR (Numéro d’Identification au Répertoire des personnes physiques) ou au NIA (Numéro Identifiant Attente) de l’individu).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-PatientId.html"
-                  title="StructureDefinition/PatientId">
-                  <span title="StructureDefinition/PatientId">PatientId (LM)
+               <a href="StructureDefinition-xdmPatientId.html"
+                  title="StructureDefinition/xdmPatientId">
+                  <span title="StructureDefinition/xdmPatientId">XDM PatientId
 </span>
                </a>
             </td>
             <td>
 <p>Modèle logique de patientID.
-PatientID représente l’identifiant du patient, en l’occurrence, le matricule INS (NIR ou NIA) du patient.</p>
+Cette métadonnée contient l'identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange. Le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité. À défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-PSIdNat.html"
-                  title="StructureDefinition/PSIdNat">
-                  <span title="StructureDefinition/PSIdNat">PSIdNat
+               <a href="StructureDefinition-xdmreferenceId.html"
+                  title="StructureDefinition/xdmreferenceId">
+                  <span title="StructureDefinition/xdmreferenceId">XDM referenceIdList
+</span>
+               </a>
+            </td>
+            <td>
+<p>Modèle logique de referenceIdList.
+Cette métadonnée contient une liste d'un ou plusieurs identifiant(s) d'objet(s) associé(s) au document.Liste d'éléments de type CX du standard HL7 v2.5.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-xdmSourcePatientId.html"
+                  title="StructureDefinition/xdmSourcePatientId">
+                  <span title="StructureDefinition/xdmSourcePatientId">XDM SourcePatientId
+</span>
+               </a>
+            </td>
+            <td>
+<p>Cette métadonnée contient l’identifiant secondaire du patient dans le système d’information du producteur (IPP) ou l’INS, s’il n’y a pas d’identifiant secondaire. Pour les documents d’expression personnelle du patient, cette métadonnée contient l’INS du patient, à savoir le même identifiant que patientId.</p>
+
+<p>Cette métadonnée reprend la structure du segment CX  défini par  HL7v2  et  conformément aux spécifications  :</p>
+<ul>
+  <li><a href="https://esante.gouv.fr/annexe-prise-en-charge-de-lins-dans-les-volets-du-ci-sis">Prise en Charge de l'INS dans les volets du CI-SIS </a></li>
+  <li><a href="https://esante.gouv.fr/volet-partage-de-documents-de-sante">Volet Partage de Documents de Santé</a></li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-xdmSourcePatientInfo.html"
+                  title="StructureDefinition/xdmSourcePatientInfo">
+                  <span title="StructureDefinition/xdmSourcePatientInfo">XDM SourcePatientInfo
+</span>
+               </a>
+            </td>
+            <td>
+<p>Cette métadonnée contient les traits d’identité du patient concerné par le document, connus par le producteur du document. Les informations présentes dans la métadonnée sourcePatientInfo ne doivent en aucun cas être réutilisées pour calculer un identifiant, ni être mises à jour après la soumission du document.</p>
+
+<p>Cette métadonnée reprend la structure du segment PID (Patient Identification) défini par  HL7v2 et l'extension du profil IHE PAM, conformément aux spécifications  :</p>
+<ul>
+  <li><a href="https://www.interopsante.org/publications">Extension française du profil IHE PAM</a></li>
+  <li><a href="https://esante.gouv.fr/annexe-prise-en-charge-de-lins-dans-les-volets-du-ci-sis">Prise en Charge de l'INS dans les volets du CI-SIS </a></li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-xdmSubmissionSet.html"
+                  title="StructureDefinition/xdmSubmissionSet">
+                  <span title="StructureDefinition/xdmSubmissionSet">XDM SubmissionSet
+</span>
+               </a>
+            </td>
+            <td>
+<p>Modèle logique d'un lot de soummission (SubmissionSet).</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Modèle logique structure Archive de portabilité </h3>
+    <p>Modèles logiques associés aux différents fichiers et répertoires structurant une archive de portabilité</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-pdlgcArchivePatient.html"
+                  title="StructureDefinition/pdlgcArchivePatient">
+                  <span title="StructureDefinition/pdlgcArchivePatient">PDLGC Archive Patient
+</span>
+               </a>
+            </td>
+            <td>
+<p>Archive stockant les données médicales liées à un patient, ou NNNNN est incrémenté à partir de 00001. Chaque patient est représenté par une archive distincte conforme au profil IHE_XDM</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-pdlgcArchivePortabilite.html"
+                  title="StructureDefinition/pdlgcArchivePortabilite">
+                  <span title="StructureDefinition/pdlgcArchivePortabilite">PDLGC Archive Portabilite
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'archive de Portabilité est un conteneur structuré, regroupant l'ensemble des documents et données LGC exportées ainsi que les éléments de métadonnées, d'index et de documentation nécessaires à leur exploitation par le destinataire. Convention de nommage : PAAAAAMMJJThhmmss.ZIP, avec PA = préfixe, AAAAMMJJThhmmss = horodatage</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-pdlgcArchiveTransverse.html"
+                  title="StructureDefinition/pdlgcArchiveTransverse">
+                  <span title="StructureDefinition/pdlgcArchiveTransverse">PDLGC Archive Transverse
+</span>
+               </a>
+            </td>
+            <td>
+<p>Archive stockant les données transverses associés au praticien et/ou au cabinet</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-pdlgcAuthor.html"
+                  title="StructureDefinition/pdlgcAuthor">
+                  <span title="StructureDefinition/pdlgcAuthor">PDLGC Author
+</span>
+               </a>
+            </td>
+            <td>
+<p>Informations relatives à l'auteur responsable de la production de l'archive de portabilité</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-pdlgcContactPortabilite.html"
+                  title="StructureDefinition/pdlgcContactPortabilite">
+                  <span title="StructureDefinition/pdlgcContactPortabilite">PDLGC Contact Portabilite
+</span>
+               </a>
+            </td>
+            <td>
+<p>PDLGC Contact Portabilite</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-pdlgcDocumentation.html"
+                  title="StructureDefinition/pdlgcDocumentation">
+                  <span title="StructureDefinition/pdlgcDocumentation">PDLGC Documentation
+</span>
+               </a>
+            </td>
+            <td>
+<p>Documentation d'export permettant au LGC destinataire d'intégrer les données du LGC émetteur</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-pdlgcIndex.html"
+                  title="StructureDefinition/pdlgcIndex">
+                  <span title="StructureDefinition/pdlgcIndex">PDLGC Index
+</span>
+               </a>
+            </td>
+            <td>
+<p>L'INDEX.HTM est renferme des informations éditoriales et est conforme aux spécifications XHTML et Echanges de Documents de santé.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-pdlgcManifest.html"
+                  title="StructureDefinition/pdlgcManifest">
+                  <span title="StructureDefinition/pdlgcManifest">PDLGC Manifest
+</span>
+               </a>
+            </td>
+            <td>
+<p>Le fichier MANIFEST.XML porte les métadonnées globales de l'export (nombre de dossiers patients, volumétrie, éléments d'intégrité), distinctes des métadonnées XDM portées par chaque <code class="language-plaintext highlighter-rouge">METADATA.XML</code> patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-pdlgcMetadata.html"
+                  title="StructureDefinition/pdlgcMetadata">
+                  <span title="StructureDefinition/pdlgcMetadata">PDLGC Metadata
+</span>
+               </a>
+            </td>
+            <td>
+<p>Modèle logique décrivant la structure d'un fichier METADATA associé à un SUBSET IHE XDM.
+Regroupe un SubmissionSet, ses DocumentEntries et les Associations entre objets.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-pdlgcReadme.html"
+                  title="StructureDefinition/pdlgcReadme">
+                  <span title="StructureDefinition/pdlgcReadme">PDLGC Readme
+</span>
+               </a>
+            </td>
+            <td>
+<p>Informations éditoriales et instructions. Le socle du README.TXt est identique pour l'archive de portabilité, l'archive de données transverse et l'archive XDM Patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-pdlgcSoftwareVendor.html"
+                  title="StructureDefinition/pdlgcSoftwareVendor">
+                  <span title="StructureDefinition/pdlgcSoftwareVendor">PDLGC SoftwareVendor
+</span>
+               </a>
+            </td>
+            <td>
+<p>Editeur du logiciel</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Valeur des identifiants </h3>
+    <p>Profilage du datatype string pour les identifiants</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-patId.html" title="StructureDefinition/patId">
+                  <span title="StructureDefinition/patId">Identifiant Patient
+</span>
+               </a>
+            </td>
+            <td>
+<p>Identifiant du patient tel que connu par les interlocuteurs prenant part à l'échange.</p>
+<ul>
+  <li>Matricule INS : le matricule INS (NIR ou NIA) du patient doit être utilisé en priorité.</li>
+  <li>Autre identifiant : à défaut de disponibilité de l'INS, un autre identifiant (ex: IPP du système émetteur) peut être utilisé.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-psIdNat.html"
+                  title="StructureDefinition/psIdNat">
+                  <span title="StructureDefinition/psIdNat">PSIdNat
 </span>
                </a>
             </td>
@@ -515,44 +681,9 @@ PatientID représente l’identifiant du patient, en l’occurrence, le matricul
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-SNR.html" title="StructureDefinition/SNR">
-                  <span title="StructureDefinition/SNR">SNR
-</span>
-               </a>
-            </td>
-            <td>
-<p>Identifiant interne de l’instance de la solution ayant produit le document au format OID</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-SourcePatientId.html"
-                  title="StructureDefinition/SourcePatientId">
-                  <span title="StructureDefinition/SourcePatientId">SourcePatientId (LM)
-</span>
-               </a>
-            </td>
-            <td>
-<p>Cette métadonnée contient l’identifiant secondaire du patient dans le système d’information du producteur (IPP) ou l’INS, s’il n’y a pas d’identifiant secondaire. Pour les documents d’expression personnelle du patient, cette métadonnée contient l’INS du patient, à savoir le même identifiant que patientId.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-SourcePatientInfo.html"
-                  title="StructureDefinition/SourcePatientInfo">
-                  <span title="StructureDefinition/SourcePatientInfo">SourcePatientInfo (LM)
-</span>
-               </a>
-            </td>
-            <td>
-<p>Cette métadonnée contient les traits d’identité du patient concerné par le document, connus par le producteur du document. Les informations présentes dans la métadonnée sourcePatientInfo ne doivent en aucun cas être réutilisées pour calculer un identifiant, ni être mises à jour après la soumission du document.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-StructIdNat.html"
-                  title="StructureDefinition/StructIdNat">
-                  <span title="StructureDefinition/StructIdNat">StructIdNat
+               <a href="StructureDefinition-structIdNat.html"
+                  title="StructureDefinition/structIdNat">
+                  <span title="StructureDefinition/structIdNat">StructIdNat
 </span>
                </a>
             </td>
@@ -571,24 +702,77 @@ PatientID représente l’identifiant du patient, en l’occurrence, le matricul
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-SubmissionSet.html"
-                  title="StructureDefinition/SubmissionSet">
-                  <span title="StructureDefinition/SubmissionSet">SubmissionSet (LM)
+               <a href="StructureDefinition-systIdNat.html"
+                  title="StructureDefinition/systIdNat">
+                  <span title="StructureDefinition/systIdNat">SystIdNat
 </span>
                </a>
             </td>
             <td>
-<p>Modèle logique d'un lot de soummission (SubmissionSet).</p>
+<p>Identification d'un système</p>
+
+<p>L’identification du système  est construite selon le tableau dessous :</p>
+<ul>
+  <li>1 + Identifiant cabinet ADELI/Identifiant interne du système dans la structure</li>
+  <li>3 + FINESS/Identifiant interne du système dans la structure</li>
+  <li>4 + SIREN/Identifiant interne du système dans la structure</li>
+  <li>5 + SIRET/Identifiant interne du système dans la structure</li>
+  <li>6 + Identifiant cabinet RPPS/Identifiant interne du système dans la structure</li>
+</ul>
 </td>
          </tr>
       </tbody>
    </table>
-   <a name="2"> </a>
+   <a name="4"> </a>
+   <h3>Datatypes XDM </h3>
+    <p>Datatypes XDM</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-xdmCode.html"
+                  title="StructureDefinition/xdmCode">
+                  <span title="StructureDefinition/xdmCode">Code XDM
+</span>
+               </a>
+            </td>
+            <td>
+<p>Type représentant un concept codé, constitué d'un code, de son libellé et de l'OID du système de codage, portés comme attributs XML. Il ne présente pas lui-même de valeur.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
    <h3>Requirements: Actor Definitions </h3>
     <p>The following artifacts define the types of individuals and/or systems that will interact as part of the use cases covered by this implementation guide.</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ActorDefinition-PDLGC-Systeme-Destinataire.html"
+                  title="ActorDefinition/PDLGC-Systeme-Destinataire">
+                  <span title="ActorDefinition/PDLGC-Systeme-Destinataire">LGC Destinataire
+</span>
+               </a>
+            </td>
+            <td>
+<p>LGC responsable de la réception et de l'intégration des données contenues dans l'archive de portabilité.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ActorDefinition-PDLGC-Systeme-Emetteur.html"
+                  title="ActorDefinition/PDLGC-Systeme-Emetteur">
+                  <span title="ActorDefinition/PDLGC-Systeme-Emetteur">LGC émetteur
+</span>
+               </a>
+            </td>
+            <td>
+<p>LGC responsable de la production et de la mise à disposition de l'archive de portabilité à l'issue d'une demande d'export.</p>
+</td>
+         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="ActorDefinition-PDLGC-Demandeur.html"
@@ -600,9 +784,9 @@ PatientID représente l’identifiant du patient, en l’occurrence, le matricul
             <td>
 <p>Demandeur de l'export.</p>
 
-<p>Il peut s'agir d'un médecin ou professionnel de santé libéral, responsable du contenu médical transféré.</p>
+<p>Il s'agit d'un professionnel de santé libéral, responsable du contenu médical transféré.</p>
 
-<p>Il peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP)</p>
+<p>Il peut agir à la demande du patient, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP)</p>
 </td>
          </tr>
          <tr>
@@ -616,44 +800,67 @@ PatientID représente l’identifiant du patient, en l’occurrence, le matricul
             <td>
 <p>Destinataire de l'export de données de LGC.</p>
 
-<p>Il peut s'agir d'un médecin ou professionnel de santé libéral recevant l'export via son LGC.</p>
+<p>Il s'agit d'un professionnel de santé libéral recevant l'export via son LGC.</p>
 
-<p>Il peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP).
-Dans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le destinataire.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ActorDefinition-PDLGC-Fournisseur-Destinataire.html"
-                  title="ActorDefinition/PDLGC-Fournisseur-Destinataire">
-                  <span title="ActorDefinition/PDLGC-Fournisseur-Destinataire">PDLGC Fournisseur Destinataire
-</span>
-               </a>
-            </td>
-            <td>
-<p>Editeur recevant les données en vue de leur intégration. Il est tenu d'une obligation de moyens pour l'import dès lors que le format est conforme au référentiel.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ActorDefinition-PDLGC-Fournisseur-Sortant.html"
-                  title="ActorDefinition/PDLGC-Fournisseur-Sortant">
-                  <span title="ActorDefinition/PDLGC-Fournisseur-Sortant">PDLGC Fournisseur Sortant
-</span>
-               </a>
-            </td>
-            <td>
-<p>Éditeur du LGC dont le contrat prend fin ou depuis lequel l'utilisateur souhaite exporter ses données. C'est lui qui est redevable de l'obligation de portabilité gratuite du Périmètre Pivot sous 30 jours calendaires.</p>
+<p>Suivant le contexte de la demande, le professionnel de santé pourra transférer le dossier au patient.</p>
 </td>
          </tr>
       </tbody>
    </table>
-   <a name="3"> </a>
+   <a name="6"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-pdlgc-export-status.html"
+                  title="ValueSet/vs-pdlgc-export-status">
+                  <span title="ValueSet/vs-pdlgc-export-status">PDLGC Statut de l'export
+</span>
+               </a>
+            </td>
+            <td>
+<p>PDLGC Statut de l'export</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-pdlgc-export-type.html"
+                  title="ValueSet/vs-pdlgc-export-type">
+                  <span title="ValueSet/vs-pdlgc-export-type">PDLGC Type d'Export
+</span>
+               </a>
+            </td>
+            <td>
+<p>PDLGC Type d'Export</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-pdlgc-archive-type.html"
+                  title="ValueSet/vs-pdlgc-archive-type">
+                  <span title="ValueSet/vs-pdlgc-archive-type">PDLGC Type d'archive
+</span>
+               </a>
+            </td>
+            <td>
+<p>PDLGC Type d'archive</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-pdlgc-telecom-type.html"
+                  title="ValueSet/vs-pdlgc-telecom-type">
+                  <span title="ValueSet/vs-pdlgc-telecom-type">PDLGC Type de moyen de communication
+</span>
+               </a>
+            </td>
+            <td>
+<p>PDLGC Type de moyen de communication</p>
+</td>
+         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-vs-association-type.html"
@@ -668,7 +875,7 @@ Dans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le d
          </tr>
       </tbody>
    </table>
-   <a name="4"> </a>
+   <a name="7"> </a>
    <h3>Terminology: Code Systems </h3>
     <p>These define new code systems used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -676,14 +883,62 @@ Dans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le d
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-cs-association-type.html"
-                  title="CodeSystem/cs-association-type">
-                  <span title="CodeSystem/cs-association-type">Type d'association XDS
+               <a href="CodeSystem-cs-pdlgc-export-status.html"
+                  title="CodeSystem/cs-pdlgc-export-status">
+                  <span title="CodeSystem/cs-pdlgc-export-status">Statut de l'export
+</span>
+               </a>
+            </td>
+            <td>
+<p>Statut de l'export</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-cs-pdlgc-archive-type.html"
+                  title="CodeSystem/cs-pdlgc-archive-type">
+                  <span title="CodeSystem/cs-pdlgc-archive-type">Type d'archive
+</span>
+               </a>
+            </td>
+            <td>
+<p>Type d'archive</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-cs-xdm-association-type.html"
+                  title="CodeSystem/cs-xdm-association-type">
+                  <span title="CodeSystem/cs-xdm-association-type">Type d'association XDS
 </span>
                </a>
             </td>
             <td>
 <p>Types d'association entre objets XDS dans le contexte portabilité.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-cs-pdlgc-export-type.html"
+                  title="CodeSystem/cs-pdlgc-export-type">
+                  <span title="CodeSystem/cs-pdlgc-export-type">Type d'export de données LGC
+</span>
+               </a>
+            </td>
+            <td>
+<p>Type d'export de données LGC</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-cs-pdlgc-telecom-type.html"
+                  title="CodeSystem/cs-pdlgc-telecom-type">
+                  <span title="CodeSystem/cs-pdlgc-telecom-type">Type de moyen de communication
+</span>
+               </a>
+            </td>
+            <td>
+<p>Type de moyen de communication</p>
 </td>
          </tr>
       </tbody>
@@ -720,7 +975,7 @@ Dans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le d
               </td>
               <td style="text-align:var(--ig-right);">&#xA0;
 
-                <a href="StructureDefinition-ActorPatient.html">next ></a>
+                <a href="StructureDefinition-xdmActorPatient.html">next ></a>
 
               </td>
             </tr>
@@ -736,8 +991,8 @@ Dans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le d
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Package ans.fhir.fr.pdlgc#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-07-23 13:05:00 +0000">
-    2026-07-23
+  <span title="2026-08-24 07:26:00 +0000">
+    2026-08-24
   </span>
 
           <br/>

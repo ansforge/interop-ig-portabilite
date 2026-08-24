@@ -10,35 +10,42 @@ There is no translation page available for the current page, so it has been rend
 
 ### Introduction
 
-La portabilité des données des logiciels de gestion de cabinet (LGC) permet de garantir qu'un changement d'éditeur de logiciel ne constitue plus un obstacle à l'exercice professionnel ni à la continuité des soins. Elle repose sur l'obligation de transfert des données de santé entre fournisseurs de services numériques, telle qu'introduite par l'article L.1470-5-1 du Code de la Santé Publique (loi n° 2026-403 du 26 mai 2026 de simplification de la vie économique).
+La portabilité des données des logiciels de gestion de cabinet (LGC) permet de garantir qu'un changement d'éditeur de logiciel ne constitue plus un obstacle à l'exercice professionnel ni à la continuité des soins. Elle repose sur l'obligation de transfert des données de santé entre éditeurs de services numériques, telle qu'introduite par l'article L.1470-5-1 du Code de la Santé Publique ([article 55 de la loi n° 2026-403 du 26 mai 2026 de simplification de la vie économique](https://www.legifrance.gouv.fr/jorf/article_jo/JORFARTI000054131648)).
 
 Le présent guide d'implémentation traduit en spécifications fonctionnelles et techniques les exigences du **Référentiel de sécurité, d'interopérabilité et d'éthique relatif à la portabilité des données des LGC** élaboré par l'ANS et approuvé par arrêté du ministre chargé de la santé.
 
 ### Structure du guide d'implémentation
 
 **Contexte métier**
+ Le contexte métier, défini sur la présente page, présente les [cas d'usage](#contexte-metier-cas-usage), les [définitions](#contexte-metier-definitions), le [cadre juridique](#contexte-metier-cadre-juridique) ainsi que l'[organisation des processus collaboratifs](#contexte-metier-orga-processus). 
 
 **Spécifications**
+ Cette section présente les spécifications fonctionnelles et techniques associcées à chaque processus collaboratif.
+ L'[étude fonctionnelle](specs-main-flux-export-archive-portabilite.md#etude-fonctionnelle) présente notamment les acteurs, une définition du processus collaboratif et une modélisation de l'archive de Portabilité.
+ Les [spécifications techniques](specs-main-flux-export-archive-portabilite.md#specs-techniques) décrivent le flux d'export d'archive de Portabilité et son positionnement par rapport à d'autres profils, ainsi que les formats des documents échangés.
+ La [structure de l'archive de Portabilité](specs-main-structure-archive.md) décrit quant à elle l'arborescence, les conventions d'écriture, et le contenu des différents fichiers de gestion de l'archive 
 
 **Ressources de conformité**
+ La section [Ressources de conformité](artifacts.md) liste les différents artefacts supportant les spécifications fonctionnelles et techniques 
 
 **Annexes**
+ Cette section renvoie aux annexes relatives à la sécurité, aux téléchargements, et à toute autre documentation utile au présent volet 
 
 ### Scénarios et cas d'usage
 
 Cette section décrit 3 Scenarios et plusieurs cas d'usage (non exclusifs) d'utilisation de la Portabilité extraits du **Référentiel de sécurité, d'interopérabilité et d'éthique relatif à la portabilité des données des LGC**.
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| Export massif | Intégralité de la patientèle | Changement de LGC, départ à la retraite,… | ≤ 30 jours |
-| Export ciblé | Sous-ensemble de la patientèle | Départ d'un praticien, réquisition judiciaire ciblée,… | ≤ 30 jours |
-| Export unitaire | Dossier d'un patient | Droit du patient, transfert à un confrère,… | Immédiat ou sans délai indu |
+| | | |
+| :--- | :--- | :--- |
+| Export massif | Intégralité de la patientèle | Changement de LGC, départ à la retraite,… |
+| Export ciblé | Sous-ensemble de la patientèle | Départ d'un praticien, réquisition judiciaire ciblée,… |
+| Export unitaire | Dossier d'un patient | Droit du patient, transfert à un confrère,… |
 
-#### Scenario 1 : Export massif
+#### Scénario 1 : Export massif
 
-Dans ce contexte, l'intégralité de la patientèle est transférée d'un fournisseur sortant vers un fournisseur destinataire.
+Dans ce contexte, l'intégralité de la patientèle est transférée d'un LGC émetteur vers un LGC destinataire.
 
-**Cas d'usage 1.1 - changement de LGC** : Un médecin généraliste exerçant en cabinet libéral décide de changer de logiciel de gestion de cabinet. Son contrat avec l'éditeur sortant prend fin et il souhaite migrer l'intégralité de sa patientèle vers le nouveau logiciel.
+**Cas d'usage 1.1 - changement de LGC** : Un médecin généraliste exerçant en cabinet libéral décide de changer de logiciel de gestion de cabinet. Son contrat avec l'éditeur émetteur prend fin et il souhaite migrer l'intégralité de sa patientèle vers le nouveau logiciel.
 
 **Cas d'usage 1.2 - départ à la retraite** : Un médecin part à la retraite. Il doit transmettre les dossiers de ses patients à un confrère repreneur qui n'utilise pas le même LGC.
 
@@ -46,9 +53,9 @@ Dans ce contexte, l'intégralité de la patientèle est transférée d'un fourni
 
 **Cas d'usage 1.4 - Export d'archivage** : un professionnel ou une structure cesse l'utilisation d'un LGC sans migration immédiate vers un autre logiciel. Les données sont exportées afin d'assurer leur conservation et leur disponibilité pour répondre aux obligations réglementaires ou aux besoins ultérieurs de continuité des soins.
 
-#### Scenario 2 : Export ciblé
+#### Scénario 2 : Export ciblé
 
-Dans ce contexte, une sélection de la patientièle est transférée d'un fournisseur sortant vers un fournisseur destinataire. La sélection peut correspondre à un filtre par professionnel de santé ou par période.
+Dans ce contexte, une sélection de la patientièle est transférée d'un LGC émetteur vers un LGC destinataire. La sélection peut correspondre à un filtre par professionnel de santé ou par période.
 
 **Cas d'usage 2.1 - Scission d'une structure collective** : Un praticien quitte une maison de santé pluriprofessionnelle (MSP) pour s'installer en cabinet individuel. Il souhaite récupérer les dossiers de ses patients.
 
@@ -58,9 +65,9 @@ Dans ce contexte, une sélection de la patientièle est transférée d'un fourni
 
 **Cas d'usage 2.4 - Réquisition judiciaire ciblée** : dans le cadre d'une procédure judiciaire ou d'une expertise, une autorité compétente demande la communication d'un ensemble déterminé de dossiers répondant à des critères précis (patients, période, activité, etc.). Le professionnel de santé doit pouvoir réaliser un export sélectif des données concernées, dans le respect des exigences de sécurité, de traçabilité et de confidentialité.
 
-#### Scenario 3 : Export unitaire
+#### Scénario 3 : Export unitaire
 
-Dans ce contexte, seul un dossier patient est transféré d'un fournisseur sortant vers un fournisseur destinataire.
+Dans ce contexte, seul un dossier patient est transféré d'un LGC émetteur vers un LGC destinataire.
 
 **Cas d'usage 3.1 - Exercice du droit du patient** : un patient demande la communication ou la portabilité de son dossier médical. Le professionnel de santé doit être en mesure de produire un export individuel des données le concernant dans un format exploitable et lisible.
 
@@ -72,45 +79,19 @@ Dans ce contexte, seul un dossier patient est transféré d'un fournisseur sorta
 
 ### Cadre juridique
 
-#### Cadre réglementaire
-
-La portabilité des données LGC est encadrée par les textes suivants :
-
-* Article L.1470-5-1 du Code de la santé publique (article 55 de la loi n° 2026-403 du 26 mai 2026 de simplification de la vie économique), instaurant l'obligation de transfert des données par le fournisseur sortant ;
-* Article L.1470-5 du Code de la santé publique, fondant l'opposabilité du présent référentiel par arrêté du ministre chargé de la santé ;
-* Article L.1470-6 du Code de la santé publique et décret n° 2026-153 du 3 mars 2026, définissant les modalités de contrôle et de sanction ;
-* Règlement Général sur la Protection des Données (RGPD) ;
-* Référentiels HDS, RGS et CI-SIS.
-
-Le présent référentiel complète ces obligations sans se substituer aux obligations pénales ou civiles existantes.
-
-#### Échange et traitement de données à caractère personnel
-
-L'export et le transfert de données de santé dans le cadre de la portabilité constituent un traitement de données à caractère personnel, qui entre dans le champ d'application du RGPD. Le professionnel de santé demeure responsable de traitement pour les données dont il a la charge. Le processus de portabilité ne peut entraîner aucune rupture de la confidentialité des données de santé.
+Le cadre réglementaire applicable à la portabilité des données LGC est détaillé dans le **Référentiel de sécurité, d'interopérabilité et d'éthique relatif à la portabilité des données des LGC**. Le présent guide d'implémentation ne reprend pas ces éléments et renvoie au référentiel pour toute question relative aux obligations légales et aux responsabilités des acteurs.
 
 ### Définitions
 
-**Portabilité des données LGC** : La portabilité des données des logiciels de gestion de cabinet désigne l'obligation faite aux éditeurs de permettre l'export et le transfert des données de santé traitées dans leur logiciel, sans entrave technique, contractuelle ou tarifaire sur le périmètre pivot.
-
-**Périmètre pivot** : Le périmètre pivot désigne l'ensemble minimal, obligatoire et standardisé de données de santé (administratives et médicales) dont le transfert doit être garanti sans frais et dans un délai défini. Il constitue le socle d'obligations de résultat du **Référentiel de sécurité, d'interopérabilité et d'éthique relatif à la portabilité des données des LGC**. Les données situées hors périmètre pivot (données comptables et de facturation détaillée, traces système, paramètres de configuration, logs bruts d'activité, données analytiques hors prise en charge primaire,…) peuvent faire l'objet d'un export, mais ne sont pas soumises à l'obligation de gratuité.
-
-**Documentation d’export** : Guide technique obligatoire décrivant la structure de l'archive, le ou les dictionnaire(s) de données (formats techniques des fichiers et données, mapping des données propriétaires avec les données standardisées du CI-SIS, profondeur historique), les schémas techniques de validation et les jeux d’échantillons.
-
-**Export** : action par laquelle l’éditeur sortant fournit les données au professionnel ou à un fournisseur destinataire sous forme structurée et documentée.
-
-**Export en autonomie**: Capacité pour le professionnel de déclencher l'export lui-même sans dépendre d'un acte manuel de l'éditeur sortant.
-
-**Import**: action par laquelle l’éditeur destinataire intègre les données exportées.
-
-**Transfert** : ensemble des opérations d’export et, si applicable, d’import visant à restituer la portabilité.
+**Périmètre pivot** : Ensemble minimal, obligatoire et structuré de données de santé (administratives et médicales) dont le médecin est responsable de traitement et dont le transfert est encadré par le **Référentiel de sécurité, d'interopérabilité et d'éthique relatif à la portabilité des données des LGC** et les textes d’application de **l’article L.1470-5-1 du code de la santé publique**.
 
 **Format opposable** : format imposé pour certaines données du périmètre pivot à la date d’entrée en vigueur
 
-**Donnée Structurée** : Donnée organisée selon un format permettant un traitement automatisé sans perte de sens (ex: XML, JSON, CDA).
+**Donnée Structurée** : Donnée codifiée et organisée selon une syntaxe et une sémantique normalisées, garantissant une interprétation identique par l'émetteur et le récepteur.
 
 **Données négatives et données non renseignées** : Une **donnée négative** est une donnée saisie explicitement pour attester de l'absence d'un élément clinique (ex. : absence confirmée d'allergie). Elle se distingue d'une **donnée non renseignée**, qui traduit l'absence de saisie dans le logiciel, sans qu'aucune conclusion clinique ne puisse en être tirée. Cette distinction doit être préservée dans l'export et explicitée dans la documentation d'export.
 
-**Données transverses** : données produites ou gérées par le LGC qui ne sont pas rattachées à un dossier patient déterminé, mais qui sont associées à l'activité du professionnel de santé, du cabinet ou de la structure de soins. Elles contribuent au fonctionnement et à l'organisation de l'activité sans constituer des données médicales propres à un patient. Les données transverses comprennent notamment les données d'agenda et de planification (rendez-vous, plages d'ouverture, indisponibilités), les traces et journaux techniques (logs d'accès, de modification ou d'administration) ainsi que certaines données organisationnelles ou de paramétrage liées à l'exercice du professionnel ou de la structure. Les données transverses peuvent être incluses ou exclues du périmètre d'export selon le contexte d'usage, conformément aux règles définies par le présent guide.
+**Données transverses** : données produites ou gérées par le LGC qui ne sont pas rattachées à un dossier patient déterminé, mais qui sont associées à l'activité du professionnel de santé, du cabinet ou de la structure de soins. Elles contribuent au fonctionnement et à l'organisation de l'activité sans constituer des données médicales propres à un patient. Les données transverses peuvent être incluses ou exclues du périmètre d'export selon le contexte d'usage, conformément aux règles définies par le **Référentiel de sécurité, d'interopérabilité et d'éthique relatif à la portabilité des données des LGC**.
 
 ### Organisation des processus collaboratifs
 
@@ -118,23 +99,13 @@ Le domaine "Export de données de santé" comprend les différents volets permet
 
 Organisation des processus collaboratifs d'export de données de santé
 
- Le processus collaboratif d'***export d'archive XDM via MS Santé** est relatif à l'échange d'un ou plusieurs documents de santé concernant un même patient entre un système initiateur et un système cible. Les documents sont transmis sous la forme d'une archive normalisée, accompagnée de leurs métadonnées, au moyen d'une messagerie sécurisée de santé (MS Santé). Ce processus fait l'objet de spécifications dédiées.
+
+Le processus collaboratif d'**échanges de document de Santé via MS Santé** est relatif à l'échange d'un ou plusieurs documents de santé concernant un même patient entre un système initiateur et un système cible. Les documents sont transmis sous la forme d'une archive XDM, accompagnés de leurs métadonnées, au moyen d'une messagerie sécurisée de santé (MS Santé). Ce processus fait l'objet de spécifications dédiées.
 
 Le périmètre du présent guide d'implémentation couvre le processus collaboratif d'**export d'archive de Portabilité**.
 
-### Acteurs
-
-Le tableau ci-dessous récapitule les acteurs pouvant être impliqués dans les différents processus collaboratif
-
-| | | |
-| :--- | :--- | :--- |
-| Acteur | Type d'acteur | Description |
-| [PDLGC Demandeur](ActorDefinition-PDLGC-Demandeur.md) | Person | Demandeur de l'export.Il peut s'agir d'un médecin ou professionnel de santé libéral, responsable du contenu médical transféré.Il peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP) |
-| [PDLGC Destinataire](ActorDefinition-PDLGC-Destinataire.md) | Person | Destinataire de l'export de données de LGC.Il peut s'agir d'un médecin ou professionnel de santé libéral recevant l'export via son LGC.Il peut également s'agir du patient lui-même, bénéficiaire de ses droits de portabilité individuelle (RGPD Art. 20, Art. L.1111-7 CSP). Dans le cas d'un export sur réquisition judiciaire, c'est le juge qui sera le destinataire. |
-| [PDLGC Fournisseur Destinataire](ActorDefinition-PDLGC-Fournisseur-Destinataire.md) | System | Editeur recevant les données en vue de leur intégration. Il est tenu d'une obligation de moyens pour l'import dès lors que le format est conforme au référentiel. |
-| [PDLGC Fournisseur Sortant](ActorDefinition-PDLGC-Fournisseur-Sortant.md) | System | Éditeur du LGC dont le contrat prend fin ou depuis lequel l'utilisateur souhaite exporter ses données. C'est lui qui est redevable de l'obligation de portabilité gratuite du Périmètre Pivot sous 30 jours calendaires. |
-
 ### Dépendances
+
 
 
 
@@ -145,13 +116,13 @@ Le tableau ci-dessous récapitule les acteurs pouvant être impliqués dans les 
 
 This publication includes IP covered under the following statements.
 
-* ISO Maintains the copyright on the country codes, and controls it's use carefully. For futher details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
+* ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
 
-* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html): [ActorPS](StructureDefinition-ActorPS.md), [ActorPatient](StructureDefinition-ActorPatient.md)... Show 28 more, [ActorSNR](StructureDefinition-ActorSNR.md), [ActorSystem](StructureDefinition-ActorSystem.md), [ActorXDS](StructureDefinition-ActorXDS.md), [Archive](StructureDefinition-archive-xdm.md), [Association](StructureDefinition-association-xdm.md), [Author](StructureDefinition-Author.md), [AuthorDocumentEntry](StructureDefinition-AuthorDocumentEntry.md), [AuthorInstitution](StructureDefinition-AuthorInstitution.md), [AuthorSubmissionSet](StructureDefinition-AuthorSubmissionSet.md), [CS_AssociationType](CodeSystem-cs-association-type.md), [DocumentEntry](StructureDefinition-DocumentEntry.md), [EventCode](StructureDefinition-EventCode.md), [Identifiant](StructureDefinition-Identifiant.md), [IdentifiantSysteme](StructureDefinition-IdentifiantSysteme.md), [MatriculeINS](StructureDefinition-MatriculeINS.md), [PDLGC](index.md), [PDLGC_Demandeur](ActorDefinition-PDLGC-Demandeur.md), [PDLGC_Destinataire](ActorDefinition-PDLGC-Destinataire.md), [PDLGC_FournisseurDestinataire](ActorDefinition-PDLGC-Fournisseur-Destinataire.md), [PDLGC_FournisseurSortant](ActorDefinition-PDLGC-Fournisseur-Sortant.md), [PSIdNat](StructureDefinition-PSIdNat.md), [PatientId](StructureDefinition-PatientId.md), [SNR](StructureDefinition-SNR.md), [SourcePatientId](StructureDefinition-SourcePatientId.md), [SourcePatientInfo](StructureDefinition-SourcePatientInfo.md), [StructIdNat](StructureDefinition-StructIdNat.md), [SubmissionSet](StructureDefinition-SubmissionSet.md) and [VS_AssociationType](ValueSet-vs-association-type.md)
+* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.4.0/CodeSystem-ISO3166Part1.html): [CS_PDLGC_ArchiveType](CodeSystem-cs-pdlgc-archive-type.md), [CS_PDLGC_ExportStatus](CodeSystem-cs-pdlgc-export-status.md)... Show 45 more, [CS_PDLGC_ExportType](CodeSystem-cs-pdlgc-export-type.md), [CS_PDLGC_TelecomType](CodeSystem-cs-pdlgc-telecom-type.md), [CS_XDM_AssociationType](CodeSystem-cs-xdm-association-type.md), [PDLGC](index.md), [PDLGCArchivePatient](StructureDefinition-pdlgcArchivePatient.md), [PDLGCArchivePortabilite](StructureDefinition-pdlgcArchivePortabilite.md), [PDLGCArchiveTransverse](StructureDefinition-pdlgcArchiveTransverse.md), [PDLGCAuthor](StructureDefinition-pdlgcAuthor.md), [PDLGCContactPortabilite](StructureDefinition-pdlgcContactPortabilite.md), [PDLGCDocumentation](StructureDefinition-pdlgcDocumentation.md), [PDLGCIndex](StructureDefinition-pdlgcIndex.md), [PDLGCManifest](StructureDefinition-pdlgcManifest.md), [PDLGCMetadata](StructureDefinition-pdlgcMetadata.md), [PDLGCReadme](StructureDefinition-pdlgcReadme.md), [PDLGCSoftwareVendor](StructureDefinition-pdlgcSoftwareVendor.md), [PDLGC_Demandeur](ActorDefinition-PDLGC-Demandeur.md), [PDLGC_Destinataire](ActorDefinition-PDLGC-Destinataire.md), [PDLGC_SystemeEmetteur](ActorDefinition-PDLGC-Systeme-Emetteur.md), [PDLGC_Systeme_Destinataire](ActorDefinition-PDLGC-Systeme-Destinataire.md), [PSIdNat](StructureDefinition-psIdNat.md), [PatId](StructureDefinition-patId.md), [StructIdNat](StructureDefinition-structIdNat.md), [SystIdNat](StructureDefinition-systIdNat.md), [VS_PDLGC_ArchiveType](ValueSet-vs-pdlgc-archive-type.md), [VS_PDLGC_ExportStatus](ValueSet-vs-pdlgc-export-status.md), [VS_PDLGC_ExportType](ValueSet-vs-pdlgc-export-type.md), [VS_PDLGC_TelecomType](ValueSet-vs-pdlgc-telecom-type.md), [VS_XDM_AssociationType](ValueSet-vs-association-type.md), [XDMActorPS](StructureDefinition-xdmActorPs.md), [XDMActorPatient](StructureDefinition-xdmActorPatient.md), [XDMActorSystem](StructureDefinition-xdmActorSystem.md), [XDMActorXDSCore](StructureDefinition-xdmActorXdsCore.md), [XDMArchive](StructureDefinition-xdmArchive.md), [XDMAssociation](StructureDefinition-xdmAssociation.md), [XDMAuthor](StructureDefinition-xdmAuthor.md), [XDMAuthorDocumentEntry](StructureDefinition-xdmAuthorDocumentEntry.md), [XDMAuthorInstitution](StructureDefinition-xdmAuthorInstitution.md), [XDMAuthorSubmissionSet](StructureDefinition-xdmAuthorSubmissionSet.md), [XDMCode](StructureDefinition-xdmCode.md), [XDMDocumentEntry](StructureDefinition-xdmDocumentEntry.md), [XDMPatientId](StructureDefinition-xdmPatientId.md), [XDMReferenceId](StructureDefinition-xdmreferenceId.md), [XDMSourcePatientId](StructureDefinition-xdmSourcePatientId.md), [XDMSourcePatientInfo](StructureDefinition-xdmSourcePatientInfo.md) and [XDMSubmissionSet](StructureDefinition-xdmSubmissionSet.md)
 
 
 * This material contains content from [LOINC](http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the [license](http://loinc.org/license). LOINC® is a registered United States trademark of Regenstrief Institute, Inc.
 
-* [LOINC](http://terminology.hl7.org/5.0.0/CodeSystem-v3-loinc.html): [DocumentEntry](StructureDefinition-DocumentEntry.md)
+* [LOINC](http://terminology.hl7.org/6.4.0/CodeSystem-v3-loinc.html): [XDMDocumentEntry](StructureDefinition-xdmDocumentEntry.md)
 
 
