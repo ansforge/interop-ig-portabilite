@@ -239,9 +239,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
-<p>Ce chapitre présente les dispositions de sécurité locales au volet qui peuvent permettre de couvrir les exigences de sécurité d’un SIS mettant en œuvre ce volet.</p>
+<p>Ce chapitre présente les dispositions de sécurité locales à ce volet qui peuvent permettre de couvrir les exigences de sécurité d'un SIS mettant en œuvre ce volet.</p>
 
-<p>Les dispositions présentées dans cette section correspondent à la dimension interopérabilité de dispositions de sécurité plus globales visant à couvrir les exigences de sécurité d’un système cible. En fonction de sa politique de sécurité, un système cible peut choisir ou pas de les mettre en œuvre. Les référentiels de sécurité édités par l’ANS fournissent des recommandations sur ce sujet.</p>
+<p>Les dispositions présentées dans cette section correspondent à la dimension interopérabilité de dispositions de sécurité plus globales visant à couvrir les exigences de sécurité d'un système cible.</p>
+
+<p>Elles peuvent être adaptées si tout ou partie des éléments suivants le justifie :</p>
+
+<ul>
+  <li>Les réglementations applicables : RGPD, Cyber Resilience Act, PGSSI-S, NIS2, etc. ;</li>
+  <li>L'analyse de risques réalisée sur le système cible.</li>
+</ul>
 
 <p>Les systèmes doivent également se conformer aux exigences en matière de sécurité détaillées dans le <strong>Référentiel de sécurité, d'interopérabilité et d'éthique relatif à la portabilité des données des LGC</strong>.</p>
 
@@ -249,19 +256,28 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Les données véhiculées dans le cadre de ce volet sont des données à caractère personnel contenant notamment des données médicales sensibles qu'il convient de protéger.</p>
 
+<p>À ce titre, les données exportées doivent :</p>
+<ul>
+  <li>Être stockées avant transfert sur un environnement sécurisé, conforme au référentiel HDS ;</li>
+  <li>Faire l'objet de chiffrement suivant des protocoles et algorithmes à l'état de l'art * ;</li>
+  <li>Être rendues accessibles uniquement aux personnes concernées grâce à la mise en œuvre d'une authentification forte.</li>
+</ul>
+
+<p>* L'ANSSI met à disposition le Référentiel Général de Sécurité et le guide des mécanismes cryptographiques qui précisent le cadre à suivre (protocoles et algorithmes de chiffrement sécurisés).</p>
+
 <h3 id="imputabilité">Imputabilité</h3>
 
-<p>L'imputabilité du dépôt des documents est obtenue par une signature électronique de type XAdES utilisant un certificat de signature émis par une IGC autorisée par les référentiels d’authentification de la PGSSI-S. Cette signature est contenue dans le document SIGN.XML à la racine de l'archive de portabilité.</p>
+<p>L'imputabilité du dépôt des documents est obtenue par une signature électronique de type XAdES utilisant un certificat de signature émis par une IGC autorisée par les référentiels d'authentification de la PGSSI-S. Cette signature est contenue dans le document <code class="language-plaintext highlighter-rouge">SIGN.XML</code> à la racine de l'archive de portabilité.</p>
 
-<p>La signature porte sur la liste des archives Patient et Transverse incluses dans l'archive de portabilité. Les éléments signés sont l'ensemble des hash des archives, référencés par leur identifiant, associé à l'identifiant du MANIFEST.XML de l'archive de Portabilité.</p>
+<p>La signature porte sur la liste des archives Patient et Transverse incluses dans l'archive de portabilité. Les éléments signés sont l'ensemble des hash des archives, référencés par leur identifiant, associé à l'identifiant du <code class="language-plaintext highlighter-rouge">MANIFEST.XML</code> de l'archive de portabilité.</p>
 
-<p>Lors de la transaction "Export d'Archive de Portabilité" le système cible vérifie la signature et valide que le certificat utilisé pour la signature est un certificat émis par une IGC autorisée par les référentiels d’authentification de la PGSSI-S. Ce certificat doit correspondre à l'éditeur, tel que présenté dans la donnée "author" du manifest de l'archive de portabilité.</p>
+<p>Lors de la transaction « Export d'archive de portabilité », le système cible vérifie la signature et valide que le certificat utilisé pour la signature est un certificat émis par une IGC autorisée par les référentiels d'authentification de la PGSSI-S. Ce certificat doit correspondre à l'éditeur, tel que présenté dans la donnée <code class="language-plaintext highlighter-rouge">author</code> du manifeste de l'archive de portabilité.</p>
 
 <p>Le document comportant la signature du lot de soumission est un document XML auquel sont associées des métadonnées permettant son indexation.</p>
 
 <h3 id="intégrité">Intégrité</h3>
 
-<p>le contrôle d’intégrité peut être assuré par le même mécanisme que le mécanisme servant à l’imputabilité (signature électronique de type XAdES utilisant un certificat de signature émis par une IGC autorisée par les référentiels d’authentification de la PGSSI-S).</p>
+<p>Le contrôle d'intégrité peut être assuré par le même mécanisme que le mécanisme servant à l'imputabilité (signature électronique de type XAdES utilisant un certificat de signature émis par une IGC autorisée par les référentiels d'authentification de la PGSSI-S).</p>
 
 
 
@@ -311,7 +327,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Package ans.fhir.fr.pdlgc#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-08-28 08:39:00 +0000">
+  <span title="2026-08-28 09:17:00 +0000">
     2026-08-28
   </span>
 
