@@ -1,6 +1,6 @@
 **Périmètre pivot** : Ensemble minimal, obligatoire et structuré de données de santé (administratives et médicales) dont le médecin est responsable de traitement et dont le transfert est encadré par le **Référentiel de sécurité, d'interopérabilité et d'éthique relatif à la portabilité des données des LGC** et les textes d’application de **l’article L.1470-5-1 du code de la santé publique**.
 
-**Format opposable** : format imposé pour certaines données du périmètre pivot à la date d’entrée en vigueur 
+**Format opposable** : format imposé pour certaines données du périmètre pivot à la date d’entrée en vigueur.
 
 **Donnée Structurée** : Donnée codifiée et organisée selon une syntaxe et une sémantique normalisées, garantissant une interprétation identique par l'émetteur et le récepteur.
 

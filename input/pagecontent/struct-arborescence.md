@@ -1,4 +1,5 @@
-L'archive de Portabilité est constituée de : 
+L'archive de portabilité est constituée de : 
+
 - 2 fichiers (`README.TXT` et `MANIFEST.XML`) permettant de lire le contenu et présentant un rapport d'intégrité ;
 - 1 fichier de signature (`SIGN.XML`) attestant de l'authenticité et de l'imputabilité des données ;
 - 1 répertoire de documentation (`DOCUMENTATION/`) permettant d'interpréter le contenu de l'archive (dictionnaires de données, dictionnaires des terminologies, jeux d'échantillon, mapping,...) ;

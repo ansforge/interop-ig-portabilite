@@ -3,6 +3,7 @@ Le fichier `SIGN.XML`, positionné à la racine de l'archive de portabilité, co
 Le fichier est destiné à être traité automatiquement par le système destinataire lors de l'import de l'archive.
 
 Le `SIGN.XML` contient notamment :
+
 - les références vers les fichiers signés ;
 - les empreintes cryptographiques des fichiers référencés ;
 - la valeur de la signature ;
