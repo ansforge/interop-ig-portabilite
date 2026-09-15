@@ -6,14 +6,17 @@ Le modèle logique associé à cette archive est consultable <a href="StructureD
 
 #### `INDEX.HTM` de l'archive XDM Patient
 
-Le fichier `INDEX.HTM` est imposé par le profil IHE_XDM à la racine d'une archive XDM. Il renferme des informations éditoriales et est conforme aux spécifications XHTML et [Echanges de Documents de santé](https://esante.gouv.fr/annexe-sources-des-donnees-personnes-et-structures). Il contient : 
+Le fichier `INDEX.HTM` est imposé par le profil IHE_XDM à la racine d'une archive XDM. Il renferme des informations éditoriales et est conforme aux spécifications XHTML et [Echanges de Documents de santé](https://esante.gouv.fr/annexe-sources-des-donnees-personnes-et-structures).
+
+Il contient : 
+
 - l'identification obligatoire du système émetteur ayant créé le media : StructIdNat (identifiant de stucture de santé) et StructNom (nom de la structure) ; 
 - l'avertissement optionnel de cette institution concernant la sécurité et la confidentialité; 
-- un lien vers le fichier README.TXT.
+- un lien vers le fichier `README.TXT`.
 
 **Modèle logique**
 
-Le modèle logique associé au fichier INDEX.HTM est consultable <a href="StructureDefinition-pdlgc-index.html">ici</a>
+Le modèle logique associé au fichier `INDEX.HTM` est consultable <a href="StructureDefinition-pdlgc-index.html">ici</a>
 
 
 **Exemple de fichier `INDEX.HTM`** : 
@@ -35,7 +38,7 @@ Ce fichier est imposé par le profil IHE_XDM et précise la structure propre à 
 
 **Modèle logique**
 
-Le modèle logique associé au fichier README.TXT est consultable <a href="StructureDefinition-pdlgc-readme.html">ici</a>
+Le modèle logique associé au fichier `README.TXT` est consultable <a href="StructureDefinition-pdlgc-readme.html">ici</a>
 
 **Exemple de `README.TXT` d'une archive Patient**
 
@@ -76,8 +79,9 @@ Arborescence :
 #### Répertoire `IHE_XDM/` 
 
 Ce répertoire `IHE_XDM` contient un sous-répertoire `SUBSET01 contenant l'ensemble des documents transmis : 
+
 - le ou les documents de données administratives et médicales du patient ;
-- le document METADATA.XML obligatoire, contenant les métadonnées XDS, représentations logiques du lot de documents.
+- le document `METADATA.XML` obligatoire, contenant les métadonnées XDS, représentations logiques du lot de documents.
 
 <br>
 
@@ -97,8 +101,8 @@ La construction de ce fichier est détaillée dans les spécifications <a href="
 
 **Modèle logique**
 
-Le modèle logique associé au fichier METADATA.XML est consultable <a href="StructureDefinition-pdlgc-metadata.html">ici</a>
+Le modèle logique associé au fichier `METADATA.XML` est consultable <a href="StructureDefinition-pdlgc-metadata.html">ici</a>
 
 **Exemple de `METADATA.XML` d'une archive XDM**
 
-De nombreux exemples de fichiers METADATA sont accessibles sur le repository GitHub ANS <a href="https://github.com/ansforge/interop-exemples-xdm">interop-exemples-xdm</a>.
+De nombreux exemples de fichiers `METADATA.XML` sont accessibles sur le repository GitHub ANS <a href="https://github.com/ansforge/interop-exemples-xdm">interop-exemples-xdm</a>.

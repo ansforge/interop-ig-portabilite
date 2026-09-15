@@ -1,7 +1,8 @@
 **Format de nommage pour les fichiers et répertoire des lots de soumission (`SUBSET`) des archives XDM**
 
 Les noms des répertoires et des fichiers inclus dans l'archive Patient XDM doivent être conformes à la norme ISO 9660 niveau 1, comme défini dans le profil IHE_XDM : 
-- **format 8.3** : 8 caractères maximum pour le nom des fichiers et répertoires, 3 caractère pour l'extension des fichiers;
+
+- **format 8.3** : 8 caractères maximum pour le nom des fichiers et répertoires, 3 caractère pour l'extension des fichiers ;
 - **caractères limités** : lettres en majuscules, chiffres et trait de soulignement ("underscore" en anglais, signe typographique "_"). 
 
 Afin de respecter ce format, les noms des fichiers et des répertoires de documents multifichiers peuvent être différents de leurs noms d'origine. Par exemple, `CR_SER01.XML` aurait pour nom d'origine `Compte-rendu de sérologie du 10 mai 2013.xml`. Le système émetteur doit alors assurer le transcodage et la traçabilité entre le nom d'origine des répertoires et des fichiers et le nom conforme à la norme ISO 9660 niveau 1 de ces mêmes répertoires et fichiers, lorsque ceux-ci sont copiés dans IHE_XDM. 
@@ -15,6 +16,7 @@ Les documents PDF de ce répertoire étant destinés à une lecture humaine, ils
 Tous les champs sont obligatoires à l’exception du champ `<numéro de dossier>` qui est optionnel.
 
 Avec : 
+
 - `<date de l’acte>` : date à laquelle l’acte a été réalisé (AAAAMMJJ). Correspond à la métadonnée XDS `serviceStartTime` du document structuré équivalent ; 
 - `<type document>` : métadonnée XDS `typeCodeDisplayName` du document structuré équivalent. Pour une meilleure lisibilité du nom du PDF, ce libellé doit être tronqué à 40 caractères, si sa longueur est supérieure ;
 - `<NOM>` : nom de naissance de l’usager en majuscule, si disponible. Sinon renseigner avec le nom usuel ;  
@@ -32,13 +34,15 @@ En dehors des répertoires et fichiers de l'archive Patient XDM, les noms des r�
 **Conventions de nommage**
 
 Le nom de l'archive de portabilité doit respecter le format `<PA><AAAAMMJJThhmmss>.ZIP`, avec : 
-- PA = préfixe "Portabilité Archive"
-- AAAAMMJJThhmmss = horodatage avec AAAA = année, MM = mois, JJ = jour, T = "T" (séparateur de date et heure), hh = heure, mm = minutes, ss = secondes
+
+- PA = préfixe "Portabilité Archive" ;
+- AAAAMMJJThhmmss = horodatage avec AAAA = année, MM = mois, JJ = jour, T = "T" (séparateur de date et heure), hh = heure, mm = minutes, ss = secondes.
 
 Le nom des répertoires et sous-archives ZIP doit respecter le format suivant : 
+
 - `DOCUMENTATION/`: documentation d'export permettant à l'éditeur émetteur d'interpréter et d'intégrer les données ;
-- `TRANSVERSE.ZIP` : archive contenant les données transverses (logs, comptabilité, agenda,...) ;
-- `TRANSVERSE/` : répertoire contenant les données transverses (logs, comptabilité, agenda,...) ;
+- `TRANSVERSE.ZIP` : archive contenant les données transverses (logs, comptabilité, agenda, etc.) ;
+- `TRANSVERSE/` : répertoire contenant les données transverses (logs, comptabilité, agenda, etc.) ;
 - `PATNNNNN.ZIP` : contient les données d'un patient et est conforme au profil IHE_XDM, ou "NNNNN" est incrémenté à partir de 00001. Exemple : `PAT00183.ZIP`;
 - `PDF`: sous-répertoire de l'archive patient contenant les documents PDF/A-1 destinés à la consultation humaine ;
 - `IHE_XDM`et `SUBSET01`: sous-répertoires de l'archive XDM contenant les documents d'un patient.
