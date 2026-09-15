@@ -4,7 +4,7 @@ Les dispositions présentées dans cette section correspondent à la dimension i
 
 Elles peuvent être adaptées si tout ou partie des éléments suivants le justifie :
 
-- Les réglementations applicables : RGPD, Cyber Resilience Act, NIS2, etc. ;
+- Les réglementations applicables : RGPD, Cyber Resilience Act, PGSSI-S, NIS2, etc. ;
 - L'analyse de risques réalisée sur le système cible.
 
 Les systèmes doivent également se conformer aux exigences en matière de sécurité détaillées dans le **Référentiel de sécurité, d'interopérabilité et d'éthique relatif à la portabilité des données des LGC**.
