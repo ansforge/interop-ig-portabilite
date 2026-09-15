@@ -27,15 +27,23 @@ Les données véhiculées dans le cadre de ce volet sont des données à caract�
 
 ### Imputabilité
 
-L'imputabilité du dépôt des documents est obtenue par une signature électronique de type XAdES utilisant un certificat de signature émis par une IGC autorisée par les référentiels d'authentification de la PGSSI-S. Cette signature est contenue dans le document `SIGN.XML` à la racine de l'archive de portabilité.
+L'imputabilité du dépôt des documents est obtenue par une signature électronique de type XAdES utilisant un certificat de signature émis par l'IGC Santé exploitée par l'Agence du Numérique en Santé, conformément au référentiel « Force probante des documents de santé » de l'ANS. Cette signature est contenue dans le document SIGN.XML à la racine de l'archive de portabilité.
 
-La signature porte sur la liste des archives Patient et Transverse incluses dans l'archive de portabilité. Les éléments signés sont l'ensemble des hash des archives, référencés par leur identifiant, associé à l'identifiant du `MANIFEST.XML` de l'archive de portabilité.
+La signature porte sur la liste des archives Patient et Transverse incluses dans l'archive de portabilité. Les éléments signés sont l'ensemble des hash des archives, référencés par leur identifiant, associé à l'identifiant du `MANIFEST.XML` de l'archive de Portabilité.
 
-Lors de la transaction « Export d'archive de portabilité », le système cible vérifie la signature et valide que le certificat utilisé pour la signature est un certificat émis par une IGC autorisée par les référentiels d'authentification de la PGSSI-S. Ce certificat doit correspondre à l'éditeur, tel que présenté dans la donnée `author` du manifeste de l'archive de portabilité.
+Lors de la transaction « Export d'Archive de Portabilité » le système cible vérifie la signature et valide que le certificat utilisé pour la signature est un certificat émis par l'IGC Santé. Ce certificat doit correspondre à l'éditeur, tel que présenté dans la donnée « author » du manifest de l'archive de portabilité.
 
 Le document comportant la signature du lot de soumission est un document XML auquel sont associées des métadonnées permettant son indexation.
 
+Note de mise en œuvre : l'IGC Santé ne figure pas à ce jour sur la liste de confiance de l'ANSSI établie au titre du règlement (UE) n° 910/2014. Les signatures ainsi produites sont reconnues et opposables au sein de l'écosystème numérique santé français ; toutefois, les outils de vérification grand public (lecteurs PDF, navigateurs, suites bureautiques) peuvent, par défaut, ne pas reconnaître le certificat de signature. Les systèmes cibles mettant en œuvre ce volet veilleront à intégrer la vérification de cette signature dans leur chaîne de confiance ou à en informer les utilisateurs.
+
 ### Intégrité
 
-Le contrôle d'intégrité peut être assuré par le même mécanisme que le mécanisme servant à l'imputabilité (signature électronique de type XAdES utilisant un certificat de signature émis par une IGC autorisée par les référentiels d'authentification de la PGSSI-S).
+Le contrôle d'intégrité peut être assuré par le même mécanisme que le mécanisme servant à l'imputabilité (signature électronique de type XAdES utilisant un certificat de signature émis par l'IGC Santé, conformément au référentiel « Force probante des documents de santé » de l'ANS.
+
+### Traçabilité
+
+Le système cible doit être en mesure de fournir, pour chaque exécution de la transaction « Export d'Archive de Portabilité », une trace attestant du déroulement de l'opération. Cette trace comprend au minimum : la date et l'heure de la demande d'export, l'identité de l'auteur de la demande (professionnel ou système), l'identifiant de l'archive exportée, ainsi que l'issue de l'export (succès ou incident). En cas d'incident, la trace précise la nature de l'anomalie rencontrée (échec de signature, erreur d'accès aux archives, interruption de la transmission, etc.).
+
+Cette trace est conservée conformément à la politique de journalisation du système cible et peut être produite en appui de toute vérification ultérieure.
 

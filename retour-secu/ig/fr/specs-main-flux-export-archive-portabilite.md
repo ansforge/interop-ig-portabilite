@@ -38,7 +38,7 @@ Le système émetteur, en tant que producteur de l'archive, doit au préalable :
 
 ##### Description des actions
 
-Le diagramme ci-dessous illustre le contexte fonctionnel de la transaction ExportArchivePortabilite. 
+Le diagramme ci-dessous illustre le contexte fonctionnel de la transaction `ExportArchivePortabilite`. 
 
 Diagramme d'activité du processus collaboratif "Export d'archive Portabilité"
 
@@ -56,7 +56,7 @@ Il est à noter que les modalités d'exploitation de l'archive (import dans un s
 
 ##### Contraintes
 
-Les modalités détaillées encadrant les opérations d'export (périmètre des données obligatoires, délais de mise à disposition, conditions de gratuité, gestion des cas particuliers,…) sont définies dans le **Référentiel de sécurité, d'interopérabilité et d'éthique relatif à la portabilité des données des LGC**, opposable par arrêté du ministre chargé de la santé.
+Les modalités détaillées encadrant les opérations d'export (périmètre des données obligatoires, délais de mise à disposition, conditions de gratuité, gestion des cas particuliers, etc.) sont définies dans le **Référentiel de sécurité, d'interopérabilité et d'éthique relatif à la portabilité des données des LGC**, opposable par arrêté du ministre chargé de la Santé.
 
 Le présent guide d'implémentation ne reprend pas ces contraintes et renvoie au référentiel pour toute question relative aux obligations de résultat pesant sur l'éditeur émetteur et l'éditeur destinataire. Les spécifications du présent guide portent exclusivement sur les aspects techniques d'interopérabilité : structure de l'archive de portabilité, formats d'interchange, métadonnées et mécanismes d'intégrité.
 

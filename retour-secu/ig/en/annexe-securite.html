@@ -236,6 +236,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#confidentialité" id="markdown-toc-confidentialité">Confidentialité</a></li>
   <li><a href="#imputabilité" id="markdown-toc-imputabilité">Imputabilité</a></li>
   <li><a href="#intégrité" id="markdown-toc-intégrité">Intégrité</a></li>
+  <li><a href="#traçabilité" id="markdown-toc-traçabilité">Traçabilité</a></li>
 </ul>
 
 </div>
@@ -267,17 +268,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="imputabilité">Imputabilité</h3>
 
-<p>L'imputabilité du dépôt des documents est obtenue par une signature électronique de type XAdES utilisant un certificat de signature émis par une IGC autorisée par les référentiels d'authentification de la PGSSI-S. Cette signature est contenue dans le document <code class="language-plaintext highlighter-rouge">SIGN.XML</code> à la racine de l'archive de portabilité.</p>
+<p>L'imputabilité du dépôt des documents est obtenue par une signature électronique de type XAdES utilisant un certificat de signature émis par l'IGC Santé exploitée par l'Agence du Numérique en Santé, conformément au référentiel « Force probante des documents de santé » de l'ANS. Cette signature est contenue dans le document SIGN.XML à la racine de l'archive de portabilité.</p>
 
-<p>La signature porte sur la liste des archives Patient et Transverse incluses dans l'archive de portabilité. Les éléments signés sont l'ensemble des hash des archives, référencés par leur identifiant, associé à l'identifiant du <code class="language-plaintext highlighter-rouge">MANIFEST.XML</code> de l'archive de portabilité.</p>
+<p>La signature porte sur la liste des archives Patient et Transverse incluses dans l'archive de portabilité. Les éléments signés sont l'ensemble des hash des archives, référencés par leur identifiant, associé à l'identifiant du <code class="language-plaintext highlighter-rouge">MANIFEST.XML</code> de l'archive de Portabilité.</p>
 
-<p>Lors de la transaction « Export d'archive de portabilité », le système cible vérifie la signature et valide que le certificat utilisé pour la signature est un certificat émis par une IGC autorisée par les référentiels d'authentification de la PGSSI-S. Ce certificat doit correspondre à l'éditeur, tel que présenté dans la donnée <code class="language-plaintext highlighter-rouge">author</code> du manifeste de l'archive de portabilité.</p>
+<p>Lors de la transaction « Export d'Archive de Portabilité » le système cible vérifie la signature et valide que le certificat utilisé pour la signature est un certificat émis par l'IGC Santé. Ce certificat doit correspondre à l'éditeur, tel que présenté dans la donnée « author » du manifest de l'archive de portabilité.</p>
 
 <p>Le document comportant la signature du lot de soumission est un document XML auquel sont associées des métadonnées permettant son indexation.</p>
 
+<p>Note de mise en œuvre : l'IGC Santé ne figure pas à ce jour sur la liste de confiance de l'ANSSI établie au titre du règlement (UE) n° 910/2014. Les signatures ainsi produites sont reconnues et opposables au sein de l'écosystème numérique santé français ; toutefois, les outils de vérification grand public (lecteurs PDF, navigateurs, suites bureautiques) peuvent, par défaut, ne pas reconnaître le certificat de signature. Les systèmes cibles mettant en œuvre ce volet veilleront à intégrer la vérification de cette signature dans leur chaîne de confiance ou à en informer les utilisateurs.</p>
+
 <h3 id="intégrité">Intégrité</h3>
 
-<p>Le contrôle d'intégrité peut être assuré par le même mécanisme que le mécanisme servant à l'imputabilité (signature électronique de type XAdES utilisant un certificat de signature émis par une IGC autorisée par les référentiels d'authentification de la PGSSI-S).</p>
+<p>Le contrôle d'intégrité peut être assuré par le même mécanisme que le mécanisme servant à l'imputabilité (signature électronique de type XAdES utilisant un certificat de signature émis par l'IGC Santé, conformément au référentiel « Force probante des documents de santé » de l'ANS.</p>
+
+<h3 id="traçabilité">Traçabilité</h3>
+
+<p>Le système cible doit être en mesure de fournir, pour chaque exécution de la transaction « Export d'Archive de Portabilité », une trace attestant du déroulement de l'opération. Cette trace comprend au minimum : la date et l'heure de la demande d'export, l'identité de l'auteur de la demande (professionnel ou système), l'identifiant de l'archive exportée, ainsi que l'issue de l'export (succès ou incident). En cas d'incident, la trace précise la nature de l'anomalie rencontrée (échec de signature, erreur d'accès aux archives, interruption de la transmission, etc.).</p>
+
+<p>Cette trace est conservée conformément à la politique de journalisation du système cible et peut être produite en appui de toute vérification ultérieure.</p>
 
 
 
@@ -327,8 +336,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           IG © 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Package ans.fhir.fr.pdlgc#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-08-28 09:17:00 +0000">
-    2026-08-28
+  <span title="2026-09-15 12:58:00 +0000">
+    2026-09-15
   </span>
 
           <br/>

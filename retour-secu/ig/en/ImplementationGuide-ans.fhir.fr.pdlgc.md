@@ -14,7 +14,7 @@
   "name" : "PDLGC",
   "title" : "Portabilité des Données LGC",
   "status" : "draft",
-  "date" : "2026-08-28T09:17:43+00:00",
+  "date" : "2026-09-15T12:58:25+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -58,7 +58,7 @@
     "id" : "ans_fr_terminologies",
     "uri" : "https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies",
     "packageId" : "ans.fr.terminologies",
-    "version" : "1.12.0"
+    "version" : "1.13.0"
   },
   {
     "id" : "ans_fr_mos",
@@ -70,7 +70,7 @@
     "id" : "hl7_fhir_uv_tools_r4",
     "uri" : "http://hl7.org/fhir/tools/ImplementationGuide/hl7.fhir.uv.tools",
     "packageId" : "hl7.fhir.uv.tools.r4",
-    "version" : "1.1.2"
+    "version" : "1.2.0"
   }],
   "definition" : {
     "extension" : [{

@@ -9,7 +9,7 @@ L'archive de portabilité retient une structure de collection d'archives afin de
 
 ### Arborescence globale
 
-L'archive de Portabilité est constituée de :
+L'archive de portabilité est constituée de :
 
 * 2 fichiers (`README.TXT` et `MANIFEST.XML`) permettant de lire le contenu et présentant un rapport d'intégrité ;
 * 1 fichier de signature (`SIGN.XML`) attestant de l'authenticité et de l'imputabilité des données ;
@@ -26,7 +26,7 @@ Représentation graphique de la structure de l'archive de portabilité
 
 Les noms des répertoires et des fichiers inclus dans l'archive Patient XDM doivent être conformes à la norme ISO 9660 niveau 1, comme défini dans le profil IHE_XDM :
 
-* **format 8.3** : 8 caractères maximum pour le nom des fichiers et répertoires, 3 caractère pour l'extension des fichiers;
+* **format 8.3** : 8 caractères maximum pour le nom des fichiers et répertoires, 3 caractère pour l'extension des fichiers ;
 * **caractères limités** : lettres en majuscules, chiffres et trait de soulignement ("underscore" en anglais, signe typographique "_").
 
 Afin de respecter ce format, les noms des fichiers et des répertoires de documents multifichiers peuvent être différents de leurs noms d'origine. Par exemple, `CR_SER01.XML` aurait pour nom d'origine `Compte-rendu de sérologie du 10 mai 2013.xml`. Le système émetteur doit alors assurer le transcodage et la traçabilité entre le nom d'origine des répertoires et des fichiers et le nom conforme à la norme ISO 9660 niveau 1 de ces mêmes répertoires et fichiers, lorsque ceux-ci sont copiés dans IHE_XDM. Cette traçabilité est obtenue en exploitant la métadonnées XDS `typeCodeDisplayName` pour enregistrer le nom d'origine.
@@ -52,14 +52,14 @@ En dehors des répertoires et fichiers de l'archive Patient XDM, les noms des r�
 
 Le nom de l'archive de portabilité doit respecter le format `<PA><AAAAMMJJThhmmss>.ZIP`, avec :
 
-* PA = préfixe "Portabilité Archive"
-* AAAAMMJJThhmmss = horodatage avec AAAA = année, MM = mois, JJ = jour, T = "T" (séparateur de date et heure), hh = heure, mm = minutes, ss = secondes
+* PA = préfixe "Portabilité Archive" ;
+* AAAAMMJJThhmmss = horodatage avec AAAA = année, MM = mois, JJ = jour, T = "T" (séparateur de date et heure), hh = heure, mm = minutes, ss = secondes.
 
 Le nom des répertoires et sous-archives ZIP doit respecter le format suivant :
 
 * `DOCUMENTATION/`: documentation d'export permettant à l'éditeur émetteur d'interpréter et d'intégrer les données ;
-* `TRANSVERSE.ZIP` : archive contenant les données transverses (logs, comptabilité, agenda,…) ;
-* `TRANSVERSE/` : répertoire contenant les données transverses (logs, comptabilité, agenda,…) ;
+* `TRANSVERSE.ZIP` : archive contenant les données transverses (logs, comptabilité, agenda, etc.) ;
+* `TRANSVERSE/` : répertoire contenant les données transverses (logs, comptabilité, agenda, etc.) ;
 * `PATNNNNN.ZIP` : contient les données d'un patient et est conforme au profil IHE_XDM, ou "NNNNN" est incrémenté à partir de 00001. Exemple : `PAT00183.ZIP`;
 * `PDF`: sous-répertoire de l'archive patient contenant les documents PDF/A-1 destinés à la consultation humaine ;
 * `IHE_XDM`et `SUBSET01`: sous-répertoires de l'archive XDM contenant les documents d'un patient.
@@ -74,7 +74,7 @@ Le `MANIFEST.XML` recense notamment :
 
 * les informations générales de l'export ;
 * les statistiques générales ;
-* la liste des archives patients et transverses incluses avec leurs caractéristiques essentielles ;
+* la liste des archives patients et transverses incluses avec leurs caractéristiques essentielles.
 
 **Modèle logique**
 
@@ -141,18 +141,18 @@ Le modèle logique associé au fichier `MANIFEST.XML` est consultable [ici](Stru
 
 #### README.TXT de l'archive de portabilité
 
-Le fichier README.TXT est indépendant du contenu clinique de l'archive. Il contient des informations éditoriales dont le caractère obligatoire du système émetteur, conformément au volume 2b du cadre technique ITI :
+Le fichier `README.TXT` est indépendant du contenu clinique de l'archive. Il contient des informations éditoriales dont le caractère obligatoire du système émetteur, conformément au volume 2b du cadre technique ITI :
 
 * point de contact de l'éditeur émetteur ayant créé l'archive ;
 * nom et version du logiciel ayant créé l'archive ;
 * informations générales sur la structure de l'archive (ces informations n'ont pas vocation à être spécifique au contenu stocké dans l'archive) ;
 * instructions permettant de visualiser les documents joints, dans le cas ou un viewer est transmis (ex. visualisation des documents de santé enregistrés avec leur feuille de style dans un même répertoire).
 
-Le contenu du README.TXT est codé en ASCII 7 bits avec le retour chariot codé en CRLF.
+Le contenu du `README.TXT` est codé en ASCII 7 bits avec le retour chariot codé en CRLF.
 
-Deux niveaux de `README.TXT` coexistent dans l'archive de Portabilité :
+Deux niveaux de `README.TXT` coexistent dans l'archive de portabilité :
 
-* un fichier à la racine de l'archive chapeau de portabilité. Ce document complète le MANIFEST.XML et fournit aux destinataires les informations générales sur le contenu de l'archive de portabilité, les modalités d'accès aux documents et, le cas échéant, les informations utiles à leur consultation;
+* un fichier à la racine de l'archive chapeau de portabilité. Ce document complète le `MANIFEST.XML` et fournit aux destinataires les informations générales sur le contenu de l'archive de portabilité, les modalités d'accès aux documents et, le cas échéant, les informations utiles à leur consultation ;
 * un README.TXT au niveau de chaque archive XDM Patient et de l'archive de données transverse.
 
 **Modèle logique**
@@ -270,15 +270,17 @@ Le modèle logique associé à cette archive est consultable [ici](StructureDefi
 
 #### INDEX.HTM de l'archive XDM Patient
 
-Le fichier `INDEX.HTM` est imposé par le profil IHE_XDM à la racine d'une archive XDM. Il renferme des informations éditoriales et est conforme aux spécifications XHTML et [Echanges de Documents de santé](https://esante.gouv.fr/annexe-sources-des-donnees-personnes-et-structures). Il contient :
+Le fichier `INDEX.HTM` est imposé par le profil IHE_XDM à la racine d'une archive XDM. Il renferme des informations éditoriales et est conforme aux spécifications XHTML et [Echanges de Documents de santé](https://esante.gouv.fr/annexe-sources-des-donnees-personnes-et-structures).
+
+Il contient :
 
 * l'identification obligatoire du système émetteur ayant créé le media : StructIdNat (identifiant de stucture de santé) et StructNom (nom de la structure) ;
 * l'avertissement optionnel de cette institution concernant la sécurité et la confidentialité;
-* un lien vers le fichier README.TXT.
+* un lien vers le fichier `README.TXT`.
 
 **Modèle logique**
 
-Le modèle logique associé au fichier INDEX.HTM est consultable [ici](StructureDefinition-pdlgc-index.md)
+Le modèle logique associé au fichier `INDEX.HTM` est consultable [ici](StructureDefinition-pdlgc-index.md)
 
 **Exemple de fichier `INDEX.HTM`** :
 
@@ -298,7 +300,7 @@ Ce `README.TXT` suit la même trame que le `README.TXT` de l'archive de portabil
 
 **Modèle logique**
 
-Le modèle logique associé au fichier README.TXT est consultable [ici](StructureDefinition-pdlgc-readme.md)
+Le modèle logique associé au fichier `README.TXT` est consultable [ici](StructureDefinition-pdlgc-readme.md)
 
 **Exemple de `README.TXT` d'une archive Patient**
 
@@ -341,7 +343,7 @@ Arborescence :
 Ce répertoire `IHE_XDM` contient un sous-répertoire `SUBSET01 contenant l'ensemble des documents transmis :
 
 * le ou les documents de données administratives et médicales du patient ;
-* le document METADATA.XML obligatoire, contenant les métadonnées XDS, représentations logiques du lot de documents.
+* le document `METADATA.XML` obligatoire, contenant les métadonnées XDS, représentations logiques du lot de documents.
 
 #### Répertoire PDF/ de l'archive XDM Patient
 
@@ -357,11 +359,11 @@ La construction de ce fichier est détaillée dans les spécifications [Echanges
 
 **Modèle logique**
 
-Le modèle logique associé au fichier METADATA.XML est consultable [ici](StructureDefinition-pdlgc-metadata.md)
+Le modèle logique associé au fichier `METADATA.XML` est consultable [ici](StructureDefinition-pdlgc-metadata.md)
 
 **Exemple de `METADATA.XML` d'une archive XDM**
 
-De nombreux exemples de fichiers METADATA sont accessibles sur le repository GitHub ANS [interop-exemples-xdm](https://github.com/ansforge/interop-exemples-xdm).
+De nombreux exemples de fichiers `METADATA.XML` sont accessibles sur le repository GitHub ANS [interop-exemples-xdm](https://github.com/ansforge/interop-exemples-xdm).
 
 ### Archive TRANSVERSE
 
