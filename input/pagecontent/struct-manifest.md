@@ -1,9 +1,10 @@
 Le fichier `MANIFEST.XML`, positionné à la racine de l'archive de portabilité, fournit une vue d'ensemble synthétique et exploitable par traitement automatisé du contenu global de l'export. Il complète le `README.TXT` de niveau chapeau, destiné à la lecture humaine. Il porte exclusivement sur le pilotage de la collection d'archives. Le détail des fichiers transportés est quant à lui décrit dans le fichier `METADATA.XML` de chaque lot de soumission.
 
 Le `MANIFEST.XML` recense notamment :
+
 - les informations générales de l'export ;
 - les statistiques générales ;
-- la liste des archives patients et transverses incluses avec leurs caractéristiques essentielles ;
+- la liste des archives patients et transverses incluses avec leurs caractéristiques essentielles.
 
 **Modèle logique**
 

@@ -7,6 +7,7 @@ Cette documentation peut notamment comprendre les fichiers décrits ci-après.
 Le dictionnaire de données décrit les données exportées dans un format propriétaire structuré, pour lesquelles il n'existe pas de spécification publique de référence permettant au LGC destinataire d'en déduire la structure et la sémantique. Les données exportées conformément à un volet du CI-SIS ou à un standard publié (CDA R2, FHIR, LOINC…) n'ont pas à faire l'objet d'un dictionnaire de données : le mapping de fichiers renvoie dans ce cas directement aux spécifications applicables.
 
 Pour chaque donnée relevant de son périmètre, le dictionnaire couvre a minima :
+
 - son intitulé et sa définition métier ;
 - sa cardinalité ;
 - son type ;
@@ -20,6 +21,7 @@ Le format du dictionnaire de données est libre. Il doit néanmoins être lisibl
 #### Mapping de fichiers
 
 Le mapping de fichiers est centré sur les fichiers présents dans l'archive. Pour chaque fichier ou type de fichier produit dans l'archive, il précise :
+
 - le nom ou le schéma de nommage du fichier ;
 - le format technique (CDA R2 N1 ou N3, JSON, CSV, ICS…) ;
 - l'encodage du fichier ;
