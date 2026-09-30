@@ -72,7 +72,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdmAuthor.csv),
   "name" : "XDMAuthor",
   "title" : "XDM Author",
   "status" : "draft",
-  "date" : "2026-08-07T08:39:35+00:00",
+  "date" : "2026-09-30T09:03:39+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -157,7 +157,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-xdmAuthor.csv),
       }],
       "binding" : {
         "strength" : "preferred",
-        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS|20260505120000"
+        "valueSet" : "https://mos.esante.gouv.fr/NOS/JDV_J01-XdsAuthorSpecialty-CISIS/FHIR/JDV-J01-XdsAuthorSpecialty-CISIS|20260928120000"
       }
     }]
   }

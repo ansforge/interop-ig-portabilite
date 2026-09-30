@@ -12,20 +12,22 @@ There is no translation page available for the current page, so it has been rend
 
 **Cadre technique IHE ITI** : [https://profiles.ihe.net/ITI/index.html](https://profiles.ihe.net/ITI/index.html)
 
-* XDS.b (Cross Enterprise Document sharing): basés sur ebRIM et ebRS, profils permettant le partage de documents de santé dans une infrastructure de type Registre-Entrepôt de documents:
+* XDS.b (Cross Enterprise Document sharing): basés sur ebRIM et ebRS, profils permettant le partage de documents de santé dans une infrastructure de type Registre-Entrepôt de documents : 
 * Chapitre 10 du volume 1
 * Chapitre 3.18 du volume 2a
 * Chapitres 3.41 et 3.42 du volume 2b
 * Chapitre 4 du volume 3
-* XDM (Cross-Enterprise Document Media Interchange): basé sur XDS.b pour la définition des métadonnées, profil permettant l'échange de documents de santé sur différents media:
+ 
+* XDM (Cross-Enterprise Document Media Interchange) : basé sur XDS.b pour la définition des métadonnées, profil permettant l'échange de documents de santé sur différents médias : 
 * Chapitre 16 du volume 1
 * Chapitre 3.32 du volume 2b
+ 
 
-**ISO 9660, niveau 1** (Traitement de l'information – Structure de volume et de fichier des disques optiques compacts à mémoire fixe (CD-ROM) destinés à l'échange d'information): Norme encadrant le nommage des documents échangés par XDM, quel que soit le media utilisé
+**ISO 9660, niveau 1** (Traitement de l'information — Structure de volume et de fichier des disques optiques compacts à mémoire fixe (CD-ROM) destinés à l'échange d'information) : Norme encadrant le nommage des documents échangés par XDM, quel que soit le média utilisé.
 
 **Volets du CI-SIS** :
 
-* [Echanges de Documents de Santé](https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_service_volet-echange-documents-sante_v1.8.pdf): volet définissant les contraintes nationales appliquées au profil IHE XDM afin de permettre des échanges de documents de santé via Messagerie Sécurisée de Santé (MSS).
+* [Échanges de Documents de Santé](https://esante.gouv.fr/sites/default/files/media_entity/documents/ci-sis_service_volet-echange-documents-sante_v1.8.pdf) : volet définissant les contraintes nationales appliquées au profil IHE XDM afin de permettre des échanges de documents de santé via Messagerie Sécurisée de Santé (MSS).
 * [Partage de Documents de Santé](https://esante.gouv.fr/volet-partage-de-documents-de-sante) : volet d'intéropérabilité décrivant notamment l'ensemble des métadonnées XDS définissant un document de santé.
 
 **Annexes du CI-SIS** :

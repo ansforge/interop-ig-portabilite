@@ -1,6 +1,6 @@
 #  - Portabilité des Données LGC v0.1.0
 
-## : PDLGC Destinataire - Historique des changements
+## ActorDefinition: PDLGC Destinataire - Historique des changements
 
-Historique des modifications pour PDLGC-Destinataire ActorDefinition | downcase.
+Historique des modifications pour PDLGC-Destinataire actordefinition.
 

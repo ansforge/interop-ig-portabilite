@@ -7,7 +7,7 @@ There is no translation page available for the current page, so it has been rend
 
 ### Téléchargement
 
-L'implementation guide contient un package [téléchargeable ici](package.tgz) de ressources de conformité.
+Le guide d'implémentation contient un package [téléchargeable ici](package.tgz) de ressources de conformité.
 
 Ensemble des ressources téléchargeables :
 

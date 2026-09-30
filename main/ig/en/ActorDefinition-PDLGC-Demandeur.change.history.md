@@ -1,6 +1,6 @@
 #  - Portabilité des Données LGC v0.1.0
 
-## : PDLGC Demandeur - Change History
+## ActorDefinition: PDLGC Demandeur - Change History
 
-History of changes for PDLGC-Demandeur ActorDefinition | downcase.
+History of changes for PDLGC-Demandeur actordefinition.
 

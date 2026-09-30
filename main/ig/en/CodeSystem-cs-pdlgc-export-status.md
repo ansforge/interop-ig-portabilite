@@ -7,7 +7,7 @@ Statut de l'export
 
 This Code system is referenced in the definition of the following value sets:
 
-* [VS_PDLGC_ExportStatus](ValueSet-vs-pdlgc-export-status.md)
+* [PDLGC Statut de l'export](ValueSet-vs-pdlgc-export-status.md)
 
 -------
 
@@ -30,7 +30,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "Statut de l'export",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-08-07T08:39:35+00:00",
+  "date" : "2026-09-30T09:03:39+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

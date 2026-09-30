@@ -7,7 +7,7 @@ Types d'association entre objets XDS dans le contexte portabilité.
 
 Ce système de codes est référencé dans la définition des ensembles de valeurs suivants :
 
-* [VS_XDM_AssociationType](ValueSet-vs-association-type.md)
+* [Type d'association XDS (VS)](ValueSet-vs-association-type.md)
 
 -------
 
@@ -30,7 +30,7 @@ Ce système de codes est référencé dans la définition des ensembles de valeu
   "title" : "Type d'association XDS",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-08-07T08:39:35+00:00",
+  "date" : "2026-09-30T09:03:39+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

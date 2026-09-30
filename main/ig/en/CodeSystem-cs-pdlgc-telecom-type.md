@@ -7,7 +7,7 @@ Type de moyen de communication
 
 This Code system is referenced in the definition of the following value sets:
 
-* [VS_PDLGC_TelecomType](ValueSet-vs-pdlgc-telecom-type.md)
+* [PDLGC Type de moyen de communication](ValueSet-vs-pdlgc-telecom-type.md)
 
 -------
 
@@ -30,7 +30,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "Type de moyen de communication",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-08-07T08:39:35+00:00",
+  "date" : "2026-09-30T09:03:39+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
