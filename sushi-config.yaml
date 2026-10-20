@@ -1,7 +1,7 @@
 # Documentation à propos de cette page : https://fshschool.org/docs/sushi/configuration/
 
-id: ans.fhir.fr.pdlgc
-canonical: https://interop.esante.gouv.fr/ig/fhir/pdlgc
+id: ans.fr.pdlgc
+canonical: https://interop.esante.gouv.fr/ig/pdlgc
 name: PDLGC
 title: Portabilité des Données LGC
 description: Architecture d'archive de portabilité des données LGC
