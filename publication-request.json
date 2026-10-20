@@ -1,9 +1,9 @@
 {
-    "package-id" : "ans.fhir.fr.pdlgc",
-    "version" : "0.1.0",
-    "path" : "https://interop.esante.gouv.fr/ig/fhir/pdlgc/0.1.0",
+    "package-id" : "ans.fr.pdlgc",
+    "version" : "0.1.0-ballot",
+    "path" : "https://interop.esante.gouv.fr/ig/pdlgc/0.1.0-ballot",
     "mode" : "milestone",
-    "status" : "trial-use",
+    "status" : "release",
     "sequence" : "STU1",
     "title" : "Portabilité des données des Logiciels de Gestion de Cabinet (LGC)",
     "first" : true,
