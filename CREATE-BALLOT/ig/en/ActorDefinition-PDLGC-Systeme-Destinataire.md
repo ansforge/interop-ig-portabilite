@@ -1,0 +1,4 @@
+# LGC Destinataire - Portabilité des Données LGC v0.1.0
+
+## ActorDefinition: LGC Destinataire 
+
