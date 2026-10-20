@@ -11,5 +11,8 @@
     "ci-build" : "https://ansforge.github.io/IG-fhir-portabilite-lgc/main/ig",
     "category" : "Care Management",
     "introduction" : "Ce document présente les spécifications fonctionnelles et techniques du volet « Portabilité des données LGC » (PDLGC). Ces dernières spécifient l'architecture d'une archive de Portabilité permettant l'export de données d'un LGC à un autre.",
-    "changes": "change-log.html"
+    "changes": "change-log.html",
+    "registry-description" : "Ressources de conformité pour l'API FHIR de la Messagerie Sécurisée de Santé (MSSanté).",
+    "registry-country" : "fr",
+    "registry-authority" : "ANS (FR)"
   }
